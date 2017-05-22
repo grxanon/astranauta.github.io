@@ -37,6 +37,19 @@ function parsesource (source) {
 	if (source === "SCAG") source = "Sword Coast Adventurer's Guide";
 	if (source === "UAMystic") source = "Unearthed Arcana: The Mystic Class";
 	if (source === "BoLS 3pp") source = "Book of Lost Spells (3pp)";
+	if (source === "DM-01 3pp") source = "Deep Magic #01: Clockwork (3pp)";
+	if (source === "DM-02 3pp") source = "Deep Magic #02: Rune Magic (3pp)";
+	if (source === "DM-03 3pp") source = "Deep Magic #03: Void Magic (3pp)";
+	if (source === "DM-04 3pp") source = "Deep Magic #04: Illumination Magic (3pp)";
+	if (source === "DM-05 3pp") source = "Deep Magic #05: Ley Lines (3pp)";
+	if (source === "DM-06 3pp") source = "Deep Magic #06: Angelic Seals (3pp)";
+	if (source === "DM-07 3pp") source = "Deep Magic #07: Chaos Magic (3pp)";
+	if (source === "DM-08 3pp") source = "Deep Magic #08: Battle Magic (3pp)";
+	if (source === "DM-09 3pp") source = "Deep Magic #09: Ring Magic (3pp)";
+	if (source === "DM-10 3pp") source = "Deep Magic #10: Shadow Magic (3pp)";
+	if (source === "DM-11 3pp") source = "Deep Magic #11: Elven High Magic (3pp)";
+	if (source === "DM-12 3pp") source = "Deep Magic #12: Blood and Doom (3pp)";
+	if (source === "DM-13 3pp") source = "Deep Magic #13: Dragon Magic (3pp)";
 	return source;
 }
 
@@ -73,6 +86,8 @@ function loadspells() {
 				} else if (curspell.level[1] === "T") {
 					schooltext = "Psionic Talent";
 					leveltext = "Talent";
+				} else if (curspell.school == "VM") {
+					schooltext = "Void Magic";
 				}
 			}
 
