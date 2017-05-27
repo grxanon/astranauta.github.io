@@ -798,8 +798,8 @@ spelldata.compendium.spell.push(
 	"time": "1 action",
 	"range": "30 feet",
 	"components": "V, S",
-	"duration": "Instantaneous",
-	"classes": "Druid, Ranger",
+	"duration": "1 round",
+	"classes": "Wizard",
 	"text": [
 		"One creature you can see must make a Wisdom saving throw. If the saving throw fails, the creature becomes confused and loses its train of thought.",
 		"Note that this spell does no real damage, doesn’t affect the target’s Intelligence, and doesn’t negate the target’s next action; it simply erases the target’s current thought. The thought probably will reoccur to the creature naturally at some time in the future. For example, if a lady sees someone running from her husband’s room with a dagger, this spell compels her to forget that image. But if the person with the dagger is still visible a second later, she’ll wonder about it all over again. Similarly, an opponent in combat can forget what strike he was planning but still realizes he’s in combat and attack on his next action. The spell’s effect ends at the start of the target’s next action, so you must be quick to make certain that something forgotten isn’t instantly remembered."
@@ -7348,18 +7348,6 @@ spelldata.compendium.spell.push(
 	"duration": "Concentration, up to 1 minute",
 	"classes": "Bard",
 	"text": "Your voice creates a reverberating, 30-foot cone of dissonance. Every creature in the cone is incapacitated unless it makes a successful Constitution saving throw. An incapacitated creature can repeat the saving throw at the end of each of its turns; a successful save ends the effect on that creature."
-},
-{
-	"name": "Restore the Undead",
-	"source": "BoLS 3pp",
-	"level": "3",
-	"school": "N",
-	"time": "1 action",
-	"range": "Self (30-foot-radius sphere)",
-	"components": "V, S",
-	"duration": "Instantaneous",
-	"classes": "Cleric, Wizard",
-	"text": "Each zombie and skeleton within 30 feet of you regains all of its lost hit points. This spell does not affect creatures that have been reduced to 0 hit points or those of CR 3 or higher."
 },
 {
 	"name": "Restore the Undead",
