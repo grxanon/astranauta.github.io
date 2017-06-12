@@ -1,0 +1,2447 @@
+monsterdata.compendium.monster.push(
+{
+ "source": "critter compendium",
+ "name": "Achaierai",
+ "size": "L",
+ "type": "fiend",
+ "alignment": "lawful evil",
+ "ac": "15 (natural armor)",
+ "hp": "53 (7d10 + 14)",
+ "speed": "50 ft.",
+ "str": "16",
+ "dex": "15",
+ "con": "14",
+ "int": "11",
+ "wis": "14",
+ "cha": "16",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "12",
+ "languages": "Infernal",
+ "cr": "3",
+ "trait": [
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The achaierai has advantage on saving throws against spells and other magical effects."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The achaierai makes two melee attacks: one with its bite and one with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+   ]
+  },
+  {
+   "name": "Black Cloud",
+   "text": [
+    "The achaierai releases a choking black cloud. Creatures within 10 feet must make a DC 12 Constitution saving throw, taking 7 (2d6) poison damage on a failure or half as much damage on a success.",
+    "Additionally on a failure, the creature can’t take reactions for one minute. At the start of each of its turns it rolls a d4 to determine what it does: On a 1 or 2, the creature does nothing. On a 3, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 4, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can’t make such an attack. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Allip",
+ "size": "M",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "12",
+ "hp": "26 (4d8 + 8)",
+ "speed": "0 ft., fly 40 ft. (hover)",
+ "str": "6",
+ "dex": "14",
+ "con": "14",
+ "int": "11",
+ "wis": "11",
+ "cha": "16",
+ "resist": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons that aren’t silvered",
+ "immune": "necrotic, poison",
+ "conditionImmune": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "—",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Babble",
+   "text": [
+    "An allip constantly mutters and whines to itself, creating a hypnotic effect. A creature that starts its turn within 60 feet of the allip and can hear it must succeed on a DC 13 Wisdom saving throw or be charmed for 1 minute. While charmed, the creature is incapacitated and can’t move or speak. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success. A creature that succeeded on the saving throw cannot be affected by the same allip’s Babble ability for the next 24 hours."
+   ]
+  },
+  {
+   "name": "Ethereal Sight",
+   "text": [
+    "The allip can see 60 feet into the Ethereal Plane when it is on the Material Plane and vice versa."
+   ]
+  },
+  {
+   "name": "Incorporeal Movement",
+   "text": [
+    "The allip can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+   ]
+  },
+  {
+   "name": "Mind of Madness",
+   "text": [
+    "A creature that targets an allip with a spell or ability, trying to read its thoughts, takes 10 (3d6) psychic damage and must succeed on a Wisdom saving throw or gain disadvantage on Wisdom checks and saving throws for 24 hours. A creature that is reduced to 0 hit points while under this effect automatically stabilizes but permanently falls into a coma and is unconscious until healed by a restoration spell or similar magic."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Touch of Madness",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (3d6) psychic damage and the target must succeed on a Wisdom saving throw or gain disadvantage on Wisdom checks and saving throws for 24 hours. A creature that is reduced to 0 hit points while under this effect automatically stabilizes but permanently falls into a coma and is unconscious until healed by a restoration spell or similar magic."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Arcadian Avenger",
+ "size": "M",
+ "type": "celestial",
+ "alignment": "lawful good",
+ "ac": "16 (natural armor)",
+ "hp": "56 (8d8 + 24)",
+ "speed": "30 ft., fly 40 ft.",
+ "str": "18",
+ "dex": "15",
+ "con": "16",
+ "int": "10",
+ "wis": "12",
+ "cha": "12",
+ "skill": [
+  "Perception +3, Insight +5"
+ ],
+ "resist": "radiant; bludgeoning, piercing, and slashing from nonmagical weapons",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "Celestial, Common",
+ "cr": "3",
+ "trait": [
+  {
+   "name": "Elude Chance (3/day)",
+   "text": [
+    "When the arcadian avenger fails a saving throw or misses on an attack roll, it can choose to reroll the save or attack."
+   ]
+  },
+  {
+   "name": "Vengeance",
+   "text": [
+    "Any time the Arcadian avenger sees an ally fall she rolls her weapons’ damage dice twice and chooses the higher result for one minute."
+   ]
+  },
+  {
+   "name": "Magic Weapons",
+   "text": [
+    "The avenger’s melee attacks are magical."
+   ]
+  },
+  {
+   "name": "Perfect Symmetry",
+   "text": [
+    "When the avenger cooperates with other Arcadian avengers, she is immune to the frightened and charmed conditions. All allied Arcadian avengers roll a single Initiative check with advantage, acting on the same initiative. The Arcadian avengers can move or take their actions in any order, even before another avenger has completed her turn. For example, two avengers can move, before either of them makes an attack."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The Arcadian avenger makes two attacks with her longswords."
+   ]
+  },
+  {
+   "name": "Longswords",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Blue Arcanian",
+ "size": "M",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "78 (12d8 + 24)",
+ "speed": "30 ft.",
+ "str": "10",
+ "dex": "11",
+ "con": "15",
+ "int": "19",
+ "wis": "13",
+ "cha": "10",
+ "skill": [
+  "Arcana +6"
+ ],
+ "immune": "cold, poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "any languages it knew in life",
+ "cr": "5",
+ "trait": [
+  {
+   "name": "Arcane Surge (Recharge after Short or Long Rest)",
+   "text": [
+    "If the arcanian hits a creature with a spell attack, it may choose to double the dice rolled for cold damage."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Frost Staff",
+   "text": [
+    "Melee Spell Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d8) bludgeoning damage plus 13 (2d8 + 4) cold damage."
+   ]
+  },
+  {
+   "name": "Freezing Blast",
+   "text": [
+    "Ranged Spell Attack: +6 to hit, range 120 ft., one target. Hit: 13 (2d8 + 4) cold damage and the target must succeed on a DC 14 Constitution saving throw or its speed is halved until the end of the arcanian’s next turn."
+   ]
+  },
+  {
+   "name": "Blizzard (Recharge 4–6)",
+   "text": [
+    "The arcanian magically evokes a maelstrom of cold around itself that lasts until the start of the arcanian’s next turn. Creatures that start or end their turn within 30 feet of the arcanian must make a DC 14 Constitution saving throw, taking 31 (6d8 + 4) cold damage on a failed save, or half as much damage on a successful one. Creatures other than the arcanian treat the area within 30 feet of the arcanian as difficult terrain and have disadvantage on Strength (Athletics) and Dexterity (Acrobatics) checks made in the area."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Green Arcanian",
+ "size": "M",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "58 (9d8 + 18)",
+ "speed": "30 ft.",
+ "str": "10",
+ "dex": "11",
+ "con": "15",
+ "int": "19",
+ "wis": "17",
+ "cha": "10",
+ "skill": [
+  "Arcana +7"
+ ],
+ "immune": "acid, poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "any languages it knew in life",
+ "cr": "6",
+ "trait": [
+  {
+   "name": "Arcane Surge (Recharge after Short or Long Rest)",
+   "text": [
+    "If the arcanian hits a creature with a spell attack, it may choose to double the dice rolled for acid damage."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Corrosive Touch",
+   "text": [
+    "Melee Spell Attack: +7 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) acid damage."
+   ]
+  },
+  {
+   "name": "Voracious Acid",
+   "text": [
+    "Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 21 (5d6 + 4) acid damage and the target must succeed on a DC 15 Constitution saving throw or take an additional 7 (2d6) acid damage at the start of each of its turns. At the end of each of its turns, the target may repeat the saving throw, ending the effect on itself on a success."
+   ]
+  },
+  {
+   "name": "Caustic Cloud (Recharge 4–6)",
+   "text": [
+    "The arcanian magically douses a creature it can see within 120 feet in acid. The target must make a DC 15 Dexterity saving throw, taking 46 (12d6 +4) acid damage on a failed save or half as much damage on a successful one. The creature must repeat the saving throw at the end of each of its turns, taking 46 (12d6 +4) acid damage damage on a failed saving throw, or ending the effect on itself on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Red Arcanian",
+ "size": "M",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "58 (9d8 + 18)",
+ "speed": "30 ft.",
+ "str": "10",
+ "dex": "11",
+ "con": "15",
+ "int": "19",
+ "wis": "17",
+ "cha": "10",
+ "skill": [
+  "Arcana +7"
+ ],
+ "immune": "fire, poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "any languages it knew in life",
+ "cr": "6",
+ "trait": [
+  {
+   "name": "Arcane Surge (Recharge after Short or Long Rest)",
+   "text": [
+    "If the arcanian hits a creature with a spell attack, it may choose to double the dice rolled for fire damage."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Burning Touch",
+   "text": [
+    "Melee Spell Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) fire damage."
+   ]
+  },
+  {
+   "name": "Firethrow",
+   "text": [
+    "Ranged Spell Attack: +7 to hit, range 120 ft., one target. Hit: 18 (4d6 + 4) fire damage and creatures within 10 feet of the target must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) fire damage."
+   ]
+  },
+  {
+   "name": "Scorching Burst (Recharge 4–6)",
+   "text": [
+    "The arcanian magically causes a surge of fire to explode around it. Creatures within 30 feet of the arcanian must make a DC 15 Dexterity saving throw, taking 49 (13d6 +4) fire damage on a failed save or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Juvenile Arrowhawk",
+ "size": "S",
+ "type": "elemental",
+ "alignment": "neutral",
+ "ac": "15 (natural armor)",
+ "hp": "18 (4d6 + 4)",
+ "speed": "0 ft., fly 60 ft.",
+ "str": "12",
+ "dex": "18",
+ "con": "12",
+ "int": "10",
+ "wis": "13",
+ "cha": "13",
+ "skill": [
+  "Stealth +6"
+ ],
+ "resist": "acid, cold, fire",
+ "immune": "lightning",
+ "senses": "",
+ "passive": "11",
+ "languages": "—",
+ "cr": "1",
+ "trait": [],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+   ]
+  },
+  {
+   "name": "Lightning Blast",
+   "text": [
+    "Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 11 (2d6 + 4) lightning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Adult Arrowhawk",
+ "size": "M",
+ "type": "elemental",
+ "alignment": "neutral",
+ "ac": "16 (natural armor)",
+ "hp": "38 (7d8 + 7)",
+ "speed": "0 ft., fly 60 ft.",
+ "str": "14",
+ "dex": "18",
+ "con": "12",
+ "int": "10",
+ "wis": "13",
+ "cha": "13",
+ "skill": [
+  "Perception +3, Stealth +6"
+ ],
+ "resist": "acid, cold, fire",
+ "immune": "lightning",
+ "senses": "",
+ "passive": "13",
+ "languages": "—",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Flyby Attack",
+   "text": [
+    "When the arrowhawk attacks, it does not provoke an opportunity attack from the target when moving out of its reach."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+   ]
+  },
+  {
+   "name": "Lightning Blast",
+   "text": [
+    "Ranged Weapon Attack: +6 to hit, range 30/90 ft., one target. Hit: 13 (2d8 + 4) lightning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Elder Arrowhawk",
+ "size": "L",
+ "type": "elemental",
+ "alignment": "neutral",
+ "ac": "18 (natural armor)",
+ "hp": "97 (13d10 + 26)",
+ "speed": "0 ft., fly 60 ft.",
+ "str": "18",
+ "dex": "18",
+ "con": "15",
+ "int": "10",
+ "wis": "13",
+ "cha": "13",
+ "skill": [
+  "Perception +4, Stealth +6"
+ ],
+ "resist": "acid, cold, fire",
+ "immune": "lightning",
+ "senses": "",
+ "passive": "14",
+ "languages": "—",
+ "cr": "6",
+ "trait": [
+  {
+   "name": "Flyby Attack",
+   "text": [
+    "When the arrowhawk attacks, it does not provoke an opportunity attack from the target when moving out of its reach."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Lightning Blast",
+   "text": [
+    "Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 18 (4d6 + 4) lightning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Astral Stalker",
+ "size": "M",
+ "type": "fiend",
+ "alignment": "lawful evil",
+ "ac": "18 (natural armor)",
+ "hp": "119 (14d8 + 56)",
+ "speed": "50 ft., climb 20 ft.",
+ "str": "20",
+ "dex": "18",
+ "con": "19",
+ "int": "12",
+ "wis": "16",
+ "cha": "19",
+ "skill": [
+  "Athletics +8, Stealth +7, Survival +9"
+ ],
+ "resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "Common, Infernal",
+ "cr": "8",
+ "trait": [
+  {
+   "name": "Deadly Attack",
+   "text": [
+    "When the astral stalker has advantage on attack rolls, or attacks a surprised target, its attacks deal an additional 7 (2d6) damage each."
+   ]
+  },
+  {
+   "name": "Camouflage",
+   "text": [
+    "The astral stalker has advantage on Dexterity (Stealth) checks made to hide in natural terrain."
+   ]
+  },
+  {
+   "name": "Elusive Prey",
+   "text": [
+    "Creatures have disadvantage on all Wisdom (Survival) checks made to track the astral stalker."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The astral stalker makes two claw attacks."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+   ]
+  },
+  {
+   "name": "Throat Dart",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 30/90 ft., one target. Hit: 7 (1d4+5) piercing damage plus 3 (1d6) poison damage. The target must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute. While poisoned, the creature is paralyzed. At the end of each of its turns an affected creature may repeat the saving throw, ending the paralyzed condition on itself on a success."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Athach",
+ "size": "H",
+ "type": "giant",
+ "alignment": "chaotic evil",
+ "ac": "17 (natural armor)",
+ "hp": "147 (14d12 + 56)",
+ "speed": "30 ft.",
+ "str": "20",
+ "dex": "11",
+ "con": "19",
+ "int": "7",
+ "wis": "12",
+ "cha": "6",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Giant",
+ "cr": "8",
+ "trait": [
+  {
+   "name": "Multilimbed",
+   "text": [
+    "The athach can draw three weapons in the time a creature normally readies one."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The athach makes three ranged attacks with rocks or four melee attacks: one with its bite and three with its clubs."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage plus 4 (1d8) poison damage and the target must succeed on a DC 15 Constitution saving throw, or be poisoned for 1 hour."
+   ]
+  },
+  {
+   "name": "Club",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Rock",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 16 (2d10+5) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Hammerer",
+ "size": "M",
+ "type": "construct",
+ "alignment": "unaligned",
+ "ac": "16 (natural armor)",
+ "hp": "39 (6d8 + 12)",
+ "speed": "20 ft.",
+ "str": "20",
+ "dex": "11",
+ "con": "15",
+ "int": "5",
+ "wis": "9",
+ "cha": "6",
+ "immune": "poison",
+ "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
+ "senses": "",
+ "passive": "9",
+ "languages": "understands the languages of its creator but can’t speak",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Unreliable",
+   "text": [
+    "At the start of each of its turns in combat, the automaton must succeed on a DC 8 Intelligence saving throw, or it does not move or take any actions during its turn."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The automaton makes two slam attacks."
+   ]
+  },
+  {
+   "name": "Slam",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Pulverizer",
+ "size": "M",
+ "type": "construct",
+ "alignment": "unaligned",
+ "ac": "16 (natural armor)",
+ "hp": "26 (4d8 + 8)",
+ "speed": "40 ft.",
+ "str": "18",
+ "dex": "11",
+ "con": "15",
+ "int": "5",
+ "wis": "9",
+ "cha": "6",
+ "immune": "poison",
+ "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
+ "senses": "blindsight 60 ft. (blind beyond this radius)",
+ "passive": "9",
+ "languages": "understands the languages of its creator but can’t speak",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Unreliable",
+   "text": [
+    "At the start of each of its turns in combat, the automaton must succeed on a DC 8 Intelligence saving throw, or it does not move or take any actions during its turn."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The automaton makes two slam attacks."
+   ]
+  },
+  {
+   "name": "Slam",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 4) bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Shriek",
+   "text": [
+    "The automaton lets loose an ear piercing shriek. Creatures within a 30 foot cone must make a DC 12 Constitution saving throw, becoming stunned for one round and taking 4 (1d8) thundering damage and on a failed save, or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Balhannoth",
+ "size": "L",
+ "type": "aberration",
+ "alignment": "chaotic neutral",
+ "ac": "17 (natural armor)",
+ "hp": "133 (14d8 + 70)",
+ "speed": "50 ft., climb 50 ft.",
+ "str": "23",
+ "dex": "17",
+ "con": "20",
+ "int": "5",
+ "wis": "12",
+ "cha": "8",
+ "conditionImmune": "charmed",
+ "senses": "blindsight 60 ft. (blind beyond this radius)",
+ "passive": "11",
+ "languages": "—",
+ "cr": "8",
+ "trait": [
+  {
+   "name": "Dweomersight",
+   "text": [
+    "The balhannoth can see magic auras as if affected by a constant detect magic spell."
+   ]
+  },
+  {
+   "name": "Camouflage",
+   "text": [
+    "The balhannoth has advantage on Dexterity (Stealth) checks made to hide in any sort of natural underground terrain."
+   ]
+  },
+  {
+   "name": "Immunity to Illusion",
+   "text": [
+    "The balhannoth automatically succeeds on saving throws against illusions and illusion spells."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The balhannoth makes four melee attacks: three with its tentacles and one with its bite."
+   ]
+  },
+  {
+   "name": "Tentacles",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the target is restrained and cannot cast any spells, even ones that do not require a somatic component. The Balhannoth has 5 tentacles, each of which can grapple one target. Until the grapple ends, the tentacle can’t attack another target."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Banderhobb Filch",
+ "size": "S",
+ "type": "monstrosity",
+ "alignment": "neutral evil",
+ "ac": "14 (natural armor)",
+ "hp": "39 (6d6 + 18)",
+ "speed": "30 ft., climb 20 ft.",
+ "str": "16",
+ "dex": "14",
+ "con": "17",
+ "int": "11",
+ "wis": "14",
+ "cha": "8",
+ "skill": [
+  "Athletics +5, Stealth +8"
+ ],
+ "conditionImmune": "charmed, frightened",
+ "senses": "darkvision 120 ft.",
+ "passive": "12",
+ "languages": "understands Common but can’t speak",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Drag away",
+   "text": [
+    "The banderhobb may move its full speed and even take Dash actions while grappling a creature."
+   ]
+  },
+  {
+   "name": "Distracting Frenzy (Recharges after a Short or Long Rest)",
+   "text": [
+    "When the banderhobb uses its multiattack to only attack one creature, allies within 5 feet ot the target may immediately use their reaction to make a single melee attack against the target."
+   ]
+  },
+  {
+   "name": "Resonant Connection",
+   "text": [
+    "If the banderhobb has even a tiny piece of a creature or an object in its possession, such as a lock of hair or a splinter of wood, it knows the most direct route to that creature or object within 1 mile of the banderhobb."
+   ]
+  },
+  {
+   "name": "Shadow Stealth",
+   "text": [
+    "While in dim light or darkness, the banderhobb can take the Hide action as a bonus action."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The banderhobb makes two claw attacks."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage and the target is grappled (escape DC 13) if it is a Medium or smaller creature. Until this grapple ends, the banderhobb can’t use its claw attack on another target."
+   ]
+  },
+  {
+   "name": "Sack",
+   "text": [
+    "The banderhobb pulls the sack it is carrying over a Medium or smaller creature it is grappling. The banderhobb makes a Strength (Athletics) check, opposed by the target’s Dexterity (Acrobatics) or Strength (Athletics) check. If the banderhobb succeeds, the target is restrained in addition to being grappled. The target cannot end the grapple while restrained. It may attempt to end the restrained condition by destroying the sack. The sack has an armor class of 5, 10 hit points, resistance to piercing damage and immunity to bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Shadow Step",
+   "text": [
+    "The banderhobb magically teleports up to 30 feet to an unoccupied space of dim light or darkness that it can see. Before or after teleporting, it can make a Multiattack action or stinking gob attack."
+   ]
+  },
+  {
+   "name": "Stinking Gob",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 30 ft., one target. Hit: 11 (3d8) poison damage. The target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Banderhobb Mother",
+ "size": "H",
+ "type": "monstrosity",
+ "alignment": "neutral evil",
+ "ac": "16 (natural armor)",
+ "hp": "191 (18d12 + 74)",
+ "speed": "20 ft.",
+ "str": "22",
+ "dex": "10",
+ "con": "21",
+ "int": "14",
+ "wis": "16",
+ "cha": "10",
+ "skill": [
+  "Athletics +10, Stealth +8"
+ ],
+ "conditionImmune": "charmed, frightened",
+ "senses": "darkvision 120 ft.",
+ "passive": "13",
+ "languages": "understands Common and the languages of its creator, but can’t speak",
+ "cr": "10",
+ "trait": [
+  {
+   "name": "Resonant Connection",
+   "text": [
+    "If the banderhobb has even a tiny piece of a creature or an object in its possession, such as a lock of hair or a splinter of wood, it knows the most direct route to that creature or object within 1 mile of the banderhobb."
+   ]
+  },
+  {
+   "name": "Shadow Stealth",
+   "text": [
+    "While in dim light or darkness, the banderhobb can take the Hide action as a bonus action."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 30 (7d6 + 6) piercing damage and the target is grappled (escape DC 17) if it is a Large or smaller creature. Until this grapple ends, the target is restrained and the banderhobb can’t use its bite against another creature."
+   ]
+  },
+  {
+   "name": "Tongue",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 20 ft., one target. Hit: 18 (4d8) necrotic damage and the target must make a DC 15 Strength saving throw. On a failed save, the target is pulled to a space within 5 feet of the banderhobb, which can use a bonus action to make a bite attack against the target."
+   ]
+  },
+  {
+   "name": "Swallow",
+   "text": [
+    "The banderhobb mother makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target is swallowed and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the banderhobb, and it takes 18 (4d8) necrotic damage at the start of each of the banderhobb mother’s turns.",
+    "A creature that dies this way starts transforming into a banderhobb. If the creature was a Medium or Large humanoid, the banderhobb mother regurgitates a fully formed regular banderhobb (see Volo’s Guide to Monsters p. 122) 1d6 rounds after the creature died. If the creature was a Small or Tiny humanoid, the banderhobb mother regurgitates a banderhobb filch 1d4 rounds after it died. A newly spawned banderhobb filch cannot use its sack action until it acquired a sack or other bag large enough to hold the creature it intends to sack. If the creature was not a humanoid, it transforms into a lifeless, deformed mass of flesh vaguely resembling banderhobb features and is regurgitated dead. The banderhobb mother must use its action to do so and cannot choose not to regurgitate a banderhobb, once it is fully gestated. The banderhobb mother will regurgitate a banderhobb even when it is incapacitated or otherwise prevented from taking an action, unless it is frozen, petrified, or otherwise suspended in a similar state of stasis.",
+    "When the banderhobb mother regurgitates a creature, that creature exits prone in a space within 5 feet of the banderhobb mother. If the banderhobb mother dies, any swallowed creatures are likewise regurgitated.",
+    "The banderhobb mother can only have one Medium or Large creature, or up to two Small or smaller creatures swallowed at a time. If multiple swallowed creatures die at the same time, roll for each individually to see how long it takes for them to transform into banderhobbs."
+   ]
+  },
+  {
+   "name": "Shadow Step",
+   "text": [
+    "The banderhobb magically teleports up to 30 feet to an unoccupied space of dim light or darkness that it can see. Before or after teleporting, it may make a bite or tongue attack."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Banedead",
+ "size": "M",
+ "type": "undead",
+ "alignment": "lawful evil",
+ "ac": "14 (natural armor)",
+ "hp": "39 (6d8 + 12)",
+ "speed": "30 ft.",
+ "str": "13",
+ "dex": "10",
+ "con": "15",
+ "int": "10",
+ "wis": "12",
+ "cha": "15",
+ "resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "any languages it knew in life",
+ "cr": "2",
+ "trait": [],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The banedead makes two melee attacks, one with its claw and one with its bite."
+   ]
+  },
+  {
+   "name": "Claw",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage plus 7 (2d6) necrotic damage, and the target must succeed on a DC 12 Constitution saving throw or it gains disadvantage on attack rolls, Dexterity checks and saving throws, and its maximum hit points are reduced by an amount equal to the necrotic damage taken until it finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Banshrae",
+ "size": "M",
+ "type": "fey",
+ "alignment": "chaotic evil",
+ "ac": "18 (Sylvan Warrior)",
+ "hp": "84 (13d8 + 26)",
+ "speed": "60 ft.",
+ "str": "14",
+ "dex": "19",
+ "con": "15",
+ "int": "14",
+ "wis": "15",
+ "cha": "19",
+ "skill": [
+  "Acrobatics +7, Perception +5, Stealth +7"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "15",
+ "languages": "Common, Sylvan",
+ "cr": "5",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The banshrae’s innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components:",
+    "1/day: bestow curse"
+   ]
+  },
+  {
+   "name": "Sylvan Warrior",
+   "text": [
+    "A banshrae’s armor class is 10 + its Charisma modifier + its Dexterity modifier."
+   ]
+  },
+  {
+   "name": "Blowgun Flute",
+   "text": [
+    "At will, the banshrae can call into being a flute that also acts as a blowgun, as if drawing a weapon that is on its person. This flute disappears if the banshrae loses possession of it. Each round the banshrae can play the flute as a bonus action to create one of the effects detailed below. Creatures witin a 60 ft. radius that can hear the Banshrae must succeed on a DC 14 wisdom saving throw, or are affected.",
+    "Dread Dirge. Affected creatures are frightened of the banshrae until the end of its next turn.",
+    "Gibbering Sing-Along. Affected creatures are compelled to sing along in incoherent sounds, automatically failing all Dexterity (Stealth) checks trying to be inaudible and unable to cast spells using verbal components or abilities relying on voice or speech until the end of the banshrae’s next turn. Creatures singing along to the tune can be heard clearly over the music.",
+    "Traveller’s Tune. Affected creatures must move on their next turn, and end their move at least 20 feet from the starting point or as far as they can if they are slowed by difficult terrain or their speed is less than that."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The banshrae makes three attacks with any combination of unarmed strikes and blowgun shots."
+   ]
+  },
+  {
+   "name": "Unarmed Strike",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage. The target must succeed on a DC 12 Constitution saving throw or it gains disadvantage on Dexterity checks on saving throws for the next 24 hours."
+   ]
+  },
+  {
+   "name": "Blowgun",
+   "text": [
+    "Ranged Weapon Attack: +7 to hit, range 30/120 ft., one target. Hit: 5 (1 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Dart Salvo (recharge 5–6)",
+   "text": [
+    "The banshrae fires a hail of blow darts in a 20 foot cone. Creatures in the area must make a DC 14 Dexterity saving throw, taking 14 (4d6) piercing damage on a failed save, or half as much on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Berbalang",
+ "size": "M",
+ "type": "monstrosity",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "120 (16d8 + 48)",
+ "speed": "30 ft., fly 40 ft.",
+ "str": "14",
+ "dex": "19",
+ "con": "16",
+ "int": "17",
+ "wis": "16",
+ "cha": "16",
+ "skill": [
+  "Stealth +7"
+ ],
+ "immune": "necrotic",
+ "senses": "darkvision 120 ft.",
+ "passive": "13",
+ "languages": "Deep Speech",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Duplication (Psionics)",
+   "text": [
+    "As a bonus action, the berbalang manifests an exact duplicate of itself in an unoccupied space within 5 feet of itself. This duplicate is identical to the berbalang in all aspects except the following: Whenever a berbalang manifests a duplicate it loses 40 hit points, and the duplicate manifests with 40 maximum hit points. All damage the duplicate deals with any of its actions is psychic damage, and the duplicate cannot manifest or absorb other duplicates. The duplicate acts on the berbalang’s initiative on the following turns. The berbalang can’t manifest a duplicate if this would reduce the berbalang to 0 hit points or less."
+   ]
+  },
+  {
+   "name": "Duplicate Pack Tactics",
+   "text": [
+    "Once per round when the berbalang hits a creature threatened by another berbalang or berbalang duplicate with a claw attack, it may deal an additional 10 (3d6) slashing damage to the target."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The berbalang makes two melee attacks with its claws."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+   ]
+  },
+  {
+   "name": "Absorb Duplicate",
+   "text": [
+    "The berbalang reaborbs a duplicate it touches and immediately regains 40 hit points."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bladeling",
+ "size": "M",
+ "type": "humanoid (bladeling)",
+ "alignment": "lawful neutral",
+ "ac": "15 (scale mail)",
+ "hp": "11 (2d8 + 2)",
+ "speed": "30 ft.",
+ "str": "12",
+ "dex": "13",
+ "con": "12",
+ "int": "10",
+ "wis": "10",
+ "cha": "10",
+ "immune": "acid",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "Common, Infernal",
+ "cr": "1/2",
+ "trait": [],
+ "action": [
+  {
+   "name": "Longsword",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) slashing damage."
+   ]
+  },
+  {
+   "name": "Razor Storm (1/day)",
+   "text": [
+    "The bladeling launches the shrapnel-like metal bits from its skin, creatures in a 20-foot cone must make a DC 11 Dexterity saving throw, taking 7 (2d6) piercing damage on a failed saving throw, or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Blood Fiend",
+ "size": "M",
+ "type": "fiend",
+ "alignment": "chaotic evil",
+ "ac": "19 (natural armor)",
+ "hp": "168 (16d8 + 96)",
+ "speed": "30 ft.",
+ "str": "24",
+ "dex": "20",
+ "con": "22",
+ "int": "17",
+ "wis": "16",
+ "cha": "20",
+ "resist": "cold, lightning, bludgeoning, piercing, and slashing from nonmagical weapons that aren’t silvered",
+ "immune": "fire, poison",
+ "conditionImmune": "frightened, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "Abyssal",
+ "cr": "14",
+ "trait": [
+  {
+   "name": "Bloodthirst",
+   "text": [
+    "The bloodfiend has advantage on attack rolls against creatures that are currently below their maximum hit points."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The blood fiend can use its frightful presence. It then makes five melee attacks, one with its bite and four with its claws"
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) slashing damage."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 11 (1d8 + 7) piercing damage. If the target is a creature that is not undead or a construct, the blood fiend heals 9 (2d8) hit points immediately. If the target is a creature, it is grappled (escape DC 15). Until the grapple ends, the blood fiend can’t bite another creature."
+   ]
+  },
+  {
+   "name": "Frightful Presence",
+   "text": [
+    "Each creature of the blood fiend’s choice that is in a 15 foot radius around the blood fiend and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for one minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the blood fiend’s frightful presence for the next 24 hours."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bloodfire Ooze",
+ "size": "H",
+ "type": "ooze",
+ "alignment": "neutral evil",
+ "ac": "12",
+ "hp": "195 (17d12 + 85)",
+ "speed": "30 ft.",
+ "str": "22",
+ "dex": "15",
+ "con": "20",
+ "int": "5",
+ "wis": "11",
+ "cha": "4",
+ "resist": "acid, lightning",
+ "immune": "fire",
+ "conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, prone",
+ "senses": "blindsight 60 ft. (blind beyond this radius) passive",
+ "languages": "—",
+ "cr": "11",
+ "trait": [
+  {
+   "name": "Amorphous",
+   "text": [
+    "The ooze can move through a space as narrow as 1 inch wide without squeezing."
+   ]
+  },
+  {
+   "name": "Burning Blood",
+   "text": [
+    "A creature that touches the ooze, or hits it with a melee attack while within 5 feet of it, takes 9 (2d8) fire damage. Any nonmagical weapon made of wood that hits the ooze burns. After dealing damage, the weapon takes a permanent cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition of wood that hits the ooze is destroyed after dealing damage. The ooze can burn through 2-inch-thick, nonmagical wood in 1 round."
+   ]
+  },
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The ooze has advantage on saving throws against spells and magical effects."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The bloodfire ooze makes two melee attacks with its pseudopods."
+   ]
+  },
+  {
+   "name": "Pseudopods",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 16 (1d8 + 6) bludgeoning damage and 7 (2d6) fire damage."
+   ]
+  },
+  {
+   "name": "Flame Burst",
+   "text": [
+    "Any creature within 10 feet of the bloodfire ooze must make a DC 16 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Blighted Bloodfire",
+ "size": "H",
+ "type": "ooze",
+ "alignment": "neutral evil",
+ "ac": "12",
+ "hp": "195 (17d12 + 85)",
+ "speed": "30 ft.",
+ "str": "22",
+ "dex": "15",
+ "con": "22",
+ "int": "6",
+ "wis": "11",
+ "cha": "4",
+ "resist": "acid, lightning",
+ "immune": "fire, necrotic",
+ "conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, prone",
+ "senses": "blindsight 60 ft. (blind beyond this radius)",
+ "passive": "10",
+ "languages": "—",
+ "cr": "14",
+ "trait": [
+  {
+   "name": "Amorphous",
+   "text": [
+    "The ooze can move through a space as narrow as 1 inch wide without squeezing."
+   ]
+  },
+  {
+   "name": "Burning Blood",
+   "text": [
+    "A creature that touches the ooze or hits it with a melee attack while within 5 feet of it, takes 9 (2d8) fire damage and 4 (1d8) necrotic damage. Any nonmagical weapon made of wood that hits the ooze burns. After dealing damage, the weapon takes a permanent cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition of wood that hits the ooze is destroyed after dealing damage. The ooze can burn through 2-inch-thick, nonmagical wood in 1 round."
+   ]
+  },
+  {
+   "name": "Necrotic Aura",
+   "text": [
+    "A creature other than a construct or undead that starts its turn within 10 feet of a blighted bloodfire takes 4 (1d8) points of necrotic damage."
+   ]
+  },
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The ooze has advantage on saving throws against spells and magical effects."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The bloodfire ooze makes two melee attacks with its pseudopods and fires its necrotic blast. The necrotic blast does not suffer disadvantage from an enemy that is threatening the ooze."
+   ]
+  },
+  {
+   "name": "Pseudopods",
+   "text": [
+    "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (1d8 + 6) bludgeoning damage plus 7 (2d6) fire damage."
+   ]
+  },
+  {
+   "name": "Necrotic Blast",
+   "text": [
+    "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 10 (4d4) necrotic damage."
+   ]
+  },
+  {
+   "name": "Flame Burst",
+   "text": [
+    "Any creature within 10 feet of the bloodfire ooze must make a DC 17 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bloodhulk Crusher",
+ "size": "H",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "14 (natural armor)",
+ "hp": "362 (25d12 + 200)",
+ "speed": "30 ft.",
+ "str": "26",
+ "dex": "6",
+ "con": "26",
+ "int": "5",
+ "wis": "10",
+ "cha": "3",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "understands all languages it knew in life, but can’t speak",
+ "cr": "13",
+ "trait": [
+  {
+   "name": "Undead Fortitude",
+   "text": [
+    "If damage reduces the bloodhulk to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the bloodhulk drops to 1 hit point instead."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The bloodhulk makes two slam attacks."
+   ]
+  },
+  {
+   "name": "Slam",
+   "text": [
+    "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 35 (6d8 + 8) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bloodhulk Fighter",
+ "size": "M",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "13 (natural armor)",
+ "hp": "153 (18d8 + 72)",
+ "speed": "25 ft.",
+ "str": "18",
+ "dex": "10",
+ "con": "18",
+ "int": "5",
+ "wis": "10",
+ "cha": "3",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "understands all languages it knew in life, but can’t speak",
+ "cr": "5",
+ "trait": [
+  {
+   "name": "Undead Fortitude",
+   "text": [
+    "If damage reduces the bloodhulk to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the bloodhulk drops to 1 hit point instead."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The bloodhulk makes two slam attacks."
+   ]
+  },
+  {
+   "name": "Slam",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bloodhulk Giant",
+ "size": "L",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "14 (natural armor)",
+ "hp": "253 (22d10 + 132)",
+ "speed": "25 ft.",
+ "str": "22",
+ "dex": "8",
+ "con": "22",
+ "int": "5",
+ "wis": "10",
+ "cha": "3",
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "understands all languages it knew in life, but can’t speak",
+ "cr": "8",
+ "trait": [
+  {
+   "name": "Undead Fortitude",
+   "text": [
+    "If damage reduces the bloodhulk to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the bloodhulk drops to 1 hit point instead."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The bloodhulk makes two slam attacks."
+   ]
+  },
+  {
+   "name": "Slam",
+   "text": [
+    "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Unmarked Bodak",
+ "size": "M",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "14 (natural armor)",
+ "hp": "39 (6d8 + 12)",
+ "speed": "30 ft.",
+ "str": "13",
+ "dex": "15",
+ "con": "14",
+ "int": "2",
+ "wis": "12",
+ "cha": "12",
+ "skill": [
+  "Perception +3, Stealth +4"
+ ],
+ "resist": "cold, fire, necrotic, bludgeoning, piercing and slashing damage from nonmagical weapons",
+ "immune": "lightning, poison",
+ "conditionImmune": "charmed, frightened, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "understands any languages it knew in life but can’t speak",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Death Gaze",
+   "text": [
+    "If a creature starts its turn within 30 feet of the bodak and the two of them can see each other, the bodak can force the creature to make a DC 11 Constitution saving throw, if the bodak isn’t incapacitated, taking 10 (3d6) psychic damage on a failed save, or half as much damage on a successful one.",
+    "A creature that isn’t surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can’t see the bodak until the start of its next turn, when it can avert its eyes again.",
+    "A Medium humanoid creature that dies after being reduced to 0 hit points by this ability, transforms into an unmarked bodak within the next 24 hours.",
+    "True bodaks are immune to this ability."
+   ]
+  },
+  {
+   "name": "Sunlight Hypersensitivity",
+   "text": [
+    "A bodak that begins its turn in natural daylight, takes 5 radiant damage. While in sunlight, it has disadvantage on attack rolls and ability checks."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Fist",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Boggoul",
+ "size": "S",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "14",
+ "hp": "21 (6d6)",
+ "speed": "40 ft., climb 30 ft.",
+ "str": "10",
+ "dex": "18",
+ "con": "10",
+ "int": "5",
+ "wis": "12",
+ "cha": "6",
+ "skill": [
+  "Stealth +6"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "resist": "fire, necrotic",
+ "immune": "poison",
+ "conditionImmune": "charmed, exhaustion, poisoned",
+ "languages": "Sylvan",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Boggoul Bile",
+   "text": [
+    "The boggoul excretes a bilious fluid from its pores. The boggoul chooses whether the bile is noxious or paralyzing. It can change the property of its bile from one to another as a bonus action.",
+    "Noxious Bile: A creature other than an undead, that touches the boggoul takes 9 (2d8) necrotic damage.",
+    "Paralyzing Bile: A creature other than an elf or undead, that touches the boggoul must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+   ]
+  },
+  {
+   "name": "Dimensional Rift",
+   "text": [
+    "As a bonus action, the boggoul can create an invisible and immobile rift within an opening or frame it can see within 5 feet of it, provided that the space is no bigger than 10 feet on any side. The dimensional rift bridges the distance between that space and any point within 30 feet of it that the boggoul can see or specify by distance and direction (such as “30 feet straight up”). While next to the rift, the boggoul can see through it and is considered to be next to the destination as well, and anything the boggoul puts through the rift (including a portion of its body) emerges at the destination. Only the boggoul can use the rift, and it lasts until the end of the boggoul’s next turn."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Claw",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) slashing damage. If the boggoul is covered in noxious bile, and the target is a creature other than an undead, it takes an additional 4 (1d8) necrotic damage. If the boggoul is covered in paralyzing bile, and the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+   ]
+  },
+  {
+   "name": "Bile Puddle",
+   "text": [
+    "The boggoul creates a puddle of bile that is either noxious or paralyzing (boggoul’s choice). The puddle is 1 inch deep and covers the ground in the boggoul’s space. The puddle lasts 1 hour.",
+    "If the bile is noxious, any creature other than an undead, that enters the puddle’s area or starts its turn there must succeed on a DC 10 Constitution saving throw or take 9 (2d8) necrotic damage.",
+    "If the bile is paralyzing, any creature other than an elf or undead, that enters the puddle’s area or starts its turn there must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the start of each of its turns, ending the effect on itself on a success.",
+    "Creatures wearing footwear that is completely waterproof automatically succeed on saving throws against the bile puddle unless its depth reaches past the footwear."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Boneclaw",
+ "size": "L",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "16 (natural armor)",
+ "hp": "133 (14d10 + 56)",
+ "speed": "30 ft.",
+ "str": "20",
+ "dex": "18",
+ "con": "19",
+ "int": "13",
+ "wis": "14",
+ "cha": "19",
+ "resist": "necrotic",
+ "immune": "poison, cold",
+ "conditionImmune": "exhaustion, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "12",
+ "languages": "Common, Abyssal",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Quick Reaction",
+   "text": [
+    "A boneclaw has advantage on initiative rolls."
+   ]
+  },
+  {
+   "name": "No Passing",
+   "text": [
+    "The boneclaw gets an additional reaction every turn that can only be used to make opportunity attacks. A boneclaw may make opportunity attacks when creatures enter the reach of its claws. When a creature takes damage from a boneclaw’s opportunity attack, the creature’s speed is reduced to 0 for the rest of the turn."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The boneclaw makes two claw attacks."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 19 (3d6 + 5) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bonedrinker",
+ "size": "Medium or Small",
+ "type": "undead",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "97 (15d8 + 30)",
+ "speed": "30 ft.",
+ "str": "18",
+ "dex": "16",
+ "con": "15",
+ "int": "8",
+ "wis": "14",
+ "cha": "15",
+ "resist": "necrotic",
+ "immune": "poison",
+ "conditionImmune": "charmed, exhaustion, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "12",
+ "languages": "any languages it knew in life (usually Common and Goblin)",
+ "cr": "6",
+ "trait": [
+  {
+   "name": "Pounce",
+   "text": [
+    "If the bonedrinker moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the bonedrinker can make two tentacle attacks against it as a bonus action."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The bonedrinker makes two melee attacks with any combination of claws and tentacles."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+   ]
+  },
+  {
+   "name": "Tentacle",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, and the target is grappled (Escape DC 12). The bonedrinker has two tentacles, each of which can grapple one creature"
+   ]
+  },
+  {
+   "name": "Bonedrink",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage and 14 (4d6) necrotic damage. This attack can only be used against a creature the bonedrinker is grappling. Until the grapple ends or the bonedrinker uses its bonedrink ability on another creature, the target automatically takes 14 (4d6) necrotic damage at the beginning of each of the bonedrinker’s turns. Each time the bonedrinker deals necrotic damage with its bonedrink ability it gains half as many temporary hit points."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Bonesinger",
+ "size": "M",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "16 (studded leather)",
+ "hp": "32 (5d8 + 10)",
+ "speed": "30 ft.",
+ "str": "9",
+ "dex": "18",
+ "con": "14",
+ "int": "13",
+ "wis": "11",
+ "cha": "18",
+ "skill": [
+  "Acrobatics +4, Arcana +3, Deception +5, Performance +5"
+ ],
+ "immune": "poison, cold",
+ "conditionImmune": "exhaustion, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "any languages it knew in life",
+ "cr": "3",
+ "trait": [
+  {
+   "name": "Spellcasting",
+   "text": [
+    "The bonesinger is a 6th level spellcaster. It’s spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It knows the following bard spells:",
+    "Cantrips (at will): mage hand, true strike, vicious mockery",
+    "1st level (4 slots): disguise self, healing word, sleep, silent image",
+    "2nd level (3 slots): crown of madness, hold person",
+    "3rd level (2 slots): clairvoyance, fear"
+   ]
+  },
+  {
+   "name": "Bardic Inspiration (3/Day)",
+   "text": [
+    "As a bonus action, the bonesinger can inspire one creature other than itself. The creature gains a bardic inspiration die, a d8.",
+    "Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll or saving throw it makes. The creature adds this die after the roll is made but before success or failure is determined. A creature can only have one bardic inspiration die at a time."
+   ]
+  },
+  {
+   "name": "Cooperative Magic",
+   "text": [
+    "The bonesinger aids an allied bonesinger in casting a spell or using its Wind of Death action. Saving throws against the ally’s spell or Wind of Death have disadvantage, and spell attack rolls the ally makes have advantage. The bonesinger can only use this ability by using the Ready action to trigger when an allied bonesinger within 5 feet of the bonesinger casts a spell or uses its Wind of Death ability."
+   ]
+  },
+  {
+   "name": "Singing Bones",
+   "text": [
+    "As long as it is not affected by magical silence or submerged in water, the bonesinger has advantage on Charisma (Performance) checks and disadvantage on Dexterity (Stealth checks)."
+   ]
+  },
+  {
+   "name": "Instruments",
+   "text": [
+    "The bonesinger has proficiency with any three musical instruments."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Rapier",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Wind of Death",
+   "text": [
+    "The bonesinger summons a deathly magical wind, smelling of rotting corpses. The effect of this ability is identical to a gust of wind spell but creatures caught in the area must also succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Briarvex",
+ "size": "L",
+ "type": "Plant",
+ "alignment": "neutral evil",
+ "ac": "16 (natural armor)",
+ "hp": "95 (10d10 + 40)",
+ "speed": "30 ft.",
+ "str": "22",
+ "dex": "10",
+ "con": "18",
+ "int": "11",
+ "wis": "12",
+ "cha": "11",
+ "resist": "bludgeoning, piercing",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Common, Sylvan",
+ "cr": "5",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The briarvex’s innate spellcasting ability is Wisdom (spell save DC 12). It can innately cast the following spells, requiring no material components:",
+    "At will: entangle"
+   ]
+  },
+  {
+   "name": "Briarstride",
+   "text": [
+    "The briarvex is not slowed by forest terrain, can’t be restrained or slowed by entangle spells, and never takes damage from thorns, briars, or other hazardous plants in the terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The briarvex makes two melee attacks with its spikes."
+   ]
+  },
+  {
+   "name": "Spikes",
+   "text": [
+    "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) piercing damage. If the target is a creature, it must succeed on a DC 15 Dexterity saving throw or spikes embed themselves in its flesh. A creature can use an action to remove the spikes. As a bonus action, the briarvex can cause the spikes it embedded in a single creature that is within 100 feet and within line of sight of the briarvex to twist and burrow deeper, dealing 14 (4d6) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Cadaver Collector",
+ "size": "L",
+ "type": "construct",
+ "alignment": "unaligned",
+ "ac": "19 (natural armor)",
+ "hp": "133 (14d10 + 56)",
+ "speed": "30 ft.",
+ "str": "23",
+ "dex": "10",
+ "con": "18",
+ "int": "6",
+ "wis": "16",
+ "cha": "14",
+ "immune": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren’t adamantine",
+ "conditionImmune": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+ "senses": "darkvision 120 ft.",
+ "passive": "13",
+ "languages": "understands the languages of its creator but can’t speak",
+ "cr": "11",
+ "trait": [
+  {
+   "name": "Immutable Form",
+   "text": [
+    "The cadaver collector is immune to any spell or effect that would alter its form."
+   ]
+  },
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The cadaver collector has advantage on saving throws against spells and other magical effects."
+   ]
+  },
+  {
+   "name": "Magic Weapons",
+   "text": [
+    "The cadaver collector’s weapon attacks are magical."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The cadaver collector makes two fist attacks."
+   ]
+  },
+  {
+   "name": "Fist",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage and the target is grappled (escape DC 15). The cadaver collecter has two fists, each of which can grapple one Medium or smaller creature. Until the grapple ends, the fist can’t be used to make attacks."
+   ]
+  },
+  {
+   "name": "Impale",
+   "text": [
+    "The cadaver collector attempts to impale a Medium or Small creature it is grappling on its backspikes. It makes a Strength (Athletics) check contested by the creature’s Strength (Athletics) or Dexterity (Acrobatics) check. If the cadaver collector is successful, the grapple ends and the creature takes 27 (6d6 + 6) piercing damage and is restrained on the cadaver collector’s back, sharing space with the cadaver collector. On the cadaver collector’s following turns, the creature takes an additional 10 (3d6) piercing damage once per round if the collector moves or takes an action.",
+    "A creature can use an action to attempt to pull itself or another creature in arm’s reach free from the spikes by making a DC 16 Strength (Athletics) check. If the check is successful, the impaled creature is no longer restrained and drops off the cadaver collector’s back, immediately being moved to an unoccupied space within 5 feet of the collector.",
+    "The cadaver collector can have up to six Medium or Small creatures impaled on its backspikes."
+   ]
+  },
+  {
+   "name": "Paralyzing Breath (Recharge 5–6)",
+   "text": [
+    "The cadaver collector releases a paralyzing gas in a 20-foot cone. Creatures in the area must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Catfolk",
+ "size": "M",
+ "type": "humanoid (catfolk)",
+ "alignment": "chaotic good",
+ "ac": "12 (leather armor)",
+ "hp": "9 (2d8)",
+ "speed": "40 ft.",
+ "str": "9",
+ "dex": "12",
+ "con": "11",
+ "int": "10",
+ "wis": "10",
+ "cha": "12",
+ "skill": [
+  "Acrobatics +5, Perception +2"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "12",
+ "languages": "Common, Feline",
+ "cr": "1/4",
+ "trait": [
+  {
+   "name": "Savannah Stalker",
+   "text": [
+    "The catfolk has advantage on Dexterity (Stealth) and Dexterity (Acrobatics) checks made to move in plains terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Scimitar",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+   ]
+  },
+  {
+   "name": "Shortbow",
+   "text": [
+    "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Catfolk Hunter",
+ "size": "M",
+ "type": "humanoid (catfolk)",
+ "alignment": "chaotic good",
+ "ac": "15 (natural armor)",
+ "hp": "22 (4d8 + 4)",
+ "speed": "40 ft.",
+ "str": "8",
+ "dex": "16",
+ "con": "13",
+ "int": "12",
+ "wis": "13",
+ "cha": "12",
+ "skill": [
+  "Acrobatics +5, Perception +3, Stealth +5, Survival +3"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "Common, Feline",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Savannah Stalker",
+   "text": [
+    "The catfolk has advantage on Dexterity (Stealth) and Dexterity (Acrobatics) checks made to move in plains terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The catfolk hunter makes two melee attacks or two ranged attacks."
+   ]
+  },
+  {
+   "name": "Rapier",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+   ]
+  },
+  {
+   "name": "Shortbow",
+   "text": [
+    "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Toxic Cave Fisher",
+ "size": "M",
+ "type": "monstrosity",
+ "alignment": "unaligned",
+ "ac": "16 (natural armor)",
+ "hp": "67 (9d8 + 27)",
+ "speed": "30 ft., climb 30 ft.",
+ "str": "16",
+ "dex": "13",
+ "con": "16",
+ "int": "3",
+ "wis": "10",
+ "cha": "3",
+ "skill": [
+  "Perception +2, Stealth +5"
+ ],
+ "immune": "poison",
+ "conditionImmune": "poisoned",
+ "senses": "blindsight 60 ft.",
+ "passive": "12",
+ "languages": "—",
+ "cr": "3",
+ "trait": [
+  {
+   "name": "Fear of Fire",
+   "text": [
+    "If the cave fisher takes fire damage, it is frightened of the source of that damage for 1 round."
+   ]
+  },
+  {
+   "name": "Toxic Filament",
+   "text": [
+    "The cave fisher can use its action to extend a sticky filament up to 60 feet, and the filament adheres to anything that touches it. A creature adhered to the filament is grappled by the cave fisher (escape DC 13), and ability checks made to escape this grapple have disadvantage. A creature that begins its turn adhered to the cave fisher’s filament, must succeed on a DC 13 Constitution saving throw or become poisoned for one minute. While poisoned, the creature must succeed on a DC 13 Constitution saving throw at the start of each of its turns or be stunned for 1 round and take 4 (1d8) poison damage. A creature that succeeds on this saving throw on two consecutive turns, ends the poisoned condition on itself.",
+    "The filament can be attacked (AC 15; 5 hit points; immunity to poison and psychic damage; vulnerability to fire damage), but a weapon that fails to sever it becomes stuck to it, requiring an action and a successful DC 13 Strength check to pull free. Destroying the filament deals no damage to the cave fisher, which can extrude a replacement filament on its next turn."
+   ]
+  },
+  {
+   "name": "Volatile Blood",
+   "text": [
+    "If the cave fisher has half its maximum hit points or fewer, it must make a DC 13 Constitution saving throw each time it takes fire damage. If it fails the save, its blood combusts violently and the cave fisher takes 10 (3d6) slashing damage."
+   ]
+  },
+  {
+   "name": "Spider Climb",
+   "text": [
+    "The cave fisher can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The cave fisher makes two claw attacks."
+   ]
+  },
+  {
+   "name": "Claw",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+   ]
+  },
+  {
+   "name": "Filament",
+   "text": [
+    "One creature grappled by the cave fisher’s toxic filament must make a DC 12 Strength saving throw, provided that the target weighs 200 pounds or less. On a failure, the target is pulled into an unoccupied space within 5 feet of the cave fisher, and the cave fisher makes a claw attack against it as a bonus action. Reeling up the target releases anyone else who was attached to the filament. Until the grapple ends on the target, the cave fisher can’t extrude another filament."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Choker",
+ "size": "S",
+ "type": "aberration",
+ "alignment": "chaotic evil",
+ "ac": "14 (natural armor)",
+ "hp": "27 (6d6 + 6)",
+ "speed": "25 ft., climb 15 ft.",
+ "str": "16",
+ "dex": "14",
+ "con": "13",
+ "int": "7",
+ "wis": "13",
+ "cha": "7",
+ "skill": [
+  "Stealth +6"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Deep Speech",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Quickness",
+   "text": [
+    "The choker may make a dash action or a single tentacle attack as a bonus action."
+   ]
+  },
+  {
+   "name": "Ruin Camouflage",
+   "text": [
+    "The choker has advantage on Dexterity (Stealth) checks made to hide in stone buildings, ruins and in caves."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The choker makes two tentacle attacks."
+   ]
+  },
+  {
+   "name": "Tentacle",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 15). Until this grapple ends, the choker can automatically hit the target with its tentacle attacks, and the choker can’t make tentacle attacks against another target. Because the choker seizes the victims neck, the creature can’t breathe, speak or cast spells with verbal components."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Grove Choker",
+ "size": "S",
+ "type": "aberration",
+ "alignment": "chaotic evil",
+ "ac": "14 (natural armor)",
+ "hp": "27 (6d6 + 6)",
+ "speed": "25 ft., climb 15 ft.",
+ "str": "16",
+ "dex": "14",
+ "con": "13",
+ "int": "7",
+ "wis": "13",
+ "cha": "7",
+ "skill": [
+  "Stealth +6"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Deep Speech",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Quickness",
+   "text": [
+    "The choker may make a dash action or a single tentacle attack as a bonus action."
+   ]
+  },
+  {
+   "name": "Forest Camouflage",
+   "text": [
+    "The choker has advantage on Dexterity (Stealth) checks made to hide in forest terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The choker makes two tentacle attacks."
+   ]
+  },
+  {
+   "name": "Tentacle",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 15). Until this grapple ends, the choker can automatically hit the target with its tentacle attacks, and the choker can’t make tentacle attacks against another target. Because the choker seizes the victims neck, the creature can’t breathe, speak or cast spells with verbal components."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Chraal",
+ "size": "L",
+ "type": "elemental",
+ "alignment": "neutral evil",
+ "ac": "17 (natural armor)",
+ "hp": "114 (12d10 + 48)",
+ "speed": "30 ft.",
+ "str": "19",
+ "dex": "10",
+ "con": "18",
+ "int": "9",
+ "wis": "10",
+ "cha": "14",
+ "immune": "poison, cold",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "Primordial (doesn’t speak)",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Death Throes",
+   "text": [
+    "When the chraal dies, it explodes in a blast of freezing cold and ice shrapnel. Creatures within 30 feet of the chraal must make a DC 14 Constitution saving throw, taking 9 (2d8) cold damge and 9 (2d8) piercing damage on a failed saving throw or half as much on a successful one."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The chraal makes three melee attacks: two with its claws and one with its bite."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage and 3 (1d6) cold damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage and 3 (1d6) cold damage."
+   ]
+  },
+  {
+   "name": "Ice Breath (Recharge 5-6)",
+   "text": [
+    "The chraal exhales freezing cold air in a 60 foot cone. Creatures in the area must make a DC 14 Constitution saving throw, taking 27 (6d8) cold damage on a failed save or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Clockroach",
+ "size": "S",
+ "type": "construct",
+ "alignment": "unaligned",
+ "ac": "12 (natural armor)",
+ "hp": "14 (4d6)",
+ "speed": "30 ft., burrow 15 ft., climb 30 ft.",
+ "str": "10",
+ "dex": "11",
+ "con": "11",
+ "int": "1",
+ "wis": "11",
+ "cha": "10",
+ "immune": "acid, poison",
+ "conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
+ "senses": "tremorsense 60 ft.",
+ "passive": "10",
+ "languages": "understands the languages of its creator but can’t speak",
+ "cr": "1/4",
+ "trait": [],
+ "action": [
+  {
+   "name": "Pincers",
+   "text": [
+    "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage plus 3 (1d6) acid damage."
+   ]
+  },
+  {
+   "name": "Acid Spew (Recharge 6)",
+   "text": [
+    "The clockroach projects a 30 feet long and 5 feet wide line of corrrosive acid. Creatures in the area must make a DC 12 Dexterity saving throw, taking 7 (2d6) acid damage on a failed save or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Crucian",
+ "size": "M",
+ "type": "humanoid (crucian)",
+ "alignment": "lawful neutral",
+ "ac": "17 (natural armor)",
+ "hp": "22 (3d8 + 9)",
+ "speed": "20 ft.",
+ "str": "15",
+ "dex": "9",
+ "con": "16",
+ "int": "11",
+ "wis": "10",
+ "cha": "10",
+ "skill": [
+  "Persuasion +4, Insight +4"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "Common, Draconic",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Withdraw",
+   "text": [
+    "While the crucian is prone, its armored shell is especially effective at protecting it. While prone, a crucian has an AC of 21."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Maul",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Crypt Thing",
+ "size": "M",
+ "type": "undead",
+ "alignment": "neutral",
+ "ac": "16 (natural armor)",
+ "hp": "44 (8d8 + 8)",
+ "speed": "30 ft.",
+ "str": "10",
+ "dex": "16",
+ "con": "13",
+ "int": "11",
+ "wis": "15",
+ "cha": "12",
+ "skill": [
+  "Athletics +2, Acrobatics +5, Intimidation +3, Perception +4, Persuasion +5"
+ ],
+ "resist": "necrotic",
+ "immune": "poison, cold",
+ "conditionImmune": "exhaustion, frightened, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "any languages it knew in life",
+ "cr": "3",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The crypt thing’s innate spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no material components:",
+    "6/day: dimension door"
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The crypt thing makes two claw attacks."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+   ]
+  },
+  {
+   "name": "Scatter Intruders (1/Day)",
+   "text": [
+    "The crypt thing attempts to scatter would-be defilers by transporting them magically. All enemies within 30 feet of the crypt thing must succeed on a DC 12 Charisma saving throw or be teleported 10d10 x 10 feet in a random direction. Teleported targets arrive safely in an open space at their new location, being shifted up or down by the shortest possible distance if the space is occupied by a solid object."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Cursed Spirit",
+ "size": "M",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "11",
+ "hp": "38 (7d8 + 7)",
+ "speed": "0 ft., fly 30 ft.",
+ "str": "8",
+ "dex": "13",
+ "con": "12",
+ "int": "9",
+ "wis": "11",
+ "cha": "14",
+ "skill": [
+  "Intimidation +4"
+ ],
+ "resist": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons that aren’t silvered",
+ "immune": "necrotic, poison",
+ "conditionImmune": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "any languages it knew in life",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Curse Aura",
+   "text": [
+    "Enemies within 5 feet of the cursed spirit have disadvantage on all saving throws."
+   ]
+  },
+  {
+   "name": "Ethereal Sight",
+   "text": [
+    "The cursed spirit can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+   ]
+  },
+  {
+   "name": "Incorporeal Movement",
+   "text": [
+    "The cursed spirit can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Accursed Touch",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 16 (4d6 + 2) necrotic damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+}
+);

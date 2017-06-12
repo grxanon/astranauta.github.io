@@ -12,6 +12,7 @@ function parsesource (src) {
 	if (source == "lost mine of phandelver") source = "LMoP";
 	if (source == "Tales from the Yawning Portal") source = "TYP";
 	if (source == "tome of beasts") source = "ToB 3pp";
+	if (source == "critter compendium") source = "CC 3pp";
 	return source;
 }
 
@@ -27,6 +28,7 @@ function parsesourcename (src) {
 	if (source == "lost mine of phandelver") source = "Lost Mine of Phandelver";
 	if (source == "tome of beasts") source = "Tome of Beasts (3pp)";
 	if (source == "Tales from the Yawning Portal") source = "Tales from the Yawning Portal";
+	if (source == "critter compendium") source = "Critter Compendium (3pp)";
 	return source;
 }
 
