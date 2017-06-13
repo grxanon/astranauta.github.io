@@ -7923,5 +7923,2244 @@ monsterdata.compendium.monster.push(
  ],
  "reaction": [],
  "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Death Giant",
+ "size": "H",
+ "type": "giant",
+ "alignment": "neutral evil",
+ "ac": "17 (half plate)",
+ "hp": "276 (24d12 + 120)",
+ "speed": "50 ft., climb 20 ft.",
+ "str": "26",
+ "dex": "14",
+ "con": "21",
+ "int": "12",
+ "wis": "18",
+ "cha": "20",
+ "save": "Dex +6, Con +10, Wis +9",
+ "skill": [
+  "Athletics +13, Perception +9"
+ ],
+ "immune": "necrotic",
+ "senses": "darkvision 60 ft.",
+ "passive": "19",
+ "languages": "Common, Giant",
+ "cr": "15",
+ "trait": [
+  {
+   "name": "Frightful Keening",
+   "text": [
+    "The death giant uses its action to make the guardian souls surrounding it wail in anguish until the giant uses another action to end the keening. Creatures within 60 ft. who can hear the keening must succeed on a DC 18 Wisdom saving throw or be frightened of the death giant until they can no longer hear the keening or are out of range. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful, the creature is immune to the giant’s frightful keening for the next 24 hours."
+   ]
+  },
+  {
+   "name": "Guardian Spirits",
+   "text": [
+    "The death giant is constantly surrounded by the souls of its victims, which swirl around it and warn it of danger. The death giant has advantage on Wisdom (Perception) checks and Initiative rolls.",
+    "The guardian spirits can be suppressed by a cleric’s turn undead, a paladin’s turn the unholy ability, or similar abilities. When the death giant is in the area of effect or becomes the target of such an ability, it must make a Charisma saving throw against the ability’s save DC. On a failed save the giant’s guardian spirits are suppressed for the duration of the ability.",
+    "While they are suppressed the giant loses its immunity to necrotic damage, does not benefit from the advantage the guardian spirits provide, from steal soul and cannot use its frightful keening. If the frightful keening is already in effect, it immediately ends. The death giant can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+   ]
+  },
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The giant’s innate spellcasting ability is Charisma (spell save DC 18). The giant can innately cast the following spells, requiring no material components:",
+    "3/day each: dispel magic, inflict wounds, blight",
+    "1/day: flame strike"
+   ]
+  },
+  {
+   "name": "Steal Soul",
+   "text": [
+    "A creature that starts its turn within 30 feet of a death giant must succeed on a DC 18 Constitution saving throw or take 18 (4d8) necrotic damage. If a creature dies within 15 feet of the death giant, the death giant absorbs the creature’s soul and it becomes one of the giant’s guardian spirits. The creature cannot be brought back from the dead, until the death giant is slain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The giant makes two melee attacks with its greataxe."
+   ]
+  },
+  {
+   "name": "Greataxe",
+   "text": [
+    "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27 (3d12 + 8) slashing damage."
+   ]
+  },
+  {
+   "name": "Rock",
+   "text": [
+    "Ranged Weapon Attack: +13 to hit, range 60/240 ft., one target. Hit: 30 (4d10+8) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Wild Giant",
+ "size": "L",
+ "type": "giant",
+ "alignment": "chaotic neutral",
+ "ac": "16 (hide, shield, 14 without shield)",
+ "hp": "104 (11d10 + 44)",
+ "speed": "40 ft.",
+ "str": "18",
+ "dex": "15",
+ "con": "18",
+ "int": "9",
+ "wis": "14",
+ "cha": "10",
+ "save": "Dex +5, Con +7, Wis +5",
+ "skill": [
+  "Athletics +7, Perception +5, Survival +5"
+ ],
+ "resist": "cold, lightning",
+ "senses": "",
+ "passive": "15",
+ "languages": "Common, Giant, Sylvan",
+ "cr": "5",
+ "trait": [],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The giant makes two attacks with its waraxe or with its longbow."
+   ]
+  },
+  {
+   "name": "Waraxe",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+   ]
+  },
+  {
+   "name": "Greatbow",
+   "text": [
+    "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 11 (2d8 + 2) piercing damage."
+   ]
+  },
+  {
+   "name": "Rock",
+   "text": [
+    "Ranged Weapon Attack: +7 to hit, range 60/240 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Wild Giant Bearskin",
+ "size": "L",
+ "type": "giant",
+ "alignment": "chaotic neutral",
+ "ac": "14 (hide) in giant form, 16 (natural armor) in bear form",
+ "hp": "126 (12d10 + 60)",
+ "speed": "40 ft., climb 30 ft.",
+ "str": "20",
+ "dex": "15",
+ "con": "20",
+ "int": "9",
+ "wis": "14",
+ "cha": "10",
+ "save": "Str +8, Dex +5, Con +8, Wis +5",
+ "skill": [
+  "Athletics +8, Perception +5, Survival +5"
+ ],
+ "resist": "cold, lightning",
+ "senses": "",
+ "passive": "15",
+ "languages": "Common, Giant, Sylvan",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Bear’s Hide",
+   "text": [
+    "The bearskin can use its action to polymorph into a Large bear-humanoid hybrid, or back into its true giant form. It’s statistics, other than AC are the same in each form its. The bearskin’s hide armor is transformed with it, other equipment it is wearing or carrying is not transformed."
+   ]
+  },
+  {
+   "name": "Bear Speech",
+   "text": [
+    "The bearskin can speak with bears as if under the constant effect of a speak with animals spell."
+   ]
+  },
+  {
+   "name": "Feral Rage",
+   "text": [
+    "While in bear form, the bearskin has resistance to bludgeoning, piercing and slashing damage and a +2 bonus to melee weapon damage (already included in its bite and claw attacks)."
+   ]
+  },
+  {
+   "name": "Keen Smell",
+   "text": [
+    "The bearskin has advantage on Wisdom (Perception) checks that rely on smell."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "In giant form, the bearskin makes two attacks with its fists. In bear form, it makes three melee attacks: one with its bite and two with its claws."
+   ]
+  },
+  {
+   "name": "Fist (Giant Form Only)",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+   ]
+  },
+  {
+   "name": "Rock (Giant Form Only)",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 16 (2d10+5) bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Bite (Bear Form Only)",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws (Bear Form Only)",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) slashing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Wild Giant Huntmaster",
+ "size": "L",
+ "type": "giant",
+ "alignment": "chaotic neutral",
+ "ac": "15 (leather)",
+ "hp": "142 (15d10 + 60)",
+ "speed": "50 ft.",
+ "str": "20",
+ "dex": "18",
+ "con": "18",
+ "int": "12",
+ "wis": "18",
+ "cha": "14",
+ "save": "Dex +6, Con +10, Wis +9",
+ "skill": [
+  "Athletics +8, Perception +11, Survival +11"
+ ],
+ "resist": "cold, lightning",
+ "senses": "",
+ "passive": "21",
+ "languages": "Common, Giant, Sylvan",
+ "cr": "8",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The huntmaster’s innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components:",
+    "At will: faerie fire, hunter’s mark",
+    "1/day each: locate creature"
+   ]
+  },
+  {
+   "name": "Swift Pursuit",
+   "text": [
+    "The huntmaster and a group of up to five other creatures can travel at a fast pace without taking the usual –5 penalty to their passive Wisdom (Perception) to notice hidden threats. Additionally, the huntmaster can track creatures and still contribute its passive Wisdom (Perception) score to the group’s chance of noticing hidden threats."
+   ]
+  },
+  {
+   "name": "Elk’s Charge",
+   "text": [
+    "If the huntmaster moves at least 20 feet straight toward a target and then hits it with a melee attack on the same turn, the target takes an extra 11 (2d10) damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone."
+   ]
+  },
+  {
+   "name": "Elk Speech",
+   "text": [
+    "The huntmaster can speak with elks and other types of deer as if under the constant effect of a speak with animals spell."
+   ]
+  },
+  {
+   "name": "Huntmaster’s Mark",
+   "text": [
+    "Weapon attacks made by the huntmaster’s allies against a creature affected by the huntmaster’s hunter’s mark spell benefit from the spell’s additional damage as if the allies had cast the spell. This ability does not stack with the extra damage from hunter’s mark spells cast by other creatures."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The huntmaster makes two pike attacks."
+   ]
+  },
+  {
+   "name": "Pike",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage."
+   ]
+  },
+  {
+   "name": "Rock",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Wild Giant Ravenspeaker",
+ "size": "L",
+ "type": "giant",
+ "alignment": "chaotic neutral",
+ "ac": "16 (leather)",
+ "hp": "114 (12d10 + 48)",
+ "speed": "40 ft.",
+ "str": "18",
+ "dex": "20",
+ "con": "18",
+ "int": "10",
+ "wis": "16",
+ "cha": "14",
+ "save": "Dex +8, Con +7, Wis +6",
+ "skill": [
+  "Perception +6, Survival +6, Stealth +8"
+ ],
+ "resist": "cold, lightning",
+ "senses": "",
+ "passive": "16",
+ "languages": "Common, Giant, Sylvan",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The huntmaster’s innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components:",
+    "At will: animal messenger (ravens only)",
+    "1/day each: pass without trace, moonbeam"
+   ]
+  },
+  {
+   "name": "Call Murder",
+   "text": [
+    "The ravenspeaker can use its action to summon a swarm of ravens. This swarm uses the normal statistics for a swarm of ravens except that it is a Large swarm, has a challenge rating of 3, 72 hit points (16d10 – 16) and its beaks deal 21 (6d6) piercing damage, or 10 (3d6) if the swarm has half of its hit points or fewer.",
+    "The swarm appears anywhere within 60 feet of the ravenspeaker. It acts on the ravenspeaker’s initiative and obeys the ravenspeaker’s commands. The swarm lasts until the ravenspeaker dismisses it at any point during one of its turns (no action required).",
+    "If the swarm has taken damage before it was dismissed it returns the next time the ravenspeaker summons it with that many hit points plus 1d8 hit points for every full hour it has been dismissed. If the swarm of ravens is destroyed, the ravenspeaker cannot summon it again for 24 hours, after which the swarm can be summoned again at full health.",
+    "If the ravenspeaker is knocked unconscious or dies, the swarm automatically scatters and disappears."
+   ]
+  },
+  {
+   "name": "Raven’s Flight",
+   "text": [
+    "As a bonus action the ravenspeaker can sprout a pair of large ghostly raven wings, gaining a 50-foot fly speed, while in darkness or dim light. It can dismiss the wings at any time (no action required)."
+   ]
+  },
+  {
+   "name": "Raven Speech",
+   "text": [
+    "The ravenspeaker can speak with ravens and other types of crow birds as if under the constant effect of a speak with animals spell."
+   ]
+  },
+  {
+   "name": "Sneak Attack (1/Turn)",
+   "text": [
+    "The ravenspeaker deals an extra 14 (4d6) damage when it hits a target with a melee weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the ravenspeaker that isn’t incapacitated and the ravenspeaker doesn’t have disadvantage on the attack roll."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The ravenspeaker makes two attacks with its war pick."
+   ]
+  },
+  {
+   "name": "War Pick",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 5) piercing damage."
+   ]
+  },
+  {
+   "name": "Rock",
+   "text": [
+    "Ranged Weapon Attack: +7 to hit, range 60/240 ft., one target. Hit: 16 (2d10+4) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Girallon Alpha",
+ "size": "L",
+ "type": "monstrosity",
+ "alignment": "unaligned",
+ "ac": "15 (natural armor)",
+ "hp": "95 (10d10 + 40)",
+ "speed": "40 ft., climb 40 ft.",
+ "str": "20",
+ "dex": "16",
+ "con": "18",
+ "int": "8",
+ "wis": "12",
+ "cha": "9",
+ "skill": [
+  "Athletics +8, Perception +4, Stealth +5"
+ ],
+ "senses": "",
+ "passive": "14",
+ "languages": "—",
+ "cr": "6",
+ "trait": [
+  {
+   "name": "Aggressive",
+   "text": [
+    "As a bonus action, the girallon can move up to its speed toward a hostile creature it can see."
+   ]
+  },
+  {
+   "name": "Keen Smell",
+   "text": [
+    "The girallon has advantage on Wisdom (Perception) checks that rely on smell."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The girallon makes five melee attacks: one with its bite and four with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
+   ]
+  },
+  {
+   "name": "Claw",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) slashing damage."
+   ]
+  },
+  {
+   "name": "Rock",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 30/60 ft., one target. Hit: 22 (5d6 + 5) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Gray Render",
+ "size": "L",
+ "type": "monstrosity",
+ "alignment": "unaligned",
+ "ac": "17 (natural armor)",
+ "hp": "119 (13d10 + 48)",
+ "speed": "30 ft.",
+ "str": "20",
+ "dex": "10",
+ "con": "22",
+ "int": "5",
+ "wis": "13",
+ "cha": "8",
+ "skill": [
+  "Perception +4"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "—",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Many-Eyed",
+   "text": [
+    "The gray render has advantage on Wisdom (Perception) checks that rely on sight."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The gray render makes three melee attacks: one with its bite and two with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage and the target is grappled (escape DC 16). Until this grapple ends, the targets is restrained and the gray render can use a bonus action to deal an additional 15 (3d6 + 5) slashing damage to the target each turn and the gray render may not use its bite against another target."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage"
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Gremlin",
+ "size": "T",
+ "type": "fey",
+ "alignment": "chaotic evil",
+ "ac": "12",
+ "hp": "14 (4d4 + 4)",
+ "speed": "30 ft.",
+ "str": "8",
+ "dex": "15",
+ "con": "12",
+ "int": "18",
+ "wis": "16",
+ "cha": "13",
+ "skill": [
+  "Acrobatics +4, Athletics +3, Stealth +6"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "Common, Elven, Goblin",
+ "cr": "1/4",
+ "trait": [
+  {
+   "name": "Sabotaging Presence",
+   "text": [
+    "Creatures, other than gremlins, within 30 feet of the gremlin have disadvantage on all Ability checks made using tools."
+   ]
+  },
+  {
+   "name": "Gremlin Tactics",
+   "text": [
+    "The gremlin can move through, but not end its move in a square occupied by a Medium or larger creature, even an enemy, without being slowed."
+   ]
+  },
+  {
+   "name": "Nimble Escape",
+   "text": [
+    "The gremlin can take the Disengage or Hide action as a bonus action on each of its turns."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The gremlin makes two claw attacks."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+   ]
+  },
+  {
+   "name": "Slip-Up",
+   "text": [
+    "The gremlin magically compels a target within 30 feet to trip over their own feet or slip. The target must succeed on a DC 14 Wisdom saving throw or be knocked prone."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Grisgol",
+ "size": "L",
+ "type": "construct",
+ "alignment": "unaligned",
+ "ac": "19 (natural armor)",
+ "hp": "153 (18d10 + 54)",
+ "speed": "30 ft.",
+ "str": "18",
+ "dex": "10",
+ "con": "16",
+ "int": "6",
+ "wis": "11",
+ "cha": "18",
+ "resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
+ "immune": "poison, psychic",
+ "conditionImmune": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "all languages of the lich whose phylactery animates it",
+ "cr": "12",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The grisgol’s innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:",
+    "At will: ray of frost (17th level)",
+    "1/day each: cloudkill, counterspell, dimension door, disintegrate, finger of death, invisibility, power word stun, shield"
+   ]
+  },
+  {
+   "name": "Choking Dust",
+   "text": [
+    "A creature that hits the grisgol with a melee attack that deals damage other than piercing damage while within 5 feet of it must succeed on a DC 15 Constitution saving throw against disease or have its hit point maximum reduced by 13 (3d8). Every 24 hours after contracting the disease, the creature must make another Constitution saving throw, having its hit point maximum reduced by another 13 (3d8). The creature’s hit point maximum is not restored to its normal maximum until the disease is cured. If a creature’s hit point maximum becomes 0, it dies, its insides having turned to infectious goo."
+   ]
+  },
+  {
+   "name": "Immutable Form",
+   "text": [
+    "The grisgol is immune to any spell or effect that would alter its form."
+   ]
+  },
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The grisgol has advantage on saving throws against spells and other magical effects."
+   ]
+  },
+  {
+   "name": "Magic Weapons",
+   "text": [
+    "The grisgol’s claw attacks are magical."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The grisgol makes two attacks with its claws."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 10 (3d6) cold damage and the target must succeed on a DC 16 Constitution saving throw or be paralyzed for one minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Gulgar",
+ "size": "L",
+ "type": "elemental",
+ "alignment": "neutral",
+ "ac": "16 (half plate, shield, or 14 without shield)",
+ "hp": "82 (10d10 + 27)",
+ "speed": "30 ft.",
+ "str": "19",
+ "dex": "9",
+ "con": "17",
+ "int": "10",
+ "wis": "12",
+ "cha": "13",
+ "save": "Str +7",
+ "skill": [
+  "Athletics +7, Perception +4"
+ ],
+ "resist": "bludgeoning, piercing, and slashing from nonmagical weapons that are not adamantine",
+ "immune": "thunder",
+ "senses": "darkvision 60 ft., tremorsense 30 ft.",
+ "passive": "14",
+ "languages": "Terran",
+ "cr": "5",
+ "trait": [
+  {
+   "name": "Subsonic Speech",
+   "text": [
+    "While capable of speaking Primordial, Gulgar’s voices are in a subsonic range that they can still hear, but most other creatures can’t."
+   ]
+  },
+  {
+   "name": "Crystalline Bone",
+   "text": [
+    "The gulgar’s slam and gore attacks are adamantine."
+   ]
+  },
+  {
+   "name": "Hearing",
+   "text": [
+    "The gulgar has advantage on Wisdom (Perception) checks based on hearing, but it has disadvantage on Wisdom (Perception) checks not based on hearing."
+   ]
+  },
+  {
+   "name": "Smith’s Tools",
+   "text": [
+    "The gulgar has proficiency with smith’s tools."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The gulgar makes two ranged attacks with its mighty longbow or three melee attacks: two with its warhammer or its slam, and one with its gore."
+   ]
+  },
+  {
+   "name": "Warhammer",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Slam",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Gore",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Mighty Longbow",
+   "text": [
+    "Ranged Weapon Attack: +8 to hit, range 100/400 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Sonic Pulse",
+   "text": [
+    "The gulgar emits a powerful vocal pulse in a 40-foot cone. Creatures in the area must succeed on a DC 14 Constitution saving throw or take 9 (2d8) thundering damage and become deafened for 1 hour."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Harbinger Beast",
+ "size": "L",
+ "type": "monstrosity",
+ "alignment": "neutral",
+ "ac": "16 (natural armor)",
+ "hp": "189 (18d10 + 90)",
+ "speed": "40 ft.",
+ "str": "20",
+ "dex": "13",
+ "con": "20",
+ "int": "3",
+ "wis": "16",
+ "cha": "11",
+ "save": "Str +9, Con +9, Int +0, Wis +7,",
+ "immune": "necrotic, poison",
+ "conditionImmune": "poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "13",
+ "languages": "telepathy 60 ft.",
+ "cr": "10",
+ "trait": [
+  {
+   "name": "Aura of Tragedy",
+   "text": [
+    "A creature that fails a death saving throw within 25 feet of the harbinger beast, must remove one success from its previous death saving throws if it has any and gains disadvantage on its next death saving throw."
+   ]
+  },
+  {
+   "name": "Fateful Call",
+   "text": [
+    "As a bonus action, the harbinger beast magically calls a creature it can see within 60 feet of it. The target must succeed on a DC 15 Wisdom saving throw or be charmed for one round. While charmed, the creature must use its full speed to move toward the harbinger beast as directly as possible. It can only move around obstacles if it can’t enter the obstacle’s space."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Gore",
+   "text": [
+    "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 23 (4d8 + 5) piercing damage."
+   ]
+  },
+  {
+   "name": "Poison Breath (Recharge 5-6)",
+   "text": [
+    "The harbinger beast exhales a poisonous gas in a 30 foot cone. Creatures in the area must make a DC 16 Constitution saving throw, becoming poisoned for 1 hour and taking 58 (17d6) poison damage on a failed save, or half as much damage on a successful one."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Harpoon Spider",
+ "size": "H",
+ "type": "monstrosity",
+ "alignment": "chaotic evil",
+ "ac": "18 (natural armor)",
+ "hp": "103 (9d12 + 45)",
+ "speed": "40 ft., climb 40 ft.",
+ "str": "22",
+ "dex": "16",
+ "con": "20",
+ "int": "14",
+ "wis": "12",
+ "cha": "9",
+ "skill": [
+  "Athletics +9, Perception +4, Stealth +9"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "Undercommon, Deep Speech",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Spider Climb",
+   "text": [
+    "The harpoon spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   ]
+  },
+  {
+   "name": "Spines",
+   "text": [
+    "A creature touching the harpoon spider takes 7 (2d6) piercing damage."
+   ]
+  },
+  {
+   "name": "Web Walker",
+   "text": [
+    "The harpoon spider ignores movement restrictions caused by webbing."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The harpoon spider makes two ranged attacks with its fangs. It does not incur disadvantage from being within melee range of an enemy."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) piercing damage plus 9 (2d8) poison damage and the target must succeed on a DC 15 Constitution saving throw or be poisoned for 1 hour."
+   ]
+  },
+  {
+   "name": "Fang",
+   "text": [
+    "Ranged Weapon Attack: +9 to hit, range 20 ft., one target. Hit: 16 (3d6 + 6) piercing damage plus 4 (1d8) poison damage and the target is grappled (escape DC 17) and pulled directly toward the harpoon spider to an unoccupied space within 5 feet of it. The harpoon spider may make a bite attack against the target as a bonus action.",
+    "The harpoon spider has two fangs, each of which can grapple one target. Until the grapple ends, the harpoon spider can’t use the fang to attack."
+   ]
+  },
+  {
+   "name": "Impale",
+   "text": [
+    "The harpoon spider attempts to impale a Medium or smaller creature it is grappling on its backspikes. It makes a Strength (Athletics) check contested by the creature’s Strength (Athletics) or Dexterity (Acrobatics) check. If the harpoon spider is successful, the grapple ends and the creature takes 15 (3d6 + 5) piercing damage and is restrained on the harpoon spider’s back.",
+    "A creature can use an action to attempt to pull itself or another creature in arm’s reach free from the spikes by making a DC 15 Strength (Athletics) check. If the check is successful, the impaled creature is no longer restrained and drops off the harpoon spider’s back, immediately being moved to an unoccupied space within 5 feet of the harpoon spider.",
+    "The harpoon spider can have up to six Medium or smaller creatures impaled on its backspikes."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Howler",
+ "size": "L",
+ "type": "fiend",
+ "alignment": "chaotic evil",
+ "ac": "14 (natural armor)",
+ "hp": "45 (6d10 + 12)",
+ "speed": "50 ft.",
+ "str": "19",
+ "dex": "15",
+ "con": "15",
+ "int": "8",
+ "wis": "14",
+ "cha": "8",
+ "senses": "darkvision 60 ft.",
+ "passive": "12",
+ "languages": "understands Abyssal but can’t speak",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Howling",
+   "text": [
+    "Creatures other than celestials, elementals, and fiends, that hear the howling of one or more howlers for an hour or longer must succeed on a DC 8 Wisdom saving throw or take 3 (1d6) psychic damage and gain disadvantage on Wisdom and Charisma checks and saving throws until they finish a long rest without hearing a howler’s howling. Creatures exposed to the howling for longer than an hour must repeat the saving throw each full hour. While exposed to continuous howling, a creature cannot benefit from short rests and a long rest instead has the effects of a short rest.",
+    "A creature, that is reduced to 0 hit points by this psychic damage, falls unconscious and is automatically stable, not taking any further damage from the howling until it is above 0 hit points again."
+   ]
+  },
+  {
+   "name": "Hit and Run",
+   "text": [
+    "If the howler hits a creature with its quills, that creature can’t make an opportunity against the Howler this turn."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The howler makes two melee attacks, one with its bite and one with its quills."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Quills",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (3d4 + 4) piercing damage and the target must succeed on a DC 12 Dexterity saving throw or 1d4 quills break off the howler and remain lodged in the target’s flesh. While lodged in the creature’s flesh, the quills impose disadvantage on attack rolls and Dexterity and Strength checks and saving throws the creature makes.",
+    "As an action, a creature can remove howler quills from itself or another creature within arm’s reach by making a DC 15 Wisdom (Medicine) check. If the check fails, the quills are still removed, but the target takes 3 (1d6) slashing damage per quill that was removed."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Howler Wasp",
+ "size": "S",
+ "type": "monstrosity",
+ "alignment": "chaotic evil",
+ "ac": "13 (natural armor)",
+ "hp": "16 (3d6 + 6)",
+ "speed": "10 ft., fly 50 ft.",
+ "str": "12",
+ "dex": "13",
+ "con": "15",
+ "int": "5",
+ "wis": "13",
+ "cha": "6",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "—",
+ "cr": "1/4",
+ "trait": [
+  {
+   "name": "Pheromone",
+   "text": [
+    "If the howler wasp is reduced to 0 hit points or fewer by a melee attack, before it dies or falls unconscious, it can as a reaction spray the attacker with a pheromone that incites other howler wasps to violently pursue the attacker. The attacker must succeed on a DC 11 Dexterity saving throw or be doused in the pheromone. While the creature is doused, other howler wasps have advantage on attack rolls against the creature. The pheromone fades after 10 minute or can be washed off by submerging the creature in water."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The howler wasp makes two melee attacks, one with its bite and one with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+   ]
+  },
+  {
+   "name": "Sting",
+   "text": [
+    "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 4 (1d8) poison."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Howler Wasp Soldier",
+ "size": "M",
+ "type": "monstrosity",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "46 (6d8 + 18)",
+ "speed": "10 ft., fly 50 ft.",
+ "str": "16",
+ "dex": "12",
+ "con": "17",
+ "int": "6",
+ "wis": "14",
+ "cha": "7",
+ "skill": [
+  "Perception +4"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "—",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Pheromone",
+   "text": [
+    "If the howler wasp soldier is reduced to 0 hit points or fewer by a melee attack, before it dies or falls unconscious, it can as a reaction spray the attacker with a pheromone that incites other howler wasps to violently pursue the attacker. The attacker must succeed on a DC 13 Dexterity saving throw or be doused in the pheromone. While the creature is doused, other howler wasps have advantage on attack rolls against the creature. The pheromone fades after 10 minutes, or can be washed off by submerging the creature in water."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The howler wasp soldier makes three melee attacks, one with its bite and two with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +57 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage."
+   ]
+  },
+  {
+   "name": "Sting",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 9 (2d8) poison damage and the target must succeed on a DC 13 Constitution saving throw or be poisoned until it finishes a long rest."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Howler Wasp Queen",
+ "size": "L",
+ "type": "monstrosity",
+ "alignment": "chaotic evil",
+ "ac": "16 (natural armor)",
+ "hp": "76 (8d10 + 32)",
+ "speed": "20 ft.",
+ "str": "18",
+ "dex": "11",
+ "con": "18",
+ "int": "8",
+ "wis": "15",
+ "cha": "8",
+ "skill": [
+  "Perception +4"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "—",
+ "cr": "4",
+ "trait": [
+  {
+   "name": "Pheromone",
+   "text": [
+    "If the howler wasp queen is reduced to 0 hit points or fewer by a melee attack, before it dies or falls unconscious, it can as a reaction spray the attacker with a pheromone that incites other howler wasps to violently pursue the attacker. The attacker must succeed on a DC 15 Dexterity saving throw or be doused in the pheromone. While the creature is doused, other howler wasps have advantage on attack rolls against the creature. The pheromone fades after 10 minutes, or can be washed off by submerging the creature in water."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The howler wasp queen makes three melee attacks, one with its bite and two with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+   ]
+  },
+  {
+   "name": "Sting",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 13 (3d8) poison damage and the target must succeed on a DC 15 Constitution saving throw or be poisoned until it finishes a long rest."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Howling Echo",
+ "size": "M",
+ "type": "undead",
+ "alignment": "neutral evil",
+ "ac": "15",
+ "hp": "39 (6d8 + 12)",
+ "speed": "0 ft., fly 50 ft.",
+ "str": "5",
+ "dex": "20",
+ "con": "14",
+ "int": "2",
+ "wis": "14",
+ "cha": "16",
+ "resist": "acid, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons that aren’t silvered",
+ "immune": "cold, necrotic, poison",
+ "conditionImmune": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+ "senses": "blindsight 60 ft., darkvision 60 ft.",
+ "passive": "12",
+ "languages": "—",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Ethereal Sight",
+   "text": [
+    "The howling echo can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+   ]
+  },
+  {
+   "name": "Vanish by Day",
+   "text": [
+    "When exposed to natural sunlight, the howling echo fades from existence. Unless it was slain, it reforms the next night in the same place it originally spawned, with full hit points and any ongoing conditions removed."
+   ]
+  },
+  {
+   "name": "Incorporeal Movement",
+   "text": [
+    "The howling echo can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+   ]
+  },
+  {
+   "name": "Oblivious of its Nature",
+   "text": [
+    "The howling echo can’t use its incorporeal movement knowingly, it only passes through creatures or objects it is unaware of, or if it is forced by an outside source. A howling echo must always try to end its movement in contact with what it deems to be solid ground."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Fangs",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) cold damage. If the target is a creature, it must succeed on a DC 13 Charisma saving throw or be knocked prone."
+   ]
+  },
+  {
+   "name": "Howl",
+   "text": [
+    "The howling echo emits a bone-chlling howl. Creatures within 60 feet that can hear must succeed on a DC 13 Wisdom saving throw or be frightened for one round. While frightened, a creature is also stunned. A creature that succeeds on its saving throw is immune to all howling echoes’ howl ability for 1 minute."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Ibixian",
+ "size": "M",
+ "type": "humanoid (ibixian)",
+ "alignment": "neutral",
+ "ac": "13 (studded leather)",
+ "hp": "19 (3d8 + 6)",
+ "speed": "30 ft.",
+ "str": "15",
+ "dex": "12",
+ "con": "14",
+ "int": "9",
+ "wis": "8",
+ "cha": "10",
+ "skill": [
+  "Intimidation +2"
+ ],
+ "senses": "",
+ "passive": "9",
+ "languages": "—",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Pack Fervor",
+   "text": [
+    "If the ibixian is within 30 feet of another allied ibixian, it adds 2 (1d4) damage to its greataxe attacks and has advantage on saving throws against being frightened."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The ibixian makes two melee attacks, one with its greataxe and one with its headbutt."
+   ]
+  },
+  {
+   "name": "Greataxe",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 8 (1d12 + 2) slashing damage."
+   ]
+  },
+  {
+   "name": "Headbutt",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Igneous Strider",
+ "size": "M",
+ "type": "monstrosity",
+ "alignment": "unaligned",
+ "ac": "13 (natural armor)",
+ "hp": "15 (2d8 + 6)",
+ "speed": "50 ft.",
+ "str": "15",
+ "dex": "14",
+ "con": "17",
+ "int": "3",
+ "wis": "9",
+ "cha": "8",
+ "skill": [
+  "Acrobatics +4"
+ ],
+ "immune": "fire",
+ "senses": "",
+ "passive": "9",
+ "languages": "—",
+ "cr": "1/4",
+ "trait": [
+  {
+   "name": "Fire Healing",
+   "text": [
+    "Whenever the igneous strider is subjected to fire damage, it may attempt a DC 16 Constitution check. On a success, it regains a number of hit points equal to half the damage dealt."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 2) piercing damage."
+   ]
+  },
+  {
+   "name": "Fire Gout (Recharge 5–6)",
+   "text": [
+    "Ranged Weapon Attack: +4 to hit, range 30/60 ft., one target. Hit: 7 (2d6) fire damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Inferno Spider",
+ "size": "L",
+ "type": "elemental",
+ "alignment": "unaligned",
+ "ac": "17 (natural armor)",
+ "hp": "152 (16d10 + 64)",
+ "speed": "40 ft., climb 40 ft.",
+ "str": "18",
+ "dex": "16",
+ "con": "18",
+ "int": "7",
+ "wis": "11",
+ "cha": "11",
+ "skill": [
+  "Perception +3, Stealth +9"
+ ],
+ "immune": "fire, poison",
+ "conditionImmune": "poisoned",
+ "senses": "blindsight 15 ft., darkvision 60 ft.",
+ "passive": "13",
+ "languages": "—",
+ "cr": "6",
+ "trait": [
+  {
+   "name": "Molten Body",
+   "text": [
+    "A creature that touches the inferno spider or hits it with a melee attack while within 5 feet of it takes 10 (3d6) fire damage."
+   ]
+  },
+  {
+   "name": "Spider Climb",
+   "text": [
+    "The inferno spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+   ]
+  },
+  {
+   "name": "Web Sense",
+   "text": [
+    "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+   ]
+  },
+  {
+   "name": "Web Walker",
+   "text": [
+    "The inferno spider ignores movement restrictions caused by webbing."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage and the target must succeed on a DC 14 Constitution or be poisoned for 1 hour. A poisoned creature takes 10 (3d6) fire damage at the start of each of its turns. At the end of each of its turns the creature can repeat the saving throw, ending the effect on itself on a success."
+   ]
+  },
+  {
+   "name": "Flame Web",
+   "text": [
+    "The inferno spider shoots flaming strands of webbing at a Large or smaller creature within 60 feet. The target must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) fire damage and be restrained. While restrained, the creature takes 10 (3d6) fire damage at the start of each of its turns.",
+    "As an action, a creature may attempt a DC 15 Strength or Dexterity check to free itself of the web. The webbing can also be destroyed by attacking it. The webbing has AC 10, 10 hit points, resistance to bludgeoning damage, immunity to fire damage and vulnerability to cold damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Iron Cobra",
+ "size": "M",
+ "type": "construct",
+ "alignment": "unaligned",
+ "ac": "15 (natural armor)",
+ "hp": "37 (5d8 + 15)",
+ "speed": "30 ft.",
+ "str": "12",
+ "dex": "17",
+ "con": "16",
+ "int": "2",
+ "wis": "11",
+ "cha": "1",
+ "skill": [
+  "Stealth +7"
+ ],
+ "resist": "bludgeoning, piercing and slashing from nonmagical weapons",
+ "immune": "poison, psychic",
+ "conditionImmune": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+ "senses": "darkvision 60 ft.",
+ "passive": "10",
+ "languages": "understands all languages of its creator but can’t speak",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Locate Victim",
+   "text": [
+    "If an iron cobra is ordered by its creator to kill an individual and given that individual’s first name, the iron cobra knows that creature’s location as if having cast locate creature. The effect lasts until the target is dead or the iron cobra gets different orders."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) poison damage and the target must succeed on a DC 13 Constitution saving throw or be poisoned until it finishes a long rest."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Kopru",
+ "size": "M",
+ "type": "aberration",
+ "alignment": "chaotic evil",
+ "ac": "13 (natural armor)",
+ "hp": "36 (5d8)",
+ "speed": "5 ft., swim 40 ft.",
+ "str": "15",
+ "dex": "14",
+ "con": "11",
+ "int": "11",
+ "wis": "12",
+ "cha": "10",
+ "save": "Con +2",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Aquan, Common",
+ "cr": "1",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The kopru’s innate spellcasting ability is Wisdom (spell save DC 11). It can innately cast the following spells, requiring no material components:",
+    "1/day: dominate person"
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The kopru makes three melee attacks, one with its bite, one with its claws and one with its tail."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+   ]
+  },
+  {
+   "name": "Tail",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage. and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, the kopru can automatically hit the target with its tail, and the kopru can’t make tail attacks against other targets."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Kopru Abomination",
+ "size": "L",
+ "type": "aberration",
+ "alignment": "chaotic evil",
+ "ac": "15 (natural armor)",
+ "hp": "60 (8d10 + 16)",
+ "speed": "5 ft., swim 40 ft.",
+ "str": "19",
+ "dex": "12",
+ "con": "15",
+ "int": "5",
+ "wis": "12",
+ "cha": "10",
+ "save": "Con +2",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "understands Aquan but can’t speak",
+ "cr": "3",
+ "trait": [],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The kopru makes three melee attacks, one with its bite, one with its claws and one with its tail."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+   ]
+  },
+  {
+   "name": "Tail",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, the kopru can automatically hit the target with its tail, and the kopru can’t make tail attacks against other targets."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Krenshar",
+ "size": "M",
+ "type": "monstrosity",
+ "alignment": "neutral",
+ "ac": "12 (natural armor)",
+ "hp": "13 (3d8)",
+ "speed": "50 ft.",
+ "str": "14",
+ "dex": "15",
+ "con": "11",
+ "int": "11",
+ "wis": "14",
+ "cha": "10",
+ "skill": [
+  "Intimidation +4, Perception +4, Stealth +6"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "—",
+ "cr": "1/2",
+ "trait": [
+  {
+   "name": "Keen Smell",
+   "text": [
+    "The krenshar has advantage on Wisdom (Perception) checks that rely on smell."
+   ]
+  },
+  {
+   "name": "Pounce",
+   "text": [
+    "If the krenshar moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the krenshar can make one bite attack against it as a bonus action."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+   ]
+  },
+  {
+   "name": "Scare",
+   "text": [
+    "The krenshar pulls back the skin from its head, revealing muscle and bone and lets out a high pitched screech. Creatures that can see and hear the krenshar must succeed on a DC 12 Wisdom saving throw or be frightened for one minute. A creature can repeat the save at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the krenshar’s Scare ability for the next 24 hours."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Hatchling Kruthik",
+ "size": "S",
+ "type": "monstrosity",
+ "alignment": "lawful evil",
+ "ac": "15 (natural armor)",
+ "hp": "27 (6d6 + 6)",
+ "speed": "50 ft.",
+ "str": "13",
+ "dex": "18",
+ "con": "13",
+ "int": "7",
+ "wis": "13",
+ "cha": "10",
+ "skill": [
+  "Stealth +6"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Infernal",
+ "cr": "1/2",
+ "trait": [
+  {
+   "name": "Keen Smell",
+   "text": [
+    "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+   ]
+  },
+  {
+   "name": "Forest Camouflage",
+   "text": [
+    "The kruthik has advantage on Dexterity (Stealth) checks made to hide in forest terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Talon",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Adult Kruthik",
+ "size": "M",
+ "type": "monstrosity",
+ "alignment": "lawful evil",
+ "ac": "18 (natural armor)",
+ "hp": "42 (8d8 + 6)",
+ "speed": "40 ft.",
+ "str": "15",
+ "dex": "20",
+ "con": "13",
+ "int": "7",
+ "wis": "13",
+ "cha": "10",
+ "skill": [
+  "Stealth +7"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "Infernal",
+ "cr": "3",
+ "trait": [
+  {
+   "name": "Keen Smell",
+   "text": [
+    "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+   ]
+  },
+  {
+   "name": "Forest Camouflage",
+   "text": [
+    "The kruthik has advantage on Dexterity (Stealth) checks made to hide in forest terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The kruthik makes two attacks, one with its bite, and one with its talon, or two with its spikes."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage."
+   ]
+  },
+  {
+   "name": "Talon",
+   "text": [
+    "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage."
+   ]
+  },
+  {
+   "name": "Spikes",
+   "text": [
+    "Ranged Weapon Attack: +7 to hit, range 50/100 ft., one target. Hit: 9 (1d8 + 5) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Greater Kruthik",
+ "size": "L",
+ "type": "monstrosity",
+ "alignment": "lawful evil",
+ "ac": "19 (natural armor)",
+ "hp": "95 (10d10 + 40)",
+ "speed": "40 ft.",
+ "str": "24",
+ "dex": "18",
+ "con": "19",
+ "int": "7",
+ "wis": "13",
+ "cha": "10",
+ "skill": [
+  "Stealth +7"
+ ],
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "—",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Keen Smell",
+   "text": [
+    "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+   ]
+  },
+  {
+   "name": "Forest Camouflage",
+   "text": [
+    "The kruthik has advantage on Dexterity (Stealth) checks made to hide in forest terrain."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The kruthik makes three melee attacks, one with its bite, and one with its talon and one with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) piercing damage plus 5 (2d4) acid damage."
+   ]
+  },
+  {
+   "name": "Talon",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) slashing damage plus 5 (2d4) acid damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 12 (2d4 + 7) slashing damage plus 5 (2d4) acid damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Larva Mage",
+ "size": "M",
+ "type": "swarm of Tiny aberrations",
+ "alignment": "neutral evil",
+ "ac": "15 (18 with mage armor)",
+ "hp": "202 (24d8 + 96)",
+ "speed": "30 ft.",
+ "str": "13",
+ "dex": "20",
+ "con": "18",
+ "int": "20",
+ "wis": "14",
+ "cha": "10",
+ "save": "Con +11, Int +12, Wis +9",
+ "skill": [
+  "Arcana +12, Insight +9, Perception +9, Religion +12"
+ ],
+ "resist": "bludgeoning, lightning, piercing, slashing",
+ "immune": "poison",
+ "conditionImmune": "blinded, charmed, frightened, paralyzed, petrified, poisoned, prone, restrained, stunned",
+ "senses": "blindsight 300 ft. (blind beyond this range)",
+ "languages": "Common, Deep Speech",
+ "cr": "22",
+ "trait": [
+  {
+   "name": "Discorporate",
+   "text": [
+    "At any point during its turn, the larva mage can collapse into a pile of individual worms that slither away, burrowing into the earth or fleeing into cracks in the floor (no action required). As long as any of the worms survive, they can breed and create a new body for the larva mage a few weeks or months later, depending on the amount of damage the larva mage has taken (the exact time is up to DM discretion)."
+   ]
+  },
+  {
+   "name": "Legendary Resistance (3/Day)",
+   "text": [
+    "If the larva mage fails a saving throw, it can choose to succeed instead."
+   ]
+  },
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The larva mage has advantage on saving throws against spells and other magical effects."
+   ]
+  },
+  {
+   "name": "Spellcasting",
+   "text": [
+    "A larva mage is a 20th level spellcaster. Its spellcasting ability is intelligence (Spell save DC 20, +12 to hit with spell attacks), it has the following wizard spells prepared:",
+    "Cantrips (at will): chill touch, fire bolt, mage hand, true strike",
+    "1st level (4 slots): false life, magic missile, mage armor, ray of sickness",
+    "2nd level (3 slots): crown of madness, mirror image, phantasmal force, scorching ray",
+    "3rd level (3 slots): fear, fireball, fly, slow",
+    "4th level (3 slots): dimension door, evard’s black tentacles, greater invisibility",
+    "5th level (3 slots): cloudkill, hold monster, scrying",
+    "6th level (2 slots): chain lightning, eyebite",
+    "7th level (2 slots): finger of death, prismatic spray",
+    "8th level (1 slot): mind blank, power word stun",
+    "9th level (1 slot): imprisonment"
+   ]
+  },
+  {
+   "name": "Swarm",
+   "text": [
+    "The larva mage can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny larva. However it may have to leave some of its gear behind if the opening is too small."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Corrupting Touch",
+   "text": [
+    "Melee Weapon Attack: +12 to hit, reach 5 ft., Hit: 18 (4d8) necrotic damage and the target must succeed on a DC 19 Constitution saving throw or be poisoned until it finishes a long rest."
+   ]
+  },
+  {
+   "name": "Engulf (Recharge 5–6)",
+   "text": [
+    "Melee Weapon Attack: +12 to hit, reach 0 ft., one target in the larva mage’s space. Hit: 70 (20d6) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": [
+  {
+   "name": "",
+   "text": [
+    "The larva mage can make 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The larva mage regains spent legendary actions at the start of its turn."
+   ]
+  },
+  {
+   "name": "Cantrip",
+   "text": [
+    "The larva mage casts a cantrip."
+   ]
+  },
+  {
+   "name": "Corrupting Touch",
+   "text": [
+    "The larva mage uses its corrupting touch action."
+   ]
+  },
+  {
+   "name": "Horrific Visage (Costs 2 Actions)",
+   "text": [
+    "The larva mage displays its writhing face to one creature it can see within 10 feet of it. The target must succeed on a DC 19 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target is immune to the larva mage’s visage for the next 24 hours."
+   ]
+  }
+ ]
+},
+{
+ "source": "critter compendium",
+ "name": "Worm That Walks",
+ "size": "H",
+ "type": "swarm of Tiny aberrations",
+ "alignment": "neutral evil",
+ "ac": "20 (natural armor)",
+ "hp": "337 (25d12 + 175)",
+ "speed": "30 ft.",
+ "str": "25",
+ "dex": "16",
+ "con": "24",
+ "int": "25",
+ "wis": "14",
+ "cha": "10",
+ "save": "Con +15, Int +15, Wis +10, Cha +8",
+ "skill": [
+  "Arcana +15, Insight +10, Perception +10, Religion +15"
+ ],
+ "resist": "bludgeoning, cold, fire, piercing, slashing",
+ "immune": "lightning, poison",
+ "conditionImmune": "blinded, charmed, frightened, paralyzed, petrified, poisoned, prone, restrained, stunned",
+ "senses": "blindsight 500 ft. (blind beyond this range)",
+ "languages": "Common, Deep Speech, magically understands and speaks all languages",
+ "cr": "28",
+ "trait": [
+  {
+   "name": "Anathematic Secrecy",
+   "text": [
+    "The Worm that Walks can’t be magically scryed upon. Any spell attempting to detect or scry on the Worm automatically fails."
+   ]
+  },
+  {
+   "name": "Create Spawn",
+   "text": [
+    "A Medium or smaller humanoid slain by the Worm’s Corrupting Slam, Worm Smite or Engulf abilities rises at the start of the next round as a spawn of Kyuss (see Volo’s Guide to Monsters, p. 192). Roll initiative for the spawn separately."
+   ]
+  },
+  {
+   "name": "Discorporate",
+   "text": [
+    "At any point during its turn, the Worm that Walks may collapse into a pile of individual worms that slither away, burrowing into the earth or fleeing into cracks in the floor (no action required). As long as any of the worms survive, they can breed and create a new body for the Worm that Walks a few months or years later, depending on the amount of damage the Worm that Walks has taken (the exact time is up to DM discretion)."
+   ]
+  },
+  {
+   "name": "Legendary Resistance (3/Day)",
+   "text": [
+    "If the Worm fails a saving throw, it can choose to succeed instead."
+   ]
+  },
+  {
+   "name": "Magic Resistance",
+   "text": [
+    "The Worm has advantage on saving throws against spells and other magical effects."
+   ]
+  },
+  {
+   "name": "Spellcasting",
+   "text": [
+    "The Worm that Walks mage is a 20th level spellcaster. Its spellcasting ability is intelligence (Spell save DC 23, +15 to hit with spell attacks), it can only cast spells in humanoid form, and has the following wizard spells prepared:",
+    "Cantrips (at will): chill touch, fire bolt, mage hand, true strike",
+    "1st level (4 slots): false life, magic missile, mage armor, ray of sickness",
+    "2nd level (3 slots): crown of madness, mirror image, phantasmal force, scorching ray",
+    "3rd level (3 slots): fear, fireball, fly, slow",
+    "4th level (3 slots): dimension door, evard’s black tentacles, greater invisibility",
+    "5th level (3 slots): cloudkill, hold monster, scrying",
+    "6th level (2 slots): chain lightning, eyebite",
+    "7th level (2 slots): finger of death, prismatic spray",
+    "8th level (1 slot): mind blank, power word stun",
+    "9th level (1 slot): power word kill"
+   ]
+  },
+  {
+   "name": "Swarm",
+   "text": [
+    "The Worm that Walks can occupy another creature’s space and vice versa, and the swarm can move through any opening large enough for a Tiny larva. However it may have to leave some of its gear behind if the opening is too small."
+   ]
+  },
+  {
+   "name": "Worm Smite (Recharge 6)",
+   "text": [
+    "If the Worm hits a creature with its Corrupting Slam, it may cover the target in ravenous worms. The target must succeed on a DC 21 Dexterity saving throw or be covered in worms until the worms are destroyed or removed. While covered in worms a creature takes 35 (10d6) piercing damage at the start of each of its turns. A creature may use its action to repeat the saving throw, removing the worms on a success. Dealing a total of at least 20 fire or acid damage to the target also destroys the worms. The worms are removed if the Worm that Walks dies or uses its Discorporate ability."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The Worm that Walks casts a spell and uses either its Corrupting Touch or Engulf attack."
+   ]
+  },
+  {
+   "name": "Corrupting Slam",
+   "text": [
+    "Melee Weapon Attack: +15 to hit, reach 15 ft., Hit: 21 (4d6 + 7) bludgeoning damage plus 36 (8d8) necrotic damage and the target must succeed on a DC 21 Constitution saving throw or be poisoned until it finishes a long rest."
+   ]
+  },
+  {
+   "name": "Engulf (Recharge 5–6)",
+   "text": [
+    "Melee Weapon Attack: +15 to hit, reach 0 ft., one target in the worm’s space. Hit: 140 (40d6) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": [
+  {
+   "name": "",
+   "text": [
+    "The Worm that Walks can make 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Worm regains spent legendary actions at the start of its turn."
+   ]
+  },
+  {
+   "name": "Spell",
+   "text": [
+    "The Worm casts a cantrip or spell of up to 5th level."
+   ]
+  },
+  {
+   "name": "Horrific Visage (Costs 2 Actions)",
+   "text": [
+    "The Worm displays its writhing face to one creature it can see within 30 feet of it. The target must succeed on a DC 23 Wisdom saving throw against this magic or become frightened for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target’s saving throw is successful or the effect ends for it, the target is immune to the Worm’s visage for the next 24 hours."
+   ]
+  },
+  {
+   "name": "Corrupting Slam (Costs 2 Actions)",
+   "text": [
+    "The Worm uses its Corrupting Slam."
+   ]
+  }
+ ]
+},
+{
+ "source": "critter compendium",
+ "name": "Blackscale Lizardfolk",
+ "size": "L",
+ "type": "humanoid (lizardfolk)",
+ "alignment": "neutral",
+ "ac": "16 (natural armor)",
+ "hp": "37 (5d10 + 10)",
+ "speed": "40 ft., swim 30 ft.",
+ "str": "18",
+ "dex": "10",
+ "con": "15",
+ "int": "8",
+ "wis": "11",
+ "cha": "7",
+ "skill": [
+  "Athletics +6, Perception +2, Survival +4"
+ ],
+ "senses": "",
+ "passive": "12",
+ "languages": "Draconic",
+ "cr": "2",
+ "trait": [
+  {
+   "name": "Hold Breath",
+   "text": [
+    "The lizardfolk can hold its breath for 15 minutes."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The lizardfolk makes two melee attacks, one with its bite, and one with its warhammer."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  },
+  {
+   "name": "Warhammer",
+   "text": [
+    "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage."
+   ]
+  },
+  {
+   "name": "Javelin",
+   "text": [
+    "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Poison Dusk Lizardfolk",
+ "size": "S",
+ "type": "humanoid (lizardfolk)",
+ "alignment": "neutral",
+ "ac": "14 (natural armor)",
+ "hp": "13 (3d6 + 3)",
+ "speed": "30 ft.",
+ "str": "12",
+ "dex": "15",
+ "con": "12",
+ "int": "11",
+ "wis": "12",
+ "cha": "9",
+ "skill": [
+  "Athletics +3, Perception +3, Stealth +6, Survival +5"
+ ],
+ "senses": "",
+ "passive": "13",
+ "languages": "Draconic",
+ "cr": "1/2",
+ "trait": [
+  {
+   "name": "Chameleon Skin",
+   "text": [
+    "The lizardfolk has advantage on Dexterity (Stealth) checks made to hide in natural terrain."
+   ]
+  },
+  {
+   "name": "Poisoner’s Kit",
+   "text": [
+    "The lizardfolk has proficiency with poisoner’s kit."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Shortsword",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage and the target musct succeed on a DC 11 Constitution saving throw or take 4 (1d8) poison damage and be poisoned until it finishes a long rest."
+   ]
+  },
+  {
+   "name": "Shortbow",
+   "text": [
+    "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage and the target musct succeed on a DC 11 Constitution saving throw or take 4 (1d8) poison damage and be poisoned until it finishes a long rest."
+   ]
+  },
+  {
+   "name": "Bola",
+   "text": [
+    "Ranged Weapon Attack: +4 to hit, range 20/80 ft., one target. Hit: If the target is a Large or smaller creature, it is grappled (escape DC 12) and must succeed on a DC 12 Dexterity saving throw or be knocked prone. If the target has functional hands, it can end the grapple using an action without having to roll. The bola is considered the grappler, not the user."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Sunscale Lizardfolk",
+ "size": "M",
+ "type": "humanoid (lizardfolk)",
+ "alignment": "neutral",
+ "ac": "15 (chain shirt)",
+ "hp": "13 (2d8 + 4)",
+ "speed": "30 ft., climb 30 ft.",
+ "str": "14",
+ "dex": "14",
+ "con": "14",
+ "int": "10",
+ "wis": "15",
+ "cha": "10",
+ "skill": [
+  "Athletics +4, Perception +4, Religion +2"
+ ],
+ "resist": "fire",
+ "senses": "darkvision 60 ft.",
+ "passive": "14",
+ "languages": "Draconic",
+ "cr": "1/4",
+ "trait": [
+  {
+   "name": "Smoke Tolerance",
+   "text": [
+    "The lizardfolk can comfortably breathe air saturated with smoke, as long as it is not created by burning substances that release toxic material when on fire, and have advantage on saving throws against poisons inhaled through smoke."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Longsword",
+   "text": [
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d10 + 2) slashing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Lodestone Marauder",
+ "size": "L",
+ "type": "monstrosity",
+ "alignment": "unaligned",
+ "ac": "16 (natural armor)",
+ "hp": "114 (12d10 + 48)",
+ "speed": "30 ft., burrow 20 ft., climb 20 ft.",
+ "str": "20",
+ "dex": "13",
+ "con": "18",
+ "int": "4",
+ "wis": "12",
+ "cha": "8",
+ "senses": "darkvision 60 ft.",
+ "passive": "11",
+ "languages": "—",
+ "cr": "7",
+ "trait": [
+  {
+   "name": "Magnetic Defense",
+   "text": [
+    "When attacked with melee attacks using metal weapons or ranged attacks using metallic projectiles, a lodestone marauder can choose to cause the attacks to have advantage or disadvantage to hit."
+   ]
+  },
+  {
+   "name": "Magnetic Surge",
+   "text": [
+    "Using a bonus action, the lodestone marauder can use the magnetic field surrounding it to repulse or attract metallic objects. Any creature within 30 feet of the lodestone Marauder, wielding weapons or shields or wearing armor made substantially of metal must succeed on a DC 15 Strength saving throw or drop any metallic weapons and, if they are wearing metallic armor, be knocked prone.",
+    "Unattended metallic objects and prone creatures are then moved in a straight line directly toward or away from the lodestone marauder, depending on whether it chose to repulse or attract them.",
+    "If the marauder chose to repulse, creatures and objects come to a stop 30 feet away from the marauder. If the marauder chose to attract creatures and objects are pulled onto the marauder’s back where they stick magnetically. A creature pulled onto a lodestone marauder’s back is restrained and must succeed on a DC 15 Dexterity saving throw or take 13 (2d8 + 4) piercing damage.",
+    "A creature may use its action to pull itself, another creature or an object free of the lodestone marauders back by making a successful DC 15 Strength check. Andy objects and creatures are automatically released the next time the marauder uses its ability to repulse."
+   ]
+  },
+  {
+   "name": "Metal Sense",
+   "text": [
+    "A lodestone marauder can sense metal within 30 feet of it, from changes in its magnetic field, as though it had blindsight up to that range."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The lodestone marauder makes two melee attacks: one with its bite, and one with its claws."
+   ]
+  },
+  {
+   "name": "Bite",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
+   ]
+  },
+  {
+   "name": "Claws",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
+},
+{
+ "source": "critter compendium",
+ "name": "Lunar Ravager",
+ "size": "L",
+ "type": "fey",
+ "alignment": "chaotic evil",
+ "ac": "18 (breastplate, shield)",
+ "hp": "114 (12d10 + 48)",
+ "speed": "40 ft.",
+ "str": "21",
+ "dex": "16",
+ "con": "18",
+ "int": "11",
+ "wis": "14",
+ "cha": "8",
+ "skill": [
+  "Perception +5"
+ ],
+ "senses": "darkvision 120 ft.",
+ "passive": "15",
+ "languages": "Sylvan",
+ "cr": "5",
+ "trait": [
+  {
+   "name": "Innate Spellcasting",
+   "text": [
+    "The lunar ravager’s innate spellcasting ability is Wisdom (spell save DC 13). It can innately cast the following spells, requiring no material components:",
+    "At will: airwalk, faerie fire",
+    "3/day each: invisibility (self only), pass without trace",
+    "1/day: clairvoyance"
+   ]
+  },
+  {
+   "name": "Moonrider",
+   "text": [
+    "The lunar ravager can magically teleport at will by concentrating and not taking any other actions for 1 minute. The lunar ravager can use this only to teleport itself and items it is wearing or carrying. When outside a lunar ravager lodge, the lunar ravager must be in moonlight to use this ability and can only travel to the nearest lodge. When inside a lunar ravager lodge, it can teleport to any point within 10 miles of the lodge."
+   ]
+  }
+ ],
+ "action": [
+  {
+   "name": "Multiattack",
+   "text": [
+    "The lunar ravager makes two melee attacks with its battleaxe."
+   ]
+  },
+  {
+   "name": "Battleaxe",
+   "text": [
+    "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+   ]
+  },
+  {
+   "name": "Javelin",
+   "text": [
+    "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
+   ]
+  }
+ ],
+ "reaction": [],
+ "legendary": []
 }
 );
