@@ -1224,7 +1224,8 @@ monsterdata.compendium.monster.push(
  "resist": "acid, lightning",
  "immune": "fire",
  "conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, prone",
- "senses": "blindsight 60 ft. (blind beyond this radius) passive",
+ "senses": "blindsight 60 ft. (blind beyond this radius)",
+ "passive": "10",
  "languages": "—",
  "cr": "11",
  "trait": [
@@ -4019,7 +4020,7 @@ monsterdata.compendium.monster.push(
   {
    "name": "Bites",
    "text": [
-    "Melee Weapon Attack: +11 to hit, reach 0 ft ., one creature in the swarm’s space. Hit: 28 (8d6) piercing damage, or 14 (4d6) piercing damage if the swarm has half of its hit points or fewer."
+    "Melee Weapon Attack: +11 to hit, reach 0 ft., one creature in the swarm’s space. Hit: 28 (8d6) piercing damage, or 14 (4d6) piercing damage if the swarm has half of its hit points or fewer."
    ]
   },
   {
@@ -4205,7 +4206,7 @@ monsterdata.compendium.monster.push(
   {
    "name": "Spore Flight",
    "text": [
-    "If the spore lord is not incapacitated, it can transform into a spore cloud at the start of its move. While in this form, the spore lord gains a 40-foot fly speed, immunity to the charmed, frightened , paralyzed, petrified, prone, restrained and stunned conditions (if it was subject to any of these conditions, the condition immediately ends), can occupy another creature’s space and vice versa, and the spore lord can move through any opening large enough for a Tiny spore. The spore lord can’t regain hit points, gain temporary hit points or use any action other than dash or dodge while in this form. It may assume its normal form at the start or end of its move on the same or any following turn.",
+    "If the spore lord is not incapacitated, it can transform into a spore cloud at the start of its move. While in this form, the spore lord gains a 40-foot fly speed, immunity to the charmed, frightened, paralyzed, petrified, prone, restrained and stunned conditions (if it was subject to any of these conditions, the condition immediately ends), can occupy another creature’s space and vice versa, and the spore lord can move through any opening large enough for a Tiny spore. The spore lord can’t regain hit points, gain temporary hit points or use any action other than dash or dodge while in this form. It may assume its normal form at the start or end of its move on the same or any following turn.",
     "If the spore lord shares its space with another creature while in this form, that creature must immediately make a Save against the spore lord’s spore cloud ability."
    ]
   }
@@ -4832,7 +4833,8 @@ monsterdata.compendium.monster.push(
   "Arcana +9, Nature +9, Perception +14, Stealth +5"
  ],
  "immune": "psychic",
- "senses": "blindsight 60ft., darkvision 120ft., passive",
+ "senses": "blindsight 60ft., darkvision 120ft.",
+ "passive": "24",
  "languages": "Common, Draconic",
  "cr": "15",
  "trait": [
@@ -4947,7 +4949,8 @@ monsterdata.compendium.monster.push(
   "Arcana +6, Nature +6, Perception +9, Stealth +3"
  ],
  "immune": "psychic",
- "senses": "blindsight 30ft., darkvision 120ft., passive",
+ "senses": "blindsight 30ft., darkvision 120ft.",
+ "passive": "19",
  "languages": "Common, Draconic",
  "cr": "8",
  "trait": [
@@ -5311,7 +5314,8 @@ monsterdata.compendium.monster.push(
   "Perception +6, Religion +8, Stealth +5"
  ],
  "immune": "fire, radiant",
- "senses": "blindsight 30ft., darkvision 120ft., passive",
+ "senses": "blindsight 30ft., darkvision 120ft.",
+ "passive": "16",
  "languages": "Common, Draconic",
  "cr": "8",
  "trait": [
@@ -7121,7 +7125,7 @@ monsterdata.compendium.monster.push(
   {
    "name": "Web (Recharge 5–6)",
    "text": [
-    "Ranged Weapon Attack: +5 to hit, range 30/60 ft. , one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage."
+    "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, resistance to bludgeoning damage, and immunity to poison and psychic damage."
    ]
   }
  ],
@@ -7540,7 +7544,7 @@ monsterdata.compendium.monster.push(
  "cha": "20",
  "save": "Con +10, Wis +10",
  "skill": [
-  "Arcana +10 Insight +10, Intimidation +10,"
+  "Arcana +10 Insight +10, Intimidation +10, Perception +10, Persuasion +10"
  ],
  "resist": "fire, lightning, thunder",
  "immune": "cold, poison",
@@ -7554,7 +7558,7 @@ monsterdata.compendium.monster.push(
    "name": "Innate Spellcasting",
    "text": [
     "The formian queen’s innate spellcasting ability is Charisma (spell save DC 18). She can innately cast the following spells, requiring no material components:",
-    "At will: calm emotions, charm person, clairvoyance, detect good and evil, detect thoughts, hold monster, magic circle,"
+    "At will: calm emotions, charm person, clairvoyance, detect good and evil, detect thoughts, hold monster, magic circle"
    ]
   },
   {
@@ -8668,7 +8672,7 @@ monsterdata.compendium.monster.push(
  "int": "3",
  "wis": "16",
  "cha": "11",
- "save": "Str +9, Con +9, Int +0, Wis +7,",
+ "save": "Str +9, Con +9, Int +0, Wis +7",
  "immune": "necrotic, poison",
  "conditionImmune": "poisoned",
  "senses": "darkvision 60 ft.",
@@ -10346,7 +10350,7 @@ monsterdata.compendium.monster.push(
   {
    "name": "Garrote",
    "text": [
-    "Melee Weapon Attack: +4 to hit, reach 5 ft., one Medium or Small creature against which the meazel has advantage on the attack roll. Hit: 4 (1d4 + 2) bludgeoning damage, and the target is grappled (escape DC 12). Until this grapple ends, the meazel has advantage on attack rolls against it, the meazel can’t use its garrote against another creature, and the target is choked and can’t breathe,"
+    "Melee Weapon Attack: +4 to hit, reach 5 ft., one Medium or Small creature against which the meazel has advantage on the attack roll. Hit: 4 (1d4 + 2) bludgeoning damage, and the target is grappled (escape DC 12). Until this grapple ends, the meazel has advantage on attack rolls against it, the meazel can’t use its garrote against another creature, and the target is choked and can’t breathe."
    ]
   }
  ],
@@ -10977,7 +10981,7 @@ monsterdata.compendium.monster.push(
  "wis": "14",
  "cha": "13",
  "skill": [
-  "Deception +5, Perfomance +5, Persuasion +5,"
+  "Deception +5, Perfomance +5, Persuasion +5, Perception +4, Stealth +4"
  ],
  "resist": "cold, lightning, fire",
  "immune": "poison",
@@ -11197,7 +11201,8 @@ monsterdata.compendium.monster.push(
  "resist": "radiant; bludgeoning piercing and slashing from nonmagical weapons that aren’t silvered",
  "immune": "cold, poison",
  "conditionImmune": "poisoned",
- "senses": "darkvision 60 ft., tremorsense 60 ft. passive",
+ "senses": "darkvision 60 ft., tremorsense 60 ft.",
+ "passive": "22",
  "languages": "telepathy 120 ft., can read and understands all languages but can’t speak.",
  "cr": "24",
  "trait": [
@@ -11739,7 +11744,7 @@ monsterdata.compendium.monster.push(
  "conditionImmune": "charmed, frightened, poisoned, prone",
  "senses": "truesight 120 ft.",
  "passive": "21",
- "languages": "Abyssal; telepathy 120 ft",
+ "languages": "Abyssal; telepathy 120 ft.",
  "cr": "11",
  "trait": [
   {
@@ -11828,7 +11833,7 @@ monsterdata.compendium.monster.push(
  "conditionImmune": "charmed, frightened, poisoned",
  "senses": "darkvision 60 ft.",
  "passive": "16",
- "languages": "Abyssal; telepathy 120 ft",
+ "languages": "Abyssal; telepathy 120 ft.",
  "cr": "7",
  "trait": [
   {
@@ -12006,7 +12011,7 @@ monsterdata.compendium.monster.push(
  "int": "20",
  "wis": "20",
  "cha": "17",
- "save": "Str +17, Con +17, Int +12, Wis +12,",
+ "save": "Str +17, Con +17, Int +12, Wis +12, Cha +10",
  "skill": [
   "Perception +12"
  ],
@@ -12269,7 +12274,7 @@ monsterdata.compendium.monster.push(
  "conditionImmune": "charmed, frightened, poisoned, prone",
  "senses": "truesight 120 ft.",
  "passive": "20",
- "languages": "Abyssal; telepathy 120 ft",
+ "languages": "Abyssal; telepathy 120 ft.",
  "cr": "13",
  "trait": [
   {
@@ -18644,7 +18649,8 @@ monsterdata.compendium.monster.push(
  "cha": "11",
  "immune": "poison",
  "conditionImmune": "exhaustion, poisoned, prone",
- "senses": "darkvision 60 ft., sense emotions 60 ft., passive",
+ "senses": "darkvision 60 ft., sense emotions 60 ft.",
+ "passive": "13",
  "languages": "understands all languages it knew in life, but can’t speak",
  "cr": "3",
  "trait": [
@@ -20517,7 +20523,8 @@ monsterdata.compendium.monster.push(
  "resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
  "immune": "poison",
  "conditionImmune": "exhaustion, paralyzed, petrified, poisoned, unconscious",
- "senses": "darkvision 60 ft., tremorsense 60 ft., passive",
+ "senses": "darkvision 60 ft., tremorsense 60 ft.",
+ "passive": "10",
  "languages": "Terran",
  "cr": "1",
  "trait": [
@@ -20723,7 +20730,8 @@ monsterdata.compendium.monster.push(
  "resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
  "immune": "poison",
  "conditionImmune": "exhaustion, paralyzed, petrified, poisoned, unconscious",
- "senses": "darkvision 60 ft., tremorsense 60 ft., passive",
+ "senses": "darkvision 60 ft., tremorsense 60 ft.",
+ "passive": "10",
  "languages": "Terran",
  "cr": "3",
  "trait": [
@@ -21221,7 +21229,8 @@ monsterdata.compendium.monster.push(
  "resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
  "immune": "poison",
  "conditionImmune": "exhaustion, paralyzed, petrified, poisoned, unconscious",
- "senses": "darkvision 120 ft., tremorsense 120 ft., passive",
+ "senses": "darkvision 120 ft., tremorsense 120 ft.",
+ "passive": "13",
  "languages": "Terran",
  "cr": "17",
  "trait": [
