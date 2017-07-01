@@ -1794,7 +1794,7 @@ monsterdata.compendium.monster.push(
  "source": "critter compendium",
  "name": "Briarvex",
  "size": "L",
- "type": "Plant",
+ "type": "plant",
  "alignment": "neutral evil",
  "ac": "16 (natural armor)",
  "hp": "95 (10d10 + 40)",
