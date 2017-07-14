@@ -15,7 +15,7 @@ function parsesource (src) {
 	if (source === "Plane Shift Amonkhet") source = "PSA";
 	if (source === "Plane Shift Innistrad") source = "PSI";
 	if (source === "Plane Shift Zendikar") source = "PSZ";
-	if (source == "critter compendium") source = "CC 3pp";
+	if (source === "critter compendium") source = "CC 3pp";
 	return source;
 }
 
@@ -34,7 +34,7 @@ function parsesourcename (src) {
 	if (source === "Tales from the Yawning Portal") source = "Tales from the Yawning Portal";
 	if (source === "Plane Shift Amonkhet") source = "Plane Shift Amonkhet";
 	if (source === "Plane Shift Innistrad") source = "Plane Shift Innistrad";
-	if (source == "critter compendium") source = "Critter Compendium (3pp)";
+	if (source === "critter compendium") source = "Critter Compendium (3pp)";
 	return source;
 }
 
