@@ -12,9 +12,7 @@ var spelldata = {
                 "duration": "Instantaneous",
                 "classes": "Sorcerer, Wizard",
                 "text": [
-                    "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one."
                 ],
                 "roll": "10d8"
             },
@@ -31,9 +29,7 @@ var spelldata = {
                 "text": [
                     "The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."
                 ],
                 "roll": "1d6"
             },
@@ -71,9 +67,7 @@ var spelldata = {
                 "text": [
                     "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
                 ],
                 "roll": "3d8"
             },
@@ -215,15 +209,7 @@ var spelldata = {
                     "",
                     "Animated Object Statistics",
                     "",
-                    "Tiny - HP: 20, AC: 18, Attack: +8 to hit, 1d4 + 4 damage, Str: 4, Dex: 18",
-                    "",
-                    "Small - HP: 25, AC: 16, Attack: +6 to hit, 1d8 + 2 damage, Str: 6, Dex: 14",
-                    "",
-                    "Medium - HP: 40, AC: 13, Attack: +5 to hit, 2d6 + 1 damage, Str: 10, Dex: 12",
-                    "",
-                    "Large - HP: 50, AC: 10, Attack: +6 to hit, 2d10 + 2 damage, Str: 14, Dex: 10",
-                    "",
-                    "Huge - HP: 80, AC: 10, Attack: +8 to hit, 2d12 + 4 damage, Str: 18, Dex: 6",
+                    "<table><thead><tr><th>Size</th><th>HP</th><th>AC</th><th>Attack</th><th>Str</th><th>Dex</th></tr></thead><tbody><tr><td>Tiny </td><td>20 </td><td>18 </td><td>+8 to hit, 1d4 + 4 damage</td><td>4</td><td>18</td></tr><tr><td>Small </td><td>25 </td><td>16 </td><td>+6 to hit, ld8 + 2 damage</td><td>6</td><td>14</td></tr><tr><td>Medium </td><td>40 </td><td>13 </td><td>+5 to hit. 2d6 + 1 damage</td><td>10</td><td>12</td></tr><tr><td>Large </td><td>50 </td><td>10 </td><td>+6 to hit. 2dl0 + 2 damage</td><td>14</td><td>10</td></tr><tr><td>Huge </td><td>80</td><td>10 </td><td>+8 to hit. 2d12 + 4 damage</td><td>18</td><td>6</td></tr></tbody></table>",
                     "",
                     "An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determine by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet, if the objects lack legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
                     "",
@@ -556,9 +542,7 @@ var spelldata = {
                 "duration": "Concentration, up to 10 minutes",
                 "classes": "Druid, Ranger",
                 "text": [
-                    "You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast's Intelligence is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast's Intelligence is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see."
                 ]
             },
             {
@@ -766,9 +750,7 @@ var spelldata = {
                     "",
                     "If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th."
                 ]
             },
             {
@@ -876,9 +858,7 @@ var spelldata = {
                 "text": [
                     "Choose one object weighing 1 to 5 pounds within range that isn't being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st."
                 ],
                 "roll": "3d8"
             },
@@ -1211,13 +1191,7 @@ var spelldata = {
                     "",
                     "An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
                     "",
-                    "1: The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.",
-                    "",
-                    "2-6: The creature doesn't move or take actions this turn.",
-                    "",
-                    "7-8: The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.",
-                    "",
-                    "9-10: The creature can act and move normally.",
+                    "<table><thead><tr><th>d10</th><th>Behavior</th></tr></thead><tbody><tr><td>1</td><td>The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.</td></tr><tr><td>2-6</td><td>The creature doesn't move or take actions this turn.</td></tr><tr><td>7-8</td><td>The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.</td></tr><tr><td>9-10</td><td>The creature can act and move normally.</td></tr></tbody></table>",
                     "",
                     "At the end of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.",
                     "",
@@ -1479,9 +1453,7 @@ var spelldata = {
                     "",
                     "You cause simple shapes-such as the vague form of a creature, an inanimate object, or a location-to appear within the flames and animate as you like. The shapes last for 1 hour.",
                     "",
-                    "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
                 ]
             },
             {
@@ -1523,26 +1495,13 @@ var spelldata = {
                     "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.",
                     "",
                     "Precipitation:",
-                    "Stage 1 - Clear",
-                    "Stage 2 - Light clouds",
-                    "Stage 3 - Overcast or ground fog",
-                    "Stage 4 - Rain, hail or snow",
-                    "Stage 5 - Torrential rain, driving hail or blizzard",
+                    "<table><thead><tr><th>Stage</th><th>Condition</th></tr></thead><tbody><tr><td>1</td><td>Clear</td></tr><tr><td>2</td><td>Light clouds</td></tr><tr><td>3</td><td>Overcast or ground fog</td></tr><tr><td>4</td><td>Rain, hail or snow</td></tr><tr><td>5</td><td>Torrential rain, driving hail or blizzard</td></tr></tbody></table>",
                     "",
                     "Temperature:",
-                    "Stage 1 - Unbearable heat",
-                    "Stage 2 - Hot",
-                    "Stage 3 - Warm",
-                    "Stage 4 - Cool",
-                    "Stage 5 - Cold",
-                    "Stage 6 - Arctic cold",
+                    "<table><thead><tr><th>Stage</th><th>Condition</th></tr></thead><tbody><tr><td>1</td><td>Unbearable heat</td></tr><tr><td>2</td><td>Hot</td></tr><tr><td>3</td><td>Warm</td></tr><tr><td>4</td><td>Cool</td></tr><tr><td>5</td><td>Cold</td></tr><tr><td>6</td><td>Arctic cold</td></tr></tbody></table>",
                     "",
                     "Wind:",
-                    "Stage 1 - Calm",
-                    "Stage 2 - Moderate wind",
-                    "Stage 3 - Strong wind",
-                    "Stage 4 - Gale",
-                    "Stage 5 - Storm"
+                    "<table><thead><tr><th>Stage</th><th>Condition</th></tr></thead><tbody><tr><td>1</td><td>Calm</td></tr><tr><td>2</td><td>Moderate wind</td></tr><tr><td>3</td><td>Strong wind</td></tr><tr><td>4</td><td>Gale</td></tr><tr><td>5</td><td>Storm</td></tr></tbody></table>"
                 ],
                 "roll": "1d4*10"
             },
@@ -1563,9 +1522,7 @@ var spelldata = {
                     "",
                     "Downdraft: You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.",
                     "",
-                    "Updraft: You cause a sustained updraft within the cube, rising upward from the cube's bottom edge. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "Updraft: You cause a sustained updraft within the cube, rising upward from the cube's bottom edge. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."
                 ]
             },
             {
@@ -1614,9 +1571,7 @@ var spelldata = {
                 "text": [
                     "You create a bonfire on ground that you can see within range. Until the spells ends, the bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire's space for the first time on a turn or ends its turn there.",
                     "",
-                    "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
                 ],
                 "roll": [
                     "1d8",
@@ -1688,12 +1643,7 @@ var spelldata = {
                     "",
                     "The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.",
                     "",
-                    "Material - Duration: ",
-                    "Vegetable matter - 1 day",
-                    "Stone/crystal - 12 hours",
-                    "Precious metals - 1 hour",
-                    "Gems - 10 minutes",
-                    "Adamantine/Mithral - 1 minute",
+                    "<table><thead><tr><th>Material</th><th>Duration</th></tr></thead><tbody><tr><td>Vegetable matter</td><td>1 day</td></tr><tr><td>Stone or crystal</td><td>12 hours</td></tr><tr><td>Precious metals</td><td>1 hour</td></tr><tr><td>Gems</td><td>10 minutes</td></tr><tr><td>Adamantine or mithral</td><td>1 minute</td></tr></tbody></table>",
                     "",
                     "Using any material created by this spell as another spell's material component causes that spell to fail.",
                     "",
@@ -2227,9 +2177,7 @@ var spelldata = {
                     "",
                     "As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or small gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
                 ],
                 "roll": "1d8"
             },
@@ -2246,9 +2194,7 @@ var spelldata = {
                 "text": [
                     "You cause a tremor in the ground in a 10-foot radius. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
                 ],
                 "roll": "1d6"
             },
@@ -2263,9 +2209,7 @@ var spelldata = {
                 "duration": "Concentration, up to 1 minute",
                 "classes": "Druid, Sorcerer, Warlock, Wizard",
                 "text": [
-                    "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends."
                 ]
             },
             {
@@ -2329,9 +2273,7 @@ var spelldata = {
                 "text": [
                     "Choose one creature you can see within range, and choose one of the following damage types - acid, cold, fire, lightning, or thunder. The target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra 2d6 damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them."
                 ],
                 "roll": "2d6"
             },
@@ -2456,9 +2398,7 @@ var spelldata = {
                 "text": [
                     "Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared away. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd."
                 ],
                 "roll": "3d12"
             },
@@ -2821,9 +2761,7 @@ var spelldata = {
                 "text": [
                     "You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd."
                 ],
                 "roll": "1d6"
             },
@@ -3033,9 +2971,7 @@ var spelldata = {
                 "text": [
                     "You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.",
                     "",
-                    "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
                 ],
                 "roll": [
                     "1d6",
@@ -3388,9 +3324,7 @@ var spelldata = {
                     "",
                     "• You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.",
                     "",
-                    "• You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "• You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze."
                 ]
             },
             {
@@ -3725,9 +3659,7 @@ var spelldata = {
                 "text": [
                     "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st."
                 ],
                 "roll": [
                     "1d20+SPELL+PROF",
@@ -3801,9 +3733,7 @@ var spelldata = {
                 "text": [
                     "Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell's duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can't be extinguished through nonmagical means.",
                     "",
-                    "If damage from this spell reduces a target to 0 hit points, the target is turned to ash.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "If damage from this spell reduces a target to 0 hit points, the target is turned to ash."
                 ],
                 "roll": [
                     "7d6",
@@ -3923,9 +3853,7 @@ var spelldata = {
                     "",
                     "• Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage.",
                     "",
-                    "• You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "• You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 4d8 fire damage on a failed save, or half as much damage on a successful one."
                 ],
                 "roll": "1d10"
             },
@@ -3948,9 +3876,7 @@ var spelldata = {
                     "",
                     "• The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.",
                     "",
-                    "• You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "• You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes 4d6 cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."
                 ]
             },
             {
@@ -3970,9 +3896,7 @@ var spelldata = {
                     "",
                     "• You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked prone.",
                     "",
-                    "• You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "• You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are stunned until the end of your next turn."
                 ]
             },
             {
@@ -3992,9 +3916,7 @@ var spelldata = {
                     "",
                     "• You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.",
                     "",
-                    "• You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "• You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."
                 ],
                 "roll": "2d10"
             },
@@ -4268,9 +4190,7 @@ var spelldata = {
                 "duration": "Concentration, up to 1 minute",
                 "classes": "Druid",
                 "text": [
-                    "A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 10 feet toward the center.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "A mass of 5-foot-deep water appears and swirls in a 30-foot radius centered on a point you can see within range. The point must be on ground or in a body of water. Until the spell ends, that area is difficult terrain, and any creature that starts its turn there must succeed on a Strength saving throw or take 6d6 bludgeoning damage and be pulled 10 feet toward the center."
                 ],
                 "roll": "6d6"
             },
@@ -4400,9 +4320,7 @@ var spelldata = {
                 "text": [
                     "You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.",
                     "",
-                    "If you cast this spell again, the spell ends early on any pebbles still affected by it.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "If you cast this spell again, the spell ends early on any pebbles still affected by it."
                 ],
                 "roll": [
                     "1d20+SPELL+PROF",
@@ -4524,9 +4442,7 @@ var spelldata = {
                     "",
                     "To break out, the restrained target can make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand.",
                     "",
-                    "As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a restrained target if you do either.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "As an action, you can cause the hand to reach for a different creature or to move to a different unoccupied space within range. The hand releases a restrained target if you do either."
                 ],
                 "roll": "2d6"
             },
@@ -4599,9 +4515,7 @@ var spelldata = {
                 "text": [
                     "You create six tiny meteors in your space. They float in the air and orbit you for the spell's duration. When you cast the spell-and as a bonus action on each of your turns thereafter-you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity saving throw. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the number of meteors created increases by two for each slot level above 3rd.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the number of meteors created increases by two for each slot level above 3rd."
                 ],
                 "roll": "2d6"
             },
@@ -4793,9 +4707,7 @@ var spelldata = {
                     "",
                     "• If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.",
                     "",
-                    "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
                 ]
             },
             {
@@ -5305,9 +5217,7 @@ var spelldata = {
                 "text": [
                     "You have resistance to acid, cold, fire, lightning, and thunder damage for the spell's duration.",
                     "",
-                    "When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends."
                 ]
             },
             {
@@ -5315,7 +5225,7 @@ var spelldata = {
                 "level": "7",
                 "school": "EV",
                 "time": "1 action",
-                "range": "Self (60 foot cone)",
+                "range": "Self (60-foot cone)",
                 "components": "V, S",
                 "duration": "Instantaneous",
                 "classes": "Sorcerer, Wizard",
@@ -5507,9 +5417,7 @@ var spelldata = {
                     "",
                     "Fireworks: The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become blinded until the end of your next turn.",
                     "",
-                    "Smoke: Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "Smoke: Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it."
                 ]
             },
             {
@@ -5634,21 +5542,7 @@ var spelldata = {
                     "",
                     "The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form.",
                     "",
-                    "d100 - Race:",
-                    "01-04 Dragonborn",
-                    "05-13 Dwarf, hill",
-                    "14-21 Dwarf, mountain",
-                    "22-25 Elf, dark",
-                    "26-34 Elf, high",
-                    "35-42 Elf, wood",
-                    "43-46 Gnome, forest",
-                    "47-52 Gnome, rock",
-                    "53-56 Half-elf",
-                    "57-60 Half-orc",
-                    "61-68 Halfling, lightfoot",
-                    "69-76 Halfling, stout",
-                    "77-96 Human",
-                    "97-00 Tiefling",
+                    "<table><thead><tr><th>d100</th><th>Race</th></tr></thead><tbody><tr><td>01-04</td><td>Dragonborn</td></tr><tr><td>05-13</td><td>Dwarf, hill</td></tr><tr><td>14-21</td><td>Dwarf, mountain</td></tr><tr><td>22-25</td><td>Elf, dark</td></tr><tr><td>26-34</td><td>Elf, high</td></tr><tr><td>35-42</td><td>Elf, wood</td></tr><tr><td>43-46</td><td>Gnome, forest</td></tr><tr><td>47-52</td><td>Gnome, rock</td></tr><tr><td>53-56</td><td>Half-elf</td></tr><tr><td>57-60</td><td>Half-orc</td></tr><tr><td>61-68</td><td>Halfling, lightfoot</td></tr><tr><td>69-76</td><td>Halfling, stout</td></tr><tr><td>77-96</td><td>Human</td></tr><tr><td>97-00</td><td>Tiefling</td></tr></tbody></table>",
                     "",
                     "The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
                 ]
@@ -5813,20 +5707,9 @@ var spelldata = {
                 "text": [
                     "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.",
                     "",
-                    "Knowledge - Save Modifier",
+                    "<table><thead><tr><th>Knowledge</th><th>Save Modifier</th></tr></thead><tbody><tr><td>Secondhand (you have heard of the target)</td><td>+5</td></tr><tr><td>Firsthand (you have met the target) </td><td>+0</td></tr><tr><td>Familiar (you know the target well) </td><td>-5</td></tr></tbody></table>",
                     "",
-                    "Secondhand (you have heard of the target) - +5",
-                    "",
-                    "Firsthand (you have met the target) +0",
-                    "Familiar (you know the target well) - -5",
-                    "",
-                    "Connection - Save Modifier",
-                    "",
-                    "Likeness or picture - -2",
-                    "",
-                    "Possession or garment - -4",
-                    "",
-                    "Body part, lock of hair, bit of nail, or the like - -10",
+                    "<table><thead><tr><th>Connection</th><th>Save Modifier</th></tr></thead><tbody><tr><td>Likeness or picture</td><td>-2</td></tr><tr><td>Possession or garment</td><td>-4</td></tr><tr><td>Body part, lock of hair, bit of nail, or the like</td><td>-10</td></tr></tbody></table>",
                     "",
                     "On a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours.",
                     "",
@@ -5935,9 +5818,7 @@ var spelldata = {
                     "",
                     "• You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.",
                     "",
-                    "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
                 ]
             },
             {
@@ -6095,9 +5976,7 @@ var spelldata = {
                 "duration": "Concentration, up to 1 hour",
                 "classes": "Bard, Druid, Wizard",
                 "text": [
-                    "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell's duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell's duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early."
                 ]
             },
             {
@@ -6169,9 +6048,7 @@ var spelldata = {
                 "text": [
                     "A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
                 ],
                 "roll": "3d6"
             },
@@ -6266,7 +6143,7 @@ var spelldata = {
                 "level": "3",
                 "school": "C",
                 "time": "1 action",
-                "range": "Self (15-foot-radius)",
+                "range": "Self (15-foot radius)",
                 "components": "V, S, M (a holy symbol)",
                 "duration": "Concentration, up to 10 minutes",
                 "classes": "Cleric, Cleric (War), Paladin (Crown)",
@@ -6370,9 +6247,7 @@ var spelldata = {
                     "",
                     "Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th"
                 ],
                 "roll": [
                     "1d20+SPELL+PROF",
@@ -6603,7 +6478,7 @@ var spelldata = {
                 "text": [
                     "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The DM rolls d100 and consults the table.",
                     "",
-                    "<table> <tr> <th>Familiarity</th> <th>Mishap</th> <th>Similar Area</th> <th>Off Target</th> <th>On Target</th> </tr> <tr> <td>Permanent Circle</td> <td>—</td> <td>—</td> <td>—</td> <td>01-100</td> </tr> <tr> <td>Associated Object</td> <td>—</td> <td>—</td> <td>—</td> <td>01-100</td> </tr> <tr> <td>Very Familiar</td> <td>01-05</td> <td>06-13</td> <td>14-24</td> <td>25-100</td> </tr> <tr> <td>Seen Casually</td> <td>01-33</td> <td>34-43</td> <td>44-53</td> <td>54-100</td> </tr> <tr> <td>Viewed Once</td> <td>01-43</td> <td>44-53</td> <td>54-73</td> <td>74-100</td> </tr> <tr> <td>Description</td> <td>01-43</td> <td>44-53</td> <td>54-73</td> <td>74-100</td> </tr> <tr> <td>False Description</td> <td>01-50</td> <td>51-100</td> <td>—</td> <td>—</td> </tr> </table>",
+                    "<table><thead><tr> <th>Familiarity</th> <th>Mishap</th> <th>Similar Area</th> <th>Off Target</th> <th>On Target</th> </tr></thead><tbody><tr> <td>Permanent Circle</td> <td>—</td> <td>—</td> <td>—</td> <td>01-100</td> </tr> <tr> <td>Associated Object</td> <td>—</td> <td>—</td> <td>—</td> <td>01-100</td> </tr> <tr> <td>Very Familiar</td> <td>01-05</td> <td>06-13</td> <td>14-24</td> <td>25-100</td> </tr> <tr> <td>Seen Casually</td> <td>01-33</td> <td>34-43</td> <td>44-53</td> <td>54-100</td> </tr> <tr> <td>Viewed Once</td> <td>01-43</td> <td>44-53</td> <td>54-73</td> <td>74-100</td> </tr> <tr> <td>Description</td> <td>01-43</td> <td>44-53</td> <td>54-73</td> <td>74-100</td> </tr> <tr> <td>False Description</td> <td>01-50</td> <td>51-100</td> <td>—</td> <td>—</td> </tr> </tbody></table>",
                     "",
                     "Familiarity: \"Permanent Circle\" means a permanent teleportation circle whose sigil sequence you know. \"Associated Object\" means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library, bed linen from a royal suite, or a chunk of marble from a Lich's secret tomb.",
                     "",
@@ -6717,9 +6592,7 @@ var spelldata = {
                 "text": [
                     "You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.",
                     "",
-                    "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
                 ],
                 "roll": [
                     "1d6",
@@ -6769,9 +6642,7 @@ var spelldata = {
                 "duration": "Instantaneous",
                 "classes": "Druid, Wizard",
                 "text": [
-                    "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn't knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn't knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it."
                 ],
                 "roll": "4d8"
             },
@@ -6821,9 +6692,7 @@ var spelldata = {
                     "",
                     "If you cast the spell on a ceiling, the mud falls. Any creature under the mud when it falls must make a Dexterity saving throw. A creature takes 4d8 bludgeoning damage on a failed save, or half as much damage on a successful one.",
                     "",
-                    "Transmute Mud to Rock: Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a failed save, a creature becomes restrained by the rock. The restrained creature can use an action to try to break free by succeeding on a Strength check (DC 20) or by dealing 25 damage to the rock around it. On a successful save, a creature is shunted safely to the surface to an unoccupied space.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "Transmute Mud to Rock: Nonmagical mud or quicksand in the area no more than 10 feet deep transforms into soft stone for the spell's duration. Any creature in the mud when it transforms must make a Dexterity saving throw. On a failed save, a creature becomes restrained by the rock. The restrained creature can use an action to try to break free by succeeding on a Strength check (DC 20) or by dealing 25 damage to the rock around it. On a successful save, a creature is shunted safely to the surface to an unoccupied space."
                 ],
                 "roll": "4d8"
             },
@@ -7019,9 +6888,7 @@ var spelldata = {
                 "text": [
                     "You point at a place within range, and a glowing 1-foot ball of emerald acid streaks there and explodes in a 20-foot radius. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage and 5d4 acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.",
                     "",
-                    "At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th."
                 ],
                 "roll": [
                     "10d4",
@@ -7097,9 +6964,7 @@ var spelldata = {
                 "duration": "Concentration, up to 10 minutes",
                 "classes": "Wizard, Fighter (Eldritch Knight)",
                 "text": [
-                    "You conjure up a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "You conjure up a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there."
                 ]
             },
             {
@@ -7158,9 +7023,7 @@ var spelldata = {
                 "text": [
                     "You conjure up a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is difficult terrain.",
                     "",
-                    "Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it."
                 ]
             },
             {
@@ -7201,9 +7064,7 @@ var spelldata = {
                     "",
                     "• The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind.",
                     "",
-                    "• It hedges out vapor, gas, and fog that can be dispersed by strong wind.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "• It hedges out vapor, gas, and fog that can be dispersed by strong wind."
                 ]
             },
             {
@@ -7253,9 +7114,7 @@ var spelldata = {
                     "",
                     "As an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, cliff, or other drop, it safely descends until it is hovering 10 feet over ground. Any creature restrained by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw, but no more than once per turn.",
                     "",
-                    "When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature restrained by the sphere is knocked prone in the space where it falls.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature restrained by the sphere is knocked prone in the space where it falls."
                 ]
             },
             {
@@ -7307,9 +7166,7 @@ var spelldata = {
                     "",
                     "A creature must make a Dexterity saving throw the first time on a turn that it enters the whirlwind or that the whirlwind enters its space, including when the whirlwind first appears. A creature takes 10d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, a Large or smaller creature that fails the save must succeed on a Strength saving throw or become restrained in the whirlwind until the spell ends. When a creature starts its turn restrained by the whirlwind, the creature is pulled 5 feet higher inside it, unless the creature is at the top. A restrained creature moves with the whirlwind and falls when the spell ends, unless the creature has some means to stay aloft.",
                     "",
-                    "A restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the whirlwind and is hurled 3d6 x 10 feet away from it in a random direction.",
-                    "",
-                    "This spell can be found in the Elemental Evil Player's Companion."
+                    "A restrained creature can use an action to make a Strength or Dexterity check against your spell save DC. If successful, the creature is no longer restrained by the whirlwind and is hurled 3d6 x 10 feet away from it in a random direction."
                 ],
                 "roll": [
                     "10d6",
@@ -7454,7 +7311,7 @@ var spelldata = {
                 "text": [
                     "You summon a barlgura that appears in an unoccupied space you can see within range. The barlgura disappears when it drops to 0 hit points or when the spell ends.",
                     "",
-                    "The barlgura is hostile to all non‑demons. Roll initiative for the barlgura, which has its own turns. At the start of its turn, it moves toward and attacks the nearest non‑demon it can perceive. If two or more creatures are equally near, it picks one at random. If it cannot see any potential enemies, the barlgura moves in a random direction in search of foes.",
+                    "The barlgura is hostile to all non-demons. Roll initiative for the barlgura, which has its own turns. At the start of its turn, it moves toward and attacks the nearest non-demon it can perceive. If two or more creatures are equally near, it picks one at random. If it cannot see any potential enemies, the barlgura moves in a random direction in search of foes.",
                     "",
                     "As part of casting the spell, you can scribe a circle on the ground using the blood of an intelligent humanoid slain within the past 24 hours. The circle is large enough to encompass your space. The summoned barlgura cannot cross the circle or target anyone in it while the spell lasts."
                 ]
@@ -7492,11 +7349,11 @@ var spelldata = {
                 "text": [
                     "You summon up to a total of eight manes or dretches that appear in unoccupied spaces you can see within range. A manes or dretch disappears when it drops to 0 hit points or when the spell ends.",
                     "",
-                    "The demons are hostile to all creatures. Roll initiative for the summoned demons as a group, which has its own turns. The demons attack the nearest non‑demons to the best of their ability.",
+                    "The demons are hostile to all creatures. Roll initiative for the summoned demons as a group, which has its own turns. The demons attack the nearest non-demons to the best of their ability.",
                     "",
                     "As part of casting the spell, you can scribe a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. The summoned demons cannot cross the circle or target anyone in it while the spell lasts. Using the material component in this manner consumes it.",
                     "",
-                    "At Higher Levels. When you cast this spell using a spell slot of 6th or 7th level, you summon sixteen demons. If you cast it using a spell slot of 8th or 9th level, you summon thirty‑two demons."
+                    "At Higher Levels. When you cast this spell using a spell slot of 6th or 7th level, you summon sixteen demons. If you cast it using a spell slot of 8th or 9th level, you summon thirty-two demons."
                 ]
             },
             {
@@ -8234,7 +8091,6 @@ var spelldata = {
                       "Phantom Foe (3 psi; conc., 1 min.). As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it until your concentration ends. During this time, the target can't take reactions, and it takes 1d8 psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can increase the damage by 1d8 for each additional psi point spent on the ability",
                       "Phantom Betrayal (5 psi; conc., 1 min.). As an action, you plant delusional paranoia in a creature's mind. Choose one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or until your concentration ends, it must target its allies with attacks and other damaging effects. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being charmed.",
                       "Phantom Riches (7 psi; conc., 1 min.). As an action, you plant the phantom of a greatly desired object in a creature's mind. Choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, you gain partial control over the target's behavior until your concentration ends; the target moves as you wish on each of its turns, as it thinks it pursues the phantom object it desires. If it hasn't taken damage since its last turn, it can use its action only to admire the object you created in its perception. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-
               ]
             },
             {
@@ -8250,7 +8106,6 @@ var spelldata = {
                       "Broken Will (5 psi). As an action, you target one creature you can communicate with via telepathy. The target must make an Intelligence saving throw. On a failed save, you choose the target's movement and action on its next turn. On a successful save, the target is unaffected, and you can't use this ability on it again until you finish a long rest. A creature is immune to this ability if it is immune to being charmed.",
                       "Psychic Grip (6 psi; conc., 1 min.). As an action, you target one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or it is paralyzed until your concentration ends. At the end of each of its turns, it can repeat the saving throw. On a success, this effect ends. On a failure, you can use your reaction to force the target to move up to half its speed, even though it's paralyzed.",
                       "Psychic Domination (7 psi; conc., 1 min.). As an action, you target one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or you choose the creature's actions and movement on its turns until your concentration ends. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being charmed."
-
               ]
             },
             {
@@ -8518,15 +8373,7 @@ var spelldata = {
                 "classes": "Sorcerer",
                 "text": [
                     "You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 damage. Choose one of the d8s. The number it rolled determines the type of damage, as shown below.",
-                    "d8 ---- Damage Type",
-                    "1 ----- Acid",
-                    "2 ----- Cold",
-                    "3 ----- Fire",
-                    "4 ----- Force",
-                    "5 ----- Lightning",
-                    "6 ----- Poison",
-                    "7 ----- Psychic",
-                    "8 ----- Thunder",
+                    "<table><thead><tr><th>d8</th><th>Damage Type</th></tr></thead><tbody><tr><td>1</td><td>Acid</td></tr><tr><td>2</td><td>Cold</td></tr><tr><td>3</td><td>Fire</td></tr><tr><td>4</td><td>Force</td></tr><tr><td>5</td><td>Lightning</td></tr><tr><td>6</td><td>Poison</td></tr><tr><td>7</td><td>Psychic</td></tr><tr><td>8</td><td>Thunder</td></tr></tbody></table>",
                     "If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again. A creature can be targeted only once by this mass of chaotic energy.",
                     "At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, each target takes extra damage of the type rolled. The extra damage equals 1d6 for each slot level above 1st."
                 ]
@@ -8555,7 +8402,7 @@ var spelldata = {
                 "time": "1 action",
                 "range": "Self (5-foot radius)",
                 "components": "V, S",
-                "duration": "Instaneous",
+                "duration": "Instantaneous",
                 "classes": "Cleric",
                 "text": [
                   "You raise your hand, and burning radiance erupts from it. Each creature of your choice that you can see within 5 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage.",

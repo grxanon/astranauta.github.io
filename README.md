@@ -1,13 +1,13 @@
 ## 5e Tools
-[Go to 5etools](https://astranauta.github.io/5etools.html)
+[Go to 5etools](5etools.html)
 
 ## To-Do
-- Continue Tome of Beasts entries.
 - Clean up filtering interface.
 - Plan layout of upcoming Mystic disciplines
 - Continue adding Unearthed Arcana rules entries.
-- Search engine???
-- <strong>Dedicated servers?????</strong>
+- A search engine?
+- Dedicated servers??
+- Continue cleaning up the website.
 
 ## Notes
 To remove trailing commas in JSON:
@@ -28,4 +28,4 @@ https://raw.githubusercontent.com/astranauta/astranauta.github.io/master/data/be
 
 5. Bam. Done. If you are using the Shaped sheet, be sure to open up the NPC sheets and let them convert before using it.
 
-You can convert stat blocks to JSON for importing via [this converter](https://astranauta.github.io/converter.html).
+You can convert stat blocks to JSON for importing via [this converter](converter.html).
