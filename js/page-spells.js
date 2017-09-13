@@ -318,9 +318,9 @@ function loadspells() {
 				}
 				if (classfilter === "All") rightclass = true;
 				if (sourcefilter === "All" || item.values().source === sourcefilter) rightsource = true;
-				// if (thirdpartyfilter === "All") rightparty = true;
-				// if (thirdpartyfilter === "None" && item.values().source.indexOf("3pp") === -1) rightparty = true;
-				// if (thirdpartyfilter === "Only" && item.values().source.indexOf("3pp") !== -1) rightparty = true;
+				if (thirdpartyfilter === "All") rightparty = true;
+				if (thirdpartyfilter === "None" && item.values().source.indexOf("3pp") === -1) rightparty = true;
+				if (thirdpartyfilter === "Only" && item.values().source.indexOf("3pp") !== -1) rightparty = true;
                 if (rangefilter === ALL_RANGES || normaliserange(item.values().range) === rangefilter) rightrange = true;
 				if (rightlevel && rightschool && rightclass && rightsource && rightparty && rightrange) return true;
 				return false;
