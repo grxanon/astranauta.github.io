@@ -299,7 +299,7 @@ function loadspells() {
 			var schoolfilter = $("select.schoolfilter").val();
 			var classfilter = $("select.classfilter").val();
 			var sourcefilter = $("select.sourcefilter").val();
-			// var thirdpartyfilter = $("select.3ppfilter").val();
+			var thirdpartyfilter = $("select.3ppfilter").val();
 			var rangefilter = parseInt($("select.rangefilter").val());
 
 			spellslist.filter(function(item) {
@@ -307,7 +307,7 @@ function loadspells() {
 				var rightschool = false;
 				var rightclass = false;
 				var rightsource = false;
-				var rightparty = true;
+				var rightparty = false;
 				var rightrange = false;
 
 				if (levelfilter === "All" || item.values().level.indexOf(levelfilter) !== -1) rightlevel = true;
