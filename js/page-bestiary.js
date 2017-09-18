@@ -1,5 +1,3 @@
-
-
 function parsesource (src) {
 	source = src.trim();
 	if (source === "monster manual") source = "MM";
@@ -17,6 +15,7 @@ function parsesource (src) {
 	if (source === "Plane Shift Kaladesh") source = "PSK";
 	if (source === "Plane Shift Zendikar") source = "PSZ";
 	if (source === "critter compendium") source = "CC 3pp";
+	if (source === "Tomb of Annihilation") source = "ToA";
 	return source;
 }
 
@@ -36,6 +35,9 @@ function parsesourcename (src) {
 	if (source === "Plane Shift Amonkhet") source = "Plane Shift Amonkhet";
 	if (source === "Plane Shift Innistrad") source = "Plane Shift Innistrad";
 	if (source === "critter compendium") source = "Critter Compendium (3pp)";
+	if (source === "Plane Shift Kaladesh") source = "Plane Shift Kaladesh";
+	if (source === "Plane Shift Zendikar") source = "Plane Shift Zendikar";
+	if (source === "Tomb of Annihilation") source = "Tomb of Annihilation";
 	return source;
 }
 
@@ -584,5 +586,4 @@ function usemonster (id) {
 		$("div#output").prepend("<span>"+name + ": <em>"+roll+"</em> rolled for <strong>"+rollresult.total+"</strong> (<em>"+rollresult.rolls.join(", ")+"</em>)<br></span>").show();
 		$("div#output span:eq(5)").remove();
 	})
-
 };
