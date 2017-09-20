@@ -254,6 +254,7 @@ function loadspells() {
 
                 toadd = toadd + "<span class='disciplinesearch' style='display: none'>"+psisearch+"</span>";
              }
+			 toadd = toadd + "<span class='thirdparty' style='display: none'>"+(source.indexOf("3pp") === -1 ? "None" : "Only")+"</span>";
              toadd = toadd + "</li>";
 			$("ul.spells").append(toadd);
 
@@ -301,7 +302,7 @@ function loadspells() {
    		$("select.rangefilter").val(ALL_RANGES.toString());
 
 		var options = {
-			valueNames: ['name', 'source', 'level', 'school', 'classes', 'disciplinesearch', 'range'],
+			valueNames: ['name', 'source', 'level', 'school', 'classes', 'disciplinesearch', 'range', 'thirdparty'],
 			listClass: "spells"
 		};
 
@@ -332,9 +333,9 @@ function loadspells() {
 
 				if (levelfilter[0] !== "d" && levelfilter[0] !== "t") {
 					levelfilter = parsespelllevel (levelfilter);
-					if (levelfilter !== "cantrip") {
-						levelfilter = levelfilter + " level"
-					} else levelfilter = "cantrip";
+					//if (levelfilter !== "cantrip") {
+					//	levelfilter = levelfilter + " level"
+					//} else levelfilter = "cantrip";
 					if ($(".ritualfilter").val() === "Rituals") levelfilter = levelfilter + " (ritual)"
 				}
 			} else if ($(".ritualfilter").val() === "Rituals") levelfilter = "(ritual)"
@@ -360,10 +361,9 @@ function loadspells() {
 					if (classes[c] === classfilter) rightclass = true;
 				}
 				if (classfilter === "All") rightclass = true;
-				if (sourcefilter === "All" || item.values().source === sourcefilter) rightsource = true;
+				if (sourcefilter === "All" || item.values().source === abbreviateSource(sourcefilter)) rightsource = true;
 				if (thirdpartyfilter === "All") rightparty = true;
-				if (thirdpartyfilter === "None" && item.values().source.indexOf("3pp") === -1) rightparty = true;
-				if (thirdpartyfilter === "Only" && item.values().source.indexOf("3pp") !== -1) rightparty = true;
+				if (thirdpartyfilter === item.values().thirdparty) rightparty = true;
                 if (rangefilter === ALL_RANGES || normaliserange(item.values().range) === rangefilter) rightrange = true;
 				if (rightlevel && rightschool && rightclass && rightsource && rightparty && rightrange) return true;
 				return false;
