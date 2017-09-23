@@ -36,16 +36,14 @@ function tagcontent (curitem, tag, multi=false) {
 }
 
 function asc_sort(a, b){
-    return ($(b).text()) < ($(a).text()) ? 1 : -1;
+	return ($(b).text()) < ($(a).text()) ? 1 : -1;
 }
 
 function dec_sort(a, b){
-    return ($(b).text()) > ($(a).text()) ? 1 : -1;
+	return ($(b).text()) > ($(a).text()) ? 1 : -1;
 }
 
-window.onload = loadraces;
-
-function loadraces() {
+window.onload = function load() {
 	tabledefault = $("#stats").html();
 
 	var racelist = racedata.compendium.race;
@@ -64,9 +62,9 @@ function loadraces() {
 			$("select.sizefilter").append("<option value='"+parsesize(currace.size)+"'>"+parsesize(currace.size)+"</option>");
 		}
 
-		// if (!$("select.bonusfilter:contains(\""+currace.ability.replace(/(?:\s)(\d)/g, " +$1")+"\")").length) {
-		// 	$("select.bonusfilter").append("<option value='"+currace.ability.replace(/(?:\s)(\d)/g, " +$1")+"'>"+currace.ability.replace(/(?:\s)(\d)/g, " +$1")+"</option>");
-		// }
+		//if (!$("select.bonusfilter:contains(\""+currace.ability.replace(/(?:\s)(\d)/g, " +$1")+"\")").length) {
+		//	$("select.bonusfilter").append("<option value='"+currace.ability.replace(/(?:\s)(\d)/g, " +$1")+"'>"+currace.ability.replace(/(?:\s)(\d)/g, " +$1")+"</option>");
+		//}
 	}
 
 	$("select.sourcefilter option").sort(asc_sort).appendTo('select.sourcefilter');
@@ -112,13 +110,11 @@ function loadraces() {
 	});
 
 	$("ul.list li").click(function(e) {
-		userace($(this).attr("id"));
-		document.title = decodeURI($(this).attr("data-link")) + " - 5etools Races";
 		window.location = "#"+$(this).attr("data-link");
 	});
 
 	if (window.location.hash.length) {
-		$("ul.list li[data-link='"+window.location.hash.split("#")[1]+"']:eq(0)").click();
+		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
 
 	// reset button
@@ -132,7 +128,7 @@ function loadraces() {
 	})
 }
 
-function userace (id) {
+function loadhash (id) {
 	$("#stats").html(tabledefault);
 	$("#stats td").show();
 
@@ -160,7 +156,8 @@ function userace (id) {
 		if (traitname.indexOf("Variant Feature") !== -1) {
 			traitname = traitname + "</span><p></p><span>"
 		}
-		texthtml = "<span class='name'>"+traitname+"</span> <p>"+traitlist[n].text.join("</p><p></p><p>")+"</p>"
+
+		texthtml = "<span class='name'>"+traitname+"</span> " + utils_combineText(traitlist[n].text);
 
 		$("tr#traits").after("<tr class='trait'><td colspan='6' class='trait"+n+"'>"+texthtml+"</td></tr>");
 	}

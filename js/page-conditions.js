@@ -1,7 +1,6 @@
-window.onload = loadconditions;
 var tabledefault = "";
 
-function loadconditions() {
+window.onload = function load() {
 	tabledefault = $("#stats").html();
 	var conditionlist = conditiondata;
 
@@ -30,13 +29,11 @@ function loadconditions() {
 		});
 
 		$("ul.list li").click(function(e) {
-			usecondition($(this).attr("id"));
-			document.title = decodeURI($(this).attr("data-link")) + " - 5etools conditions";
 			window.location = "#"+$(this).attr("data-link");
 		});
 
 		if (window.location.hash.length) {
-			$("ul.list li[data-link='"+window.location.hash.split("#")[1]+"']:eq(0)").click();
+			window.onhashchange();
 		} else $("ul.list li:eq(0)").click();
 
 			// reset button
@@ -49,9 +46,9 @@ function loadconditions() {
 				conditionslist.update();
 			})
 
-	}
+}
 
-	function usecondition (id) {
+function loadhash (id) {
 			$("#stats").html(tabledefault);
 			var conditionlist = conditiondata;
 			var curcondition = conditionlist[id];
@@ -61,14 +58,5 @@ function loadconditions() {
 
 			$("tr.text").remove();
 
-			var textlist = curcondition.text;
-			var texthtml = "";
-
-			for (var i = 0; i < textlist.length; i++) {
-				if (!textlist[i]) continue;
-				texthtml = texthtml + "<p>"+textlist[i]+"</p>";
-			}
-
-			$("tr#text").after("<tr class='text'><td colspan='6' class='text"+i+"'>"+texthtml+"</td></tr>");
-
-		};
+			$("tr#text").after("<tr class='text'><td colspan='6'>"+utils_combineText(curcondition.text)+"</td></tr>");
+		}

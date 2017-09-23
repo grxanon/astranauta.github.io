@@ -25,18 +25,16 @@ function tagcontent (curitem, tag, multi=false) {
 }
 
 function asc_sort(a, b){
-    return ($(b).text()) < ($(a).text()) ? 1 : -1;
+	return ($(b).text()) < ($(a).text()) ? 1 : -1;
 }
 
 function dec_sort(a, b){
-    return ($(b).text()) > ($(a).text()) ? 1 : -1;
+	return ($(b).text()) > ($(a).text()) ? 1 : -1;
 }
-
-window.onload = loadbackgrounds;
 
 var tabledefault = "";
 
-function loadbackgrounds () {
+window.onload = function load () {
 	tabledefault = $("#stats").html();
 	var bglist = backgrounddata.compendium.background;
 
@@ -82,13 +80,11 @@ function loadbackgrounds () {
 	});
 
 	$("ul.list li").click(function(e) {
-		usebackground($(this).attr("id"));
-		document.title = decodeURI($(this).attr("data-link")) + " - 5etools Backgrounds";
 		window.location = "#"+$(this).attr("data-link");
 	});
 
 	if (window.location.hash.length) {
-		$("ul.list li[data-link='"+window.location.hash.split("#")[1]+"']:eq(0)").click();
+		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
 
 	// reset button
@@ -100,7 +96,7 @@ function loadbackgrounds () {
 	})
 }
 
-function usebackground (id) {
+function loadhash (id) {
 	$("#stats").html(tabledefault);
 	var bglist = backgrounddata.compendium.background;
 	var curbg = bglist[id];
@@ -122,23 +118,23 @@ function usebackground (id) {
 			texthtml = texthtml + "<p>"+textlist[i]+"</p>";
 		}
 
-        var subtraitlist = traitlist[n].subtrait;
+		var subtraitlist = traitlist[n].subtrait;
 		if (subtraitlist !== undefined) {
 			var k = 0;
-            var subtrait;
+			var subtrait;
 			for (var j = 0; j < subtraitlist.length; j++) {
-                texthtml = texthtml + "<p class='subtrait'>";
+				texthtml = texthtml + "<p class='subtrait'>";
 				subtrait = subtraitlist[j];
 				texthtml = texthtml + "<span class='name'>"+subtrait.name+".</span> ";
 				for (k = 0; k < subtrait.text.length; k++) {
 					if (!subtrait.text[k]) continue;
 					if (k === 0) {
-                        texthtml = texthtml + "<span>" + subtrait.text[k] + "</span>";
-                    } else {
-                        texthtml = texthtml + "<p class='subtrait'>" + subtrait.text[k] + "</p>";
+						texthtml = texthtml + "<span>" + subtrait.text[k] + "</span>";
+					} else {
+						texthtml = texthtml + "<p class='subtrait'>" + subtrait.text[k] + "</p>";
 					}
 				}
-                texthtml = texthtml + "</p>";
+				texthtml = texthtml + "</p>";
 			}
 		}
 

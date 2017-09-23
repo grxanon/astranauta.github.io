@@ -16,6 +16,7 @@ function parsesource (src) {
 	if (source === "Plane Shift Zendikar") source = "PSZ";
 	if (source === "critter compendium") source = "CC 3pp";
 	if (source === "Tomb of Annihilation") source = "ToA";
+	if (source === "The Tortle Package") source = "TTP";
 	return source;
 }
 
@@ -78,9 +79,7 @@ function dec_sort(a, b){
 	return ($(b).text()) > ($(a).text()) ? 1 : -1;
 }
 
-window.onload = loadmonsters;
-
-function loadmonsters() {
+window.onload = function load() {
 	tabledefault = $("#stats").html();
 
 	monsters = monsterdata.compendium.monster;
@@ -152,13 +151,11 @@ function loadmonsters() {
 	});
 
 	$("ul.list li").click(function(e) {
-		usemonster($(this).attr("id"));
-		document.title = decodeURIComponent($(this).attr("data-link")).replace("%27","'") + " - 5etools Bestiary";
 		window.location = "#"+$(this).attr("data-link");
 	});
 
 	if (window.location.hash.length) {
-		$("ul.list li[data-link='"+window.location.hash.split("#")[1]+"']:eq(0)").click();
+		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
 
 	// filtering
@@ -206,7 +203,7 @@ function loadmonsters() {
 		$("button#expandcollapse").click(function() {
 			$("main .row:eq(0) > div:eq(0)").toggleClass("col-sm-5").toggle();
 				$("main .row:eq(0) > div:eq(1)").toggleClass("col-sm-12").toggleClass("col-sm-7");
- 			/*
+			/*
 				var i = $("main .row:eq(0) > div:eq(1) > div:eq(0)");
 				if (i.css("maxHeight") === "100%") {
 					i.css("maxHeight", "565px");
@@ -258,9 +255,7 @@ function sortmonsters(a, b, o) {
 }
 
 // load selected monster stat block
-function usemonster (id) {
-
-
+function loadhash (id) {
 	$("#stats").html(tabledefault);
 	monsters = monsterdata.compendium.monster;
 	var mon = monsters[id];
