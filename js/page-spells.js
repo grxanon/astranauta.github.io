@@ -232,7 +232,7 @@ window.onload = function load() {
 			curspell.range = "Varies";
 		}
 
-		var toadd = "<li class='row' id='"+i+"' data-link='"+encodeURIComponent(name.toLowerCase()).replace("'","%27")+"' title='"+name+"'><span class='name col-xs-3 col-xs-3-7'>"+name+"</span> <span class='source col-xs-1' title=\""+parsesource(source)+"\">"+abbreviateSource(source)+"</span> <span class='level col-xs-1 col-xs-1-7'>"+leveltext+"</span> <span class='school col-xs-2 col-xs-2-5'>"+schooltext+"</span> <span class='classes' style='display: none'>"+curspell.classes+"</span> <span class='range col-xs-3 col-xs-3-1'>"+curspell.range+"</span>";
+		var toadd = "<li class='row' id='"+i+"' data-link='"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-3 col-xs-3-7'>"+name+"</span> <span class='source col-xs-1' title=\""+parsesource(source)+"\">"+abbreviateSource(source)+"</span> <span class='level col-xs-1 col-xs-1-7'>"+leveltext+"</span> <span class='school col-xs-2 col-xs-2-5'>"+schooltext+"</span> <span class='classes' style='display: none'>"+curspell.classes+"</span> <span class='range col-xs-3 col-xs-3-1'>"+curspell.range+"</span>";
 		if (curspell.level[0] === "P" && curspell.level[1] === "D") { // if it's a psionic discipline, make an invisible search field with all the modes associated
 			var textlist = curspell.text;
 
@@ -286,6 +286,7 @@ window.onload = function load() {
 		}
 	}
 
+	// Sort the filter boxes, and select "All"
 	$("select.levelfilter option").sort(asc_sort).appendTo('select.levelfilter');
 	$("select.levelfilter option[value=1]").before($("select.levelfilter option[value=All]"));
 	$("select.levelfilter option[value=1]").before($("select.levelfilter option[value=0]"));
@@ -307,7 +308,6 @@ window.onload = function load() {
 		valueNames: ['name', 'source', 'level', 'school', 'classes', 'disciplinesearch', 'range', 'thirdparty'],
 		listClass: "spells"
 	};
-
 	var spellslist = new List("listcontainer", options);
 	spellslist.sort ("name");
 
@@ -394,13 +394,18 @@ window.onload = function load() {
 
 function sortspells(a, b, o) {
 	if (o.valueName === "name") {
-		return ((b._values.name.toLowerCase()) > (a._values.name.toLowerCase())) ? 1 : -1;
+		return compareNames(a, b);
 	}
+
+    if (o.valueName === "source") {
+        if ((b._values.source.toLowerCase()) === (a._values.source.toLowerCase())) return compareNames(a, b);
+        return ((b._values.source.toLowerCase()) > (a._values.source.toLowerCase())) ? 1 : -1;
+    }
 
 	if (o.valueName === "school") {
+		if ((b._values.school.toLowerCase()) === (a._values.school.toLowerCase())) return compareNames(a, b);
 		return ((b._values.school.toLowerCase()) > (a._values.school.toLowerCase())) ? 1 : -1;
 	}
-
 
 	if (o.valueName === "level") {
 		var alevel = a._values.level.replace(" ", "").replace("cantrip", "0")[0];
@@ -409,15 +414,24 @@ function sortspells(a, b, o) {
 		if (blevel === "D") blevel = "10";
 		if (alevel === "T") alevel = "11";
 		if (blevel === "T") blevel = "11";
-		return (parseInt(blevel) > parseInt(alevel)) ? 1 : -1;
+        alevel = (alevel.length < 2 ? "0" + alevel : alevel) + (a._values.level.includes("ritual") ? " ritual" : "");
+        blevel = (blevel.length < 2 ? "0" + blevel : blevel) + (b._values.level.includes("ritual") ? " ritual" : "");
+		if (blevel === alevel) return compareNames(a, b);
+		return (blevel > alevel) ? 1 : -1;
 	}
 
 	if (o.valueName === "range") {
+		if (normaliserange(b._values.range.toLowerCase()) === normaliserange(a._values.range)) return compareNames(a, b);
 		return (normaliserange(b._values.range.toLowerCase()) > normaliserange(a._values.range)) ? 1 : -1;
 	}
 
 	return 0;
 
+	function compareNames(a, b) {
+        if (b._values.name.toLowerCase() === (a._values.name.toLowerCase())) return 0;
+        else if ((b._values.name.toLowerCase()) > (a._values.name.toLowerCase())) return 1;
+        else if ((b._values.name.toLowerCase()) < (a._values.name.toLowerCase())) return -1;
+	}
 }
 
 function loadhash (id) {
