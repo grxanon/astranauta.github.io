@@ -31,76 +31,6 @@ function parsespelllevel (level) {
 	return level+"th";
 }
 
-const SRC_PHB = "PHB";
-const SRC_EEPC = "EEPC";
-const SRC_SCAG = "SCAG";
-const SRC_UAMystic = "UAMystic";
-const SRC_UAStarterSpells = "UAStarterSpells";
-const SRC_UAModern = "UAModern";
-const SRC_UATOBM = "UATOBM";
-const SRC_BOLS_3PP = "BoLS 3pp";
-const SRC_DM01_3PP = "DM-01 3pp";
-const SRC_DM02_3PP = "DM-02 3pp";
-const SRC_DM03_3PP = "DM-03 3pp";
-const SRC_DM04_3PP = "DM-04 3pp";
-const SRC_DM05_3PP = "DM-05 3pp";
-const SRC_DM06_3PP = "DM-06 3pp";
-const SRC_DM07_3PP = "DM-07 3pp";
-const SRC_DM08_3PP = "DM-08 3pp";
-const SRC_DM09_3PP = "DM-09 3pp";
-const SRC_DM10_3PP = "DM-10 3pp";
-const SRC_DM11_3PP = "DM-11 3pp";
-const SRC_DM12_3PP = "DM-12 3pp";
-const SRC_DM13_3PP = "DM-13 3pp";
-function parsesource (source) {
-	if (source === SRC_PHB) source = "Player's Handbook";
-	if (source === SRC_EEPC) source = "Elemental Evil Player's Companion";
-	if (source === SRC_SCAG) source = "Sword Coast Adventurer's Guide";
-	if (source === SRC_UAMystic) source = "Unearthed Arcana: The Mystic Class";
-	if (source === SRC_UAStarterSpells) source = "Unearthed Arcana: Starter Spells";
-	if (source === SRC_UAModern) source = "Unearthed Arcana: Modern Magic";
-	if (source === SRC_UATOBM) source = "Unearthed Arcana: That Old Black Magic";
-	if (source === SRC_BOLS_3PP) source = "Book of Lost Spells (3pp)";
-	if (source === SRC_DM01_3PP) source = "Deep Magic #01: Clockwork (3pp)";
-	if (source === SRC_DM02_3PP) source = "Deep Magic #02: Rune Magic (3pp)";
-	if (source === SRC_DM03_3PP) source = "Deep Magic #03: Void Magic (3pp)";
-	if (source === SRC_DM04_3PP) source = "Deep Magic #04: Illumination Magic (3pp)";
-	if (source === SRC_DM05_3PP) source = "Deep Magic #05: Ley Lines (3pp)";
-	if (source === SRC_DM06_3PP) source = "Deep Magic #06: Angelic Seals (3pp)";
-	if (source === SRC_DM07_3PP) source = "Deep Magic #07: Chaos Magic (3pp)";
-	if (source === SRC_DM08_3PP) source = "Deep Magic #08: Battle Magic (3pp)";
-	if (source === SRC_DM09_3PP) source = "Deep Magic #09: Ring Magic (3pp)";
-	if (source === SRC_DM10_3PP) source = "Deep Magic #10: Shadow Magic (3pp)";
-	if (source === SRC_DM11_3PP) source = "Deep Magic #11: Elven High Magic (3pp)";
-	if (source === SRC_DM12_3PP) source = "Deep Magic #12: Blood and Doom (3pp)";
-	if (source === SRC_DM13_3PP) source = "Deep Magic #13: Dragon Magic (3pp)";
-	return source;
-}
-function abbreviateSource(source) {
-	if (source === SRC_PHB) source = "PHB";
-	if (source === SRC_EEPC) source = "EEPC";
-	if (source === SRC_SCAG) source = "SCAG";
-	if (source === SRC_UAMystic) source = "UAM";
-	if (source === SRC_UAStarterSpells) source = "UASS";
-	if (source === SRC_UAModern) source = "UAMM";
-	if (source === SRC_UATOBM) source = "UAOBM";
-	if (source === SRC_BOLS_3PP) source = "BLS";
-	if (source === SRC_DM01_3PP) source = "DM01";
-	if (source === SRC_DM02_3PP) source = "DM02";
-	if (source === SRC_DM03_3PP) source = "DM03";
-	if (source === SRC_DM04_3PP) source = "DM04";
-	if (source === SRC_DM05_3PP) source = "DM05";
-	if (source === SRC_DM06_3PP) source = "DM06";
-	if (source === SRC_DM07_3PP) source = "DM07";
-	if (source === SRC_DM08_3PP) source = "DM08";
-	if (source === SRC_DM09_3PP) source = "DM09";
-	if (source === SRC_DM10_3PP) source = "DM10";
-	if (source === SRC_DM11_3PP) source = "DM11";
-	if (source === SRC_DM12_3PP) source = "DM12";
-	if (source === SRC_DM13_3PP) source = "DM13";
-	return source;
-}
-
 const SELF_RANGE_OFFSET = -4;
 const FEET_PER_MILE = 5280;
 const ALL_RANGES = -2; // used in spells.html where the filter is defined
@@ -232,7 +162,7 @@ window.onload = function load() {
 			curspell.range = "Varies";
 		}
 
-		var toadd = "<li class='row' id='"+i+"' data-link='"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-3 col-xs-3-7'>"+name+"</span> <span class='source col-xs-1' title=\""+parsesource(source)+"\">"+abbreviateSource(source)+"</span> <span class='level col-xs-1 col-xs-1-7'>"+leveltext+"</span> <span class='school col-xs-2 col-xs-2-5'>"+schooltext+"</span> <span class='classes' style='display: none'>"+curspell.classes+"</span> <span class='range col-xs-3 col-xs-3-1'>"+curspell.range+"</span>";
+		var toadd = "<li class='row' id='"+i+"' data-link='"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-3 col-xs-3-7'>"+name+"</span> <span class='source col-xs-1' title=\""+parse_sourceToFull(source)+"\">"+parse_abbreviateSource(source)+"</span> <span class='level col-xs-1 col-xs-1-7'>"+leveltext+"</span> <span class='school col-xs-2 col-xs-2-5'>"+schooltext+"</span> <span class='classes' style='display: none'>"+curspell.classes+"</span> <span class='range col-xs-3 col-xs-3-1'>"+curspell.range+"</span>";
 		if (curspell.level[0] === "P" && curspell.level[1] === "D") { // if it's a psionic discipline, make an invisible search field with all the modes associated
 			var textlist = curspell.text;
 
@@ -269,8 +199,8 @@ window.onload = function load() {
 			$("select.schoolfilter").append("<option value='"+parseschool (curspell.school)+"'>"+parseschool (curspell.school)+"</option>");
 		}
 
-		if (!$("select.sourcefilter:contains(\""+parsesource(source)+"\")").length) {
-			$("select.sourcefilter").append("<option value='"+abbreviateSource(source)+"'>"+parsesource(source)+"</option>");
+		if (!$("select.sourcefilter:contains(\""+parse_sourceToFull(source)+"\")").length) {
+			$("select.sourcefilter").append("<option value='"+parse_abbreviateSource(source)+"'>"+parse_sourceToFull(source)+"</option>");
 		}
 
 		var classlist = curspell.classes.split(",");
@@ -439,7 +369,7 @@ function loadhash (id) {
 	var spelllist = spelldata.compendium.spell;
 	var curspell = spelllist[id];
 
-	$("th#name").html("<span title=\""+parsesource(curspell.source)+"\" class='source source"+curspell.source+"'>"+curspell.source+"</span> "+curspell.name);
+	$("th#name").html("<span title=\""+parse_sourceToFull(curspell.source)+"\" class='source source"+curspell.source+"'>"+curspell.source+"</span> "+curspell.name);
 
 	// $("th#name").html(curspell.name);
 
