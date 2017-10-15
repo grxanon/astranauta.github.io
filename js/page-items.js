@@ -130,13 +130,12 @@ window.onload = function load() {
 		listClass: "mundane"
 	};
 
-	mundanelist = new List("itemcontainer", options);
+	mundanelist = search(options);
 	options.listClass = "magic";
-	magiclist = new List("itemcontainer", options);
+	magiclist = search(options);
 
 	$("ul.list li").mousedown(function(e) {
 		if (e.which === 2) {
-			console.log("#"+$(this).attr("data-link"));
 			window.open("#"+$(this).attr("data-link"), "_blank").focus();
 			e.preventDefault();
 			e.stopPropagation();
@@ -212,20 +211,6 @@ window.onload = function load() {
 			display: "none"
 		})
 	});
-
-	// reset button
-	$("button#reset").click(function() {
-		$("#filtertools select").val("All");
-		$("#search").val("");
-		magiclist.search("");
-		magiclist.filter();
-		magiclist.sort("name");
-		magiclist.update();
-		mundanelist.search("");
-		mundanelist.filter();
-		mundanelist.sort("name");
-		mundanelist.update();
-	})
 }
 
 function asc_sort(a, b){
@@ -250,8 +235,8 @@ function sortitems(a, b, o) {
 	}
 
 	if (o.valueName === "rarity") {
-		ararity = a._values.rarity.replace("Rarity: ", "");
-		brarity = b._values.rarity.replace("Rarity: ", "");
+		let ararity = a._values.rarity.replace("Rarity: ", "");
+		let brarity = b._values.rarity.replace("Rarity: ", "");
 		if (ararity === "None") ararity = "0";
 		if (brarity === "None") brarity = "0";
 		if (ararity === "Common") ararity = "1";
@@ -266,6 +251,8 @@ function sortitems(a, b, o) {
 		if (brarity === "Legendary") brarity = "5";
 		if (ararity === "Artifact") ararity = "6";
 		if (brarity === "Artifact") brarity = "6";
+		if (ararity === "Unknown") ararity = "7";
+		if (brarity === "Unknown") brarity = "7";
 		return ((b._values.rarity) > (a._values.rarity)) ? 1 : -1;
 	}
 
@@ -352,9 +339,9 @@ function loadhash (id) {
 		texthtml += "<p>The wearer has disadvantage on Stealth (Dexterity) checks.</p>";
 	}
 
-	for (var n = 0; n < textlist.length; n++) {
+	for (let n = 0; n < textlist.length; n++) {
 		if (!textlist[n]) continue;
-		var curtextstring = JSON.stringify (textlist[n]);
+		let curtextstring = JSON.stringify (textlist[n]);
 		if (textlist[n].istable === "YES") {
 			texthtml += utils_makeTable(textlist[n]);
 		} else {
@@ -375,7 +362,7 @@ function loadhash (id) {
 				continue;
 			}
 
-			var finaltext = textlist[n].replace(/(Curse|Sentience|Personality)(\.|\:) /g, '<strong>$1.</strong> ');
+			let finaltext = textlist[n].replace(/(Curse|Sentience|Personality)(\.|\:) /g, '<strong>$1.</strong> ');
 			texthtml = texthtml + "<p>"+finaltext+"</p>";
 		}
 	}

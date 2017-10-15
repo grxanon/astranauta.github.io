@@ -54,13 +54,10 @@ window.onload = function load() {
 
 	}
 
-	var options = {
+	const list = search({
 		valueNames: ['name'],
 		listClass: "classes"
-	};
-
-	var classlist = new List("listcontainer", options);
-	classlist.sort ("name");
+	});
 
 	$("ul.list li").mousedown(function(e) {
 		if (e.which === 2) {
@@ -78,16 +75,6 @@ window.onload = function load() {
 	if (window.location.hash.length) {
 		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
-
-	// reset button
-	$("button#reset").click(function() {
-		$("#filtertools select").val("All");
-		$("#search").val("");
-		classlist.search("");
-		classlist.filter();
-		classlist.sort("name");
-		classlist.update();
-	})
 }
 
 function loadhash (id) {
@@ -240,9 +227,9 @@ function loadhash (id) {
 			}
 
 			// other features
-		} else for (var a = curlevel.feature.length-1; a >= 0; a--) {
-			var curfeature = curlevel.feature[a];
-			var link = curlevel._level + "_" + a;
+		} else for (let a = curlevel.feature.length-1; a >= 0; a--) {
+			let curfeature = curlevel.feature[a];
+			let link = curlevel._level + "_" + a;
 
 
 			if (curfeature._optional === "YES") {
@@ -277,8 +264,8 @@ function loadhash (id) {
 			if (curlevel.feature.length !== 1 && a !== 0) multifeature = ", ";
 			let featureSpan = document.createElement('span');
 			featureSpan.setAttribute('data-link', link);
-            featureSpan.onclick = function() {scrollToFeature(featureSpan.getAttribute('data-link'))};
-            featureSpan.innerHTML = curfeature.name;
+			featureSpan.onclick = function() {scrollToFeature(featureSpan.getAttribute('data-link'))};
+			featureSpan.innerHTML = curfeature.name;
 			if (curfeature._optional !== "YES" && curfeature.suboption === undefined) $("tr#level"+curlevel._level+" td.features").prepend(featureSpan).prepend(multifeature);
 
 			// display features in bottom section
@@ -302,7 +289,7 @@ function loadhash (id) {
 	});
 
 	$("div#subclasses span").remove();
-	for (var i = 0; i < subclasses.length; i++) {
+	for (let i = 0; i < subclasses.length; i++) {
 		if (subclasses[i].issubclass === "YES") $("div#subclasses").prepend("<span data-subclass='"+(subclasses[i].name.toLowerCase())+"'><em style='display: none;'>"+subclasses[i].name.split(": ")[0]+": </em><span>"+subclasses[i].name.split(": ")[1]+"</span></span>");
 	}
 
@@ -320,7 +307,7 @@ function loadhash (id) {
 
 function scrollToFeature(ele) {
 	let goTo = document.getElementById("feature"+ele);
-    goTo.scrollIntoView();
+	goTo.scrollIntoView();
 }
 
 function loadsub(sub) {

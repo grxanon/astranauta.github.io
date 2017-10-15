@@ -1,4 +1,60 @@
+const STR_EMPTY = "";
+const STR_VOID_LINK = "javascript:void(0)";
+
+const TYP_STRING = "string";
+const TYP_NUMBER = "number";
+const TYP_OBJECT = "object";
+
+const ELE_SPAN = "span";
+const ELE_UL = "ul";
+const ELE_LI = "li";
+const ELE_A = "a";
+const ELE_P = "p";
+const ELE_DIV = "div";
+const ELE_BUTTON = "button";
+const ELE_INPUT = "input";
+
+const EVNT_MOUSEOVER = "mouseover";
+const EVNT_MOUSEOUT = "mouseout";
+const EVNT_MOUSELEAVE = "mouseleave";
+const EVNT_MOUSEENTER = "mouseenter";
+const EVNT_CLICK = "click";
+
+const ATB_ID = "id";
+const ATB_CLASS = "class";
+const ATB_DATA_LINK = "data-link";
+const ATB_TITLE = "title";
+const ATB_VALUE = "value";
+const ATB_HREF = "href";
+const ATB_STYLE = "style";
+const ATB_CHECKED = "checked";
+const ATB_TYPE = "type";
+const ATB_ONCLICK = "onclick";
+
+const STL_DISPLAY_INITIAL = "display: initial";
+const STL_DISPLAY_NONE = "display: none";
+
 // STRING ==============================================================================================================
+// Appropriated from StackOverflow (literally, the site uses this code)
+String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
+function () {
+	"use strict";
+	var str = this.toString();
+	if (arguments.length) {
+		var t = typeof arguments[0];
+		var key;
+		var args = (TYP_STRING === t || TYP_NUMBER === t) ?
+			Array.prototype.slice.call(arguments)
+			: arguments[0];
+
+		for (key in args) {
+			str = str.replace(new RegExp("\\{" + key + "\\}", "gi"), args[key]);
+		}
+	}
+
+	return str;
+};
+
 function utils_joinPhraseArray(array, joiner, lastJoiner) {
 	if (array.length === 0) return "";
 	if (array.length === 1) return array[0];
@@ -19,7 +75,7 @@ String.prototype.uppercaseFirst = String.prototype.uppercaseFirst ||
 		let str = this.toString();
 		if (str.length === 0) return str;
 		if (str.length === 1) return str.charAt(0).toUpperCase();
-		return str.charAt(0).toUpperCase() + str.slice(1);;
+	return str.charAt(0).toUpperCase() + str.slice(1);
 	};
 
 // TEXT COMBINING ======================================================================================================
@@ -27,8 +83,11 @@ function utils_combineText(textList, tagPerItem, textBlockInlineTitle) {
 	tagPerItem = tagPerItem === undefined ? null : tagPerItem;
 	textBlockInlineTitle = textBlockInlineTitle === undefined ? null : textBlockInlineTitle;
 	let textStack = "";
+	if (typeof textList === TYP_STRING) {
+		return getString(textList, true)
+	}
 	for (let i = 0; i < textList.length; ++i) {
-		if (typeof textList[i] === 'object') {
+		if (typeof textList[i] === TYP_OBJECT) {
             if (textList[i].islist === "YES") {
                 textStack += utils_makeList(textList[i]);
 			}
@@ -45,14 +104,18 @@ function utils_combineText(textList, tagPerItem, textBlockInlineTitle) {
 				textStack += utils_makeAttAttackMod(textList[i]);
 			}
 		} else {
-			let openTag = tagPerItem === null ? "" : "<" + tagPerItem + ">";
-			let closeTag = tagPerItem === null ? "" : "</" + tagPerItem + ">";
-			let inlineTitle = textBlockInlineTitle !== null && i === 0 ? textBlockInlineTitle : "";
-			textStack += openTag + inlineTitle + textList[i] + closeTag;
+			textStack += getString(textList[i], textBlockInlineTitle !== null && i === 0)
 		}
 	}
 	return textStack;
-}
+
+	function getString(text, addTitle) {
+			let openTag = tagPerItem === null ? "" : "<" + tagPerItem + ">";
+			let closeTag = tagPerItem === null ? "" : "</" + tagPerItem + ">";
+		let inlineTitle = addTitle ? textBlockInlineTitle : "";
+		return openTag + inlineTitle + text + closeTag;
+		}
+	}
 
 function utils_makeTable(tableObject) {
 	let tableStack = "<table>";
@@ -175,12 +238,11 @@ function utils_makePrerequisite(prereqList, shorthand, makeAsArray) {
                     if (!pre.proficiency[j].hasOwnProperty(type)) continue;
                     if (type === "armor") {
                     	if (shorthand) {
-							outStack.push("prof " + parse_abbreviateArmor(pre.proficiency[j][type]) + " armor");
+							outStack.push("prof " + parse_armorToAbv(pre.proficiency[j][type]) + " armor");
 						} else {
 							outStack.push("Proficiency with " + pre.proficiency[j][type] + " armor");
 						}
 					}
-					else console.log("unimplemented proficiency type in utils_makePrerequisite")
                 }
             }
 		}
@@ -273,6 +335,9 @@ function utils_getAttributeText(attObj) {
 				atts.push(outStack)
 			}
 
+		}
+	}
+
 			function isAllAttributesWithParent(item) {
 				let tempAttributes = [];
 				for (let i = 0; i < mainAtts.length; ++i) {
@@ -286,9 +351,6 @@ function utils_getAttributeText(attObj) {
 				}
 				return tempAttributes.length === 6;
 			}
-		}
-	}
-
 	function getNumberString(amount) {
 		if (amount === 1) return "one";
 		if (amount === 2) return "two";
@@ -297,7 +359,7 @@ function utils_getAttributeText(attObj) {
 	}
 }
 
-// PARSING FUNCTIONS ===================================================================================================
+// PARSING =============================================================================================================
 function parse_attAbvToFull(attribute) {
 	const ABV_TO_FULL = {
 		"str": "Strength",
@@ -316,7 +378,7 @@ const ARMR_HEAVY = "heavy";
 const ARMR_LIGHT_ABBV = "l.";
 const ARMR_MEDIUM_ABBV = "m.";
 const ARMR_HEAVY_ABBV = "h.";
-function parse_abbreviateArmor(armor) {
+function parse_armorToAbv(armor) {
 	if (armor === ARMR_LIGHT) armor = ARMR_LIGHT_ABBV;
 	if (armor === ARMR_MEDIUM) armor = ARMR_MEDIUM_ABBV;
 	if (armor === ARMR_HEAVY) armor = ARMR_HEAVY_ABBV;
@@ -354,60 +416,114 @@ const UA_PREFIX = "Unearthed Arcana: ";
 const PS_PREFIX = "Plane Shift: ";
 const DM_PREFIX = "Deep Magic: ";
 function parse_sourceToFull (source) {
-    if (source === SRC_PHB) source = "Player's Handbook";
-    if (source === SRC_EEPC) source = "Elemental Evil Player's Companion";
-    if (source === SRC_SCAG) source = "Sword Coast Adventurer's Guide";
-    if (source === SRC_UAMystic) source = UA_PREFIX + "The Mystic Class";
-    if (source === SRC_UAStarterSpells) source = UA_PREFIX + "Starter Spells";
-    if (source === SRC_UAModern) source = UA_PREFIX + "Modern Magic";
-    if (source === SRC_UATOBM) source = UA_PREFIX + "That Old Black Magic";
-    if (source === SRC_UAEBB) source = UA_PREFIX + "Eberron";
-    if (source === SRC_UAFT) source = UA_PREFIX + "Feats";
-    if (source === SRC_UAFFS) source = UA_PREFIX + "Feats for Skills";
-    if (source === SRC_UAFFR) source = UA_PREFIX + "Feats for Races";
-    if (source === SRC_PSK) source = PS_PREFIX + "Kaladesh";
-    if (source === SRC_BOLS_3PP) source = "Book of Lost Spells (3pp)";
-    if (source === SRC_DM01_3PP) source = DM_PREFIX + "#01 - Clockwork (3pp)";
-    if (source === SRC_DM02_3PP) source = DM_PREFIX + "#02 - Rune Magic (3pp)";
-    if (source === SRC_DM03_3PP) source = DM_PREFIX + "#03 - Void Magic (3pp)";
-    if (source === SRC_DM04_3PP) source = DM_PREFIX + "#04 - Illumination Magic (3pp)";
-    if (source === SRC_DM05_3PP) source = DM_PREFIX + "#05 - Ley Lines (3pp)";
-    if (source === SRC_DM06_3PP) source = DM_PREFIX + "#06 - Angelic Seals (3pp)";
-    if (source === SRC_DM07_3PP) source = DM_PREFIX + "#07 - Chaos Magic (3pp)";
-    if (source === SRC_DM08_3PP) source = DM_PREFIX + "#08 - Battle Magic (3pp)";
-    if (source === SRC_DM09_3PP) source = DM_PREFIX + "#09 - Ring Magic (3pp)";
-    if (source === SRC_DM10_3PP) source = DM_PREFIX + "#10 - Shadow Magic (3pp)";
-    if (source === SRC_DM11_3PP) source = DM_PREFIX + "#11 - Elven High Magic (3pp)";
-    if (source === SRC_DM12_3PP) source = DM_PREFIX + "#12 - Blood and Doom (3pp)";
-    if (source === SRC_DM13_3PP) source = DM_PREFIX + "#13 - Dragon Magic (3pp)";
-    return source;
+	if (source === SRC_PHB) source = "Player's Handbook";
+	if (source === SRC_EEPC) source = "Elemental Evil Player's Companion";
+	if (source === SRC_SCAG) source = "Sword Coast Adventurer's Guide";
+	if (source === SRC_UAMystic) source = UA_PREFIX + "The Mystic Class";
+	if (source === SRC_UAStarterSpells) source = UA_PREFIX + "Starter Spells";
+	if (source === SRC_UAModern) source = UA_PREFIX + "Modern Magic";
+	if (source === SRC_UATOBM) source = UA_PREFIX + "That Old Black Magic";
+	if (source === SRC_UAEBB) source = UA_PREFIX + "Eberron";
+	if (source === SRC_UAFT) source = UA_PREFIX + "Feats";
+	if (source === SRC_UAFFS) source = UA_PREFIX + "Feats for Skills";
+	if (source === SRC_UAFFR) source = UA_PREFIX + "Feats for Races";
+	if (source === SRC_PSK) source = PS_PREFIX + "Kaladesh";
+	if (source === SRC_BOLS_3PP) source = "Book of Lost Spells (3pp)";
+	if (source === SRC_DM01_3PP) source = DM_PREFIX + "#01 - Clockwork (3pp)";
+	if (source === SRC_DM02_3PP) source = DM_PREFIX + "#02 - Rune Magic (3pp)";
+	if (source === SRC_DM03_3PP) source = DM_PREFIX + "#03 - Void Magic (3pp)";
+	if (source === SRC_DM04_3PP) source = DM_PREFIX + "#04 - Illumination Magic (3pp)";
+	if (source === SRC_DM05_3PP) source = DM_PREFIX + "#05 - Ley Lines (3pp)";
+	if (source === SRC_DM06_3PP) source = DM_PREFIX + "#06 - Angelic Seals (3pp)";
+	if (source === SRC_DM07_3PP) source = DM_PREFIX + "#07 - Chaos Magic (3pp)";
+	if (source === SRC_DM08_3PP) source = DM_PREFIX + "#08 - Battle Magic (3pp)";
+	if (source === SRC_DM09_3PP) source = DM_PREFIX + "#09 - Ring Magic (3pp)";
+	if (source === SRC_DM10_3PP) source = DM_PREFIX + "#10 - Shadow Magic (3pp)";
+	if (source === SRC_DM11_3PP) source = DM_PREFIX + "#11 - Elven High Magic (3pp)";
+	if (source === SRC_DM12_3PP) source = DM_PREFIX + "#12 - Blood and Doom (3pp)";
+	if (source === SRC_DM13_3PP) source = DM_PREFIX + "#13 - Dragon Magic (3pp)";
+	return source;
 }
-function parse_abbreviateSource(source) {
-    if (source === SRC_PHB) source = "PHB";
-    if (source === SRC_EEPC) source = "EEPC";
-    if (source === SRC_SCAG) source = "SCAG";
-    if (source === SRC_UAMystic) source = "UAM";
-    if (source === SRC_UAStarterSpells) source = "UASS";
-    if (source === SRC_UAModern) source = "UAMM";
-    if (source === SRC_UATOBM) source = "UAOBM";
-    if (source === SRC_UAEBB) source = "UAEB";
-    if (source === SRC_UAFT) source = "UAFT";
-    if (source === SRC_UAFFS) source = "UAFFS";
-    if (source === SRC_UAFFR) source = "UAFFR";
-    if (source === SRC_PSK) source = "PSK";
-    if (source === SRC_BOLS_3PP) source = "BLS";
-    if (source === SRC_DM01_3PP) source = "DM01";
-    if (source === SRC_DM02_3PP) source = "DM02";
-    if (source === SRC_DM03_3PP) source = "DM03";
-    if (source === SRC_DM04_3PP) source = "DM04";
-    if (source === SRC_DM05_3PP) source = "DM05";
-    if (source === SRC_DM06_3PP) source = "DM06";
-    if (source === SRC_DM07_3PP) source = "DM07";
-    if (source === SRC_DM08_3PP) source = "DM08";
-    if (source === SRC_DM09_3PP) source = "DM09";
-    if (source === SRC_DM10_3PP) source = "DM10";
-    if (source === SRC_DM11_3PP) source = "DM11";
-    if (source === SRC_DM12_3PP) source = "DM12";
-    if (source === SRC_DM13_3PP) source = "DM13";
-    return source;
+const sourceToAbv = {};
+sourceToAbv[SRC_PHB] = "PHB";
+sourceToAbv[SRC_EEPC] = "EEPC";
+sourceToAbv[SRC_SCAG] = "SCAG";
+sourceToAbv[SRC_UAMystic] = "UAM";
+sourceToAbv[SRC_UAStarterSpells] = "UASS";
+sourceToAbv[SRC_UAModern] = "UAMM";
+sourceToAbv[SRC_UATOBM] = "UAOBM";
+sourceToAbv[SRC_UAEBB] = "UAEB";
+sourceToAbv[SRC_UAFT] = "UAFT";
+sourceToAbv[SRC_UAFFS] = "UAFFS";
+sourceToAbv[SRC_UAFFR] = "UAFFR";
+sourceToAbv[SRC_PSK] = "PSK";
+sourceToAbv[SRC_BOLS_3PP] = "BLS";
+sourceToAbv[SRC_DM01_3PP] = "DM01";
+sourceToAbv[SRC_DM02_3PP] = "DM02";
+sourceToAbv[SRC_DM03_3PP] = "DM03";
+sourceToAbv[SRC_DM04_3PP] = "DM04";
+sourceToAbv[SRC_DM05_3PP] = "DM05";
+sourceToAbv[SRC_DM06_3PP] = "DM06";
+sourceToAbv[SRC_DM07_3PP] = "DM07";
+sourceToAbv[SRC_DM08_3PP] = "DM08";
+sourceToAbv[SRC_DM09_3PP] = "DM09";
+sourceToAbv[SRC_DM10_3PP] = "DM10";
+sourceToAbv[SRC_DM11_3PP] = "DM11";
+sourceToAbv[SRC_DM12_3PP] = "DM12";
+sourceToAbv[SRC_DM13_3PP] = "DM13";
+function parse_sourceToAbv(source) {
+	if (sourceToAbv[source] !== undefined) return sourceToAbv[source];
+}
+function parse_abvToSource(abv) {
+	for (let v in sourceToAbv) {
+		if (!sourceToAbv.hasOwnProperty(v)) continue;
+		if (sourceToAbv[v] === abv) return v
+	}
+	return abv;
+}
+
+function parse_stringToSlug(str) {
+	return str.toLowerCase().replace(/[^\w ]+/g, STR_EMPTY).replace(/ +/g, STR_SLUG_DASH);
+}
+
+// DATA LINKS ==========================================================================================================
+function utils_nameToDataLink(name) {
+	return encodeURIComponent(name.toLowerCase()).replace("'","%27");
+}
+
+// CONVENIENCE/ELEMENTS ================================================================================================
+function toggleCheckBox(cb) {
+	if (cb.checked === true) cb.checked = false;
+	else cb.checked = true;
+}
+function stopEvent(event) {
+	event.stopPropagation();
+	event.preventDefault();
+}
+function toggleVisible(element) {
+	if (isShowing(element)) hide(element);
+	else show(element);
+}
+function isShowing(element) {
+	return element.hasAttribute(ATB_STYLE) && element.getAttribute(ATB_STYLE).includes(STL_DISPLAY_INITIAL);
+}
+function show(element) {
+	element.setAttribute(ATB_STYLE, STL_DISPLAY_INITIAL);
+}
+function hide(element) {
+	element.setAttribute(ATB_STYLE, STL_DISPLAY_NONE);
+}
+
+// search
+function search(options) {
+	const list = new List("listcontainer", options);
+	list.sort("name")
+	$("#reset").click(function() {
+		$("#filtertools select").val("All");
+		$("#search").val("");
+		list.search();
+		list.sort("name");
+		list.filter();
+	})
+	return list
 }

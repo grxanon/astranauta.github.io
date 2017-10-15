@@ -9,13 +9,14 @@ function parsesize (size) {
 }
 
 function parsesource (src) {
-	source = src;
+	let source = src;
 	if (source === "Player's Handbook") source = "PHB";
 	if (source === "Curse of Strahd") source = "CoS";
 	if (source === "Sword Coast Adventurer's Guide") source = "SCAG";
 	if (source === "Unearthed Arcana") source = "UA";
 	if (source === "Plane Shift Innistrad") source = "PSI";
 	if (source === "Plane Shift Amonkhet") source = "PSA";
+	if (source === "Tomb of Annihilation") source = "ToA";
 	return source;
 }
 
@@ -51,18 +52,15 @@ window.onload = function load () {
 	$("select.sourcefilter option").sort(asc_sort).appendTo('select.sourcefilter');
 	$("select.sourcefilter").val("All");
 
-	var options = {
+	const list = search({
 		valueNames: ['name', 'source'],
 		listClass: "backgrounds"
-	}
-
-	var backgroundslist = new List("listcontainer", options);
-	backgroundslist.sort ("name")
+	})
 
 	$("form#filtertools select").change(function(){
 		var sourcefilter = $("select.sourcefilter").val();
 
-		backgroundslist.filter(function(item) {
+		list.filter(function(item) {
 			if (sourcefilter === "All" || item.values().source.indexOf(sourcefilter) !== -1) return true;
 			return false;
 		});
@@ -71,7 +69,6 @@ window.onload = function load () {
 
 	$("ul.list li").mousedown(function(e) {
 		if (e.which === 2) {
-			console.log("#"+$(this).attr("data-link"))
 			window.open("#"+$(this).attr("data-link"), "_blank").focus();
 			e.preventDefault();
 			e.stopPropagation();
@@ -86,14 +83,6 @@ window.onload = function load () {
 	if (window.location.hash.length) {
 		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
-
-	// reset button
-	$("button#reset").click(function() {
-		$("#search").val("");
-		backgroundslist.search("");
-		backgroundslist.sort("name");
-		backgroundslist.update();
-	})
 }
 
 function loadhash (id) {
@@ -108,20 +97,17 @@ function loadhash (id) {
 	$("tr.trait").remove();
 	for (var n = traitlist.length-1; n >= 0; n--) {
 		var traitname = traitlist[n].name;
-		var texthtml = "<span class='name'>"+traitname+".</span> ";
-		var textlist = traitlist[n].text;
-		texthtml = texthtml + "<span>"+textlist[0]+"</span> ";
 
-		for (var i = 1; i < textlist.length; i++) {
-			if (!textlist[i]) continue;
-			if (textlist[i].indexOf ("Source: ") !== -1) continue;
-			texthtml = texthtml + "<p>"+textlist[i]+"</p>";
-		}
+		var texthtml = "";
+		let headerText = "<span class='name'>"+traitname+".</span> ";
+
+		texthtml += utils_combineText(traitlist[n].text, "p", headerText);
 
 		var subtraitlist = traitlist[n].subtrait;
 		if (subtraitlist !== undefined) {
 			var k = 0;
 			var subtrait;
+
 			for (var j = 0; j < subtraitlist.length; j++) {
 				texthtml = texthtml + "<p class='subtrait'>";
 				subtrait = subtraitlist[j];
@@ -138,7 +124,7 @@ function loadhash (id) {
 			}
 		}
 
-		$("tr#traits").after("<tr class='trait'><td colspan='6' class='trait"+i+"'>"+texthtml+"</td></tr>");
+		$("tr#traits").after("<tr class='trait'><td colspan='6'>"+texthtml+"</td></tr>");
 	}
 
-};
+}

@@ -1,6 +1,6 @@
 
 function parsesource (src) {
-	source = src;
+	let source = src;
 	if (source === "Player's Handbook") source = "PHB";
 	if (source === "Elemental Evil Player's Companion") source = "EEPC";
 	if (source === "Sword Coast Adventurer's Guide") source = "SCAG";
@@ -11,6 +11,7 @@ function parsesource (src) {
 	if (source === "Unearthed Arcana: That Old Black Magic") source = "UA TOBM";
 	if (source === "Unearthed Arcana: Gothic Heroes") source = "UA GH";
 	if (source === "Unearthed Arcana: Eladrin and Gith") source = "UA EG";
+	if (source === "Unearthed Arcana: Fiendish Options") source = "UA FO";
 	if (source === "The Tortle Package") source = "TP";
 	if (source === "Plane Shift Zendikar") source = "PSZ";
 	if (source === "Plane Shift Kaladesh") source = "PSK";
@@ -70,20 +71,17 @@ window.onload = function load() {
 	$("select.sizefilter").val("All");
 
 
-	var options = {
+	const list = search({
 		valueNames: ['name', 'ability', 'size', 'source'],
 		listClass: "races"
-	}
-
-	var raceslist = new List("listcontainer", options);
-	raceslist.sort ("name")
+	});
 
 	$("form#filtertools select").change(function(){
 		var sourcefilter = $("select.sourcefilter").val();
 		var sizefilter = $("select.sizefilter").val();
 		var bonusfilter = $("select.bonusfilter").val();
 
-		raceslist.filter(function(item) {
+		list.filter(function(item) {
 			var rightsource = false;
 			var rightsize = false;
 			var rightbonuses = false;
@@ -97,7 +95,6 @@ window.onload = function load() {
 
 	$("ul.list li").mousedown(function(e) {
 		if (e.which === 2) {
-			console.log("#"+$(this).attr("data-link"))
 			window.open("#"+$(this).attr("data-link"), "_blank").focus();
 			e.preventDefault();
 			e.stopPropagation();
@@ -112,16 +109,6 @@ window.onload = function load() {
 	if (window.location.hash.length) {
 		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
-
-	// reset button
-	$("button#reset").click(function() {
-		$("#filtertools select").val("All");
-		$("#search").val("");
-		racelist.search("");
-		racelist.filter();
-		racelist.sort("name");
-		racelist.update();
-	})
 }
 
 function loadhash (id) {
@@ -157,8 +144,8 @@ function loadhash (id) {
 		toAddTd.colSpan = 6;
 		let toAdd;
 		if (trait.optionheading === "YES") {
-			let header = "<span class='name'>" + trait.name + (traitlist[n].text === undefined ? undefined : ".") + "</span> ";
-			toAddTd.innerHTML = traitlist[n].text === undefined ? "" : " " + (utils_combineText(traitlist[n].text, "p", header));
+			let header = "<span class='name'>" + trait.name + (traitlist[n].text === undefined ? "" : ".") + "</span> ";
+			toAddTd.innerHTML = traitlist[n].text === undefined ? header : " " + (utils_combineText(traitlist[n].text, "p", header));
 		} else {
 			let header = "<span class='name'>" + trait.name + ".</span> ";
 			toAddTd.innerHTML = (utils_combineText(traitlist[n].text, "p", header));
@@ -172,4 +159,4 @@ function loadhash (id) {
 		parent.before(toAddTr);
 	}
 	return;
-};
+}

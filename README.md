@@ -39,3 +39,7 @@ https://raw.githubusercontent.com/astranauta/astranauta.github.io/master/data/be
 5. Bam. Done. If you are using the Shaped sheet, be sure to open up the NPC sheets and let them convert before using it.
 
 You can convert stat blocks to JSON for importing via [this converter](converter.html).
+
+## License
+
+This project is licensed under the terms of [the MIT license](LICENSE).

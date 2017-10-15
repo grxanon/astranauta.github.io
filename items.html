@@ -56,8 +56,10 @@
 				<ul class="dropdown-menu">
 					<li role="presentation"><a href="bestiary.html">Bestiary</a></li>
 					<li role="presentation"><a href="conditions.html">Conditions</a></li>
+					<li role="presentation"><a href="cults.html">Cults</a></li>
 					<li role="presentation" class="active"><a href="items.html">Items</a></li>
 					<li role="presentation"><a href="spells.html">Spells</a></li>
+					<li role="presentation"><a href="psionics.html">Psionics</a></li>
 					<li role="presentation"><a href="rewards.html">Other Rewards</a></li>
 				</ul>
 			</li>
@@ -74,7 +76,7 @@
 	<main class="container bodyContent">
 
 		<div class="row">
-			<div class="col-sm-6" id="itemcontainer">
+			<div class="col-sm-6" id="listcontainer">
 				<div class="input-group" style="vertical-align: top;">
 					<input type="search" id="search" class="search form-control" placeholder="Find item...">
 					<span class="input-group-btn">
@@ -85,7 +87,7 @@
 					<select class="sourcefilter">
 							<option value="All">All Sources</option>
 						</select>
-					<select class="typefilter" value="All">
+					<select class="typefilter">
 							<option value="All">All Types</option>
 						</select>
 					</select>
@@ -98,6 +100,7 @@
 						<option value="Very Rare">Very Rare</option>
 						<option value="Legendary">Legendary</option>
 						<option value="Artifact">Artifact</option>
+						<option value="Unknown">Unknown</option>
 					</select>
 					<span class="sortlabel btn-group">
 						<button class="col-xs-4 sort btn btn-default btn-xs" type="button" sort="name" sortby="asc">Name</button>

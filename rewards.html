@@ -56,8 +56,10 @@
 				<ul class="dropdown-menu">
 					<li role="presentation"><a href="bestiary.html">Bestiary</a></li>
 					<li role="presentation"><a href="conditions.html">Conditions</a></li>
+					<li role="presentation"><a href="cults.html">Cults</a></li>
 					<li role="presentation"><a href="items.html">Items</a></li>
 					<li role="presentation"><a href="spells.html">Spells</a></li>
+					<li role="presentation"><a href="psionics.html">Psionics</a></li>
 					<li role="presentation" class="active"><a href="rewards.html">Other Rewards</a></li>
 				</ul>
 			</li>
@@ -84,6 +86,13 @@
 				</div>
 				<br>
 				<form id="filtertools">
+					<select name="type">
+						<option value="All">All Types</option>
+						<option>Blessing</option>
+						<option>Boon</option>
+						<option>Charm</option>
+						<option>Demonic</option>
+					</select>
 					<span class="sortlabel btn-group">
 							<button class="col-xs-12 sort btn btn-default btn-xs" type="button" data-sort="name" sortby="asc">Name</button>
 						</span>
@@ -119,6 +128,7 @@
 	</footer>
 
 	<script type="text/javascript" src="js/history.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
 	<script type="text/javascript" src="js/page-rewards.js"></script>
 	<script type="text/javascript" src="data/rewards.json"></script>
 	<script type="text/javascript" src="js/list.js"></script>

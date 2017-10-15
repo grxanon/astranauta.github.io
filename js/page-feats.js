@@ -24,10 +24,10 @@ window.onload = function load() {
 		const CLS_COL_2 = "source col-xs-1 col-xs-1-7";
 		const CLS_COL_3 = "ability " + (attbText === NONE ? "list-entry-none " : "") + "col-xs-3 col-xs-3-5";
 		const CLS_COL_4 = "prerequisite " + (prereqText === NONE ? "list-entry-none " : "") + "col-xs-3";
-		$("ul.feats").append("<li id='"+i+"' data-link='"+encodeURI(name).toLowerCase()+"' title='"+name+"'><span class='" + CLS_COL_1 + "'>"+name+"</span> <span class='" + CLS_COL_2 + "' title='"+curfeat.source+"'>"+parse_abbreviateSource(curfeat.source)+"</span> <span class='" + CLS_COL_3 + "'>" + attbText + "</span><span class='" + CLS_COL_4 + "'>" + prereqText + "</span></li>");
+		$("ul.feats").append("<li id='"+i+"' data-link='"+encodeURI(name).toLowerCase()+"' title='"+name+"'><span class='" + CLS_COL_1 + "'>"+name+"</span> <span class='" + CLS_COL_2 + "' title='"+curfeat.source+"'>"+parse_sourceToAbv(curfeat.source)+"</span> <span class='" + CLS_COL_3 + "'>" + attbText + "</span><span class='" + CLS_COL_4 + "'>" + prereqText + "</span></li>");
 
 		if (!$("select.sourcefilter:contains(\""+parse_sourceToFull(curfeat.source)+"\")").length) {
-			$("select.sourcefilter").append("<option value='"+parse_abbreviateSource(curfeat.source)+"'>"+parse_sourceToFull(curfeat.source)+"</option>");
+			$("select.sourcefilter").append("<option value='"+parse_sourceToAbv(curfeat.source)+"'>"+parse_sourceToFull(curfeat.source)+"</option>");
 		}
 
 		// PREREQUISITE FILTER
@@ -47,19 +47,16 @@ window.onload = function load() {
 	$("select.sourcefilter option").sort(asc_sort).appendTo('select.sourcefilter');
 	$("select.sourcefilter").val("All");
 
-	var options = {
+	const list = search({
 		valueNames: ['name', 'source', 'ability', 'prerequisite'],
 		listClass: "feats"
-	};
-
-	var featslist = new List("listcontainer", options);
-	featslist.sort ("name");
+	});
 
 	$("form#filtertools select").change(function(){
 		let sourcefilter = $("select.sourcefilter").val();
 		let bonusfilter = $("select.bonusfilter").val();
 
-		featslist.filter(function(item) {
+		list.filter(function(item) {
 			let rightsource = sourcefilter === "All" || item.values().source.indexOf(sourcefilter) !== -1;
 			let rightbonuses = bonusfilter === "All" || item.values().ability.indexOf(bonusfilter) !== -1 || item.values().ability.toLowerCase().indexOf("choose any") !== -1;
 			if (rightsource && rightbonuses) return true;
@@ -69,7 +66,6 @@ window.onload = function load() {
 
 	$("ul.list li").mousedown(function(e) {
 		if (e.which === 2) {
-			console.log("#"+$(this).attr("data-link"))
 			window.open("#"+$(this).attr("data-link"), "_blank").focus();
 			e.preventDefault();
 			e.stopPropagation();
@@ -84,16 +80,6 @@ window.onload = function load() {
 	if (window.location.hash.length) {
 		window.onhashchange();
 	} else $("ul.list li:eq(0)").click();
-
-	// reset button
-	$("button#reset").click(function() {
-		$("#filtertools select").val("All");
-		$("#search").val("");
-		featslist.search("");
-		featslist.filter();
-		featslist.sort("name");
-		featslist.update();
-	})
 
 }
 
@@ -120,47 +106,47 @@ function loadhash (id) {
 		for (let i = 0; i < textArray.length; ++i) { // insert the new list item at the head of the first list we find list; flag with "hasabilityitem" so we don't do it more than once
 			if (textArray[i].islist === "YES" && textArray[i].hasabilityitem !== "YES") {
 				textArray[i].hasabilityitem = "YES";
-                textArray[i].items.unshift(abilityObjToListItem())
-            }
+				textArray[i].items.unshift(abilityObjToListItem())
+			}
 		}
 
-        function abilityObjToListItem() {
-        	let listItem = {};
-            listItem.text = attChooseText(abilityObj);
+		function abilityObjToListItem() {
+			let listItem = {};
+			listItem.text = attChooseText(abilityObj);
 			return listItem;
 
 			function attChooseText() {
 				const TO_MAX_OF_TWENTY = ", to a maximum of 20.";
 				if (abilityObj.choose === undefined) {
-                    let abbArr = [];
-                    for (let att in abilityObj) {
-                        if(!abilityObj.hasOwnProperty(att)) continue;
-                        abbArr.push("Increase your " + parse_attAbvToFull(att) + " score by " + abilityObj[att] + TO_MAX_OF_TWENTY);
-                    }
-                    return abbArr.join(" ");
+					let abbArr = [];
+					for (let att in abilityObj) {
+						if(!abilityObj.hasOwnProperty(att)) continue;
+						abbArr.push("Increase your " + parse_attAbvToFull(att) + " score by " + abilityObj[att] + TO_MAX_OF_TWENTY);
+					}
+					return abbArr.join(" ");
 				} else {
-                    let abbArr = [];
+					let abbArr = [];
 					for (let i = 0; i < abilityObj.choose.length; ++i) {
-                        if (abilityObj.choose[i].from.length === 6) {
-                        	if (abilityObj.choose[i].textreference === "YES") { // only used in "Resilient"
+						if (abilityObj.choose[i].from.length === 6) {
+							if (abilityObj.choose[i].textreference === "YES") { // only used in "Resilient"
 								abbArr.push("Increase the chosen ability score by " + abilityObj.choose[i].amount + TO_MAX_OF_TWENTY);
 							} else {
 								abbArr.push("Increase one ability score of your choice by " + abilityObj.choose[i].amount + TO_MAX_OF_TWENTY);
 							}
-                        } else {
-                        	let from = abilityObj.choose[i].from;
-                        	let amount = abilityObj.choose[i].amount;
-                        	let abbChoices = [];
-                        	for (let j = 0; j < from.length; ++j) {
-                                abbChoices.push(parse_attAbvToFull(from[j]));
+						} else {
+							let from = abilityObj.choose[i].from;
+							let amount = abilityObj.choose[i].amount;
+							let abbChoices = [];
+							for (let j = 0; j < from.length; ++j) {
+								abbChoices.push(parse_attAbvToFull(from[j]));
 							}
 							let abbChoicesText = utils_joinPhraseArray(abbChoices, ", ", " or ");
-                            abbArr.push("Increase your " + abbChoicesText + " by " + amount + TO_MAX_OF_TWENTY)
+							abbArr.push("Increase your " + abbChoicesText + " by " + amount + TO_MAX_OF_TWENTY)
 						}
 					}
-                    return abbArr.join(" ");
+					return abbArr.join(" ");
 				}
 			}
 		}
-    }
-};
+	}
+}
