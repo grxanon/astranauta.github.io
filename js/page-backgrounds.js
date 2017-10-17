@@ -1,13 +1,3 @@
-function parsesize (size) {
-	if (size == "T") size = "Tiny";
-	if (size == "S") size = "Small";
-	if (size == "M") size = "Medium";
-	if (size == "L") size = "Large";
-	if (size == "H") size = "Huge";
-	if (size == "G") size = "Gargantuan";
-	return size;
-}
-
 function parsesource (src) {
 	let source = src;
 	if (source === "Player's Handbook") source = "PHB";
@@ -20,19 +10,6 @@ function parsesource (src) {
 	return source;
 }
 
-function tagcontent (curitem, tag, multi=false) {
-	if (!curitem.getElementsByTagName(tag).length) return false;
-	return curitem.getElementsByTagName(tag)[0].childNodes[0].nodeValue;
-}
-
-function asc_sort(a, b){
-	return ($(b).text()) < ($(a).text()) ? 1 : -1;
-}
-
-function dec_sort(a, b){
-	return ($(b).text()) > ($(a).text()) ? 1 : -1;
-}
-
 var tabledefault = "";
 
 window.onload = function load () {
@@ -42,7 +19,7 @@ window.onload = function load () {
 	for (var i = 0; i < bglist.length; i++) {
 		var curbg = bglist[i];
 		var name = curbg.name;
-		$("ul.backgrounds").append("<li id='"+i+"' data-link='"+encodeURI(name).toLowerCase()+"' title='"+name+"'><span class='name col-xs-9'>"+name.replace("Variant ","")+"</span> <span class='source col-xs-3' title='"+curbg.source+"'>"+parsesource(curbg.source)+"</span></li>");
+		$("ul.backgrounds").append("<li><a id='"+i+"' href='#"+encodeURI(name).toLowerCase()+"' title='"+name+"'><span class='name col-xs-9'>"+name.replace("Variant ","")+"</span> <span class='source col-xs-3' title='"+curbg.source+"'>"+parsesource(curbg.source)+"</span></a></li>");
 
 		if (!$("select.sourcefilter:contains(\""+curbg.source+"\")").length) {
 			$("select.sourcefilter").append("<option value='"+parsesource(curbg.source)+"'>"+curbg.source+"</option>");
@@ -67,22 +44,9 @@ window.onload = function load () {
 	});
 
 
-	$("ul.list li").mousedown(function(e) {
-		if (e.which === 2) {
-			window.open("#"+$(this).attr("data-link"), "_blank").focus();
-			e.preventDefault();
-			e.stopPropagation();
-			return;
-		}
-	});
-
-	$("ul.list li").click(function(e) {
-		window.location = "#"+$(this).attr("data-link");
-	});
-
 	if (window.location.hash.length) {
 		window.onhashchange();
-	} else $("ul.list li:eq(0)").click();
+	} else $("#listcontainer a").get(0).click();
 }
 
 function loadhash (id) {

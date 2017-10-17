@@ -42,16 +42,6 @@ function parsesourcename (src) {
 	return source;
 }
 
-function parsesize (size) {
-	if (size === "T") size = "Tiny";
-	if (size === "S") size = "Small";
-	if (size === "M") size = "Medium";
-	if (size === "L") size = "Large";
-	if (size === "H") size = "Huge";
-	if (size === "G") size = "Gargantuan";
-	return size;
-}
-
 var xpchart = [200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000, 20000, 22000, 25000, 30000, 41000, 50000, 62000, 75000, 90000, 105000, 102000, 135000, 155000]
 
 function addCommas(intNum) {
@@ -64,11 +54,6 @@ function parsecr (cr) {
 	if (cr === "1/4") return "50"
 	if (cr === "1/2") return "100"
 	return addCommas (xpchart[parseInt(cr)-1]);
-}
-
-function tagcontent (curitem, tag, multi=false) {
-	if (!curitem.getElementsByTagName(tag).length) return false;
-	return curitem.getElementsByTagName(tag)[0].childNodes[0].nodeValue;
 }
 
 window.onload = function load() {
@@ -98,7 +83,7 @@ window.onload = function load() {
 		var cr = monsters[i].cr;
 
 
-		$("ul#monsters").append("<li id="+i+" data-link='"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-4'>"+name+"</span> <span title=\""+origsource+"\" class='col-xs-2 source source"+source+"'>("+source+")</span> <span class='type col-xs-3'>"+type+"</span> <span class='col-xs-3 cr'>CR "+cr+" </span></li>");
+		$("ul#monsters").append("<li><a id="+i+" href='#"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-4'>"+name+"</span> <span title=\""+origsource+"\" class='col-xs-2 source source"+source+"'>("+source+")</span> <span class='type col-xs-3'>"+type+"</span> <span class='col-xs-3 cr'>CR "+cr+" </span></a></li>");
 
 		if (!$("select.typefilter:contains('"+type+"')").length && !$("select.typefilter:contains('"+type+" \\(')").length) {
 			$("select.typefilter").append("<option value='"+type+"'>"+type+"</option>")
@@ -132,22 +117,9 @@ window.onload = function load() {
 		valueNames: ['name', 'source', 'type', 'cr']
 	})
 
-	$("ul.list li").mousedown(function(e) {
-		if (e.which === 2) {
-			window.open("#"+$(this).attr("data-link"), "_blank").focus();
-			e.preventDefault();
-			e.stopPropagation();
-			return;
-		}
-	});
-
-	$("ul.list li").click(function(e) {
-		window.location = "#"+$(this).attr("data-link");
-	});
-
 	if (window.location.hash.length) {
 		window.onhashchange();
-	} else $("ul.list li:eq(0)").click();
+	} else $("#listcontainer a").get(0).click();
 
 	// filtering
 	$("form#filtertools select").change(function(){
@@ -196,14 +168,6 @@ window.onload = function load() {
 
 
 // sorting for form filtering
-function asc_sort(a, b){
-	return ($(b).text()) < ($(a).text()) ? 1 : -1;
-}
-
-function desc_sort(a, b){
-	return ($(b).text()) > ($(a).text()) ? 1 : -1;
-}
-
 function sortmonsters(a, b, o) {
 	if (o.valueName === "name") {
 		return ((b._values.name.toLowerCase()) > (a._values.name.toLowerCase())) ? 1 : -1;
@@ -265,58 +229,35 @@ function loadhash (id) {
 
 	$("th#name").html("<span title=\""+origsource+"\" class='source source"+source+"'>"+source+"<br></span> <a href='img/"+source+"/"+name+".png' target='_blank'><img src='img/"+source+"/"+name+".png' class='token' onerror='imgError(this)'></a>"+name);
 
-	var size = parsesize (mon.size);
-	$("td span#size").html(size);
+	$("td span#size").html(parsesize (mon.size));
 
 	$("td span#type").html(type);
 
-	var alignment = mon.alignment;
-	$("td span#alignment").html(alignment);
+	$("td span#alignment").html(mon.alignment);
 
-	var ac = mon.ac;
-	$("td span#ac").html(ac);
+	$("td span#ac").html(mon.ac);
 
-	var hp = mon.hp;
-	$("td span#hp").html(hp);
+	$("td span#hp").html(mon.hp);
 
-	var speed = mon.speed;
-	$("td span#speed").html(speed);
+	$("td span#speed").html(mon.speed);
 
-	var str = mon.str;
-	var strmod = Math.floor((str - 10) / 2);
-	if (strmod >= 0) strmod = "+"+strmod;
-	$("td#str span.score").html(str);
-	$("td#str span.mod").html(strmod);
+	$("td#str span.score").html(mon.str);
+	$("td#str span.mod").html(getmodifiertext (mon.str));
 
-	var dex = mon.dex;
-	var dexmod = Math.floor((dex - 10) / 2);
-	if (dexmod >= 0) dexmod = "+"+dexmod;
-	$("td#dex span.score").html(dex);
-	$("td#dex span.mod").html(dexmod);
+	$("td#dex span.score").html(mon.dex);
+	$("td#dex span.mod").html(getmodifiertext (mon.dex));
 
-	var con = mon.con;
-	var conmod = Math.floor((con - 10) / 2);
-	if (conmod >= 0) conmod = "+"+conmod;
-	$("td#con span.score").html(con);
-	$("td#con span.mod").html(conmod);
+	$("td#con span.score").html(mon.con);
+	$("td#con span.mod").html(getmodifiertext (mon.con));
 
-	var ints = mon.int;
-	var intmod = Math.floor((ints - 10) / 2);
-	if (intmod >= 0) intmod = "+"+intmod;
-	$("td#int span.score").html(ints);
-	$("td#int span.mod").html(intmod);
+	$("td#int span.score").html(mon.int);
+	$("td#int span.mod").html(getmodifiertext (mon.int));
 
-	var wis = mon.wis;
-	var wismod = Math.floor((wis - 10) / 2);
-	if (wismod >= 0) wismod = "+"+wismod;
-	$("td#wis span.score").html(wis);
-	$("td#wis span.mod").html(wismod);
+	$("td#wis span.score").html(mon.wis);
+	$("td#wis span.mod").html(getmodifiertext (mon.wis));
 
-	var cha = mon.cha;
-	var chamod = Math.floor((cha - 10) / 2);
-	if (chamod >= 0) chamod = "+"+chamod;
-	$("td#cha span.score").html(cha);
-	$("td#cha span.mod").html(chamod);
+	$("td#cha span.score").html(mon.cha);
+	$("td#cha span.mod").html(getmodifiertext (mon.cha));
 
 	var saves = mon.save;
 	if (saves && saves.length > 0) {
@@ -382,7 +323,7 @@ function loadhash (id) {
 	if (languages && languages.length > 0) {
 		$("td span#languages").html(languages);
 	} else {
-		$("td span#languages").html("-");
+		$("td span#languages").html("\u2014");
 	}
 
 	var cr = mon.cr;
