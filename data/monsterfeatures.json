@@ -18,6 +18,16 @@ var monsterfeatures = [
 		"attackbonus": "1"
 	},
 	{
+		"name": "Angelic Weapons",
+		"example": "Deva",
+		"effect": "The creature's weapon attacks are magical. When the creature hits with any weapon, the weapon deals extra radiant damage. Input this extra damage per round.",
+		"hp": "",
+		"ac": "",
+		"dpr": "trait",
+		"attackbonus": "",
+		"numbox": "YES"
+	},
+	{
 		"name": "Avoidance",
 		"example": "Demilich",
 		"effect": "If the creature is subjected to an effect that allows it to make a saving throw to only take half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
@@ -37,7 +47,7 @@ var monsterfeatures = [
 	},
 	{
 		"name": "Constrict",
-		"example": "Giant Snake, Giant Spider",
+		"example": "Giant Constrictor Snake",
 		"effect": "The creature has the ability to restrain and/or grapple a target as part of an attack.",
 		"hp": "",
 		"ac": "1",
@@ -54,9 +64,38 @@ var monsterfeatures = [
 		"attackbonus": ""
 	},
 	{
+		"name": "Enlarge",
+		"example": "Duergar",
+		"effect": "The creature magically increases in size, along with anything it is wearing or carrying. Input the extra damage inflicted per round whilst enlarged.",
+		"hp": "",
+		"ac": "",
+		"dpr": "trait",
+		"attackbonus": "",
+		"numbox": "YES"
+	},
+	{
 		"name": "Frightful Presence",
 		"example": "Ancient Gold Dragon",
 		"effect": "Each creature of the creature's choice within range must make a Wisdom saving throw or be frightened for 1 minute.",
+		"hp": "Math.floor((expectedcr <= 10) ? hp * 0.25 : 0)",
+		"ac": "",
+		"dpr": "",
+		"attackbonus": ""
+	},
+	{
+		"name": "Heated Body",
+		"example": "Azer",
+		"effect": "Touching or hitting the creature while within 5 ft. of it causes damage.",
+		"hp": "",
+		"ac": "",
+		"dpr": "trait",
+		"attackbonus": "",
+		"numbox": "YES"
+	},
+	{
+		"name": "Horrifying Visage",
+		"example": "Banshee",
+		"effect": "Each non-undead creature of the creature's choice within range must make a Wisdom saving throw or be frightened for 1 minute.",
 		"hp": "Math.floor((expectedcr <= 10) ? hp * 0.25 : 0)",
 		"ac": "",
 		"dpr": "",
@@ -82,8 +121,18 @@ var monsterfeatures = [
 		"attackbonus": ""
 	},
 	{
+		"name": "Martial Advantage",
+		"example": "Hobgoblin",
+		"effect": "The creature can deal extra damage to a creature it hits if that creature is with in 5 ft. of an ally of the creature that isn't incapacitated. Input the extra damage inflicted per round.",
+		"hp": "",
+		"ac": "",
+		"dpr": "trait",
+		"attackbonus": "",
+		"numbox": "YES"
+	},
+	{
 		"name": "Nimble Escape",
-		"example": "Goblin, Shadow Demon",
+		"example": "Goblin",
 		"effect": "The creature can take the Disengage or Hide action as a bonus action on each of its turns.",
 		"hp": "",
 		"ac": "4",
@@ -104,7 +153,7 @@ var monsterfeatures = [
 		"example": "Hobgoblin warlord",
 		"effect": "The creature adds its proficiency bonus to its AC against one melee attack that would hit it as a reaction.",
 		"hp": "",
-		"ac": "",
+		"ac": "1",
 		"dpr": "",
 		"attackbonus": ""
 	},
@@ -129,10 +178,19 @@ var monsterfeatures = [
 	},
 	{
 		"name": "Relentless",
-		"example": "Zombie",
+		"example": "Boar",
 		"effect": "If the creature would be reduced to 0 hit points, there is a chance that it can instead only be reduced to 1.",
 		"hp": "((expectedcr >= 0 && expectedcr <= 4) ? 7 : ((expectedcr >= 5 && expectedcr <= 10) ? 14 : ((expectedcr >= 11 && expectedcr <= 16) ? 21 : ((expectedcr >= 17) ? 28 : 0))))",
 		"ac": "",
+		"dpr": "",
+		"attackbonus": ""
+	},
+	{
+		"name": "Shadow Stealth",
+		"example": "Shadow Demon",
+		"effect": "While in dim light or darkness, the creature can take the Hide action as a bonus action.",
+		"hp": "",
+		"ac": "4",
 		"dpr": "",
 		"attackbonus": ""
 	},
@@ -153,6 +211,24 @@ var monsterfeatures = [
 		"ac": "2",
 		"dpr": "",
 		"attackbonus": ""
+	},
+	{
+		"name": "Undead Fortitude",
+		"example": "Zombie",
+		"effect": "If the creature would be reduced to 0 hit points, there is a chance that it can instead only be reduced to 1. This feature is negated if the damage is from radient nature.",
+		"hp": "((expectedcr >= 0 && expectedcr <= 4) ? 7 : ((expectedcr >= 5 && expectedcr <= 10) ? 14 : ((expectedcr >= 11 && expectedcr <= 16) ? 21 : ((expectedcr >= 17) ? 28 : 0))))",
+		"ac": "",
+		"dpr": "",
+		"attackbonus": ""
+	},
+	{
+		"name": "Web",
+		"example": "Giant Spider",
+		"effect": "Ranged Weapon Attack that restrains the target on a hit.",
+		"hp": "",
+		"ac": "1",
+		"dpr": "",
+		"attackbonus": ""
 	}
 ]
 ;
@@ -167,3 +243,4 @@ var monsterfeatures = [
 "attackbonus": ""
 },
 */
+

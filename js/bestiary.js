@@ -1,61 +1,3 @@
-function parsesource (src) {
-	let source = src.trim();
-	if (source === "monster manual") source = "MM";
-	if (source === "Volo's Guide") source = "VGM";
-	if (source === "elemental evil") source = "PotA";
-	if (source === "storm kings thunder") source = "SKT";
-	if (source === "tyranny of dragons") source = "ToD";
-	if (source === "out of the abyss") source = "OotA";
-	if (source === "curse of strahd") source = "CoS";
-	if (source === "lost mine of phandelver") source = "LMoP";
-	if (source === "Tales from the Yawning Portal") source = "TYP";
-	if (source === "tome of beasts") source = "ToB 3pp";
-	if (source === "Plane Shift Amonkhet") source = "PSA";
-	if (source === "Plane Shift Innistrad") source = "PSI";
-	if (source === "Plane Shift Kaladesh") source = "PSK";
-	if (source === "Plane Shift Zendikar") source = "PSZ";
-	if (source === "critter compendium") source = "CC 3pp";
-	if (source === "Tomb of Annihilation") source = "ToA";
-	if (source === "The Tortle Package") source = "TTP";
-	return source;
-}
-
-function parsesourcename (src) {
-	let source = src.trim();
-
-	if (source === "monster manual") source = "Monster Manual";
-	if (source === "Volo's Guide") source = "Volo's Guide to Monsters";
-	if (source === "elemental evil") source = "Princes of the Apocalypse";
-	if (source === "storm kings thunder") source = "Storm King's Thunder";
-	if (source === "tyranny of dragons") source = "Tyranny of Dragons";
-	if (source === "out of the abyss") source = "Out of the Abyss";
-	if (source === "curse of strahd") source = "Curse of Strahd";
-	if (source === "lost mine of phandelver") source = "Lost Mine of Phandelver";
-	if (source === "tome of beasts") source = "Tome of Beasts (3pp)";
-	if (source === "Tales from the Yawning Portal") source = "Tales from the Yawning Portal";
-	if (source === "Plane Shift Amonkhet") source = "Plane Shift Amonkhet";
-	if (source === "Plane Shift Innistrad") source = "Plane Shift Innistrad";
-	if (source === "critter compendium") source = "Critter Compendium (3pp)";
-	if (source === "Plane Shift Kaladesh") source = "Plane Shift Kaladesh";
-	if (source === "Plane Shift Zendikar") source = "Plane Shift Zendikar";
-	if (source === "Tomb of Annihilation") source = "Tomb of Annihilation";
-	return source;
-}
-
-var xpchart = [200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000, 20000, 22000, 25000, 30000, 41000, 50000, 62000, 75000, 90000, 105000, 102000, 135000, 155000]
-
-function addCommas(intNum) {
-	return (intNum + '').replace(/(\d)(?=(\d{3})+$)/g, '$1,');
-}
-
-function parsecr (cr) {
-	if (cr === "0") return "0 or 10"
-	if (cr === "1/8") return "25"
-	if (cr === "1/4") return "50"
-	if (cr === "1/2") return "100"
-	return addCommas (xpchart[parseInt(cr)-1]);
-}
-
 window.onload = function load() {
 	tabledefault = $("#stats").html();
 
@@ -64,32 +6,20 @@ window.onload = function load() {
 	// parse all the monster data
 	for (var i = 0; i < monsters.length; i++) {
 		var name = monsters[i].name;
-
-		var source = "";
-		var origsource = "";
-		var type = "";
-		if (monsters[i].source === undefined) {
-			source = monsters[i].type.split(",");
-			type = source.slice(0, source.length-1).join(",")
-			type = type.split(", Volo's Guide")[0];
-			source = source[source.length - 1];
-		} else {
-			source = monsters[i].source;
-			type = monsters[i].type;
-		}
-		origsource = parsesourcename(source);
-		source = parsesource(source);
-
+		var source = monsters[i].source;
+		var fullsource = parse_sourceJsonToFull(source);
+		var type = monsters[i].type;
 		var cr = monsters[i].cr;
 
+		source = parse_sourceJsonToAbv(source);
 
-		$("ul#monsters").append("<li><a id="+i+" href='#"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-4'>"+name+"</span> <span title=\""+origsource+"\" class='col-xs-2 source source"+source+"'>("+source+")</span> <span class='type col-xs-3'>"+type+"</span> <span class='col-xs-3 cr'>CR "+cr+" </span></a></li>");
+		$("ul#monsters").append("<li><a id="+i+" href='#"+encodeURIComponent(name).toLowerCase().replace("'","%27")+"' title='"+name+"'><span class='name col-xs-4 col-xs-4-2'>"+name+"</span> <span title=\""+fullsource+"\" class='col-xs-1 col-xs-1-8 source source"+source+"'>"+source+"</span> <span class='type col-xs-4 col-xs-4-3'>"+type+"</span> <span class='col-xs-1 col-xs-1-7 text-align-center cr'>"+cr+"</span></a></li>");
 
 		if (!$("select.typefilter:contains('"+type+"')").length && !$("select.typefilter:contains('"+type+" \\(')").length) {
 			$("select.typefilter").append("<option value='"+type+"'>"+type+"</option>")
 		}
-		if (!$("select.sourcefilter option[value='"+parsesource(source)+"']").length) {
-			$("select.sourcefilter").append("<option title=\""+source+"\" value='"+parsesource(source)+"'>"+origsource+"</option>")
+		if (!$("select.sourcefilter option[value='"+source+"']").length) {
+			$("select.sourcefilter").append("<option title=\""+source+"\" value='"+source+"'>"+fullsource+"</option>")
 		}
 		$("select.sourcefilter option").sort(asc_sort).appendTo('select.sourcefilter');
 		$("select.sourcefilter").val("All");
@@ -114,18 +44,16 @@ window.onload = function load() {
 	$("select.crfilter option[value=0]").before($("select.crfilter option[value=All]"))
 
 	const list = search({
-		valueNames: ['name', 'source', 'type', 'cr']
+		valueNames: ["name", "source", "type", "cr"]
 	})
 
-	if (window.location.hash.length) {
-		window.onhashchange();
-	} else $("#listcontainer a").get(0).click();
+	initHistory()
 
 	// filtering
 	$("form#filtertools select").change(function(){
 		var typefilter = $("select.typefilter").val();
 		var sourcefilter = $("select.sourcefilter").val();
-		var crfilter = "CR "+$("select.crfilter").val()+" ";
+		var crfilter = $("select.crfilter").val();
 		var thirdpartyfilter = $("select.3ppfilter").val();
 
 		list.filter(function(item) {
@@ -135,8 +63,8 @@ window.onload = function load() {
 			var rightparty = false;
 
 			if (typefilter === "All" || item.values().type === typefilter) righttype = true;
-			if (sourcefilter === "All" || item.values().source === "("+sourcefilter+")") rightsource = true;
-			if (crfilter === "CR All " || item.values().cr === crfilter) rightcr = true;
+			if (sourcefilter === "All" || item.values().source === sourcefilter) rightsource = true;
+			if (crfilter === "All" || item.values().cr === crfilter) rightcr = true;
 			if (thirdpartyfilter === "All") rightparty = true;
 			if (thirdpartyfilter === "None" && item.values().source.indexOf("3pp") === -1) rightparty = true;
 			if (thirdpartyfilter === "Only" && item.values().source.indexOf("3pp") !== -1) rightparty = true;
@@ -165,7 +93,6 @@ window.onload = function load() {
 		return;
 	})
 }
-
 
 // sorting for form filtering
 function sortmonsters(a, b, o) {
@@ -202,24 +129,12 @@ function sortmonsters(a, b, o) {
 // load selected monster stat block
 function loadhash (id) {
 	$("#stats").html(tabledefault);
-	monsters = monsterdata.compendium.monster;
-	var mon = monsters[id];
-
+	var mon = monsterdata.compendium.monster[id];
 	var name = mon.name;
-	var source = "";
-	var origsource = "";
-	var type = "";
-	if (mon.source === undefined) {
-		source = mon.type.split(",");
-		type = source.slice(0, source.length-1).join(",")
-		type = type.split(", Volo's Guide")[0];
-		source = source[source.length - 1];
-	} else {
-		source = mon.source;
-		type = mon.type;
-	}
-	origsource = parsesourcename(source);
-	source = parsesource(source);
+	var source = mon.source;
+	var fullsource = parse_sourceJsonToFull(source);
+	var type = mon.type;
+	source = parse_sourceJsonToAbv(source);
 
 	imgError = function(x) {
 		$(x).parent().siblings(".source").css("margin-right", "-4.8em");
@@ -227,9 +142,9 @@ function loadhash (id) {
 		return;
 	}
 
-	$("th#name").html("<span title=\""+origsource+"\" class='source source"+source+"'>"+source+"<br></span> <a href='img/"+source+"/"+name+".png' target='_blank'><img src='img/"+source+"/"+name+".png' class='token' onerror='imgError(this)'></a>"+name);
+	$("th#name").html("<span title=\""+fullsource+"\" class='source source"+source+"'>"+source+"<br></span> <a href='img/"+source+"/"+name+".png' target='_blank'><img src='img/"+source+"/"+name+".png' class='token' onerror='imgError(this)'></a>"+name);
 
-	$("td span#size").html(parsesize (mon.size));
+	$("td span#size").html(parse_sizeAbvToFull (mon.size));
 
 	$("td span#type").html(type);
 
@@ -242,22 +157,22 @@ function loadhash (id) {
 	$("td span#speed").html(mon.speed);
 
 	$("td#str span.score").html(mon.str);
-	$("td#str span.mod").html(getmodifiertext (mon.str));
+	$("td#str span.mod").html(getAbilityModifier (mon.str));
 
 	$("td#dex span.score").html(mon.dex);
-	$("td#dex span.mod").html(getmodifiertext (mon.dex));
+	$("td#dex span.mod").html(getAbilityModifier (mon.dex));
 
 	$("td#con span.score").html(mon.con);
-	$("td#con span.mod").html(getmodifiertext (mon.con));
+	$("td#con span.mod").html(getAbilityModifier (mon.con));
 
 	$("td#int span.score").html(mon.int);
-	$("td#int span.mod").html(getmodifiertext (mon.int));
+	$("td#int span.mod").html(getAbilityModifier (mon.int));
 
 	$("td#wis span.score").html(mon.wis);
-	$("td#wis span.mod").html(getmodifiertext (mon.wis));
+	$("td#wis span.mod").html(getAbilityModifier (mon.wis));
 
 	$("td#cha span.score").html(mon.cha);
-	$("td#cha span.mod").html(getmodifiertext (mon.cha));
+	$("td#cha span.mod").html(getAbilityModifier (mon.cha));
 
 	var saves = mon.save;
 	if (saves && saves.length > 0) {
@@ -375,7 +290,6 @@ function loadhash (id) {
 
 	if (actions && actions.length) for (let i = actions.length-1; i >= 0; i--) {
 		let actionname = actions[i].name;
-
 		let actiontext = actions[i].text;
 		let actiontexthtml = "";
 		let renderedcount = 0;
@@ -403,7 +317,6 @@ function loadhash (id) {
 
 		if (!reactions.length) {
 			let reactionname = reactions.name;
-
 			let reactiontext = reactions.text;
 			let reactiontexthtml = "";
 			let renderedcount = 0
@@ -418,7 +331,7 @@ function loadhash (id) {
 				reactiontexthtml = reactiontexthtml + "<p class='"+firstsecond+"'>"+reactiontext[n]+"</p>";
 			}
 
-			$("tr#reactions").after("<tr class='reaction'><td colspan='6' class='reaction"+i+"'><span class='name'>"+reactionname+".</span> "+reactiontexthtml+"</td></tr>");
+			$("tr#reactions").after("<tr class='reaction'><td colspan='6' class='reaction0'><span class='name'>"+reactionname+".</span> "+reactiontexthtml+"</td></tr>");
 		}
 
 		if (reactions.length) for (let i = reactions.length-1; i >= 0; i--) {
@@ -434,7 +347,6 @@ function loadhash (id) {
 			$("tr#reactions").after("<tr class='reaction'><td colspan='6' class='reaction"+i+"'><span class='name'>"+reactionname+".</span> "+reactiontexthtml+"</td></tr>");
 		}
 	}
-
 
 	let legendaries = mon.legendary;
 	$("tr.legendary").remove();
@@ -453,7 +365,6 @@ function loadhash (id) {
 				legendaryname = legendaries[i].name+".";
 			}
 
-
 			let renderedcount = 0
 			for (let n = 0; n < legendarytext.length; n++) {
 				if (!legendarytext[n]) continue;
@@ -470,10 +381,8 @@ function loadhash (id) {
 		}
 
 		if ($("tr.legendary").length && !$("tr.legendary span.name:empty").length && !$("tr.legendary span.name:contains(Legendary Actions)").length) {
-			$("tr#legendaries").after("<tr class='legendary'><td colspan='6' class='legendary"+i+"'><span class='name'></span> <span>"+name+" can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. "+name+" regains spent legendary actions at the start of his turn.</span></td></tr>");
-
+			$("tr#legendaries").after("<tr class='legendary'><td colspan='6' class='legendary0'><span class='name'></span> <span>"+name+" can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. "+name+" regains spent legendary actions at the start of his turn.</span></td></tr>");
 		}
-
 
 	}
 
@@ -489,9 +398,7 @@ function loadhash (id) {
 	// inline rollers
 	$("#stats p, #stats span#hp").each(function() {
 		$(this).html($(this).html().replace(/\d+d\d+(\s?(\-|\+)\s?\d+\s?)?/g, "<span class='roller' data-roll='$&'>$&</span>"));
-
 		$(this).html($(this).html().replace(/(\-|\+)\d+(?= to hit)/g, "<span class='roller' data-roll='1d20$&'>$&</span>"))
-
 	});
 
 	$(".spells span.roller").contents().unwrap();

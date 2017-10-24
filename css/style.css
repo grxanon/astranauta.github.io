@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Convergence');
+@font-face {
+	font-family: 'Convergence';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Convergence-Regular'), url('font/Convergence-Regular.ttf') format('truetype');
+}
 
 .unselectable {
 	-moz-user-select: -moz-none;
@@ -31,9 +36,11 @@ footer {
 .hidden {
 	display: none;
 }
+
 .bold {
 	font-weight: bold;
 }
+
 .float-end {
 	float: none;
 }
@@ -59,14 +66,13 @@ form#filtertools small:hover {
 	text-align: right;
 	width: 3em;
 }
+
 #pointbuy input[type=number] {
 	-moz-appearance: textfield;
 }
 
 .sortlabel {
 	display: block;
-	/*float: right;
-	text-align: right;*/
 }
 
 ul.list {
@@ -103,8 +109,9 @@ ul.list li span.name {
 	font-weight: bold;
 }
 
-ul.list li span.level, ul.list li span.classes, ul.list li span.school {
-	/*font-size: 0.8em;*/
+ul.list li span.level,
+ul.list li span.classes,
+ul.list li span.school {
 	display: inline-block;
 	text-transform: capitalize;
 }
@@ -172,21 +179,22 @@ span.sourceEEPC {
 	text-shadow: 0 0 3px #000;
 }
 
-table#stats, table#statsprof {
+table#stats,
+table#statsprof {
 	font-family: 'Convergence', sans-serif;
 	background: #fdf1dc;
 	border-radius: 10px;
 	width: 100%;
-	font-size: .9em;
+	font-size: 0.9em;
 	table-layout: fixed;
 }
 
-table#stats td, table#stats th {
+table#stats td,
+table#stats th {
 	padding: 1px 0.3em;
 }
 
 table#stats th {
-	/*color: rgb(0, 107, 196);*/
 	color: #922610;
 }
 
@@ -198,29 +206,27 @@ table#stats tr.text ul {
 	margin: 0 0 10px;
 	padding: 0 20px;
 }
+
 table#stats tr.text li {
 	margin: 0 0 5px;
 }
 
 /* sub-tables */
+
 table#stats table {
 	width: 100%;
 	margin-bottom: 5px;
 }
+
 table#stats table caption {
 	font-weight: bold;
 	font-size: 1.1em;
 	padding: 0;
 	margin-left: 5px;
 }
-table#stats table tbody tr:nth-child(odd){
-	background: #E4D8C3;
-}
-table#stats table tbody tr {
-	/* stub */
-}
-table#stats table thead tr th {
-	/* stub */
+
+table#stats table tbody tr:nth-child(odd) {
+	background: #e4d8c3;
 }
 
 th.border {
@@ -231,7 +237,6 @@ th.border {
 
 td.divider div {
 	background: #922610;
-	/*background: #000;*/
 	height: 4px;
 	margin: 4px 0;
 }
@@ -254,11 +259,20 @@ tr.text td {
 td#levelschoolritual {
 	font-style: italic;
 }
-table#stats #castingtime, table#stats #range, table#stats #components, table#stats #duration, table#stats #classes {
+
+table#stats #castingtime,
+table#stats #range,
+table#stats #components,
+table#stats #duration,
+table#stats #classes {
 	font-weight: bold;
 }
 
-table#stats #castingtime span, table#stats #range span, table#stats #components span, table#stats #duration span, table#stats #classes span {
+table#stats #castingtime span,
+table#stats #range span,
+table#stats #components span,
+table#stats #duration span,
+table#stats #classes span {
 	font-weight: normal !important;
 }
 
@@ -274,10 +288,6 @@ table#stats span.name {
 tr.text td {
 	padding-bottom: 0.7em !important;
 	color: black !important;
-}
-
-td#source {
-	/*font-weight: bold;*/
 }
 
 th#name {
@@ -323,29 +333,35 @@ tr.trait td p.spells {
 tr.trait td table {
 	margin: 10px 0;
 }
+
 table#stats tr.trait td.suboptionheader {
 	font-weight: bold;
 }
+
 table#stats tr.trait td.suboption {
 	font-size: 0.9em;
 	padding: 1px 1em;
 }
+
 table#stats tr.trait td.subsuboption {
 	font-size: 0.9em;
 	padding: 1px 1.5em;
 }
 
-tr#actions td, tr#reactions td, tr#legendaries td {
+tr#actions td,
+tr#reactions td,
+tr#legendaries td {
 	font-size: 1.6em;
 	font-family: 'Andada', serif;
 	font-variant: small-caps;
-	/*border-bottom: 1px solid #a8513b;*/
 	border-bottom: 1px solid #000;
 	vertical-align: bottom !important;
 	padding-left: 0.2em;
 }
 
-tr#actions td span, tr#reactions td span, tr#legendaries td span {
+tr#actions td span,
+tr#reactions td span,
+tr#legendaries td span {
 	display: block;
 	margin-bottom: -0.3em;
 	font-weight: 100;
@@ -355,12 +371,18 @@ tr#abilitynames th {
 	color: inherit;
 }
 
-tr.trait td, tr.action td, tr.reaction td, tr.legendary td {
+tr.trait td,
+tr.action td,
+tr.reaction td,
+tr.legendary td {
 	padding-bottom: 0.7em !important;
 	color: black !important;
 }
 
-tr.trait:last-of-type td, tr.action:last-of-type td, tr.reaction:last-of-type td, tr.legendary:last-of-type td {
+tr.trait:last-of-type td,
+tr.action:last-of-type td,
+tr.reaction:last-of-type td,
+tr.legendary:last-of-type td {
 	padding-bottom: 0 !important;
 }
 
@@ -371,11 +393,12 @@ p.first {
 p.second {
 	margin-top: 1em;
 }
+
 tr td > p.spells {
 	margin-top: 1em !important;
 }
 
-tr td > p.spells ~ p.spells{
+tr td > p.spells ~ p.spells {
 	margin-top: 0 !important;
 }
 
@@ -394,10 +417,13 @@ tr td > p.spells ~ p.spells{
 
 div#lootoutput {
 	height: 100%;
-	padding-top: 1em; clear: both;
+	padding-top: 1em;
+	clear: both;
 }
 
-#crcalc input[type=number], #crcalc input[type=checkbox], .inputwrap {
+#crcalc input[type=number],
+#crcalc input[type=checkbox],
+.inputwrap {
 	left: 15em;
 	text-align: right;
 	clear: both;
@@ -410,6 +436,7 @@ div#lootoutput {
 	margin-left: -1.1em;
 	border-radius: 3px;
 }
+
 #crcalc input[type=checkbox] {
 	width: auto;
 }
@@ -418,6 +445,7 @@ div#lootoutput {
 	float: none;
 	width: 4em;
 }
+
 #crcalc span#hdval {
 	width: 2em;
 	text-align: center;
@@ -501,13 +529,16 @@ input[type=number]#hd::-webkit-outer-spin-button {
 	text-align: center;
 }
 
-td#hp, td#prof, td#equipment {
+td#hp,
+td#prof,
+td#equipment {
 	font-size: 0.8em;
 	padding: 0.7em;
 }
 
-td#hp h5, td#prof h5, td#equipment h5 {
-	/*color: #922610;*/
+td#hp h5,
+td#prof h5,
+td#equipment h5 {
 	font-family: serif;
 	font-weight: 500;
 	font-size: 1.5em;
@@ -515,9 +546,11 @@ td#hp h5, td#prof h5, td#equipment h5 {
 }
 
 /* section: class features */
+
 td._class_feature p {
 	padding: 0 1em;
 }
+
 td._class_feature.feature strong {
 	margin: 0.2em;
 	display: block;
@@ -527,6 +560,7 @@ td._class_feature.feature strong {
 	font-weight: 500;
 	font-size: 1.5em;
 }
+
 td._class_feature.subclassfeature strong {
 	margin: 0.2em;
 	display: block;
@@ -536,6 +570,7 @@ td._class_feature.subclassfeature strong {
 	font-weight: 500;
 	font-size: 1.5em;
 }
+
 td._class_feature.subclasssubfeature strong {
 	margin: 0.2em;
 	display: inline;
@@ -545,12 +580,14 @@ td._class_feature.subclasssubfeature strong {
 	font-weight: 500;
 	font-size: 1.3em;
 }
+
 td._class_feature.subclasssubfeature.sub2 span.inline-header {
 	color: #337ab7;
 	font-family: serif;
 	font-weight: bold;
 	font-style: italic;
 }
+
 td._class_feature.subfeature strong {
 	margin: 0.2em;
 	display: inline;
@@ -560,12 +597,14 @@ td._class_feature.subfeature strong {
 	font-weight: 500;
 	font-size: 1.3em;
 }
+
 td._class_feature.subfeature.sub2 span.inline-header {
 	color: #922610;
 	font-family: serif;
 	font-weight: bold;
 	font-style: italic;
 }
+
 td._class_feature.optionalsubfeature strong {
 	margin: 0.2em;
 	display: inline;
@@ -575,36 +614,41 @@ td._class_feature.optionalsubfeature strong {
 	font-weight: 500;
 	font-size: 1.3em;
 }
+
 td._class_feature.optionalsubfeature.sub2 span.inline-header {
 	color: #c1437e;
 	font-family: serif;
 	font-weight: bold;
 	font-style: italic;
 }
+
 table#stats td._class_feature table {
-	margin: 0 0.9em 10px 0.9em;
+	margin: 0 0.9em 10px;
 	width: calc(100% - 1.8em);
 }
+
 td._class_feature p.prerequisite {
 	font-style: italic;
 	margin-bottom: 2px;
 }
+
 table#stats td._class_feature.feature table {
 	margin: 0 1.2em;
 	width: calc(100% - 2.4em);
 }
-table#stats td._class_feature table caption {
-	/*color: black;*/
-}
+
 table#stats td._class_feature table th {
 	color: black;
 }
+
 table#stats td._class_feature p.spellabilitysubtext {
 	text-align: center;
 }
+
 table#stats td._class_feature p.spellabilitysubtext span {
 	font-weight: bold;
 }
+
 /* end section: class features */
 
 #classtable table {
@@ -617,7 +661,8 @@ table#stats td._class_feature p.spellabilitysubtext span {
 	color: black;
 }
 
-#classtable table tr:nth-child(odd) td, #rulescontent table tbody tr:nth-child(odd) td {
+#classtable table tr:nth-child(odd) td,
+#rulescontent table tbody tr:nth-child(odd) td {
 	background: lightgrey;
 }
 
@@ -676,23 +721,14 @@ td.features {
 	max-width: 100%;
 	white-space: pre-wrap;
 }
-td.features span {
-	color: #337ab7;
-	cursor: pointer;
-}
-td.features span:hover {
-	text-decoration: underline;
-	color: #23527c;
-}
 
 #classtable .newfeature {
 	text-align: center;
 	width: 1em;
-
 }
 
 div#subclasses {
-	padding: 0 1em 0.5em 1em ;
+	padding: 0 1em 0.5em;
 	text-align: center;
 }
 
@@ -735,19 +771,6 @@ img.token:hover {
 	right: 0;
 }
 
-/*
-img.token:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    right: 0;
-    height: 5em;
-    width: 5em;
-    background-image: url(../img/Gauth.png);
-    background-size: 5em 5em;
-    background-repeat: no-repeat;
-  }*/
-
 .classes table#stats {
 	font-family: inherit;
 }
@@ -761,11 +784,15 @@ tr.trait td {
 	color: black !important;
 }
 
-table#stats #ability, table#stats #size, table#stats #speed {
+table#stats #ability,
+table#stats #size,
+table#stats #speed {
 	font-weight: bold;
 }
 
-table#stats #ability span, table#stats #size span, table#stats #speed span {
+table#stats #ability span,
+table#stats #size span,
+table#stats #speed span {
 	font-weight: normal !important;
 }
 
@@ -785,27 +812,31 @@ table#stats p.subtrait {
 .text-align-center {
 	text-align: center;
 }
+
 /****************************************
  * Print styles
  ***************************************/
 
 @media print {
-
 	@page {
 		margin: 10mm 20mm;
 	}
 
-	@page:left {
+	@page :left {
 		margin: 10mm 25mm 10mm 15mm;
 	}
 
-	@page:right {
+	@page :right {
 		margin: 10mm 15mm 10mm 25mm;
 	}
 
-	.divider, nav, hr,
-	#listcontainer, #subclasses,
-	#itemcontainer, #monstercontainer {
+	.divider,
+	nav,
+	hr,
+	#listcontainer,
+	#subclasses,
+	#itemcontainer,
+	#monstercontainer {
 		display: none;
 	}
 
@@ -817,10 +848,11 @@ table#stats p.subtrait {
 	th.border {
 		height: auto;
 		border: 0;
-		border-bottom: .25pt solid black;
+		border-bottom: 0.25pt solid black;
 	}
 
-	strong, .name {
+	strong,
+	.name {
 		font-weight: 600;
 	}
 
@@ -832,49 +864,113 @@ table#stats p.subtrait {
 		background: lightgrey !important;
 	}
 }
+
 /* Bootstrap overrides */
+
+.col-xs-4-4 {
+	width: 36.66666666666667%;
+}
+
 .col-xs-4-3 {
 	width: 35.83333333333333%;
 }
-.col-xs-3-8 {
-	width: 31.66666666666666%;
+
+.col-xs-4-2 {
+	width: 35%;
 }
+
+.col-xs-4-1 {
+	width: 34.16666666666667%;
+}
+
+.col-xs-3-9 {
+	width: 32.5%;
+}
+
+.col-xs-3-8 {
+	width: 31.66666666666667%;
+}
+
 .col-xs-3-7 {
 	width: 30.83333333333333%;
 }
-.col-xs-3-67 {
-	width: 31.77777777777777%;
-}
+
 .col-xs-3-6 {
-	width: 29.99999999999999%;
+	width: 30%;
 }
+
 .col-xs-3-5 {
-	width: 29.16666666666666%;
+	width: 29.16666666666667%;
 }
+
+.col-xs-3-4 {
+	width: 28.33333333333333%;
+}
+
+.col-xs-3-3 {
+	width: 27.5%;
+}
+
+.col-xs-3-2 {
+	width: 26.66666666666667%;
+}
+
 .col-xs-3-1 {
 	width: 25.83333333333333%;
 }
+
+.col-xs-2-9 {
+	width: 24.16666666666667%;
+}
+
+.col-xs-2-8 {
+	width: 23.33333333333333%;
+}
+
+.col-xs-2-7 {
+	width: 22.5%;
+}
+
+.col-xs-2-6 {
+	width: 21.66666666666667%;
+}
+
 .col-xs-2-5 {
 	width: 20.83333333333333%;
 }
+
 .col-xs-2-4 {
-	width: 19.99999999999999%;
+	width: 20%;
 }
+
 .col-xs-2-3 {
-	width: 19.16666666666666%;
+	width: 19.16666666666667%;
 }
+
 .col-xs-2-2 {
 	width: 18.33333333333333%;
 }
+
 .col-xs-2-1 {
-	width: 17.49999999999999%;
+	width: 17.5%;
 }
+
+.col-xs-1-9 {
+	width: 15.83333333333333%;
+}
+
+.col-xs-1-8 {
+	width: 15%;
+}
+
 .col-xs-1-7 {
-	width: 14.16666666666666%;
+	width: 14.16666666666667%;
 }
+
 .dropdown-submenu {
 	position: relative;
 }
+
 .dropdown-submenu .dropdown-menu {
 	top: 0;
 	left: 100%;
@@ -882,17 +978,21 @@ table#stats p.subtrait {
 }
 
 /* Psionics */
+
 .psi-order-and-talent {
 	font-style: italic;
 }
+
 .psi-focus-title {
 	font-style: italic;
 	font-weight: bold;
 }
+
 .psi-mode-title {
 	font-style: italic;
 	font-weight: bold;
 }
+
 .psi-mode-sub-title {
 	font-weight: bold;
 }
@@ -901,11 +1001,13 @@ table#stats p.subtrait {
 	font-style: italic;
 	font-weight: bold;
 }
+
 .stats-list-sub-header {
 	font-style: italic;
 	font-weight: bold;
 	margin-left: 5px;
 }
+
 .list-entry-none {
 	font-style: italic;
 }
@@ -914,20 +1016,25 @@ table#stats p.subtrait {
 	display: -webkit-flex;
 	display: flex;
 }
+
 .filter-sublist-item-text {
 	margin-right: 20px;
 }
+
 input[type=checkbox].filter-checkbox {
 	margin-left: auto;
 	padding: 0 10px;
 }
+
 input[type=checkbox].readonly {
 	pointer-events: none;
 }
+
 #listcontainer li {
 	padding: 0;
 }
-#listcontainer a {
+
+#listcontainer .list a {
 	color: inherit;
 	display: block;
 	overflow: hidden;
