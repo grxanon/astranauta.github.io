@@ -555,7 +555,7 @@ spelldata.compendium.spell.push(
 	"source": "BoLS 3pp",
 	"level": "3",
 	"school": "T",
-	"time": "Touch",
+	"time": "1 action",
 	"range": "Self (20-foot-radius sphere)",
 	"components": "V, S, M (an axe)",
 	"duration": "Concentration, up to 1 minute",
