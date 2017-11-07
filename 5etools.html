@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.png">
 
+	<style id="dynamicStyle"></style> <!-- populated with JS -->
+	<script type="text/javascript" src="js/styleswitch.js"></script>
 </head>
 
 <body>
@@ -73,6 +75,9 @@
 					<li role="presentation"><a href="editor.html">WYSIWYG Editor</a></li>
 				</ul>
 			</li>
+			<li role="presentation">
+				<a class="nightModeToggle" href="#" onclick="styleSwitcher.toggleActiveStyleSheet(); return false;"><script>document.write(styleSwitcher.getActiveStyleSheet() === StyleSwitcher.STYLE_DAY ? "Night Mode" : "Day Mode")</script></a>
+			</li>
 		</ul>
 	</nav>
 	<main class="container bodyContent">
@@ -122,10 +127,9 @@
 	</main>
 	<footer class="container">
 	</footer>
+
+	<script type="text/javascript" src="js/utils.js"></script>
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/bootstrap.js"></script>
-
-
 </body>
-
 </html>

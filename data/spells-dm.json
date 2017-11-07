@@ -3874,7 +3874,7 @@ spelldata.compendium.spell.push(
 {
 	"name": "Draconic Smite",
 	"source": "DM-13 3pp",
-	"level": "!",
+	"level": "1",
 	"school": "EV",
 	"time": "1 bonus action",
 	"range": "Self",

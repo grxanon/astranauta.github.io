@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/trumbowyg.css">
     <link rel="icon" href="favicon.png">
 
+    <style id="dynamicStyle"></style> <!-- populated with JS -->
+    <script type="text/javascript" src="js/styleswitch.js"></script>
 </head>
 
 <body>
@@ -72,6 +74,9 @@
                     <li role="presentation" class="active"><a href="editor.html">WYSIWYG Editor</a></li>
                 </ul>
             </li>
+            <li role="presentation">
+                <a class="nightModeToggle" href="#" onclick="styleSwitcher.toggleActiveStyleSheet(); return false;"><script>document.write(styleSwitcher.getActiveStyleSheet() === StyleSwitcher.STYLE_DAY ? "Night Mode" : "Day Mode")</script></a>
+            </li>
         </ul>
     </nav>
     <main class="container bodyContent">
@@ -91,7 +96,7 @@
     <footer class="container">
 
     </footer>
-
+    <script type="text/javascript" src="js/utils.js"></script>
     <script type="text/javascript" src="js/editor.js"></script>
     <script type="text/javascript" src="lib/list.js"></script>
     <script type="text/javascript" src="lib/jquery.js"></script>

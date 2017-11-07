@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.png">
 
+	<style id="dynamicStyle"></style> <!-- populated with JS -->
+	<script type="text/javascript" src="js/styleswitch.js"></script>
 </head>
 
 <body>
@@ -69,6 +71,9 @@
 					<li role="presentation"><a href="converter.html">Stat Block to JSON</a></li>
 					<li role="presentation"><a href="editor.html">WYSIWYG Editor</a></li>
 				</ul>
+			</li>
+			<li role="presentation">
+				<a class="nightModeToggle" href="#" onclick="styleSwitcher.toggleActiveStyleSheet(); return false;"><script>document.write(styleSwitcher.getActiveStyleSheet() === StyleSwitcher.STYLE_DAY ? "Night Mode" : "Day Mode")</script></a>
 			</li>
 		</ul>
 	</nav>
@@ -162,6 +167,7 @@
 	All the embedded crap.
 	Would load it in but I want this for offline use too
 -->
+	<script type="text/javascript" src="js/utils.js"></script>
 	<script type="text/javascript" src="data/races.json"></script>
 	<script type="text/javascript" src="js/statgen.js"></script>
 	<script type="text/javascript" src="lib/droll.js"></script>
