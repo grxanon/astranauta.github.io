@@ -1,6 +1,10 @@
 const HASH_SUBCLASS = "subclass:";
 const HASH_FEATURE = "feature:";
 const HASH_HIDE_FEATURES = "hidefeatures:";
+const HASH_LIST_SEP = "_";
+
+// TODO this is going to be added to the JSON in the upcoming class JSON overhaul
+const SUBCLASS_LEVEL_TITLES = ["Artificer Specialist", "Masterwork Feature", "Primal Path", "Path Feature", "Bard College", "Bard College feature", "Divine Domain", "Divine Domain feature", "Druid Circle", "Druid Circle feature", "Martial Archetype", "Martial Archetype feature", "Monastic Tradition", "Monastic Tradition feature", "Mystic Order", "Mystic Order feature", "Sacred Oath", "Sacred Oath feature", "Ranger Archetype", "Ranger Archetype feature", "Ranger Conclave", "Ranger Conclave feature", "Roguish Archetype", "Roguish Archetype feature", "Sorcerous Origin", "Sorcerous Origin feature", "Otherworldly Patron", "Otherworldly Patron feature", "Arcane Tradition", "Arcane Tradition feature"];
 
 var tabledefault="";
 var classtabledefault ="";
@@ -218,28 +222,28 @@ function loadhash (id) {
 			}
 
 			// write out list to class table
-			var multifeature = "";
-			if (curlevel.feature.length !== 1 && a !== 0) multifeature = ", ";
+			const multifeature = curlevel.feature.length !== 1 && a !== 0 ? ", " : "";
 			const featureSpan = document.createElement(ELE_A);
 			featureSpan.setAttribute(ATB_HREF, getFeatureHash(link));
 			featureSpan.setAttribute(ATB_CLASS, "featurelink");
 			featureSpan.addEventListener("click", function() {
 				document.getElementById("feature"+link).scrollIntoView();
-			})
+			});
 			featureSpan.innerHTML = curfeature.name;
 			if (curfeature._optional !== "YES" && curfeature.suboption === undefined) $("tr#level"+curlevel._level+" td.features").prepend(featureSpan).prepend(multifeature);
 
 			// display features in bottom section
-			var dataua = (curfeature.subclass !== undefined && curfeature.subclass.indexOf(" (UA)") !== -1) ? "true" : "false";
-			const subclassPrefix = hasSubclassPrefix ? "<span class='subclass-prefix'>" + curfeature.subclass.split(": ")[1] +": </span>" : "";
+			const gainSubclassFeature = isGainSubclassFeature(curfeature.name);
+			const dataua = (curfeature.subclass !== undefined && curfeature.subclass.indexOf(" (UA)") !== -1) ? "true" : "false";
+			const subclassPrefix = hasSubclassPrefix ? `<span class='subclass-prefix'>${curfeature.subclass.split(": ")[1]}: </span>` : "";
 			const dataSubclass = curfeature.subclass === undefined ? undefined : curfeature.subclass.toLowerCase();
 			if (isInlineHeader) {
-				const namePart = curfeature.name === undefined ? null : "<span id='feature" + link + "' class='inline-header'>" + subclassPrefix + curfeature.name + ".</span> ";
-				$("#features").after("<tr><td colspan='6' class='_class_feature " + styleClass + "' data-subclass='" + dataSubclass + "' data-ua='" + dataua + "'>" + utils_combineText(curfeature.text, "p", namePart) + "</td></tr>");
+				const namePart = curfeature.name === undefined ? null : `<span id='feature${link}' class='inline-header'>${subclassPrefix + curfeature.name}.</span> `;
+				$("#features").after(`<tr><td colspan='6' class='_class_feature ${styleClass}' data-subclass='${dataSubclass}' data-ua='${dataua}'>${utils_combineText(curfeature.text, "p", namePart)}</td></tr>`);
 			} else {
-				const namePart = curfeature.name === undefined ? "" : "<strong id='feature" + link + "'>" + subclassPrefix + (removeSubclassNamePrefix ? curfeature.name.split(": ")[1] : curfeature.name) + "</strong>";
-				const prerequisitePart = curfeature.prerequisite === undefined ? "" : "<p class='prerequisite'>Prerequisite: " + curfeature.prerequisite + "</p>";
-				$("#features").after("<tr><td colspan='6' class='_class_feature " + styleClass + "' data-subclass='" + dataSubclass + "' data-ua='" + dataua + "'>" + namePart + prerequisitePart + utils_combineText(curfeature.text, "p") + "</td></tr>");
+				const namePart = curfeature.name === undefined ? "" : `<strong id='feature${link}'>${subclassPrefix + (removeSubclassNamePrefix ? curfeature.name.split(": ")[1] : curfeature.name)}</strong>`;
+				const prerequisitePart = curfeature.prerequisite === undefined ? "" : `<p class='prerequisite'>Prerequisite: ${curfeature.prerequisite}</p>`;
+				$("#features").after(`<tr><td colspan='6' class='_class_feature ${styleClass}' data-subclass='${dataSubclass}' data-ua='${dataua}' data-gain-sc-feature='${gainSubclassFeature}'>${namePart + prerequisitePart + utils_combineText(curfeature.text, "p")}</td></tr>`);
 			}
 		}
 
@@ -251,7 +255,7 @@ function loadhash (id) {
 
 	$("div#subclasses span").remove();
 	for (let i = 0; i < subclasses.length; i++) {
-		if (subclasses[i].issubclass === "YES") $("div#subclasses").prepend("<span data-subclass='"+(subclasses[i].name.toLowerCase())+"'><em style='display: none;'>"+subclasses[i].name.split(": ")[0]+": </em><span>"+subclasses[i].name.split(": ")[1]+"</span></span>");
+		if (subclasses[i].issubclass === "YES") $("div#subclasses").prepend(`<span class='active' data-subclass='${(subclasses[i].name.toLowerCase())}'><em style='display: none;'>${subclasses[i].name.split(": ")[0]}: </em><span>${subclasses[i].name.split(": ")[1]}</span></span>`);
 	}
 
 	$("#subclasses > span").sort(asc_sort).appendTo("#subclasses");
@@ -261,7 +265,7 @@ function loadhash (id) {
 	});
 
 	$("div#subclasses").prepend($(`<span class="divider">`));
-	const toggle = $(`<span class="active" id="class-features-toggle"><span>Class Features</span></span>`);
+	const toggle = $(`<span class="alt-active" id="class-features-toggle"><span>Class Features</span></span>`);
 	$("div#subclasses").prepend(toggle)
 	toggle.click(function() {
 		window.location.hash = handleToggleFeaturesClicks($(this))
@@ -275,18 +279,18 @@ function loadhash (id) {
 		const encodedSubClass = encodeURIComponent(name).replace("'", "%27").toLowerCase();
 		const subclassLink = subclassHashK + encodedSubClass;
 
-		if (subButton.hasClass("active")) {
+		if (subButton.hasClass("active") && window.location.hash.includes(HASH_SUBCLASS)) {
 			for (let i = 0; i < split.length; i++) {
 				const hashPart = split[i];
 				if (!hashPart.startsWith(HASH_SUBCLASS)) outStack.push(hashPart);
 				else {
 					const subClassStack = [];
-					const subClasses = hashPart.substr(subclassHashK.length).split("+");
+					const subClasses = hashPart.substr(subclassHashK.length).split(HASH_LIST_SEP);
 					for (let j = 0; j < subClasses.length; j++) {
 						const subClass = subClasses[j];
 						if (subClass !== encodedSubClass) subClassStack.push(subClass);
 					}
-					if (subClassStack.length > 0) outStack.push(subclassHashK + subClassStack.join("+"));
+					if (subClassStack.length > 0) outStack.push(subclassHashK + subClassStack.join(HASH_LIST_SEP));
 				}
 			}
 		} else {
@@ -297,13 +301,13 @@ function loadhash (id) {
 				if (!hashPart.startsWith(HASH_SUBCLASS)) outStack.push(hashPart);
 				else {
 					const subClassStack = [];
-					const subClasses = hashPart.substr(subclassHashK.length).split("+");
+					const subClasses = hashPart.substr(subclassHashK.length).split(HASH_LIST_SEP);
 					for (let j = 0; j < subClasses.length; j++) {
 						const subClass = subClasses[j];
 						if (subClass !== encodedSubClass) subClassStack.push(subClass);
 					}
 					subClassStack.push(encodedSubClass);
-					if (subClassStack.length > 0) outStack.push(subclassHashK + subClassStack.join("+"));
+					if (subClassStack.length > 0) outStack.push(subclassHashK + subClassStack.join(HASH_LIST_SEP));
 
 					hasSubclassHash = true;
 				}
@@ -323,7 +327,7 @@ function loadhash (id) {
 			const hashPart = split[i];
 			if (!hashPart.startsWith(HASH_HIDE_FEATURES)) outStack.push(hashPart);
 		}
-		if (subButton.hasClass("active")) {
+		if (subButton.hasClass("alt-active")) {
 			outStack.push(HASH_HIDE_FEATURES + "true")
 		} else {
 			outStack.push(HASH_HIDE_FEATURES + "false")
@@ -352,6 +356,14 @@ function loadhash (id) {
 
 		return outStack.join(",").toLowerCase();
 	}
+
+	function isGainSubclassFeature(featureName) {
+		if (featureName === undefined) return false;
+		for (let i = 0; i < SUBCLASS_LEVEL_TITLES.length; i++) {
+			if (SUBCLASS_LEVEL_TITLES[i].trim().toLowerCase() === featureName.trim().toLowerCase()) return true;
+		}
+		return false;
+	}
 }
 
 function loadsub(sub) {
@@ -365,7 +377,7 @@ function loadsub(sub) {
 
 		if (hashPart.startsWith(HASH_SUBCLASS)) {
 			rawSubclasses = hashPart;
-			subclasses = hashPart.slice(HASH_SUBCLASS.length).split("+");
+			subclasses = hashPart.slice(HASH_SUBCLASS.length).split(HASH_LIST_SEP);
 		}
 		if (hashPart.startsWith(HASH_FEATURE)) feature = hashPart.slice(HASH_FEATURE.length);
 		if (hashPart.startsWith(HASH_HIDE_FEATURES)) hideClassFeatures = hashPart.slice(HASH_HIDE_FEATURES.length) === "true";
@@ -427,11 +439,11 @@ function loadsub(sub) {
 
 	const cfToggle = $("#class-features-toggle");
 	if (hideClassFeatures !== null && hideClassFeatures) {
-		cfToggle.removeClass("active");
-		$(`._class_feature[data-subclass="undefined"]`).hide();
+		cfToggle.removeClass("alt-active");
+		$(`._class_feature[data-subclass="undefined"][data-gain-sc-feature="false"]`).hide();
 	} else {
-		cfToggle.addClass("active");
-		$(`._class_feature[data-subclass="undefined"]`).show();
+		cfToggle.addClass("alt-active");
+		$(`._class_feature[data-subclass="undefined"][data-gain-sc-feature="false"]`).show();
 	}
 
 	function addFeatureHashes (rawSubclasses) {
@@ -463,7 +475,7 @@ function loadsub(sub) {
 
 	function displayAll() {
 		addFeatureHashes();
-		$("#subclasses .active").not("#class-features-toggle").removeClass("active");
+		$("#subclasses > span").not("#class-features-toggle").addClass("active");
 		$("._class_feature").show();
 		$(".subclass-prefix").show();
 	}

@@ -1,4 +1,5 @@
-spelldata.compendium.spell.push(
+{
+	"spell": [
 {
 	"name": "Abiding Webs",
 	"source": "BoLS 3pp",
@@ -9729,4 +9730,5 @@ spelldata.compendium.spell.push(
 	"classes": "Cleric, Wizard",
 	"text": "You create a zone of purple-hued air in a 20-foot-radius sphere around a point you can see. Within this zone, all damage caused directly by spells is minimized; each damage die is treated as having rolled a 1. The spell doesn’t reduce damage from effects that inflict damage indirectly, such as damage from conjured weapons and creatures, or damage from bonuses; for example, a spell that causes 4d6 + 20 damage is reduced to 4 + 20 damage by a zone of metamagic minimization."
 }
-);
+	]
+}

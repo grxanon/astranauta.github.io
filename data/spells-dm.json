@@ -1,4 +1,5 @@
-spelldata.compendium.spell.push(
+{
+	"spell": [
 {
 	"name": "Absolute Command",
 	"source": "DM-01 3pp",
@@ -4043,4 +4044,5 @@ spelldata.compendium.spell.push(
 		"At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the duration of the spell increases by 10 minutes for each slot level above 2nd."
 	]
 }
-);
+	]
+}

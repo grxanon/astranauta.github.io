@@ -127,6 +127,10 @@ th#name span.source {
 	margin-right: 0.2em;
 }
 
+span.sourcePHB {
+	color: #4a6898;
+}
+
 span.sourceDMG {
 	color: purple;
 }
@@ -135,8 +139,16 @@ span.sourceMM {
 	color: green;
 }
 
+span.sourceSCAG {
+	color: #76af76;
+}
+
 span.sourceVGM {
 	color: grey;
+}
+
+span.sourceXGE {
+	color: #ba7c00;
 }
 
 span.sourceToD {
@@ -168,8 +180,7 @@ span.sourceTYP {
 }
 
 span.sourceEEPC {
-	color: white;
-	text-shadow: 0 0 3px #000;
+	color: #57b6c6;
 }
 
 table#stats,
@@ -714,6 +725,11 @@ div#subclasses span.active {
 	color: white;
 }
 
+div#subclasses span.alt-active {
+	background: #922610;
+	color: white;
+}
+
 .slotlabel {
 	text-align: center;
 	border-bottom: 1px solid #000;
@@ -777,6 +793,14 @@ table#stats p.subtrait {
 
 .text-align-center {
 	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.no-wrap {
+	white-space: nowrap;
 }
 
 /****************************************
@@ -933,6 +957,10 @@ table#stats p.subtrait {
 	width: 14.16666666666667%;
 }
 
+.col-xs-1-2 {
+	width: 10%;
+}
+
 .dropdown-submenu {
 	position: relative;
 }
@@ -941,6 +969,15 @@ table#stats p.subtrait {
 	top: 0;
 	left: 100%;
 	margin-top: -1px;
+	overflow-y: auto;
+	max-height: 500px;
+}
+
+.caret-right {
+	border-left: 4px dashed;
+	border-left: 4px solid\9;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
 }
 
 .caret-right {

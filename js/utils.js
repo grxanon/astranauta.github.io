@@ -56,9 +56,6 @@ const FLTR_RARITY = "filterRarity";
 const FLTR_ATTUNEMENT = "filterAttunement";
 const FLTR_LIST_SEP = ";";
 
-const STYLESHEET_DEFAULT = "default";
-const STYLESHEET_ALTERNATE = "alternate";
-
 // STRING ==============================================================================================================
 // Appropriated from StackOverflow (literally, the site uses this code)
 String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
@@ -546,6 +543,7 @@ const SRC_ToD = "ToD";
 const SRC_TTP = "TTP";
 const SRC_TYP = "TftYP";
 const SRC_VGM = "VGM";
+const SRC_XGE = "XGE";
 
 const SRC_ALCoS = "ALCurseOfStrahd";
 const SRC_ALEE = "ALElementalEvil";
@@ -565,6 +563,7 @@ const SRC_UATMC = "UATheMysticClass";
 const SRC_UATOBM = "UAThatOldBlackMagic";
 const SRC_UATRR = "UATheRangerRevised";
 const SRC_UAWA = "UAWaterborneAdventures";
+const SRC_UAVR = "UAVariantRules";
 
 const SRC_BOLS_3PP = "BoLS 3pp";
 const SRC_DM01_3PP = "DM-01 3pp";
@@ -608,6 +607,7 @@ SOURCE_JSON_TO_FULL[SRC_ToD] = "Tyranny of Dragons";
 SOURCE_JSON_TO_FULL[SRC_TTP] = "The Tortle Package";
 SOURCE_JSON_TO_FULL[SRC_TYP] = "Tales from the Yawning Portal";
 SOURCE_JSON_TO_FULL[SRC_VGM] = "Volo's Guide to Monsters";
+SOURCE_JSON_TO_FULL[SRC_XGE] = "Xanathar's Guide to Everything";
 SOURCE_JSON_TO_FULL[SRC_ALCoS] = AL_PREFIX + "Curse of Strahd";
 SOURCE_JSON_TO_FULL[SRC_ALEE] = AL_PREFIX + "Elemental Evil";
 SOURCE_JSON_TO_FULL[SRC_ALRoD] = AL_PREFIX + "Rage of Demons";
@@ -629,6 +629,7 @@ SOURCE_JSON_TO_FULL[SRC_UATMC] = UA_PREFIX + "The Mystic Class";
 SOURCE_JSON_TO_FULL[SRC_UATOBM] = UA_PREFIX + "That Old Black Magic";
 SOURCE_JSON_TO_FULL[SRC_UATRR] = UA_PREFIX + "The Ranger, Revised";
 SOURCE_JSON_TO_FULL[SRC_UAWA] = UA_PREFIX + "Waterborne Adventures";
+SOURCE_JSON_TO_FULL[SRC_UAVR] = UA_PREFIX + "Variant Rules";
 SOURCE_JSON_TO_FULL[SRC_BOLS_3PP] = "Book of Lost Spells (3pp)";
 SOURCE_JSON_TO_FULL[SRC_DM01_3PP] = DM_PREFIX + "#01 - Clockwork (3pp)";
 SOURCE_JSON_TO_FULL[SRC_DM02_3PP] = DM_PREFIX + "#02 - Rune Magic (3pp)";
@@ -666,6 +667,7 @@ SOURCE_JSON_TO_ABV[SRC_ToD] = "ToD";
 SOURCE_JSON_TO_ABV[SRC_TTP] = "TTP";
 SOURCE_JSON_TO_ABV[SRC_TYP] = "TftYP";
 SOURCE_JSON_TO_ABV[SRC_VGM] = "VGM";
+SOURCE_JSON_TO_ABV[SRC_XGE] = "XGE";
 SOURCE_JSON_TO_ABV[SRC_ALCoS] = "ALCoS";
 SOURCE_JSON_TO_ABV[SRC_ALEE] = "ALEE";
 SOURCE_JSON_TO_ABV[SRC_ALRoD] = "ALRoD";
@@ -687,6 +689,7 @@ SOURCE_JSON_TO_ABV[SRC_UATMC] = "UAM";
 SOURCE_JSON_TO_ABV[SRC_UATOBM] = "UAOBM";
 SOURCE_JSON_TO_ABV[SRC_UATRR] = "UATRR";
 SOURCE_JSON_TO_ABV[SRC_UAWA] = "UAWA";
+SOURCE_JSON_TO_ABV[SRC_UAVR] = "UAVR";
 SOURCE_JSON_TO_ABV[SRC_BOLS_3PP] = "BolS (3pp)";
 SOURCE_JSON_TO_ABV[SRC_DM01_3PP] = "DM01 (3pp)";
 SOURCE_JSON_TO_ABV[SRC_DM02_3PP] = "DM02 (3pp)";
@@ -883,13 +886,13 @@ function compareNames(a, b) {
 }
 
 // JSON LOADING ========================================================================================================
-function loadJSON(url, onLoadFunction) {
+function loadJSON(url, onLoadFunction, ...otherData) {
 	const request = new XMLHttpRequest();
 	request.open('GET', url, true);
 	request.overrideMimeType("application/json");
 	request.onload = function() {
 		const data = JSON.parse(this.response);
-		onLoadFunction(data);
+		onLoadFunction(data, otherData);
 	};
 	request.send();
 }

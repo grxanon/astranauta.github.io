@@ -1,4 +1,5 @@
-monsterdata.compendium.monster.push(
+{
+	"monster": [
 {
  "source": "critter compendium",
  "name": "Achaierai",
@@ -21994,4 +21995,5 @@ monsterdata.compendium.monster.push(
   }
  ]
 }
-);
+]
+}
