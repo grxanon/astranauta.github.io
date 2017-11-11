@@ -497,6 +497,7 @@ function addCommas(intNum) {
 const XP_CHART = [200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000, 20000, 22000, 25000, 30000, 41000, 50000, 62000, 75000, 90000, 105000, 102000, 135000, 155000];
 
 function parse_crToXp (cr) {
+	if (cr === "Unknown") return "Unknown";
 	if (cr === "0") return "0 or 10";
 	if (cr === "1/8") return "25";
 	if (cr === "1/4") return "50";
@@ -549,21 +550,22 @@ const SRC_ALCoS = "ALCurseOfStrahd";
 const SRC_ALEE = "ALElementalEvil";
 const SRC_ALRoD = "ALRageOfDemons";
 
-const SRC_UAA = "UAArtificer";
-const SRC_UAEAG = "UAEladrinAndGith";
-const SRC_UAEBB = "UAEberron";
-const SRC_UAFFR = "UAFeatsForRaces";
-const SRC_UAFFS = "UAFeatsForSkills";
-const SRC_UAFO = "UAFiendishOptions";
-const SRC_UAFT = "UAFeats";
-const SRC_UAGH = "UAGothicHeroes";
-const SRC_UAModern = "UAModern";
-const SRC_UAStarterSpells = "UAStarterSpells";
-const SRC_UATMC = "UATheMysticClass";
-const SRC_UATOBM = "UAThatOldBlackMagic";
-const SRC_UATRR = "UATheRangerRevised";
-const SRC_UAWA = "UAWaterborneAdventures";
-const SRC_UAVR = "UAVariantRules";
+const SRC_UA_PREFIX = "UA";
+const SRC_UAA = SRC_UA_PREFIX + "Artificer";
+const SRC_UAEAG = SRC_UA_PREFIX + "EladrinAndGith";
+const SRC_UAEBB = SRC_UA_PREFIX + "Eberron";
+const SRC_UAFFR = SRC_UA_PREFIX + "FeatsForRaces";
+const SRC_UAFFS = SRC_UA_PREFIX + "FeatsForSkills";
+const SRC_UAFO = SRC_UA_PREFIX + "FiendishOptions";
+const SRC_UAFT = SRC_UA_PREFIX + "Feats";
+const SRC_UAGH = SRC_UA_PREFIX + "GothicHeroes";
+const SRC_UAModern = SRC_UA_PREFIX + "Modern";
+const SRC_UAStarterSpells = SRC_UA_PREFIX + "StarterSpells";
+const SRC_UATMC = SRC_UA_PREFIX + "TheMysticClass";
+const SRC_UATOBM = SRC_UA_PREFIX + "ThatOldBlackMagic";
+const SRC_UATRR = SRC_UA_PREFIX + "TheRangerRevised";
+const SRC_UAWA = SRC_UA_PREFIX + "WaterborneAdventures";
+const SRC_UAVR = SRC_UA_PREFIX + "VariantRules";
 
 const SRC_BOLS_3PP = "BoLS 3pp";
 const SRC_DM01_3PP = "DM-01 3pp";
