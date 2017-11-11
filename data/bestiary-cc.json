@@ -16294,7 +16294,9 @@
  "skill": [
   "Athletics +4"
  ],
- "resist": "bludgeoning, piercing and slashing Senses darkvision 30 ft., passive Perception 8",
+ "resist": "bludgeoning, piercing and slashing",
+ "senses": "darkvision 30 ft.",
+ "passive": "8",
  "languages": "understands simple instructions in Abyssal but can’t speak",
  "cr": "1/2",
  "trait": [
