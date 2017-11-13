@@ -89,7 +89,7 @@ function addBoLS(dmData, mainData) {
 
 let spelllist;
 function onJsonLoad(bolsData, data) {
-	tabledefault = $("#stats").html();
+	tableDefault = $("#stats").html();
 
 	spelllist = data[0].spell;
 	spelllist = spelllist.concat(bolsData.spell);
@@ -318,7 +318,7 @@ function sortspells(a, b, o) {
 }
 
 function loadhash (id) {
-	$("#stats").html(tabledefault);
+	$("#stats").html(tableDefault);
 	const curspell = spelllist[id];
 
 	$("th#name").html(`<span title="${parse_sourceJsonToFull(curspell.source)}" class='source source${curspell.source}'>${curspell.source}</span> ${curspell.name}`);

@@ -3,7 +3,7 @@ const BESTIARY_TOB_JSON_URL = "data/bestiary-tob.json";
 const BESTIARY_CC_JSON_URL = "data/bestiary-cc.json";
 
 window.onload = function load() {
-	tabledefault = $("#stats").html();
+	tableDefault = $("#stats").html();
 	loadJSON(BESTIARY_JSON_URL, addCC);
 };
 
@@ -130,7 +130,7 @@ function sortmonsters(a, b, o) {
 
 // load selected monster stat block
 function loadhash (id) {
-	$("#stats").html(tabledefault);
+	$("#stats").html(tableDefault);
 	var mon = monsters[id];
 	var name = mon.name;
 	var source = mon.source;
