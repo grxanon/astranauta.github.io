@@ -38,6 +38,7 @@ const ATB_ONCLICK = "onclick";
 const STL_DISPLAY_INITIAL = "display: initial";
 const STL_DISPLAY_NONE = "display: none";
 
+const FLTR_ID = "filterId";
 const FLTR_SOURCE = "filterSource";
 const FLTR_TYPE = "filterType";
 const FLTR_CR = "filterCr";
@@ -262,6 +263,10 @@ function utils_makeAttChoose(attList) {
 		return attsTemp.join(" or ") + " modifier (your choice)";
 	}
 }
+function utils_makeRoller(text) {
+	return text.replace(/([1-9]\d*)?d([1-9]\d*)(\s?[+-]\s?\d+)?/g, "<span class='roller' data-roll='$&'>$&</span>");
+}
+
 
 function makeTableThClassText(tableObject, i) {
 	return tableObject.thstyleclass === undefined || i >= tableObject.thstyleclass.length ? "" : " class=\"" + tableObject.thstyleclass[i] + "\"";
@@ -799,7 +804,6 @@ function parse_stringToSlug(str) {
 
 const ITEM_TYPE_JSON_TO_ABV = {
 	"A": "Ammunition",
-	"AF": "Ammunition", //Firearms
 	"AT": "Artisan Tool",
 	"EXP": "Explosive",
 	"G": "Adventuring Gear",
@@ -867,7 +871,6 @@ function parse_numberToString(num) {
 const PROPERTY_JSON_TO_ABV = {
 	"2H": "two-handed",
 	"A": "ammunition",
-	"AF": "ammunition", //Firearms
 	"BF": "burst fire",
 	"F": "finesse",
 	"H": "heavy",
@@ -942,8 +945,15 @@ function addDropdownOption(dropdown, optionVal, optionText) {
 }
 
 // ENCODING/DECODING ===================================================================================================
-function encodeForHash(str) {
-	return encodeURIComponent(str).toLowerCase().replace("'","%27")
+function encodeForHash(toEncode) {
+	if (toEncode instanceof Array) {
+		return toEncode.map(i => encodeForHashHelper(i)).join(HASH_LIST_SEP);
+	} else {
+		return encodeForHashHelper(toEncode);
+	}
+	function encodeForHashHelper(part) {
+		return encodeURIComponent(part).toLowerCase().replace("'","%27")
+	}
 }
 
 // SORTING =============================================================================================================

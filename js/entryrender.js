@@ -22,6 +22,8 @@ class EntryRenderer {
 		if (typeof droll !== "undefined" && entry.rollable === true) {
 			// TODO output this somewhere nice
 			// TODO make this less revolting
+
+			// TODO output to small tooltip-stype bubble? Close on mouseout
 			return `<span class='roller unselectable' onclick="if (this.rolled) { this.innerHTML = this.innerHTML.split('=')[0].trim()+' = '+droll.roll('${toAdd}').total; } else { this.rolled = true; this.innerHTML += ' = '+droll.roll('${toAdd}').total; }">${toAdd}</span>`;
 		} else {
 			return toAdd;
@@ -253,69 +255,121 @@ class EntryRenderer {
 		}
 
 		function renderString(self) {
-			const tagSplit = entry.split(EntryRenderer.RE_INLINE);
-			if (tagSplit.length > 1) {
-				for (let i = 0; i < tagSplit.length; i++) {
-					const s = tagSplit[i];
-					if (s === undefined || s === null || s === "") continue;
-					if (s.charAt(0) === "@") {
-						const [tag, text] = splitFirstSpace(s);
+			const tagSplit = splitByTags();
+			for (let i = 0; i < tagSplit.length; i++) {
+				const s = tagSplit[i];
+				if (s === undefined || s === null || s === "") continue;
+				if (s.charAt(0) === "@") {
+					const [tag, text] = splitFirstSpace(s);
+
+					if (tag === "@bold" || tag === "@italic") {
+						switch (tag) {
+							case "@bold":
+								textStack.push(`<b>`);
+								self.recursiveEntryRender(text, textStack, depth);
+								textStack.push(`</b>`);
+								break;
+							case "@italic":
+								textStack.push(`<i>`);
+								self.recursiveEntryRender(text, textStack, depth);
+								textStack.push(`</i>`);
+								break;
+						}
+					} else {
+						const [name, source, displayText, ...others] = text.split("|");
+						const hash = `${name}${source ? `${HASH_LIST_SEP}${source}` : ""}`;
+
 						const fauxEntry = {
 							"type": "link",
 							"href": {
 								"type": "internal",
-								"hash": text
+								"hash": hash
 							},
-							"text": text
+							"text": (displayText ? displayText : name)
 						};
 						switch (tag) {
 							case "@spell":
 								fauxEntry.href.path = "spells.html";
-								fauxEntry.href.hash = fauxEntry.href.hash += "_phb"; // TODO pass this in
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
 							case "@item":
 								fauxEntry.href.path = "items.html";
-								// TODO add source
+								if (!source) fauxEntry.href.hash += "_dmg";
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
 							case "@class":
 								const classMatch = EntryRenderer.RE_INLINE_CLASS.exec(text);
 								if (classMatch) {
 									fauxEntry.href.hash = classMatch[1].trim(); // TODO pass this in
-									fauxEntry.href.subhashes = [{"key": "subclass", "value": classMatch[2].trim()}]
+									fauxEntry.href.subhashes = [{"key": "sub", "value": classMatch[2].trim() + "~phb"}] // TODO pass this in
 								}
 								fauxEntry.href.path = "classes.html";
-								fauxEntry.href.hash = fauxEntry.href.hash += "_phb"; // TODO pass this in
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
 							case "@creature":
 								fauxEntry.href.path = "bestiary.html";
-								fauxEntry.href.hash = fauxEntry.href.hash += "_mm"; // TODO pass this in
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_MM;
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
-							case "@bold":
-								textStack.push(`<b>${text}</b>`);
-								break;
 						}
-					} else {
-						textStack.push(s);
 					}
+				} else {
+					textStack.push(s);
 				}
-			} else {
-				textStack.push(entry);
 			}
 
 			function splitFirstSpace(string) {
 				return [
 					string.substr(0, string.indexOf(' ')),
-					string.substr(string.indexOf(' ')+1)
+					string.substr(string.indexOf(' ') + 1)
 				]
+			}
+
+			function splitByTags() {
+				let tagDepth = 0;
+				let inTag = false;
+				let char, char2;
+				const out = [];
+				let curStr = "";
+				for (let i = 0; i < entry.length; ++i) {
+					char = entry.charAt(i);
+					char2 = i < entry.length-1 ? entry.charAt(i+1) : null;
+
+					switch (char) {
+						case "{":
+							if (char2 === "@") {
+								if (tagDepth++ > 0) {
+									curStr += char;
+								} else {
+									out.push(curStr);
+									inTag = false;
+									curStr = "";
+								}
+							} else {
+								curStr += char;
+							}
+							break;
+						case "}":
+							if (--tagDepth === 0) {
+								out.push(curStr);
+								curStr = "";
+							} else {
+								curStr += char;
+							}
+							break;
+						default:
+							curStr += char;
+					}
+				}
+				if (curStr.length > 0) out.push(curStr);
+
+				return out;
 			}
 		}
 	}
 }
-EntryRenderer.RE_INLINE = /{(@.*? .*?)}/g;
 EntryRenderer.RE_INLINE_CLASS = /(.*?) \((.*?)\)/;
 EntryRenderer.HEAD_NEG_1 = "statsBlockSectionHead";
 EntryRenderer.HEAD_0 = "statsBlockHead";
