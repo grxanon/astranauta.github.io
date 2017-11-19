@@ -373,6 +373,7 @@ p.second {
 span.roller {
 	color: #7ab733;
 	cursor: pointer;
+	user-select: none;
 }
 
 #output {

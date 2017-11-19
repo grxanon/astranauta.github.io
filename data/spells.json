@@ -1753,7 +1753,6 @@
 			"source": "EEPC",
 			"level": 2,
 			"school": "T",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -2495,8 +2494,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -2505,7 +2504,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -2529,7 +2528,6 @@
 			"name": "Alarm",
 			"level": 1,
 			"school": "A",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -2730,7 +2728,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					}
@@ -2754,7 +2752,6 @@
 			"name": "Animal Messenger",
 			"level": 2,
 			"school": "E",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -2907,7 +2904,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -2992,8 +2989,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -3002,7 +2999,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -3133,7 +3130,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -3143,8 +3140,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -3153,8 +3150,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -3163,7 +3160,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -3395,7 +3392,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					},
@@ -3405,8 +3402,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					},
 					{
@@ -3415,7 +3422,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -3573,7 +3580,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -3583,7 +3590,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -3718,7 +3725,6 @@
 			"name": "Augury",
 			"level": 2,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -3755,8 +3761,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					}
 				]
@@ -3834,7 +3850,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -4047,8 +4063,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -4057,7 +4073,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -4067,7 +4083,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					},
@@ -4374,7 +4390,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -4386,7 +4402,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					}
 				]
@@ -4441,7 +4457,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -4461,7 +4477,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -4476,7 +4492,6 @@
 			"name": "Beast Sense",
 			"level": 2,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -4584,7 +4599,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -4594,7 +4609,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -4604,7 +4619,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -4853,7 +4868,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -4863,7 +4878,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -4945,8 +4960,28 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Grave",
+							"source": "XGE"
 						}
 					},
 					{
@@ -4957,7 +4992,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					},
 					{
@@ -4972,32 +5007,12 @@
 					},
 					{
 						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
-						}
-					},
-					{
-						"class": {
 							"name": "Paladin",
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Grave Domain",
-							"source": "XGE"
 						}
 					}
 				]
@@ -5128,7 +5143,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -5219,7 +5234,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -5239,7 +5254,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -5314,7 +5329,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					},
 					{
@@ -5377,7 +5392,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -5461,7 +5476,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -5481,7 +5496,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -5491,7 +5506,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Undying Light",
+							"name": "Undying Light (UA)",
 							"source": "UALightDarkUnderdark"
 						}
 					}
@@ -5557,7 +5572,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -5569,7 +5584,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					}
 				]
@@ -5776,7 +5791,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -5786,7 +5801,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					}
@@ -6024,7 +6039,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -6103,7 +6118,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -6271,7 +6286,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -6283,7 +6298,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					},
 					{
@@ -6292,7 +6307,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -6429,8 +6444,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					},
 					{
@@ -6459,7 +6484,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -6469,7 +6494,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -6539,7 +6564,6 @@
 			"name": "Commune",
 			"level": 5,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -6590,7 +6614,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					}
@@ -6610,7 +6634,6 @@
 			"name": "Commune with Nature",
 			"level": 5,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -6652,7 +6675,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -6663,7 +6686,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					},
 					{
@@ -6752,8 +6775,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -6778,7 +6801,6 @@
 			"name": "Comprehend Languages",
 			"level": 1,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -6831,7 +6853,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -6938,7 +6960,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -6947,7 +6969,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -7036,8 +7058,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					},
 					{
@@ -7056,7 +7088,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAP"
 						}
 					}
@@ -7344,7 +7376,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					}
 				]
@@ -7604,7 +7636,6 @@
 			"name": "Contact Other Plane",
 			"level": 5,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -7911,7 +7942,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -7923,7 +7954,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					}
 				]
@@ -8216,14 +8247,14 @@
 						"source": "PHB"
 					}
 				],
-				"fromSubClass": [
+				"fromSubclass": [
 					{
 						"class": {
 							"name": "Paladin",
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -8299,7 +8330,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					}
 				]
@@ -8480,8 +8511,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -8490,7 +8521,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -8655,7 +8686,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -8665,7 +8696,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -8735,7 +8766,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -8745,7 +8776,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -8894,7 +8925,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					},
 					{
@@ -9035,7 +9066,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -9047,7 +9078,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					},
 					{
@@ -9056,7 +9087,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -9066,7 +9097,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Undying Light",
+							"name": "Undying Light (UA)",
 							"source": "UALightDarkUnderdark"
 						}
 					},
@@ -9140,7 +9171,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -9150,7 +9181,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -9170,8 +9201,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -9180,7 +9211,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -9190,7 +9221,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -9348,7 +9379,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -9358,7 +9389,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -9368,7 +9399,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -9378,7 +9409,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -9440,7 +9471,6 @@
 			"name": "Detect Magic",
 			"level": 1,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -9505,7 +9535,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					}
@@ -9696,7 +9726,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -9716,7 +9746,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -9784,7 +9814,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -9794,7 +9824,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -10029,7 +10059,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					},
@@ -10039,7 +10069,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -10132,7 +10162,6 @@
 			"name": "Divination",
 			"level": 4,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -10171,7 +10200,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					},
 					{
@@ -10182,7 +10211,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					}
 				]
@@ -10241,7 +10270,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -10251,7 +10280,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -10359,7 +10388,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -10389,7 +10418,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -10399,7 +10428,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -10419,7 +10448,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -10563,7 +10592,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -10603,7 +10632,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -10613,7 +10642,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -10633,7 +10662,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					},
@@ -10643,7 +10672,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -10670,7 +10699,6 @@
 			"name": "Drawmij's Instant Summon",
 			"level": 6,
 			"school": "C",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -10766,7 +10794,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					}
 				]
@@ -10969,8 +10997,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -10979,7 +11007,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -11019,7 +11047,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -11100,7 +11128,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -11441,8 +11469,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
-						"amount": "8",
+						"type": "hours",
+						"amount": 8,
 						"upTo": true
 					}
 				}
@@ -11604,7 +11632,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					}
@@ -11735,8 +11763,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -11745,7 +11773,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -11806,7 +11834,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -11880,7 +11908,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -11900,8 +11928,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -11910,7 +11938,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -11920,7 +11948,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -11998,7 +12026,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -12008,7 +12036,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -12102,7 +12130,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -12172,7 +12200,6 @@
 			"name": "Feign Death",
 			"level": 3,
 			"school": "N",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -12235,7 +12262,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					}
@@ -12254,7 +12281,6 @@
 			"name": "Find Familiar",
 			"level": 1,
 			"school": "C",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -12415,7 +12441,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "day",
+						"type": "days",
 						"amount": 1,
 						"upTo": true
 					},
@@ -12590,17 +12616,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
-							"source": "UARevisedClassOptions"
-						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Undying Light",
+							"name": "Undying Light (UA)",
 							"source": "UALightDarkUnderdark"
 						}
 					},
@@ -12610,7 +12626,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -12716,7 +12732,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -12736,7 +12752,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -12853,7 +12869,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -12863,7 +12879,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -12893,7 +12909,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -12903,7 +12919,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Undying Light",
+							"name": "Undying Light (UA)",
 							"source": "UALightDarkUnderdark"
 						}
 					},
@@ -12923,7 +12939,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -12993,7 +13009,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -13003,7 +13019,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -13013,7 +13029,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Undying Light",
+							"name": "Undying Light (UA)",
 							"source": "UALightDarkUnderdark"
 						}
 					},
@@ -13219,7 +13235,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					}
@@ -13243,7 +13259,6 @@
 			"name": "Forbiddance",
 			"level": 6,
 			"school": "A",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 10,
@@ -13462,7 +13477,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -13474,7 +13489,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -13485,7 +13500,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					},
 					{
@@ -13496,7 +13511,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					},
 					{
@@ -13507,7 +13522,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					},
 					{
@@ -13518,7 +13533,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					},
 					{
@@ -13537,7 +13552,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -13663,7 +13678,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					},
 					{
@@ -13672,7 +13687,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					}
@@ -13826,7 +13841,6 @@
 			"name": "Gentle Repose",
 			"level": 2,
 			"school": "N",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -13871,8 +13885,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -13881,7 +13895,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -14266,7 +14280,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					}
@@ -14377,7 +14391,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					},
 					{
@@ -14396,7 +14410,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					},
@@ -14495,7 +14509,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -14568,7 +14582,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -14578,7 +14592,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -14608,8 +14622,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -14618,7 +14632,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -14628,7 +14642,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -14829,7 +14843,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -14913,7 +14927,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					}
@@ -15163,7 +15177,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					}
 				]
@@ -15269,7 +15283,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					},
 					{
@@ -15288,7 +15302,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					},
@@ -15298,7 +15312,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -15308,7 +15322,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -15497,7 +15511,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -15507,8 +15521,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -15517,7 +15531,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -15813,7 +15827,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -15833,7 +15847,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -15931,7 +15945,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -15950,7 +15964,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -15960,7 +15974,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -15980,7 +15994,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -16221,7 +16235,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -16292,7 +16306,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -16304,7 +16318,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -16323,7 +16337,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					}
@@ -16348,7 +16362,6 @@
 			"name": "Identify",
 			"level": 1,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -16389,7 +16402,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
 						}
 					},
@@ -16399,7 +16412,17 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -16418,7 +16441,6 @@
 			"name": "Illusory Script",
 			"level": 1,
 			"school": "I",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -16741,7 +16763,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -16751,7 +16773,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -16763,7 +16785,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					},
 					{
@@ -16774,7 +16796,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					},
 					{
@@ -16785,7 +16807,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					},
 					{
@@ -16796,7 +16818,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					},
 					{
@@ -16805,7 +16827,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -16815,7 +16837,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -16919,7 +16941,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					},
 					{
@@ -16928,7 +16950,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					}
@@ -17008,7 +17030,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -17116,8 +17138,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					},
 					{
@@ -17136,7 +17168,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -17192,7 +17224,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					}
@@ -17209,7 +17241,6 @@
 			"name": "Leomund's Tiny Hut",
 			"level": 3,
 			"school": "V",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -17318,7 +17349,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -17338,7 +17369,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -17409,7 +17440,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -17423,7 +17454,7 @@
 			]
 		},
 		{
-			"name": "Light Domain",
+			"name": "Light",
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -17578,7 +17609,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					},
 					{
@@ -17587,7 +17618,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -17612,7 +17643,6 @@
 			"name": "Locate Animals or Plants",
 			"level": 2,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -17726,7 +17756,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					},
 					{
@@ -17735,7 +17765,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -17745,7 +17775,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -17755,7 +17785,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -17833,7 +17863,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -18075,7 +18105,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					},
@@ -18237,7 +18267,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					}
@@ -18261,7 +18291,6 @@
 			"name": "Magic Mouth",
 			"level": 2,
 			"school": "I",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -18362,7 +18391,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					},
@@ -18372,7 +18401,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -18382,8 +18411,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -18392,7 +18421,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -18412,7 +18441,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -18422,7 +18451,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -18558,7 +18587,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -18568,7 +18597,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -18791,7 +18820,6 @@
 			"name": "Meld into Stone",
 			"level": 3,
 			"school": "T",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -18837,7 +18865,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					}
 				]
@@ -18895,7 +18923,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					}
 				]
@@ -19275,7 +19303,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -19287,7 +19315,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					},
 					{
@@ -19296,7 +19324,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					},
@@ -19306,7 +19334,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -19416,7 +19444,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					},
 					{
@@ -19515,7 +19543,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -19525,7 +19553,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -19947,8 +19975,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					}
 				]
@@ -20002,7 +20040,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					}
@@ -20069,7 +20107,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -20151,8 +20189,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					}
 				]
@@ -20262,7 +20300,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					},
@@ -20274,7 +20312,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Grassland"
+							"subSubclass": "Grassland"
 						}
 					}
 				]
@@ -20331,7 +20369,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					},
 					{
@@ -20340,7 +20378,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					},
@@ -20350,7 +20388,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Treachery",
+							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
 					}
@@ -20486,7 +20524,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -20520,7 +20558,6 @@
 			"name": "Phantom Steed",
 			"level": 3,
 			"school": "I",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -20665,7 +20702,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					},
@@ -20835,7 +20872,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -20847,7 +20884,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					},
 					{
@@ -20990,7 +21027,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Trickery Domain",
+							"name": "Trickery",
 							"source": "PHB"
 						}
 					}
@@ -21217,8 +21254,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
-						"amount": "1",
+						"type": "hours",
+						"amount": 1,
 						"upTo": true
 					}
 				}
@@ -21574,7 +21611,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "day",
+						"type": "days",
 						"amount": 1,
 						"upTo": true
 					},
@@ -21667,7 +21704,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					},
 					{
@@ -21696,8 +21733,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -21706,8 +21743,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -21716,7 +21753,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -21726,7 +21763,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					},
@@ -21824,8 +21861,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -21985,8 +22022,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					}
 				]
@@ -22001,7 +22048,6 @@
 			"name": "Purify Food and Drink",
 			"level": 1,
 			"school": "T",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -22096,7 +22142,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -22106,8 +22152,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -22116,7 +22162,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -22134,7 +22180,6 @@
 			"name": "Rary's Telepathic Bond",
 			"level": 5,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -22228,7 +22273,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -22238,8 +22283,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -22248,7 +22293,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -22258,7 +22303,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					},
@@ -22268,7 +22313,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					}
@@ -22368,7 +22413,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -22809,7 +22854,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -22819,8 +22864,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -22829,7 +22874,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -22849,7 +22894,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -23061,7 +23106,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					}
@@ -23117,7 +23162,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -23209,7 +23254,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
 						}
 					},
@@ -23219,7 +23264,17 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -23231,7 +23286,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					},
 					{
@@ -23242,7 +23297,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					},
 					{
@@ -23360,8 +23415,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -23380,7 +23435,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -23390,7 +23445,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -23625,7 +23680,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Seeker",
+							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
 						}
 					}
@@ -23787,7 +23842,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -23797,7 +23852,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -23865,8 +23920,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -23875,7 +23930,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -23895,7 +23950,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					}
@@ -23960,7 +24015,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -23970,7 +24025,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -24071,7 +24126,6 @@
 			"name": "Silence",
 			"level": 2,
 			"school": "I",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -24123,7 +24177,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					},
 					{
@@ -24142,7 +24196,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					}
@@ -24319,7 +24373,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -24405,7 +24459,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					},
@@ -24417,7 +24471,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					}
 				]
@@ -24481,7 +24535,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -24490,8 +24544,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					}
 				]
@@ -24546,7 +24600,6 @@
 			"name": "Speak with Animals",
 			"level": 1,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -24594,7 +24647,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -24667,8 +24720,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					},
 					{
@@ -24687,7 +24750,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					}
@@ -24813,7 +24876,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Forest"
+							"subSubclass": "Forest"
 						}
 					},
 					{
@@ -24824,7 +24887,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					},
 					{
@@ -24835,7 +24898,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					}
 				]
@@ -24895,7 +24958,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -24907,7 +24970,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Arctic"
+							"subSubclass": "Arctic"
 						}
 					},
 					{
@@ -24918,7 +24981,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					}
 				]
@@ -24975,7 +25038,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -25050,7 +25113,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Life Domain",
+							"name": "Life",
 							"source": "PHB"
 						}
 					},
@@ -25060,7 +25123,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -25070,7 +25133,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Raven Queen",
+							"name": "Raven Queen (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -25080,7 +25143,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest",
+							"name": "Conquest (UA) ",
 							"source": "UAPaladin"
 						}
 					},
@@ -25090,7 +25153,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -25165,7 +25228,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -25252,7 +25315,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					},
 					{
@@ -25263,7 +25326,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					},
 					{
@@ -25339,7 +25402,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					},
 					{
@@ -25350,7 +25413,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					}
 				]
@@ -25421,7 +25484,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "War Domain",
+							"name": "War",
 							"source": "PHB"
 						}
 					},
@@ -25451,7 +25514,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Conquest v2",
+							"name": "Conquest v2 (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -25471,7 +25534,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -25491,7 +25554,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Strength Domain",
+							"name": "Strength (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -25631,8 +25694,18 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Knowledge Domain",
+							"name": "Knowledge",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Knowledge (PSA)",
+							"source": "PSA"
 						}
 					}
 				]
@@ -25850,7 +25923,7 @@
 				"When you inscribe the glyph, choose one of the options below for its effect. Once triggered, the glyph glows, filling a 60-foot-radius sphere with dim light for 10 minutes, after which time the spell ends. Each creature in the sphere when the glyph activates is targeted by its effect, as is a creature that enters the sphere for the first time on a turn or ends its turn there.",
 				{
 					"type": "entries",
-					"name": "Death Domain",
+					"name": "Death",
 					"entries": [
 						" Each target must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a successful save."
 					]
@@ -26293,7 +26366,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Arcana Domain",
+							"name": "Arcana",
 							"source": "SCAG"
 						}
 					},
@@ -26350,7 +26423,6 @@
 			"name": "Tenser's Floating Disk",
 			"level": 1,
 			"school": "C",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -26420,8 +26492,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
-						"amount": "1",
+						"type": "minutes",
+						"amount": 1,
 						"upTo": true
 					}
 				}
@@ -26545,7 +26617,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Zeal Domain",
+							"name": "Zeal (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -26608,7 +26680,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Tempest Domain",
+							"name": "Tempest",
 							"source": "PHB"
 						}
 					}
@@ -26820,7 +26892,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					},
@@ -27061,8 +27133,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": "1",
+						"type": "rounds",
+						"amount": 1,
 						"upTo": true
 					},
 					"concentration": true
@@ -27117,8 +27189,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "round",
-						"amount": "6",
+						"type": "rounds",
+						"amount": 6,
 						"upTo": true
 					},
 					"concentration": true
@@ -27144,7 +27216,6 @@
 			"name": "Unseen Servant",
 			"level": 1,
 			"school": "C",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -27246,7 +27317,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Death Domain",
+							"name": "Death",
 							"source": "DMG"
 						}
 					},
@@ -27256,8 +27327,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
-							"source": "ClericDivineDomains"
+							"name": "Grave (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -27266,7 +27337,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ambition Domain",
+							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
 					},
@@ -27276,7 +27347,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Grave Domain",
+							"name": "Grave",
 							"source": "XGE"
 						}
 					}
@@ -27389,7 +27460,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Light Domain",
+							"name": "Light",
 							"source": "PHB"
 						}
 					},
@@ -27409,8 +27480,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
-							"source": "ClericDivineDomains"
+							"name": "Forge (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -27419,7 +27490,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Celestial",
+							"name": "Celestial (UA)",
 							"source": "UARevisedClassOptions"
 						}
 					},
@@ -27439,7 +27510,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Forge Domain",
+							"name": "Forge",
 							"source": "XGE"
 						}
 					}
@@ -27507,8 +27578,8 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Protection Domain",
-							"source": "ClericDivineDomains"
+							"name": "Protection (UA)",
+							"source": "UAClericDivineDomains"
 						}
 					},
 					{
@@ -27517,7 +27588,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Redemption",
+							"name": "Redemption (UA) ",
 							"source": "ATrioOfSubclasses"
 						}
 					},
@@ -27651,7 +27722,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Desert"
+							"subSubclass": "Desert"
 						}
 					},
 					{
@@ -27662,7 +27733,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Mountain"
+							"subSubclass": "Mountain"
 						}
 					}
 				]
@@ -27787,7 +27858,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Solidarity Domain",
+							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
 					}
@@ -27803,7 +27874,6 @@
 			"name": "Water Breathing",
 			"level": 3,
 			"school": "T",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -27863,7 +27933,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					}
 				]
@@ -27880,7 +27950,6 @@
 			"name": "Water Walk",
 			"level": 3,
 			"school": "T",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -27940,7 +28009,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Coast"
+							"subSubclass": "Coast"
 						}
 					},
 					{
@@ -27951,7 +28020,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Swamp"
+							"subSubclass": "Swamp"
 						}
 					}
 				]
@@ -28017,7 +28086,7 @@
 						"subclass": {
 							"name": "Land",
 							"source": "PHB",
-							"subsubclass": "Underdark"
+							"subSubclass": "Underdark"
 						}
 					}
 				]
@@ -28170,7 +28239,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Nature Domain",
+							"name": "Nature",
 							"source": "PHB"
 						}
 					}
@@ -28381,7 +28450,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Hexblade",
+							"name": "Hexblade (UA)",
 							"source": "UAWarlockAndWizard"
 						}
 					},
@@ -28729,7 +28798,6 @@
 			"source": "UAModernMagic",
 			"level": 2,
 			"school": "T",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -28779,7 +28847,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -28806,7 +28874,6 @@
 			"source": "UAModernMagic",
 			"level": 5,
 			"school": "D",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -28850,7 +28917,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -28880,7 +28947,6 @@
 			"source": "UAModernMagic",
 			"level": 4,
 			"school": "C",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -28928,7 +28994,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -28957,7 +29023,6 @@
 			"source": "UAModernMagic",
 			"level": 2,
 			"school": "A",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29007,7 +29072,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29073,7 +29138,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29100,7 +29165,6 @@
 			"source": "UAModernMagic",
 			"level": 3,
 			"school": "E",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29150,7 +29214,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29207,7 +29271,6 @@
 			"source": "UAModernMagic",
 			"level": 1,
 			"school": "D",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29257,7 +29320,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29276,7 +29339,6 @@
 			"source": "UAModernMagic",
 			"level": 3,
 			"school": "I",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29327,7 +29389,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29345,7 +29407,6 @@
 			"source": "UAModernMagic",
 			"level": 0,
 			"school": "T",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29445,7 +29506,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29460,7 +29521,6 @@
 			"source": "UAModernMagic",
 			"level": 1,
 			"school": "T",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29509,7 +29569,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -29519,7 +29579,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29537,7 +29597,6 @@
 			"source": "UAModernMagic",
 			"level": 5,
 			"school": "T",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29587,7 +29646,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -29597,7 +29656,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29663,7 +29722,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "City Domain",
+							"name": "City (PSA)",
 							"source": "UAModernMagic"
 						}
 					},
@@ -29673,7 +29732,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29690,7 +29749,6 @@
 			"source": "UAModernMagic",
 			"level": 4,
 			"school": "T",
-			"technomagic": "YES",
 			"time": [
 				{
 					"number": 1,
@@ -29740,7 +29798,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Ghost in the Machine",
+							"name": "Ghost in the Machine (UA)",
 							"source": "UAModernMagic"
 						}
 					}
@@ -29815,7 +29873,6 @@
 			"name": "Ceremony (UA)",
 			"source": "UAStarterSpells",
 			"level": 1,
-			"ritual": "YES",
 			"school": "V",
 			"time": [
 				{
@@ -30007,7 +30064,6 @@
 			"name": "Guiding Hand (UA)",
 			"source": "UAStarterSpells",
 			"level": 1,
-			"ritual": "YES",
 			"school": "D",
 			"time": [
 				{
@@ -30575,7 +30631,6 @@
 			"name": "Wild Cunning (UA)",
 			"source": "UAStarterSpells",
 			"level": 1,
-			"ritual": "YES",
 			"school": "T",
 			"time": [
 				{
@@ -30697,8 +30752,8 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
-						"amount": "10",
+						"type": "minutes",
+						"amount": 10,
 						"upTo": true
 					}
 				}
@@ -31366,7 +31421,6 @@
 			"name": "Ceremony",
 			"source": "XGE",
 			"level": 1,
-			"ritual": "YES",
 			"school": "A",
 			"time": [
 				{
@@ -32793,7 +32847,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minutes",
 						"amount": 1
 					},
 					"concentration": true
@@ -34749,7 +34803,6 @@
 			"source": "XGE",
 			"level": 2,
 			"school": "T",
-			"ritual": "YES",
 			"time": [
 				{
 					"number": 1,
