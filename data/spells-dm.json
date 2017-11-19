@@ -3,7 +3,7 @@
 		{
 			"name": "Absolute Command",
 			"source": "DM-01 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -58,7 +58,7 @@
 		{
 			"name": "Analyze Device",
 			"source": "DM-01 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "D",
 			"time": [
 				{
@@ -101,7 +101,7 @@
 		{
 			"name": "Animate Construct",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -163,7 +163,7 @@
 		{
 			"name": "Armored Heart",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -218,7 +218,7 @@
 		{
 			"name": "Armored Shell",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -279,7 +279,7 @@
 		{
 			"name": "Call the Hunter",
 			"source": "DM-01 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -323,7 +323,7 @@
 		{
 			"name": "Catapult",
 			"source": "DM-01 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -380,7 +380,7 @@
 		{
 			"name": "Chains of the Goddess",
 			"source": "DM-01 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -425,7 +425,7 @@
 		{
 			"name": "Gear Barrage",
 			"source": "DM-01 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -473,7 +473,7 @@
 		{
 			"name": "Gear Shield",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -525,7 +525,7 @@
 		{
 			"name": "Gremlins",
 			"source": "DM-01 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -587,7 +587,7 @@
 		{
 			"name": "Grinding Gears",
 			"source": "DM-01 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -640,7 +640,7 @@
 		{
 			"name": "Find the Flaw",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"time": [
 				{
@@ -691,7 +691,7 @@
 		{
 			"name": "Fist of Iron",
 			"source": "DM-01 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -746,7 +746,7 @@
 		{
 			"name": "Heartstop",
 			"source": "DM-01 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -805,7 +805,7 @@
 		{
 			"name": "Hellforging",
 			"source": "DM-01 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "N",
 			"ritual": "YES",
 			"time": [
@@ -855,7 +855,7 @@
 		{
 			"name": "Imbue Spell",
 			"source": "DM-01 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -908,7 +908,7 @@
 		{
 			"name": "Lock Armor",
 			"source": "DM-01 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -970,7 +970,7 @@
 		{
 			"name": "Machine Sacrifice",
 			"source": "DM-01 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -1018,7 +1018,7 @@
 		{
 			"name": "Machine's Load",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -1087,7 +1087,7 @@
 		{
 			"name": "Machine Speech",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -1141,7 +1141,7 @@
 		{
 			"name": "Mass Repair Metal",
 			"source": "DM-01 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -1193,7 +1193,7 @@
 		{
 			"name": "Mechanical Union",
 			"source": "DM-01 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -1242,7 +1242,7 @@
 		{
 			"name": "Molech's Blessing",
 			"source": "DM-01 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -1288,7 +1288,7 @@
 		{
 			"name": "Move the Cosmic Wheel",
 			"source": "DM-01 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -1339,7 +1339,7 @@
 		{
 			"name": "Overclock",
 			"source": "DM-01 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -1392,7 +1392,7 @@
 		{
 			"name": "Pendulum",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -1452,7 +1452,7 @@
 		{
 			"name": "Power Word Restore",
 			"source": "DM-01 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -1497,7 +1497,7 @@
 		{
 			"name": "Read Memory",
 			"source": "DM-01 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -1544,7 +1544,7 @@
 		{
 			"name": "Repair Metal",
 			"source": "DM-01 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -1599,7 +1599,7 @@
 		{
 			"name": "Robe of Shards",
 			"source": "DM-01 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -1650,7 +1650,7 @@
 		{
 			"name": "Soul of the Machine",
 			"source": "DM-01 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -1701,7 +1701,7 @@
 		{
 			"name": "Spin",
 			"source": "DM-01 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -1752,7 +1752,7 @@
 		{
 			"name": "Steam Blast",
 			"source": "DM-01 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -1809,7 +1809,7 @@
 		{
 			"name": "Steam Whistle",
 			"source": "DM-01 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -1857,7 +1857,7 @@
 		{
 			"name": "Sphere of Order",
 			"source": "DM-01 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -1900,7 +1900,7 @@
 		{
 			"name": "Thousand Darts",
 			"source": "DM-01 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -1957,7 +1957,7 @@
 		{
 			"name": "Tick Stop",
 			"source": "DM-01 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -2003,7 +2003,7 @@
 		{
 			"name": "Time in a Bottle",
 			"source": "DM-01 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -2057,7 +2057,7 @@
 		{
 			"name": "Time Jump",
 			"source": "DM-01 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -2103,7 +2103,7 @@
 		{
 			"name": "Timeless Engine",
 			"source": "DM-01 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -2156,7 +2156,7 @@
 		{
 			"name": "Tireless",
 			"source": "DM-01 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2206,7 +2206,7 @@
 		{
 			"name": "Winding Key",
 			"source": "DM-01 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -2262,7 +2262,7 @@
 		{
 			"name": "Write Memory",
 			"source": "DM-01 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -2309,7 +2309,7 @@
 		{
 			"name": "Binding Oath",
 			"source": "DM-02 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"ritual": "YES",
 			"time": [
@@ -2362,7 +2362,7 @@
 		{
 			"name": "Blade of My Brother",
 			"source": "DM-02 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -2410,7 +2410,7 @@
 		{
 			"name": "Brittling",
 			"source": "DM-02 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -2453,7 +2453,7 @@
 		{
 			"name": "Curse of Boreas",
 			"source": "DM-02 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -2506,7 +2506,7 @@
 		{
 			"name": "Cursed Gift",
 			"source": "DM-02 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -2567,7 +2567,7 @@
 		{
 			"name": "Deep Breath",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2629,7 +2629,7 @@
 		{
 			"name": "Fire Under the Tongue",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2678,7 +2678,7 @@
 		{
 			"name": "Flurry",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2733,7 +2733,7 @@
 		{
 			"name": "Freeze Potion",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2798,7 +2798,7 @@
 		{
 			"name": "Freezing Fog",
 			"source": "DM-02 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -2859,7 +2859,7 @@
 		{
 			"name": "Gliding Step",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -2914,7 +2914,7 @@
 		{
 			"name": "Goat's Hoof Charm",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2978,7 +2978,7 @@
 		{
 			"name": "Grasp of the Tupilak",
 			"source": "DM-02 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -3041,7 +3041,7 @@
 		{
 			"name": "Grudge Match",
 			"source": "DM-02 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -3097,7 +3097,7 @@
 		{
 			"name": "Hearth Charm",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -3148,7 +3148,7 @@
 		{
 			"name": "Hero's Steel",
 			"source": "DM-02 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -3203,7 +3203,7 @@
 		{
 			"name": "Hod's Gift",
 			"source": "DM-02 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -3263,7 +3263,7 @@
 		{
 			"name": "Jotun's Jest",
 			"source": "DM-02 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -3318,7 +3318,7 @@
 		{
 			"name": "Loki's Gift",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -3367,7 +3367,7 @@
 		{
 			"name": "Mosquito Bane",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -3426,7 +3426,7 @@
 		{
 			"name": "Not This Day!",
 			"source": "DM-02 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -3473,7 +3473,7 @@
 		{
 			"name": "Potency of the Pack",
 			"source": "DM-02 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -3537,7 +3537,7 @@
 		{
 			"name": "Prismatic Ray",
 			"source": "DM-02 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -3596,7 +3596,7 @@
 		{
 			"name": "Rain of Blades",
 			"source": "DM-02 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -3654,7 +3654,7 @@
 		{
 			"name": "Snow Boulder",
 			"source": "DM-02 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -3708,7 +3708,7 @@
 		{
 			"name": "Snowblind Stare",
 			"source": "DM-02 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -3769,7 +3769,7 @@
 		{
 			"name": "Spiteful Weapon",
 			"source": "DM-02 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -3839,7 +3839,7 @@
 		{
 			"name": "Thunderclap",
 			"source": "DM-02 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -3885,7 +3885,7 @@
 		{
 			"name": "Triumph of Ice",
 			"source": "DM-02 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -3941,7 +3941,7 @@
 		{
 			"name": "Unluck On That",
 			"source": "DM-02 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -4000,7 +4000,7 @@
 		{
 			"name": "Wolfsong",
 			"source": "DM-02 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -4050,7 +4050,7 @@
 		{
 			"name": "Wotan's Rede",
 			"source": "DM-02 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -4106,7 +4106,7 @@
 		{
 			"name": "Conjure Minor Voidborn",
 			"source": "DM-03 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "VM",
 			"time": [
 				{
@@ -4166,7 +4166,7 @@
 		{
 			"name": "Conjure Voidborn",
 			"source": "DM-03 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "VM",
 			"time": [
 				{
@@ -4221,7 +4221,7 @@
 		{
 			"name": "Crushing Curse",
 			"source": "DM-03 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "VM",
 			"time": [
 				{
@@ -4261,7 +4261,7 @@
 		{
 			"name": "Destructive Resonance",
 			"source": "DM-03 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "VM",
 			"time": [
 				{
@@ -4309,7 +4309,7 @@
 		{
 			"name": "Glimpse of the Void",
 			"source": "DM-03 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "VM",
 			"time": [
 				{
@@ -4354,7 +4354,7 @@
 		{
 			"name": "Life Drain",
 			"source": "DM-03 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "VM",
 			"time": [
 				{
@@ -4402,7 +4402,7 @@
 		{
 			"name": "Living Shadows",
 			"source": "DM-03 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "VM",
 			"time": [
 				{
@@ -4446,7 +4446,7 @@
 		{
 			"name": "Maddening Whispers",
 			"source": "DM-03 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "VM",
 			"time": [
 				{
@@ -4489,7 +4489,7 @@
 		{
 			"name": "Nether Weapon",
 			"source": "DM-03 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "VM",
 			"time": [
 				{
@@ -4542,7 +4542,7 @@
 		{
 			"name": "Protection from the Void",
 			"source": "DM-03 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "VM",
 			"time": [
 				{
@@ -4586,7 +4586,7 @@
 		{
 			"name": "Void Rift",
 			"source": "DM-03 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "VM",
 			"time": [
 				{
@@ -4632,7 +4632,7 @@
 		{
 			"name": "Void Strike",
 			"source": "DM-03 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "VM",
 			"time": [
 				{
@@ -4685,7 +4685,7 @@
 		{
 			"name": "Word of Misfortune",
 			"source": "DM-03 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "VM",
 			"time": [
 				{
@@ -4729,7 +4729,7 @@
 		{
 			"name": "Black Hand",
 			"source": "DM-04 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -4773,7 +4773,7 @@
 		{
 			"name": "Black Well",
 			"source": "DM-04 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -4826,7 +4826,7 @@
 		{
 			"name": "Cloak of Shadow",
 			"source": "DM-04 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"time": [
 				{
@@ -4868,7 +4868,7 @@
 		{
 			"name": "Compelling Fate",
 			"source": "DM-04 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -4923,7 +4923,7 @@
 		{
 			"name": "Flickering Fate",
 			"source": "DM-04 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -4965,7 +4965,7 @@
 		{
 			"name": "Guiding Star",
 			"source": "DM-04 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -5008,7 +5008,7 @@
 		{
 			"name": "Icy Grasp of the Ether",
 			"source": "DM-04 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -5053,7 +5053,7 @@
 		{
 			"name": "Orb of Light",
 			"source": "DM-04 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -5105,7 +5105,7 @@
 		{
 			"name": "Shadow Bite",
 			"source": "DM-04 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "I",
 			"time": [
 				{
@@ -5145,7 +5145,7 @@
 		{
 			"name": "Shadow Blindness",
 			"source": "DM-04 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "I",
 			"time": [
 				{
@@ -5187,7 +5187,7 @@
 		{
 			"name": "Shadow Hands",
 			"source": "DM-04 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -5235,7 +5235,7 @@
 		{
 			"name": "Shadow Trove",
 			"source": "DM-04 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -5289,7 +5289,7 @@
 		{
 			"name": "Shield of Star and Shadow",
 			"source": "DM-04 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -5332,7 +5332,7 @@
 		{
 			"name": "Silhouette",
 			"source": "DM-04 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "I",
 			"time": [
 				{
@@ -5375,7 +5375,7 @@
 		{
 			"name": "Slither",
 			"source": "DM-04 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -5428,7 +5428,7 @@
 		{
 			"name": "Starburst",
 			"source": "DM-04 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "V",
 			"time": [
 				{
@@ -5468,7 +5468,7 @@
 		{
 			"name": "Starfall",
 			"source": "DM-04 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -5516,7 +5516,7 @@
 		{
 			"name": "Star's Heart",
 			"source": "DM-04 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -5560,7 +5560,7 @@
 		{
 			"name": "Starry Vision",
 			"source": "DM-04 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "D",
 			"time": [
 				{
@@ -5613,7 +5613,7 @@
 		{
 			"name": "Last Rays of the Dying Sun",
 			"source": "DM-04 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -5661,7 +5661,7 @@
 		{
 			"name": "Summon Star",
 			"source": "DM-04 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -5705,7 +5705,7 @@
 		{
 			"name": "Amplify Ley Field",
 			"source": "DM-05 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -5762,7 +5762,7 @@
 		{
 			"name": "Disruptive Aura",
 			"source": "DM-05 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -5827,7 +5827,7 @@
 		{
 			"name": "Energy Absorption",
 			"source": "DM-05 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -5883,7 +5883,7 @@
 		{
 			"name": "Greater Ley Pulse",
 			"source": "DM-05 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -5948,7 +5948,7 @@
 		{
 			"name": "Land Bond",
 			"source": "DM-05 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -6003,7 +6003,7 @@
 		{
 			"name": "Lesser Ley Pulse",
 			"source": "DM-05 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -6068,7 +6068,7 @@
 		{
 			"name": "Ley Disruption",
 			"source": "DM-05 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -6126,7 +6126,7 @@
 		{
 			"name": "Ley Energy Bolt",
 			"source": "DM-05 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -6187,7 +6187,7 @@
 		{
 			"name": "Ley Leech",
 			"source": "DM-05 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -6247,7 +6247,7 @@
 		{
 			"name": "Ley Sense",
 			"source": "DM-05 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -6302,7 +6302,7 @@
 		{
 			"name": "Ley Storm",
 			"source": "DM-05 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "C",
 			"time": [
 				{
@@ -6363,7 +6363,7 @@
 		{
 			"name": "Ley Surge",
 			"source": "DM-05 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "V",
 			"time": [
 				{
@@ -6415,7 +6415,7 @@
 		{
 			"name": "Ley Whip",
 			"source": "DM-05 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -6470,7 +6470,7 @@
 		{
 			"name": "Ray of Life Suppression",
 			"source": "DM-05 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -6522,7 +6522,7 @@
 		{
 			"name": "Volley Shield",
 			"source": "DM-05 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -6577,7 +6577,7 @@
 		{
 			"name": "Angelic Guardian",
 			"source": "DM-06 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -6633,7 +6633,7 @@
 		{
 			"name": "Benediction",
 			"source": "DM-06 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "A",
 			"time": [
 				{
@@ -6685,7 +6685,7 @@
 		{
 			"name": "Blade of Wrath",
 			"source": "DM-06 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -6752,7 +6752,7 @@
 		{
 			"name": "Blazing Chariot",
 			"source": "DM-06 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -6810,7 +6810,7 @@
 		{
 			"name": "Blessed Halo",
 			"source": "DM-06 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -6876,7 +6876,7 @@
 		{
 			"name": "Deva's Wings",
 			"source": "DM-06 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -6941,7 +6941,7 @@
 		{
 			"name": "Greater Seal of Sanctuary",
 			"source": "DM-06 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "A",
 			"ritual": "YES",
 			"time": [
@@ -6997,7 +6997,7 @@
 		{
 			"name": "Heavenly Crown",
 			"source": "DM-06 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "E",
 			"time": [
 				{
@@ -7050,7 +7050,7 @@
 		{
 			"name": "Quintessence",
 			"source": "DM-06 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -7103,7 +7103,7 @@
 		{
 			"name": "Seal of Sanctuary",
 			"source": "DM-06 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"ritual": "YES",
 			"time": [
@@ -7157,7 +7157,7 @@
 		{
 			"name": "Auspicious Warning",
 			"source": "DM-07 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"time": [
 				{
@@ -7211,7 +7211,7 @@
 		{
 			"name": "Bad Timing",
 			"source": "DM-07 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -7265,7 +7265,7 @@
 		{
 			"name": "Calm of the Storm",
 			"source": "DM-07 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -7329,7 +7329,7 @@
 		{
 			"name": "Chaotic Form",
 			"source": "DM-07 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -7396,7 +7396,7 @@
 		{
 			"name": "Chaotic Vitality",
 			"source": "DM-07 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -7467,7 +7467,7 @@
 		{
 			"name": "Chaotic World",
 			"source": "DM-07 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "I",
 			"time": [
 				{
@@ -7527,7 +7527,7 @@
 		{
 			"name": "Entropic Damage Field",
 			"source": "DM-07 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -7588,7 +7588,7 @@
 		{
 			"name": "Fluctuating Alignment",
 			"source": "DM-07 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -7657,7 +7657,7 @@
 		{
 			"name": "Frenzied Bolt",
 			"source": "DM-07 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -7721,7 +7721,7 @@
 		{
 			"name": "Ill-fated Word",
 			"source": "DM-07 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"time": [
 				{
@@ -7775,7 +7775,7 @@
 		{
 			"name": "Mass Surge Dampener",
 			"source": "DM-07 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"ritual": "YES",
 			"time": [
@@ -7835,7 +7835,7 @@
 		{
 			"name": "Paragon of Chaos",
 			"source": "DM-07 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -7894,7 +7894,7 @@
 		{
 			"name": "Shifting the Odds",
 			"source": "DM-07 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -7947,7 +7947,7 @@
 		{
 			"name": "Surge Dampener",
 			"source": "DM-07 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"ritual": "YES",
 			"time": [
@@ -8006,7 +8006,7 @@
 		{
 			"name": "Uncontrollable Transformation",
 			"source": "DM-07 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -8085,7 +8085,7 @@
 		{
 			"name": "Undermine Armor",
 			"source": "DM-07 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -8146,7 +8146,7 @@
 		{
 			"name": "Wild Shield",
 			"source": "DM-07 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -8214,7 +8214,7 @@
 		{
 			"name": "Adjust Positioning",
 			"source": "DM-08 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -8273,7 +8273,7 @@
 		{
 			"name": "Boiling Oil",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -8331,7 +8331,7 @@
 		{
 			"name": "By the Light of the Watchful Moon",
 			"source": "DM-08 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -8396,7 +8396,7 @@
 		{
 			"name": "Costly Victory",
 			"source": "DM-08 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -8439,7 +8439,7 @@
 		{
 			"name": "Curse of Incompetence",
 			"source": "DM-08 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -8504,7 +8504,7 @@
 		{
 			"name": "Fault Line",
 			"source": "DM-08 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -8549,7 +8549,7 @@
 		{
 			"name": "Hobble Mount",
 			"source": "DM-08 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -8622,7 +8622,7 @@
 		{
 			"name": "Holy Ground",
 			"source": "DM-08 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -8679,7 +8679,7 @@
 		{
 			"name": "Inspiring Speech",
 			"source": "DM-08 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -8729,7 +8729,7 @@
 		{
 			"name": "Instant Fortification",
 			"source": "DM-08 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -8783,7 +8783,7 @@
 		{
 			"name": "Instant Siege Weapon",
 			"source": "DM-08 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -8836,7 +8836,7 @@
 		{
 			"name": "Mass Blade Ward",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -8883,7 +8883,7 @@
 		{
 			"name": "Mass Hobble Mount",
 			"source": "DM-08 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -8957,7 +8957,7 @@
 		{
 			"name": "Nightfall",
 			"source": "DM-08 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"ritual": "YES",
 			"time": [
@@ -9014,7 +9014,7 @@
 		{
 			"name": "Outflanking Boon",
 			"source": "DM-08 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -9079,7 +9079,7 @@
 		{
 			"name": "Poisoned Volley",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -9135,7 +9135,7 @@
 		{
 			"name": "Reposition",
 			"source": "DM-08 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -9194,7 +9194,7 @@
 		{
 			"name": "Sudden Dawn",
 			"source": "DM-08 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"ritual": "YES",
 			"time": [
@@ -9251,7 +9251,7 @@
 		{
 			"name": "Shared Sacrifice",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -9298,7 +9298,7 @@
 		{
 			"name": "Spur Mount",
 			"source": "DM-08 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -9345,7 +9345,7 @@
 		{
 			"name": "Thunderous Wave",
 			"source": "DM-08 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -9392,7 +9392,7 @@
 		{
 			"name": "Trench",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -9463,7 +9463,7 @@
 		{
 			"name": "Walking Wall",
 			"source": "DM-08 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -9513,7 +9513,7 @@
 		{
 			"name": "Warning Shout",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -9563,7 +9563,7 @@
 		{
 			"name": "Wresting Wind",
 			"source": "DM-08 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -9611,7 +9611,7 @@
 		{
 			"name": "Circle of Devastation",
 			"source": "DM-09 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "V",
 			"time": [
 				{
@@ -9665,7 +9665,7 @@
 		{
 			"name": "Circle of Wind",
 			"source": "DM-09 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -9716,7 +9716,7 @@
 		{
 			"name": "Create Ring Servant",
 			"source": "DM-09 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -9769,7 +9769,7 @@
 		{
 			"name": "Curse Ring",
 			"source": "DM-09 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -9820,7 +9820,7 @@
 		{
 			"name": "Enchant Ring",
 			"source": "DM-09 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "E",
 			"time": [
 				{
@@ -9872,7 +9872,7 @@
 		{
 			"name": "Hoarfrost",
 			"source": "DM-09 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "V",
 			"time": [
 				{
@@ -9924,7 +9924,7 @@
 		{
 			"name": "Innocuous Aspect",
 			"source": "DM-09 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -9977,7 +9977,7 @@
 		{
 			"name": "Reverberate",
 			"source": "DM-09 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -10034,7 +10034,7 @@
 		{
 			"name": "Ringstrike",
 			"source": "DM-09 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -10095,7 +10095,7 @@
 		{
 			"name": "Ringward",
 			"source": "DM-09 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -10147,7 +10147,7 @@
 		{
 			"name": "Spinning Axes",
 			"source": "DM-09 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -10203,7 +10203,7 @@
 		{
 			"name": "Banshee Wail",
 			"source": "DM-10 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -10247,7 +10247,7 @@
 		{
 			"name": "Become Nightwing",
 			"source": "DM-10 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "E",
 			"time": [
 				{
@@ -10296,7 +10296,7 @@
 		{
 			"name": "Black Ribbons",
 			"source": "DM-10 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -10345,7 +10345,7 @@
 		{
 			"name": "Call Shadow Mastiff",
 			"source": "DM-10 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -10396,7 +10396,7 @@
 		{
 			"name": "Claws of Darkness",
 			"source": "DM-10 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "V",
 			"time": [
 				{
@@ -10443,7 +10443,7 @@
 		{
 			"name": "Cloak in Shadow",
 			"source": "DM-10 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -10486,7 +10486,7 @@
 		{
 			"name": "Cloying Darkness",
 			"source": "DM-10 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -10542,7 +10542,7 @@
 		{
 			"name": "Conjure Shadow Titan",
 			"source": "DM-10 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -10592,7 +10592,7 @@
 		{
 			"name": "Dark Dementing",
 			"source": "DM-10 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "I",
 			"time": [
 				{
@@ -10636,7 +10636,7 @@
 		{
 			"name": "Dark Path",
 			"source": "DM-10 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -10685,7 +10685,7 @@
 		{
 			"name": "Darkbolt",
 			"source": "DM-10 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -10737,7 +10737,7 @@
 		{
 			"name": "Douse Light",
 			"source": "DM-10 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -10780,7 +10780,7 @@
 		{
 			"name": "Legion",
 			"source": "DM-10 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -10829,7 +10829,7 @@
 		{
 			"name": "Malevolent Waves",
 			"source": "DM-10 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "A",
 			"time": [
 				{
@@ -10877,7 +10877,7 @@
 		{
 			"name": "Negative Image",
 			"source": "DM-10 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -10921,7 +10921,7 @@
 		{
 			"name": "Night Terrors",
 			"source": "DM-10 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "I",
 			"time": [
 				{
@@ -10970,7 +10970,7 @@
 		{
 			"name": "Shadow Monsters",
 			"source": "DM-10 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "I",
 			"time": [
 				{
@@ -11028,7 +11028,7 @@
 		{
 			"name": "Shadow Puppets",
 			"source": "DM-10 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "I",
 			"time": [
 				{
@@ -11086,7 +11086,7 @@
 		{
 			"name": "Shadow Realm Gateway",
 			"source": "DM-10 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -11137,7 +11137,7 @@
 		{
 			"name": "Umbral Storm",
 			"source": "DM-10 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -11186,7 +11186,7 @@
 		{
 			"name": "Afflict Line",
 			"source": "DM-11 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"ritual": "YES",
 			"time": [
@@ -11239,7 +11239,7 @@
 		{
 			"name": "Black Swan Storm",
 			"source": "DM-11 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -11302,7 +11302,7 @@
 		{
 			"name": "Bloom",
 			"source": "DM-11 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -11361,7 +11361,7 @@
 		{
 			"name": "Celebration",
 			"source": "DM-11 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"ritual": "YES",
 			"time": [
@@ -11428,7 +11428,7 @@
 		{
 			"name": "Clearing the Field",
 			"source": "DM-11 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -11494,7 +11494,7 @@
 		{
 			"name": "Cosmic Alignment",
 			"source": "DM-11 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -11538,7 +11538,7 @@
 		{
 			"name": "Desolation",
 			"source": "DM-11 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"ritual": "YES",
 			"time": [
@@ -11594,7 +11594,7 @@
 		{
 			"name": "Encroaching Shadows",
 			"source": "DM-11 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "I",
 			"ritual": "YES",
 			"time": [
@@ -11657,7 +11657,7 @@
 		{
 			"name": "Extract Foyson",
 			"source": "DM-11 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -11724,7 +11724,7 @@
 		{
 			"name": "Guest of Honor",
 			"source": "DM-11 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"ritual": "YES",
 			"time": [
@@ -11781,7 +11781,7 @@
 		{
 			"name": "Harsh Light of Summer's Glare",
 			"source": "DM-11 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "E",
 			"time": [
 				{
@@ -11833,7 +11833,7 @@
 		{
 			"name": "Heartache",
 			"source": "DM-11 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -11895,7 +11895,7 @@
 		{
 			"name": "Shadows Brought to Light",
 			"source": "DM-11 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -11954,7 +11954,7 @@
 		{
 			"name": "Shadows Retribution",
 			"source": "DM-11 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"ritual": "YES",
 			"time": [
@@ -12021,7 +12021,7 @@
 		{
 			"name": "Song of the Forest",
 			"source": "DM-11 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -12076,7 +12076,7 @@
 		{
 			"name": "Tongue Tied",
 			"source": "DM-11 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -12133,7 +12133,7 @@
 		{
 			"name": "Vine Trestle",
 			"source": "DM-11 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -12197,7 +12197,7 @@
 		{
 			"name": "Animate Ghoul",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -12245,7 +12245,7 @@
 		{
 			"name": "As You Were",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -12292,7 +12292,7 @@
 		{
 			"name": "Blood and Steel",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -12352,7 +12352,7 @@
 		{
 			"name": "Blood Armor",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -12403,7 +12403,7 @@
 		{
 			"name": "Blood Lure",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -12455,7 +12455,7 @@
 		{
 			"name": "Blood Spoor",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -12500,7 +12500,7 @@
 		{
 			"name": "Blood Tide",
 			"source": "DM-12 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "N",
 			"time": [
 				{
@@ -12549,7 +12549,7 @@
 		{
 			"name": "Bloodshot",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -12605,7 +12605,7 @@
 		{
 			"name": "Bloody Smite",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -12647,7 +12647,7 @@
 		{
 			"name": "Caustic Blood",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -12716,7 +12716,7 @@
 		{
 			"name": "Conjure Undead",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -12770,7 +12770,7 @@
 		{
 			"name": "Cruor of Visions",
 			"source": "DM-12 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "D",
 			"time": [
 				{
@@ -12836,7 +12836,7 @@
 		{
 			"name": "Doom of Blue Crystal",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -12882,7 +12882,7 @@
 		{
 			"name": "Doom of Consuming Fire",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -12935,7 +12935,7 @@
 		{
 			"name": "Doom of the Cracked Shield",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -12976,7 +12976,7 @@
 		{
 			"name": "Doom of Dancing Blades",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -13021,7 +13021,7 @@
 		{
 			"name": "Doom of Disenchantment",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -13064,7 +13064,7 @@
 		{
 			"name": "Doom of the Earthen Maw",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -13108,7 +13108,7 @@
 		{
 			"name": "Doom of Serpent Coils",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -13148,7 +13148,7 @@
 		{
 			"name": "Doom of the Slippery Rogue",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -13192,7 +13192,7 @@
 		{
 			"name": "Exsanguinating Cloud",
 			"source": "DM-12 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -13245,7 +13245,7 @@
 		{
 			"name": "Hobble Mount",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -13298,7 +13298,7 @@
 		{
 			"name": "Hone Blade",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -13340,7 +13340,7 @@
 		{
 			"name": "Memento Mori",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -13383,7 +13383,7 @@
 		{
 			"name": "Sanguine Horror",
 			"source": "DM-12 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -13433,7 +13433,7 @@
 		{
 			"name": "St. Blusen's Reaver Spirit",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -13487,7 +13487,7 @@
 		{
 			"name": "St. Parvalas's Risen Road",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -13533,7 +13533,7 @@
 		{
 			"name": "St. Whiteskull's Borrowing",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -13585,7 +13585,7 @@
 		{
 			"name": "Shroud of Death",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -13629,7 +13629,7 @@
 		{
 			"name": "Stanch",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -13699,7 +13699,7 @@
 		{
 			"name": "Strength of the Underworld",
 			"source": "DM-12 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -13743,7 +13743,7 @@
 		{
 			"name": "Timely Distraction",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -13791,7 +13791,7 @@
 		{
 			"name": "Visage of Madness",
 			"source": "DM-12 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -13829,7 +13829,7 @@
 		{
 			"name": "Vital Mark",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -13896,7 +13896,7 @@
 		{
 			"name": "Vomit Tentacles",
 			"source": "DM-12 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -13941,7 +13941,7 @@
 		{
 			"name": "Weapon of Blood",
 			"source": "DM-12 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -13998,7 +13998,7 @@
 		{
 			"name": "Catch the Breath",
 			"source": "DM-13 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -14057,7 +14057,7 @@
 		{
 			"name": "Claws of the Earth Dragon",
 			"source": "DM-13 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -14116,7 +14116,7 @@
 		{
 			"name": "Converse with Dragon",
 			"source": "DM-13 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -14175,7 +14175,7 @@
 		{
 			"name": "Deadly Sting",
 			"source": "DM-13 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -14223,7 +14223,7 @@
 		{
 			"name": "Detect Dragons",
 			"source": "DM-13 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -14278,7 +14278,7 @@
 		{
 			"name": "Draconic Smite",
 			"source": "DM-13 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -14329,7 +14329,7 @@
 		{
 			"name": "Dragon Breath",
 			"source": "DM-13 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -14393,7 +14393,7 @@
 		{
 			"name": "Dragon Roar",
 			"source": "DM-13 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "V",
 			"time": [
 				{
@@ -14440,7 +14440,7 @@
 		{
 			"name": "Enhance Greed",
 			"source": "DM-13 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -14509,7 +14509,7 @@
 		{
 			"name": "Kobold's Fury",
 			"source": "DM-13 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -14568,7 +14568,7 @@
 		{
 			"name": "Lair Sense",
 			"source": "DM-13 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -14623,7 +14623,7 @@
 		{
 			"name": "Legend Killer",
 			"source": "DM-13 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "D",
 			"time": [
 				{
@@ -14672,7 +14672,7 @@
 		{
 			"name": "Phantom Dragon",
 			"source": "DM-13 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -14734,7 +14734,7 @@
 		{
 			"name": "Raid the Lair",
 			"source": "DM-13 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -14790,7 +14790,7 @@
 		{
 			"name": "Scale Rot",
 			"source": "DM-13 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -14864,7 +14864,7 @@
 		{
 			"name": "Shade",
 			"source": "DM-13 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{

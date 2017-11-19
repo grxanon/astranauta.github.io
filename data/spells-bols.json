@@ -3,7 +3,7 @@
 		{
 			"name": "Abiding Webs",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -51,7 +51,7 @@
 		{
 			"name": "Absorb Object",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -94,7 +94,7 @@
 		{
 			"name": "Absorption",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -135,7 +135,7 @@
 		{
 			"name": "Acid Blast",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -187,7 +187,7 @@
 		{
 			"name": "Acid Storm",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -237,7 +237,7 @@
 		{
 			"name": "Acid Swamp",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -286,7 +286,7 @@
 		{
 			"name": "Acid Wind",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -339,7 +339,7 @@
 		{
 			"name": "Acorn Grove",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -383,7 +383,7 @@
 		{
 			"name": "Adamantine Bones",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -434,7 +434,7 @@
 		{
 			"name": "Advance the Years",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -477,7 +477,7 @@
 		{
 			"name": "Aerial Pilot",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -522,7 +522,7 @@
 		{
 			"name": "Aetheric Shield",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -576,7 +576,7 @@
 		{
 			"name": "Affect Normal Fog",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -621,7 +621,7 @@
 		{
 			"name": "Agitate Crowd",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"time": [
 				{
@@ -666,7 +666,7 @@
 		{
 			"name": "Air Breathing",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -723,7 +723,7 @@
 		{
 			"name": "Air Bridge",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -785,7 +785,7 @@
 		{
 			"name": "Air Forge",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -846,7 +846,7 @@
 		{
 			"name": "Air of Nobility",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -894,7 +894,7 @@
 		{
 			"name": "Air Sphere",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -949,7 +949,7 @@
 		{
 			"name": "Alter Normal Fires",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -1005,7 +1005,7 @@
 		{
 			"name": "Alter Scent",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -1053,7 +1053,7 @@
 		{
 			"name": "Anchor",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"ritual": "YES",
 			"time": [
@@ -1097,7 +1097,7 @@
 		{
 			"name": "Angel’s Cloak",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -1141,7 +1141,7 @@
 		{
 			"name": "Animal Mask",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -1189,7 +1189,7 @@
 		{
 			"name": "Annihilate Soul",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -1232,7 +1232,7 @@
 		{
 			"name": "Arcane Censure",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "A",
 			"time": [
 				{
@@ -1285,7 +1285,7 @@
 		{
 			"name": "Arcane Obstruction",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -1329,7 +1329,7 @@
 		{
 			"name": "Arcane Retribution",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -1378,7 +1378,7 @@
 		{
 			"name": "Arcane Shield",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -1428,7 +1428,7 @@
 		{
 			"name": "Arcane Spear",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -1481,7 +1481,7 @@
 		{
 			"name": "Aspect Tattoo",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"ritual": "YES",
 			"time": [
@@ -1536,7 +1536,7 @@
 		{
 			"name": "Assassin’s Coin",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -1584,7 +1584,7 @@
 		{
 			"name": "Assassin’s Mark",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -1630,7 +1630,7 @@
 		{
 			"name": "Assault of Stone",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -1672,7 +1672,7 @@
 		{
 			"name": "Association",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -1734,7 +1734,7 @@
 		{
 			"name": "Assume True Form",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -1786,7 +1786,7 @@
 		{
 			"name": "Augment Flames",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -1839,7 +1839,7 @@
 		{
 			"name": "Augment Skeleton",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -1895,7 +1895,7 @@
 		{
 			"name": "Aura of Tsathogga",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -1948,7 +1948,7 @@
 		{
 			"name": "Axe of Destruction",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -1993,7 +1993,7 @@
 		{
 			"name": "Babel’s Curse",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -2057,7 +2057,7 @@
 		{
 			"name": "Bad Luck",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -2113,7 +2113,7 @@
 		{
 			"name": "Bait",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -2165,7 +2165,7 @@
 		{
 			"name": "Balance of the Mind",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -2208,7 +2208,7 @@
 		{
 			"name": "Barbaric Rage",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -2253,7 +2253,7 @@
 		{
 			"name": "Barbaric Yawp",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -2300,7 +2300,7 @@
 		{
 			"name": "Bastion",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -2346,7 +2346,7 @@
 		{
 			"name": "Battle Double",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -2398,7 +2398,7 @@
 		{
 			"name": "Battle Guidance",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -2445,7 +2445,7 @@
 		{
 			"name": "Battle Insight",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -2493,7 +2493,7 @@
 		{
 			"name": "Battle Wisdom",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"time": [
 				{
@@ -2550,7 +2550,7 @@
 		{
 			"name": "Bead of Blasting",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -2607,7 +2607,7 @@
 		{
 			"name": "Bead of Blazing",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -2664,7 +2664,7 @@
 		{
 			"name": "Bead of Frost",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -2717,7 +2717,7 @@
 		{
 			"name": "Bead of Iron",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -2765,7 +2765,7 @@
 		{
 			"name": "Bead of Luck",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -2808,7 +2808,7 @@
 		{
 			"name": "Bee Sting",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -2861,7 +2861,7 @@
 		{
 			"name": "Befuddle",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "E",
 			"time": [
 				{
@@ -2905,7 +2905,7 @@
 		{
 			"name": "Bestow Speech",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -2953,7 +2953,7 @@
 		{
 			"name": "Bewildering Tracks",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -2995,7 +2995,7 @@
 		{
 			"name": "Bewitch",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"time": [
 				{
@@ -3042,7 +3042,7 @@
 		{
 			"name": "Billow the Sails",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -3091,7 +3091,7 @@
 		{
 			"name": "Binding Chains",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -3138,7 +3138,7 @@
 		{
 			"name": "Binding Sap",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -3186,7 +3186,7 @@
 		{
 			"name": "Biting Blade",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -3235,7 +3235,7 @@
 		{
 			"name": "Black Exhalation",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -3280,7 +3280,7 @@
 		{
 			"name": "Blackout",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -3328,7 +3328,7 @@
 		{
 			"name": "Blade Bond",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -3374,7 +3374,7 @@
 		{
 			"name": "Blade of Light",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -3425,7 +3425,7 @@
 		{
 			"name": "Blade Song",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -3473,7 +3473,7 @@
 		{
 			"name": "Bladelust",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -3521,7 +3521,7 @@
 		{
 			"name": "Blades of Bone",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -3572,7 +3572,7 @@
 		{
 			"name": "Blades of Jade",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -3617,7 +3617,7 @@
 		{
 			"name": "Blazing Blood",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -3658,7 +3658,7 @@
 		{
 			"name": "Blessed Harvest",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -3704,7 +3704,7 @@
 		{
 			"name": "Blessed Watchman",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -3746,7 +3746,7 @@
 		{
 			"name": "Blessing of the Dawn",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -3789,7 +3789,7 @@
 		{
 			"name": "Blessing of the Forge",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -3832,7 +3832,7 @@
 		{
 			"name": "Blight Fog",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -3878,7 +3878,7 @@
 		{
 			"name": "Blindfold",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -3926,7 +3926,7 @@
 		{
 			"name": "Blinding Ash",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -3978,7 +3978,7 @@
 		{
 			"name": "Blinding Flare",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -4023,7 +4023,7 @@
 		{
 			"name": "Blood Bath",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -4067,7 +4067,7 @@
 		{
 			"name": "Blood Blade",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -4111,7 +4111,7 @@
 		{
 			"name": "Blood Geyser",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -4154,7 +4154,7 @@
 		{
 			"name": "Blood of the Hydra",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -4198,7 +4198,7 @@
 		{
 			"name": "Blood Purge",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -4238,7 +4238,7 @@
 		{
 			"name": "Bloodburn",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -4283,7 +4283,7 @@
 		{
 			"name": "Bloody Tentacles",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -4334,7 +4334,7 @@
 		{
 			"name": "Blunt the Edge",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -4379,7 +4379,7 @@
 		{
 			"name": "Boarding Plank",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -4421,7 +4421,7 @@
 		{
 			"name": "Bolster Mental Fortitude",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -4468,7 +4468,7 @@
 		{
 			"name": "Bone Armor",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -4512,7 +4512,7 @@
 		{
 			"name": "Bone Blight",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -4561,7 +4561,7 @@
 		{
 			"name": "Bone Trap",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -4608,7 +4608,7 @@
 		{
 			"name": "Boost Potency",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -4659,7 +4659,7 @@
 		{
 			"name": "Bound Hearts",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"time": [
 				{
@@ -4712,7 +4712,7 @@
 		{
 			"name": "Bramble Armor",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -4755,7 +4755,7 @@
 		{
 			"name": "Branch Assault",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -4799,7 +4799,7 @@
 		{
 			"name": "Breach Defenses",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -4847,7 +4847,7 @@
 		{
 			"name": "Breath of the Dragon",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -4905,7 +4905,7 @@
 		{
 			"name": "Brittle",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -4950,7 +4950,7 @@
 		{
 			"name": "Bubble Goop",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -5004,7 +5004,7 @@
 		{
 			"name": "Bubble Net",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -5060,7 +5060,7 @@
 		{
 			"name": "Bug Bites",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -5111,7 +5111,7 @@
 		{
 			"name": "Buoyancy",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -5158,7 +5158,7 @@
 		{
 			"name": "Burden",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -5207,7 +5207,7 @@
 		{
 			"name": "Burn the Sight",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -5255,7 +5255,7 @@
 		{
 			"name": "Burning Rain",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -5301,7 +5301,7 @@
 		{
 			"name": "Buttress",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -5345,7 +5345,7 @@
 		{
 			"name": "Cacophony",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -5388,7 +5388,7 @@
 		{
 			"name": "Call Divine Warrior",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -5435,7 +5435,7 @@
 		{
 			"name": "Call of the Wild Companion",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -5478,7 +5478,7 @@
 		{
 			"name": "Call the Heart",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -5517,7 +5517,7 @@
 		{
 			"name": "Camouflage",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -5564,7 +5564,7 @@
 		{
 			"name": "Catnip",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -5611,7 +5611,7 @@
 		{
 			"name": "Cause the Bends",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -5658,7 +5658,7 @@
 		{
 			"name": "Caustic Spittle",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -5706,7 +5706,7 @@
 		{
 			"name": "Cave Walker",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -5749,7 +5749,7 @@
 		{
 			"name": "Chain Enervation",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -5789,7 +5789,7 @@
 		{
 			"name": "Change Dust to Water",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -5836,7 +5836,7 @@
 		{
 			"name": "Change Water to Dust",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -5884,7 +5884,7 @@
 		{
 			"name": "Chanting",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -5932,7 +5932,7 @@
 		{
 			"name": "Chaos Bolt",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -5980,7 +5980,7 @@
 		{
 			"name": "Character Flaw",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -6022,7 +6022,7 @@
 		{
 			"name": "Charge",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -6066,7 +6066,7 @@
 		{
 			"name": "Charged Missile",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -6122,7 +6122,7 @@
 		{
 			"name": "Charged Touch",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -6173,7 +6173,7 @@
 		{
 			"name": "Chariot of Fire",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -6222,7 +6222,7 @@
 		{
 			"name": "Charismatic Shield",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"time": [
 				{
@@ -6270,7 +6270,7 @@
 		{
 			"name": "Charnel Stench",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -6318,7 +6318,7 @@
 		{
 			"name": "Chatterwild",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -6362,7 +6362,7 @@
 		{
 			"name": "Chill of Evil",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"time": [
 				{
@@ -6407,7 +6407,7 @@
 		{
 			"name": "Chilling Gaze",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -6460,7 +6460,7 @@
 		{
 			"name": "Chlorophyll",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"time": [
 				{
@@ -6503,7 +6503,7 @@
 		{
 			"name": "Choose Fate",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -6555,7 +6555,7 @@
 		{
 			"name": "Chronal Displacement",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -6599,7 +6599,7 @@
 		{
 			"name": "Chrysalis",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -6643,7 +6643,7 @@
 		{
 			"name": "Circle of Divine Censure",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -6688,7 +6688,7 @@
 		{
 			"name": "Circle of Scrying",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -6735,7 +6735,7 @@
 		{
 			"name": "Cirrem’s Bewilderment",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"time": [
 				{
@@ -6780,7 +6780,7 @@
 		{
 			"name": "Claws of Digging",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -6830,7 +6830,7 @@
 		{
 			"name": "Claws of the Beast",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"time": [
 				{
@@ -6873,7 +6873,7 @@
 		{
 			"name": "Cloak of Serpents",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -6921,7 +6921,7 @@
 		{
 			"name": "Clot",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -6968,7 +6968,7 @@
 		{
 			"name": "Cloth of Honorable Melee",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -7011,7 +7011,7 @@
 		{
 			"name": "Cloud Burst",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -7060,7 +7060,7 @@
 		{
 			"name": "Cold Fog",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -7111,7 +7111,7 @@
 		{
 			"name": "Combat Mind",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -7155,7 +7155,7 @@
 		{
 			"name": "Commune with Shade",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -7198,7 +7198,7 @@
 		{
 			"name": "Comrades in Arms",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -7245,7 +7245,7 @@
 		{
 			"name": "Cone of Decay",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "N",
 			"time": [
 				{
@@ -7290,7 +7290,7 @@
 		{
 			"name": "Cone of Silence",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -7339,7 +7339,7 @@
 		{
 			"name": "Conflagration",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "V",
 			"time": [
 				{
@@ -7389,7 +7389,7 @@
 		{
 			"name": "Confounding Battlefield",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "I",
 			"time": [
 				{
@@ -7440,7 +7440,7 @@
 		{
 			"name": "Constant Heat",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -7486,7 +7486,7 @@
 		{
 			"name": "Containment Orbs",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -7532,7 +7532,7 @@
 		{
 			"name": "Copy",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -7576,7 +7576,7 @@
 		{
 			"name": "Corpse Armor",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -7623,7 +7623,7 @@
 		{
 			"name": "Corpulent Bloat",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -7671,7 +7671,7 @@
 		{
 			"name": "Corrupt Water",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -7728,7 +7728,7 @@
 		{
 			"name": "Crag Warrior",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "C",
 			"time": [
 				{
@@ -7775,7 +7775,7 @@
 		{
 			"name": "Crawling Chaos",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -7829,7 +7829,7 @@
 		{
 			"name": "Create Crypt Thing",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "N",
 			"time": [
 				{
@@ -7876,7 +7876,7 @@
 		{
 			"name": "Create Iceberg",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -7924,7 +7924,7 @@
 		{
 			"name": "Creation’s Fury",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -7964,7 +7964,7 @@
 		{
 			"name": "Creeping Eye",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -8006,7 +8006,7 @@
 		{
 			"name": "Crew with the Dead",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -8053,7 +8053,7 @@
 		{
 			"name": "Crystal Wail",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -8101,7 +8101,7 @@
 		{
 			"name": "Curse of Horror",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -8148,7 +8148,7 @@
 		{
 			"name": "Curse of Infirmity",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -8206,7 +8206,7 @@
 		{
 			"name": "Curse of Light",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -8257,7 +8257,7 @@
 		{
 			"name": "Curse of the Ancient Mariner",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -8306,7 +8306,7 @@
 		{
 			"name": "Curtain of Fire",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "C",
 			"time": [
 				{
@@ -8354,7 +8354,7 @@
 		{
 			"name": "Damage Morale",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -8410,7 +8410,7 @@
 		{
 			"name": "Dance of Seduction",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -8457,7 +8457,7 @@
 		{
 			"name": "Dancer’s Grace",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -8508,7 +8508,7 @@
 		{
 			"name": "Dancing Daggers",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -8555,7 +8555,7 @@
 		{
 			"name": "Dark Curtain",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -8604,7 +8604,7 @@
 		{
 			"name": "Dark Empowerment",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -8656,7 +8656,7 @@
 		{
 			"name": "Dark Geyser",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -8700,7 +8700,7 @@
 		{
 			"name": "Darken Forest",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -8745,7 +8745,7 @@
 		{
 			"name": "Daze Animal",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "E",
 			"time": [
 				{
@@ -8788,7 +8788,7 @@
 		{
 			"name": "Dead Man’s Hands",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -8830,7 +8830,7 @@
 		{
 			"name": "Death Bringer",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -8874,7 +8874,7 @@
 		{
 			"name": "Death Gaze",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -8924,7 +8924,7 @@
 		{
 			"name": "Death March",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -8969,7 +8969,7 @@
 		{
 			"name": "Death Rattle",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -9016,7 +9016,7 @@
 		{
 			"name": "Death Spores",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -9058,7 +9058,7 @@
 		{
 			"name": "Death’s Imposition",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "E",
 			"time": [
 				{
@@ -9109,7 +9109,7 @@
 		{
 			"name": "Deathly Gaze",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -9163,7 +9163,7 @@
 		{
 			"name": "Debilitate",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -9212,7 +9212,7 @@
 		{
 			"name": "Decorate Object",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -9260,7 +9260,7 @@
 		{
 			"name": "Decrypt",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -9308,7 +9308,7 @@
 		{
 			"name": "Deep Freeze",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -9362,7 +9362,7 @@
 		{
 			"name": "Deflect Ram",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -9405,7 +9405,7 @@
 		{
 			"name": "Delay Death",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -9457,7 +9457,7 @@
 		{
 			"name": "Delude",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -9500,7 +9500,7 @@
 		{
 			"name": "Demon Flesh",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -9557,7 +9557,7 @@
 		{
 			"name": "Deny Succor",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -9607,7 +9607,7 @@
 		{
 			"name": "Desail",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -9656,7 +9656,7 @@
 		{
 			"name": "Desert Refuge",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -9703,7 +9703,7 @@
 		{
 			"name": "Destined Doom",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -9750,7 +9750,7 @@
 		{
 			"name": "Detect Charm",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "D",
 			"time": [
 				{
@@ -9801,7 +9801,7 @@
 		{
 			"name": "Detect Curse",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -9845,7 +9845,7 @@
 		{
 			"name": "Detect Disease",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -9893,7 +9893,7 @@
 		{
 			"name": "Detect Illusion",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -9941,7 +9941,7 @@
 		{
 			"name": "Detect Land",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -10010,7 +10010,7 @@
 		{
 			"name": "Detect Life",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -10050,7 +10050,7 @@
 		{
 			"name": "Detune",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -10090,7 +10090,7 @@
 		{
 			"name": "Devour Essence",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -10128,7 +10128,7 @@
 		{
 			"name": "Devouring Darkness",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -10176,7 +10176,7 @@
 		{
 			"name": "Dig",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -10224,7 +10224,7 @@
 		{
 			"name": "Dire Rage",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -10268,7 +10268,7 @@
 		{
 			"name": "Disable",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -10309,7 +10309,7 @@
 		{
 			"name": "Disassemble",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -10349,7 +10349,7 @@
 		{
 			"name": "Discern Lycanthrope",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -10393,7 +10393,7 @@
 		{
 			"name": "Discordant Chorus",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -10437,7 +10437,7 @@
 		{
 			"name": "Dissonance",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -10480,7 +10480,7 @@
 		{
 			"name": "Distance Distortion",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "I",
 			"time": [
 				{
@@ -10529,7 +10529,7 @@
 		{
 			"name": "Divine Assimilation",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -10582,7 +10582,7 @@
 		{
 			"name": "Divine Beacon",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -10631,7 +10631,7 @@
 		{
 			"name": "Divine Beacon’s Answer",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -10670,7 +10670,7 @@
 		{
 			"name": "Divine Burden",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -10722,7 +10722,7 @@
 		{
 			"name": "Divine Charge",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -10764,7 +10764,7 @@
 		{
 			"name": "Divine Communion",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -10817,7 +10817,7 @@
 		{
 			"name": "Divine Disconnection",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -10869,7 +10869,7 @@
 		{
 			"name": "Divine Inspiration",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -10914,7 +10914,7 @@
 		{
 			"name": "Divine Intervention",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -10959,7 +10959,7 @@
 		{
 			"name": "Divine Mantle",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -11003,7 +11003,7 @@
 		{
 			"name": "Divine Sovereignty",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -11047,7 +11047,7 @@
 		{
 			"name": "Divining Rod",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -11094,7 +11094,7 @@
 		{
 			"name": "Dolphin Fins",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -11147,7 +11147,7 @@
 		{
 			"name": "Donor",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -11190,7 +11190,7 @@
 		{
 			"name": "Dragon Scales",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -11236,7 +11236,7 @@
 		{
 			"name": "Dragon’s Gauntlet",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -11283,7 +11283,7 @@
 		{
 			"name": "Dread Scream",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -11328,7 +11328,7 @@
 		{
 			"name": "Dream Speaker",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -11375,7 +11375,7 @@
 		{
 			"name": "Drench",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "C",
 			"time": [
 				{
@@ -11414,7 +11414,7 @@
 		{
 			"name": "Dust of Death",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -11457,7 +11457,7 @@
 		{
 			"name": "Dust to Death",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -11499,7 +11499,7 @@
 		{
 			"name": "Earth Ear",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -11547,7 +11547,7 @@
 		{
 			"name": "Earth Shift",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -11585,7 +11585,7 @@
 		{
 			"name": "Earthburst",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -11642,7 +11642,7 @@
 		{
 			"name": "Earthen Blast",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -11694,7 +11694,7 @@
 		{
 			"name": "Earthen Concealment",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -11742,7 +11742,7 @@
 		{
 			"name": "Earthen Snare",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -11799,7 +11799,7 @@
 		{
 			"name": "Ebon Lightning",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -11852,7 +11852,7 @@
 		{
 			"name": "Ebon Water",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -11907,7 +11907,7 @@
 		{
 			"name": "Ebonflame",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -11958,7 +11958,7 @@
 		{
 			"name": "Electrical Storm",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -12007,7 +12007,7 @@
 		{
 			"name": "Electromagnetic Storm",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -12059,7 +12059,7 @@
 		{
 			"name": "Elemental Cloak",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -12107,7 +12107,7 @@
 		{
 			"name": "Elemental Infusion",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -12158,7 +12158,7 @@
 		{
 			"name": "Elemental Scimitar",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -12212,7 +12212,7 @@
 		{
 			"name": "Empathic Resonance",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -12255,7 +12255,7 @@
 		{
 			"name": "Empower Companion",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -12298,7 +12298,7 @@
 		{
 			"name": "Encrypt",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -12343,7 +12343,7 @@
 		{
 			"name": "Endless Abyss",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -12392,7 +12392,7 @@
 		{
 			"name": "Enduring Missiles",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -12451,7 +12451,7 @@
 		{
 			"name": "Energetic Burst",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -12501,7 +12501,7 @@
 		{
 			"name": "Enhance Oration",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"ritual": "YES",
 			"time": [
@@ -12554,7 +12554,7 @@
 		{
 			"name": "Enliven Wood",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -12601,7 +12601,7 @@
 		{
 			"name": "Enrich Soil",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -12644,7 +12644,7 @@
 		{
 			"name": "Erase",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -12682,7 +12682,7 @@
 		{
 			"name": "Essence of the Wild",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -12733,7 +12733,7 @@
 		{
 			"name": "Establish Foundation",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -12789,7 +12789,7 @@
 		{
 			"name": "Eternal Sleep",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -12836,7 +12836,7 @@
 		{
 			"name": "Ethereal Blade",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -12889,7 +12889,7 @@
 		{
 			"name": "Ethereal Blast",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -12941,7 +12941,7 @@
 		{
 			"name": "Ethereal Shield",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -12988,7 +12988,7 @@
 		{
 			"name": "Ethereal Strike",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -13031,7 +13031,7 @@
 		{
 			"name": "Euphoric Ecstasy",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -13086,7 +13086,7 @@
 		{
 			"name": "Exile from Nature",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -13127,7 +13127,7 @@
 		{
 			"name": "Exorcise",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -13168,7 +13168,7 @@
 		{
 			"name": "Explosive Cloud",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -13212,7 +13212,7 @@
 		{
 			"name": "Expunge Shadow",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -13252,7 +13252,7 @@
 		{
 			"name": "Extract Life",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -13299,7 +13299,7 @@
 		{
 			"name": "Eyes of the Hawk",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -13354,7 +13354,7 @@
 		{
 			"name": "Faerie Ward",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -13414,7 +13414,7 @@
 		{
 			"name": "False Gold",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -13471,7 +13471,7 @@
 		{
 			"name": "Fangstorm",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -13524,7 +13524,7 @@
 		{
 			"name": "Far Strike",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -13579,7 +13579,7 @@
 		{
 			"name": "Farsighted",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -13627,7 +13627,7 @@
 		{
 			"name": "Farvision",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -13669,7 +13669,7 @@
 		{
 			"name": "Favor Mount",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -13713,7 +13713,7 @@
 		{
 			"name": "Feather Step",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -13761,7 +13761,7 @@
 		{
 			"name": "Ferment",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "T",
 			"time": [
 				{
@@ -13800,7 +13800,7 @@
 		{
 			"name": "Fiery Blast",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -13854,7 +13854,7 @@
 		{
 			"name": "Fiery Cloth",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -13905,7 +13905,7 @@
 		{
 			"name": "Fiery Constrictor",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -13963,7 +13963,7 @@
 		{
 			"name": "Fiery Grasp",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -14019,7 +14019,7 @@
 		{
 			"name": "Fiery Shield",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -14062,7 +14062,7 @@
 		{
 			"name": "Find Corpse",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -14106,7 +14106,7 @@
 		{
 			"name": "Finger Missile",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -14157,7 +14157,7 @@
 		{
 			"name": "Fire Burst",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -14213,7 +14213,7 @@
 		{
 			"name": "Fire Fascination",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "I",
 			"time": [
 				{
@@ -14259,7 +14259,7 @@
 		{
 			"name": "Fire Gills",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -14314,7 +14314,7 @@
 		{
 			"name": "Firm Ally",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -14360,7 +14360,7 @@
 		{
 			"name": "Fists of Stone",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -14403,7 +14403,7 @@
 		{
 			"name": "Flame of Chaos",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -14460,7 +14460,7 @@
 		{
 			"name": "Flame Spiral",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -14512,7 +14512,7 @@
 		{
 			"name": "Flame Water",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -14557,7 +14557,7 @@
 		{
 			"name": "Flames of Darkness",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -14604,7 +14604,7 @@
 		{
 			"name": "Flames of Purification",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -14657,7 +14657,7 @@
 		{
 			"name": "Flameswell",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -14700,7 +14700,7 @@
 		{
 			"name": "Flaming Bolts",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -14752,7 +14752,7 @@
 		{
 			"name": "Flash of Light",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -14807,7 +14807,7 @@
 		{
 			"name": "Fleet Feet",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -14854,7 +14854,7 @@
 		{
 			"name": "Fluid Form",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -14902,7 +14902,7 @@
 		{
 			"name": "Foggy Flying Carpet",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -14950,7 +14950,7 @@
 		{
 			"name": "Force Corporeality",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -15004,7 +15004,7 @@
 		{
 			"name": "Force Wave",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -15056,7 +15056,7 @@
 		{
 			"name": "Forced March",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -15102,7 +15102,7 @@
 		{
 			"name": "Forceful Crush",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -15146,7 +15146,7 @@
 		{
 			"name": "Forecast",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -15189,7 +15189,7 @@
 		{
 			"name": "Forest Home",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"ritual": "YES",
 			"time": [
@@ -15234,7 +15234,7 @@
 		{
 			"name": "Forgebane",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -15282,7 +15282,7 @@
 		{
 			"name": "Forked Tongue",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -15326,7 +15326,7 @@
 		{
 			"name": "Fortify Armor",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -15373,7 +15373,7 @@
 		{
 			"name": "Frame",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -15422,7 +15422,7 @@
 		{
 			"name": "Fresh Seal",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -15478,7 +15478,7 @@
 		{
 			"name": "Frost Shards",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -15536,7 +15536,7 @@
 		{
 			"name": "Frost Snap",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -15589,7 +15589,7 @@
 		{
 			"name": "Frostfire",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -15645,7 +15645,7 @@
 		{
 			"name": "Fugue",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -15698,7 +15698,7 @@
 		{
 			"name": "Fumble",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -15748,7 +15748,7 @@
 		{
 			"name": "Fuse Joints",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -15794,7 +15794,7 @@
 		{
 			"name": "Gallows Tree",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -15841,7 +15841,7 @@
 		{
 			"name": "Gaze Mirroring",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -15883,7 +15883,7 @@
 		{
 			"name": "Ghostly Howl",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -15922,7 +15922,7 @@
 		{
 			"name": "Ghostly Throttle",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -15980,7 +15980,7 @@
 		{
 			"name": "Giant’s Potency",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -16032,7 +16032,7 @@
 		{
 			"name": "Glass House",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -16077,7 +16077,7 @@
 		{
 			"name": "Glass into Iron",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -16119,7 +16119,7 @@
 		{
 			"name": "Glass Window",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -16165,7 +16165,7 @@
 		{
 			"name": "Glide",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -16218,7 +16218,7 @@
 		{
 			"name": "Glowing Bones",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -16269,7 +16269,7 @@
 		{
 			"name": "Godly Patronage",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -16312,7 +16312,7 @@
 		{
 			"name": "Godsblood",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -16359,7 +16359,7 @@
 		{
 			"name": "Gossamer Webbing",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -16412,7 +16412,7 @@
 		{
 			"name": "Grave-Touched Weapon",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -16459,7 +16459,7 @@
 		{
 			"name": "Greater Curse",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -16505,7 +16505,7 @@
 		{
 			"name": "Green Slime",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -16548,7 +16548,7 @@
 		{
 			"name": "Grim Harvest",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -16594,7 +16594,7 @@
 		{
 			"name": "Grim Resilience",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -16643,7 +16643,7 @@
 		{
 			"name": "Gutsprout",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -16688,7 +16688,7 @@
 		{
 			"name": "Halt Aging",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -16734,7 +16734,7 @@
 		{
 			"name": "Halt Plant",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -16791,7 +16791,7 @@
 		{
 			"name": "Hand of Judgment",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -16835,7 +16835,7 @@
 		{
 			"name": "Hard Water Blast",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -16887,7 +16887,7 @@
 		{
 			"name": "Hard Water Weapon",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -16938,7 +16938,7 @@
 		{
 			"name": "Harmonic Discord",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -16983,7 +16983,7 @@
 		{
 			"name": "Harmonic Dissolution",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -17023,7 +17023,7 @@
 		{
 			"name": "Harmony of Heroes",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -17067,7 +17067,7 @@
 		{
 			"name": "Harmony of the Gods",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -17107,7 +17107,7 @@
 		{
 			"name": "Headwind",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "V",
 			"time": [
 				{
@@ -17146,7 +17146,7 @@
 		{
 			"name": "Healing Draught",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -17197,7 +17197,7 @@
 		{
 			"name": "Health Transfer",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -17239,7 +17239,7 @@
 		{
 			"name": "Heat Bone",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -17287,7 +17287,7 @@
 		{
 			"name": "Heat Flesh",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -17339,7 +17339,7 @@
 		{
 			"name": "Helpless Grief",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -17385,7 +17385,7 @@
 		{
 			"name": "Hemophilia",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -17434,7 +17434,7 @@
 		{
 			"name": "Heraldic Bear",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -17481,7 +17481,7 @@
 		{
 			"name": "Heraldic Boar",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -17525,7 +17525,7 @@
 		{
 			"name": "Heraldic Fox",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -17572,7 +17572,7 @@
 		{
 			"name": "Heraldic Horse",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -17618,7 +17618,7 @@
 		{
 			"name": "Heraldic Hydra",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -17661,7 +17661,7 @@
 		{
 			"name": "Heraldic Leopard",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -17708,7 +17708,7 @@
 		{
 			"name": "Heraldic Lion",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -17755,7 +17755,7 @@
 		{
 			"name": "Heraldic Mastiff",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -17802,7 +17802,7 @@
 		{
 			"name": "Heraldic Owl",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -17849,7 +17849,7 @@
 		{
 			"name": "Heraldic Ox",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -17896,7 +17896,7 @@
 		{
 			"name": "Heraldic Phoenix",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -17939,7 +17939,7 @@
 		{
 			"name": "Heraldic Tortoise",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -17986,7 +17986,7 @@
 		{
 			"name": "Heraldic Wyrm",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -18030,7 +18030,7 @@
 		{
 			"name": "Hesitate",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -18074,7 +18074,7 @@
 		{
 			"name": "Hide the Soul",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "A",
 			"time": [
 				{
@@ -18127,7 +18127,7 @@
 		{
 			"name": "Hives",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -18189,7 +18189,7 @@
 		{
 			"name": "Holy Blazon",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -18232,7 +18232,7 @@
 		{
 			"name": "Holy Infusion",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -18275,7 +18275,7 @@
 		{
 			"name": "Hornet Wall",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -18321,7 +18321,7 @@
 		{
 			"name": "Hound of Hell",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -18383,7 +18383,7 @@
 		{
 			"name": "Hound’s Scent",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -18426,7 +18426,7 @@
 		{
 			"name": "Hovership",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -18471,7 +18471,7 @@
 		{
 			"name": "Hunter’s Insight",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -18514,7 +18514,7 @@
 		{
 			"name": "Ice Bolts",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -18566,7 +18566,7 @@
 		{
 			"name": "Ice Geyser",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -18614,7 +18614,7 @@
 		{
 			"name": "Ice Sled",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"ritual": "YES",
 			"time": [
@@ -18664,7 +18664,7 @@
 		{
 			"name": "Icebreaker",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -18709,7 +18709,7 @@
 		{
 			"name": "Iceform",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -18757,7 +18757,7 @@
 		{
 			"name": "Icy Hammer",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -18801,7 +18801,7 @@
 		{
 			"name": "Identify Tracks",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -18844,7 +18844,7 @@
 		{
 			"name": "Ignite",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -18896,7 +18896,7 @@
 		{
 			"name": "Illusory Illusion",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "I",
 			"time": [
 				{
@@ -18947,7 +18947,7 @@
 		{
 			"name": "Imbue Passion",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "E",
 			"time": [
 				{
@@ -19000,7 +19000,7 @@
 		{
 			"name": "Immunity to Energy",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -19051,7 +19051,7 @@
 		{
 			"name": "Impart Strength",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -19100,7 +19100,7 @@
 		{
 			"name": "Impressive Blow",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -19143,7 +19143,7 @@
 		{
 			"name": "Improve Senses",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -19186,7 +19186,7 @@
 		{
 			"name": "Infinite Knowledge",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -19229,7 +19229,7 @@
 		{
 			"name": "Infirmity",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -19273,7 +19273,7 @@
 		{
 			"name": "Inflict Lycanthropy",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -19324,7 +19324,7 @@
 		{
 			"name": "Infuse Shadow",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -19371,7 +19371,7 @@
 		{
 			"name": "Infuse Weapon",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -19424,7 +19424,7 @@
 		{
 			"name": "Inner Storm",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -19467,7 +19467,7 @@
 		{
 			"name": "Insomnia",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -19513,7 +19513,7 @@
 		{
 			"name": "Instant Exit",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -19557,7 +19557,7 @@
 		{
 			"name": "Instant Fluency",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "D",
 			"time": [
 				{
@@ -19616,7 +19616,7 @@
 		{
 			"name": "Interdiction",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"time": [
 				{
@@ -19664,7 +19664,7 @@
 		{
 			"name": "Interrogation",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -19710,7 +19710,7 @@
 		{
 			"name": "Intimate Knowledge",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "D",
 			"time": [
 				{
@@ -19754,7 +19754,7 @@
 		{
 			"name": "Inverted Compass",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -19802,7 +19802,7 @@
 		{
 			"name": "Invigorating Touch",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -19849,7 +19849,7 @@
 		{
 			"name": "Iron Bones",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -19904,7 +19904,7 @@
 		{
 			"name": "Iron Core",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -19950,7 +19950,7 @@
 		{
 			"name": "Iron Judgment",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -19994,7 +19994,7 @@
 		{
 			"name": "Iron Rope",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -20038,7 +20038,7 @@
 		{
 			"name": "Ironshot",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -20082,7 +20082,7 @@
 		{
 			"name": "Itemize",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "D",
 			"time": [
 				{
@@ -20121,7 +20121,7 @@
 		{
 			"name": "Jolt",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -20160,7 +20160,7 @@
 		{
 			"name": "Judicious Concealment",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "I",
 			"time": [
 				{
@@ -20213,7 +20213,7 @@
 		{
 			"name": "Jungle Cry",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -20260,7 +20260,7 @@
 		{
 			"name": "Keen Ears",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -20308,7 +20308,7 @@
 		{
 			"name": "Kiss of the Nereid",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -20353,7 +20353,7 @@
 		{
 			"name": "Know Alignment",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -20392,7 +20392,7 @@
 		{
 			"name": "Know the Mark",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"time": [
 				{
@@ -20435,7 +20435,7 @@
 		{
 			"name": "Landslide",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -20482,7 +20482,7 @@
 		{
 			"name": "Lasting Breath",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -20521,7 +20521,7 @@
 		{
 			"name": "Leaf Fall",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -20564,7 +20564,7 @@
 		{
 			"name": "Leaf Tide",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -20607,7 +20607,7 @@
 		{
 			"name": "Liar’s Remorse",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -20650,7 +20650,7 @@
 		{
 			"name": "Life Leech",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -20691,7 +20691,7 @@
 		{
 			"name": "Life Leech Weapon",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -20738,7 +20738,7 @@
 		{
 			"name": "Life Shot",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -20785,7 +20785,7 @@
 		{
 			"name": "Lifebread",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -20826,7 +20826,7 @@
 		{
 			"name": "Light Control",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -20871,7 +20871,7 @@
 		{
 			"name": "Lightning Storm",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -20921,7 +20921,7 @@
 		{
 			"name": "Lightning Wheel",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -20968,7 +20968,7 @@
 		{
 			"name": "Link Perception",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -21016,7 +21016,7 @@
 		{
 			"name": "Liquid Fire",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -21060,7 +21060,7 @@
 		{
 			"name": "Locate Fish",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -21109,7 +21109,7 @@
 		{
 			"name": "Locate Water",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -21153,7 +21153,7 @@
 		{
 			"name": "Lock Form",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -21208,7 +21208,7 @@
 		{
 			"name": "Locust Leap",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -21252,7 +21252,7 @@
 		{
 			"name": "Lost Wanderer",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "E",
 			"time": [
 				{
@@ -21309,7 +21309,7 @@
 		{
 			"name": "Lower Spell Resistance",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -21353,7 +21353,7 @@
 		{
 			"name": "Luck of the Saints",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -21400,7 +21400,7 @@
 		{
 			"name": "Lustful Gaze",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -21444,7 +21444,7 @@
 		{
 			"name": "Magma Eruption",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -21495,7 +21495,7 @@
 		{
 			"name": "Malicious Intent",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -21547,7 +21547,7 @@
 		{
 			"name": "Maligned Performance",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "I",
 			"time": [
 				{
@@ -21597,7 +21597,7 @@
 		{
 			"name": "Mangling Foot",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -21648,7 +21648,7 @@
 		{
 			"name": "Mantle of Dread",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -21701,7 +21701,7 @@
 		{
 			"name": "Mark of Exile",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "N",
 			"time": [
 				{
@@ -21744,7 +21744,7 @@
 		{
 			"name": "Mark of Fire",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -21786,7 +21786,7 @@
 		{
 			"name": "Mark of Ice",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -21828,7 +21828,7 @@
 		{
 			"name": "Mark of Ooze",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -21870,7 +21870,7 @@
 		{
 			"name": "Mark of Ownership",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -21912,7 +21912,7 @@
 		{
 			"name": "Megalomania",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -21957,7 +21957,7 @@
 		{
 			"name": "Melt",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -22000,7 +22000,7 @@
 		{
 			"name": "Memento",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -22042,7 +22042,7 @@
 		{
 			"name": "Menace",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "I",
 			"time": [
 				{
@@ -22097,7 +22097,7 @@
 		{
 			"name": "Mercurial Smite",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -22149,7 +22149,7 @@
 		{
 			"name": "Merge Into Art",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -22193,7 +22193,7 @@
 		{
 			"name": "Mighty Steed",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -22236,7 +22236,7 @@
 		{
 			"name": "Mind Carve",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -22275,7 +22275,7 @@
 		{
 			"name": "Mind Link",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -22318,7 +22318,7 @@
 		{
 			"name": "Molten Strike",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -22375,7 +22375,7 @@
 		{
 			"name": "Moonbeam",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -22421,7 +22421,7 @@
 		{
 			"name": "Morph Shadow",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"time": [
 				{
@@ -22464,7 +22464,7 @@
 		{
 			"name": "Mucilage",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -22509,7 +22509,7 @@
 		{
 			"name": "Muddy Appearance",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "I",
 			"time": [
 				{
@@ -22552,7 +22552,7 @@
 		{
 			"name": "Multiple Shot",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -22595,7 +22595,7 @@
 		{
 			"name": "Musical Mural",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -22640,7 +22640,7 @@
 		{
 			"name": "Mystic Negation",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -22706,7 +22706,7 @@
 		{
 			"name": "Nature’s Aura",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -22753,7 +22753,7 @@
 		{
 			"name": "Nature’s Repast",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -22795,7 +22795,7 @@
 		{
 			"name": "Nature’s Strength",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -22842,7 +22842,7 @@
 		{
 			"name": "Nature’s Support",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -22885,7 +22885,7 @@
 		{
 			"name": "Nearsighted",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -22933,7 +22933,7 @@
 		{
 			"name": "Necrotic Feast",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -22984,7 +22984,7 @@
 		{
 			"name": "Necrotic Touch",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -23036,7 +23036,7 @@
 		{
 			"name": "Negative Energy Aura",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -23083,7 +23083,7 @@
 		{
 			"name": "Negative Energy Mantle",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -23130,7 +23130,7 @@
 		{
 			"name": "Net",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -23185,7 +23185,7 @@
 		{
 			"name": "Null the Soothing Touch",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -23228,7 +23228,7 @@
 		{
 			"name": "Nullifying Cloak",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -23273,7 +23273,7 @@
 		{
 			"name": "Nymph’s Aura",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "E",
 			"time": [
 				{
@@ -23316,7 +23316,7 @@
 		{
 			"name": "Obliterate Soul",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "N",
 			"time": [
 				{
@@ -23360,7 +23360,7 @@
 		{
 			"name": "Ogre’s Visage",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -23405,7 +23405,7 @@
 		{
 			"name": "One with the Earth",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -23457,7 +23457,7 @@
 		{
 			"name": "Ooze Bolt",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -23514,7 +23514,7 @@
 		{
 			"name": "Open Trail",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -23561,7 +23561,7 @@
 		{
 			"name": "Otter’s Grace",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -23616,7 +23616,7 @@
 		{
 			"name": "Outside of Time",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -23661,7 +23661,7 @@
 		{
 			"name": "Paean of Greater Glory",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -23704,7 +23704,7 @@
 		{
 			"name": "Paean of the Holy",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -23752,7 +23752,7 @@
 		{
 			"name": "Pain of Giving",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -23800,7 +23800,7 @@
 		{
 			"name": "Paper Tigers",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "I",
 			"time": [
 				{
@@ -23845,7 +23845,7 @@
 		{
 			"name": "Pattern Grass",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -23892,7 +23892,7 @@
 		{
 			"name": "Peacebinding",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -23937,7 +23937,7 @@
 		{
 			"name": "Pepper’s Purpose",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "E",
 			"time": [
 				{
@@ -23984,7 +23984,7 @@
 		{
 			"name": "Phantom Accompaniment",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "I",
 			"time": [
 				{
@@ -24028,7 +24028,7 @@
 		{
 			"name": "Phoenix Cloak",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -24071,7 +24071,7 @@
 		{
 			"name": "Piercing Vision",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -24123,7 +24123,7 @@
 		{
 			"name": "Pilfer Sleep",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "N",
 			"time": [
 				{
@@ -24165,7 +24165,7 @@
 		{
 			"name": "Plant Form",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -24209,7 +24209,7 @@
 		{
 			"name": "Player Instrument",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -24253,7 +24253,7 @@
 		{
 			"name": "Pocket Paradise",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -24299,7 +24299,7 @@
 		{
 			"name": "Pollen Cloud",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -24346,7 +24346,7 @@
 		{
 			"name": "Portrait",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -24393,7 +24393,7 @@
 		{
 			"name": "Precision of Arms",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -24440,7 +24440,7 @@
 		{
 			"name": "Prey’s Scent",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -24482,7 +24482,7 @@
 		{
 			"name": "Profane Link",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -24528,7 +24528,7 @@
 		{
 			"name": "Projectile Link",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -24573,7 +24573,7 @@
 		{
 			"name": "Protection from Oozes",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -24617,7 +24617,7 @@
 		{
 			"name": "Protection from Paralysis",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -24664,7 +24664,7 @@
 		{
 			"name": "Protection from Pressure",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "A",
 			"time": [
 				{
@@ -24710,7 +24710,7 @@
 		{
 			"name": "Pummel",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -24757,7 +24757,7 @@
 		{
 			"name": "Purifying Bath",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -24803,7 +24803,7 @@
 		{
 			"name": "Purple Haze",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "E",
 			"time": [
 				{
@@ -24847,7 +24847,7 @@
 		{
 			"name": "Push",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -24890,7 +24890,7 @@
 		{
 			"name": "Putrefy Food and Drink",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -24933,7 +24933,7 @@
 		{
 			"name": "Quell the Wild",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "I",
 			"time": [
 				{
@@ -24981,7 +24981,7 @@
 		{
 			"name": "Quick Change",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -25025,7 +25025,7 @@
 		{
 			"name": "Quicken Assassin",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "T",
 			"time": [
 				{
@@ -25069,7 +25069,7 @@
 		{
 			"name": "Quicksand",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -25114,7 +25114,7 @@
 		{
 			"name": "Quill Skin",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -25157,7 +25157,7 @@
 		{
 			"name": "Rainbow Spear",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -25216,7 +25216,7 @@
 		{
 			"name": "Rainbow Staff",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -25279,7 +25279,7 @@
 		{
 			"name": "Raise Island",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "C",
 			"time": [
 				{
@@ -25323,7 +25323,7 @@
 		{
 			"name": "Raise Shipwreck",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -25367,7 +25367,7 @@
 		{
 			"name": "Ravaging Fire",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "C",
 			"time": [
 				{
@@ -25413,7 +25413,7 @@
 		{
 			"name": "Regenerate Plant",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -25457,7 +25457,7 @@
 		{
 			"name": "Reshape Metal",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -25499,7 +25499,7 @@
 		{
 			"name": "Resist Channeling",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -25540,7 +25540,7 @@
 		{
 			"name": "Resonant Imbalance",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -25584,7 +25584,7 @@
 		{
 			"name": "Restore the Undead",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -25627,7 +25627,7 @@
 		{
 			"name": "Retribution",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -25674,7 +25674,7 @@
 		{
 			"name": "Revelation Field",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -25726,7 +25726,7 @@
 		{
 			"name": "Reverence",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -25773,7 +25773,7 @@
 		{
 			"name": "Righteous Cloak",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -25821,7 +25821,7 @@
 		{
 			"name": "Rimeshatter",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "V",
 			"time": [
 				{
@@ -25867,7 +25867,7 @@
 		{
 			"name": "Rock Bolt",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "C",
 			"time": [
 				{
@@ -25915,7 +25915,7 @@
 		{
 			"name": "Rooted in Place",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -25959,7 +25959,7 @@
 		{
 			"name": "Sacred Aegis",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -26003,7 +26003,7 @@
 		{
 			"name": "Sacred Champion",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -26050,7 +26050,7 @@
 		{
 			"name": "Safeguarded Slumber",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -26092,7 +26092,7 @@
 		{
 			"name": "Sanctified Reverie of Arms",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -26135,7 +26135,7 @@
 		{
 			"name": "Sand Blast",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -26179,7 +26179,7 @@
 		{
 			"name": "Sandbody",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -26223,7 +26223,7 @@
 		{
 			"name": "Sanguine Creatures",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "N",
 			"time": [
 				{
@@ -26269,7 +26269,7 @@
 		{
 			"name": "Scalding Sea",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -26317,7 +26317,7 @@
 		{
 			"name": "Scent Mask",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -26379,7 +26379,7 @@
 		{
 			"name": "Scintillating Doom",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "V",
 			"time": [
 				{
@@ -26435,7 +26435,7 @@
 		{
 			"name": "Scorching Air",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -26478,7 +26478,7 @@
 		{
 			"name": "Searing Flash",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "V",
 			"time": [
 				{
@@ -26521,7 +26521,7 @@
 		{
 			"name": "Searing Projectiles",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -26564,7 +26564,7 @@
 		{
 			"name": "See the Ephemeral",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -26617,7 +26617,7 @@
 		{
 			"name": "Serpent Hands",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -26665,7 +26665,7 @@
 		{
 			"name": "Serpent’s Gaze",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -26717,7 +26717,7 @@
 		{
 			"name": "Shade Swarm",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -26756,7 +26756,7 @@
 		{
 			"name": "Shadow Bolt",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -26808,7 +26808,7 @@
 		{
 			"name": "Shadow Embrace",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -26855,7 +26855,7 @@
 		{
 			"name": "Shadow Form",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -26903,7 +26903,7 @@
 		{
 			"name": "Shadow Sight",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -26946,7 +26946,7 @@
 		{
 			"name": "Shadowbind",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -26991,7 +26991,7 @@
 		{
 			"name": "Shadowstaff",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -27034,7 +27034,7 @@
 		{
 			"name": "Shattering Cry",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -27082,7 +27082,7 @@
 		{
 			"name": "Shield of Crackling Fire",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -27125,7 +27125,7 @@
 		{
 			"name": "Shield Open Flame",
 			"source": "BoLS 3pp",
-			"level": "0",
+			"level": 0,
 			"school": "A",
 			"time": [
 				{
@@ -27176,7 +27176,7 @@
 		{
 			"name": "Shifter’s Bane",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -27214,7 +27214,7 @@
 		{
 			"name": "Shroud the Shadow",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -27262,7 +27262,7 @@
 		{
 			"name": "Signal Flare",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -27313,7 +27313,7 @@
 		{
 			"name": "Silver Bones",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -27364,7 +27364,7 @@
 		{
 			"name": "Silver Shield",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -27407,7 +27407,7 @@
 		{
 			"name": "Silver Spear",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -27464,7 +27464,7 @@
 		{
 			"name": "Skull Bomb",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -27511,7 +27511,7 @@
 		{
 			"name": "Sleep of Power",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "T",
 			"time": [
 				{
@@ -27552,7 +27552,7 @@
 		{
 			"name": "Slime Bucket",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "C",
 			"time": [
 				{
@@ -27601,7 +27601,7 @@
 		{
 			"name": "Slimeball",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -27654,7 +27654,7 @@
 		{
 			"name": "Slow Draw",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -27703,7 +27703,7 @@
 		{
 			"name": "Slur",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -27756,7 +27756,7 @@
 		{
 			"name": "Smart Arrow",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -27800,7 +27800,7 @@
 		{
 			"name": "Smothering Cloud",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -27851,7 +27851,7 @@
 		{
 			"name": "Snakes into Staves",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -27900,7 +27900,7 @@
 		{
 			"name": "Solar Flare",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -27940,7 +27940,7 @@
 		{
 			"name": "Solar Fury",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -27983,7 +27983,7 @@
 		{
 			"name": "Solar Spear",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -28035,7 +28035,7 @@
 		{
 			"name": "Song Barrier",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -28084,7 +28084,7 @@
 		{
 			"name": "Song of Vengeance",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -28128,7 +28128,7 @@
 		{
 			"name": "Sonic Boom",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -28171,7 +28171,7 @@
 		{
 			"name": "Soul Shatter",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -28210,7 +28210,7 @@
 		{
 			"name": "Soul Shield",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -28252,7 +28252,7 @@
 		{
 			"name": "Soul Strike",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -28298,7 +28298,7 @@
 		{
 			"name": "Sound Worm",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -28341,7 +28341,7 @@
 		{
 			"name": "Speak with Objects",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -28388,7 +28388,7 @@
 		{
 			"name": "Spectral Archers",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -28432,7 +28432,7 @@
 		{
 			"name": "Speed Undead",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -28485,7 +28485,7 @@
 		{
 			"name": "Spell Inhibitor",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -28530,7 +28530,7 @@
 		{
 			"name": "Spell Kill",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -28582,7 +28582,7 @@
 		{
 			"name": "Spell Legs",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -28627,7 +28627,7 @@
 		{
 			"name": "Spellcaster’s Refusal",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"ritual": "YES",
 			"time": [
@@ -28684,7 +28684,7 @@
 		{
 			"name": "Spilling of Blood",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "N",
 			"time": [
 				{
@@ -28731,7 +28731,7 @@
 		{
 			"name": "Spirit Blast",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "N",
 			"time": [
 				{
@@ -28783,7 +28783,7 @@
 		{
 			"name": "Spirit Cartographer",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "C",
 			"time": [
 				{
@@ -28828,7 +28828,7 @@
 		{
 			"name": "Spirit Disk",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "V",
 			"time": [
 				{
@@ -28873,7 +28873,7 @@
 		{
 			"name": "Spirit Doll",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -28923,7 +28923,7 @@
 		{
 			"name": "Spiritbreaker",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "A",
 			"time": [
 				{
@@ -28973,7 +28973,7 @@
 		{
 			"name": "Spiteful Images",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -29022,7 +29022,7 @@
 		{
 			"name": "Spyworm",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -29065,7 +29065,7 @@
 		{
 			"name": "Squeaking Floor Alarm",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -29109,7 +29109,7 @@
 		{
 			"name": "Steam Bolt",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -29156,7 +29156,7 @@
 		{
 			"name": "Steam Cloud",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "V",
 			"time": [
 				{
@@ -29205,7 +29205,7 @@
 		{
 			"name": "Steel Butterflies",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -29257,7 +29257,7 @@
 		{
 			"name": "Stench of Death",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -29300,7 +29300,7 @@
 		{
 			"name": "Sticky Tongue",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -29355,7 +29355,7 @@
 		{
 			"name": "Stonefast",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "A",
 			"time": [
 				{
@@ -29406,7 +29406,7 @@
 		{
 			"name": "Storm of Vitriol",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "V",
 			"time": [
 				{
@@ -29449,7 +29449,7 @@
 		{
 			"name": "Strength of the Wyrm",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "T",
 			"time": [
 				{
@@ -29497,7 +29497,7 @@
 		{
 			"name": "Stupefy",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -29540,7 +29540,7 @@
 		{
 			"name": "Summon Undead",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -29604,7 +29604,7 @@
 		{
 			"name": "Swirling Leaves",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -29647,7 +29647,7 @@
 		{
 			"name": "Tattoo Object",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -29699,7 +29699,7 @@
 		{
 			"name": "Taunt",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -29743,7 +29743,7 @@
 		{
 			"name": "Tenacious Blade",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -29790,7 +29790,7 @@
 		{
 			"name": "Tendrils of Night",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "C",
 			"time": [
 				{
@@ -29842,7 +29842,7 @@
 		{
 			"name": "Thorn Snare",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -29885,7 +29885,7 @@
 		{
 			"name": "Torrent",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "C",
 			"time": [
 				{
@@ -29928,7 +29928,7 @@
 		{
 			"name": "Touch of Madness",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "E",
 			"time": [
 				{
@@ -29969,7 +29969,7 @@
 		{
 			"name": "Track Magic",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "D",
 			"time": [
 				{
@@ -30012,7 +30012,7 @@
 		{
 			"name": "Tracker’s Gaze",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "D",
 			"time": [
 				{
@@ -30055,7 +30055,7 @@
 		{
 			"name": "Tranquil Grove",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "C",
 			"time": [
 				{
@@ -30101,7 +30101,7 @@
 		{
 			"name": "Transfer of Vigor",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -30157,7 +30157,7 @@
 		{
 			"name": "Transform Boulder to Pebble",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -30213,7 +30213,7 @@
 		{
 			"name": "Transform Pebble to Boulder",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -30259,7 +30259,7 @@
 		{
 			"name": "Transform Zombie",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -30301,7 +30301,7 @@
 		{
 			"name": "Transmute Gold to Steel",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -30343,7 +30343,7 @@
 		{
 			"name": "Transparent Steel",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -30384,7 +30384,7 @@
 		{
 			"name": "Tree Ladder",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -30430,7 +30430,7 @@
 		{
 			"name": "Tremorsense",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -30476,7 +30476,7 @@
 		{
 			"name": "Twig Torture",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -30530,7 +30530,7 @@
 		{
 			"name": "Twisted Magic",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -30583,7 +30583,7 @@
 		{
 			"name": "Twitch",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "E",
 			"time": [
 				{
@@ -30631,7 +30631,7 @@
 		{
 			"name": "Umbral Images",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "I",
 			"time": [
 				{
@@ -30673,7 +30673,7 @@
 		{
 			"name": "Umbral Storm",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -30712,7 +30712,7 @@
 		{
 			"name": "Umbral Strike",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -30754,7 +30754,7 @@
 		{
 			"name": "Umbral Touch",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -30800,7 +30800,7 @@
 		{
 			"name": "Umbral Transformation",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "T",
 			"time": [
 				{
@@ -30846,7 +30846,7 @@
 		{
 			"name": "Umbral Weapon",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -30890,7 +30890,7 @@
 		{
 			"name": "Unchained Melody",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -30932,7 +30932,7 @@
 		{
 			"name": "Undead Alteration",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "I",
 			"time": [
 				{
@@ -30975,7 +30975,7 @@
 		{
 			"name": "Undertow",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "V",
 			"time": [
 				{
@@ -31019,7 +31019,7 @@
 		{
 			"name": "Undetectable Charm",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -31066,7 +31066,7 @@
 		{
 			"name": "Undulating Earth",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -31114,7 +31114,7 @@
 		{
 			"name": "Unfasten",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -31157,7 +31157,7 @@
 		{
 			"name": "Unfettered Steed",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "T",
 			"time": [
 				{
@@ -31199,7 +31199,7 @@
 		{
 			"name": "Unholy Glare",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -31243,7 +31243,7 @@
 		{
 			"name": "Unstoppable Tracker",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -31286,7 +31286,7 @@
 		{
 			"name": "Unyielding Durability",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -31328,7 +31328,7 @@
 		{
 			"name": "Vengeful Environs",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -31378,7 +31378,7 @@
 		{
 			"name": "Vermin Swarm",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -31438,7 +31438,7 @@
 		{
 			"name": "Vigil of Enlightenment",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -31478,7 +31478,7 @@
 		{
 			"name": "Vile Vintage",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -31528,7 +31528,7 @@
 		{
 			"name": "Vines of Binding",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -31582,7 +31582,7 @@
 		{
 			"name": "Violent Scream",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "V",
 			"time": [
 				{
@@ -31637,7 +31637,7 @@
 		{
 			"name": "Voice of Confession",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "E",
 			"time": [
 				{
@@ -31682,7 +31682,7 @@
 		{
 			"name": "Voice of Memories",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -31726,7 +31726,7 @@
 		{
 			"name": "Volley of Thorns",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -31774,7 +31774,7 @@
 		{
 			"name": "Volley Spell",
 			"source": "BoLS 3pp",
-			"level": "7",
+			"level": 7,
 			"school": "A",
 			"time": [
 				{
@@ -31819,7 +31819,7 @@
 		{
 			"name": "Wail of Fate",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "N",
 			"time": [
 				{
@@ -31874,7 +31874,7 @@
 		{
 			"name": "Wailing Dirge",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "E",
 			"time": [
 				{
@@ -31919,7 +31919,7 @@
 		{
 			"name": "Walk in the Moonlight",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -31965,7 +31965,7 @@
 		{
 			"name": "Wall of Blood",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "C",
 			"time": [
 				{
@@ -32009,7 +32009,7 @@
 		{
 			"name": "Wall of Water",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -32061,7 +32061,7 @@
 		{
 			"name": "Warrior’s Touch",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "T",
 			"time": [
 				{
@@ -32108,7 +32108,7 @@
 		{
 			"name": "Water Double",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -32149,7 +32149,7 @@
 		{
 			"name": "Watery Blood",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "T",
 			"time": [
 				{
@@ -32191,7 +32191,7 @@
 		{
 			"name": "Weaken Fiendish Will",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "E",
 			"time": [
 				{
@@ -32244,7 +32244,7 @@
 		{
 			"name": "Weapon of Retribution",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "V",
 			"time": [
 				{
@@ -32287,7 +32287,7 @@
 		{
 			"name": "Weather Calming",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -32331,7 +32331,7 @@
 		{
 			"name": "Web Orb",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -32377,7 +32377,7 @@
 		{
 			"name": "Weeping Wounds",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -32422,7 +32422,7 @@
 		{
 			"name": "Whirlwind of Gore",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "N",
 			"time": [
 				{
@@ -32469,7 +32469,7 @@
 		{
 			"name": "Whisper Wind",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -32516,7 +32516,7 @@
 		{
 			"name": "Willful Transformation",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -32563,7 +32563,7 @@
 		{
 			"name": "Wind Speak",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -32606,7 +32606,7 @@
 		{
 			"name": "Wine Fount",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -32660,7 +32660,7 @@
 		{
 			"name": "Wings of Heaven",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "T",
 			"time": [
 				{
@@ -32703,7 +32703,7 @@
 		{
 			"name": "Wisdom of the Divine",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"time": [
 				{
@@ -32750,7 +32750,7 @@
 		{
 			"name": "Wise Defense",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "D",
 			"time": [
 				{
@@ -32796,7 +32796,7 @@
 		{
 			"name": "With the Wind",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "V",
 			"time": [
 				{
@@ -32843,7 +32843,7 @@
 		{
 			"name": "Wither Limb",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -32883,7 +32883,7 @@
 		{
 			"name": "Wolf’s Hearing",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "T",
 			"time": [
 				{
@@ -32929,7 +32929,7 @@
 		{
 			"name": "Wolf’s Howl",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "E",
 			"time": [
 				{
@@ -32977,7 +32977,7 @@
 		{
 			"name": "Woodland Shriek",
 			"source": "BoLS 3pp",
-			"level": "1",
+			"level": 1,
 			"school": "A",
 			"time": [
 				{
@@ -33021,7 +33021,7 @@
 		{
 			"name": "Words of Thunder",
 			"source": "BoLS 3pp",
-			"level": "6",
+			"level": 6,
 			"school": "V",
 			"time": [
 				{
@@ -33069,7 +33069,7 @@
 		{
 			"name": "Wound Reading",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "D",
 			"ritual": "YES",
 			"time": [
@@ -33116,7 +33116,7 @@
 		{
 			"name": "Wrack the Mind",
 			"source": "BoLS 3pp",
-			"level": "9",
+			"level": 9,
 			"school": "N",
 			"time": [
 				{
@@ -33161,7 +33161,7 @@
 		{
 			"name": "Wyvern Guard",
 			"source": "BoLS 3pp",
-			"level": "2",
+			"level": 2,
 			"school": "A",
 			"time": [
 				{
@@ -33207,7 +33207,7 @@
 		{
 			"name": "Xenophobic Rage",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "E",
 			"time": [
 				{
@@ -33261,7 +33261,7 @@
 		{
 			"name": "Yellow Smoke",
 			"source": "BoLS 3pp",
-			"level": "3",
+			"level": 3,
 			"school": "C",
 			"time": [
 				{
@@ -33307,7 +33307,7 @@
 		{
 			"name": "Zephyr of Death",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "N",
 			"time": [
 				{
@@ -33351,7 +33351,7 @@
 		{
 			"name": "Zombify Self",
 			"source": "BoLS 3pp",
-			"level": "4",
+			"level": 4,
 			"school": "N",
 			"time": [
 				{
@@ -33395,7 +33395,7 @@
 		{
 			"name": "Zone of Ablation",
 			"source": "BoLS 3pp",
-			"level": "5",
+			"level": 5,
 			"school": "A",
 			"time": [
 				{
@@ -33438,7 +33438,7 @@
 		{
 			"name": "Zone of Metamagic Minimization",
 			"source": "BoLS 3pp",
-			"level": "8",
+			"level": 8,
 			"school": "A",
 			"time": [
 				{
