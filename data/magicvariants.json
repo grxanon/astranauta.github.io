@@ -2,7 +2,7 @@
 	"variant": [
 		{
 			"name": "Armor +1",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +1 bonus to AC while wearing this armor."
 			],
@@ -32,7 +32,7 @@
 		},
 		{
 			"name": "Armor +2",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +2 bonus to AC while wearing this armor."
 			],
@@ -62,7 +62,7 @@
 		},
 		{
 			"name": "Armor +3",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +3 bonus to AC while wearing this armor."
 			],
@@ -92,7 +92,7 @@
 		},
 		{
 			"name": "Shield +1",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
 			],
@@ -122,7 +122,7 @@
 		},
 		{
 			"name": "Shield +2",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
 			],
@@ -152,7 +152,7 @@
 		},
 		{
 			"name": "Shield +3",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"While holding this shield, you have a +3 bonus to AC. This bonus is in addition to the shield's normal bonus to AC."
 			],
@@ -182,7 +182,7 @@
 		},
 		{
 			"name": "Armor of Gleaming",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"armor": true
 			},
@@ -199,7 +199,7 @@
 		},
 		{
 			"name": "Armor of Acid Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "acid",
 			"requires": {
 				"armor": true
@@ -216,7 +216,7 @@
 		},
 		{
 			"name": "Armor of Cold Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "cold",
 			"requires": {
 				"armor": true
@@ -233,7 +233,7 @@
 		},
 		{
 			"name": "Armor of Fire Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "fire",
 			"requires": {
 				"armor": true
@@ -250,7 +250,7 @@
 		},
 		{
 			"name": "Armor of Force Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "force",
 			"requires": {
 				"armor": true
@@ -267,7 +267,7 @@
 		},
 		{
 			"name": "Armor of Lightning Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "lightning",
 			"requires": {
 				"armor": true
@@ -284,7 +284,7 @@
 		},
 		{
 			"name": "Armor of Necrotic Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "necrotic",
 			"requires": {
 				"armor": true
@@ -301,7 +301,7 @@
 		},
 		{
 			"name": "Armor of Poison Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "poison",
 			"requires": {
 				"armor": true
@@ -318,7 +318,7 @@
 		},
 		{
 			"name": "Armor of Psychic Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "psychic",
 			"requires": {
 				"armor": true
@@ -335,7 +335,7 @@
 		},
 		{
 			"name": "Armor of Radiant Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "radiant",
 			"requires": {
 				"armor": true
@@ -352,7 +352,7 @@
 		},
 		{
 			"name": "Armor of Thunder Resistance",
-			"type": "MV",
+			"type": "GV",
 			"resist": "thunder",
 			"requires": {
 				"armor": true
@@ -369,7 +369,7 @@
 		},
 		{
 			"name": "Adamantine Armor",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"type": "HA"
 			},
@@ -408,7 +408,7 @@
 		},
 		{
 			"name": "Cast-Off Armor",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"armor": true
 			},
@@ -425,7 +425,7 @@
 		},
 		{
 			"name": "Mariner's Armor",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"armor": true
 			},
@@ -442,7 +442,7 @@
 		},
 		{
 			"name": "Mind Carapace Armor",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"type": "HA"
 			},
@@ -459,7 +459,7 @@
 		},
 		{
 			"name": "Mithral Armor",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"type": "HA"
 			},
@@ -471,7 +471,7 @@
 				"stealth": false,
 				"namePrefix": "Mithral ",
 				"entries": [
-					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
+					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version of the armor doesn't."
 				]
 			}
 		},
@@ -494,13 +494,13 @@
 				"stealth": false,
 				"namePrefix": "Mithral ",
 				"entries": [
-					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
+					"Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity ({@skill Stealth}) checks or has a Strength requirement, the mithral version of the armor doesn't."
 				]
 			}
 		},
 		{
 			"name": "Moon—Touched Sword",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -517,7 +517,7 @@
 		},
 		{
 			"name": "Smoldering Armor",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"armor": true
 			},
@@ -533,8 +533,34 @@
 			}
 		},
 		{
+			"name": "Ammunition of Slaying",
+			"type": "GV",
+			"entries": [
+				"Ammunition of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.",
+				"Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow.",
+				"Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common."
+			],
+			"requires": {
+				"ammunition": true
+			},
+			"excludes": {
+				"page": "268"
+			},
+			"inherits": {
+				"tier": "Minor",
+				"rarity": "Very Rare",
+				"source": "DMG",
+				"page": "152",
+				"nameSuffix": " of Slaying",
+				"entries": [
+					"A {@lowerName} of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both <i>{@lowerName}s of dragon slaying</i> and <i>{@lowerName}s of blue dragon slaying</i>. If a creature belonging to the type, race, or group associated with a {@lowerName} of slaying takes damage from the {@lowerName}, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.",
+					"Once a {@lowerName} of slaying deals its extra damage to a creature, it becomes a nonmagical {@lowerName}."
+				]
+			}
+		},
+		{
 			"name": "Ammunition +1",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
 			],
@@ -571,7 +597,7 @@
 		},
 		{
 			"name": "Ammunition +2",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
 			],
@@ -608,7 +634,7 @@
 		},
 		{
 			"name": "Ammunition +3",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
 			],
@@ -645,7 +671,7 @@
 		},
 		{
 			"name": "Walloping Ammunition",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"ammunition": true
 			},
@@ -662,7 +688,7 @@
 		},
 		{
 			"name": "Weapon (no damage) +1",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +1 bonus to attack rolls made with this weapon."
 			],
@@ -683,7 +709,7 @@
 		},
 		{
 			"name": "Weapon (no damage) +2",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +2 bonus to attack rolls made with this weapon."
 			],
@@ -704,7 +730,7 @@
 		},
 		{
 			"name": "Weapon (no damage) +3",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +3 bonus to attack rolls made with this weapon."
 			],
@@ -725,7 +751,7 @@
 		},
 		{
 			"name": "Weapon +1",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +1 bonus to attack and damage rolls made with this weapon."
 			],
@@ -749,7 +775,7 @@
 		},
 		{
 			"name": "Weapon +2",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +2 bonus to attack and damage rolls made with this weapon."
 			],
@@ -773,7 +799,7 @@
 		},
 		{
 			"name": "Weapon +3",
-			"type": "MV",
+			"type": "GV",
 			"entries": [
 				"You have a +3 bonus to attack and damage rolls made with this weapon."
 			],
@@ -797,7 +823,7 @@
 		},
 		{
 			"name": "Weapon of Warning",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"weapon": true
 			},
@@ -814,7 +840,7 @@
 		},
 		{
 			"name": "Berserker Axe",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"axe": true
 			},
@@ -827,7 +853,13 @@
 				"namePrefix": "Berserker ",
 				"entries": [
 					"You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your hit point maximum increases by 1 for each level you have attained.",
-					"Curse. This axe is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the axe, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear.",
+					{
+						"type": "entries",
+						"name": "Curse",
+						"entries": [
+							"This axe is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the axe, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear."
+						]
+					},
 					"Whenever a hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to attack the next nearest creature after you fell your current target. If you have multiple possible targets, you attack one at random. You are berserk until you start your turn with no creatures within 60 feet of you that you can see or hear."
 				],
 				"modifier": [
@@ -850,7 +882,7 @@
 		},
 		{
 			"name": "Dancing Sword",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -870,7 +902,7 @@
 		},
 		{
 			"name": "Defender",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -889,7 +921,7 @@
 		},
 		{
 			"name": "Dragon Slayer",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -923,7 +955,7 @@
 		},
 		{
 			"name": "Flame Tongue",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -941,7 +973,7 @@
 		},
 		{
 			"name": "Frost Brand",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -961,7 +993,7 @@
 		},
 		{
 			"name": "Giant Slayer",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"axe": true
 			},
@@ -1031,7 +1063,7 @@
 		},
 		{
 			"name": "Holy Avenger",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -1066,7 +1098,24 @@
 		},
 		{
 			"name": "Luck Blade",
-			"type": "MV",
+			"type": "GV",
+			"entries": [
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
+				{
+					"type": "entries",
+					"name": "Luck",
+					"entries": [
+						"If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wish",
+					"entries": [
+						"The sword has 1d4 - 1 charges. While holding it, you can use an action to expend 1 charge and cast the <a href=\"spells.html#wish_phb\" target=\"_blank\">wish</a> spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+					]
+				}
+			],
 			"requires": {
 				"sword": true
 			},
@@ -1079,8 +1128,20 @@
 				"reqAttune": "YES",
 				"entries": [
 					"You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
-					"Luck. If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.",
-					"Wish. The sword has 1d4 - 1 charges. While holding it, you can use an action to expend 1 charge and cast the <a href=\"spells.html#wish_phb\" target=\"_blank\">wish</a> spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+					{
+						"type": "entries",
+						"name": "Luck",
+						"entries": [
+							"If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Wish",
+						"entries": [
+							"The sword has 1d4 - 1 charges. While holding it, you can use an action to expend 1 charge and cast the <a href=\"spells.html#wish_phb\" target=\"_blank\">wish</a> spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+						]
+					}
 				],
 				"modifier": [
 					{
@@ -1109,7 +1170,7 @@
 		},
 		{
 			"name": "Mind Blade",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -1126,7 +1187,7 @@
 		},
 		{
 			"name": "Nine Lives Stealer",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -1161,7 +1222,7 @@
 		},
 		{
 			"name": "Sword of Life Stealing",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -1179,7 +1240,7 @@
 		},
 		{
 			"name": "Sword of Sharpness",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true,
 				"dmgType": "S"
@@ -1200,7 +1261,7 @@
 		},
 		{
 			"name": "Sword of Vengeance",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -1237,7 +1298,7 @@
 		},
 		{
 			"name": "Sword of Wounding",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true
 			},
@@ -1250,13 +1311,13 @@
 				"reqAttune": "YES",
 				"entries": [
 					"Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.",
-					"Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success."
+					"Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom ({@skill Medicine}) check, ending the effect of such wounds on it on a success."
 				]
 			}
 		},
 		{
 			"name": "Vicious Weapon",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"weapon": true
 			},
@@ -1277,7 +1338,7 @@
 		},
 		{
 			"name": "Vorpal Sword",
-			"type": "MV",
+			"type": "GV",
 			"requires": {
 				"sword": true,
 				"dmgType": "S"

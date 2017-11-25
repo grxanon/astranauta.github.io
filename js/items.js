@@ -1,7 +1,7 @@
+"use strict";
 const ITEMS_JSON_URL = "data/items.json";
 const BASIC_ITEMS_JSON_URL = "data/basicitems.json";
 const MAGIC_VARIANTS_JSON_URL = "data/magicvariants.json";
-const TYPE_DOSH ="$";
 let tabledefault = "";
 let itemList;
 let basicItemList;
@@ -42,11 +42,13 @@ function mergeBasicItems(variantData) {
 	itemList = itemList.concat(variantList);
 	for (let i = 0; i < basicItemList.length; i++) {
 		const curBasicItem = basicItemList[i];
+		basicItemList[i].category = "Basic";
 		if(curBasicItem.entries === undefined) curBasicItem.entries=[];
+		const curBasicItemName = curBasicItem.name.toLowerCase();
 		for (let j = 0; j < variantList.length; j++) {
 			const curVariant = variantList[j];
 			const curRequires = curVariant.requires;
-			let hasRequired = true;
+			let hasRequired = curBasicItemName.indexOf(" (") === -1;
 			for (const requiredProperty in curRequires) if (curRequires.hasOwnProperty(requiredProperty) && curBasicItem[requiredProperty] !== curRequires[requiredProperty]) hasRequired=false;
 			if (curVariant.excludes) {
 				const curExcludes = curVariant.excludes;
@@ -56,18 +58,21 @@ function mergeBasicItems(variantData) {
 				const curInherits = curVariant.inherits
 				const tmpBasicItem = JSON.parse(JSON.stringify(curBasicItem));
 				delete tmpBasicItem.value; // Magic items do not inherit the value of the non-magical item
+				tmpBasicItem.category = "Specific Variant";
 				for (const inheritedProperty in curInherits) {
 					if (curInherits.hasOwnProperty(inheritedProperty)) {
 						if (inheritedProperty === "namePrefix") {
 							tmpBasicItem.name = curInherits.namePrefix+tmpBasicItem.name;
 						} else if (inheritedProperty === "nameSuffix") {
-							const tmpName = tmpBasicItem.name;
-							tmpBasicItem.name = tmpName.indexOf(" (") !== -1 ? tmpName.replace(" (", curInherits.nameSuffix+" (") : tmpName+curInherits.nameSuffix;
+							tmpBasicItem.name += curInherits.nameSuffix;
 						} else if (inheritedProperty === "entries") {
 							for (let k = curInherits.entries.length-1; k > -1; k--) {
 								let tmpText = curInherits.entries[k];
-								if (tmpBasicItem.dmgType) tmpText = tmpText.replace("{@dmgType}", Parser.dmgTypeToFull(tmpBasicItem.dmgType));
-								if (curInherits.genericBonus) tmpText = tmpText.replace("{@genericBonus}", curInherits.genericBonus);
+								if (typeof tmpText === "string") {
+									if (tmpBasicItem.dmgType) tmpText = tmpText.replace("{@dmgType}", Parser.dmgTypeToFull(tmpBasicItem.dmgType));
+									if (curInherits.genericBonus) tmpText = tmpText.replace("{@genericBonus}", curInherits.genericBonus);
+									if (tmpText.indexOf("{@lowerName}") !== -1) tmpText = tmpText.split("{@lowerName}").join(curBasicItemName);
+								}
 								tmpBasicItem.entries.unshift(tmpText);
 							}
 						} else
@@ -89,6 +94,8 @@ function pushObject(targetObject, objectToBePushed) {
 
 function enhanceItems() {
 	for (let i = 0; i < itemList.length; i++) {
+		if (itemList[i].type === "GV") itemList[i].category = "Generic Variant";
+		if (itemList[i].category === undefined) itemList[i].category = "Other";
 		const item = itemList[i];
 		if (item.entries === undefined) itemList[i].entries=[];
 		if (item.type && typeList[item.type]) for (let j = 0; j < typeList[item.type].entries.length; j++) itemList[i].entries = pushObject(itemList[i].entries,typeList[item.type].entries[j]);
@@ -129,7 +136,7 @@ function rarityValue(rarity) { //Ordered by most frequently occuring rarities in
 	return 0;
 }
 
-function sortitems(a, b, o) {
+function sortItems(a, b, o) {
 	if (o.valueName === "name") {
 		return b._values.name.toLowerCase() > a._values.name.toLowerCase() ? 1 : -1;
 	} else if (o.valueName === "type") {
@@ -148,37 +155,21 @@ function populateTablesAndFilters() {
 	tabledefault = $("#stats").html();
 
 	const filterAndSearchBar = document.getElementById(ID_SEARCH_BAR);
-	const filterList = [];
 	const sourceFilter = new Filter("Source", FLTR_SOURCE, [], Parser.sourceJsonToFull, Parser.stringToSlug);
-	filterList.push(sourceFilter);
 	const typeFilter = new Filter("Type", FLTR_TYPE, [], Filter.asIs, Filter.asIs);
-	filterList.push(typeFilter);
-	const tierFilter = new Filter("Tier", FLTR_TIER, [
-		"None",
-		"Minor",
-		"Major",
-	], Filter.asIs, Filter.asIs);
-	filterList.push(tierFilter);
-	const rarityFilter = new Filter("Rarity", FLTR_RARITY, [
-		"None",
-		"Common",
-		"Uncommon",
-		"Rare",
-		"Very Rare",
-		"Legendary",
-		"Artifact",
-		"Unknown",
-	], Filter.asIs, Filter.asIs);
-	filterList.push(rarityFilter);
+	const tierFilter = new Filter("Tier", FLTR_TIER, ["None", "Minor", "Major"], Filter.asIs, Filter.asIs);
+	const rarityFilter = new Filter("Rarity", FLTR_RARITY, ["None", "Common", "Uncommon", "Rare", "Very Rare", "Legendary", "Artifact", "Unknown"], Filter.asIs, Filter.asIs);
 	const attunementFilter = new Filter("Attunement", FLTR_ATTUNEMENT, ["Yes", "By...", "Optional", "No"], Filter.asIs, Parser.stringToSlug);
-	filterList.push(attunementFilter);
+	const categoryFilter = new Filter("Category", FLTR_CATEGORY, ["Basic", "Generic Variant", "Specific Variant", "Other"], Filter.asIs, Parser.stringToSlug);
+	const filterList = [sourceFilter, typeFilter, tierFilter, rarityFilter, attunementFilter, categoryFilter];
 	const filterBox = new FilterBox(filterAndSearchBar, filterList);
-	const liList = {mundane:"", magic:""}; // store the <li> tag content here and change the DOM once for each after the loop
+	const liList = {mundane:"", magic:""}; // store the <li> tag content here and change the DOM once for each property after the loop
 
 	for (let i = 0; i < itemList.length; i++) {
 		const curitem = itemList[i];
 		const name = curitem.name;
 		const rarity = curitem.rarity;
+		const category = curitem.category;
 		const source = curitem.source;
 		const sourceAbv = Parser.sourceJsonToAbv(source);
 		const sourceFull = Parser.sourceJsonToFull(source);
@@ -209,7 +200,15 @@ function populateTablesAndFilters() {
 				itemList[i].reqAttune = "(Requires Attunement "+curitem.reqAttune+")";
 			}
 		}
-		liList[rarity === "None" || rarity === "Unknown" ? "mundane" : "magic"] += `<li ${FLTR_SOURCE}='${source}' ${FLTR_TYPE}='${typeList}' ${FLTR_TIER}='${tierTagsString}' ${FLTR_RARITY}='${rarity}' ${FLTR_ATTUNEMENT}='${attunement}'><a id='${i}' href="#${encodeForHash(name)}_${encodeForHash(source)}" title="${name}"><span class='name col-xs-4'>${name}</span> <span class='type col-xs-4 col-xs-4-3'>${type.join(", ")}</span> <span class='source col-xs-1 col-xs-1-7 source${sourceAbv}' title="${sourceFull}">${sourceAbv}</span> <span class='rarity col-xs-2'>${rarity}</span></a></li>`;
+		liList[rarity === "None" || rarity === "Unknown" || category === "Basic" ? "mundane" : "magic"] += `
+			<li ${FLTR_SOURCE}='${source}' ${FLTR_TYPE}='${typeList}' ${FLTR_TIER}='${tierTagsString}' ${FLTR_RARITY}='${rarity}' ${FLTR_ATTUNEMENT}='${attunement}' ${FLTR_CATEGORY}='${category}'>
+				<a id='${i}' href="#${encodeForHash(name)}_${encodeForHash(source)}" title="${name}">
+					<span class='name col-xs-4'>${name}</span>
+					<span class='type col-xs-4 col-xs-4-3'>${type.join(", ")}</span>
+					<span class='source col-xs-1 col-xs-1-7 source${sourceAbv}' title="${sourceFull}">${sourceAbv}</span>
+					<span class='rarity col-xs-2'>${rarity}</span>
+				</a>
+			</li>`;
 
 		// populate filters
 		if ($.inArray(source, sourceFilter.items) === -1) sourceFilter.items.push(source);
@@ -235,7 +234,7 @@ function populateTablesAndFilters() {
 	// add filter reset to reset button
 	document.getElementById(ID_RESET_BUTTON).addEventListener(EVNT_CLICK, function() {
 		filterBox.reset();
-		deselectDosh(true);
+		deselectFilters(true);
 	}, false);
 
 	filterBox.render();
@@ -266,37 +265,40 @@ function populateTablesAndFilters() {
 		const rightTier = f[tierFilter.header][FilterBox.VAL_SELECT_ALL] || f[tierFilter.header][tierFilter.valueFunction($(item.elm).attr(tierFilter.storageAttribute))];
 		const rightRarity = f[rarityFilter.header][FilterBox.VAL_SELECT_ALL] || f[rarityFilter.header][rarityFilter.valueFunction($(item.elm).attr(rarityFilter.storageAttribute))];
 		const rightAttunement = f[attunementFilter.header][FilterBox.VAL_SELECT_ALL] || f[attunementFilter.header][attunementFilter.valueFunction($(item.elm).attr(attunementFilter.storageAttribute))];
-		return rightSource && rightType && rightTier && rightRarity && rightAttunement;
+		const rightCategory = f[categoryFilter.header][FilterBox.VAL_SELECT_ALL] || f[categoryFilter.header][categoryFilter.valueFunction($(item.elm).attr(categoryFilter.storageAttribute))];
+		return rightSource && rightType && rightTier && rightRarity && rightAttunement && rightCategory;
 	}
 
 	$("#filtertools button.sort").on("click", function() {
-		if ($(this).attr("sortby") === "asc") {
-			$(this).attr("sortby", "desc");
-		} else $(this).attr("sortby", "asc");
-		magiclist.sort($(this).attr("sort"), { order: $(this).attr("sortby"), sortFunction: sortitems });
-		mundanelist.sort($(this).attr("sort"), { order: $(this).attr("sortby"), sortFunction: sortitems });
+		$(this).attr("sortby", $(this).attr("sortby") === "asc" ? "desc" : "asc");
+		magiclist.sort($(this).attr("sort"), { order: $(this).attr("sortby"), sortFunction: sortItems });
+		mundanelist.sort($(this).attr("sort"), { order: $(this).attr("sortby"), sortFunction: sortItems });
 	});
 
-	// default de-select Dosh types
-	deselectDosh(true);
+	deselectFilters(true);
 
-	function deselectDosh(hardDeselect) {
+	function deselectFilters(hardDeselect) {
+		deselectFilter(hardDeselect, typeFilter, "type", "$");
+		deselectFilter(hardDeselect, categoryFilter, "category", "Specific Variant");
+	}
+
+	function deselectFilter(hardDeselect, filterName, deselectProperty, deselectValue) {
 		hardDeselect = hardDeselect === undefined || hardDeselect === null ? false : hardDeselect;
 		if (window.location.hash.length) {
-			const itemType = itemList[getSelectedListElement().attr("id")].type;
-			if (itemType === TYPE_DOSH && hardDeselect) {
+			const itemProperty = itemList[getSelectedListElement().attr("id")][deselectProperty];
+			if (itemProperty === filterName.valueFunction(deselectValue) && hardDeselect) {
 				deselNoHash();
 			} else {
 				filterBox.deselectIf(function (val) {
-					return val === TYPE_DOSH && itemType !== val
-				}, typeFilter.header);
+					return val === filterName.valueFunction(deselectValue) && filterName.valueFunction(itemProperty) !== val
+				}, filterName.header);
 			}
 		} else {
 			deselNoHash();
 		}
 		function deselNoHash() {
 			filterBox.deselectIf(function(val) {
-				return val === TYPE_DOSH
+				return val === typeFilter.valueFunction(deselectValue)
 			}, typeFilter.header);
 		}
 	}
@@ -309,7 +311,6 @@ function populateTablesAndFilters() {
 			});
 			return;
 		}
-
 		$(this).next("ul.list").animate({
 			maxHeight: "500px",
 			display: "block"
@@ -327,8 +328,8 @@ function loadhash (id) {
 	const source = item.source;
 	const sourceAbv = Parser.sourceJsonToAbv(source);
 	const sourceFull = Parser.sourceJsonToFull(source);
-	$("th#name").html("<span title=\""+sourceFull+"\" class='source source"+sourceAbv+"'>"+sourceAbv+"</span> "+item.name);
-	$("td#source span").html(sourceFull+", page "+item.page);
+	$("th#name").html(`<span title="${sourceFull}" class='source source${sourceAbv}'>${sourceAbv}</span>${item.name}`);
+	$("td#source span").html(`${sourceFull}, page ${item.page}`);
 
 	$("td span#value").html(item.value ? item.value+(item.weight ? ", " : "") : "");
 	$("td span#weight").html(item.weight ? item.weight+(item.weight == 1 ? " lb." : " lbs.") : "");
@@ -343,7 +344,7 @@ function loadhash (id) {
 		if(item.dmg1) $("span#damage").html(utils_makeRoller(item.dmg1));
 		if(item.dmgType) $("span#damagetype").html(Parser.dmgTypeToFull(item.dmgType));
 	} else if (type === "LA" ||type === "MA"|| type === "HA") {
-		$("span#damage").html("AC "+item.ac+(type === "LA" ? " + Dex" : (type === "MA" ? " + Dex (max 2)" : "")));
+		$("span#damage").html("AC "+item.ac+(type === "LA" ? " + Dex" : type === "MA" ? " + Dex (max 2)" : ""));
 	} else if (type === "S") {
 		$("span#damage").html("AC +"+item.ac);
 	} else if (type === "MNT" || type === "VEH") {
@@ -361,32 +362,28 @@ function loadhash (id) {
 	if (item.property) {
 		const properties = item.property.split(",");
 		for (let i = 0; i < properties.length; i++) {
-			let a = b = properties[i];
-			a = propertyList[a].name;
-			if (b === "V") a = a + " (" + utils_makeRoller(item.dmg2) + ")";
-			if (b === "T" || b === "A" || b === "AF") a = a + " (" + item.range + "ft.)";
-			if (b === "RLD") a = a + " (" + item.reload + " shots)";
-			a = (i > 0 ? ", " : (item.dmg1 ? "- " : "")) + a;
+			const prop = properties[i];
+			let a = propertyList[prop].name;
+			if (prop === "V") a = `${a} (${utils_makeRoller(item.dmg2)})`;
+			if (prop === "T" || prop === "A" || prop === "AF") a = `${a} (${item.range}ft.)`;
+			if (prop === "RLD") a = `${a} (${item.reload} shots)`;
+			a = (i > 0 ? ", " : item.dmg1 ? "- " : "") + a;
 			$("span#properties").append(a);
 		}
 	}
 
 	$("tr.text").remove();
-	let texthtml = "";
-	if (item.entries) {
-		const entryList = {type: "entries", entries: item.entries};
-		const renderStack = [];
-		renderer.recursiveEntryRender(entryList, renderStack, 1);
-		texthtml = renderStack.join("");
-	}
+	const entryList = {type: "entries", entries: item.entries};
+	const renderStack = [];
+	renderer.recursiveEntryRender(entryList, renderStack, 1);
+	$("tr#text").after(`<tr class='text'><td colspan='6' class='text1'>${utils_makeRoller(renderStack.join("")).split(item.name.toLowerCase()).join("<i>"+item.name.toLowerCase()+"</i>")}</td></tr>`);
 
-	$("tr#text").after("<tr class='text'><td colspan='6' class='text1'>"+utils_makeRoller(texthtml)+"</td></tr>");
 	$(".items span.roller").contents().unwrap();
 	$("#stats span.roller").click(function() {
 		const roll =$(this).attr("data-roll").replace(/\s+/g, "");
 		const rollresult =  droll.roll(roll);
 		const name = $("#name").clone().children().remove().end().text();
-		$("div#output").prepend("<span>"+name + ": <em>"+roll+"</em> rolled for <strong>"+rollresult.total+"</strong> (<em>"+rollresult.rolls.join(", ")+"</em>)<br></span>").show();
+		$("div#output").prepend(`<span>${name}: <em>${roll}</em> rolled for <strong>${rollresult.total}</strong> (<em>${rollresult.rolls.join(", ")}</em>)<br></span>`).show();
 		$("div#output span:eq(5)").remove();
 	})
 }
