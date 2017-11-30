@@ -1,7 +1,7 @@
 {
 	"monster": [
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Achaierai",
  "size": "L",
  "type": "fiend",
@@ -60,7 +60,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Allip",
  "size": "M",
  "type": "undead",
@@ -119,7 +119,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Arcadian Avenger",
  "size": "M",
  "type": "celestial",
@@ -187,7 +187,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blue Arcanian",
  "size": "M",
  "type": "undead",
@@ -242,7 +242,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Green Arcanian",
  "size": "M",
  "type": "undead",
@@ -297,7 +297,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Red Arcanian",
  "size": "M",
  "type": "undead",
@@ -352,7 +352,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Juvenile Arrowhawk",
  "size": "S",
  "type": "elemental",
@@ -394,7 +394,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Arrowhawk",
  "size": "M",
  "type": "elemental",
@@ -443,7 +443,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Arrowhawk",
  "size": "L",
  "type": "elemental",
@@ -492,7 +492,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Astral Stalker",
  "size": "M",
  "type": "fiend",
@@ -560,7 +560,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Athach",
  "size": "H",
  "type": "giant",
@@ -616,7 +616,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Hammerer",
  "size": "M",
  "type": "construct",
@@ -662,7 +662,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Pulverizer",
  "size": "M",
  "type": "construct",
@@ -714,7 +714,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Balhannoth",
  "size": "L",
  "type": "aberration",
@@ -777,7 +777,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Banderhobb Filch",
  "size": "S",
  "type": "monstrosity",
@@ -861,7 +861,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Banderhobb Mother",
  "size": "H",
  "type": "monstrosity",
@@ -930,7 +930,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Banedead",
  "size": "M",
  "type": "undead",
@@ -976,7 +976,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Banshrae",
  "size": "M",
  "type": "fey",
@@ -1051,7 +1051,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Berbalang",
  "size": "M",
  "type": "monstrosity",
@@ -1111,7 +1111,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bladeling",
  "size": "M",
  "type": "humanoid (bladeling)",
@@ -1149,7 +1149,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blood Fiend",
  "size": "M",
  "type": "fiend",
@@ -1208,7 +1208,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bloodfire Ooze",
  "size": "H",
  "type": "ooze",
@@ -1273,7 +1273,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blighted Bloodfire",
  "size": "H",
  "type": "ooze",
@@ -1350,7 +1350,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bloodhulk Crusher",
  "size": "H",
  "type": "undead",
@@ -1396,7 +1396,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bloodhulk Fighter",
  "size": "M",
  "type": "undead",
@@ -1442,7 +1442,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bloodhulk Giant",
  "size": "L",
  "type": "undead",
@@ -1488,7 +1488,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Unmarked Bodak",
  "size": "M",
  "type": "undead",
@@ -1541,7 +1541,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Boggoul",
  "size": "S",
  "type": "undead",
@@ -1602,7 +1602,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Boneclaw",
  "size": "L",
  "type": "undead",
@@ -1655,7 +1655,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bonedrinker",
  "size": "Medium or Small",
  "type": "undead",
@@ -1714,7 +1714,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bonesinger",
  "size": "M",
  "type": "undead",
@@ -1792,7 +1792,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Briarvex",
  "size": "L",
  "type": "plant",
@@ -1844,7 +1844,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Cadaver Collector",
  "size": "L",
  "type": "construct",
@@ -1916,7 +1916,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Catfolk",
  "size": "M",
  "type": "humanoid (catfolk)",
@@ -1963,7 +1963,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Catfolk Hunter",
  "size": "M",
  "type": "humanoid (catfolk)",
@@ -2016,7 +2016,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Toxic Cave Fisher",
  "size": "M",
  "type": "monstrosity",
@@ -2090,7 +2090,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Choker",
  "size": "S",
  "type": "aberration",
@@ -2143,7 +2143,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Grove Choker",
  "size": "S",
  "type": "aberration",
@@ -2196,7 +2196,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Chraal",
  "size": "L",
  "type": "elemental",
@@ -2254,7 +2254,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Clockroach",
  "size": "S",
  "type": "construct",
@@ -2293,7 +2293,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Crucian",
  "size": "M",
  "type": "humanoid (crucian)",
@@ -2334,7 +2334,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Crypt Thing",
  "size": "M",
  "type": "undead",
@@ -2391,7 +2391,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Cursed Spirit",
  "size": "M",
  "type": "undead",
@@ -2447,7 +2447,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Deepspawn",
  "size": "H",
  "type": "aberration",
@@ -2512,7 +2512,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Abyssal Eviscerator",
  "size": "M",
  "type": "fiend (demon)",
@@ -2562,7 +2562,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Abyssal Scavenger",
  "size": "M",
  "type": "fiend (demon)",
@@ -2618,7 +2618,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Abyssal Rotfiend",
  "size": "L",
  "type": "undead (demon)",
@@ -2684,7 +2684,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Abyssal Wurm",
  "size": "G",
  "type": "dragon (demon)",
@@ -2785,7 +2785,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Armanite",
  "size": "L",
  "type": "fiend (demon)",
@@ -2851,7 +2851,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Artaaglith",
  "size": "M",
  "type": "fiend (demon)",
@@ -2903,7 +2903,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blood Demon",
  "size": "M",
  "type": "fiend (demon)",
@@ -2968,7 +2968,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bulezau",
  "size": "L",
  "type": "fiend (demon)",
@@ -3027,7 +3027,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Evistro",
  "size": "M",
  "type": "fiend (demon)",
@@ -3086,7 +3086,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Fire Demon",
  "size": "L",
  "type": "fiend (demon)",
@@ -3163,7 +3163,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Gnaw Demon",
  "size": "S",
  "type": "fiend (demon)",
@@ -3203,7 +3203,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Haures",
  "size": "H",
  "type": "undead (demon)",
@@ -3286,7 +3286,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Jarrlak",
  "size": "L",
  "type": "fiend (demon)",
@@ -3344,7 +3344,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Jovoc",
  "size": "S",
  "type": "fiend (demon)",
@@ -3387,7 +3387,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Mavawhan",
  "size": "M",
  "type": "fiend (demon)",
@@ -3440,7 +3440,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Klurichir",
  "size": "H",
  "type": "fiend (demon)",
@@ -3548,7 +3548,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Molydeus",
  "size": "L",
  "type": "fiend (demon)",
@@ -3613,7 +3613,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Juvenile Nabassu",
  "size": "M",
  "type": "fiend (demon)",
@@ -3674,7 +3674,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Mature Nabassu",
  "size": "M",
  "type": "fiend (demon)",
@@ -3754,7 +3754,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Podspawn",
  "size": "S",
  "type": "fiend (demon)",
@@ -3803,7 +3803,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Pod Demon",
  "size": "L",
  "type": "fiend (demon)",
@@ -3881,7 +3881,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Rageborn",
  "size": "M",
  "type": "fiend (demon)",
@@ -3976,7 +3976,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ruin Demon",
  "size": "M",
  "type": "swarm of Tiny fiends (demon)",
@@ -4035,7 +4035,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Runespiral Demon",
  "size": "S",
  "type": "fiend (demon)",
@@ -4088,7 +4088,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Rutterkin",
  "size": "M",
  "type": "fiend (demon)",
@@ -4135,7 +4135,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Scion Of Zuggtmoy",
  "size": "M",
  "type": "plant (demon)",
@@ -4182,7 +4182,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Spore Lord Of Zuggtmoy",
  "size": "M",
  "type": "plant (demon)",
@@ -4230,7 +4230,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Seszrath",
  "size": "H",
  "type": "undead (demon)",
@@ -4290,7 +4290,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Solamith",
  "size": "L",
  "type": "fiend (demon)",
@@ -4344,7 +4344,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sorrowsworn Demon",
  "size": "L",
  "type": "fiend (demon)",
@@ -4415,7 +4415,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tomb Demon",
  "size": "M",
  "type": "fiend (demon)",
@@ -4470,7 +4470,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Voracalith",
  "size": "H",
  "type": "fiend (demon)",
@@ -4523,7 +4523,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wendigo",
  "size": "L",
  "type": "fiend (demon)",
@@ -4599,7 +4599,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Destrachan",
  "size": "L",
  "type": "monstrosity",
@@ -4658,7 +4658,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Displacer Serpent",
  "size": "M",
  "type": "monstrosity",
@@ -4699,7 +4699,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ancient Moon Dragon",
  "size": "G",
  "type": "dragon",
@@ -4815,7 +4815,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Moon Dragon",
  "size": "H",
  "type": "dragon",
@@ -4931,7 +4931,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Moon Dragon",
  "size": "L",
  "type": "dragon",
@@ -5004,7 +5004,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Moon Dragon Wyrmling",
  "size": "M",
  "type": "dragon",
@@ -5058,7 +5058,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ancient Sun Dragon",
  "size": "G",
  "type": "dragon",
@@ -5180,7 +5180,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Sun Dragon",
  "size": "H",
  "type": "dragon",
@@ -5296,7 +5296,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Sun Dragon",
  "size": "L",
  "type": "dragon",
@@ -5369,7 +5369,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sun Dragon Wyrmling",
  "size": "M",
  "type": "dragon",
@@ -5423,7 +5423,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ancient Time Dragon",
  "size": "G",
  "type": "dragon",
@@ -5551,7 +5551,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Time Dragon",
  "size": "H",
  "type": "dragon",
@@ -5673,7 +5673,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Time Dragon",
  "size": "L",
  "type": "dragon",
@@ -5752,7 +5752,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Time Dragon Wyrmling",
  "size": "M",
  "type": "dragon",
@@ -5813,7 +5813,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ancient Void Dragon",
  "size": "G",
  "type": "dragon",
@@ -5929,7 +5929,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Void Dragon",
  "size": "H",
  "type": "dragon",
@@ -6045,7 +6045,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Void Dragon",
  "size": "L",
  "type": "dragon",
@@ -6118,7 +6118,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Void Dragon Wyrmling",
  "size": "M",
  "type": "dragon",
@@ -6172,7 +6172,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ancient Warp Dragon",
  "size": "G",
  "type": "dragon",
@@ -6294,7 +6294,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Warp Dragon",
  "size": "H",
  "type": "dragon",
@@ -6416,7 +6416,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Warp Dragon",
  "size": "L",
  "type": "dragon",
@@ -6489,7 +6489,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Warp Dragon Wyrmling",
  "size": "M",
  "type": "dragon",
@@ -6543,7 +6543,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Drakkoth",
  "size": "L",
  "type": "dragon",
@@ -6609,7 +6609,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dread Guard",
  "size": "M",
  "type": "construct",
@@ -6656,7 +6656,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dread Sentinel",
  "size": "L",
  "type": "construct",
@@ -6706,7 +6706,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dread Ram",
  "size": "L",
  "type": "undead",
@@ -6759,7 +6759,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Briar Witch Dryad",
  "size": "M",
  "type": "fey (shapechanger)",
@@ -6839,7 +6839,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Hallowed Eidolon",
  "size": "L",
  "type": "construct",
@@ -6897,7 +6897,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Rogue Eidolon",
  "size": "L",
  "type": "construct",
@@ -6942,7 +6942,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Equiceph",
  "size": "L",
  "type": "humanoid (equiceph)",
@@ -6995,7 +6995,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Equiceph Raidleader",
  "size": "L",
  "type": "humanoid (equiceph)",
@@ -7048,7 +7048,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ettercap Spiderherd",
  "size": "M",
  "type": "monstrosity",
@@ -7134,7 +7134,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Greater Fihyr",
  "size": "M",
  "type": "aberration",
@@ -7215,7 +7215,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Fihyr",
  "size": "S",
  "type": "aberration",
@@ -7281,7 +7281,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Formian Worker",
  "size": "S",
  "type": "monstrosity",
@@ -7331,7 +7331,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Formian Warrior",
  "size": "M",
  "type": "monstrosity",
@@ -7393,7 +7393,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Formian Taskmaster",
  "size": "M",
  "type": "monstrosity",
@@ -7461,7 +7461,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Formian Myrmarch",
  "size": "L",
  "type": "monstrosity",
@@ -7529,7 +7529,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Formian Queen",
  "size": "L",
  "type": "monstrosity",
@@ -7615,7 +7615,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Frost Salamander",
  "size": "M",
  "type": "monstrosity",
@@ -7677,7 +7677,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Great Frost Salamander",
  "size": "L",
  "type": "monstrosity",
@@ -7739,7 +7739,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Frost Salamander",
  "size": "H",
  "type": "monstrosity",
@@ -7801,7 +7801,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ancient Frost Salamander",
  "size": "G",
  "type": "monstrosity",
@@ -7863,7 +7863,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Frost Worm",
  "size": "H",
  "type": "monstrosity",
@@ -7930,7 +7930,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Death Giant",
  "size": "H",
  "type": "giant",
@@ -8007,7 +8007,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wild Giant",
  "size": "L",
  "type": "giant",
@@ -8061,7 +8061,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wild Giant Bearskin",
  "size": "L",
  "type": "giant",
@@ -8146,7 +8146,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wild Giant Huntmaster",
  "size": "L",
  "type": "giant",
@@ -8227,7 +8227,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wild Giant Ravenspeaker",
  "size": "L",
  "type": "giant",
@@ -8311,7 +8311,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Girallon Alpha",
  "size": "L",
  "type": "monstrosity",
@@ -8376,7 +8376,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Gray Render",
  "size": "L",
  "type": "monstrosity",
@@ -8429,7 +8429,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Gremlin",
  "size": "T",
  "type": "fey",
@@ -8494,7 +8494,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Grisgol",
  "size": "L",
  "type": "construct",
@@ -8567,7 +8567,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Gulgar",
  "size": "L",
  "type": "elemental",
@@ -8659,7 +8659,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Harbinger Beast",
  "size": "L",
  "type": "monstrosity",
@@ -8712,7 +8712,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Harpoon Spider",
  "size": "H",
  "type": "monstrosity",
@@ -8786,7 +8786,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Howler",
  "size": "L",
  "type": "fiend",
@@ -8844,7 +8844,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Howler Wasp",
  "size": "S",
  "type": "monstrosity",
@@ -8900,7 +8900,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Howler Wasp Soldier",
  "size": "M",
  "type": "monstrosity",
@@ -8959,7 +8959,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Howler Wasp Queen",
  "size": "L",
  "type": "monstrosity",
@@ -9018,7 +9018,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Howling Echo",
  "size": "M",
  "type": "undead",
@@ -9083,7 +9083,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ibixian",
  "size": "M",
  "type": "humanoid (ibixian)",
@@ -9136,7 +9136,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Igneous Strider",
  "size": "M",
  "type": "monstrosity",
@@ -9184,7 +9184,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Inferno Spider",
  "size": "L",
  "type": "elemental",
@@ -9252,7 +9252,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Iron Cobra",
  "size": "M",
  "type": "construct",
@@ -9296,7 +9296,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Kopru",
  "size": "M",
  "type": "aberration",
@@ -9354,7 +9354,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Kopru Abomination",
  "size": "L",
  "type": "aberration",
@@ -9404,7 +9404,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Krenshar",
  "size": "M",
  "type": "monstrosity",
@@ -9463,7 +9463,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Hatchling Kruthik",
  "size": "S",
  "type": "monstrosity",
@@ -9510,7 +9510,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Kruthik",
  "size": "M",
  "type": "monstrosity",
@@ -9575,7 +9575,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Greater Kruthik",
  "size": "L",
  "type": "monstrosity",
@@ -9640,7 +9640,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Larva Mage",
  "size": "M",
  "type": "swarm of Tiny aberrations",
@@ -9749,7 +9749,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Worm That Walks",
  "size": "H",
  "type": "swarm of Tiny aberrations",
@@ -9882,7 +9882,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blackscale Lizardfolk",
  "size": "L",
  "type": "humanoid (lizardfolk)",
@@ -9941,7 +9941,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Poison Dusk Lizardfolk",
  "size": "S",
  "type": "humanoid (lizardfolk)",
@@ -10000,7 +10000,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sunscale Lizardfolk",
  "size": "M",
  "type": "humanoid (lizardfolk)",
@@ -10042,7 +10042,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Lodestone Marauder",
  "size": "L",
  "type": "monstrosity",
@@ -10107,7 +10107,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Lunar Ravager",
  "size": "L",
  "type": "fey",
@@ -10169,7 +10169,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Magma Hurler",
  "size": "M",
  "type": "elemental",
@@ -10227,7 +10227,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Maug",
  "size": "L",
  "type": "construct",
@@ -10300,7 +10300,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Meazel",
  "size": "M",
  "type": "humanoid (meazel)",
@@ -10359,7 +10359,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Meenlock Half-Spawn",
  "size": "S",
  "type": "fey",
@@ -10412,7 +10412,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Merskarab",
  "size": "M",
  "type": "swarm of Tiny aberrations (shapechanger)",
@@ -10466,7 +10466,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Spellcasting Merskarab",
  "size": "M",
  "type": "swarm of Tiny aberrations (shapechanger)",
@@ -10531,7 +10531,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Mirror Mimic",
  "size": "M",
  "type": "monstrostiy (shapechanger)",
@@ -10585,7 +10585,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wandering Tower",
  "size": "G",
  "type": "monstrosity (shapechanger)",
@@ -10719,7 +10719,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Mohrg",
  "size": "M",
  "type": "undead",
@@ -10772,7 +10772,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Banelar",
  "size": "H",
  "type": "monstrosity",
@@ -10851,7 +10851,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bright Naga",
  "size": "L",
  "type": "monstrosity",
@@ -10892,7 +10892,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nagpa",
  "size": "M",
  "type": "humanoid (nagpa)",
@@ -10967,7 +10967,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Kalareem",
  "size": "M",
  "type": "humanoid (nerra)",
@@ -11042,7 +11042,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sillit",
  "size": "M",
  "type": "humanoid (nerra)",
@@ -11112,7 +11112,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Varoot",
  "size": "M",
  "type": "humanoid (nerra)",
@@ -11181,7 +11181,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nightcrawler",
  "size": "G",
  "type": "undead",
@@ -11278,7 +11278,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nightwalker",
  "size": "H",
  "type": "undead",
@@ -11369,7 +11369,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nightwing",
  "size": "H",
  "type": "undead",
@@ -11447,7 +11447,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nixie",
  "size": "T",
  "type": "fey",
@@ -11502,7 +11502,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Norker",
  "size": "S",
  "type": "humanoid (goblinoid)",
@@ -11542,7 +11542,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Norker Stonewalker",
  "size": "S",
  "type": "elemental (goblinoid)",
@@ -11602,7 +11602,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Avathu",
  "size": "H",
  "type": "fiend (obyrith)",
@@ -11672,7 +11672,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bhasylit",
  "size": "T",
  "type": "fiend (obyrith)",
@@ -11722,7 +11722,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Cyoturma",
  "size": "L",
  "type": "fiend (obyrith)",
@@ -11812,7 +11812,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Draudnu",
  "size": "M",
  "type": "fiend (obyrith)",
@@ -11868,7 +11868,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ekolid",
  "size": "S",
  "type": "fiend (obyrith)",
@@ -11930,7 +11930,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Golothoma",
  "size": "H",
  "type": "fiend (obyrith)",
@@ -11998,7 +11998,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Inoqua",
  "size": "G",
  "type": "fiend (obyrith)",
@@ -12126,7 +12126,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Isaati",
  "size": "M",
  "type": "fiend (obyrith)",
@@ -12188,7 +12188,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nethui",
  "size": "L",
  "type": "fiend (obyrith)",
@@ -12253,7 +12253,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sibiriex",
  "size": "L",
  "type": "fiend (obyrith)",
@@ -12359,7 +12359,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ysolith",
  "size": "L",
  "type": "fiend (obyrith)",
@@ -12442,7 +12442,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ophidian",
  "size": "M",
  "type": "monstrosity",
@@ -12501,7 +12501,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Penanggalan",
  "size": "M",
  "type": "undead",
@@ -12564,7 +12564,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Phane",
  "size": "L",
  "type": "monstrosity",
@@ -12639,7 +12639,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Phantom Fungus",
  "size": "M",
  "type": "plant",
@@ -12680,7 +12680,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Phargion",
  "size": "M",
  "type": "monstrosity",
@@ -12721,7 +12721,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Primal Werebear",
  "size": "L",
  "type": "monstrosity (shapechanger)",
@@ -12783,7 +12783,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Primal Wereboar",
  "size": "L",
  "type": "monstrosity (shapechanger)",
@@ -12851,7 +12851,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Primal Wererat",
  "size": "M",
  "type": "monstrosity (shapechanger)",
@@ -12912,7 +12912,7 @@
  "reaction": [],
  "legendary": []
 },{
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Primal Weretiger",
  "size": "L",
  "type": "monstrosity (shapechanger)",
@@ -12980,7 +12980,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Primal Werewolf",
  "size": "L",
  "type": "monstrosity (shapechanger)",
@@ -13042,7 +13042,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Protectar Custodian",
  "size": "M",
  "type": "celestial",
@@ -13093,7 +13093,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Protectar",
  "size": "M",
  "type": "celestial",
@@ -13138,7 +13138,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Quicksilver",
  "size": "T",
  "type": "fey",
@@ -13199,7 +13199,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ramadeen",
  "size": "L",
  "type": "celestial",
@@ -13254,7 +13254,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ramadeen Lieutenant",
  "size": "L",
  "type": "celestial",
@@ -13315,7 +13315,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Rast",
  "size": "M",
  "type": "elemental",
@@ -13380,7 +13380,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ravid",
  "size": "M",
  "type": "monstrosity",
@@ -13439,7 +13439,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Redcap",
  "size": "S",
  "type": "fey",
@@ -13504,7 +13504,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Rot Harbinger",
  "size": "M",
  "type": "undead",
@@ -13556,7 +13556,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sanguineous Drinker",
  "size": "M",
  "type": "undead",
@@ -13604,7 +13604,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Scaled Stalker Bandleader",
  "size": "L",
  "type": "monstrosity",
@@ -13665,7 +13665,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Scaled Stalker Grunt",
  "size": "L",
  "type": "monstrosity",
@@ -13714,7 +13714,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Shadar-Kai",
  "size": "M",
  "type": "fey",
@@ -13787,7 +13787,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ghirrash",
  "size": "L",
  "type": "monstrosity",
@@ -13855,7 +13855,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Khumat",
  "size": "L",
  "type": "monstrosity",
@@ -13917,7 +13917,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Thaskor",
  "size": "L",
  "type": "monstrosity",
@@ -13979,7 +13979,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Shardmind Psion",
  "size": "M",
  "type": "humanoid (shardmind)",
@@ -14035,7 +14035,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Shardmind Warrior",
  "size": "M",
  "type": "humanoid (shardmind)",
@@ -14083,7 +14083,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Shardsoul Slayer",
  "size": "M",
  "type": "construct",
@@ -14135,7 +14135,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Shocker Lizard",
  "size": "S",
  "type": "monstrosity",
@@ -14187,7 +14187,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skulk",
  "size": "M",
  "type": "humanoid (skulk)",
@@ -14252,7 +14252,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skull Lord",
  "size": "M",
  "type": "undead",
@@ -14347,7 +14347,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skullbat",
  "size": "T",
  "type": "undead",
@@ -14394,7 +14394,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skum",
  "size": "M",
  "type": "aberration",
@@ -14447,7 +14447,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Spark Lasher",
  "size": "M",
  "type": "aberration",
@@ -14495,7 +14495,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Spectral Steed",
  "size": "L",
  "type": "undead",
@@ -14554,7 +14554,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Spell Weaver",
  "size": "M",
  "type": "monstrosity",
@@ -14649,7 +14649,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Spriggan",
  "size": "S",
  "type": "fey",
@@ -14709,7 +14709,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Steel Predator",
  "size": "L",
  "type": "elemental",
@@ -14789,7 +14789,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Stone Spike",
  "size": "M",
  "type": "elemental",
@@ -14836,7 +14836,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Stonechild",
  "size": "M",
  "type": "elemental",
@@ -14885,7 +14885,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Su Monster",
  "size": "M",
  "type": "monstrosity",
@@ -14951,7 +14951,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Swarm Husk",
  "size": "M",
  "type": "swarm of Tiny aberrations",
@@ -15009,7 +15009,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Swarm Of Parasite Worms",
  "size": "M",
  "type": "swarm of Tiny aberrations",
@@ -15056,7 +15056,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Thoqqua",
  "size": "M",
  "type": "elemental",
@@ -15102,7 +15102,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Thorn",
  "size": "S",
  "type": "fey",
@@ -15149,7 +15149,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Juvenile Tojanida",
  "size": "S",
  "type": "elemental",
@@ -15218,7 +15218,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Adult Tojanida",
  "size": "M",
  "type": "elemental",
@@ -15287,7 +15287,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Tojanida",
  "size": "L",
  "type": "elemental",
@@ -15356,7 +15356,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tulgar Warrior",
  "size": "M",
  "type": "humanoid (tulgar)",
@@ -15418,7 +15418,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tulgar Spirit Talker",
  "size": "M",
  "type": "humanoid (tulgar)",
@@ -15488,7 +15488,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tulgar Half-Spirit",
  "size": "M",
  "type": "humanoid (tulgar)",
@@ -15565,7 +15565,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Ulgurstasta",
  "size": "G",
  "type": "undead",
@@ -15637,7 +15637,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Vampiric Mist",
  "size": "M",
  "type": "monstrosity",
@@ -15702,7 +15702,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Verbeeg",
  "size": "L",
  "type": "giant",
@@ -15755,7 +15755,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Vivisector",
  "size": "M",
  "type": "aberration",
@@ -15827,7 +15827,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Walking Wall",
  "size": "M",
  "type": "elemental",
@@ -15874,7 +15874,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wicker Man",
  "size": "H",
  "type": "construct",
@@ -15937,7 +15937,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Shrieker Effigy",
  "size": "S",
  "type": "construct",
@@ -15992,7 +15992,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Harrier Effigy",
  "size": "S",
  "type": "construct",
@@ -16035,7 +16035,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wilden",
  "size": "M",
  "type": "humanoid (wilden)",
@@ -16085,7 +16085,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tree Woad",
  "size": "L",
  "type": "plant",
@@ -16154,7 +16154,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Wrackspawn",
  "size": "M",
  "type": "fiend",
@@ -16207,7 +16207,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Xill",
  "size": "M",
  "type": "aberration",
@@ -16277,7 +16277,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Xvart Degenerate",
  "size": "S",
  "type": "humanoid (xvart)",
@@ -16355,7 +16355,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Yrthak",
  "size": "H",
  "type": "monstrosity",
@@ -16417,7 +16417,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dergholoth",
  "size": "L",
  "type": "fiend",
@@ -16470,7 +16470,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Hydroloth",
  "size": "L",
  "type": "fiend",
@@ -16538,7 +16538,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Piscoloth",
  "size": "M",
  "type": "fiend",
@@ -16597,7 +16597,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Voor",
  "size": "L",
  "type": "fiend",
@@ -16665,7 +16665,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dreadful Lasher Voor",
  "size": "H",
  "type": "fiend",
@@ -16733,7 +16733,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Yagnoloth",
  "size": "L",
  "type": "fiend",
@@ -16820,7 +16820,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Awakened Vine",
  "size": "M",
  "type": "plant",
@@ -16858,7 +16858,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blood Raven",
  "size": "T",
  "type": "beast",
@@ -16899,7 +16899,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Blue Whale",
  "size": "G",
  "type": "beast",
@@ -16946,7 +16946,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Chameleon",
  "size": "T",
  "type": "beast",
@@ -16999,7 +16999,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Chicken",
  "size": "T",
  "type": "beast",
@@ -17030,7 +17030,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Colossus Crab",
  "size": "H",
  "type": "beast",
@@ -17083,7 +17083,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Corpsefly",
  "size": "T",
  "type": "beast",
@@ -17124,7 +17124,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dire Rat",
  "size": "M",
  "type": "beast",
@@ -17168,7 +17168,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Dire Rat (Diseased)",
  "size": "M",
  "type": "beast",
@@ -17212,7 +17212,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Fox",
  "size": "T",
  "type": "beast",
@@ -17253,7 +17253,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Bear",
  "size": "H",
  "type": "beast",
@@ -17306,7 +17306,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Chameleon",
  "size": "L",
  "type": "beast",
@@ -17359,7 +17359,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Maggot",
  "size": "T",
  "type": "beast",
@@ -17396,7 +17396,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Seal",
  "size": "L",
  "type": "beast",
@@ -17437,7 +17437,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Snapping Turtle",
  "size": "L",
  "type": "beast",
@@ -17484,7 +17484,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Tortoise",
  "size": "M",
  "type": "beast",
@@ -17522,7 +17522,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Giant Waterbear",
  "size": "L",
  "type": "beast",
@@ -17570,7 +17570,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Gravehound",
  "size": "M",
  "type": "undead",
@@ -17613,7 +17613,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Great Crab",
  "size": "L",
  "type": "beast",
@@ -17660,7 +17660,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Great Wolf",
  "size": "H",
  "type": "beast",
@@ -17707,7 +17707,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Hippopotamus",
  "size": "L",
  "type": "beast",
@@ -17745,7 +17745,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Iron Defender",
  "size": "S",
  "type": "construct",
@@ -17788,7 +17788,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Lesser Barghest",
  "size": "M",
  "type": "fiend (shapechanger)",
@@ -17850,7 +17850,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Mad Slasher",
  "size": "M",
  "type": "aberration",
@@ -17900,7 +17900,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Pigeon",
  "size": "T",
  "type": "beast",
@@ -17931,7 +17931,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Rabbit",
  "size": "T",
  "type": "beast",
@@ -17978,7 +17978,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sea Leopard",
  "size": "L",
  "type": "beast",
@@ -18025,7 +18025,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sea Turtle",
  "size": "M",
  "type": "beast",
@@ -18069,7 +18069,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Seal",
  "size": "M",
  "type": "beast",
@@ -18110,7 +18110,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Snapping Turtle",
  "size": "S",
  "type": "beast",
@@ -18154,7 +18154,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Sperm Whale",
  "size": "G",
  "type": "beast",
@@ -18207,7 +18207,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Squirrel",
  "size": "T",
  "type": "beast",
@@ -18248,7 +18248,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Swarm Of Blood Ravens",
  "size": "M",
  "type": "swarm of Tiny beasts",
@@ -18297,7 +18297,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Swarm Of Corpseflies",
  "size": "M",
  "type": "swarm of Tiny beast",
@@ -18346,7 +18346,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Swarm Of Giant Maggots",
  "size": "M",
  "type": "swarm of Tiny beasts",
@@ -18392,7 +18392,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Swarm Of Squirrels",
  "size": "M",
  "type": "swarm of Tiny beasts",
@@ -18441,7 +18441,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tortoise",
  "size": "T",
  "type": "beast",
@@ -18479,7 +18479,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Turtle",
  "size": "T",
  "type": "beast",
@@ -18523,7 +18523,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Yeth Jackal",
  "size": "M",
  "type": "fey",
@@ -18583,7 +18583,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Bonespur",
  "size": "L",
  "type": "undead",
@@ -18636,7 +18636,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Serpentir",
  "size": "L",
  "type": "undead",
@@ -18700,7 +18700,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Beast (Small)",
  "size": "S",
  "type": "undead",
@@ -18733,7 +18733,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Beast (Medium)",
  "size": "M",
  "type": "undead",
@@ -18766,7 +18766,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Beast (Large)",
  "size": "L",
  "type": "undead",
@@ -18817,7 +18817,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Beastfolk (Small)",
  "size": "S",
  "type": "undead",
@@ -18850,7 +18850,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Beastfolk (Medium)",
  "size": "M",
  "type": "undead",
@@ -18907,7 +18907,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Beastfolk (Large)",
  "size": "L",
  "type": "undead",
@@ -18964,7 +18964,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Charger (Medium)",
  "size": "M",
  "type": "undead",
@@ -19004,7 +19004,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Charger (Large)",
  "size": "L",
  "type": "undead",
@@ -19056,7 +19056,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Charger (Huge)",
  "size": "L",
  "type": "undead",
@@ -19108,7 +19108,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Dragon (Tiny)",
  "size": "T",
  "type": "undead",
@@ -19147,7 +19147,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Dragon (Small)",
  "size": "S",
  "type": "undead",
@@ -19180,7 +19180,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Dragon (Medium)",
  "size": "M",
  "type": "undead",
@@ -19213,7 +19213,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Dragon (Large)",
  "size": "L",
  "type": "undead",
@@ -19258,7 +19258,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Dragon (Huge)",
  "size": "H",
  "type": "undead",
@@ -19328,7 +19328,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Dragon (Gargantuan)",
  "size": "G",
  "type": "undead",
@@ -19410,7 +19410,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Humanoid (Small)",
  "size": "S",
  "type": "undead",
@@ -19449,7 +19449,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Humanoid (Large)",
  "size": "L",
  "type": "undead",
@@ -19488,7 +19488,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Skeleton Humanoid (Huge)",
  "size": "H",
  "type": "undead",
@@ -19533,7 +19533,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Tomb Guardian Skeleton",
  "size": "M",
  "type": "undead",
@@ -19588,7 +19588,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Beast (Small)",
  "size": "S",
  "type": "undead",
@@ -19628,7 +19628,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Beast (Medium)",
  "size": "M",
  "type": "undead",
@@ -19668,7 +19668,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Beast (Large)",
  "size": "L",
  "type": "undead",
@@ -19720,7 +19720,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Beastfolk (Small)",
  "size": "S",
  "type": "undead",
@@ -19760,7 +19760,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Beastfolk (Medium)",
  "size": "M",
  "type": "undead",
@@ -19812,7 +19812,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Beastfolk (Large)",
  "size": "L",
  "type": "undead",
@@ -19870,7 +19870,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Charger (Medium)",
  "size": "M",
  "type": "undead",
@@ -19916,7 +19916,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Charger (Large)",
  "size": "L",
  "type": "undead",
@@ -19974,7 +19974,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Charger (Huge)",
  "size": "H",
  "type": "undead",
@@ -20032,7 +20032,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Dragon (Tiny)",
  "size": "T",
  "type": "undead",
@@ -20078,7 +20078,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Dragon (Small)",
  "size": "S",
  "type": "undead",
@@ -20118,7 +20118,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Dragon (Medium)",
  "size": "M",
  "type": "undead",
@@ -20158,7 +20158,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Dragon (Large)",
  "size": "L",
  "type": "undead",
@@ -20216,7 +20216,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Dragon (Huge)",
  "size": "H",
  "type": "undead",
@@ -20293,7 +20293,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Dragon (Gargantuan)",
  "size": "G",
  "type": "undead",
@@ -20376,7 +20376,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Humanoid (Small)",
  "size": "S",
  "type": "undead",
@@ -20416,7 +20416,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Zombie Humanoid (Huge)",
  "size": "H",
  "type": "undead",
@@ -20462,7 +20462,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nascent Air Elemental",
  "size": "S",
  "type": "elemental",
@@ -20509,7 +20509,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nascent Earth Elemental",
  "size": "S",
  "type": "elemental",
@@ -20556,7 +20556,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nascent Fire Elemental",
  "size": "S",
  "type": "elemental",
@@ -20609,7 +20609,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Nascent Water Elemental",
  "size": "S",
  "type": "elemental",
@@ -20663,7 +20663,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Air Elemental",
  "size": "M",
  "type": "elemental",
@@ -20716,7 +20716,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Earth Elemental",
  "size": "M",
  "type": "elemental",
@@ -20769,7 +20769,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Fire Elemental",
  "size": "M",
  "type": "elemental",
@@ -20828,7 +20828,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Young Water Elemental",
  "size": "M",
  "type": "elemental",
@@ -20888,7 +20888,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Air Elemental",
  "size": "H",
  "type": "elemental",
@@ -20944,7 +20944,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Earth Elemental",
  "size": "H",
  "type": "elemental",
@@ -21000,7 +21000,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Fire Elemental",
  "size": "H",
  "type": "elemental",
@@ -21062,7 +21062,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Elder Water Elemental",
  "size": "H",
  "type": "elemental",
@@ -21125,7 +21125,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Legendary Air Elemental",
  "size": "G",
  "type": "elemental",
@@ -21212,7 +21212,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Legendary Earth Elemental",
  "size": "G",
  "type": "elemental",
@@ -21299,7 +21299,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Legendary Fire Elemental",
  "size": "G",
  "type": "elemental",
@@ -21392,7 +21392,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Legendary Water Elemental",
  "size": "G",
  "type": "elemental",
@@ -21486,7 +21486,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Artificial Giant Crab",
  "size": "M",
  "type": "construct",
@@ -21522,7 +21522,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Half-Celestial Human Champion",
  "size": "M",
  "type": "celestial (human)",
@@ -21590,7 +21590,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Celestial Giant Elk",
  "size": "L",
  "type": "celestial",
@@ -21639,7 +21639,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Fire Wolf",
  "size": "M",
  "type": "elemental",
@@ -21688,7 +21688,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Fiendish Owlbear",
  "size": "L",
  "type": "fiend",
@@ -21744,7 +21744,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Half-Fiend Minotaur",
  "size": "L",
  "type": "fiend",
@@ -21812,7 +21812,7 @@
  "legendary": []
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Legendary Cyclops",
  "size": "H",
  "type": "giant",
@@ -21899,7 +21899,7 @@
  ]
 },
 {
- "source": "critter compendium",
+ "source": "CC 3pp",
  "name": "Phantasmal Ancient Green Dragon",
  "size": "G",
  "type": "construct",

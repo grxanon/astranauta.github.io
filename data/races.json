@@ -2548,9 +2548,14 @@
 					"name": "Relentless Nature",
 					"text": [
 						"Your DM assigns a goal to you\u2014typically, one related to your character's death. The goal must be a specific task you can complete, such as slaying an enemy or liberating an area and its people. Until you fulfill that goal, you gain the following benefits:",
-						"• If you are below half your hit point maximum at the start of your turn, you regain 1 hit point. ",
-						"• If you die, you return to life 24 hours after death. If your body is destroyed, you reform within 1 mile of the place of your death at a spot determined by the DM. If your equipment was also destroyed, you do not regain it.",
-						"• You know the distance and direction between you and any creature involved in your goal, such as a person you seek vengeance against or someone you pledged to defend. This awareness fails if the creature is on another plane of existence. ",
+						{
+							"type": "list",
+							"items": [
+								"If you are below half your hit point maximum at the start of your turn, you regain 1 hit point.",
+								"If you die, you return to life 24 hours after death. If your body is destroyed, you reform within 1 mile of the place of your death at a spot determined by the DM. If your equipment was also destroyed, you do not regain it.",
+								"You know the distance and direction between you and any creature involved in your goal, such as a person you seek vengeance against or someone you pledged to defend. This awareness fails if the creature is on another plane of existence."
+							]
+						},
 						"When your goal is complete, you finally find rest. You die and cannot be restored to life."
 					]
 				}
@@ -3863,7 +3868,7 @@
 			"speed": "30",
 			"trait": [
 				{
-					"name": "Decadent Mastery ",
+					"name": "Decadent Mastery",
 					"text": [
 						"You learn one language of your choice, and you are proficient with one skill or tool of your choice. In the timeless city of Tu'narath, githyanki have bountiful time to master odd bits of knowledge."
 					]
@@ -4508,7 +4513,7 @@
 			]
 		},
 		{
-			"name": "Grung (Runt)",
+			"name": "Grung",
 			"source": "OGA",
 			"size": "S",
 			"speed": {
@@ -4522,200 +4527,52 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Standing Leap",
+					"name": "Arboreal Alertness",
 					"entries": [
-						"As a grung, your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "High Energy",
-					"entries": [
-						"Grung are naturally active and quick to recover. You only need to take 30 minutes to gain the benefits of a short rest and 4 hours to gain the benefits of a long rest."
+						"You have proficiency in the Perception skill."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Amphibious",
 					"entries": [
-						"You can breathe in water and air. You breathe through your skin, like other amphibians."
+						"You can breathe air and water."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poison Immunity",
+					"entries": [
+						"You’re immune to poison damage and the poisoned condition."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Poisonous Skin",
 					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a Constitution saving throw or become poisoned for 1 minute and suffers an additional effect based on the coloration of your grung (see subraces). A poisoned creature no longer in direct contact with your body can repeat the saving throw at the end of each of its turns, ending the effect on a success. The DC for this saving throw equals 8 + 1/2 your level (rounded up)."
+						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a DC 12 Constitution saving throw or take 2d4 poison damage."
 					]
 				},
-				{
-					"type": "entries",
-					"name": "Water Dependency ",
-					"entries": [
-						"As a grung, you must immerse yourself in water at least one hour during the day or gain one level of exhaustion at the end of that day. You can only recover from this exhaustion by immersing yourself in water for an hour or through magical means."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read and write common. You can also speak grung, though they do not have a written language."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Poisonous Skin Addition Affects",
-					"entries": [
-						"Depending on the coloration you select during character creation, your grung will have one of the following additional affects through their poisonous skin trait.",
-						{
-							"type": "list",
-							"items": [
-								"{@italic {@bold Green Skin:}} The poisoned creature can't move except to climb or make standing jumps. If the creature is flying, it can't take any actions or reactions unless it lands.",
-								"{@italic {@bold Blue Skin:}} The poisoned creature must shout loudly or otherwise make a loud noise at the start of its turns.",
-								"{@italic {@bold Purple Skin:}} The poisoned creature feels a desperate need to soak itself in liquids or mud. It can't take actions or move except to do so or to reach a body of liquid or mud."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Grung (Wildling)",
-			"source": "OGA",
-			"size": "S",
-			"speed": {
-				"walk": 25,
-				"climb": 25
-			},
-			"ability": {
-				"dex": 2,
-				"wis": 1
-			},
-			"entries": [
 				{
 					"type": "entries",
 					"name": "Standing Leap",
 					"entries": [
-						"As a grung, your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
+						"Your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "High Energy",
+					"name": "Water Dependency",
 					"entries": [
-						"Grung are naturally active and quick to recover. You only need to take 30 minutes to gain the benefits of a short rest and 4 hours to gain the benefits of a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Amphibious",
-					"entries": [
-						"You can breathe in water and air. You breathe through your skin, like other amphibians."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Poisonous Skin",
-					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a Constitution saving throw or become poisoned for 1 minute and suffers an additional effect based on the coloration of your grung (see subraces). A poisoned creature no longer in direct contact with your body can repeat the saving throw at the end of each of its turns, ending the effect on a success. The DC for this saving throw equals 8 + 1/2 your level (rounded up)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Water Dependency ",
-					"entries": [
-						"As a grung, you must immerse yourself in water at least one hour during the day or gain one level of exhaustion at the end of that day. You can only recover from this exhaustion by immersing yourself in water for an hour or through magical means."
+						"If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of exhaustion at the end of that day. You can only recover from this exhaustion through magic or by immersing yourself in water for at least 1 hour."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Languages",
 					"entries": [
-						"You can speak, read and write common. You can also speak grung, though they do not have a written language."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Poisonous Skin Addition Affects",
-					"entries": [
-						"Depending on the coloration you select during character creation, your grung will have one of the following additional affects through their poisonous skin trait.",
-						{
-							"type": "list",
-							"items": [
-								"{@italic {@bold Red Skin:}} The poisoned creature must use its action to eat if food is within reach."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Grung (Elite)",
-			"source": "OGA",
-			"size": "S",
-			"speed": {
-				"walk": 25,
-				"climb": 25
-			},
-			"ability": {
-				"dex": 2,
-				"cha": 1
-			},
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Standing Leap",
-					"entries": [
-						"As a grung, your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "High Energy",
-					"entries": [
-						"Grung are naturally active and quick to recover. You only need to take 30 minutes to gain the benefits of a short rest and 4 hours to gain the benefits of a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Amphibious",
-					"entries": [
-						"You can breathe in water and air. You breathe through your skin, like other amphibians."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Poisonous Skin",
-					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a Constitution saving throw or become poisoned for 1 minute and suffers an additional effect based on the coloration of your grung (see subraces). A poisoned creature no longer in direct contact with your body can repeat the saving throw at the end of each of its turns, ending the effect on a success. The DC for this saving throw equals 8 + 1/2 your level (rounded up)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Water Dependency ",
-					"entries": [
-						"As a grung, you must immerse yourself in water at least one hour during the day or gain one level of exhaustion at the end of that day. You can only recover from this exhaustion by immersing yourself in water for an hour or through magical means."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read and write common. You can also speak grung, though they do not have a written language."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Poisonous Skin Addition Affects",
-					"entries": [
-						"Depending on the coloration you select during character creation, your grung will have one of the following additional affects through their poisonous skin trait.",
-						{
-							"type": "list",
-							"items": [
-								"{@italic {@bold Orange Skin:}} The poisoned creature is frightened of its allies.",
-								"{@italic {@bold Gold Skin:}} The poisoned creature is charmed and can speak Grung."
-							]
-						}
+						"You can speak, read, and write Grung."
 					]
 				}
 			]

@@ -1,6 +1,6 @@
-const HASH_PART_SEP = ",";
-const HASH_LIST_SEP = "_";
-const HASH_START = "#";
+HASH_PART_SEP = ",";
+HASH_LIST_SEP = "_";
+HASH_START = "#";
 
 STR_EMPTY = "";
 STR_VOID_LINK = "javascript:void(0)";
@@ -47,16 +47,8 @@ FLTR_SOURCE = "filterSource";
 FLTR_TYPE = "filterType";
 FLTR_CR = "filterCr";
 FLTR_3PP = "filter3pp";
-FLTR_ABILITIES = "filterAbilities";
 FLTR_ORDER = "filterOrder";
-FLTR_ABILITIES_CHOOSE = "filterAbilitiesChoose";
 FLTR_SIZE = "filterSize";
-FLTR_LEVEL = "filterLevel";
-FLTR_SCHOOL = "filterSchool";
-FLTR_RANGE = "filterRange";
-FLTR_CLASS = "filterClass";
-FLTR_META = "filterMeta";
-FLTR_ACTION = "filterAction";
 FLTR_TIER = "filterTier";
 FLTR_RARITY = "filterRarity";
 FLTR_ATTUNEMENT = "filterAttunement";
@@ -72,6 +64,7 @@ ATB_DATA_SC = "data-subclass";
 ATB_DATA_SRC = "data-source";
 
 STR_CANTRIP = "Cantrip";
+STR_NONE = "None";
 
 RNG_SPECIAL =  "special";
 RNG_POINT =  "point";
@@ -89,6 +82,14 @@ RNG_TOUCH = "touch";
 
 UNT_FEET = "feet";
 UNT_MILES = "miles";
+
+ABIL_STR = "Strength";
+ABIL_DEX = "Dexterity";
+ABIL_CON = "Constitution";
+ABIL_INT = "Intelligence";
+ABIL_WIS = "Wisdom";
+ABIL_CHA = "Charisma";
+ABIL_CH_ANY = "Choose Any";
 
 // STRING ==============================================================================================================
 // Appropriated from StackOverflow (literally, the site uses this code)
@@ -373,10 +374,10 @@ function utils_makePrerequisite(prereqList, shorthand, makeAsArray) {
 }
 
 class AbilityData {
-	constructor(asText, asCollection) {
+	constructor(asText, asTextShort, asCollection) {
 		this.asText = asText;
+		this.asTextShort = asTextShort;
 		this.asCollection = asCollection;
-		this.asFilterCollection = asCollection.join(FLTR_LIST_SEP);
 	}
 }
 function utils_getAbilityData(abObj) {
@@ -384,12 +385,13 @@ function utils_getAbilityData(abObj) {
 	const mainAbs = [];
 	const allAbs = [];
 	const abs = [];
+	const shortAbs = [];
 	if (abObj !== undefined) {
 		handleAllAbilities(abObj);
 		handleAbilitiesChoose();
-		return new AbilityData(abs.join("; "), allAbs);
+		return new AbilityData(abs.join("; "), shortAbs.join("; "), allAbs);
 	}
-	return new AbilityData("", []);
+	return new AbilityData("", "", []);
 
 	function handleAllAbilities(abilityList) {
 		for (let a = 0; a < ABILITIES.length; ++a) {
@@ -399,7 +401,9 @@ function utils_getAbilityData(abObj) {
 
 	function handleAbility(parent, ab) {
 		if (parent[ab.toLowerCase()] !== undefined) {
-			abs.push(ab + " " + (parent[ab.toLowerCase()] < 0 ? "" : "+") + parent[ab.toLowerCase()]);
+			const toAdd = `${ab} ${(parent[ab.toLowerCase()] < 0 ? "" : "+")}${parent[ab.toLowerCase()]}`;
+			abs.push(toAdd);
+			shortAbs.push(toAdd);
 			mainAbs.push(ab);
 			allAbs.push(ab.toLowerCase());
 		}
@@ -409,7 +413,7 @@ function utils_getAbilityData(abObj) {
 		if (abObj.choose !== undefined) {
 			for (let i = 0; i < abObj.choose.length; ++i) {
 				const item = abObj.choose[i];
-				let outStack = "Choose ";
+				let outStack = "";
 				if (item.predefined !== undefined) {
 					for (let j = 0; j < item.predefined.length; ++j) {
 						const subAbs = [];
@@ -451,9 +455,9 @@ function utils_getAbilityData(abObj) {
 						}
 					}
 				}
-				abs.push(outStack)
+				abs.push("Choose " + outStack);
+				shortAbs.push(outStack.uppercaseFirst());
 			}
-
 		}
 	}
 
@@ -529,6 +533,15 @@ Parser.crToXp = function (cr) {
 	return Parser._addCommas (Parser.XP_CHART[parseInt(cr)-1]);
 };
 
+LEVEL_TO_XP_EASY = [0, 25, 50, 75, 125, 250, 300, 350, 450, 550, 600, 800, 1000, 1100, 1250, 1400, 1600, 2000, 2100, 2400, 2800];
+LEVEL_TO_XP_MEDIUM = [0, 50, 100, 150, 250, 500, 600, 750, 900, 1100, 1200, 1600, 2000, 2200, 2500, 2800, 3200, 3900, 4100, 4900, 5700];
+LEVEL_TO_XP_HARD = [0, 75, 150, 225, 375, 750, 900, 1100, 1400, 1600, 1900, 2400, 3000, 3400, 3800, 4300, 4800, 5900, 6300, 7300, 8500];
+LEVEL_TO_XP_DEADLY = [0, 100, 200, 400, 500, 1100, 1400, 1700, 2100, 2400, 2800, 3600, 4500, 5100, 5700, 6400, 7200, 8800, 9500, 10900, 12700];
+
+Parser.levelToXpThreshold = function (level) {
+	return [LEVEL_TO_XP_EASY[level], LEVEL_TO_XP_MEDIUM[level], LEVEL_TO_XP_HARD[level], LEVEL_TO_XP_DEADLY[level]];
+};
+
 Parser.crToNumber = function (cr) {
 	if (cr === "Unknown" || cr === undefined) return 100;
 	const parts = cr.trim().split("/");
@@ -543,6 +556,14 @@ Parser.armorFullToAbv= function (armor) {
 
 Parser.sourceJsonToFull = function (source) {
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source).replace("'", STR_APOSTROPHE);
+};
+Parser.sourceJsonToFullCompactPrefix = function (source) {
+	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source)
+		.replace("'", STR_APOSTROPHE)
+		.replace(UA_PREFIX, UA_PREFIX_SHORT)
+		.replace(DM_PREFIX, DM_PREFIX_SHORT)
+		.replace(AL_PREFIX, AL_PREFIX_SHORT)
+		.replace(PS_PREFIX, PS_PREFIX_SHORT);
 };
 Parser.sourceJsonToAbv= function (source) {
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_ABV, source);
@@ -603,7 +624,7 @@ Parser.spLevelToFull = function (level) {
 };
 
 Parser.spLevelSchoolMetaToFull= function (level, school, meta) {
-	const levelPart = level === 0 ? Parser.spLevelToFull(level) : Parser.spLevelToFull(level) + "-level";
+	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : Parser.spLevelToFull(level) + "-level";
 	let levelSchoolStr = level === 0 ? `${Parser.spSchoolAbvToFull(school)} ${levelPart}`: `${levelPart} ${Parser.spSchoolAbvToFull(school)}`;
 	// these tags are (so far) mutually independent, so we don't need to combine the text
 	if (meta && meta.ritual) levelSchoolStr += " (ritual)";
@@ -672,10 +693,7 @@ Parser.spComponentsToFull= function (comp) {
 	const out = [];
 	if (comp.v) out.push("V");
 	if (comp.s) out.push("S");
-	if (comp.m) {
-		out.push("M");
-		if (comp.m.length) out.push(`(${comp.m})`)
-	}
+	if (comp.m) out.push("M"+(comp.m.length ?` (${comp.m})` : ""));
 	return out.join(", ");
 };
 
@@ -720,6 +738,32 @@ Parser.spSubclassesToFull = function (classes) {
 
 Parser._spSubclassItem = function (fromSubclass) {
 	return `<span class="italic" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${fromSubclass.subclass.name}${fromSubclass.subclass.subSubclass ? ` (${fromSubclass.subclass.subSubclass})` : ""}</span> <span title="Source: ${Parser.sourceJsonToFull(fromSubclass.class.source)}">${fromSubclass.class.name}</span>`;
+};
+
+Parser.monTypeToFullObj = function(type) {
+	const out = {type: "", tags: [], asText: ""};
+
+	if (typeof type === "string") {
+		// handles e.g. "fey"
+		out.type = type;
+		out.asText = type;
+		return out;
+	}
+	const tempTags = [];
+	for (const tag of type.tags) {
+		if (typeof tag === "string") {
+			// handles e.g. "fiend (devil)"
+			out.tags.push(tag);
+			tempTags.push(tag);
+		} else {
+			// handles e.g. "humanoid (Chondathan human)"
+			out.tags.push(tag.tag);
+			tempTags.push(`${tag.prefix} ${tag.tag}`);
+		}
+	}
+	out.type = type.type;
+	out.asText = `${type.type} (${tempTags.join(", ")})`;
+	return out;
 };
 
 /**
@@ -801,12 +845,15 @@ Parser.ATB_ABV_TO_FULL = {
 };
 
 Parser.SIZE_ABV_TO_FULL = {
+	"F": "Fine",
+	"D": "Diminutive",
 	"T": "Tiny",
 	"S": "Small",
 	"M": "Medium",
 	"L": "Large",
 	"H": "Huge",
 	"G": "Gargantuan",
+	"C": "Colossal",
 	"V": "Varies"
 };
 
@@ -828,10 +875,6 @@ SRC_MM 		= "MM";
 SRC_OotA 	= "OotA";
 SRC_PHB 	= "PHB";
 SRC_PotA 	= "PotA";
-SRC_PSA 	= "PSA";
-SRC_PSI 	= "PSI";
-SRC_PSK 	= "PSK";
-SRC_PSZ 	= "PSZ";
 SRC_RoT 	= "RoT";
 SRC_RoTOS 	= "RoTOS";
 SRC_SCAG 	= "SCAG";
@@ -847,6 +890,13 @@ SRC_OGA 	= "OGA";
 SRC_ALCoS 	= "ALCurseOfStrahd";
 SRC_ALEE 	= "ALElementalEvil";
 SRC_ALRoD 	= "ALRageOfDemons";
+
+SRC_PS_PREFIX = "PS";
+
+SRC_PSA 	= SRC_PS_PREFIX + "A";
+SRC_PSI 	= SRC_PS_PREFIX + "I";
+SRC_PSK 	= SRC_PS_PREFIX + "K";
+SRC_PSZ 	= SRC_PS_PREFIX + "Z";
 
 SRC_UA_PREFIX = "UA";
 
@@ -885,27 +935,33 @@ SRC_UATF 		= SRC_UA_PREFIX + "TheFaithful";
 SRC_UAWR 		= SRC_UA_PREFIX + "WizardRevisited";
 SRC_UAESR 		= SRC_UA_PREFIX + "ElfSubraces";
 
-SRC_BOLS_3PP = "BoLS 3pp";
-SRC_DM01_3PP = "DM-01 3pp";
-SRC_DM02_3PP = "DM-02 3pp";
-SRC_DM03_3PP = "DM-03 3pp";
-SRC_DM04_3PP = "DM-04 3pp";
-SRC_DM05_3PP = "DM-05 3pp";
-SRC_DM06_3PP = "DM-06 3pp";
-SRC_DM07_3PP = "DM-07 3pp";
-SRC_DM08_3PP = "DM-08 3pp";
-SRC_DM09_3PP = "DM-09 3pp";
-SRC_DM10_3PP = "DM-10 3pp";
-SRC_DM11_3PP = "DM-11 3pp";
-SRC_DM12_3PP = "DM-12 3pp";
-SRC_DM13_3PP = "DM-13 3pp";
-SRC_ToB_3PP = "ToB 3pp";
-SRC_CC_3PP = "critter compendium";
+SRC_3PP_SUFFIX = " 3pp";
+SRC_BOLS_3PP = "BoLS" + SRC_3PP_SUFFIX;
+SRC_DM01_3PP = "DM-01" + SRC_3PP_SUFFIX;
+SRC_DM02_3PP = "DM-02" + SRC_3PP_SUFFIX;
+SRC_DM03_3PP = "DM-03" + SRC_3PP_SUFFIX;
+SRC_DM04_3PP = "DM-04" + SRC_3PP_SUFFIX;
+SRC_DM05_3PP = "DM-05" + SRC_3PP_SUFFIX;
+SRC_DM06_3PP = "DM-06" + SRC_3PP_SUFFIX;
+SRC_DM07_3PP = "DM-07" + SRC_3PP_SUFFIX;
+SRC_DM08_3PP = "DM-08" + SRC_3PP_SUFFIX;
+SRC_DM09_3PP = "DM-09" + SRC_3PP_SUFFIX;
+SRC_DM10_3PP = "DM-10" + SRC_3PP_SUFFIX;
+SRC_DM11_3PP = "DM-11" + SRC_3PP_SUFFIX;
+SRC_DM12_3PP = "DM-12" + SRC_3PP_SUFFIX;
+SRC_DM13_3PP = "DM-13" + SRC_3PP_SUFFIX;
+SRC_ToB_3PP = "ToB" + SRC_3PP_SUFFIX;
+SRC_CC_3PP = "CC" + SRC_3PP_SUFFIX;
 
 AL_PREFIX = "Adventurers League: ";
+AL_PREFIX_SHORT = "AL: ";
 PS_PREFIX = "Plane Shift: ";
+PS_PREFIX_SHORT = "PS: ";
 UA_PREFIX = "Unearthed Arcana: ";
+UA_PREFIX_SHORT = "UA: ";
 DM_PREFIX = "Deep Magic: ";
+DM_PREFIX_SHORT = "DM: ";
+PP3_SUFFIX = " (3pp)";
 
 Parser.SOURCE_JSON_TO_FULL = {};
 Parser.SOURCE_JSON_TO_FULL[SRC_CoS] 		= "Curse of Strahd";
@@ -970,22 +1026,22 @@ Parser.SOURCE_JSON_TO_FULL[SRC_UAWAW] 		= UA_PREFIX + "Warlock and Wizard";
 Parser.SOURCE_JSON_TO_FULL[SRC_UATF] 		= UA_PREFIX + "The Faithful";
 Parser.SOURCE_JSON_TO_FULL[SRC_UAWR] 		= UA_PREFIX + "Wizard Revisited";
 Parser.SOURCE_JSON_TO_FULL[SRC_UAESR] 		= UA_PREFIX + "Elf Subraces";
-Parser.SOURCE_JSON_TO_FULL[SRC_BOLS_3PP] 	= "Book of Lost Spells (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM01_3PP] 	= DM_PREFIX + "#01 - Clockwork (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM02_3PP] 	= DM_PREFIX + "#02 - Rune Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM03_3PP] 	= DM_PREFIX + "#03 - Void Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM04_3PP] 	= DM_PREFIX + "#04 - Illumination Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM05_3PP] 	= DM_PREFIX + "#05 - Ley Lines (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM06_3PP] 	= DM_PREFIX + "#06 - Angelic Seals (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM07_3PP] 	= DM_PREFIX + "#07 - Chaos Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM08_3PP] 	= DM_PREFIX + "#08 - Battle Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM09_3PP] 	= DM_PREFIX + "#09 - Ring Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM10_3PP] 	= DM_PREFIX + "#10 - Shadow Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM11_3PP] 	= DM_PREFIX + "#11 - Elven High Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM12_3PP] 	= DM_PREFIX + "#12 - Blood and Doom (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_DM13_3PP] 	= DM_PREFIX + "#13 - Dragon Magic (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_ToB_3PP] 	= "Tome of Beasts (3pp)";
-Parser.SOURCE_JSON_TO_FULL[SRC_CC_3PP] 		= "Critter Compendium (3pp)";
+Parser.SOURCE_JSON_TO_FULL[SRC_BOLS_3PP] 	= "Book of Lost Spells" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM01_3PP] 	= DM_PREFIX + "#01 - Clockwork" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM02_3PP] 	= DM_PREFIX + "#02 - Rune Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM03_3PP] 	= DM_PREFIX + "#03 - Void Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM04_3PP] 	= DM_PREFIX + "#04 - Illumination Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM05_3PP] 	= DM_PREFIX + "#05 - Ley Lines" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM06_3PP] 	= DM_PREFIX + "#06 - Angelic Seals" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM07_3PP] 	= DM_PREFIX + "#07 - Chaos Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM08_3PP] 	= DM_PREFIX + "#08 - Battle Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM09_3PP] 	= DM_PREFIX + "#09 - Ring Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM10_3PP] 	= DM_PREFIX + "#10 - Shadow Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM11_3PP] 	= DM_PREFIX + "#11 - Elven High Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM12_3PP] 	= DM_PREFIX + "#12 - Blood and Doom" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_DM13_3PP] 	= DM_PREFIX + "#13 - Dragon Magic" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_ToB_3PP] 	= "Tome of Beasts" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_CC_3PP] 		= "Critter Compendium" + PP3_SUFFIX;
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[SRC_CoS] 			= "CoS";
@@ -1179,6 +1235,17 @@ function hide(element) {
 	element.setAttribute(ATB_STYLE, STL_DISPLAY_NONE);
 }
 
+function xor(a, b) {
+	return !a !== !b;
+}
+
+/**
+ * > implying
+ */
+function implies(a, b) {
+	return (!a) || b;
+}
+
 // SEARCH AND FILTER ===================================================================================================
 function search(options) {
 	const list = new List("listcontainer", options);
@@ -1190,21 +1257,62 @@ function search(options) {
 		list.sort("name");
 		list.filter();
 	});
+	const listWrapper = $("#listcontainer");
+	if (listWrapper.data("lists")) {
+		listWrapper.data("lists").push(list);
+	} else {
+		listWrapper.data("lists", [list]);
+	}
 	return list
 }
 
-function addDropdownOption(dropdown, optionVal, optionText) {
-	if (optionVal === undefined || optionVal === null) return;
-	let inOptions = false;
-	dropdown.find("option").each(function() {
-		if (this.value === optionVal) {
-			inOptions = true;
-			return false;
+function getSourceFilter(options) {
+	const baseOptions = {
+		header: "Source",
+		displayFn: Parser.sourceJsonToFullCompactPrefix,
+		desel: function(val) {
+			return val.startsWith(SRC_UA_PREFIX) || val.startsWith(SRC_PS_PREFIX) || val.endsWith(SRC_3PP_SUFFIX);
 		}
-	});
-	if (!inOptions) {
-		dropdown.append("<option value='" + optionVal + "'>" + optionText + "</option>");
+	};
+	return getFilterWithMergedOptions(baseOptions, options);
+}
+
+function getAsiFilter(options) {
+	const baseOptions = {
+		header: "Ability Bonus",
+		items: [
+			ABIL_STR,
+			ABIL_DEX,
+			ABIL_CON,
+			ABIL_INT,
+			ABIL_WIS,
+			ABIL_CHA,
+			ABIL_CH_ANY
+		],
+		matchFn: filterAsiMatch,
+		matchFnInv: filterAsiMatchInverted
+	};
+	return getFilterWithMergedOptions(baseOptions, options);
+
+	function filterAsiMatch(valGroup, parsedAsi) {
+		return (valGroup[STR_NONE] && parsedAsi.asText === STR_NONE)
+			|| (valGroup[ABIL_CH_ANY] && parsedAsi.asText.toLowerCase().includes("choose any"))
+			|| parsedAsi.asCollection.filter(a => valGroup[Parser.attAbvToFull(a)]).length > 0;
 	}
+	function filterAsiMatchInverted(valGroup, parsedAsi) {
+		return ( implies(parsedAsi.asText === STR_NONE, valGroup[STR_NONE]) )
+			&& ( implies(parsedAsi.asText.toLowerCase().includes("choose any"), valGroup[ABIL_CH_ANY]) )
+			&& (parsedAsi.asCollection.filter(a => !valGroup[Parser.attAbvToFull(a)]).length === 0);
+	}
+}
+
+function getFilterWithMergedOptions(baseOptions, addOptions) {
+	if (addOptions) Object.assign(baseOptions, addOptions); // merge in anything we get passed
+	return new Filter(baseOptions);
+}
+
+function initFilterBox(...filterList) {
+	return new FilterBox(document.getElementById(ID_SEARCH_BAR), document.getElementById(ID_RESET_BUTTON), filterList);
 }
 
 // ENCODING/DECODING ===================================================================================================
@@ -1238,16 +1346,6 @@ function asc_sort_cr(a, b) {
 	return bNum < aNum ? 1 : -1;
 }
 
-function asc_sort_range(a, b){
-	if (parseInt(b.value) === parseInt(a.value)) return 0;
-	return parseInt(b.value) < parseInt(a.value) ? 1 : -1;
-}
-
-function desc_sort(a, b){
-	if ($(b).text() === $(a).text()) return 0;
-	return $(b).text() > $(a).text() ? 1 : -1;
-}
-
 function compareNames(a, b) {
 	if (b._values.name.toLowerCase() === a._values.name.toLowerCase()) return 0;
 	else if (b._values.name.toLowerCase() > a._values.name.toLowerCase()) return 1;
@@ -1255,10 +1353,9 @@ function compareNames(a, b) {
 }
 
 // ARRAYS ==============================================================================================================
-Array.prototype.joinConjunct = String.prototype.joinConjunct ||
-function (joinWith, conjunctWith) {
-	return this.length === 1 ? String(this[0]) : this.length === 2 ? this.join(conjunctWith) : this.slice(0, -1).join(joinWith) + conjunctWith + this.slice(-1);
-};
+function joinConjunct(arr, joinWith, conjunctWith) {
+	return arr.length === 1 ? String(arr[0]) : arr.length === 2 ? arr.join(conjunctWith) : arr.slice(0, -1).join(joinWith) + conjunctWith + arr.slice(-1);
+}
 
 // JSON LOADING ========================================================================================================
 function loadJSON(url, onLoadFunction, ...otherData) {
