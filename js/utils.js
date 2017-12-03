@@ -43,17 +43,6 @@ STL_DISPLAY_INITIAL = "display: initial";
 STL_DISPLAY_NONE = "display: none";
 
 FLTR_ID = "filterId";
-FLTR_SOURCE = "filterSource";
-FLTR_TYPE = "filterType";
-FLTR_CR = "filterCr";
-FLTR_3PP = "filter3pp";
-FLTR_ORDER = "filterOrder";
-FLTR_SIZE = "filterSize";
-FLTR_TIER = "filterTier";
-FLTR_RARITY = "filterRarity";
-FLTR_ATTUNEMENT = "filterAttunement";
-FLTR_CATEGORY = "filterCategory";
-FLTR_LIST_SEP = ";";
 
 CLSS_NON_STANDARD_SOURCE = "spicy-sauce";
 CLSS_SUBCLASS_FEATURE = "subclass-feature";
@@ -133,6 +122,10 @@ function () {
 	if (str.length === 1) return str.charAt(0).toUpperCase();
 	return str.charAt(0).toUpperCase() + str.slice(1);
 };
+
+function uppercaseFirst(string) {
+	return string.uppercaseFirst();
+}
 
 // TEXT COMBINING ======================================================================================================
 function utils_combineText(textList, tagPerItem, textBlockInlineTitle) {
@@ -625,7 +618,7 @@ Parser.spLevelToFull = function (level) {
 
 Parser.spLevelSchoolMetaToFull= function (level, school, meta) {
 	const levelPart = level === 0 ? Parser.spLevelToFull(level).toLowerCase() : Parser.spLevelToFull(level) + "-level";
-	let levelSchoolStr = level === 0 ? `${Parser.spSchoolAbvToFull(school)} ${levelPart}`: `${levelPart} ${Parser.spSchoolAbvToFull(school)}`;
+	let levelSchoolStr = level === 0 ? `${Parser.spSchoolAbvToFull(school)} ${levelPart}`: `${levelPart} ${Parser.spSchoolAbvToFull(school).toLowerCase()}`;
 	// these tags are (so far) mutually independent, so we don't need to combine the text
 	if (meta && meta.ritual) levelSchoolStr += " (ritual)";
 	if (meta && meta.technomagic) levelSchoolStr += " (technomagic)";
@@ -749,21 +742,33 @@ Parser.monTypeToFullObj = function(type) {
 		out.asText = type;
 		return out;
 	}
+
 	const tempTags = [];
-	for (const tag of type.tags) {
-		if (typeof tag === "string") {
-			// handles e.g. "fiend (devil)"
-			out.tags.push(tag);
-			tempTags.push(tag);
-		} else {
-			// handles e.g. "humanoid (Chondathan human)"
-			out.tags.push(tag.tag);
-			tempTags.push(`${tag.prefix} ${tag.tag}`);
+	if (type.tags) {
+		for (const tag of type.tags) {
+			if (typeof tag === "string") {
+				// handles e.g. "fiend (devil)"
+				out.tags.push(tag);
+				tempTags.push(tag);
+			} else {
+				// handles e.g. "humanoid (Chondathan human)"
+				out.tags.push(tag.tag);
+				tempTags.push(`${tag.prefix} ${tag.tag}`);
+			}
 		}
 	}
 	out.type = type.type;
-	out.asText = `${type.type} (${tempTags.join(", ")})`;
+	if (type.swarmSize) {
+		out.tags.push("swarm");
+		out.asText = `swarm of ${Parser.sizeAbvToFull(type.swarmSize).toLowerCase()} ${Parser.monTypeToPlural(type.type)}`;
+	} else {
+		out.asText = `${type.type} (${tempTags.join(", ")})`;
+	}
 	return out;
+};
+
+Parser.monTypeToPlural = function(type) {
+	return Parser._parse_aToB(Parser.MON_TYPE_TO_PLURAL, type);
 };
 
 /**
@@ -844,18 +849,57 @@ Parser.ATB_ABV_TO_FULL = {
 	"cha": "Charisma"
 };
 
-Parser.SIZE_ABV_TO_FULL = {
-	"F": "Fine",
-	"D": "Diminutive",
-	"T": "Tiny",
-	"S": "Small",
-	"M": "Medium",
-	"L": "Large",
-	"H": "Huge",
-	"G": "Gargantuan",
-	"C": "Colossal",
-	"V": "Varies"
-};
+TP_ABERRATION = "aberration";
+TP_BEAST = "beast";
+TP_CELESTIAL = "celestial";
+TP_CONSTRUCT = "construct";
+TP_DRAGON = "dragon";
+TP_ELEMENTAL = "elemental";
+TP_FEY = "fey";
+TP_FIEND = "fiend";
+TP_GIANT = "giant";
+TP_HUMANOID = "humanoid";
+TP_MONSTROSITY = "monstrosity";
+TP_OOZE = "ooze";
+TP_PLANT = "plant";
+TP_UNDEAD = "undead";
+Parser.MON_TYPE_TO_PLURAL = {};
+Parser.MON_TYPE_TO_PLURAL[TP_ABERRATION] = "aberrations";
+Parser.MON_TYPE_TO_PLURAL[TP_BEAST] = "beasts";
+Parser.MON_TYPE_TO_PLURAL[TP_CELESTIAL] = "celestials";
+Parser.MON_TYPE_TO_PLURAL[TP_CONSTRUCT] = "constructs";
+Parser.MON_TYPE_TO_PLURAL[TP_DRAGON] = "dragons";
+Parser.MON_TYPE_TO_PLURAL[TP_ELEMENTAL] = "elementals";
+Parser.MON_TYPE_TO_PLURAL[TP_FEY] = "fey";
+Parser.MON_TYPE_TO_PLURAL[TP_FIEND] = "fiends";
+Parser.MON_TYPE_TO_PLURAL[TP_GIANT] = "giants";
+Parser.MON_TYPE_TO_PLURAL[TP_HUMANOID] = "humanoids";
+Parser.MON_TYPE_TO_PLURAL[TP_MONSTROSITY] = "monstrosities";
+Parser.MON_TYPE_TO_PLURAL[TP_OOZE] = "oozes";
+Parser.MON_TYPE_TO_PLURAL[TP_PLANT] = "plants";
+Parser.MON_TYPE_TO_PLURAL[TP_UNDEAD] = "undead";
+
+SZ_FINE = "F";
+SZ_DIMINUTIVE = "D";
+SZ_TINY = "T";
+SZ_SMALL = "S";
+SZ_MEDIUM = "M";
+SZ_LARGE = "L";
+SZ_HUGE = "H";
+SZ_GARGANTUAN = "G";
+SZ_COLOSSAL = "C";
+SZ_VARIES = "V";
+Parser.SIZE_ABV_TO_FULL = {};
+Parser.SIZE_ABV_TO_FULL[SZ_FINE] = "Fine";
+Parser.SIZE_ABV_TO_FULL[SZ_DIMINUTIVE] = "Diminutive";
+Parser.SIZE_ABV_TO_FULL[SZ_TINY] = "Tiny";
+Parser.SIZE_ABV_TO_FULL[SZ_SMALL] = "Small";
+Parser.SIZE_ABV_TO_FULL[SZ_MEDIUM] = "Medium";
+Parser.SIZE_ABV_TO_FULL[SZ_LARGE] = "Large";
+Parser.SIZE_ABV_TO_FULL[SZ_HUGE] = "Huge";
+Parser.SIZE_ABV_TO_FULL[SZ_GARGANTUAN] = "Gargantuan";
+Parser.SIZE_ABV_TO_FULL[SZ_COLOSSAL] = "Colossal";
+Parser.SIZE_ABV_TO_FULL[SZ_VARIES] = "Varies";
 
 Parser.XP_CHART = [200, 450, 700, 1100, 1800, 2300, 2900, 3900, 5000, 5900, 7200, 8400, 10000, 11500, 13000, 15000, 18000, 20000, 22000, 25000, 30000, 41000, 50000, 62000, 75000, 90000, 105000, 102000, 135000, 155000];
 
@@ -1266,31 +1310,41 @@ function search(options) {
 	return list
 }
 
+/**
+ * Generic source filter
+ * deselected. If there are more items to be deselected than selected, it is advisable to set this to "true"
+ * @param options overrides for the default filter options
+ * @returns {*} a `Filter`
+ */
 function getSourceFilter(options) {
 	const baseOptions = {
 		header: "Source",
 		displayFn: Parser.sourceJsonToFullCompactPrefix,
-		desel: function(val) {
-			return val.startsWith(SRC_UA_PREFIX) || val.startsWith(SRC_PS_PREFIX) || val.endsWith(SRC_3PP_SUFFIX);
-		}
+		selFn: defaultSourceSelFn
 	};
 	return getFilterWithMergedOptions(baseOptions, options);
+}
+
+function defaultSourceDeselFn(val) {
+	return val.startsWith(SRC_UA_PREFIX) || val.startsWith(SRC_PS_PREFIX) || val.endsWith(SRC_3PP_SUFFIX);
+}
+
+function defaultSourceSelFn(val) {
+	return !defaultSourceDeselFn(val);
 }
 
 function getAsiFilter(options) {
 	const baseOptions = {
 		header: "Ability Bonus",
 		items: [
-			ABIL_STR,
-			ABIL_DEX,
-			ABIL_CON,
-			ABIL_INT,
-			ABIL_WIS,
-			ABIL_CHA,
-			ABIL_CH_ANY
+			"str",
+			"dex",
+			"con",
+			"int",
+			"wis",
+			"cha"
 		],
-		matchFn: filterAsiMatch,
-		matchFnInv: filterAsiMatchInverted
+		displayFn: Parser.attAbvToFull
 	};
 	return getFilterWithMergedOptions(baseOptions, options);
 

@@ -65,14 +65,12 @@ function onJsonLoad(data) {
 			const f = filterBox.getValues();
 			const r = rewardList[$(item.elm).attr(FLTR_ID)];
 
-			const rightSource = sourceFilter.matches(f, r.source);
-			const rightType = typeFilter.matches(f, r.type);
-
-			return rightSource && rightType;
+			return sourceFilter.toDisplay(f, r.source) && typeFilter.toDisplay(f, r.type);
 		});
 	}
 
-	initHistory()
+	initHistory();
+	handleFilterChange();
 }
 
 function loadhash (id) {
@@ -88,7 +86,7 @@ function loadhash (id) {
 	let texthtml = "";
 
 	if (reward.ability !== undefined) texthtml += utils_combineText(reward.ability.text, "p", "<span class='bold'>Ability Score Adjustment:</span> ");
-	if (reward.signaturespells !== undefined) texthtml += utils_combineText(reward.signaturespells.text, "p", "<span class='bold'>Signature Spells:</span> ");
+	if (reward.signaturespells !== undefined) texthtml += utils_combineText(reward.signaturespells.text ? reward.signaturespells.text : "None", "p", "<span class='bold'>Signature Spells:</span> ");
 	texthtml += utils_combineText(textlist, "p");
 
 	$("tr#text").after("<tr class='text'><td colspan='6'>"+texthtml+"</td></tr>");

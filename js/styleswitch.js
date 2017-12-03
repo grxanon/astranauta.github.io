@@ -2,8 +2,6 @@
 const DAY_CSS =
 `
 header {
-	margin-bottom: 3px;
-	padding: 25px 15px;
 	color: white;
 	background-color: rgb(107, 196, 0);
 }
@@ -181,12 +179,12 @@ ul.list li:hover {
 
 table#stats,
 table#statsprof {
-	background: transparent;
+	background: #272727;
 }
 
 th.border {
-	border: transparent;
-	background: transparent;
+	border: 1px solid #6f6f6f;
+	background: #565656;
 }
 
 tr.text td {
@@ -252,11 +250,15 @@ table#stats td._class_feature table th {
 /* end section: class features */
 
 #classtable table {
-	background: transparent;
+	background: #272727;
 }
 
 #classtable table th {
 	color: grey;
+}
+
+#classtable .colGroupTitle::after{	
+	border-color: #ababab;
 }
 
 #stats table tbody tr:nth-child(odd),
@@ -271,6 +273,10 @@ ul.list li:nth-child(odd):hover {
 	background: black;
 }
 
+ul.list li {
+	border-bottom: none;
+}
+
 #rulescontent caption {
 	color: grey;
 }
@@ -283,33 +289,26 @@ tr.trait td {
 	color: grey !important;
 }
 
-.dropdown-menu-filter ul.select2-selection__rendered {
-	background-color: #2f2f2f;
+::-webkit-scrollbar-thumb {
+	background: #475B6B;
 }
 
-.dropdown-menu-filter .filter-invert ul.select2-selection__rendered {
-	background-color: #3a1f1d;
+/**** Search and filter bar ****/
+.mini-view {
+	background: #343434;
+	background: linear-gradient(to top, #ccc, #343434 1px);
 }
 
-.select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-	color: white;
-	background: #337ab7;
-	border: 1px solid #337ab7;
+.dropdown-menu-filter .pill-grid .filter-pill {
+	background: transparent;
 }
 
-.select2-container--bootstrap .select2-results__option {
-	background-color: #2f2f2f;
-	color: white;
+.dropdown-menu-filter .pill-grid .filter-pill:hover:not([state]) {
+	background: #323232;
 }
 
-.select2-container--bootstrap .select2-results__option[aria-selected=true] {
-	background-color: #4f4f4f;
-	color: white;
-}
-
-.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
-	background-color: #337ab7;
-	color: #fff;
+.list-disabled-overlay::after {
+	background: rgba(34, 34, 34, 0.65);
 }
 
 `;
