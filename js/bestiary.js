@@ -16,19 +16,25 @@ window.onload = function load() {
 	loadJSON(BESTIARY_JSON_URL, addCC);
 };
 
+const legendaryGroupList = {};
 function addCC(mainData) {
+	// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name; do the same with the ToB data in the callback function
+	for (let i = 0; i < mainData.legendaryGroup.length; i++) legendaryGroupList[mainData.legendaryGroup[i].name] = {"lairActions": mainData.legendaryGroup[i].lairActions, "regionalEffects": mainData.legendaryGroup[i].regionalEffects};
 	loadJSON(BESTIARY_CC_JSON_URL, addToB, mainData);
 }
 
 function addToB(ccData, mainData) {
 	mainData = mainData[0];
 	mainData.monster = mainData.monster.concat(ccData.monster);
+	// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name; do the same with the CC data in the callback function
+	for (let i = 0; i < ccData.legendaryGroup.length; i++) legendaryGroupList[ccData.legendaryGroup[i].name] = {"lairActions": ccData.legendaryGroup[i].lairActions, "regionalEffects": ccData.legendaryGroup[i].regionalEffects};
 	loadJSON(BESTIARY_TOB_JSON_URL, populate, mainData);
 }
 
 let monsters;
 function populate(tobData, mainData) {
 	monsters = mainData[0].monster.concat(tobData.monster);
+	for (let i = 0; i < tobData.legendaryGroup.length; i++) legendaryGroupList[tobData.legendaryGroup[i].name] = {"lairActions": tobData.legendaryGroup[i].lairActions, "regionalEffects": tobData.legendaryGroup[i].regionalEffects};
 
 	// TODO alignment filter
 	const sourceFilter = getSourceFilter();
@@ -70,13 +76,15 @@ function populate(tobData, mainData) {
 		displayFn: uppercaseFirst
 	});
 	const tagFilter = new Filter({header: "Tag", displayFn: uppercaseFirst});
+	const miscFilter = new Filter({header: "Miscellaneous", items: ["Legendary"], displayFn: uppercaseFirst});
 
 	const filterBox = initFilterBox(
 		sourceFilter,
 		crFilter,
 		sizeFilter,
 		typeFilter,
-		tagFilter
+		tagFilter,
+		miscFilter
 	);
 
 	const table = $("ul.monsters");
@@ -84,7 +92,6 @@ function populate(tobData, mainData) {
 	// build the table
 	for (let i = 0; i < monsters.length; i++) {
 		const mon = monsters[i];
-
 		mon._pTypes = Parser.monTypeToFullObj(mon.type); // store the parsed type
 		mon.cr = mon.cr === undefined ? "Unknown" : mon.cr;
 
@@ -104,6 +111,7 @@ function populate(tobData, mainData) {
 		sourceFilter.addIfAbsent(mon.source);
 		crFilter.addIfAbsent(mon.cr);
 		mon._pTypes.tags.forEach(t => tagFilter.addIfAbsent(t));
+		mon._fMisc = mon.legendary ? ["Legendary"] : [];
 	}
 	table.append(textStack);
 
@@ -135,7 +143,8 @@ function populate(tobData, mainData) {
 			crFilter.toDisplay(f, m.cr) &&
 			sizeFilter.toDisplay(f, m.size) &&
 			typeFilter.toDisplay(f, m._pTypes.type) &&
-			tagFilter.toDisplay(f, m._pTypes.tags);
+			tagFilter.toDisplay(f, m._pTypes.tags) &&
+			miscFilter.toDisplay(f, m._fMisc);
 		});
 	}
 
@@ -145,9 +154,7 @@ function populate(tobData, mainData) {
 	// sorting headers
 	$("#filtertools").find("button.sort").on(EVNT_CLICK, function() {
 		const $this = $(this);
-		if ($this.data("sortby") === "asc") {
-			$this.data("sortby", "desc");
-		} else $this.data("sortby", "asc");
+		$this.data("sortby", $this.data("sortby") === "asc" ? "desc" : "asc");
 		list.sort($this.data("sort"), { order: $this.data("sortby"), sortFunction: sortMonsters });
 	});
 
@@ -203,9 +210,16 @@ function sortMonsters(a, b, o) {
 	return 0;
 }
 
+function objToTitleCaseStringWithCommas(obj) {
+	return Object.keys(obj).map(function(k){return k.uppercaseFirst() + ' ' + obj[k]}).join(', ');
+}
+
+const renderer = new EntryRenderer();
 // load selected monster stat block
 function loadhash (id) {
 	$("#stats").html(tableDefault);
+	let renderStack = [];
+	const entryList = {};
 	var mon = monsters[id];
 	var name = mon.name;
 	var source = mon.source;
@@ -256,7 +270,7 @@ function loadhash (id) {
 	$("td#cha span.mod").html(Parser.getAbilityModifier(mon.cha));
 
 	var saves = mon.save;
-	if (saves && saves.length > 0) {
+	if (saves) {
 		$("td span#saves").parent().show();
 		$("td span#saves").html(saves);
 	} else {
@@ -264,15 +278,17 @@ function loadhash (id) {
 	}
 
 	var skills = mon.skill;
-	if (skills && skills.length > 0 && skills[0]) {
+	let perception = 0;
+	if (skills) {
 		$("td span#skills").parent().show();
-		$("td span#skills").html(skills);
+		$("td span#skills").html(objToTitleCaseStringWithCommas(skills));
+		if (skills.perception) perception = parseInt(skills.perception);
 	} else {
 		$("td span#skills").parent().hide();
 	}
 
 	var dmgvuln = mon.vulnerable;
-	if (dmgvuln && dmgvuln.length > 0) {
+	if (dmgvuln) {
 		$("td span#dmgvuln").parent().show();
 		$("td span#dmgvuln").html(dmgvuln);
 	} else {
@@ -280,7 +296,7 @@ function loadhash (id) {
 	}
 
 	var dmgres = mon.resist;
-	if (dmgres && dmgres.length > 0) {
+	if (dmgres) {
 		$("td span#dmgres").parent().show();
 		$("td span#dmgres").html(dmgres);
 	} else {
@@ -288,7 +304,7 @@ function loadhash (id) {
 	}
 
 	var dmgimm = mon.immune;
-	if (dmgimm && dmgimm.length > 0) {
+	if (dmgimm) {
 		$("td span#dmgimm").parent().show();
 		$("td span#dmgimm").html(dmgimm);
 	} else {
@@ -296,7 +312,7 @@ function loadhash (id) {
 	}
 
 	var conimm = mon.conditionImmune;
-	if (conimm && conimm.length > 0) {
+	if (conimm) {
 		$("td span#conimm").parent().show();
 		$("td span#conimm").html(conimm);
 	} else {
@@ -304,19 +320,17 @@ function loadhash (id) {
 	}
 
 	var senses = mon.senses;
-	if (senses && senses.length > 0) {
+	if (senses) {
 		$("td span#senses").html(senses + ", ");
 	} else {
 		$("td span#senses").html("");
 	}
 
-	var passive = mon.passive;
-	if (passive && passive.length > 0) {
-		$("td span#pp").html(passive)
-	}
+	var passive = mon.passive || (10 + perception).toString;
+	$("td span#pp").html(passive)
 
 	var languages = mon.languages;
-	if (languages && languages.length > 0) {
+	if (languages) {
 		$("td span#languages").html(languages);
 	} else {
 		$("td span#languages").html("\u2014");
@@ -331,7 +345,6 @@ function loadhash (id) {
 
 	if (traits) for (var i = traits.length - 1; i >= 0; i--) {
 		var traitname = traits[i].name;
-
 		var traittext = traits[i].text;
 		var traittexthtml = "";
 		var renderedcount = 0;
@@ -432,37 +445,47 @@ function loadhash (id) {
 	const legendaries = mon.legendary;
 	$("tr.legendary").remove();
 	$("tr#legendaries").hide();
-	if (legendaries && legendaries.length) {
+	if (legendaries) {
 		$("tr#legendaries").show();
-
 		for (let i = legendaries.length - 1; i >= 0; i--) {
-			let legendaryname = "";
+			const legendaryname = legendaries[i].name ? legendaries[i].name + "." : "";
 			const legendarytext = legendaries[i].text;
 			let legendarytexthtml = "";
-
-			if (legendaries[i].name) {
-				legendaryname = legendaries[i].name + ".";
-			}
-
 			let renderedcount = 0;
 			for (let n = 0; n < legendarytext.length; n++) {
 				if (!legendarytext[n]) continue;
-
 				renderedcount++;
 				let firstsecond = "";
 				if (renderedcount === 1) firstsecond = "first ";
 				if (renderedcount === 2) firstsecond = "second ";
-
-				legendarytexthtml = legendarytexthtml + "<p class='" + firstsecond + "'>" + legendarytext[n] + "</p>";
+				legendarytexthtml += `<p class='${firstsecond}'>${legendarytext[n]}</p>`;
 			}
-
-			$("tr#legendaries").after("<tr class='legendary'><td colspan='6' class='legendary" + i + "'><span class='name'>" + legendaryname + "</span> " + legendarytexthtml + "</td></tr>");
+			$("tr#legendaries").after(`<tr class='legendary'><td colspan='6' class='legendary'><span class='name'>${legendaryname}</span> ${legendarytexthtml}</td></tr>`);
 		}
-
 		if ($("tr.legendary").length && !$("tr.legendary span.name:empty").length && !$("tr.legendary span.name:contains(Legendary Actions)").length) {
-			$("tr#legendaries").after("<tr class='legendary'><td colspan='6' class='legendary0'><span class='name'></span> <span>" + name + " can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. " + name + " regains spent legendary actions at the start of his turn.</span></td></tr>");
+			const legendaryActions = mon.legendaryActions || 3;
+			const legendaryName = name.split(",");
+			$("tr#legendaries").after(`<tr class='legendary'><td colspan='6' class='legendary'><span class='name'></span> <span>${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryName[0]} regains spent legendary actions at the start of its turn.</span></td></tr>`);
 		}
+	}
 
+	const legendaryGroup = mon.legendaryGroup;
+	$("tr.lairaction").remove();
+	$("tr#lairactions").hide();
+	$("tr.regionaleffect").remove();
+	$("tr#regionaleffects").hide();
+	if (legendaryGroup) {
+		$("tr#lairactions").show();
+		$("tr#regionaleffects").show();
+		const thisGroup = legendaryGroupList[legendaryGroup];
+		let entryList = {type: "entries", entries: thisGroup.lairActions};
+		renderStack = [];
+		renderer.recursiveEntryRender(entryList, renderStack);
+		$("tr#lairactions").after(`<tr class='lairaction'><td colspan='6' class='legendary'>${renderStack.join("")}</td></tr>`);
+		entryList = {type: "entries", entries: thisGroup.regionalEffects};
+		renderStack = [];
+		renderer.recursiveEntryRender(entryList, renderStack);
+		$("tr#regionaleffects").after(`<tr class='regionaleffect'><td colspan='6' class='legendary'>${renderStack.join("")}</td></tr>`);
 	}
 
 	// add click links for rollables
@@ -479,21 +502,40 @@ function loadhash (id) {
 	}
 	function makeSkillRoller() {
 		const $this = $(this);
-		const skills = $this.html().split(",").map(s => s.trim());
+
+		const re = /,\s*(?![^()]*\))/g; // Don't split commas within parentheses
+		const skills = $this.html().split(re).map(s => s.trim());
 		const out = [];
+
 		skills.map(s => {
-			const spl = s.split("+").map(s => s.trim());
-			const bonus = Number(spl[1]);
-			const fromAbility = Parser.getAbilityModNumber(mon[getAttribute(spl[0])]);
-			const expectedPB = getProfBonusFromCr(mon.cr);
-			const pB = bonus - fromAbility;
+			const re = /(\-|\+)?\d+|(?:[^\+]|\n(?!\+))+/g; // Split before and after each bonus
+			const spl = s.match(re);
 
-			const expert = (pB === expectedPB * 2) ? 2 : 1;
-			const pBonusStr = `+${bonus}`;
-			const pDiceStr = `${expert}d${pB*(3-expert)}${fromAbility >= 0 ? "+" : ""}${fromAbility}`;
+			const skillName = spl[0].trim();
 
-			out.push(renderSkillOrSaveRoller(spl[0], pBonusStr, pDiceStr, false));
-		});
+			var skillString = "";
+			spl.map(b => {
+				const re = /(\-|\+)?\d+/;
+
+				if (b.match(re)){
+					const bonus = Number(b);
+					const fromAbility = Parser.getAbilityModNumber(mon[getAttribute(skillName)]);
+					const expectedPB = getProfBonusFromCr(mon.cr);
+					const pB = bonus - fromAbility;
+		
+					const expert = (pB === expectedPB * 2) ? 2 : 1;
+					const pBonusStr = `+${bonus}`;
+					const pDiceStr = `${expert}d${pB*(3-expert)}${fromAbility >= 0 ? "+" : ""}${fromAbility}`;
+		
+					skillString += renderSkillOrSaveRoller(skillName, pBonusStr, pDiceStr, false);
+				} else {
+					skillString += b;
+				}				
+			});
+
+			out.push(skillString);
+		});		
+
 		$this.html(out.join(", "));
 	}
 	function makeSaveRoller() {
@@ -511,13 +553,13 @@ function loadhash (id) {
 			const pBonusStr = `+${bonus}`;
 			const pDiceStr = `${expert}d${pB*(3-expert)}${fromAbility >= 0 ? "+" : ""}${fromAbility}`;
 
-			out.push(renderSkillOrSaveRoller(spl[0], pBonusStr, pDiceStr, true));
+			out.push(spl[0] + ' ' + renderSkillOrSaveRoller(spl[0], pBonusStr, pDiceStr, true));
 		});
 		$this.html(out.join(", "));
 	}
 	function renderSkillOrSaveRoller(itemName, profBonusString, profDiceString, isSave) {
 		const mode = isProfDiceMode ? PROF_MODE_DICE : PROF_MODE_BONUS;
-		return `${itemName} <span class='roller' title="${itemName} ${isSave ? " save" : ""}" data-roll-alt="1d20;${profDiceString}" data-roll='1d20${profBonusString}' ${ATB_PROF_MODE}='${mode}' ${ATB_PROF_DICE_STR}="+${profDiceString}" ${ATB_PROF_BONUS_STR}="${profBonusString}">${isProfDiceMode ? profDiceString : profBonusString}</span>`;
+		return `<span class='roller' title="${itemName} ${isSave ? " save" : ""}" data-roll-alt="1d20;${profDiceString}" data-roll='1d20${profBonusString}' ${ATB_PROF_MODE}='${mode}' ${ATB_PROF_DICE_STR}="+${profDiceString}" ${ATB_PROF_BONUS_STR}="${profBonusString}">${isProfDiceMode ? profDiceString : profBonusString}</span>`;
 	}
 
 	// inline rollers
