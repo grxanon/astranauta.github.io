@@ -5,5 +5,18 @@
 	"UAStarterSpells": "spells-ua-ss.json",
 	"UAThatOldBlackMagic": "spells-ua-tobm.json",
 	"XGE": "spells-xge.json",
-	"BoLS 3pp": "spells-3pp-bols.json"
+	"BoLS 3pp": "spells-3pp-bols.json",
+	"DM-01 3pp": "spells-3pp-dm01.json",
+	"DM-02 3pp": "spells-3pp-dm02.json",
+	"DM-03 3pp": "spells-3pp-dm03.json",
+	"DM-04 3pp": "spells-3pp-dm04.json",
+	"DM-05 3pp": "spells-3pp-dm05.json",
+	"DM-06 3pp": "spells-3pp-dm06.json",
+	"DM-07 3pp": "spells-3pp-dm07.json",
+	"DM-08 3pp": "spells-3pp-dm08.json",
+	"DM-09 3pp": "spells-3pp-dm09.json",
+	"DM-10 3pp": "spells-3pp-dm10.json",
+	"DM-11 3pp": "spells-3pp-dm11.json",
+	"DM-12 3pp": "spells-3pp-dm12.json",
+	"DM-13 3pp": "spells-3pp-dm13.json"
 }

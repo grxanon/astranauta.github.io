@@ -28,13 +28,6 @@ function loadMeta(nextFunction) {
 	});
 }
 
-function addToB(ccData, mainData) {
-	mainData = mainData[0];
-	mainData.monster = mainData.monster.concat(ccData.monster);
-	// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name; do the same with the CC data in the callback function
-	for (let i = 0; i < ccData.legendaryGroup.length; i++) legendaryGroupList[ccData.legendaryGroup[i].name] = {"lairActions": ccData.legendaryGroup[i].lairActions, "regionalEffects": ccData.legendaryGroup[i].regionalEffects};
-}
-
 window.onload = function load() {
 	loadMeta(function() {
 		multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addMonsters);

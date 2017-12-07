@@ -16,5 +16,6 @@
 	"ToD":		"bestiary-tod.json",
 	"VGM":		"bestiary-vgm.json",
 	"XGE":		"bestiary-xge.json",
-	"ToB 3pp":  "bestiary-3pp-tob.json"
+	"ToB 3pp":  "bestiary-3pp-tob.json",
+	"CC 3pp":   "bestiary-3pp-cc.json"
 }
