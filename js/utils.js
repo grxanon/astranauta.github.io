@@ -550,11 +550,11 @@ Parser.armorFullToAbv= function (armor) {
 };
 
 Parser.sourceJsonToFull = function (source) {
-	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source).replace("'", STR_APOSTROPHE);
+	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source).replace(/'/g, STR_APOSTROPHE);
 };
 Parser.sourceJsonToFullCompactPrefix = function (source) {
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source)
-		.replace("'", STR_APOSTROPHE)
+		.replace(/'/g, STR_APOSTROPHE)
 		.replace(UA_PREFIX, UA_PREFIX_SHORT)
 		.replace(DM_PREFIX, DM_PREFIX_SHORT)
 		.replace(AL_PREFIX, AL_PREFIX_SHORT)
@@ -564,8 +564,12 @@ Parser.sourceJsonToAbv= function (source) {
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_ABV, source);
 };
 
-Parser.stringToSlug= function (str) {
+Parser.stringToSlug = function (str) {
 	return str.toLowerCase().replace(/[^\w ]+/g, STR_EMPTY).replace(/ +/g, STR_SLUG_DASH);
+};
+
+Parser.stringToCasedSlug = function (str) {
+	return str.replace(/[^\w ]+/g, STR_EMPTY).replace(/ +/g, STR_SLUG_DASH);
 };
 
 Parser.itemTypeToAbv = function (type) {
@@ -608,6 +612,10 @@ Parser.numberToString= function (num) {
 // sp-prefix functions are for parsing spell data, and shared with the roll20 script
 Parser.spSchoolAbvToFull= function (school) {
 	return Parser._parse_aToB(Parser.SP_SCHOOL_ABV_TO_FULL, school);
+};
+
+Parser.spSchoolAbvToShort= function (school) {
+	return Parser._parse_aToB(Parser.SP_SCHOOL_ABV_TO_SHORT, school);
 };
 
 Parser.spLevelToFull = function (level) {
@@ -664,6 +672,8 @@ Parser.spRangeToFull= function (range) {
 				return "Unlimited on the same plane"
 			case RNG_UNLIMITED:
 				return "Unlimited";
+			case RNG_UNLIMITED_SAME_PLANE:
+				return "Unlimited on the same plane";
 			case RNG_TOUCH:
 				return "Touch";
 		}
@@ -702,7 +712,11 @@ Parser.spDurationToFull= function (dur) {
 			case "timed":
 				return `${d.concentration ? "Concentration, " : ""}${d.duration.upTo && d.concentration ? "u" : d.duration.upTo ? "U" : ""}${d.duration.upTo ? "p to " : ""}${d.duration.amount} ${d.duration.amount === 1 ? Parser.getSingletonUnit(d.duration.type) : d.duration.type}`;
 			case "permanent":
-				return `Until ${d.ends.map(m => m === "dispell" ? "dispelled" : m === "trigger" ? "triggered" : undefined).join(" or ")}`
+				if (d.ends) {
+					return `Until ${d.ends.map(m => m === "dispell" ? "dispelled" : m === "trigger" ? "triggered" : m === "discharge" ? "discharged" : undefined).join(" or ")}`
+				} else {
+					return "Permanent";
+				}
 
 		}
 	}).join(" or ") + (dur.length > 1 ? " (see below)" : "");
@@ -840,6 +854,17 @@ Parser.SP_SCHOOL_ABV_TO_FULL = {
 	"T": "Transmutation",
 	"C": "Conjuration",
 	"VM": "Void Magic"
+};
+
+Parser.SP_SCHOOL_ABV_TO_SHORT = {
+	"A": "Abj.",
+	"V": "Evoc.",
+	"E": "Ench.",
+	"I": "Illu.",
+	"D": "Divin.",
+	"N": "Necro.",
+	"T": "Trans.",
+	"C": "Conj."
 };
 
 Parser.ATB_ABV_TO_FULL = {
@@ -1152,7 +1177,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_UAWAW] 		= "UAWAW";
 Parser.SOURCE_JSON_TO_ABV[SRC_UATF] 		= "UATF";
 Parser.SOURCE_JSON_TO_ABV[SRC_UAWR] 		= "UAWR";
 Parser.SOURCE_JSON_TO_ABV[SRC_UAESR] 		= "UAESR";
-Parser.SOURCE_JSON_TO_ABV[SRC_BOLS_3PP] 	= "BolS (3pp)";
+Parser.SOURCE_JSON_TO_ABV[SRC_BOLS_3PP] 	= "BoLS (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM01_3PP] 	= "DM01 (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM02_3PP] 	= "DM02 (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM03_3PP] 	= "DM03 (3pp)";
@@ -1249,12 +1274,7 @@ function hasBeenReprinted(shortName, source) {
 }
 
 function isNonstandardSource(source) {
-	return (source !== undefined && source !== null) && (source.startsWith(SRC_UA_PREFIX) || source === SRC_PSA || source === SRC_PSK || source === SRC_EEPC || source === SRC_PSI || source === SRC_PSZ);
-}
-
-// DATA LINKS ==========================================================================================================
-function utils_nameToDataLink(name) {
-	return encodeURIComponent(name.toLowerCase()).replace("'","%27");
+	return (source !== undefined && source !== null) && (source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA);
 }
 
 // CONVENIENCE/ELEMENTS ================================================================================================
@@ -1320,7 +1340,7 @@ function search(options) {
  */
 function getSourceFilter(options) {
 	const baseOptions = {
-		header: "Source",
+		header: FilterBox.SOURCE_HEADER,
 		displayFn: Parser.sourceJsonToFullCompactPrefix,
 		selFn: defaultSourceSelFn
 	};
@@ -1328,7 +1348,7 @@ function getSourceFilter(options) {
 }
 
 function defaultSourceDeselFn(val) {
-	return val.startsWith(SRC_UA_PREFIX) || val.startsWith(SRC_PS_PREFIX) || val.endsWith(SRC_3PP_SUFFIX);
+	return val.startsWith(SRC_UA_PREFIX) || val.startsWith(SRC_PS_PREFIX) || val.endsWith(SRC_3PP_SUFFIX) || val === SRC_OGA;
 }
 
 function defaultSourceSelFn(val) {
@@ -1379,7 +1399,7 @@ function encodeForHash(toEncode) {
 		return encodeForHashHelper(toEncode);
 	}
 	function encodeForHashHelper(part) {
-		return encodeURIComponent(part).toLowerCase().replace("'","%27")
+		return encodeURIComponent(part).toLowerCase().replace(/'/g,"%27")
 	}
 }
 
@@ -1423,4 +1443,41 @@ function loadJSON(url, onLoadFunction, ...otherData) {
 		onLoadFunction(data, otherData);
 	};
 	request.send();
+}
+
+/**
+ * Loads a sequence of URLs, then calls a final function once all the data is ready
+ * TODO these could be done in parallel
+ * @param toLoads array of objects, which should have a `url` property
+ * @param index 0 on the first call
+ * @param dataStack an empty array on the first call
+ * @param onEachLoadFunction function to call after each load completes. Should accept a `toLoad` and the data returned
+ * from the load
+ * @param onFinalLoadFunction final function to call once all data has been loaded, should accept the `dataStack` array as
+ * an argument
+ */
+function chainLoadJSON(toLoads, index, dataStack, onEachLoadFunction, onFinalLoadFunction) {
+	const toLoad = toLoads[index];
+	// on loading the last item, pass the loaded data to onFinalLoadFunction
+	if (index === toLoads.length-1) {
+		loadJSON(
+			toLoad.url,
+			function(data) {
+				onEachLoadFunction(toLoad, data);
+				dataStack.push(data);
+				onFinalLoadFunction(dataStack);
+				initHistory();
+				handleFilterChange();
+			}
+		)
+	} else {
+		loadJSON(
+			toLoad.url,
+			function(data) {
+				onEachLoadFunction(toLoad, data);
+				dataStack.push(data);
+				chainLoadJSON(toLoads, index+1, dataStack, onEachLoadFunction, onFinalLoadFunction)
+			}
+		)
+	}
 }

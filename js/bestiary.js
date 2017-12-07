@@ -1,7 +1,9 @@
 "use strict";
-const BESTIARY_JSON_URL = "data/bestiary.json";
-const BESTIARY_TOB_JSON_URL = "data/bestiary-tob.json";
-const BESTIARY_CC_JSON_URL = "data/bestiary-cc.json";
+
+const JSON_DIR = "data/bestiary/";
+const META_URL = "meta.json";
+const JSON_LIST_NAME = "monster";
+
 let tableDefault = "";
 
 function ascSortCr(a, b) {
@@ -11,16 +13,19 @@ function ascSortCr(a, b) {
 	return ascSort(Parser.crToNumber(a), Parser.crToNumber(b))
 }
 
-window.onload = function load() {
-	tableDefault = $("#stats").html();
-	loadJSON(BESTIARY_JSON_URL, addCC);
-};
+const meta = {};
+function loadMeta(nextFunction) {
+	loadJSON(JSON_DIR+META_URL, function(data) {
+		// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name
+		for (let i = 0; i < data.legendaryGroup.length; i++) {
+			meta[data.legendaryGroup[i].name] = {
+				"lairActions": data.legendaryGroup[i].lairActions,
+				"regionalEffects": data.legendaryGroup[i].regionalEffects
+			};
+		}
 
-const legendaryGroupList = {};
-function addCC(mainData) {
-	// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name; do the same with the ToB data in the callback function
-	for (let i = 0; i < mainData.legendaryGroup.length; i++) legendaryGroupList[mainData.legendaryGroup[i].name] = {"lairActions": mainData.legendaryGroup[i].lairActions, "regionalEffects": mainData.legendaryGroup[i].regionalEffects};
-	loadJSON(BESTIARY_CC_JSON_URL, addToB, mainData);
+		nextFunction();
+	});
 }
 
 function addToB(ccData, mainData) {
@@ -28,128 +33,82 @@ function addToB(ccData, mainData) {
 	mainData.monster = mainData.monster.concat(ccData.monster);
 	// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name; do the same with the CC data in the callback function
 	for (let i = 0; i < ccData.legendaryGroup.length; i++) legendaryGroupList[ccData.legendaryGroup[i].name] = {"lairActions": ccData.legendaryGroup[i].lairActions, "regionalEffects": ccData.legendaryGroup[i].regionalEffects};
-	loadJSON(BESTIARY_TOB_JSON_URL, populate, mainData);
 }
 
-let monsters;
-function populate(tobData, mainData) {
-	monsters = mainData[0].monster.concat(tobData.monster);
-	for (let i = 0; i < tobData.legendaryGroup.length; i++) legendaryGroupList[tobData.legendaryGroup[i].name] = {"lairActions": tobData.legendaryGroup[i].lairActions, "regionalEffects": tobData.legendaryGroup[i].regionalEffects};
-
-	// TODO alignment filter
-	const sourceFilter = getSourceFilter();
-	const crFilter = new Filter({header: "CR"});
-	const sizeFilter = new Filter({
-		header: "Size",
-		items: [
-			SZ_FINE,
-			SZ_DIMINUTIVE,
-			SZ_TINY,
-			SZ_SMALL,
-			SZ_MEDIUM,
-			SZ_LARGE,
-			SZ_HUGE,
-			SZ_GARGANTUAN,
-			SZ_COLOSSAL,
-			SZ_VARIES
-		],
-		displayFn: Parser.sizeAbvToFull
+window.onload = function load() {
+	loadMeta(function() {
+		multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addMonsters);
 	});
-	const typeFilter = new Filter({
-		header: "Type",
-		items: [
-			"aberration",
-			"beast",
-			"celestial",
-			"construct",
-			"dragon",
-			"elemental",
-			"fey",
-			"fiend",
-			"giant",
-			"humanoid",
-			"monstrosity",
-			"ooze",
-			"plant",
-			"undead"
-		],
-		displayFn: uppercaseFirst
-	});
-	const tagFilter = new Filter({header: "Tag", displayFn: uppercaseFirst});
-	const miscFilter = new Filter({header: "Miscellaneous", items: ["Legendary"], displayFn: uppercaseFirst});
+};
 
-	const filterBox = initFilterBox(
-		sourceFilter,
-		crFilter,
-		sizeFilter,
-		typeFilter,
-		tagFilter,
-		miscFilter
-	);
+let list;
+// TODO alignment filter
+const sourceFilter = getSourceFilter();
+const crFilter = new Filter({header: "CR"});
+const sizeFilter = new Filter({
+	header: "Size",
+	items: [
+		SZ_FINE,
+		SZ_DIMINUTIVE,
+		SZ_TINY,
+		SZ_SMALL,
+		SZ_MEDIUM,
+		SZ_LARGE,
+		SZ_HUGE,
+		SZ_GARGANTUAN,
+		SZ_COLOSSAL,
+		SZ_VARIES
+	],
+	displayFn: Parser.sizeAbvToFull
+});
+const typeFilter = new Filter({
+	header: "Type",
+	items: [
+		"aberration",
+		"beast",
+		"celestial",
+		"construct",
+		"dragon",
+		"elemental",
+		"fey",
+		"fiend",
+		"giant",
+		"humanoid",
+		"monstrosity",
+		"ooze",
+		"plant",
+		"undead"
+	],
+	displayFn: uppercaseFirst
+});
+const tagFilter = new Filter({header: "Tag", displayFn: uppercaseFirst});
+const miscFilter = new Filter({header: "Miscellaneous", items: ["Legendary"], displayFn: uppercaseFirst});
 
-	const table = $("ul.monsters");
-	let textStack = "";
-	// build the table
-	for (let i = 0; i < monsters.length; i++) {
-		const mon = monsters[i];
-		mon._pTypes = Parser.monTypeToFullObj(mon.type); // store the parsed type
-		mon.cr = mon.cr === undefined ? "Unknown" : mon.cr;
+const filterBox = initFilterBox(
+	sourceFilter,
+	crFilter,
+	sizeFilter,
+	typeFilter,
+	tagFilter,
+	miscFilter
+);
 
-		const abvSource = Parser.sourceJsonToAbv(mon.source);
+function pageInit(loadedSources) {
+	tableDefault = $("#stats").html();
 
-		textStack +=
-			`<li ${FLTR_ID}='${i}'>
-				<a id=${i} href='#${encodeForHash(mon.name)}_${encodeForHash(mon.source)}' title="${mon.name}">
-					<span class='name col-xs-4 col-xs-4-2'>${mon.name}</span>
-					<span title="${Parser.sourceJsonToFull(mon.source)}" class='col-xs-1 col-xs-1-8 source source${abvSource}'>${abvSource}</span>
-					<span class='type col-xs-4 col-xs-4-3'>${mon._pTypes.asText.uppercaseFirst()}</span>
-					<span class='col-xs-1 col-xs-1-7 text-align-center cr'>${mon.cr}</span>
-				</a>
-			</li>`;
-
-		// populate filters
-		sourceFilter.addIfAbsent(mon.source);
-		crFilter.addIfAbsent(mon.cr);
-		mon._pTypes.tags.forEach(t => tagFilter.addIfAbsent(t));
-		mon._fMisc = mon.legendary || mon.legendaryGroup ? ["Legendary"] : [];
-	}
-	table.append(textStack);
-
-	// sort filters
+	sourceFilter.items = Object.keys(loadedSources).map(src => new FilterItem(src, loadSource(JSON_LIST_NAME, addMonsters)));
 	sourceFilter.items.sort(ascSort);
-	crFilter.items.sort(ascSortCr);
-	typeFilter.items.sort(ascSort);
-	tagFilter.items.sort(ascSort);
 
-	const list = search({
+	list = search({
 		valueNames: ["name", "source", "type", "cr"],
 		listClass: "monsters"
 	});
-
-	filterBox.render();
 
 	// filtering function
 	$(filterBox).on(
 		FilterBox.EVNT_VALCHANGE,
 		handleFilterChange
 	);
-
-	function handleFilterChange() {
-		list.filter(function(item) {
-			const f = filterBox.getValues();
-			const m = monsters[$(item.elm).attr(FLTR_ID)];
-
-			return sourceFilter.toDisplay(f, m.source) &&
-			crFilter.toDisplay(f, m.cr) &&
-			sizeFilter.toDisplay(f, m.size) &&
-			typeFilter.toDisplay(f, m._pTypes.type) &&
-			tagFilter.toDisplay(f, m._pTypes.tags) &&
-			miscFilter.toDisplay(f, m._fMisc);
-		});
-	}
-
-	initHistory();
-	handleFilterChange();
 
 	// sorting headers
 	$("#filtertools").find("button.sort").on(EVNT_CLICK, function() {
@@ -184,6 +143,66 @@ function populate(tobData, mainData) {
 		}
 		this.useDice = !this.useDice;
 	})
+}
+
+function handleFilterChange() {
+	list.filter(function(item) {
+		const f = filterBox.getValues();
+		const m = monsters[$(item.elm).attr(FLTR_ID)];
+
+		return sourceFilter.toDisplay(f, m.source) &&
+			crFilter.toDisplay(f, m.cr) &&
+			sizeFilter.toDisplay(f, m.size) &&
+			typeFilter.toDisplay(f, m._pTypes.type) &&
+			tagFilter.toDisplay(f, m._pTypes.tags) &&
+			miscFilter.toDisplay(f, m._fMisc);
+	});
+}
+
+let monsters = [];
+let mI = 0;
+function addMonsters(data) {
+	monsters = monsters.concat(data);
+
+	const table = $("ul.monsters");
+	let textStack = "";
+	// build the table
+	for ( ; mI < monsters.length; mI++) {
+		const mon = monsters[mI];
+		mon._pTypes = Parser.monTypeToFullObj(mon.type); // store the parsed type
+		mon.cr = mon.cr === undefined ? "Unknown" : mon.cr;
+
+		const abvSource = Parser.sourceJsonToAbv(mon.source);
+
+		textStack +=
+			`<li ${FLTR_ID}='${mI}'>
+				<a id=${mI} href='#${encodeForHash(mon.name)}_${encodeForHash(mon.source)}' title="${mon.name}">
+					<span class='name col-xs-4 col-xs-4-2'>${mon.name}</span>
+					<span title="${Parser.sourceJsonToFull(mon.source)}" class='col-xs-1 col-xs-1-8 source source${abvSource}'>${abvSource}</span>
+					<span class='type col-xs-4 col-xs-4-3'>${mon._pTypes.asText.uppercaseFirst()}</span>
+					<span class='col-xs-1 col-xs-1-7 text-align-center cr'>${mon.cr}</span>
+				</a>
+			</li>`;
+
+		// populate filters
+		crFilter.addIfAbsent(mon.cr);
+		mon._pTypes.tags.forEach(t => tagFilter.addIfAbsent(t));
+		mon._fMisc = mon.legendary || mon.legendaryGroup ? ["Legendary"] : [];
+	}
+	table.append(textStack);
+
+	// sort filters
+	crFilter.items.sort(ascSortCr);
+	typeFilter.items.sort(ascSort);
+	tagFilter.items.sort(ascSort);
+
+	list.reIndex();
+	list.sort("name");
+
+	filterBox.render();
+
+	initHistory();
+	handleFilterChange();
 }
 
 // sorting for form filtering
@@ -234,8 +253,8 @@ function loadhash (id) {
 	$("th#name").html(
 		`<span class="stats-name">${name}</span>
 		<span class="stats-source source${source}" title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>
-		<a href="img/${source}/${name}.png" target='_blank'>
-			<img src="img/${source}/${name}.png" class='token' onerror='imgError(this)'>
+		<a href="img/${source}/${name.replace(/"/g, "")}.png" target='_blank'>
+			<img src="img/${source}/${name.replace(/"/g, "")}.png" class='token' onerror='imgError(this)'>
 		</a>`
 	);
 
@@ -408,25 +427,6 @@ function loadhash (id) {
 	if (reactions && (reactions.text || reactions.length)) {
 
 		$("tr#reactions").show();
-
-		if (!reactions.length) {
-			const reactionname = reactions.name;
-			const reactiontext = reactions.text;
-			let reactiontexthtml = "";
-			let renderedcount = 0;
-			for (let n = 0; n < reactiontext.length; n++) {
-				if (!reactiontext[n]) continue;
-
-				renderedcount++;
-				let firstsecond = "";
-				if (renderedcount === 1) firstsecond = "first ";
-				if (renderedcount === 2) firstsecond = "second ";
-
-				reactiontexthtml = reactiontexthtml + "<p class='" + firstsecond + "'>" + reactiontext[n] + "</p>";
-			}
-
-			$("tr#reactions").after("<tr class='reaction'><td colspan='6' class='reaction0'><span class='name'>" + reactionname + ".</span> " + reactiontexthtml + "</td></tr>");
-		}
 
 		if (reactions.length) for (let i = reactions.length - 1; i >= 0; i--) {
 			const reactionname = reactions[i].name;
@@ -632,7 +632,7 @@ function loadhash (id) {
 			roll = $this.attr("data-roll-alt").replace(/\s+/g, "");
 			// hacks because droll doesn't support e.g. "1d20+1d4+2" :joy: :ok_hand:
 			const multi = roll.split(";");
-			roll = roll.replace(";", "+");
+			roll = roll.replace(/;/g, "+");
 			rollResult =  droll.roll(multi[0]);
 			const res2 = droll.roll(multi[1]);
 			rollResult.rolls = rollResult.rolls.concat(res2.rolls);

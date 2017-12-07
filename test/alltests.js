@@ -11,9 +11,24 @@ const results = [];
 let errors = [];
 
 // Loop through each non-helper schema and push all validation results
-fs.readdirSync("./test/schema").forEach(file => {
+fs.readdirSync("./test/schema")
+	.filter(file => file.endsWith(".json")) // ignore directories
+	.forEach(file => {
 	if (file !== helperFile) results.push(validator.validate(require(`../data/${file}`), require(`./schema/${file}`), {nestedErrors: true}));
-})
+});
+
+fs.readdirSync(`./test/schema`)
+	.filter(category => !category.endsWith(".json")) // only directories
+	.forEach(category => {
+		console.log(`Testing category ${category}`);
+		const schemas = fs.readdirSync(`./test/schema/${category}`);
+		fs.readdirSync(`./data/${category}`).forEach(dataFile => {
+			schemas.filter(schema => dataFile.startsWith(schema.split(".")[0])).forEach(schema => {
+				console.log(`Testing data/${category}/${dataFile}`.padEnd(50), ` against schema/${category}/${schema}`);
+				results.push(validator.validate(require(`../data/${category}/${dataFile}`), require(`./schema/${category}/${schema}`), {nestedErrors: true}));
+			})
+		})
+	});
 
 results.forEach( (result) => {
 	if (!result.valid) errors = errors.concat(result.errors);

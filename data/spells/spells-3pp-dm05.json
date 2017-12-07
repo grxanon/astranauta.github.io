@@ -1,0 +1,876 @@
+{
+	"spell": [
+		{
+			"name": "Amplify Ley Field",
+			"source": "DM-05 3pp",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a faintly shimmering field of charged energy around yourself. Within that area, the intensity of ley lines you’re able to draw on increases from weak to strong, or from strong to titanic.",
+				"If no ley lines are near enough for you to draw on, you can treat the area of the spell itself as an unlocked, weak ley line."
+			]
+		},
+		{
+			"name": "Disruptive Aura",
+			"source": "DM-05 3pp",
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Warping, prismatic auras surround and outline each creature inside a 10-foot cube within range. The auras shed dim light to 10 feet, and the outlines reveal hidden and invisible creatures. If an affected creature casts a spell or activates a magic item, it must make a Wisdom saving throw. On a success, the spell or magic item functions normally. On a failure, the magic effect is suppressed for the duration of the aura. Time spent suppressed counts fully against the duration of the spell or magic item effect."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 9th level, the size of the cube increases to 20 feet per side."
+					]
+				}
+			]
+		},
+		{
+			"name": "Energy Absorption",
+			"source": "DM-05 3pp",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"For the duration, a willing creature you touch has resistance to acid, cold, fire, force, lightning, and thunder damage.",
+				"If the spell is used against an unwilling creature, you must make a melee spell attack with a range of 5 feet. If it hits, then for the duration of the spell, the affected creature must make a saving throw with its spellcasting ability whenever it casts a spell that causes one of the listed damage types. If the saving throw fails, the spell fails and its slot is wasted; if the saving throw succeeds, the spell is cast but its damage is halved before applying the effects of saving throws, resistance, etc."
+			]
+		},
+		{
+			"name": "Greater Ley Pulse",
+			"source": "DM-05 3pp",
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You set up ley energy vibrations in a 20-foot cube within range, and name one type of damage. Each creature in the area must succeed on a Wisdom saving throw or lose immunity to the chosen damage type for the duration."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 9th-level spell slot, choose two damage types instead of one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Land Bond",
+			"source": "DM-05 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "soil taken from a ley-influenced area"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a willing creature and infuse it with ley energy, creating a bond between the creature and the land. For the duration of the spell, if the target is in contact with the ground, the target has advantage on saving throws and ability checks made to avoid being moved or knocked prone against its will. Additionally, the creature ignores nonmagical difficult terrain and is immune to effects from extreme environments such as heat, cold (but not cold or fire damage), and altitude."
+			]
+		},
+		{
+			"name": "Lesser Ley Pulse",
+			"source": "DM-05 3pp",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You set up ley energy vibrations in a 10-foot cube within range, and name one type of damage. Each creature in the area must make a successful Wisdom saving throw or lose resistance to the chosen damage type for the duration of the spell."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 7th-level spell slot, choose two damage types instead of one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ley Disruption",
+			"source": "DM-05 3pp",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a chip of broken crystal infused with ley energy"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a 15-foot-radius sphere filled with disruptive ley energy. The sphere is centered around a point you can see within range. Surfaces inside the sphere shift erratically, becoming difficult terrain for the duration. Any creature that starts its turn in the area or enters the area for the first time on a turn must succeed on a Strength saving throw or fall prone. If you cast this spell in an area within the influence of a ley line, creatures have disadvantage on their saving throws against its effect.",
+				"Special: A geomancer with a bound ley line is “within the influence of a ley line” for purposes of ley disruption as long as he or she is on the same plane as the bound line."
+			]
+		},
+		{
+			"name": "Ley Energy Bolt",
+			"source": "DM-05 3pp",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "miles",
+					"amount": 100
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a ley-infused pebble"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You transform ambient ley power into a crackling bolt of energy 100 feet long and 5 feet wide. Each creature in the line takes 5d8 force damage, or half damage with a successful Dexterity saving throw.",
+				"The bolt passes through the first inanimate object in its path, and creatures on the other side of the obstacle receive no bonus to their saving throw from cover. The bolt stops if it strikes a second object."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the bolt’s damage increases by 1d8 for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ley Leech",
+			"source": "DM-05 3pp",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You channel destructive ley energy through your touch. Make a melee spell attack against a creature within your reach. The target takes 8d10 necrotic damage and must succeed on a Constitution saving throw or have disadvantage on attack rolls, saving throws, and ability checks. An affected creature repeats the saving throw at the end of its turn, ending the effect on itself with a success.",
+				"This spell has no effect against constructs or undead."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the spell’s damage increases by 1d10 for each slot level above 5th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ley Sense",
+			"source": "DM-05 3pp",
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You tune your senses to the pulse of ambient ley energy flowing through the world. For the duration, you gain tremorsense with a range of 20 feet and you are instantly aware of the presence of any ley line within 5 miles. You know the distance and direction to every ley line within that range."
+			]
+		},
+		{
+			"name": "Ley Storm",
+			"source": "DM-05 3pp",
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "sight"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A roiling stormcloud of ley energy forms, centered around a point you can see and extending horizontally to a radius of 360 feet, with a thickness of 30 feet. Shifting color shoots through the writhing cloud, and thunder roars out of it. Each creature under the cloud at the moment when it’s created (no more than 5,000 feet beneath it) takes 2d6 thunder damage and is deafened for 5 minutes; a successful Constitution saving throw negates both effects.",
+				"Each round you maintain concentration on this spell, the storm produces additional effects on your turn.",
+				"Round 2: Ley-infused pebbles rain from the cloud, causing 1d6 bludgeoning damage to everything beneath it (no saving throw).",
+				"Round 3: Up to six bolts of ley energy leap from the cloud to strike creatures or objects of your choice beneath the cloud. No creature or object can be struck by more than one bolt. A creature struck takes 8d8 force damage, or half damage with a successful Dexterity saving throw.",
+				"Round 4: A burst of prismatic light fills a 20-foot sphere centered on a point beneath the cloud. All creatures in the sphere are affected as if targeted by a disruptive aura spell.",
+				"Rounds 5-10: Flashes of multicolored light burst through and out of the cloud, causing creatures to have disadvantage on Wisdom (Perception) checks that rely on sight while they are beneath the cloud. In addition, each round, you trigger a burst of energy that fills a 20-foot sphere centered on a point you can see beneath the cloud. Each creature in the sphere takes 4d8 force damage (no saving throw).",
+				"Special: A geomancer who casts this spell regains 4d10 hit points."
+			]
+		},
+		{
+			"name": "Ley Surge",
+			"source": "DM-05 3pp",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You unleash the power of a ley line within 5 miles, releasing a spark that flares into a 30-foot sphere centered around a point within 150 feet of you. Each creature in the sphere takes 14d6 force damage and is stunned for 1 minute; a successful Constitution saving throw halves the damage and negates the stun. A stunned creature repeats the saving throw at the end of its turn, ending the effect on itself on a success.",
+				"Special: A geomancer with a bound ley line can cast this spell as long as he or she is on the same plane as the bound line."
+			]
+		},
+		{
+			"name": "Ley Whip",
+			"source": "DM-05 3pp",
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You channel the power of a ley line within 1 mile into a crackling tendril of multicolored ley energy. The tendril extends from your hand but doesn’t interfere with your ability to hold or manipulate objects. When you cast the spell and as a bonus action on subsequent turns, you can direct the tendril to strike a target within 50 feet of you. Make a melee spell attack; on a hit, the tendril does 3d8 force damage and the target must make a Strength saving throw. If the saving throw fails, you can push the target away or pull it closer, up to 10 feet in either direction.",
+				"Special: A geomancer with a bound ley line can cast this spell as long as he or she is on the same plane as the bound line."
+			]
+		},
+		{
+			"name": "Ray of Life Suppression",
+			"source": "DM-05 3pp",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You launch a swirling ray of disruptive ley energy at a creature within range. Make a ranged spell attack. On a hit, the creature takes 6d8 necrotic damage and its maximum hit points are reduced by an equal amount. This reduction lasts until the creature finishes a short or long rest, or benefits from a greater restoration spell or comparable magic.",
+				"This spell has no effect on constructs or undead."
+			]
+		},
+		{
+			"name": "Volley Shield",
+			"source": "DM-05 3pp",
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a willing creature and create a shimmering shield of ley energy to protect it. The shield grants the target a +5 AC bonus and gives it resistance against nonmagical bludgeoning, piercing, and slashing damage for the duration.",
+				"In addition, the shield can reflect hostile spells back at their casters. When the target makes a successful saving throw against a hostile spell, the caster of the spell immediately becomes its new target. The caster is entitled to the appropriate saving throw against the returned spell, if any, and suffers all effects the spell normally causes."
+			]
+		}
+	]
+}

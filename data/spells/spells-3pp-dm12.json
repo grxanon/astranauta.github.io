@@ -1,0 +1,1805 @@
+{
+	"spell": [
+		{
+			"name": "Animate Ghoul",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "piece of rotting flesh and an onyx gemstone worth 100 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You raise one Medium or Small humanoid corpse as a ghoul under your control. Any class levels or abilities the creature had in life are gone, replaced by the standard ghoul stat block."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level, it can be used on the corpse of a Large humanoid to create a Large ghoul. When you cast this spell using a spell slot of 4th level, this spell creates a ghast, but the material component changes to an onyx gemstone worth at least 200 gp."
+					]
+				}
+			]
+		},
+		{
+			"name": "As You Were",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of flesh from a creature of the target’s race"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"When cast on a dead or undead body, as you were returns that creature to the appearance it had in life while it was healthy and uninjured. The target must have a physical body; the spell fails automatically if the target is normally noncorporeal (banshee, ghost, wraith, et al.).",
+				"If as you were is cast on a corpse, its effect is identical to gentle repose except that the corpse's appearance is restored to that of a healthy, uninjured (albeit dead) person.",
+				"If the target is an undead creature, it also is restored to the appearance it had in life, even if it died from disease or from severe wounds, or centuries ago. The target looks, smells, and sounds (if it can talk) as it did in life. Friends and family can tell something is wrong only with a successful Wisdom (Insight) check against your spell save DC, and only if they have reason to be suspicious (knowing the person should be dead is sufficient reason). Spells and abilities that detect undead are also fooled, but the creature remains susceptible to Turn Undead as normal.",
+				"This spell doesn't confer speech on undead that normally can't speak. The creature eats, drinks, and breathes as a living creature does; it can mimic sleep, but it has no more need for it than it had before. Any amount of radiant, necrotic, or Constitution damage immediately ends this spell.",
+				"If this spell is cast on an undead creature that isn't your ally or under your control, it makes a Charisma saving throw to resist the effect."
+			]
+		},
+		{
+			"name": "Blood and Steel",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, you cut your hand and take 1d4 slashing damage that can't be healed until you take a long rest. Then touch a construct; it must make a successful Constitution saving throw or be charmed by you for the duration. If you or your allies are fighting the construct, it has advantage on the saving throw. Even constructs that are immune to charm can be affected by this spell.",
+				"While the construct is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “attack the ghouls,” “block the bridge,” or “fetch that bucket.” If the construct completes the order and doesn't receive further direction from you, it defends itself.",
+				"You can use your action to take total and precise control of the target. Until the end of your next turn, the construct takes only the actions you specify and does nothing you haven't ordered it to do. During this time, you can also cause the construct to use a reaction, but this requires you to use your own reaction as well.",
+				"Each time the construct takes damage, it makes a new Constitution saving throw against the spell. If the saving throw succeeds, the spell ends.",
+				"If the construct is already under your control when the spell is cast, it gains an Intelligence of 10 (unless its own Intelligence is higher, in which case it retains the higher score) for 4 hours. The construct is capable of acting independently, though it remains loyal to you for the spell's duration. You can also grant the target a bonus equal to your Intelligence modifier on one skill in which you have proficiency."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours."
+					]
+				}
+			]
+		},
+		{
+			"name": "Blood Armor",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you strike a foe with a melee weapon attack, you can immediately cast blood armor as a bonus action. The foe you struck must contain blood; targets that don't bleed don't satisfy the requirement for blood armor. The blood flowing from your foe magically increases in volume and forms a suit of armor around you, granting you armor class 18 + your Dexterity modifier for the spell’s duration. Blood armor has no Strength requirement, doesn't hinder spellcasting, and doesn't incur disadvantage on Dexterity (Stealth) checks.",
+				"If the creature you struck was celestial, blood armor also grants you advantage on Charisma saving throws."
+			]
+		},
+		{
+			"name": "Blood Lure",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "blood pool"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You point at any open liquid (a jar, a bowl, even a puddle) that contains at least a quart of blood. It flashes momentarily with sparkling light before regaining its former hue. Predators and creatures that feed on blood, including undead such as vampires, within 60 feet must make Charisma saving throws. Creatures with Keen Smell or any similar scent-boosting ability have disadvantage on the saving throw, while undead that feed on blood have advantage on the saving throw. Those that fail are drawn toward the blood; they must move toward it unless impeded.",
+				"Once an affected creature reaches the blood, it tries to consume it, foregoing all other actions while the blood is present. A successful attack against an affected creature ends the effect, as does the complete consumption of the blood, which requires just 1 action by an affected creature."
+			]
+		},
+		{
+			"name": "Blood Spoor",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of the quarry’s blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"By touching a drop of your quarry’s blood (spilled or drawn within the past hour), you can follow its trail unerringly across any surface or under water, no matter how fast you are moving. If your quarry takes flight, you can follow its trail along the ground or through the air if you have means to fly.",
+				"If your quarry moves magically (such as through a dimension door or via a teleport spell), you sense its trail as a straight path from where the magical movement started to where it ended. Such a vector may lead through lethal or impassable barriers. This spell even reveals the path of those using pass without trace, but it fails to locate creatures protected by nondetection or by other effects that prevent scrying or cause divination spells to fail. If your quarry moves to another plane, its trail ends without trace, but blood spoor picks up the trail again if the caster shifts to the same plane as the quarry before the spell expires."
+			]
+		},
+		{
+			"name": "Blood Tide",
+			"source": "DM-12 3pp",
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 4
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, the targeted creature must succeed on a Constitution saving throw or bleed from its nose, eyes, ears, and mouth. This bleeding causes no damage but imposes a –2 penalty on the creature's Intelligence, Charisma, and Wisdom checks. Blood tide has no effect on undead or constructs.",
+				"A bleeding creature might also attract the attention of creatures such as stirges, sharks, or giant mosquitoes, depending on the circumstances.",
+				"A cure wounds spell stops the bleeding before the spell's duration expires, as does a successful DC 10 Wisdom (Medicine) check.",
+				"The duration increases to 2 minutes at 5th level, 10 minutes at 11th level, and 1 hour at 17th level."
+			]
+		},
+		{
+			"name": "Bloodshot",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You launch a jet of boiling blood from your eyes at a target within 40 feet of you. You take 1d6 necrotic damage and make a ranged spell attack against the target. If the attack hits, the target takes 2d10 fire damage plus 2d8 psychic damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the fire damage increases by 1d10 for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bloody Smite",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon pulses with a dull, red light and the attack deals an extra 1d6 necrotic damage to the target. At the start of each of its turns until the spell ends, the target must make a Constitution saving throw. On a failed save, it takes 1d6 necrotic damage, it bleeds profusely from the mouth, and it can't speak intelligibly or cast spells with a verbal component. On a successful save, the spell ends. lf the target or an ally within 5 feet of it uses an action to tend the wound with a successful Wisdom (Medicine) check against your spell save DC or the target receives magical healing, the spell ends."
+			]
+		},
+		{
+			"name": "Caustic Blood",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "special",
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your blood becomes caustic when exposed to the air. When you take damage, you can use your reaction to select up to three targets within 30 feet of you. Each target takes 1d10 acid damage unless it makes a successful Dexterity saving throw.",
+				"Spell lasts until you lose concentration."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the number of targets increases by 1 for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Conjure Undead",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a humanoid skull"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You summon a shadow to do your bidding. The creature appears in an unoccupied space that you can see within range. The creature is friendly to you and your allies for the duration. Roll initiative for the shadow, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the creature, it defends itself from hostile creatures but otherwise takes no actions. The shadow disappears when the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level, you can choose to summon a wight or a shadow. When you cast this spell with a spell slot of 5th level, you can choose to summon a ghost, a shadow, or a wight."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cruor of Visions",
+			"source": "DM-12 3pp",
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bone needle and catchbasin"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You prick your finger with a bone needle as you cast this spell, taking 1 necrotic damage. This drop of blood must be caught in a container such as a platter or a bowl, where it grows into a pool 1 foot in diameter. This pool acts as a crystal ball for the purpose of scrying.",
+				"If you place a drop (or dried flakes) of another creature's blood in the cruor of visions, the creature has disadvantage on any Wisdom saving throw to resist scrying. Additionally, you can treat the pool of blood as a crystal ball of telepathy (see the crystal ball description in the Fifth Edition rules)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the pool of blood acts as either a crystal ball of mind reading or a crystal ball of true seeing (your choice when the spell is cast)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Doom of Blue Crystal",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a blue crystal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 3
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You are surrounded by a field of glowing, blue energy lasting 3 rounds. Creatures within 5 feet of you (including yourself) must make a Constitution saving throw when the spell is cast and again at the start of each of your turns while the spell is in effect. A creature whose saving throw fails is restrained; a restrained creature whose saving throw fails is paralyzed; and a paralyzed creature whose saving throw fails is petrified and transforms into a statue of blue crystal. As with all concentration spells, you can end the field at any time (no action required). If you turn to crystal, the energy field ends after all affected creatures make their saving throws. Restrained and paralyzed creatures recover immediately when the spell effect ends, but petrification is permanent.",
+				"Crystal creatures can see, hear, and smell normally, but they don't need to eat or breathe. If shatter is cast on a crystal creature, it must succeed on a Constitution saving throw against the caster's spell save DC or be killed. If a crystal statue is broken or damaged, the subject has similar damage when its petrification ends.",
+				"Creatures transformed into blue crystal can be restored with dispel magic, greater restoration, or comparable magic."
+			]
+		},
+		{
+			"name": "Doom of Consuming Fire",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dead coal or a fistful of ashes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"This spell wreathes you in cold, purple fire that damages creatures near you. You take 3 (1d6) cold damage each round for the duration of the spell. Creatures within 5 feet of you when you cast the spell, and at the start of your turns while the spell is in effect, take 4 (1d8) cold damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a slot of 3rd level, the radius of the spell extends to 10 feet, damage to you is 4 (1d8) cold damage, and damage to other creatures is 5 (1d10 )cold damage. When you cast this spell using a slot of 4th level, the radius of the spell extends to 15 feet, damage to you is 5 (1d10) cold damage, and damage to other creatures is 6 (1d12) cold damage. When you cast this spell using a slot of 5th level, the radius of the spell extends to 20 feet, damage to you is 6 (1d12) cold damage, and damage to other creatures is 10 (1d20) cold damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Doom of the Cracked Shield",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"Doom of the cracked shield is cast on a melee weapon. The next time that weapon is used, it destroys the target's nonmagical shield or damages nonmagical armor, in addition to the normal effects of the attack. If the foe is using a nonmagical shield, it crumbles into sawdust and rust. If the foe doesn't use a shield, its nonmagical armor is permanently reduced in effectiveness by 2 points. If the target doesn't use armor or a shield, the spell is expended with no effect."
+			]
+		},
+		{
+			"name": "Doom of Dancing Blades",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"When you cast doom of dancing blades, you create 1d4 illusory copies of your weapon that float in the air 5 feet from you. These images move with you, spinning, shifting, and mimicking your attacks. When you are hit by a melee attack but the attack roll was within 3 of your armor class, one illusory weapon parries the attack; you take no damage and the illusory weapon is destroyed. When you are hit by a melee attack that an illusory weapon can't parry (the attack roll succeeds by 4 or more), you take only half damage from the attack and an illusory weapon is destroyed. Spells and effects that don't require an attack roll or that affect an area affect you normally and don't destroy any illusory weapons.",
+				"If you make a melee attack that scores a critical hit while doom of dancing blades is in effect on you, all your illusory dancing blades also strike the target and do 1d8 bludgeoning, piercing, or slashing damage (your choice) each.",
+				"An attacker must be able to see the illusory weapons to be affected. The spell has no effect if you are invisible or in total darkness, or on blind creatures."
+			]
+		},
+		{
+			"name": "Doom of Disenchantment",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"When you cast doom of disenchantment, your armor and shield glow with unholy light. When a creature hits you with an attack, the spell counters any augmenting magic granting the attack a bonus to hit (but not advantage) or bonus damage. For example, a +1 weapon would still be considered magical but it gets neither +1 to hit nor damage against a target under a doom of disenchantment. The doom also momentarily suppresses other magical abilities or spell-like abilities of the attack. A sword of wounding, for example, can't cause ongoing wounds on you and you recover hit points normally. If the attack was a spell or spell-like ability, it's affected as if you'd cast counterspell, using Charisma as your spellcasting ability. Spells with a duration of instantaneous, however, are unaffected."
+			]
+		},
+		{
+			"name": "Doom of the Earthen Maw",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"The ground within 30 feet of the point you designate turns into filthy and slippery muck, so that those in the area sink down to a watery death. This spell affects sand, earth, mud, or ice, but not stone, wood, or other material. For the duration, the ground in the affected area is difficult terrain. A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the mud until the spell ends. A restrained creature can free itself by using an action to make a successful Strength saving throw. Creatures that free themselves or that enter the area after the spell was cast are affected by the difficult terrain but don't become restrained.",
+				"Each round, a restrained creature sinks deeper into the muck. A Medium or smaller creature that is restrained for 3 rounds becomes completely submerged at the end of its third turn. A Large creature becomes submerged after 4 rounds. Submerged creatures begin suffocating if they aren't holding their breath. Creatures that are still submerged when the spell expires are sealed beneath the newly-solid ground. At that point, they can escape only if someone else digs them out or they have a burrowing speed."
+			]
+		},
+		{
+			"name": "Doom of Serpent Coils",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "vial of poison"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You drink a dose of venom or other poison and through the unholy power of your dark god, you spread the effect to other living things around you. If the poison normally allows a saving throw, you fail it automatically. You suffer the effect of the poison normally before spreading the poison to all other living creatures within 10 feet of you. Instead of making the usual saving throw against the poison, creatures around you make a Constitution saving throw against the spell. A target whose saving throw succeeds suffers no damage or other effect from the poison and is immune to further castings of doom of serpent coils for 24 hours. Targets that fail the saving throw don't take the poison's usual effect; instead, they take 14 (4d6) poison damage and are poisoned. While poisoned this way, a creature repeats the saving throw at the end of its turn. On a failure, it takes 14 (4d6) poison damage and is still poisoned. On a success, it's no longer poisoned and it's immune to further castings of doom of serpent coils for 24 hours.",
+				"Multiple castings of doom of serpent coils have no additional effect against creatures that are already poisoned by it. The effect can also be ended by protection from poison or comparable magic."
+			]
+		},
+		{
+			"name": "Doom of the Slippery Rogue",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "bacon fat"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"A doom of the slippery rogue spell covers a 20-foot-by-20-foot area of wall or floor with a thin coating of bacon fat or similar grease. Climbers must make a successful DC 20 Strength (Athletics) check or immediately fall from the surface unless they're held in place by ropes or other climbing gear. A creature standing on an affected floor falls prone unless it makes a successful Dexterity saving throw. Movement through the affected area is done at half speed (this is cumulative with the usual halving for climbing), and any movement must be accompanied by a Dexterity (walking) or Strength (climbing) saving throw. If the saving throw fails, the moving creature falls."
+			]
+		},
+		{
+			"name": "Exsanguinating Cloud",
+			"source": "DM-12 3pp",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, a rose-colored mist billows up from the spot you indicate within range, obscuring sight and draining blood from living creatures. The cloud spreads around corners. It lasts for the duration or until strong wind disperses it, ending the spell. Its area is heavily obscured.",
+				"This cloud leeches the blood or similar fluid from creatures in the area. It doesn't affect undead or constructs. Any creature in the cloud when it's created or at the start of your turn takes 21 (6d6) necrotic damage and gains one level of exhaustion; a successful Constitution saving throw halves the damage and prevents gaining exhaustion."
+			]
+		},
+		{
+			"name": "Hobble Mount",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"When you cast hobble mount as a successful melee spell attack against a horse, wolf, or other four-legged or two-legged beast being ridden as a mount, that beast is disabled so that it can’t move at its normal speed without incurring injury. An affected creature that moves more than half its base speed in a turn takes 2d6 bludgeoning damage.",
+				"This spell has no effect on a creature that your GM deems to not be a mount."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d6 for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Hone Blade",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small whetstone or lodestone chip"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You magically sharpen the edge of any bladed weapon or object. The target weapon gets +1 to damage on its next successful hit."
+			]
+		},
+		{
+			"name": "Memento Mori",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You transform yourself into a horrifying vision of death, rotted and crawling with maggots, exuding the stench of the grave. All creatures that see you must succeed on a Charisma saving throw or be stunned until the end of your next turn.",
+				"A creature that succeeds on the saving throw is immune to further castings of this spell for 24 hours."
+			]
+		},
+		{
+			"name": "Sanguine Horror",
+			"source": "DM-12 3pp",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a miniature dagger"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, you prick yourself with the focus, taking 1 piercing damage. The spell fails if this damage is prevented or negated in any way. From the drop of blood, you conjure a blood elemental. The blood elemental is friendly to you and your companions for the duration. It disappears when it's reduced to 0 hit points or when the spell ends.",
+				"Roll initiative for the elemental, which has its own turns. It obeys verbal commands from you (no action required by you). If you don't issue any commands to the blood elemental, it defends itself but otherwise takes no actions. If your concentration is broken, the blood elemental doesn't disappear, but you lose control of it and it becomes hostile to you and your companions. An uncontrolled blood elemental cannot be dismissed by you, and it disappears 1 hour after you summoned it."
+			]
+		},
+		{
+			"name": "St. Blusen's Reaver Spirit",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You inspire allies to fight with the savagery of berserkers. You and allies you can see within range have: advantage on Strength checks and Strength saving throws; resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons; and a +2 bonus to damage with melee weapons.",
+				"When the spell ends, all affected creatures must succeed on a Constitution saving throw or gain 1d4 levels of exhaustion."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the melee damage bonus increases by 1 for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "St. Parvalas's Risen Road",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 50
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bentwood stick"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": "2-12"
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, you open a glowing portal into the plane of shadow. The portal remains open for 1 minute, until 10 creatures step through it, or until you collapse it (no action required). Stepping through the portal places you on a shadow road leading to a destination within 50 miles, or in a direction specified by you. The road is in ideal condition. You and your companions can travel it safely at a normal pace, but you can't rest on the road; if you stop for more than 10 minutes, the spell expires and dumps you back into the real world at a random spot within 10 miles of your starting point.",
+				"The spell expires 2d6 hours after being cast. When that happens, travelers on the road are safely deposited near their specified destination or 50 miles from their starting point in the direction that was specified when the spell was cast. Travelers never incur exhaustion no matter how many hours they spent walking or riding on the shadow road. The temporary shadow road ceases to exist; anything left behind is lost in the shadow realm. Each casting of St. Parvalas's risen road creates a new shadow road.",
+				"A small chance exists that a temporary shadow road might intersect with an existing shadow road, opening the possibility for meeting other travelers or monsters, or for choosing a different destination mid-journey. The likelihood is entirely up to the GM. See the Midgard Campaign Setting for further details on shadow roads."
+			]
+		},
+		{
+			"name": "St. Whiteskull's Borrowing",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a polished vampire’s fang"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"By touching a target, you gain one sense, movement type and speed, feat, language, immunity, or extraordinary ability of the target for the duration of the spell. The target also retains the use of the borrowed ability. An unwilling target prevents the effect with a successful Constitution saving throw. The target can be a living creature or one that's been dead no longer than 1 minute; a corpse makes no saving throw. You can possess only one borrowed power at a time."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level, its duration increases to 1 hour. Additionally, the target loses the stolen power for the duration of the spell."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shroud of Death",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of ice"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You call up a black veil of necrotic energy that devours the living. You draw on the life energy of all living creatures within 30 feet of you that you can see. When you cast the spell, every living creature within 30 feet of you that you can see takes 1 necrotic damage, and all those hit points transfer to you as temporary hit points. The transfer increases to 2 points per creature at the start of your second turn with the spell, 3 per creature at the start of your third turn, and so on. All living creatures you can see within 30 feet of you at the start of your turns are affected. There is no saving throw; creatures can avoid the effect by moving more than 30 feet from you or by getting out of your line of sight, but they become susceptible again if they move back into the spell's area of effect. The temporary hit points last until the spell expires."
+			]
+		},
+		{
+			"name": "Stanch",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"The target’s blood coagulates rapidly, so that a dying target stabilizes and any ongoing bleeding or wounding effect on the target ends. The target can't be the source of blood for any spell or effect that requires even a drop of blood."
+			]
+		},
+		{
+			"name": "Strength of the Underworld",
+			"source": "DM-12 3pp",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "unholy symbol of a deity of the dead"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You call on the power of the dark gods of the afterlife to strengthen the target's undead energy. The spell's target has advantage on saving throws against Turn Undead while the spell lasts.",
+				"If this spell is cast on a corpse that died from darakhul fever, the corpse gains a +5 bonus on its roll to determine whether it rises as a darakhul (see the darakhul entry in Tome of Beasts)."
+			]
+		},
+		{
+			"name": "Timely Distraction",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a handful of sand or dirt thrown in the air"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 3
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"You call forth a swirling, crackling wave of constantly shifting pops, flashes, and swept-up debris. This chaos can confound one creature. If the target creature fails a Wisdom saving throw, roll 1d4 and consult the table below to determine the result. An affected creature repeats the saving throw at the end of its turn, ending the effect on a success. Otherwise, the spell expires after 3 rounds.",
+				"1: Blinded",
+				"2: Stunned",
+				"3: Deafened",
+				"4: Prone"
+			]
+		},
+		{
+			"name": "Visage of Madness",
+			"source": "DM-12 3pp",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, your face momentarily becomes that of a demon lord, frightful enough to drive enemies mad. Every foe that's within 30 feet of you and that sees you must make a Wisdom saving throw. A creature that fails claws savagely at its eyes, doing (1d6 + the creature’s Strength modifier) piercing damage, is stunned until the end of its next turn, and is blinded for 1d4 rounds. A creature that rolls maximum damage against itself (a 6 on the d6) is blinded permanently."
+			]
+		},
+		{
+			"name": "Vital Mark",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You perform a ritual that marks one unattended magic item (including weapons and armor) with a clearly visible stain of your blood. The exact appearance of the bloodstain is up to you. The item’s magical abilities don't function for anyone else as long as the bloodstain remains on it. For example, a +1 flaming longsword with a vital mark functions as a nonmagical longsword in the hands of anyone but the caster, but it still functions as a +1 flaming longsword for the caster who placed the bloodstain on it. A wand of magic missiles would be no more than a stick in the hands of anyone but the vital mark's caster."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher on the same item for 28 consecutive days, the effect becomes permanent until dispelled."
+					]
+				}
+			]
+		},
+		{
+			"name": "Vomit Tentacles",
+			"source": "DM-12 3pp",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of a tentacle"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 5
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Antipaladin",
+						"source": "DM-12 3pp"
+					}
+				]
+			},
+			"entries": [
+				"Upon casting this spell, your jaws distend and dozens of thin, slimy tentacles emerge from your mouth to grasp and bind your opponents. Make a melee spell attack against a foe within 15 feet of you. On a hit the target takes (2d6 + your Strength modifier) bludgeoning damage and is grappled (escape DC = your spell save DC). Until this grapple ends, the target is restrained and it takes (2d6 + your Strength modifier) bludgeoning damage at the start of each of your turns. You can grapple only one creature at a time.",
+				"The tentacles can be attacked to free a grappled opponent. Their armor class equals yours. If they take (5 + your Constitution modifier) slashing damage from a single attack, enough tentacles are severed to free a grappled opponent. Severed tentacles are replaced by new ones at the start of your turn. Damage done to the tentacles doesn't affect your hit points.",
+				"While the spell is in effect, you are incapable of speech and can't cast spells with verbal components."
+			]
+		},
+		{
+			"name": "Weapon of Blood",
+			"source": "DM-12 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of iron shavings"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"When you cast this spell, you inflict 1d4 slashing damage on yourself that can't be healed until after the blade created by this spell is destroyed or the spell ends. The trickling blood transforms into a dagger of red metal that functions as a +1 dagger."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level, the self-inflicted wound deals 3d4 slashing damage and the spell produces a +2 dagger. When you cast this spell using a spell slot of 6th level, the self-inflicted wound deals 6d4 slashing damage and the spell produces a +2 dagger of wounding. When you cast this spell using a spell slot of 9th level, the self-inflicted wound does 9d4 slashing damage and the spell produces a +3 dagger of wounding."
+					]
+				}
+			]
+		}
+	]
+}

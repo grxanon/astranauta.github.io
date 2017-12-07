@@ -1,0 +1,987 @@
+{
+	"spell": [
+		{
+			"name": "Banshee Wail",
+			"source": "DM-10 3pp",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a swatch from a death shroud"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You emit a soul-shattering wail. Every creature within a 30-foot cone who hears the wail must make a Wisdom saving throw. Those that fail lose half their remaining hit points and become frightened of you; a frightened creature repeats the saving throw at the end of its turn, ending the effect on itself with a success. Those that succeed take 3d10 psychic damage and aren’t frightened. This spell has no effect on constructs and undead."
+			]
+		},
+		{
+			"name": "Become Nightwing",
+			"source": "DM-10 3pp",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a crow’s eye"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"By channeling the essence of the Shadow Realm into yourself, this spell imbues you with wings of shadow. For the duration of the spell, you gain a fly speed of 60 feet and a new attack action: nightwing breath.",
+				"Nightwing Breath (recharge 4–6): You exhale shadow-substance in a 30-foot cone. Each creature in the area takes 5d6 necrotic damage, or half damage with a successful Dexterity saving throw."
+			]
+		},
+		{
+			"name": "Black Ribbons",
+			"source": "DM-10 3pp",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of ribbon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You pull pieces of the Shadow Realm into your own reality, causing a 20-foot cube to fill with inky ribbons that turn the area into difficult terrain and wrap around nearby creatures. Any creature that ends its turn in the area becomes restrained by the shadow ribbons until the end of its next turn unless it makes a successful Dexterity saving throw. Once a creature makes this saving throw successfully, it can’t be restrained again by these black ribbons, but it’s still affected by the difficult terrain."
+			]
+		},
+		{
+			"name": "Call Shadow Mastiff",
+			"source": "DM-10 3pp",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dog’s tooth"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You conjure a shadow mastiff from the essence of the Shadow Realm. This creature obeys your verbal commands to aid you in battle or to seek out a specific creature.",
+				"The mastiff is friendly to you and your companions. Roll initiative for the mastiff; it acts on its own turn. It obeys simple, verbal commands from you (giving a command takes no action on your part), within its ability to act.",
+				"The mastiff disappears when it drops to 0 hit points or when the spell ends."
+			]
+		},
+		{
+			"name": "Claws of Darkness",
+			"source": "DM-10 3pp",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You shape shadows into claws that grow from your fingers and drip inky blackness. You can make melee spell attacks with these claws that deal 1d10 cold damage, and the claws have a reach of 10 feet."
+			]
+		},
+		{
+			"name": "Cloak in Shadow",
+			"source": "DM-10 3pp",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are targeted by an attack but before the roll is made"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You siphon energy from the Shadow Realm to protect yourself from an immediate threat. As a reaction, you pull shadows around yourself to distort reality. The attack against you is made with disadvantage and you have resistance to radiant damage until the start of your next turn."
+			]
+		},
+		{
+			"name": "Cloying Darkness",
+			"source": "DM-10 3pp",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You reach out with a hand of decaying shadows. Make a ranged spell attack. If it hits, the target takes 2d8 necrotic damage and must make a Constitution saving throw. If it fails, its visual organs are enveloped in shadow until the start of your next turn, causing it to treat all lighting as if it’s one step lower in intensity (it treats bright light as dim, dim light as darkness, and darkness as magical darkness)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Conjure Shadow Titan",
+			"source": "DM-10 3pp",
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a shadow titan, which appears in an unoccupied space that you can see within range. The shadow titan’s statistics are identical to a stone giant’s, with two differences: its camouflage ability works in dim light instead of rocky terrain, and the “rocks” it hurls are composed of shadow-stuff and cause cold damage.",
+				"The shadow titan is friendly to you and your companions. Roll initiative for the shadow titan; it acts on its own turn. It obeys verbal or telepathic commands that you issue to it (giving a command takes no action on your part). If you don’t issue any commands to the shadow titan, it defends itself from hostile creatures but otherwise takes no actions.",
+				"The shadow titan disappears when it drops to 0 hit points or when the spell ends."
+			]
+		},
+		{
+			"name": "Dark Dementing",
+			"source": "DM-10 3pp",
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a moonstone"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A dark shadow creeps across the target’s mind and leaves a small bit of shadow essence behind, triggering a profound fear of the dark. The target creature must make a Charisma saving throw. If it fails, the target is afflicted with a long-term madness effect. If the saving throw succeeds, the target is afflicted with a short-term madness effect."
+			]
+		},
+		{
+			"name": "Dark Path",
+			"source": "DM-10 3pp",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lodestone"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You conjure a shadowy road between points to create a bridge or path where there was none before. This can bridge a chasm or create a smooth path through difficult terrain to speed movement. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than the path can support sinks through the path as if it didn’t exist."
+			]
+		},
+		{
+			"name": "Darkbolt",
+			"source": "DM-10 3pp",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You say a quick invocation to create a black nimbus around your hand, then hurl three rays of darkness at one or more targets in range. The rays can be divided between targets however you like. Make a ranged spell attack for each target (not each ray); each ray that hits does 1d10 cold damage. A target that was hit by any number of rays must make a successful Constitution saving throw or be unable to use a reaction until the start of its next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell at 3rd level or higher, you create one additional ray for each level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Douse Light",
+			"source": "DM-10 3pp",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"With a hand gesture and an incantation, you are able to douse a single, small source of light within range. This spell extinguishes a torch, a candle, a lantern, or a light or dancing lights cantrip."
+			]
+		},
+		{
+			"name": "Legion",
+			"source": "DM-10 3pp",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a toy soldier"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call down a legion of shadowy soldiers in a 10-foot cube. They are conjured from the Shadow Realm, and their features resemble a mockery of once-living creatures. Whenever a creature starts its turn inside the cube, within 5 feet of it, or enters the cube for the first time on its turn, the conjured shades make an attack using your melee spell modifier; if it hits, the target takes 3d8 necrotic damage. The space inside the cube is difficult terrain."
+			]
+		},
+		{
+			"name": "Malevolent Waves",
+			"source": "DM-10 3pp",
+			"level": 8,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a profane object that has been bathed in blood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create an invisible miasma that fills the area within 30 feet of you. All of your allies have advantage on Dexterity (Stealth) checks they make within 30 feet of you, and all of your enemies are poisoned while within that radius."
+			]
+		},
+		{
+			"name": "Negative Image",
+			"source": "DM-10 3pp",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of reflective obsidian"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a shadow-tunnel between your location and one other creature you can see within range. You and that creature instantly swap positions. If the target creature is unwilling to exchange places with you, it can resist the effect by making a Charisma saving throw. If the save succeeds, the spell has no effect."
+			]
+		},
+		{
+			"name": "Night Terrors",
+			"source": "DM-10 3pp",
+			"level": 4,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a crow’s eye"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You amplify the fear of darkness that lurks in the heart of all creatures. Select a target point you can see within the spell’s range. Every creature within 20 feet of that point becomes frightened of you until the start of your next turn and must make a successful Wisdom saving throw or become paralyzed. A paralyzed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success. Creatures immune to being frightened are not affected by night terrors."
+			]
+		},
+		{
+			"name": "Shadow Monsters",
+			"source": "DM-10 3pp",
+			"level": 4,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a doll"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your spell targets up to 2 creatures within range. Each creature must make a Wisdom saving throw. If the saving throw fails, the creature perceives its allies as hostile, shadowy monsters, and it must attack its nearest ally. An affected creature repeats the saving throw at the end of its turn, ending the effect on itself with a successful save."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If shadow monsters is cast with a 5th-level or higher spell slot, one additional creature can be targeted for each slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Puppets",
+			"source": "DM-10 3pp",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered lead"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You are able to animate the shadow of a creature within range, causing it to attack the creature who cast it. Make a melee spell attack against the creature. If it hits, the target takes 2d8 psychic damage and must make a successful Intelligence saving throw or be paralyzed until the start of your next turn."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shadow Realm Gateway",
+			"source": "DM-10 3pp",
+			"level": 5,
+			"school": "C",
+			"ritual": "YES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of black chalk"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"By drawing a circle of black chalk up to 15 feet in diameter and chanting for one minute, you open a portal directly into the Plane of Shadow. The portal fills the chalk circle and appears as a vortex of inky blackness; nothing can be seen through it. Any object or creature that passes through the portal instantly arrives safely in the Shadow Realm. The portal remains open for one minute or until you lose concentration on it, and it can be used to travel between the Shadow Realm and the chalk circle, in both directions, as many times as desired during the spell’s duration.",
+				"This spell can only be cast as a ritual."
+			]
+		},
+		{
+			"name": "Umbral Storm",
+			"source": "DM-10 3pp",
+			"level": 9,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a channel to a region of the Shadow Realm that is inimical to life and order. A storm of dark, raging entropy fills a sphere 20 feet in radius, centered on a point you can see within range. Any creature that starts its turn in the storm or enters it for the first time on its turn takes 6d8 necrotic damage and gains one level of exhaustion; a successful Constitution saving throw halves the damage and prevents exhaustion.",
+				"You can use a bonus action on your turn to move the area of the storm 30 feet in any direction."
+			]
+		}
+	]
+}

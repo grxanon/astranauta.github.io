@@ -1,0 +1,1801 @@
+{
+	"spell": [
+		{
+			"name": "Binding Oath",
+			"source": "DM-02 3pp",
+			"level": 4,
+			"school": "N",
+			"ritual": "YES",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispell"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You seal an agreement between two or more willing creatures with an oath in the name of Tyr, using ritual blessings and toasts of the symbel, during which both the oath and the consequences are clearly set out. If any of the sworn break this solemn vow, they are struck by a curse. The caster can choose either an effect appropriate for bestow curse or another penalty, subject to the GM’s approval. Binding oath can’t be dismissed by dispel magic, but it can be removed with dispel evil and good, remove curse, or wish. Remove curse functions only if the spell slot used to cast it is equal to or higher than the spell slot used to cast binding oath.",
+				"When the oath is broken or the effect removed from one of the participants, all targets are immediately aware that this has occurred, but no other details. Depending on the nature of the oath, this may or may not invalidate the oath for the other targets. If so, the spell ends for all other affected creatures, but curse effects already bestowed remain until dispelled."
+			]
+		},
+		{
+			"name": "Blade of My Brother",
+			"source": "DM-02 3pp",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "melee weapon owned by a dead ally of the target"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 4
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You touch a melee weapon that was used by an ally who’s now dead, and it animates and flies into combat. The weapon leaps into the air and flies to another ally (chosen by you and within 15 feet of you), where it enters that ally’s space and never leaves their side as they move. If the weapon is forced to move more than 5 feet from the chosen ally, the spell ends. Its attack modifier equals your spellcasting level + the weapon’s inherent magical bonus, if any; it receives only its own inherent magical bonus to damage. The weapon fights for up to 4 rounds, at which point it falls to the ground."
+			]
+		},
+		{
+			"name": "Brittling",
+			"source": "DM-02 3pp",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell uses biting cold to make a metal or stone item brittle and easy to shatter. The item’s hit points are permanently reduced by a number equal to your spellcasting level, and Strength checks to shatter or break the item within 1 minute of the spell’s casting are made with advantage. If the item isn’t shattered, it can be repaired as normal."
+			]
+		},
+		{
+			"name": "Curse of Boreas",
+			"source": "DM-02 3pp",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispell"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"If the target fails a Charisma saving throw, it and its equipment are frozen solid, becoming a physically inert statue of ice. The creature is effectively paralyzed, but mental activity does not cease and signs of life are detectable; the creature still breathes and its heart continues to beat, though both happen so slowly as to be almost imperceptible. If the ice statue is broken or damaged while frozen, the creature will have matching damage or injury when returned to its original state.",
+				"Dispel magic can’t end this spell, but it can allow the target to speak (but not move or cast spells) for 1 round per the spell slot used. Greater restoration or more potent magic is needed to free a creature from the ice.",
+				"Boreas and certain of his followers can use scrying to spy through the target’s senses, and the target receives no saving throw against this effect. Those touching a frozen target can request an audience with Boreas, and if they make a successful DC 15 Charisma check, he’ll respond to their request through the ice."
+			]
+		},
+		{
+			"name": "Cursed Gift",
+			"source": "DM-02 3pp",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object worth at least 75 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "days",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Cursed gift imbues an object with a curse or other unwanted, harmful magical effect that the caster or another creature in physical contact with the caster is currently suffering from. If this item is given to someone who freely accepts it during the duration of the spell, then the curse temporarily transfers to them. A successful Charisma saving throw negates the transfer. If the saving throw fails, the original target of the curse no longer suffers from the affliction, which transfers to the recipient of the item for the duration of the spell. Returning, destroying, or giving away the item a second time has no effect. Remove curse and comparable magic can relieve the person who received the item, but the curse still returns to the original victim when the spell expires.",
+				"Cursed gift can also be cast on a cursed object. This allows the object to be given away to someone who freely accepts it, but it returns to the previous owner when the spell expires."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the duration of the spell increases by 1 day for each slot level beyond 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Deep Breath",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 2
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"The recipient of this spell can breathe and function normally in thin oxygen, suffering no ill effect at altitudes up to 30,000 feet. If more than one creature is touched during casting, the duration is divided evenly among all creatures touched."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration of the spell increases by 2 hours for each slot level beyond 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fire Under the Tongue",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You have mastered the skraeling art of keeping fire under your tongue. You can consume a nonmagical fire up to the size of a normal campfire. The fire is stored harmlessly in your mouth and dissipates if not used before the end of the spell’s duration. You can vomit forth the stored fire as an action. If you’re trying to hit a particular target, then treat this as a ranged attack with a range of 5 feet. Campfire-sized flames cause 1d6 fire damage, while torch-sized flames cause 1 point of fire damage. Once you’ve spit it out, the fire burns normally. It goes out immediately unless it hits inflammable material and sets it alight."
+			]
+		},
+		{
+			"name": "Flurry",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A flurry of snow surrounds you in a 5-foot radius. While it lasts, anyone trying to see into, out of, or through the affected area (including you) has disadvantage on Wisdom (Perception) checks. The same penalty applies to attack rolls into, out of, or through the area."
+			]
+		},
+		{
+			"name": "Freeze Potion",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within range of the spell about to use a potion"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A blue spark flies from your hand into a potion vial, drinking horn, waterskin, or similar container, instantly freezing the contents. The contents melt normally and are not otherwise harmed, but it’s not possible to consume them while they’re frozen (they won’t come out of the container)."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the range of the spell increases by 5 feet for every spell slot beyond 1st level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Freezing Fog",
+			"source": "DM-02 3pp",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"The spell creates a 20-foot-radius sphere of mist similar to a fog cloud spell centered on a point you can see within range. The cloud spreads around corners, and its area of effect is heavily obscured. A wind of moderate or greater speed (at least 10 miles per hour) disperses it in one round. The fog is freezing cold, so any creature that ends its turn in the fog takes 2d6 cold damage and gains a level of exhaustion; a successful Constitution saving throw halves the damage and prevents the exhaustion."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gliding Step",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Provided you’re not carrying more than a normal heavy load, you can walk on the surface of snow rather than wading through it, and ignore its effect on movement. Ice also supports your weight no mater how thin it is, and you can travel on it as if you’re wearing ice skates. You still leave tracks normally under these effects."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 10 minutes for every slot above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Goat's Hoof Charm",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a goat's hoof"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"The target creature traverses craggy slopes with the surefootedness of a mountain goat. When climbing slopes and inclines (but not vertical surfaces) that normally reduce speed by half, the target moves at three-quarters normal speed instead. The target also gains a +2 bonus on checks to prevent falls, to catch a ledge or otherwise stop themselves when falling, and on Dexterity checks to move along narrow ledges."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 minute for every slot above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Grasp of the Tupilak",
+			"source": "DM-02 3pp",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "tupilak idol"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					}
+				},
+				{
+					"type": "permanent",
+					"ends": [
+						"trigger"
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell is infamous for its use among feuding wizards and witches, because it lets the caster steal one or more spell slots from the target. Grasp of the tupilak remains effective for 1 hour or until it’s triggered. When you make a successful melee attack, besides doing normal melee damage, the target takes an additional 2d4 necrotic damage and one or more of the defender’s spell slots are transferred to you, for you to use as your own. Roll 1d6; the result equals the total levels of the slots transferred. Spell slots of the highest level possible are transferred before lower-level slots. For example, if you roll a 5 and the target has at least one 5th-level spell slot available, that slot transfers to you. If the target’s highest available spell slot is 3rd level, then you receive a 3rd-level slot plus a 2nd-level slot, or a 3rd-level slot and two 1st-level slots if no 2nd-level slot is available. You can steal either arcane or divine spell slots, at your preference.",
+				"Crucially, however, spell slots can be stolen only from casters who prepare spells in advance. If the target has no available spell slots of an appropriate level—for example, if you roll a 2 and the target has expended all its 1st and 2nd-level spell slots—then grasp of the tupilak has no effect, including causing no necrotic damage. If a stolen spell slot is higher than you’re able to use, treat it as your highest-level slot.",
+				"A spellcaster who’s been affected by grasp of the tupilak can’t recover stolen spell slots until the stolen slot is used, you take a long rest, or they receive remove curse, greater restoration, or comparable magic. Unused stolen spell slots disappear from your inventory when you take a long rest or when the creature you stole them from receives restorative magic."
+			]
+		},
+		{
+			"name": "Grudge Match",
+			"source": "DM-02 3pp",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You reveal how the Norns have entwined the fate of nearby allies and enemies. For every ally targeted by this spell, you must also target an enemy within range. If the number of allies and enemies targeted isn’t the same, the spell fails. For the duration of the spell, every target gains a +2 bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls made against targets also affected by the spell. All affected creatures can identify fellow targets of the spell by sight. If an affected creature makes any of the above checks against a non-subject, it has a –2 penalty on that check."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the duration is increased by 1 round for every slot above 2nd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Hearth Charm",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell makes flammable material burn twice as long as normal."
+			]
+		},
+		{
+			"name": "Hero's Steel",
+			"source": "DM-02 3pp",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You infuse the metal of a melee weapon with the fearsome aura of a mighty hero. The weapon’s wielder has advantage on Charisma (Intimidate) checks made while aggressively brandishing the weapon. In addition, an opponent that currently has 30 or fewer hit points and is struck by the weapon must make a Charisma saving throw or be stunned for 1 round. If the creature has more than 30 hit points but fewer than the weapon’s wielder currently has, it becomes frightened instead; a frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success. A creature that succeeds on the saving throw is immune to this effect on the same weapon for 24 hours."
+			]
+		},
+		{
+			"name": "Hod's Gift",
+			"source": "DM-02 3pp",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"The target gains blindsight to a range of 60 feet."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the duration is increased by 1 hour for every slot above 5th level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Jotun's Jest",
+			"source": "DM-02 3pp",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Giants never tire of having fun with this spell. It causes a weapon or other item to vastly increase in size, temporarily becoming sized for a Gargantuan creature. The item weighs 12 times its original weight and in most circumstances cannot be used effectively by creatures smaller than Gargantuan size. The item retains its usual qualities (including magical powers and effects) and returns to normal size when the spell ends."
+			]
+		},
+		{
+			"name": "Loki's Gift",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Loki’s gift makes even the most barefaced lie seem strangely plausible: you gain advantage to Charisma (Deception) checks for whatever you’re currently saying. If your Deception check fails, the creature knows that you tried to manipulate it with magic. If you lie to a creature that has a friendly attitude toward you and it fails a Charisma saving throw, you can also coax him or her to reveal a potentially embarrassing secret. The secret can involve wrongdoing (adultery, cheating at tafl, a secret fear, etc.) but not something life-threatening or dishonorable enough to earn the subject repute as a nithling. The verbal component of this spell is the lie you are telling."
+			]
+		},
+		{
+			"name": "Mosquito Bane",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"This spell kills any insect or swarm with fewer than 25 hit points within 50 feet of you."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the number of hit points affected increases by 15 for every slot above 1st; thus, a 2nd-level slot kills up to 40 hit points of insects, a 3rd-level slot kills 55, etc., up to a maximum of 85 hit points for a 6th-level slot."
+					]
+				}
+			]
+		},
+		{
+			"name": "Not This Day!",
+			"source": "DM-02 3pp",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hours",
+						"amount": 24
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You mark the target’s body with a unique rune that represents their fate. The rune protects against death from either a specific damage type (slashing, poison, fire, radiant, etc.) or a category of creature (giant, beast, elemental, monstrosity, etc.) that must be named when the spell is cast. For the next 24 hours, the target has advantage on saving throws involving that type of damage or creature, including death saving throws if the attack that dropped the target to 0 hit points is covered by this spell. A character can be under the effect of only a single not this day! rune at one time; a second casting on the same target cancels the preexisting protection."
+			]
+		},
+		{
+			"name": "Potency of the Pack",
+			"source": "DM-02 3pp",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a few hairs from a wolf"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You bestow lupine traits on a group of living creatures within range. Choose one of the following to be gained by all targets for the duration. All targets receive the same effect.",
+				"Thick Fur: Targets sprout fur over their entire bodies, raising their armor class by 2 points.",
+				"Keen Hearing and Smell: Targets have advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+				"Pack Tactics: Affected creatures have advantage on attack rolls against a target if at least one of the attacker’s allies (also under the same effect of this spell) is within 5 feet of the creature and the ally isn’t incapacitated."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 minute for every level above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Prismatic Ray",
+			"source": "DM-02 3pp",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				},
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 5
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A ray of shifting color springs from your hand. Make a ranged spell attack against a single target. The ray’s effect depends on which color happens to be dominant when the beam strikes its target, determined by rolling 1d8.",
+				"1-Red: The target takes 1d6 fire damage per caster level on a failed Dexterity save, or half as much damage on a successful one.",
+				"2-Orange: The target takes 1d6 acid damage per caster level on a failed Dexterity save, or half as much damage on a successful one.",
+				"3-Red: The target takes 1d6 lightning damage per caster level on a failed Dexterity save, or half as much damage on a successful one.",
+				"4-Green: On a failed Constitution save, the target is poisoned.",
+				"5-Blue: On a failed Constitution save, the target is deafened.",
+				"6-Indigo: On a failed Wisdom save, the target is frightened.",
+				"7-Violet: On a failed Constitution save, the target is stunned.",
+				"8-Shifting Ray: On a failed Constitution save, the target is blinded.",
+				"A successful Dexterity saving throw reduces damage to half. A successful Constitution or Wisdom saving throw negates the effect; an affected creature repeats the saving throw at the end of its turn, ending the effect on itself with a successful save. Maximum damage is 15d6. On a critical hit, the spell causes no additional damage but the caster can choose the color of the beam that hits the target."
+			]
+		},
+		{
+			"name": "Rain of Blades",
+			"source": "DM-02 3pp",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "shard of metal from a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 4
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call down a rain of swords, spears, and axes, thrown to earth by the sacred dead of Asgard. The blades fill 150 square feet (six 5-foot squares, a circle 15 feet in diameter, or any other pattern you wish so long as it forms one contiguous space at least 5 feet wide). The blades cause 6d8 slashing damage to creatures in the area at the moment the spell is cast, or half damage with a successful Dexterity saving throw. Intelligent undead injured by the blades are frightened for 1d4 rounds if they fail a Charisma saving throw.",
+				"Most of the blades break or are driven into the ground on impact, but enough survive that any type of piercing or slashing melee weapon can be picked up from the affected area and used normally. When the duration ends, all the weapons disappear amid roars of laughter."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, nonbroken blades can be picked up and used as magical +1 weapons until they disappear."
+					]
+				}
+			]
+		},
+		{
+			"name": "Snow Boulder",
+			"source": "DM-02 3pp",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "handful of snow"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 4
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A ball of snow forms within 5 feet of you and rolls in the direction you point, growing larger as it moves. As a bonus action, you can move the sphere up to 30 feet. If you roll the boulder into a creature, that creature must make a successful Dexterity saving throw or be knocked prone and take the damage indicated below.",
+				"Each round the snow boulder increases in size and effectiveness. Hitting a creature doesn’t stop the snow boulder’s movement or impede its growth.",
+				"1-Small: 1d6 bludgeoning damage",
+				"2-Medium: 2d6 bludgeoning damage",
+				"3-Large: 4d6 bludgeoning damage",
+				"4-Huge: 6d6 bludgeoning damage"
+			]
+		},
+		{
+			"name": "Snowblind Stare",
+			"source": "DM-02 3pp",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 2
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Your eyes burn with a bright, cold light that inflicts snow blindness on a creature you target within 30 feet of you. If the target fails a Constitution saving throw, it suffers the first stage of snow blindness (see Conditions, below), or the second stage of snow blindness if it already has the first stage. The target recovers as described in Conditions.",
+				"Snow Blindness:",
+				"Northerners believe that snow blindness is caused by light glittering on snow or ice, and sometimes by malevolent spirits. The real cause is intense ultraviolet rays burning the eye.",
+				"Snow blindness becomes a danger after 4 hours of exposure to a brightly sunlit snowscape. Starting at the end of the 4th hour of exposure, a character must make a Constitution saving throw at the end of every hour; the DC equals 10 + hours exposed beyond 3 (or, for simplicity, 7 + hours of exposure).",
+				"Travelers have devised effective precautions. Characters can avoid making a check by taking a short rest after 3 hours, or by wearing dark goggles or snow visors (similar to goggles but made from an opaque material such as bone with a narrow, horizontal slit instead of tinted lenses). Monsters native to the environment are immune, as are constructs and undead.",
+				"Failing the saving throw imposes the first stage of snow blindness: the character has disadvantage on Wisdom (Perception) checks that rely on sight, weapon and spell ranges (for visually targeted spells) are halved, and all attack rolls are made with a –2 penalty.",
+				"A second failed saving throw brings on the second stage of snow blindness: severe pain in the eyes, sight range is limited to 15 feet, and disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight. Spending two days in a dimly-lit environment reduces snow blindness by one stage. Sight is restored completely by lesser restoration or comparable magic."
+			]
+		},
+		{
+			"name": "Spiteful Weapon",
+			"source": "DM-02 3pp",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a melee weapon that has injured the target"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "rounds",
+						"amount": 5
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create a connection between the target of the spell (“target”), a creature that attacked and injured the target in the last 24 hours (“attacker”), and a melee weapon that was used successfully in the attack (“weapon”), all of which must be within the spell’s range of you when the spell is cast. For the duration of the spell, whenever the attacker takes damage while holding the weapon, the target takes the same amount and type of damage; a successful Charisma saving throw by the target halves the damage it takes, with each attack calling for a new saving throw. The attacker can even turn the weapon against himself or herself and cause identical damage to the target. Self-inflicted wounds hit automatically, but damage is still rolled randomly. Once the connection is established, it lasts for the duration of the spell regardless of range, so long as all three elements remain on the same plane. The spell ends immediately if the attacker receives any healing."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"The target has disadvantage on its Charisma saving throws if spiteful weapon is cast with a 5th-level slot."
+					]
+				}
+			]
+		},
+		{
+			"name": "Thunderclap",
+			"source": "DM-02 3pp",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You clap your hands, emitting a peal of thunder. All creatures within 20 feet of you take 8d4 thunder damage and are deafened for 1d8 rounds, or take half damage and aren’t deafened with a successful Constitution saving throw. A creature that fails the saving throw by 5 or more is also stunned for 1 round.",
+				"This spell doesn’t function in an area under the effect of a silence spell. Very brittle material such as crystal may be shattered if it’s within range, at the GM’s discretion; the GM can allow a character holding such an object to protect it with a successful Dexterity saving throw."
+			]
+		},
+		{
+			"name": "Triumph of Ice",
+			"source": "DM-02 3pp",
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minutes",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You transform one of the four elements into ice or snow. The area of effect is a sphere with a radius of 100 feet, centered on you. The specific effect varies depending on the element targeted.",
+				"Air: Vapor condenses into snowfall. If cast on a fog cloud, stinking cloud, or a similar magic effect, this spell negates it. Creatures of elemental air who are targeted take 8d6 cold damage, and if airborne must make a successful Constitution saving throw to avoid being knocked prone (no falling damage).",
+				"Water: Open water (a pond, lake, or river) freezes to a depth of 4 feet. Creatures in the water at its surface must make successful Dexterity saving throws to avoid being immobilized in the ice. A trapped creature can free itself by using an action to make a successful Strength (Athletics) check. Creatures of elemental water take no damage from the spell but are paralyzed for 1d6 rounds unless they make a successful Constitution saving throw, and they pay double for movement in the affected area.",
+				"Earth: Soil freezes into permafrost to a depth of 10 feet. Creatures burrowing through the area have their speed halved until the area thaws, unless they can burrow through solid rock. Creatures of elemental earth who fail a Constitution saving throw take 8d6 cold damage from stress fractures in their bodies.",
+				"Fire: Flames transform into shards of ice and their area becomes difficult terrain. Creatures in the burning area take 2d6 slashing damage when the spell is cast and 1d6 slashing damage for every 5 feet they move through the area unless they are unhindered by icy terrain; a successful Dexterity saving throw halves the slashing damage. Lava cools into a solid crust 4 inches thick. Creatures of elemental fire must make a successful Constitution saving throw or take 8d6 cold damage and be stunned for 1d6 rounds."
+			]
+		},
+		{
+			"name": "Unluck On That",
+			"source": "DM-02 3pp",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 25
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Cast this spell when a target makes an attack roll, a saving throw, or an ability or skill check. With a swift curse (“Unluck on that!”), you bring misfortune to the target’s endeavor; the affected creature has disadvantage on the roll."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the range of the spell increases by 5 feet for every spell slot beyond 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wolfsong",
+			"source": "DM-02 3pp",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You let out a howl that can be heard up to 5 miles away outdoors. The howl can convey a message of up to nine words, and it will be understood by all canine creatures within hearing and up to one specific creature that you name during the casting. The range of hearing is 3 miles for creatures that are indoors or 1 mile underground. No creature is compelled to do anything by the message; beasts with low intelligence are unlikely to take any action unless they’re innately curious or feel threatened."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can name another specific recipient for every slot above 3rd."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wotan's Rede",
+			"source": "DM-02 3pp",
+			"level": 2,
+			"school": "D",
+			"ritual": "YES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You recite a poem in the Northern tongue, sent to your lips by Wotan himself, to gain supernatural insight or advice. Your next Intelligence or Charisma check within 1 minute is made with advantage, and you can include twice your proficiency bonus. At the GM’s discretion, this spell can instead provide a piece of general advice equivalent to an augury."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When casting Wotan’s rede with a spell slot of 4th level, it provides advice equivalent to divination. When casting with a 5th-level spell slot, the spell provides advice equivalent to a single answer from commune. When casting with a 6th-level spell slot, Wotan’s rede provides advice equivalent to three answers from contact other plane."
+					]
+				}
+			]
+		}
+	]
+}
