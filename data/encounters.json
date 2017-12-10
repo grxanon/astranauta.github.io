@@ -3116,7 +3116,7 @@
 						{
 							"min": 41,
 							"max": 44,
-							"enc": "2d4 {@creature hobgoblin|mm|hobgoblins}, 2d4 {@creature orc|mm|mmorcs}, or 2d4 {@creature gnoll|mm|gnolls}"
+							"enc": "2d4 {@creature hobgoblin|mm|hobgoblins}, 2d4 {@creature orc|mm|orcs}, or 2d4 {@creature gnoll|mm|gnolls}"
 						},
 						{
 							"min": 45,
