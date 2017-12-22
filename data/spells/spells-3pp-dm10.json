@@ -41,7 +41,7 @@
 				]
 			},
 			"entries": [
-				"You emit a soul-shattering wail. Every creature within a 30-foot cone who hears the wail must make a Wisdom saving throw. Those that fail lose half their remaining hit points and become frightened of you; a frightened creature repeats the saving throw at the end of its turn, ending the effect on itself with a success. Those that succeed take 3d10 psychic damage and aren’t frightened. This spell has no effect on constructs and undead."
+				"You emit a soul-shattering wail. Every creature within a 30-foot cone who hears the wail must make a Wisdom saving throw. Those that fail lose half their remaining hit points and become frightened of you; a frightened creature repeats the saving throw at the end of its turn, ending the effect on itself with a success. Those that succeed take 3d10 psychic damage and aren't frightened. This spell has no effect on constructs and undead."
 			]
 		},
 		{
@@ -64,7 +64,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a crow’s eye"
+				"m": "a crow's eye"
 			},
 			"duration": [
 				{
@@ -139,7 +139,7 @@
 				]
 			},
 			"entries": [
-				"You pull pieces of the Shadow Realm into your own reality, causing a 20-foot cube to fill with inky ribbons that turn the area into difficult terrain and wrap around nearby creatures. Any creature that ends its turn in the area becomes restrained by the shadow ribbons until the end of its next turn unless it makes a successful Dexterity saving throw. Once a creature makes this saving throw successfully, it can’t be restrained again by these black ribbons, but it’s still affected by the difficult terrain."
+				"You pull pieces of the Shadow Realm into your own reality, causing a 20-foot cube to fill with inky ribbons that turn the area into difficult terrain and wrap around nearby creatures. Any creature that ends its turn in the area becomes restrained by the shadow ribbons until the end of its next turn unless it makes a successful Dexterity saving throw. Once a creature makes this saving throw successfully, it can't be restrained again by these black ribbons, but it's still affected by the difficult terrain."
 			]
 		},
 		{
@@ -163,7 +163,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a dog’s tooth"
+				"m": "a dog's tooth"
 			},
 			"duration": [
 				{
@@ -327,7 +327,7 @@
 				]
 			},
 			"entries": [
-				"You reach out with a hand of decaying shadows. Make a ranged spell attack. If it hits, the target takes 2d8 necrotic damage and must make a Constitution saving throw. If it fails, its visual organs are enveloped in shadow until the start of your next turn, causing it to treat all lighting as if it’s one step lower in intensity (it treats bright light as dim, dim light as darkness, and darkness as magical darkness)."
+				"You reach out with a hand of decaying shadows. Make a ranged spell attack. If it hits, the target takes 2d8 necrotic damage and must make a Constitution saving throw. If it fails, its visual organs are enveloped in shadow until the start of your next turn, causing it to treat all lighting as if it's one step lower in intensity (it treats bright light as dim, dim light as darkness, and darkness as magical darkness)."
 			],
 			"entriesHigherLevel": [
 				{
@@ -384,8 +384,8 @@
 				]
 			},
 			"entries": [
-				"You summon a shadow titan, which appears in an unoccupied space that you can see within range. The shadow titan’s statistics are identical to a stone giant’s, with two differences: its camouflage ability works in dim light instead of rocky terrain, and the “rocks” it hurls are composed of shadow-stuff and cause cold damage.",
-				"The shadow titan is friendly to you and your companions. Roll initiative for the shadow titan; it acts on its own turn. It obeys verbal or telepathic commands that you issue to it (giving a command takes no action on your part). If you don’t issue any commands to the shadow titan, it defends itself from hostile creatures but otherwise takes no actions.",
+				"You summon a shadow titan, which appears in an unoccupied space that you can see within range. The shadow titan's statistics are identical to a stone giant's, with two differences: its camouflage ability works in dim light instead of rocky terrain, and the “rocks” it hurls are composed of shadow-stuff and cause cold damage.",
+				"The shadow titan is friendly to you and your companions. Roll initiative for the shadow titan; it acts on its own turn. It obeys verbal or telepathic commands that you issue to it (giving a command takes no action on your part). If you don't issue any commands to the shadow titan, it defends itself from hostile creatures but otherwise takes no actions.",
 				"The shadow titan disappears when it drops to 0 hit points or when the spell ends."
 			]
 		},
@@ -430,7 +430,7 @@
 				]
 			},
 			"entries": [
-				"A dark shadow creeps across the target’s mind and leaves a small bit of shadow essence behind, triggering a profound fear of the dark. The target creature must make a Charisma saving throw. If it fails, the target is afflicted with a long-term madness effect. If the saving throw succeeds, the target is afflicted with a short-term madness effect."
+				"A dark shadow creeps across the target's mind and leaves a small bit of shadow essence behind, triggering a profound fear of the dark. The target creature must make a Charisma saving throw. If it fails, the target is afflicted with a long-term madness effect. If the saving throw succeeds, the target is afflicted with a short-term madness effect."
 			]
 		},
 		{
@@ -479,7 +479,7 @@
 				]
 			},
 			"entries": [
-				"You conjure a shadowy road between points to create a bridge or path where there was none before. This can bridge a chasm or create a smooth path through difficult terrain to speed movement. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than the path can support sinks through the path as if it didn’t exist."
+				"You conjure a shadowy road between points to create a bridge or path where there was none before. This can bridge a chasm or create a smooth path through difficult terrain to speed movement. The dark path is 10 feet wide and up to 50 feet long. It can support up to 500 pounds of weight at one time. A creature that adds more weight than the path can support sinks through the path as if it didn't exist."
 			]
 		},
 		{
@@ -739,7 +739,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a crow’s eye"
+				"m": "a crow's eye"
 			},
 			"duration": [
 				{
@@ -764,7 +764,7 @@
 				]
 			},
 			"entries": [
-				"You amplify the fear of darkness that lurks in the heart of all creatures. Select a target point you can see within the spell’s range. Every creature within 20 feet of that point becomes frightened of you until the start of your next turn and must make a successful Wisdom saving throw or become paralyzed. A paralyzed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success. Creatures immune to being frightened are not affected by night terrors."
+				"You amplify the fear of darkness that lurks in the heart of all creatures. Select a target point you can see within the spell's range. Every creature within 20 feet of that point becomes frightened of you until the start of your next turn and must make a successful Wisdom saving throw or become paralyzed. A paralyzed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a success. Creatures immune to being frightened are not affected by night terrors."
 			]
 		},
 		{
@@ -930,7 +930,7 @@
 				]
 			},
 			"entries": [
-				"By drawing a circle of black chalk up to 15 feet in diameter and chanting for one minute, you open a portal directly into the Plane of Shadow. The portal fills the chalk circle and appears as a vortex of inky blackness; nothing can be seen through it. Any object or creature that passes through the portal instantly arrives safely in the Shadow Realm. The portal remains open for one minute or until you lose concentration on it, and it can be used to travel between the Shadow Realm and the chalk circle, in both directions, as many times as desired during the spell’s duration.",
+				"By drawing a circle of black chalk up to 15 feet in diameter and chanting for one minute, you open a portal directly into the Plane of Shadow. The portal fills the chalk circle and appears as a vortex of inky blackness; nothing can be seen through it. Any object or creature that passes through the portal instantly arrives safely in the Shadow Realm. The portal remains open for one minute or until you lose concentration on it, and it can be used to travel between the Shadow Realm and the chalk circle, in both directions, as many times as desired during the spell's duration.",
 				"This spell can only be cast as a ritual."
 			]
 		},

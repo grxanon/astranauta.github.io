@@ -47,8 +47,8 @@
 				"• Four creature of challenge rating 1/2 or lower",
 				"• Eight creature of challenge rating 1/4 or lower",
 				"Summoned creatures disappear when they drop to 0 hit points or when the spell ends.",
-				"The summoned creatures do not directly attack you or your companions. Roll initiative for the summoned creatures as a group; they take their own turns on their initiative result. They attack your enemies and try to stay within 90 feet of you, but they control their own actions. The summoned creatures despise being bound, so they might harm or impede you and your companions with secondary effects (but not direct attacks) if the opportunity arises. At the beginning of the creatures’ turn, you can use your reaction to verbally command them. They obey your commands for that turn, and you take 1d6 psychic damage at the end of the turn.",
-				"If your concentration is broken, the creatures don’t disappear. Instead, you can no longer command them and they become hostile to you and your companions. They will attack you and your allies if they believe they have a chance to win the fight or to inflict meaningful harm, but they won’t fight if they fear it would mean their own death. The creatures can’t be dismissed by you, but they disappear 1 hour after being summoned."
+				"The summoned creatures do not directly attack you or your companions. Roll initiative for the summoned creatures as a group; they take their own turns on their initiative result. They attack your enemies and try to stay within 90 feet of you, but they control their own actions. The summoned creatures despise being bound, so they might harm or impede you and your companions with secondary effects (but not direct attacks) if the opportunity arises. At the beginning of the creatures' turn, you can use your reaction to verbally command them. They obey your commands for that turn, and you take 1d6 psychic damage at the end of the turn.",
+				"If your concentration is broken, the creatures don't disappear. Instead, you can no longer command them and they become hostile to you and your companions. They will attack you and your allies if they believe they have a chance to win the fight or to inflict meaningful harm, but they won't fight if they fear it would mean their own death. The creatures can't be dismissed by you, but they disappear 1 hour after being summoned."
 			],
 			"entriesHigherLevel": [
 				{
@@ -102,8 +102,8 @@
 			},
 			"entries": [
 				"You summon a fiend or aberration of challenge rating 6 or lower, which appears in an unoccupied space that you can see within range. The creature disappears when it drops to 0 hit points or when the spell ends.",
-				"Roll initiative for the creature, which takes its own turns. It attacks the nearest creature on its turn. At the start of the fiend’s turn, you can use your reaction to command the creature by speaking in void speech. It obeys your verbal command, and you take 2d6 psychic damage at the end of the creature’s turn.",
-				"If your concentration is broken, the creature doesn’t disappear. Instead you can no longer issue commands to the fiend, and it becomes hostile to you and your companions. It will attack you and your allies if it believes it has a chance to win the fight or to inflict meaningful harm, but it won’t fight if it fears it would mean its own death. The creature can’t be dismissed by you, but it disappears 1 hour after you summoned it."
+				"Roll initiative for the creature, which takes its own turns. It attacks the nearest creature on its turn. At the start of the fiend's turn, you can use your reaction to command the creature by speaking in void speech. It obeys your verbal command, and you take 2d6 psychic damage at the end of the creature's turn.",
+				"If your concentration is broken, the creature doesn't disappear. Instead you can no longer issue commands to the fiend, and it becomes hostile to you and your companions. It will attack you and your allies if it believes it has a chance to win the fight or to inflict meaningful harm, but it won't fight if it fears it would mean its own death. The creature can't be dismissed by you, but it disappears 1 hour after you summoned it."
 			],
 			"entriesHigherLevel": [
 				{
@@ -152,7 +152,7 @@
 			},
 			"entries": [
 				"You speak a word of void speech. Choose a creature you can see within range. If the target can hear you, it must succeed on a Wisdom saving throw or take 1d6 psychic damage and be deafened for 1 minute. A deafened creature can repeat the saving throw at the end of each of its turns, ending the deafness on a success. A creature deafened in this way can still hear void speech.",
-				"This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+				"This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
 			]
 		},
 		{
@@ -191,7 +191,7 @@
 				]
 			},
 			"entries": [
-				"You shout a scathing string of void speech that assaults the minds of any creatures who hear it. Each creature in a 15-foot cone who can hear you takes 4d6 psychic damage, or half damage with a successful Wisdom saving throw. Creatures damaged by this spell can’t take reactions until the start of their next turn."
+				"You shout a scathing string of void speech that assaults the minds of any creatures who hear it. Each creature in a 15-foot cone who can hear you takes 4d6 psychic damage, or half damage with a successful Wisdom saving throw. Creatures damaged by this spell can't take reactions until the start of their next turn."
 			],
 			"entriesHigherLevel": [
 				{
@@ -245,7 +245,7 @@
 				]
 			},
 			"entries": [
-				"Muttering void speech, you force images of terror and nonexistence upon your foes. Each creature in a 30-foot cube within range must make an Intelligence saving throw. On a failed save, the creature goes insane for the duration. While insane, a creature takes no actions other than to shriek, wail, gibber, and babble unintelligibly. The GM controls the creature’s movement, which is erratic."
+				"Muttering void speech, you force images of terror and nonexistence upon your foes. Each creature in a 30-foot cube within range must make an Intelligence saving throw. On a failed save, the creature goes insane for the duration. While insane, a creature takes no actions other than to shriek, wail, gibber, and babble unintelligibly. The GM controls the creature's movement, which is erratic."
 			]
 		},
 		{
@@ -291,7 +291,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the vortex’s damage increases by 1d6 for each slot level above 6th."
+						"When you cast this spell using a spell slot of 7th level or higher, the vortex's damage increases by 1d6 for each slot level above 6th."
 					]
 				}
 			]
@@ -380,7 +380,7 @@
 				]
 			},
 			"entries": [
-				"You whisper a string of void speech toward a target that can hear you. The target must succeed on a Charisma saving throw or be incapacitated. While incapacitated by this spell, the target’s speed is 0 and it can’t benefit from increases to its speed. To maintain the effect, you must use your action on subsequent turns to continue whispering; otherwise, the spell ends. The spell also ends if the target takes damage."
+				"You whisper a string of void speech toward a target that can hear you. The target must succeed on a Charisma saving throw or be incapacitated. While incapacitated by this spell, the target's speed is 0 and it can't benefit from increases to its speed. To maintain the effect, you must use your action on subsequent turns to continue whispering; otherwise, the spell ends. The spell also ends if the target takes damage."
 			]
 		},
 		{
@@ -424,7 +424,7 @@
 				]
 			},
 			"entries": [
-				"You whisper in void speech and touch a weapon. Until the spell ends, the weapon turns pitch black, becomes magical if it wasn’t before, and it does 2d6 necrotic damage in addition to its normal damage on a successful hit. A creature that takes necrotic damage from the enchanted weapon can’t regain hit points until the start of your next turn."
+				"You whisper in void speech and touch a weapon. Until the spell ends, the weapon turns pitch black, becomes magical if it wasn't before, and it does 2d6 necrotic damage in addition to its normal damage on a successful hit. A creature that takes necrotic damage from the enchanted weapon can't regain hit points until the start of your next turn."
 			],
 			"entriesHigherLevel": [
 				{
@@ -522,7 +522,7 @@
 				]
 			},
 			"entries": [
-				"You speak a hideous string of void speech that leaves your mouth bloodied, causing a rift into absolute nothingness to tear open. The rift takes the form of a 10-foot-radius sphere, and it forms around a point you can see within range. The area within 40 feet of the sphere’s outer edge becomes difficult terrain as the void tries to draw everything into itself. All creatures that start their turns within 40 feet of the sphere or that enter that area for the first time on their turn must succeed on a Strength saving throw or be pulled 15 feet toward the rift. Creatures that start their turn in contact with the rift or that come into contact with it for the first time on their turn take 8d10 necrotic damage. Creatures inside the rift are blinded and deafened. Unattended objects within 40 feet of the rift are drawn 15 feet toward it at the start of your turn, and take damage as creatures.",
+				"You speak a hideous string of void speech that leaves your mouth bloodied, causing a rift into absolute nothingness to tear open. The rift takes the form of a 10-foot-radius sphere, and it forms around a point you can see within range. The area within 40 feet of the sphere's outer edge becomes difficult terrain as the void tries to draw everything into itself. All creatures that start their turns within 40 feet of the sphere or that enter that area for the first time on their turn must succeed on a Strength saving throw or be pulled 15 feet toward the rift. Creatures that start their turn in contact with the rift or that come into contact with it for the first time on their turn take 8d10 necrotic damage. Creatures inside the rift are blinded and deafened. Unattended objects within 40 feet of the rift are drawn 15 feet toward it at the start of your turn, and take damage as creatures.",
 				"While concentrating on the spell, you take 2d6 necrotic damage at the end of your turn."
 			]
 		},
@@ -620,7 +620,7 @@
 				]
 			},
 			"entries": [
-				"You hiss a word of void speech. Choose one creature you can see within range. The next time the creature makes a saving throw during the spell’s duration, it must roll a d4 and subtract the result from the total of the saving throw. The spell then ends."
+				"You hiss a word of void speech. Choose one creature you can see within range. The next time the creature makes a saving throw during the spell's duration, it must roll a d4 and subtract the result from the total of the saving throw. The spell then ends."
 			]
 		}
 	]

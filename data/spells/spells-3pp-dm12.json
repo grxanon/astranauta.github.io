@@ -68,7 +68,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a piece of flesh from a creature of the target’s race"
+				"m": "a piece of flesh from a creature of the target's race"
 			},
 			"duration": [
 				{
@@ -202,7 +202,7 @@
 				]
 			},
 			"entries": [
-				"When you strike a foe with a melee weapon attack, you can immediately cast blood armor as a bonus action. The foe you struck must contain blood; targets that don't bleed don't satisfy the requirement for blood armor. The blood flowing from your foe magically increases in volume and forms a suit of armor around you, granting you armor class 18 + your Dexterity modifier for the spell’s duration. Blood armor has no Strength requirement, doesn't hinder spellcasting, and doesn't incur disadvantage on Dexterity (Stealth) checks.",
+				"When you strike a foe with a melee weapon attack, you can immediately cast blood armor as a bonus action. The foe you struck must contain blood; targets that don't bleed don't satisfy the requirement for blood armor. The blood flowing from your foe magically increases in volume and forms a suit of armor around you, granting you armor class 18 + your Dexterity modifier for the spell's duration. Blood armor has no Strength requirement, doesn't hinder spellcasting, and doesn't incur disadvantage on Dexterity (Stealth) checks.",
 				"If the creature you struck was celestial, blood armor also grants you advantage on Charisma saving throws."
 			]
 		},
@@ -278,7 +278,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a drop of the quarry’s blood"
+				"m": "a drop of the quarry's blood"
 			},
 			"duration": [
 				{
@@ -299,7 +299,7 @@
 				]
 			},
 			"entries": [
-				"By touching a drop of your quarry’s blood (spilled or drawn within the past hour), you can follow its trail unerringly across any surface or under water, no matter how fast you are moving. If your quarry takes flight, you can follow its trail along the ground or through the air if you have means to fly.",
+				"By touching a drop of your quarry's blood (spilled or drawn within the past hour), you can follow its trail unerringly across any surface or under water, no matter how fast you are moving. If your quarry takes flight, you can follow its trail along the ground or through the air if you have means to fly.",
 				"If your quarry moves magically (such as through a dimension door or via a teleport spell), you sense its trail as a straight path from where the magical movement started to where it ended. Such a vector may lead through lethal or impassable barriers. This spell even reveals the path of those using pass without trace, but it fails to locate creatures protected by nondetection or by other effects that prevent scrying or cause divination spells to fail. If your quarry moves to another plane, its trail ends without trace, but blood spoor picks up the trail again if the caster shifts to the same plane as the quarry before the spell expires."
 			]
 		},
@@ -1088,7 +1088,7 @@
 				]
 			},
 			"entries": [
-				"When you cast hobble mount as a successful melee spell attack against a horse, wolf, or other four-legged or two-legged beast being ridden as a mount, that beast is disabled so that it can’t move at its normal speed without incurring injury. An affected creature that moves more than half its base speed in a turn takes 2d6 bludgeoning damage.",
+				"When you cast hobble mount as a successful melee spell attack against a horse, wolf, or other four-legged or two-legged beast being ridden as a mount, that beast is disabled so that it can't move at its normal speed without incurring injury. An affected creature that moves more than half its base speed in a turn takes 2d6 bludgeoning damage.",
 				"This spell has no effect on a creature that your GM deems to not be a mount."
 			],
 			"entriesHigherLevel": [
@@ -1356,7 +1356,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a polished vampire’s fang"
+				"m": "a polished vampire's fang"
 			},
 			"duration": [
 				{
@@ -1499,7 +1499,7 @@
 				]
 			},
 			"entries": [
-				"The target’s blood coagulates rapidly, so that a dying target stabilizes and any ongoing bleeding or wounding effect on the target ends. The target can't be the source of blood for any spell or effect that requires even a drop of blood."
+				"The target's blood coagulates rapidly, so that a dying target stabilizes and any ongoing bleeding or wounding effect on the target ends. The target can't be the source of blood for any spell or effect that requires even a drop of blood."
 			]
 		},
 		{
@@ -1629,7 +1629,7 @@
 				]
 			},
 			"entries": [
-				"When you cast this spell, your face momentarily becomes that of a demon lord, frightful enough to drive enemies mad. Every foe that's within 30 feet of you and that sees you must make a Wisdom saving throw. A creature that fails claws savagely at its eyes, doing (1d6 + the creature’s Strength modifier) piercing damage, is stunned until the end of its next turn, and is blinded for 1d4 rounds. A creature that rolls maximum damage against itself (a 6 on the d6) is blinded permanently."
+				"When you cast this spell, your face momentarily becomes that of a demon lord, frightful enough to drive enemies mad. Every foe that's within 30 feet of you and that sees you must make a Wisdom saving throw. A creature that fails claws savagely at its eyes, doing (1d6 + the creature's Strength modifier) piercing damage, is stunned until the end of its next turn, and is blinded for 1d4 rounds. A creature that rolls maximum damage against itself (a 6 on the d6) is blinded permanently."
 			]
 		},
 		{
@@ -1687,7 +1687,7 @@
 				]
 			},
 			"entries": [
-				"You perform a ritual that marks one unattended magic item (including weapons and armor) with a clearly visible stain of your blood. The exact appearance of the bloodstain is up to you. The item’s magical abilities don't function for anyone else as long as the bloodstain remains on it. For example, a +1 flaming longsword with a vital mark functions as a nonmagical longsword in the hands of anyone but the caster, but it still functions as a +1 flaming longsword for the caster who placed the bloodstain on it. A wand of magic missiles would be no more than a stick in the hands of anyone but the vital mark's caster."
+				"You perform a ritual that marks one unattended magic item (including weapons and armor) with a clearly visible stain of your blood. The exact appearance of the bloodstain is up to you. The item's magical abilities don't function for anyone else as long as the bloodstain remains on it. For example, a +1 flaming longsword with a vital mark functions as a nonmagical longsword in the hands of anyone but the caster, but it still functions as a +1 flaming longsword for the caster who placed the bloodstain on it. A wand of magic missiles would be no more than a stick in the hands of anyone but the vital mark's caster."
 			],
 			"entriesHigherLevel": [
 				{

@@ -49,8 +49,8 @@
 				]
 			},
 			"entries": [
-				"You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. Your target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. The victim has disadvantage on ability checks and saving throws made with the ability score that you choose when you cast the spell. In addition, the target’s firstborn offspring is also targeted by the curse. The firstborn is allowed a saving throw of their own if they currently live, or they make one upon their birth if they’re not yet born when the spell is cast. If the target’s firstborn has already died, the curse passes to their next oldest offspring.",
-				"Ritual Focus: If you expend your ritual focus, the curse becomes hereditary, passing from firstborn to firstborn for the entire length of the family’s lineage until one of them successfully saves against the curse and throws off your dark magic."
+				"You invoke the darkest curses upon your victim and his or her descendants. This spell does not require that you have a clear path to your target, only that your target is within range. Your target must make a successful Wisdom saving throw or be cursed until the magic is dispelled. The victim has disadvantage on ability checks and saving throws made with the ability score that you choose when you cast the spell. In addition, the target's firstborn offspring is also targeted by the curse. The firstborn is allowed a saving throw of their own if they currently live, or they make one upon their birth if they're not yet born when the spell is cast. If the target's firstborn has already died, the curse passes to their next oldest offspring.",
+				"Ritual Focus: If you expend your ritual focus, the curse becomes hereditary, passing from firstborn to firstborn for the entire length of the family's lineage until one of them successfully saves against the curse and throws off your dark magic."
 			]
 		},
 		{
@@ -103,7 +103,7 @@
 				]
 			},
 			"entries": [
-				"You call forth a whirlwind of black feathers that fills a cube 5 feet on each side. The feathers deal 2d8 force damage to creatures inside the cube’s area and radiate darkness, causing the illumination level within 20 feet of the cube to drop by one step (from bright light to dim light, from dim light to darkness). Creatures that make a successful Dexterity saving throw suffer only half damage but are still affected by the change in light.",
+				"You call forth a whirlwind of black feathers that fills a cube 5 feet on each side. The feathers deal 2d8 force damage to creatures inside the cube's area and radiate darkness, causing the illumination level within 20 feet of the cube to drop by one step (from bright light to dim light, from dim light to darkness). Creatures that make a successful Dexterity saving throw suffer only half damage but are still affected by the change in light.",
 				"Ritual Focus: If you expend your ritual focus, then you can move the whirlwind up to 15 feet by using a bonus action on your turn. If the whirlwind moves more than 30 feet from you, the spell ends."
 			],
 			"entriesHigherLevel": [
@@ -229,8 +229,8 @@
 				]
 			},
 			"entries": [
-				"You create a 30-foot-radius area around a point that you choose within range. Intelligent creatures that enter the area or begin their turn there and fail a Wisdom saving throw engage in revelry: drinking, singing, laughing, and dancing. Affected creatures are reluctant to leave the area until the spell expires, preferring to enjoy the festivities. Affected creatures forsake appointments, cease caring about their woes, and generally behave in a cordial (if not hedonistic) manner. This preoccupation with merrymaking extends regardless of an affected creature’s agenda or alignment. Assassins procrastinate, servants join in the celebration rather than serve, guards abandon their posts. The effect ends on creatures that are attacked, that take damage, or that are forced to leave the area. Those whose saving throw succeeds can enter or leave the area without danger of being enchanted. A creature that failed the saving throw and is removed from the area must repeat the saving throw if they return to the area.",
-				"Ritual Focus: If you expend your ritual focus, unaffected intelligent creatures must make a new saving throw every time they begin their turn in the area of effect, even if they’ve previously saved against the spell."
+				"You create a 30-foot-radius area around a point that you choose within range. Intelligent creatures that enter the area or begin their turn there and fail a Wisdom saving throw engage in revelry: drinking, singing, laughing, and dancing. Affected creatures are reluctant to leave the area until the spell expires, preferring to enjoy the festivities. Affected creatures forsake appointments, cease caring about their woes, and generally behave in a cordial (if not hedonistic) manner. This preoccupation with merrymaking extends regardless of an affected creature's agenda or alignment. Assassins procrastinate, servants join in the celebration rather than serve, guards abandon their posts. The effect ends on creatures that are attacked, that take damage, or that are forced to leave the area. Those whose saving throw succeeds can enter or leave the area without danger of being enchanted. A creature that failed the saving throw and is removed from the area must repeat the saving throw if they return to the area.",
+				"Ritual Focus: If you expend your ritual focus, unaffected intelligent creatures must make a new saving throw every time they begin their turn in the area of effect, even if they've previously saved against the spell."
 			],
 			"entriesHigherLevel": [
 				{
@@ -402,7 +402,7 @@
 				]
 			},
 			"entries": [
-				"You plant an obsidian acorn in solid ground and spend an hour chanting a litany of curses to the natural world, after which the land within 1 mile of the acorn becomes unfertile, regardless of its previous state. Nothing will grow there, and all plant life in the area dies over the course of a day. Plant creatures are not affected. Spells that summon plants, such as entangle, require an ability check using the caster’s spellcasting ability against your spell save DC. If the check succeeds, the spell functions normally; if the check fails, the spell is countered by desolation.",
+				"You plant an obsidian acorn in solid ground and spend an hour chanting a litany of curses to the natural world, after which the land within 1 mile of the acorn becomes unfertile, regardless of its previous state. Nothing will grow there, and all plant life in the area dies over the course of a day. Plant creatures are not affected. Spells that summon plants, such as entangle, require an ability check using the caster's spellcasting ability against your spell save DC. If the check succeeds, the spell functions normally; if the check fails, the spell is countered by desolation.",
 				"After one year, the land slowly reverts to its normal fertility, unable to stave off the march of nature.",
 				"Living creatures that take a short rest within the area of a desolation halve the result of any hit dice they expend. Desolation counters the effects of a bloom spell.",
 				"Ritual Focus: If you expend your ritual focus, the duration becomes permanent."
@@ -458,8 +458,8 @@
 				]
 			},
 			"entries": [
-				"You cause menacing shadows to invade an area 200 feet on a side and 50 feet high. Illumination in the area drops one step (from bright light to dim, from dim light to darkness). Any spell that creates light in the area that’s cast using a lower-level spell slot than was used to cast encroaching shadows is dispelled, and spells that create light don’t function in the area if they are of a lower spell slot level. Nonmagical effects can’t increase the level of illumination in the affected area. Spells with “shadow” in their names and spells that create darkness or shadow take effect in the area as if a one-level-higher spell slot was used casting them.",
-				"Ritual Focus: If you expend your ritual focus, the spell’s duration increases by 12 hours and it cannot be dispelled by spells that create light, even if they are cast with a higher-level spell slot."
+				"You cause menacing shadows to invade an area 200 feet on a side and 50 feet high. Illumination in the area drops one step (from bright light to dim, from dim light to darkness). Any spell that creates light in the area that's cast using a lower-level spell slot than was used to cast encroaching shadows is dispelled, and spells that create light don't function in the area if they are of a lower spell slot level. Nonmagical effects can't increase the level of illumination in the affected area. Spells with “shadow” in their names and spells that create darkness or shadow take effect in the area as if a one-level-higher spell slot was used casting them.",
+				"Ritual Focus: If you expend your ritual focus, the spell's duration increases by 12 hours and it cannot be dispelled by spells that create light, even if they are cast with a higher-level spell slot."
 			],
 			"entriesHigherLevel": [
 				{
@@ -524,16 +524,16 @@
 				]
 			},
 			"entries": [
-				"You extract the goodness in food, pulling all the nutrition out of three days’ worth of meals and concentrating it into about a tablespoon of bland, flourlike powder. The flour can be mixed with liquid and drunk or baked into elven bread. Foyson used in this way still imparts all the nutritional value of the original food, for the amount consumed.",
-				"The original food appears unchanged and though it’s still filling, it has no nutritional value. Someone eating nothing but foyson-free food will eventually starve.",
-				"Ritual Focus: If you expend your ritual focus, you can choose to have each day’s worth of foyson take the form of a slice of delicious elven bread."
+				"You extract the goodness in food, pulling all the nutrition out of three days' worth of meals and concentrating it into about a tablespoon of bland, flourlike powder. The flour can be mixed with liquid and drunk or baked into elven bread. Foyson used in this way still imparts all the nutritional value of the original food, for the amount consumed.",
+				"The original food appears unchanged and though it's still filling, it has no nutritional value. Someone eating nothing but foyson-free food will eventually starve.",
+				"Ritual Focus: If you expend your ritual focus, you can choose to have each day's worth of foyson take the form of a slice of delicious elven bread."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, an additional three meals’ worth of food can be extracted for each slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, an additional three meals' worth of food can be extracted for each slot level above 1st."
 					]
 				}
 			]
@@ -582,7 +582,7 @@
 				]
 			},
 			"entries": [
-				"You whisper words of encouragement, and a target that you touch gains confidence along with approval from strangers. For the spell’s duration, the subject puts their best foot forward and strangers associate the target with positive feelings. The target adds 1d4 to all Charisma (Persuasion) checks made to influence the attitudes of others and gains a +2 bonus to their status score (if used).",
+				"You whisper words of encouragement, and a target that you touch gains confidence along with approval from strangers. For the spell's duration, the subject puts their best foot forward and strangers associate the target with positive feelings. The target adds 1d4 to all Charisma (Persuasion) checks made to influence the attitudes of others and gains a +2 bonus to their status score (if used).",
 				"Ritual Focus: If you expend your ritual focus, the effect lasts for 24 hours."
 			],
 			"entriesHigherLevel": [
@@ -643,7 +643,7 @@
 				]
 			},
 			"entries": [
-				"Your visage radiates the wrath of the shadow fey, which bears down oppressively upon your targets in a burst of brilliant light. Only creatures that can see you are affected. Creatures with darkvision that fail a Constitution saving throw are blinded and stunned. Creatures without darkvision that fail a Constitution saving throw are blinded. This is not a gaze attack, and it cannot be avoided by averting one’s eyes or wearing a blindfold.",
+				"Your visage radiates the wrath of the shadow fey, which bears down oppressively upon your targets in a burst of brilliant light. Only creatures that can see you are affected. Creatures with darkvision that fail a Constitution saving throw are blinded and stunned. Creatures without darkvision that fail a Constitution saving throw are blinded. This is not a gaze attack, and it cannot be avoided by averting one's eyes or wearing a blindfold.",
 				"Ritual Focus: If you expend your ritual focus, affected creatures without darkvision are charmed instead of blinded."
 			]
 		},
@@ -762,10 +762,10 @@
 				]
 			},
 			"entries": [
-				"If the target fails a Charisma saving throw, you cause the target’s shadow to come to life and reveal one of the creature’s most scandalous secrets: some fact that the target would not want widely known (GM’s choice). When casting the spell, you choose whether everyone present will hear the secret, in which case the shadow speaks loudly in a twisted version of the target’s voice, or if the secret is only whispered to you. The shadow speaks Common, unless the target does not speak Common, in which case it speaks in the target’s native language.",
-				"If the target creature does not have a scandalous secret or does not have a spoken language, the spell fails as if the creature’s saving throw had succeeded.",
+				"If the target fails a Charisma saving throw, you cause the target's shadow to come to life and reveal one of the creature's most scandalous secrets: some fact that the target would not want widely known (GM's choice). When casting the spell, you choose whether everyone present will hear the secret, in which case the shadow speaks loudly in a twisted version of the target's voice, or if the secret is only whispered to you. The shadow speaks Common, unless the target does not speak Common, in which case it speaks in the target's native language.",
+				"If the target creature does not have a scandalous secret or does not have a spoken language, the spell fails as if the creature's saving throw had succeeded.",
 				"If the secret was spoken aloud, the target takes a -2 penalty to Charisma checks with anyone who was present when it was revealed, for the remainder of the day, in addition to any information you obtain or any scandal it provokes.",
-				"Ritual Focus: If you expend your ritual focus, the target has disadvantage on Charisma checks instead of the -2 penalty, and the target’s status score is reduced by 1 for the remainder of the day (see the Midgard Campaign Setting for status rules). At the end of the day, the target makes a Charisma saving throw against your spell save DC. If this saving throw fails, rumors of the target’s indiscretion become widespread and the loss of status is permanent."
+				"Ritual Focus: If you expend your ritual focus, the target has disadvantage on Charisma checks instead of the -2 penalty, and the target's status score is reduced by 1 for the remainder of the day (see the Midgard Campaign Setting for status rules). At the end of the day, the target makes a Charisma saving throw against your spell save DC. If this saving throw fails, rumors of the target's indiscretion become widespread and the loss of status is permanent."
 			]
 		},
 		{
@@ -789,7 +789,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a silver goblet filled with the caster’s blood"
+				"m": "a silver goblet filled with the caster's blood"
 			},
 			"duration": [
 				{
@@ -885,9 +885,9 @@
 				]
 			},
 			"entries": [
-				"You attune your senses to the natural world, so you detect every sound that occurs within 60 feet: wind blowing through branches, falling leaves, grazing deer, trickling streams, and more. You can clearly picture the cause of each sound in your mind. The effect gives you tremorsense with a range of 10 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sound. Creatures that make no noise or that are magically silent cannot be detected through this spell’s effect.",
-				"Song of the forest only functions in natural environments; it fails if cast underground, in a city, or in a building that isolates the caster from nature (GM’s discretion).",
-				"Ritual Focus: If you expend your ritual focus, the spell’s effect is equivalent to blindsight with a range of 30 feet."
+				"You attune your senses to the natural world, so you detect every sound that occurs within 60 feet: wind blowing through branches, falling leaves, grazing deer, trickling streams, and more. You can clearly picture the cause of each sound in your mind. The effect gives you tremorsense with a range of 10 feet. In addition, you have advantage on Wisdom (Perception) checks that rely on sound. Creatures that make no noise or that are magically silent cannot be detected through this spell's effect.",
+				"Song of the forest only functions in natural environments; it fails if cast underground, in a city, or in a building that isolates the caster from nature (GM's discretion).",
+				"Ritual Focus: If you expend your ritual focus, the spell's effect is equivalent to blindsight with a range of 30 feet."
 			]
 		},
 		{
@@ -943,7 +943,7 @@
 				]
 			},
 			"entries": [
-				"You make a choking motion while pointing at a target, which must make a successful Wisdom saving throw or become unable to communicate verbally. The target’s speech becomes garbled and it has disadvantage on Charisma checks that require speech. The creature can cast a spell with a verbal component only by making a successful Constitution check against your spell save DC. If the Constitution check fails, the creature’s action is used but the spell slot isn’t expended.",
+				"You make a choking motion while pointing at a target, which must make a successful Wisdom saving throw or become unable to communicate verbally. The target's speech becomes garbled and it has disadvantage on Charisma checks that require speech. The creature can cast a spell with a verbal component only by making a successful Constitution check against your spell save DC. If the Constitution check fails, the creature's action is used but the spell slot isn't expended.",
 				"Ritual Focus: If you expend your ritual focus, the affected target also takes 2d6 psychic damage every time it tries to talk."
 			]
 		},

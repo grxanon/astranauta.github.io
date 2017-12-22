@@ -50,8 +50,8 @@
 				]
 			},
 			"entries": [
-				"You create a 10-foot tall, 20-foot radius ring of destructive energy around a point you can see within range. The area inside the ring is difficult terrain. When you cast the spell and as a bonus action on each of your turns, you can choose one of the following damage types: cold, fire, lightning, necrotic, or radiant. Creatures and objects that touch the ring, that are inside it when it’s created, or that end their turn inside the ring take 6d6 damage of the chosen type, or half damage with a successful Constitution saving throw. A creature or object reduced to 0 hit points by the spell is reduced to fine ash.",
-				"At the start of each of your subsequent turns, the ring’s radius expands by 20 feet. Any creatures or objects touched by the expanding ring are subject to its effects immediately."
+				"You create a 10-foot tall, 20-foot radius ring of destructive energy around a point you can see within range. The area inside the ring is difficult terrain. When you cast the spell and as a bonus action on each of your turns, you can choose one of the following damage types: cold, fire, lightning, necrotic, or radiant. Creatures and objects that touch the ring, that are inside it when it's created, or that end their turn inside the ring take 6d6 damage of the chosen type, or half damage with a successful Constitution saving throw. A creature or object reduced to 0 hit points by the spell is reduced to fine ash.",
+				"At the start of each of your subsequent turns, the ring's radius expands by 20 feet. Any creatures or objects touched by the expanding ring are subject to its effects immediately."
 			]
 		},
 		{
@@ -155,7 +155,7 @@
 			},
 			"entries": [
 				"You touch two metal rings and infuse them with life, creating a short-lived but sentient construct known as a ring servant (see “New Monster: Ring Servant”). The ring servant appears adjacent to you. It reverts to the rings used to cast the spell when it drops to 0 hit points or when the spell ends.",
-				"The ring servant is friendly to you and your companions for the duration. Roll initiative for the ring servant, which acts on its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the ring servant, it defends itself and you from hostile creatures but otherwise takes no actions."
+				"The ring servant is friendly to you and your companions for the duration. Roll initiative for the ring servant, which acts on its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the ring servant, it defends itself and you from hostile creatures but otherwise takes no actions."
 			]
 		},
 		{
@@ -206,7 +206,7 @@
 				]
 			},
 			"entries": [
-				"You lay a curse upon a ring that isn’t being worn or carried. When you cast this spell, select one of the possible effects of bestow curse. The next creature who willingly wears the ring suffers the chosen effect with no saving throw. The curse transfers from the ring to the wearer once the ring is put on; the ring becomes a mundane ring that can be taken off, but the curse remains on the creature that put it on until the curse is removed or dispelled. An identify spell cast on the cursed ring reveals the fact that it is cursed."
+				"You lay a curse upon a ring that isn't being worn or carried. When you cast this spell, select one of the possible effects of bestow curse. The next creature who willingly wears the ring suffers the chosen effect with no saving throw. The curse transfers from the ring to the wearer once the ring is put on; the ring becomes a mundane ring that can be taken off, but the curse remains on the creature that put it on until the curse is removed or dispelled. An identify spell cast on the cursed ring reveals the fact that it is cursed."
 			]
 		},
 		{
@@ -257,8 +257,8 @@
 				]
 			},
 			"entries": [
-				"You enchant a ring that isn’t being worn or carried. The next creature who willingly wears the ring becomes charmed by you for 1 week or until it is harmed by you or your ally. If the creature dons the ring while directly threatened by you or your ally, the spell fails.",
-				"The charmed creature regards you as a friend. When the spell ends, it doesn’t know it was charmed by you, but it does realize its feeling toward you changed (potentially vastly) in a short time. How the creature reacts and regards you in the future is up to the GM."
+				"You enchant a ring that isn't being worn or carried. The next creature who willingly wears the ring becomes charmed by you for 1 week or until it is harmed by you or your ally. If the creature dons the ring while directly threatened by you or your ally, the spell fails.",
+				"The charmed creature regards you as a friend. When the spell ends, it doesn't know it was charmed by you, but it does realize its feeling toward you changed (potentially vastly) in a short time. How the creature reacts and regards you in the future is up to the GM."
 			]
 		},
 		{
@@ -310,7 +310,7 @@
 			},
 			"entries": [
 				"A melee weapon you are holding is imbued with deep cold. For the duration, a rime of frost covers the weapon and light vapor rises from it if the temperature of the surrounding area is above freezing. The weapon becomes magical and deals an additional 1d4 cold damage on a successful hit. The spell ends if you cast it again or if you let go of the weapon.",
-				"The spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
+				"The spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."
 			]
 		},
 		{
@@ -472,7 +472,7 @@
 				]
 			},
 			"entries": [
-				"You infuse up to two metal rings with magic, causing them to revolve in a slow orbit around your head or hand. For the duration, when you hit a target within the spell’s range with an attack, you can launch one of the rings to strike the target as well. The target takes 1d10 bludgeoning damage and must succeed on a Strength saving throw or be pushed 5 feet directly away from you. The ring is destroyed when it strikes."
+				"You infuse up to two metal rings with magic, causing them to revolve in a slow orbit around your head or hand. For the duration, when you hit a target within the spell's range with an attack, you can launch one of the rings to strike the target as well. The target takes 1d10 bludgeoning damage and must succeed on a Strength saving throw or be pushed 5 feet directly away from you. The ring is destroyed when it strikes."
 			],
 			"entriesHigherLevel": [
 				{
@@ -580,7 +580,7 @@
 				]
 			},
 			"entries": [
-				"Spinning axes made of luminous force burst out from you in a ring shape, striking all creatures within 10 feet of you. Each creature within 10 feet of you takes 5d8 force damage, or half damage with a successful Dexterity saving throw. Creatures that aren’t undead or constructs and that are damaged by this spell begin bleeding. A bleeding creature takes 2d6 necrotic damage at the end of its turn. Bleeding can be stopped by using an action to make a successful Wisdom (Medicine) check against your spell save DC or by any amount of magical healing or regeneration. Bleeding stops automatically after 1 minute."
+				"Spinning axes made of luminous force burst out from you in a ring shape, striking all creatures within 10 feet of you. Each creature within 10 feet of you takes 5d8 force damage, or half damage with a successful Dexterity saving throw. Creatures that aren't undead or constructs and that are damaged by this spell begin bleeding. A bleeding creature takes 2d6 necrotic damage at the end of its turn. Bleeding can be stopped by using an action to make a successful Wisdom (Medicine) check against your spell save DC or by any amount of magical healing or regeneration. Bleeding stops automatically after 1 minute."
 			],
 			"entriesHigherLevel": [
 				{

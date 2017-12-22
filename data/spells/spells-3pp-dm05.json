@@ -53,7 +53,7 @@
 				]
 			},
 			"entries": [
-				"You create a faintly shimmering field of charged energy around yourself. Within that area, the intensity of ley lines you’re able to draw on increases from weak to strong, or from strong to titanic.",
+				"You create a faintly shimmering field of charged energy around yourself. Within that area, the intensity of ley lines you're able to draw on increases from weak to strong, or from strong to titanic.",
 				"If no ley lines are near enough for you to draw on, you can treat the area of the spell itself as an unlocked, weak ley line."
 			]
 		},
@@ -477,7 +477,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the bolt’s damage increases by 1d8 for each slot level above 3rd."
+						"When you cast this spell using a spell slot of 4th level or higher, the bolt's damage increases by 1d8 for each slot level above 3rd."
 					]
 				}
 			]
@@ -537,7 +537,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the spell’s damage increases by 1d10 for each slot level above 5th."
+						"When you cast this spell using a spell slot of 6th level or higher, the spell's damage increases by 1d10 for each slot level above 5th."
 					]
 				}
 			]
@@ -649,7 +649,7 @@
 				]
 			},
 			"entries": [
-				"A roiling stormcloud of ley energy forms, centered around a point you can see and extending horizontally to a radius of 360 feet, with a thickness of 30 feet. Shifting color shoots through the writhing cloud, and thunder roars out of it. Each creature under the cloud at the moment when it’s created (no more than 5,000 feet beneath it) takes 2d6 thunder damage and is deafened for 5 minutes; a successful Constitution saving throw negates both effects.",
+				"A roiling stormcloud of ley energy forms, centered around a point you can see and extending horizontally to a radius of 360 feet, with a thickness of 30 feet. Shifting color shoots through the writhing cloud, and thunder roars out of it. Each creature under the cloud at the moment when it's created (no more than 5,000 feet beneath it) takes 2d6 thunder damage and is deafened for 5 minutes; a successful Constitution saving throw negates both effects.",
 				"Each round you maintain concentration on this spell, the storm produces additional effects on your turn.",
 				"Round 2: Ley-infused pebbles rain from the cloud, causing 1d6 bludgeoning damage to everything beneath it (no saving throw).",
 				"Round 3: Up to six bolts of ley energy leap from the cloud to strike creatures or objects of your choice beneath the cloud. No creature or object can be struck by more than one bolt. A creature struck takes 8d8 force damage, or half damage with a successful Dexterity saving throw.",
@@ -761,7 +761,7 @@
 				]
 			},
 			"entries": [
-				"You channel the power of a ley line within 1 mile into a crackling tendril of multicolored ley energy. The tendril extends from your hand but doesn’t interfere with your ability to hold or manipulate objects. When you cast the spell and as a bonus action on subsequent turns, you can direct the tendril to strike a target within 50 feet of you. Make a melee spell attack; on a hit, the tendril does 3d8 force damage and the target must make a Strength saving throw. If the saving throw fails, you can push the target away or pull it closer, up to 10 feet in either direction.",
+				"You channel the power of a ley line within 1 mile into a crackling tendril of multicolored ley energy. The tendril extends from your hand but doesn't interfere with your ability to hold or manipulate objects. When you cast the spell and as a bonus action on subsequent turns, you can direct the tendril to strike a target within 50 feet of you. Make a melee spell attack; on a hit, the tendril does 3d8 force damage and the target must make a Strength saving throw. If the saving throw fails, you can push the target away or pull it closer, up to 10 feet in either direction.",
 				"Special: A geomancer with a bound ley line can cast this spell as long as he or she is on the same plane as the bound line."
 			]
 		},

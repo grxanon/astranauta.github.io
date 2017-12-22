@@ -85,7 +85,7 @@
 				]
 			},
 			"entries": [
-				"You summon a seething sphere of dark energy 5 feet in diameter. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and reduces the stun to incapacitation. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failure or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions that turn. Creatures take damage only upon entering the well—they take no additional damage for remaining in it—but if they leave the well and are pulled back in again, they take damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well’s upper-dimensional space at one time. When the well’s duration ends, all creatures inside it tumble out in a heap, landing prone."
+				"You summon a seething sphere of dark energy 5 feet in diameter. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and reduces the stun to incapacitation. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failure or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions that turn. Creatures take damage only upon entering the well—they take no additional damage for remaining in it—but if they leave the well and are pulled back in again, they take damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well's upper-dimensional space at one time. When the well's duration ends, all creatures inside it tumble out in a heap, landing prone."
 			],
 			"entriesHigherLevel": [
 				{
@@ -179,10 +179,10 @@
 				]
 			},
 			"entries": [
-				"You view the actions of a single creature you can see through the influences of the stars, and you read what is written there. If the target creature fails a Charisma saving throw, you can predict that creature’s actions. This has the following effects.",
+				"You view the actions of a single creature you can see through the influences of the stars, and you read what is written there. If the target creature fails a Charisma saving throw, you can predict that creature's actions. This has the following effects.",
 				"• You have advantage on attack rolls against the creature.",
-				"• For every 5 feet the creature moves, you can move 5 feet (up to your normal movement) on the creature’s turn when it has completed its movement. This is deducted from your next turn’s movement.",
-				"• As a reaction, you can warn yourself and allies that can hear you of the target’s offensive intentions; any creature targeted by the target’s next attack gains a +2 bonus to AC or on its saving throw against that attack."
+				"• For every 5 feet the creature moves, you can move 5 feet (up to your normal movement) on the creature's turn when it has completed its movement. This is deducted from your next turn's movement.",
+				"• As a reaction, you can warn yourself and allies that can hear you of the target's offensive intentions; any creature targeted by the target's next attack gains a +2 bonus to AC or on its saving throw against that attack."
 			],
 			"entriesHigherLevel": [
 				{
@@ -276,7 +276,7 @@
 				]
 			},
 			"entries": [
-				"By observing the stars or the position of the sun, you are able to determine the cardinal directions, and the direction and distance to a stated destination. You can’t become directionally disoriented or lose track of the destination. The spell doesn’t, however, reveal the best route to your destination or warn you about deep gorges, flooded rivers, or other impassable or treacherous terrain ahead."
+				"By observing the stars or the position of the sun, you are able to determine the cardinal directions, and the direction and distance to a stated destination. You can't become directionally disoriented or lose track of the destination. The spell doesn't, however, reveal the best route to your destination or warn you about deep gorges, flooded rivers, or other impassable or treacherous terrain ahead."
 			]
 		},
 		{
@@ -413,7 +413,7 @@
 			},
 			"entries": [
 				"You create a momentary needle of cold, sharp pain in a target creature. The target must make a successful Constitution saving throw or take 1d6 necrotic damage and have its speed halved until the start of your next turn.",
-				"This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+				"This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
 			]
 		},
 		{
@@ -455,7 +455,7 @@
 				]
 			},
 			"entries": [
-				"You make a melee spell attack; if it hits, the target’s innate darkvision is negated for 1 round. This spell has no effect against darkvision that derives from a spell or a magic item. The target retains all of its other senses. When this spell ends, the creature’s natural darkvision returns."
+				"You make a melee spell attack; if it hits, the target's innate darkvision is negated for 1 round. This spell has no effect against darkvision that derives from a spell or a magic item. The target retains all of its other senses. When this spell ends, the creature's natural darkvision returns."
 			]
 		},
 		{
@@ -686,7 +686,7 @@
 				]
 			},
 			"entries": [
-				"You momentarily become a shadow (a humanoid-shaped absence of light, not the undead creature of that name). You can slide under a door, through a keyhole, or through any other tiny opening. All of your equipment is transformed with you, and you can move up to your full speed during the spell’s duration. While in this form you have advantage on Dexterity (Stealth) checks made in darkness or dim light and you are immune to all damage except force, psychic, or radiant. You can dismiss this spell early by using an action to do so.",
+				"You momentarily become a shadow (a humanoid-shaped absence of light, not the undead creature of that name). You can slide under a door, through a keyhole, or through any other tiny opening. All of your equipment is transformed with you, and you can move up to your full speed during the spell's duration. While in this form you have advantage on Dexterity (Stealth) checks made in darkness or dim light and you are immune to all damage except force, psychic, or radiant. You can dismiss this spell early by using an action to do so.",
 				"If you return to your normal form while in a space too small for you (such as a mouse hole, sewer pipe, or the like), you take 4d6 force damage and are pushed to the nearest space big enough to hold you within 50 feet. If the distance is greater than 50 feet, you take 1d6 extra force damage for every additional 10 feet traveled."
 			],
 			"entriesHigherLevel": [
@@ -735,8 +735,8 @@
 				]
 			},
 			"entries": [
-				"You cause a mote of starlight to appear at a point you can see within 60 feet. The mote explodes a moment later, doing 1d8 radiant damage to any creature in the mote’s 5-foot space. A successful Charisma saving throw negates the damage.",
-				"This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+				"You cause a mote of starlight to appear at a point you can see within 60 feet. The mote explodes a moment later, doing 1d8 radiant damage to any creature in the mote's 5-foot space. A successful Charisma saving throw negates the damage.",
+				"This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
 			]
 		},
 		{
@@ -828,7 +828,7 @@
 				]
 			},
 			"entries": [
-				"This spell increases gravity tenfold within a 50-foot radius of you. All creatures in the area other than you drop whatever they’re holding in their hands, fall prone, become incapacitated, and can’t move. If some solid object (such as the ground) is encountered when flying or levitating creatures fall, they take triple the normal falling damage. Any creature besides you that enters or starts its turn in the area must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. Failure means the creature takes 8d6 bludgeoning damage; success means the creature takes 4d6 bludgeoning damage but it’s no longer incapacitated and it can move at half-speed. All ranged weapon attacks inside the area of effect have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles with mass, such as a flaming sphere. Creatures under the influence of a freedom of movement spell or comparable magic have advantage on the Strength saving throws required by this spell, and their speed isn’t reduced once they recover from incapacitation."
+				"This spell increases gravity tenfold within a 50-foot radius of you. All creatures in the area other than you drop whatever they're holding in their hands, fall prone, become incapacitated, and can't move. If some solid object (such as the ground) is encountered when flying or levitating creatures fall, they take triple the normal falling damage. Any creature besides you that enters or starts its turn in the area must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. Failure means the creature takes 8d6 bludgeoning damage; success means the creature takes 4d6 bludgeoning damage but it's no longer incapacitated and it can move at half-speed. All ranged weapon attacks inside the area of effect have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles with mass, such as a flaming sphere. Creatures under the influence of a freedom of movement spell or comparable magic have advantage on the Strength saving throws required by this spell, and their speed isn't reduced once they recover from incapacitation."
 			]
 		},
 		{

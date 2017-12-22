@@ -227,7 +227,7 @@
 				]
 			},
 			"entries": [
-				"You cause the form of a willing creature to become malleable, dripping and flowing according to the target’s will as if the creature were a vaguely humanoid-shaped ooze. The creature is not affected by difficult terrain, it has advantage on Dexterity (Acrobatics) checks made to escape a grapple, and it suffers no penalties when squeezing through spaces one size category smaller than itself. The target’s movement is halved while it’s affected by chaotic form."
+				"You cause the form of a willing creature to become malleable, dripping and flowing according to the target's will as if the creature were a vaguely humanoid-shaped ooze. The creature is not affected by difficult terrain, it has advantage on Dexterity (Acrobatics) checks made to escape a grapple, and it suffers no penalties when squeezing through spaces one size category smaller than itself. The target's movement is halved while it's affected by chaotic form."
 			],
 			"entriesHigherLevel": [
 				{
@@ -290,8 +290,8 @@
 				]
 			},
 			"entries": [
-				"Make a melee spell attack against a creature with a number of hit dice no greater than your level and at least 1 hp. On a hit, you conjure pulsating waves of chaotic energy within the creature and yourself. After a brief moment that seems to last forever, you and the creature’s current hit point totals change. Roll d100 and increase or decrease the number rolled by any number up to your spellcasting level, then find the result on the Hit Point Flux table. Apply that result to both yourself and the target creature. Any hit points gained beyond a creature’s normal maximum are temporary hit points that last for 1 round/caster level.",
-				"For example, assume a 3rd-level spellcaster who currently has 17 of her maximum 30 hp casts chaotic vitality on a creature with 58 hp and rolls a 75 on the Hit Point Flux table. The two creatures have a combined total of (17 + 54 =) 71 hp. A result of 75 indicates that both creatures get 50% of the total, so the spellcaster and the target end up with 35 hp each. In the spellcaster’s case, 5 of those hp are temporary and will last 3 rounds.",
+				"Make a melee spell attack against a creature with a number of hit dice no greater than your level and at least 1 hp. On a hit, you conjure pulsating waves of chaotic energy within the creature and yourself. After a brief moment that seems to last forever, you and the creature's current hit point totals change. Roll d100 and increase or decrease the number rolled by any number up to your spellcasting level, then find the result on the Hit Point Flux table. Apply that result to both yourself and the target creature. Any hit points gained beyond a creature's normal maximum are temporary hit points that last for 1 round/caster level.",
+				"For example, assume a 3rd-level spellcaster who currently has 17 of her maximum 30 hp casts chaotic vitality on a creature with 58 hp and rolls a 75 on the Hit Point Flux table. The two creatures have a combined total of (17 + 54 =) 71 hp. A result of 75 indicates that both creatures get 50% of the total, so the spellcaster and the target end up with 35 hp each. In the spellcaster's case, 5 of those hp are temporary and will last 3 rounds.",
 				"01-09: 0",
 				"10-39: 1",
 				"40-69: 25% of combined total",
@@ -367,7 +367,7 @@
 				]
 			},
 			"entries": [
-				"You throw a handful of colored cloth into the air while screaming a litany of disjointed phrases. A moment later, a 30-foot cube centered on a point within range fills with multicolored light, cacophonous sound, overpowering scents, and other confusing sensory information. The effect is dizzying and overwhelming. All enemies within the cube must make successful Intelligence saving throws or be blinded, deafened, and fall prone. They cannot stand up or recover from this blindness or deafness while within the area of effect, but the conditions and the restriction on standing end immediately for a creature who leaves the spell’s area of effect."
+				"You throw a handful of colored cloth into the air while screaming a litany of disjointed phrases. A moment later, a 30-foot cube centered on a point within range fills with multicolored light, cacophonous sound, overpowering scents, and other confusing sensory information. The effect is dizzying and overwhelming. All enemies within the cube must make successful Intelligence saving throws or be blinded, deafened, and fall prone. They cannot stand up or recover from this blindness or deafness while within the area of effect, but the conditions and the restriction on standing end immediately for a creature who leaves the spell's area of effect."
 			]
 		},
 		{
@@ -428,7 +428,7 @@
 				]
 			},
 			"entries": [
-				"By twisting a length of silver wire around your finger, you tie your fate to those around you. When you take damage, that damage is divided equally between you and all creatures in range who fail a Charisma saving throw. Any leftover damage that can’t be divided equally is taken by you. Creatures are allowed a fresh saving throw against this spell each time you take damage, and a success ends the spell’s effect on that creature. Creatures that approach to within 60 feet of you after the spell was cast are affected."
+				"By twisting a length of silver wire around your finger, you tie your fate to those around you. When you take damage, that damage is divided equally between you and all creatures in range who fail a Charisma saving throw. Any leftover damage that can't be divided equally is taken by you. Creatures are allowed a fresh saving throw against this spell each time you take damage, and a success ends the spell's effect on that creature. Creatures that approach to within 60 feet of you after the spell was cast are affected."
 			]
 		},
 		{
@@ -488,7 +488,7 @@
 				]
 			},
 			"entries": [
-				"You channel the force of chaos to taint your target’s mind. A target that fails to make a successful Wisdom saving throw must roll 1d20 and consult the Alignment Fluctuation table to find its new alignment, and it must roll anew every minute of the spell’s duration. The target’s alignment stops fluctuating and returns to normal when the spell ends. These changes do not, in and of themselves, make the affected creature friendly or hostile toward the caster, but they can cause creatures to behave in unpredictable ways.",
+				"You channel the force of chaos to taint your target's mind. A target that fails to make a successful Wisdom saving throw must roll 1d20 and consult the Alignment Fluctuation table to find its new alignment, and it must roll anew every minute of the spell's duration. The target's alignment stops fluctuating and returns to normal when the spell ends. These changes do not, in and of themselves, make the affected creature friendly or hostile toward the caster, but they can cause creatures to behave in unpredictable ways.",
 				"1-2: Chaotic good",
 				"3-4: Chaotic neutral",
 				"5-7: Chaotic evil",
@@ -615,7 +615,7 @@
 				]
 			},
 			"entries": [
-				"You call out a distracting curse to a creature, altering its chance to succeed at whatever it’s currently doing. You roll a d4 and subtract the number rolled from an attack roll, ability check, or saving throw that the target creature just made; the target uses the lowered result to determine the outcome of its roll."
+				"You call out a distracting curse to a creature, altering its chance to succeed at whatever it's currently doing. You roll a d4 and subtract the number rolled from an attack roll, ability check, or saving throw that the target creature just made; the target uses the lowered result to determine the outcome of its roll."
 			]
 		},
 		{
@@ -675,7 +675,7 @@
 				]
 			},
 			"entries": [
-				"Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. The protected creatures gain a saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or they get advantage on a normally allowed saving throw. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell’s effect ends for that creature."
+				"Using your strength of will, you protect up to three creatures other than yourself from the effect of a chaos magic surge. The protected creatures gain a saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or they get advantage on a normally allowed saving throw. Once a protected creature makes a successful saving throw allowed by mass surge dampener, the spell's effect ends for that creature."
 			]
 		},
 		{
@@ -846,7 +846,7 @@
 				]
 			},
 			"entries": [
-				"Using your strength of will, you cause one creature other than yourself that you touch to become so firmly entrenched within reality that it is protected from the effects of chaos magic surges. The protected creature gains a saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gets advantage on a normally allowed saving throw. Once the protected creature makes a successful saving throw allowed by surge dampener, the spell’s effect ends for that creature."
+				"Using your strength of will, you cause one creature other than yourself that you touch to become so firmly entrenched within reality that it is protected from the effects of chaos magic surges. The protected creature gains a saving throw to negate the effect of a chaos magic surge that does not normally allow a saving throw, or it gets advantage on a normally allowed saving throw. Once the protected creature makes a successful saving throw allowed by surge dampener, the spell's effect ends for that creature."
 			]
 		},
 		{
@@ -913,7 +913,7 @@
 				"4: A second face appears on the back of your head. You gain darkvision to 120 feet and advantage on sight-based and scent-based Wisdom (Perception) checks. You become adept at carrying out conversations with yourself.",
 				"5: You grow gills that not only allow you to breathe under water but also filter poison out of the air. You gain immunity to inhaled poisons.",
 				"6: Your hindquarters elongate and you grow a second set of legs. Your base walking speed increases by 10 feet and your carrying capacity becomes your Strength score multiplied by 20.",
-				"7: You become incorporeal can move through other creatures and objects as if they were difficult terrain. You take 5 (1d10) force damage if you end your turn inside an object. You can’t pick up or interact with physical objects that you weren’t carrying when you became incorporeal.",
+				"7: You become incorporeal can move through other creatures and objects as if they were difficult terrain. You take 5 (1d10) force damage if you end your turn inside an object. You can't pick up or interact with physical objects that you weren't carrying when you became incorporeal.",
 				"8: Your limbs elongate and flatten into prehensile paddles. You gain a swim speed equal to your base walking speed and have advantage on Strength (Athletics) checks made to climb or swim. In addition, your unarmed strikes do 1d6 bludgeoning damage.",
 				"9: Your head fills with a light gas and swells to four times its normal size, causing all of your hair to fall out. You have advantage on Intelligence and Wisdom ability checks and can levitate up to 5 feet above the ground.",
 				"10: You grow three sets of feathered wings that give you a fly speed equal to your walking speed and the ability to hover."
@@ -985,8 +985,8 @@
 				]
 			},
 			"entries": [
-				"You unravel the bonds of reality that hold a suit of armor together. A target that’s wearing armor must succeed on a Constitution saving throw or its armor softens to the consistency of candle wax, decreasing the creature’s AC by 2.",
-				"This spell has no effect on creatures that aren’t wearing armor separate from their bodies."
+				"You unravel the bonds of reality that hold a suit of armor together. A target that's wearing armor must succeed on a Constitution saving throw or its armor softens to the consistency of candle wax, decreasing the creature's AC by 2.",
+				"This spell has no effect on creatures that aren't wearing armor separate from their bodies."
 			]
 		},
 		{
@@ -1045,7 +1045,7 @@
 			},
 			"entries": [
 				"You surround yourself with the forces of chaos. Wild lights and strange sounds surround you, making stealth impossible. While wild shield is active, you can spend a reaction to absorb a spell that targets you or whose area of effect you are within. An absorbed spell has no effect, but absorbing a spell causes a chaos magic surge as if you had cast a spell, with you as the caster for all magic surge effects.",
-				"Wild shield ends when the duration expires or when it absorbs 4 levels of spells. If you try to absorb a spell whose level exceeds the spell levels remaining, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level – the levels wild shield can still absorb. If the check succeeds, the spell is absorbed; if the check fails, the spell takes its full effect. The chaos magic surge happens regardless of whether the spell is absorbed."
+				"Wild shield ends when the duration expires or when it absorbs 4 levels of spells. If you try to absorb a spell whose level exceeds the spell levels remaining, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level – the levels wild shield can still absorb. If the check succeeds, the spell is absorbed; if the check fails, the spell takes its full effect. The chaos magic surge happens regardless of whether the spell is absorbed."
 			],
 			"entriesHigherLevel": [
 				{

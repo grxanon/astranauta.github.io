@@ -49,7 +49,7 @@
 				]
 			},
 			"entries": [
-				"You seal an agreement between two or more willing creatures with an oath in the name of Tyr, using ritual blessings and toasts of the symbel, during which both the oath and the consequences are clearly set out. If any of the sworn break this solemn vow, they are struck by a curse. The caster can choose either an effect appropriate for bestow curse or another penalty, subject to the GM’s approval. Binding oath can’t be dismissed by dispel magic, but it can be removed with dispel evil and good, remove curse, or wish. Remove curse functions only if the spell slot used to cast it is equal to or higher than the spell slot used to cast binding oath.",
+				"You seal an agreement between two or more willing creatures with an oath in the name of Tyr, using ritual blessings and toasts of the symbel, during which both the oath and the consequences are clearly set out. If any of the sworn break this solemn vow, they are struck by a curse. The caster can choose either an effect appropriate for bestow curse or another penalty, subject to the GM's approval. Binding oath can't be dismissed by dispel magic, but it can be removed with dispel evil and good, remove curse, or wish. Remove curse functions only if the spell slot used to cast it is equal to or higher than the spell slot used to cast binding oath.",
 				"When the oath is broken or the effect removed from one of the participants, all targets are immediately aware that this has occurred, but no other details. Depending on the nature of the oath, this may or may not invalidate the oath for the other targets. If so, the spell ends for all other affected creatures, but curse effects already bestowed remain until dispelled."
 			]
 		},
@@ -98,7 +98,7 @@
 				]
 			},
 			"entries": [
-				"You touch a melee weapon that was used by an ally who’s now dead, and it animates and flies into combat. The weapon leaps into the air and flies to another ally (chosen by you and within 15 feet of you), where it enters that ally’s space and never leaves their side as they move. If the weapon is forced to move more than 5 feet from the chosen ally, the spell ends. Its attack modifier equals your spellcasting level + the weapon’s inherent magical bonus, if any; it receives only its own inherent magical bonus to damage. The weapon fights for up to 4 rounds, at which point it falls to the ground."
+				"You touch a melee weapon that was used by an ally who's now dead, and it animates and flies into combat. The weapon leaps into the air and flies to another ally (chosen by you and within 15 feet of you), where it enters that ally's space and never leaves their side as they move. If the weapon is forced to move more than 5 feet from the chosen ally, the spell ends. Its attack modifier equals your spellcasting level + the weapon's inherent magical bonus, if any; it receives only its own inherent magical bonus to damage. The weapon fights for up to 4 rounds, at which point it falls to the ground."
 			]
 		},
 		{
@@ -141,7 +141,7 @@
 				]
 			},
 			"entries": [
-				"This spell uses biting cold to make a metal or stone item brittle and easy to shatter. The item’s hit points are permanently reduced by a number equal to your spellcasting level, and Strength checks to shatter or break the item within 1 minute of the spell’s casting are made with advantage. If the item isn’t shattered, it can be repaired as normal."
+				"This spell uses biting cold to make a metal or stone item brittle and easy to shatter. The item's hit points are permanently reduced by a number equal to your spellcasting level, and Strength checks to shatter or break the item within 1 minute of the spell's casting are made with advantage. If the item isn't shattered, it can be repaired as normal."
 			]
 		},
 		{
@@ -193,8 +193,8 @@
 			},
 			"entries": [
 				"If the target fails a Charisma saving throw, it and its equipment are frozen solid, becoming a physically inert statue of ice. The creature is effectively paralyzed, but mental activity does not cease and signs of life are detectable; the creature still breathes and its heart continues to beat, though both happen so slowly as to be almost imperceptible. If the ice statue is broken or damaged while frozen, the creature will have matching damage or injury when returned to its original state.",
-				"Dispel magic can’t end this spell, but it can allow the target to speak (but not move or cast spells) for 1 round per the spell slot used. Greater restoration or more potent magic is needed to free a creature from the ice.",
-				"Boreas and certain of his followers can use scrying to spy through the target’s senses, and the target receives no saving throw against this effect. Those touching a frozen target can request an audience with Boreas, and if they make a successful DC 15 Charisma check, he’ll respond to their request through the ice."
+				"Dispel magic can't end this spell, but it can allow the target to speak (but not move or cast spells) for 1 round per the spell slot used. Greater restoration or more potent magic is needed to free a creature from the ice.",
+				"Boreas and certain of his followers can use scrying to spy through the target's senses, and the target receives no saving throw against this effect. Those touching a frozen target can request an audience with Boreas, and if they make a successful DC 15 Charisma check, he'll respond to their request through the ice."
 			]
 		},
 		{
@@ -366,7 +366,7 @@
 				]
 			},
 			"entries": [
-				"You have mastered the skraeling art of keeping fire under your tongue. You can consume a nonmagical fire up to the size of a normal campfire. The fire is stored harmlessly in your mouth and dissipates if not used before the end of the spell’s duration. You can vomit forth the stored fire as an action. If you’re trying to hit a particular target, then treat this as a ranged attack with a range of 5 feet. Campfire-sized flames cause 1d6 fire damage, while torch-sized flames cause 1 point of fire damage. Once you’ve spit it out, the fire burns normally. It goes out immediately unless it hits inflammable material and sets it alight."
+				"You have mastered the skraeling art of keeping fire under your tongue. You can consume a nonmagical fire up to the size of a normal campfire. The fire is stored harmlessly in your mouth and dissipates if not used before the end of the spell's duration. You can vomit forth the stored fire as an action. If you're trying to hit a particular target, then treat this as a ranged attack with a range of 5 feet. Campfire-sized flames cause 1d6 fire damage, while torch-sized flames cause 1 point of fire damage. Once you've spit it out, the fire burns normally. It goes out immediately unless it hits inflammable material and sets it alight."
 			]
 		},
 		{
@@ -477,7 +477,7 @@
 				]
 			},
 			"entries": [
-				"A blue spark flies from your hand into a potion vial, drinking horn, waterskin, or similar container, instantly freezing the contents. The contents melt normally and are not otherwise harmed, but it’s not possible to consume them while they’re frozen (they won’t come out of the container)."
+				"A blue spark flies from your hand into a potion vial, drinking horn, waterskin, or similar container, instantly freezing the contents. The contents melt normally and are not otherwise harmed, but it's not possible to consume them while they're frozen (they won't come out of the container)."
 			],
 			"entriesHigherLevel": [
 				{
@@ -593,7 +593,7 @@
 				]
 			},
 			"entries": [
-				"Provided you’re not carrying more than a normal heavy load, you can walk on the surface of snow rather than wading through it, and ignore its effect on movement. Ice also supports your weight no mater how thin it is, and you can travel on it as if you’re wearing ice skates. You still leave tracks normally under these effects."
+				"Provided you're not carrying more than a normal heavy load, you can walk on the surface of snow rather than wading through it, and ignore its effect on movement. Ice also supports your weight no mater how thin it is, and you can travel on it as if you're wearing ice skates. You still leave tracks normally under these effects."
 			],
 			"entriesHigherLevel": [
 				{
@@ -727,9 +727,9 @@
 				]
 			},
 			"entries": [
-				"This spell is infamous for its use among feuding wizards and witches, because it lets the caster steal one or more spell slots from the target. Grasp of the tupilak remains effective for 1 hour or until it’s triggered. When you make a successful melee attack, besides doing normal melee damage, the target takes an additional 2d4 necrotic damage and one or more of the defender’s spell slots are transferred to you, for you to use as your own. Roll 1d6; the result equals the total levels of the slots transferred. Spell slots of the highest level possible are transferred before lower-level slots. For example, if you roll a 5 and the target has at least one 5th-level spell slot available, that slot transfers to you. If the target’s highest available spell slot is 3rd level, then you receive a 3rd-level slot plus a 2nd-level slot, or a 3rd-level slot and two 1st-level slots if no 2nd-level slot is available. You can steal either arcane or divine spell slots, at your preference.",
-				"Crucially, however, spell slots can be stolen only from casters who prepare spells in advance. If the target has no available spell slots of an appropriate level—for example, if you roll a 2 and the target has expended all its 1st and 2nd-level spell slots—then grasp of the tupilak has no effect, including causing no necrotic damage. If a stolen spell slot is higher than you’re able to use, treat it as your highest-level slot.",
-				"A spellcaster who’s been affected by grasp of the tupilak can’t recover stolen spell slots until the stolen slot is used, you take a long rest, or they receive remove curse, greater restoration, or comparable magic. Unused stolen spell slots disappear from your inventory when you take a long rest or when the creature you stole them from receives restorative magic."
+				"This spell is infamous for its use among feuding wizards and witches, because it lets the caster steal one or more spell slots from the target. Grasp of the tupilak remains effective for 1 hour or until it's triggered. When you make a successful melee attack, besides doing normal melee damage, the target takes an additional 2d4 necrotic damage and one or more of the defender's spell slots are transferred to you, for you to use as your own. Roll 1d6; the result equals the total levels of the slots transferred. Spell slots of the highest level possible are transferred before lower-level slots. For example, if you roll a 5 and the target has at least one 5th-level spell slot available, that slot transfers to you. If the target's highest available spell slot is 3rd level, then you receive a 3rd-level slot plus a 2nd-level slot, or a 3rd-level slot and two 1st-level slots if no 2nd-level slot is available. You can steal either arcane or divine spell slots, at your preference.",
+				"Crucially, however, spell slots can be stolen only from casters who prepare spells in advance. If the target has no available spell slots of an appropriate level—for example, if you roll a 2 and the target has expended all its 1st and 2nd-level spell slots—then grasp of the tupilak has no effect, including causing no necrotic damage. If a stolen spell slot is higher than you're able to use, treat it as your highest-level slot.",
+				"A spellcaster who's been affected by grasp of the tupilak can't recover stolen spell slots until the stolen slot is used, you take a long rest, or they receive remove curse, greater restoration, or comparable magic. Unused stolen spell slots disappear from your inventory when you take a long rest or when the creature you stole them from receives restorative magic."
 			]
 		},
 		{
@@ -776,7 +776,7 @@
 				]
 			},
 			"entries": [
-				"You reveal how the Norns have entwined the fate of nearby allies and enemies. For every ally targeted by this spell, you must also target an enemy within range. If the number of allies and enemies targeted isn’t the same, the spell fails. For the duration of the spell, every target gains a +2 bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls made against targets also affected by the spell. All affected creatures can identify fellow targets of the spell by sight. If an affected creature makes any of the above checks against a non-subject, it has a –2 penalty on that check."
+				"You reveal how the Norns have entwined the fate of nearby allies and enemies. For every ally targeted by this spell, you must also target an enemy within range. If the number of allies and enemies targeted isn't the same, the spell fails. For the duration of the spell, every target gains a +2 bonus on saving throws, attack rolls, ability checks, skill checks, and weapon damage rolls made against targets also affected by the spell. All affected creatures can identify fellow targets of the spell by sight. If an affected creature makes any of the above checks against a non-subject, it has a –2 penalty on that check."
 			],
 			"entriesHigherLevel": [
 				{
@@ -891,7 +891,7 @@
 				]
 			},
 			"entries": [
-				"You infuse the metal of a melee weapon with the fearsome aura of a mighty hero. The weapon’s wielder has advantage on Charisma (Intimidate) checks made while aggressively brandishing the weapon. In addition, an opponent that currently has 30 or fewer hit points and is struck by the weapon must make a Charisma saving throw or be stunned for 1 round. If the creature has more than 30 hit points but fewer than the weapon’s wielder currently has, it becomes frightened instead; a frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success. A creature that succeeds on the saving throw is immune to this effect on the same weapon for 24 hours."
+				"You infuse the metal of a melee weapon with the fearsome aura of a mighty hero. The weapon's wielder has advantage on Charisma (Intimidate) checks made while aggressively brandishing the weapon. In addition, an opponent that currently has 30 or fewer hit points and is struck by the weapon must make a Charisma saving throw or be stunned for 1 round. If the creature has more than 30 hit points but fewer than the weapon's wielder currently has, it becomes frightened instead; a frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success. A creature that succeeds on the saving throw is immune to this effect on the same weapon for 24 hours."
 			]
 		},
 		{
@@ -1055,7 +1055,7 @@
 				]
 			},
 			"entries": [
-				"Loki’s gift makes even the most barefaced lie seem strangely plausible: you gain advantage to Charisma (Deception) checks for whatever you’re currently saying. If your Deception check fails, the creature knows that you tried to manipulate it with magic. If you lie to a creature that has a friendly attitude toward you and it fails a Charisma saving throw, you can also coax him or her to reveal a potentially embarrassing secret. The secret can involve wrongdoing (adultery, cheating at tafl, a secret fear, etc.) but not something life-threatening or dishonorable enough to earn the subject repute as a nithling. The verbal component of this spell is the lie you are telling."
+				"Loki's gift makes even the most barefaced lie seem strangely plausible: you gain advantage to Charisma (Deception) checks for whatever you're currently saying. If your Deception check fails, the creature knows that you tried to manipulate it with magic. If you lie to a creature that has a friendly attitude toward you and it fails a Charisma saving throw, you can also coax him or her to reveal a potentially embarrassing secret. The secret can involve wrongdoing (adultery, cheating at tafl, a secret fear, etc.) but not something life-threatening or dishonorable enough to earn the subject repute as a nithling. The verbal component of this spell is the lie you are telling."
 			]
 		},
 		{
@@ -1161,7 +1161,7 @@
 				]
 			},
 			"entries": [
-				"You mark the target’s body with a unique rune that represents their fate. The rune protects against death from either a specific damage type (slashing, poison, fire, radiant, etc.) or a category of creature (giant, beast, elemental, monstrosity, etc.) that must be named when the spell is cast. For the next 24 hours, the target has advantage on saving throws involving that type of damage or creature, including death saving throws if the attack that dropped the target to 0 hit points is covered by this spell. A character can be under the effect of only a single not this day! rune at one time; a second casting on the same target cancels the preexisting protection."
+				"You mark the target's body with a unique rune that represents their fate. The rune protects against death from either a specific damage type (slashing, poison, fire, radiant, etc.) or a category of creature (giant, beast, elemental, monstrosity, etc.) that must be named when the spell is cast. For the next 24 hours, the target has advantage on saving throws involving that type of damage or creature, including death saving throws if the attack that dropped the target to 0 hit points is covered by this spell. A character can be under the effect of only a single not this day! rune at one time; a second casting on the same target cancels the preexisting protection."
 			]
 		},
 		{
@@ -1216,7 +1216,7 @@
 				"You bestow lupine traits on a group of living creatures within range. Choose one of the following to be gained by all targets for the duration. All targets receive the same effect.",
 				"Thick Fur: Targets sprout fur over their entire bodies, raising their armor class by 2 points.",
 				"Keen Hearing and Smell: Targets have advantage on Wisdom (Perception) checks that rely on hearing or smell.",
-				"Pack Tactics: Affected creatures have advantage on attack rolls against a target if at least one of the attacker’s allies (also under the same effect of this spell) is within 5 feet of the creature and the ally isn’t incapacitated."
+				"Pack Tactics: Affected creatures have advantage on attack rolls against a target if at least one of the attacker's allies (also under the same effect of this spell) is within 5 feet of the creature and the ally isn't incapacitated."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1275,7 +1275,7 @@
 				]
 			},
 			"entries": [
-				"A ray of shifting color springs from your hand. Make a ranged spell attack against a single target. The ray’s effect depends on which color happens to be dominant when the beam strikes its target, determined by rolling 1d8.",
+				"A ray of shifting color springs from your hand. Make a ranged spell attack against a single target. The ray's effect depends on which color happens to be dominant when the beam strikes its target, determined by rolling 1d8.",
 				"1-Red: The target takes 1d6 fire damage per caster level on a failed Dexterity save, or half as much damage on a successful one.",
 				"2-Orange: The target takes 1d6 acid damage per caster level on a failed Dexterity save, or half as much damage on a successful one.",
 				"3-Red: The target takes 1d6 lightning damage per caster level on a failed Dexterity save, or half as much damage on a successful one.",
@@ -1392,7 +1392,7 @@
 			},
 			"entries": [
 				"A ball of snow forms within 5 feet of you and rolls in the direction you point, growing larger as it moves. As a bonus action, you can move the sphere up to 30 feet. If you roll the boulder into a creature, that creature must make a successful Dexterity saving throw or be knocked prone and take the damage indicated below.",
-				"Each round the snow boulder increases in size and effectiveness. Hitting a creature doesn’t stop the snow boulder’s movement or impede its growth.",
+				"Each round the snow boulder increases in size and effectiveness. Hitting a creature doesn't stop the snow boulder's movement or impede its growth.",
 				"1-Small: 1d6 bludgeoning damage",
 				"2-Medium: 2d6 bludgeoning damage",
 				"3-Large: 4d6 bludgeoning damage",
@@ -1518,7 +1518,7 @@
 				]
 			},
 			"entries": [
-				"You create a connection between the target of the spell (“target”), a creature that attacked and injured the target in the last 24 hours (“attacker”), and a melee weapon that was used successfully in the attack (“weapon”), all of which must be within the spell’s range of you when the spell is cast. For the duration of the spell, whenever the attacker takes damage while holding the weapon, the target takes the same amount and type of damage; a successful Charisma saving throw by the target halves the damage it takes, with each attack calling for a new saving throw. The attacker can even turn the weapon against himself or herself and cause identical damage to the target. Self-inflicted wounds hit automatically, but damage is still rolled randomly. Once the connection is established, it lasts for the duration of the spell regardless of range, so long as all three elements remain on the same plane. The spell ends immediately if the attacker receives any healing."
+				"You create a connection between the target of the spell (“target”), a creature that attacked and injured the target in the last 24 hours (“attacker”), and a melee weapon that was used successfully in the attack (“weapon”), all of which must be within the spell's range of you when the spell is cast. For the duration of the spell, whenever the attacker takes damage while holding the weapon, the target takes the same amount and type of damage; a successful Charisma saving throw by the target halves the damage it takes, with each attack calling for a new saving throw. The attacker can even turn the weapon against himself or herself and cause identical damage to the target. Self-inflicted wounds hit automatically, but damage is still rolled randomly. Once the connection is established, it lasts for the duration of the spell regardless of range, so long as all three elements remain on the same plane. The spell ends immediately if the attacker receives any healing."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1572,8 +1572,8 @@
 				]
 			},
 			"entries": [
-				"You clap your hands, emitting a peal of thunder. All creatures within 20 feet of you take 8d4 thunder damage and are deafened for 1d8 rounds, or take half damage and aren’t deafened with a successful Constitution saving throw. A creature that fails the saving throw by 5 or more is also stunned for 1 round.",
-				"This spell doesn’t function in an area under the effect of a silence spell. Very brittle material such as crystal may be shattered if it’s within range, at the GM’s discretion; the GM can allow a character holding such an object to protect it with a successful Dexterity saving throw."
+				"You clap your hands, emitting a peal of thunder. All creatures within 20 feet of you take 8d4 thunder damage and are deafened for 1d8 rounds, or take half damage and aren't deafened with a successful Constitution saving throw. A creature that fails the saving throw by 5 or more is also stunned for 1 round.",
+				"This spell doesn't function in an area under the effect of a silence spell. Very brittle material such as crystal may be shattered if it's within range, at the GM's discretion; the GM can allow a character holding such an object to protect it with a successful Dexterity saving throw."
 			]
 		},
 		{
@@ -1679,7 +1679,7 @@
 				]
 			},
 			"entries": [
-				"Cast this spell when a target makes an attack roll, a saving throw, or an ability or skill check. With a swift curse (“Unluck on that!”), you bring misfortune to the target’s endeavor; the affected creature has disadvantage on the roll."
+				"Cast this spell when a target makes an attack roll, a saving throw, or an ability or skill check. With a swift curse (“Unluck on that!”), you bring misfortune to the target's endeavor; the affected creature has disadvantage on the roll."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1729,7 +1729,7 @@
 				]
 			},
 			"entries": [
-				"You let out a howl that can be heard up to 5 miles away outdoors. The howl can convey a message of up to nine words, and it will be understood by all canine creatures within hearing and up to one specific creature that you name during the casting. The range of hearing is 3 miles for creatures that are indoors or 1 mile underground. No creature is compelled to do anything by the message; beasts with low intelligence are unlikely to take any action unless they’re innately curious or feel threatened."
+				"You let out a howl that can be heard up to 5 miles away outdoors. The howl can convey a message of up to nine words, and it will be understood by all canine creatures within hearing and up to one specific creature that you name during the casting. The range of hearing is 3 miles for creatures that are indoors or 1 mile underground. No creature is compelled to do anything by the message; beasts with low intelligence are unlikely to take any action unless they're innately curious or feel threatened."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1785,14 +1785,14 @@
 				]
 			},
 			"entries": [
-				"You recite a poem in the Northern tongue, sent to your lips by Wotan himself, to gain supernatural insight or advice. Your next Intelligence or Charisma check within 1 minute is made with advantage, and you can include twice your proficiency bonus. At the GM’s discretion, this spell can instead provide a piece of general advice equivalent to an augury."
+				"You recite a poem in the Northern tongue, sent to your lips by Wotan himself, to gain supernatural insight or advice. Your next Intelligence or Charisma check within 1 minute is made with advantage, and you can include twice your proficiency bonus. At the GM's discretion, this spell can instead provide a piece of general advice equivalent to an augury."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When casting Wotan’s rede with a spell slot of 4th level, it provides advice equivalent to divination. When casting with a 5th-level spell slot, the spell provides advice equivalent to a single answer from commune. When casting with a 6th-level spell slot, Wotan’s rede provides advice equivalent to three answers from contact other plane."
+						"When casting Wotan's rede with a spell slot of 4th level, it provides advice equivalent to divination. When casting with a 5th-level spell slot, the spell provides advice equivalent to a single answer from commune. When casting with a 6th-level spell slot, Wotan's rede provides advice equivalent to three answers from contact other plane."
 					]
 				}
 			]
