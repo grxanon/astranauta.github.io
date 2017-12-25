@@ -20,7 +20,10 @@
 						"Goblin Ambush",
 						"Cragmaw Hideout"
 					],
-					"part": 1
+					"ordinal": {
+						"type": "part",
+						"number": 1
+					}
 				},
 				{
 					"name": "Phandalin",
@@ -31,7 +34,10 @@
 						"Redbrand Ruffians",
 						"Redbrand Hideout"
 					],
-					"part": 2
+					"ordinal": {
+						"type": "part",
+						"number": 2
+					}
 				},
 				{
 					"name": "The Spider's Web",
@@ -43,7 +49,10 @@
 						"Wyvern Tor",
 						"Cragmaw Castle"
 					],
-					"part": 3
+					"ordinal": {
+						"type": "part",
+						"number": 3
+					}
 				},
 				{
 					"name": "Wave Echo Cave",
@@ -55,7 +64,277 @@
 						"Keyed Encounters",
 						"Conclusion"
 					],
-					"part": 4
+					"ordinal": {
+						"type": "part",
+						"number": 4
+					}
+				}
+			]
+		},
+		{
+			"name": "Hoard of the Dragon Queen",
+			"id": "HotDQ",
+			"contents": [
+				{
+					"name": "Introduction",
+					"headers": [
+						"Background",
+						"Overview"
+					]
+				},
+				{
+					"name": "Greenest in Flames",
+					"headers": [
+						"Character Hooks",
+						"The Approach",
+						"General Features",
+						"Wandering Encounters",
+						"Missions"
+					],
+					"ordinal": {
+						"type": "episode",
+						"number": 1
+					}
+				},
+				{
+					"name": "Raiders' Camp",
+					"headers": [
+						"Tracking the Raiders",
+						"The Camp",
+						"Rewards"
+					],
+					"ordinal": {
+						"type": "episode",
+						"number": 2
+					}
+				},
+				{
+				    "name": "Dragon Hatchery",
+				    "headers": [
+				        "Rewards"
+				    ],
+					"ordinal": {
+						"type": "episode",
+						"number": 3
+					}
+				},
+				{
+				    "name": "On the Road",
+				    "headers": [
+				        "Elturel",
+						"Baldur's Gate",
+						"Fellow Travelers",
+						"Life on the Road",
+						"Random Road Events",
+						"Planned Road Events"
+				    ],
+					"ordinal": {
+						"type": "episode",
+						"number": 4
+					}
+				},
+				{
+				    "name": "Construction Ahead",
+				    "headers": [
+				        "Waterdeep",
+						"Northbound, Again",
+						"Carnath Roadhouse",
+						"Tracking the Load",
+						"Grudge Match"
+				    ],
+					"ordinal": {
+						"type": "episode",
+						"number": 5
+					}
+				},
+				{
+				    "name": "Castle Naerytar",
+				    "headers": [
+				        "Traveling to the Castle",
+						"Castle Naerytar",
+						"Squaring Off Against the Cult of the Dragon",
+						"Approaching Castle Naerytar",
+						"Outside Castle Naerytar",
+						"Inside Castle Naerytar",
+						"Ground Floor",
+						"Second Floor",
+						"Third Floor",
+						"Beneath the Castle",
+						"Rewards"
+				    ],
+					"ordinal": {
+						"type": "episode",
+						"number": 6
+					}
+				},
+				{
+				    "name": "Hunting Lodge",
+				    "headers": [
+				        "General Features",
+						"Castle in the Clouds",
+						"Important Nonplayer Characters",
+						"Through the Gate",
+						"Outside the Lodge",
+						"Lodge Ground Floor",
+						"Lodge Upper Floor",
+						"Travelling to Parnast"
+				    ],
+					"ordinal": {
+						"type": "episode",
+						"number": 7
+					}
+				},
+				{
+				    "name": "Castle in the Clouds",
+				    "headers": [
+				        "Skyreach Castle",
+						"Concluding the Adventure"
+				    ],
+					"ordinal": {
+						"type": "episode",
+						"number": 8
+					}
+				}
+			]
+		},
+		{
+			"name": "Rise of Tiamat",
+			"id": "RoT",
+			"contents": [
+				{
+				    "name": "Tyranny of Dragons",
+				    "headers": [
+						"Introduction",
+				        "Background",
+						"Overview",
+						"Outline of Episodes",
+						"Adventure Hooks",
+						"Additional Encounters",
+						"Running the Adventure",
+						"Groups",
+						"Villains",
+						"Allies"
+				    ]
+				},
+				{
+				    "name": "Council of Waterdeep",
+				    "headers": [
+						"Starting the Adventure",
+						"Back in Waterdeep",
+						"Gathering Allies",
+						"Sessions of the Council",
+						"Scoring the Sessions"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 1
+				    }
+				},
+				{
+				    "name": "The Sea of Moving Ice",
+				    "headers": [
+						"The Sea of Moving Ice",
+						"Oyaviggaton",
+						"Ice Caves",
+						"Arauthator's Lair",
+						"Developments",
+						"Leaving Oyaviggaton",
+						"Arauthator's Treasure",
+						"Conclusion"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 2
+				    }
+				},
+				{
+				    "name": "Death to the Wyrmspeakers",
+				    "headers": [
+						"Varram the White",
+						"Tomb of Diderius",
+						"Ss'tck'al",
+						"Conclusion"
+
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 3
+				    }
+				},
+				{
+				    "name": "Neronvain",
+				    "headers": [
+						"The Misty Forest",
+						"Neronvain's Stronghold",
+						"Conclusion"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 4
+				    }
+				},
+				{
+				    "name": "The Cult Strikes Back",
+				    "headers": [
+						"First Attack",
+						"Second Attack",
+						"Third Attack",
+						"Sequence of Events"
+					],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 5
+				    }
+				},
+				{
+				    "name": "Metallic Dragons, Arise",
+				    "headers": [
+						"Unlikely Ambassadors",
+						"Council of Dragons",
+						"Conclusion"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 6
+				    }
+				},
+				{
+				    "name": "Xonthal's Tower",
+				    "headers": [
+						"The Maze",
+						"The Tower",
+						"Dungeon",
+						"Exiting Xonthal’s Tower",
+						"Conclusion"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 7
+				    }
+				},
+				{
+				    "name": "Mission to Thay",
+				    "headers": [
+						"The Enemy of My Enemy",
+						"Conclusion"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 8
+				    }
+				},
+				{
+				    "name": "Tiamat's Return",
+				    "headers": [
+						"The Well of Dragons",
+						"Tiamat's Temple",
+						"Enemies and Allies",
+						"Victory or Defeat"
+				    ],
+				    "ordinal": {
+				        "type": "episode",
+				        "number": 9
+				    }
 				}
 			]
 		}
