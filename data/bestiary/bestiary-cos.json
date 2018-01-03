@@ -15,18 +15,18 @@
 			"ac": "15 (natural armor)",
 			"hp": "120 (16d8+48)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "10",
-			"con": "16",
-			"int": "20",
-			"wis": "17",
-			"cha": "13",
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 13,
 			"save": "Wis +7",
 			"skill": {
 				"arcana": "+13",
 				"religion": "+13"
 			},
-			"passive": "13",
+			"passive": 13,
 			"languages": "Abyssal, Common, Draconic, Dwarvish, Giant",
 			"cr": "11",
 			"trait": [
@@ -46,15 +46,15 @@
 					"name": "Spellcasting",
 					"text": [
 						"Baba Lysaga is a 16th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). Baba Lysaga has the following wizard spells prepared:",
-						"• Cantrips (at will): acid splash, fire bolt, light, mage hand, prestidigitation",
-						"•1st level (4 slots): detect magic, magic missile, sleep, witch bolt",
-						"•2nd level (3 slots): crown of madness, enlarge/reduce, misty step",
-						"•3rd level (3 slots): dispel magic, fireball, lightning bolt",
-						"•4th level (3 slots): blight, Evard's black tentacles, polymorph",
-						"•5th level (2 slots): cloudkill, geas, scrying",
-						"•6th level (1 slot): programmed illusion, true seeing",
-						"•7th level (1 slot): finger of death, mirage arcane",
-						"•8th level (1 slot): power word stun"
+						"\u2022 Cantrips (at will): acid splash, fire bolt, light, mage hand, prestidigitation",
+						"\u20221st level (4 slots): detect magic, magic missile, sleep, witch bolt",
+						"\u20222nd level (3 slots): crown of madness, enlarge/reduce, misty step",
+						"\u20223rd level (3 slots): dispel magic, fireball, lightning bolt",
+						"\u20224th level (3 slots): blight, Evard's black tentacles, polymorph",
+						"\u20225th level (2 slots): cloudkill, geas, scrying",
+						"\u20226th level (1 slot): programmed illusion, true seeing",
+						"\u20227th level (1 slot): finger of death, mirage arcane",
+						"\u20228th level (1 slot): power word stun"
 					]
 				}
 			],
@@ -82,7 +82,8 @@
 					]
 				}
 			],
-			"spells": "acid splash, fire bolt, light, mage hand, prestidigitation, detect magic, magic missile, sleep, witch bolt, crown of madness, enlarge/reduce, misty step, dispel magic, fireball, lightning bolt, blight, Everard's black tentacles, polymorph, cloudkill, geas, scrying, programmed illusion, true seeing, finger of death, mirage arcane, power word stun"
+			"spells": "acid splash, fire bolt, light, mage hand, prestidigitation, detect magic, magic missile, sleep, witch bolt, crown of madness, enlarge/reduce, misty step, dispel magic, fireball, lightning bolt, blight, Everard's black tentacles, polymorph, cloudkill, geas, scrying, programmed illusion, true seeing, finger of death, mirage arcane, power word stun",
+			"page": 228
 		},
 		{
 			"name": "Baba Lysaga's Creeping Hut",
@@ -93,17 +94,17 @@
 			"ac": "16 (natural armor)",
 			"hp": "263 (17d10+85)",
 			"speed": "30 ft.",
-			"str": "26",
-			"dex": "7",
-			"con": "20",
-			"int": "1",
-			"wis": "3",
-			"cha": "3",
+			"str": 26,
+			"dex": 7,
+			"con": 20,
+			"int": 1,
+			"wis": 3,
+			"cha": 3,
 			"save": "Con +9, Wis +0, Cha +0",
 			"immune": "poison, psychic",
 			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, prone",
 			"senses": "blindsight 120 ft. (blind beyond this radius)",
-			"passive": "6",
+			"passive": 6,
 			"cr": "11",
 			"trait": [
 				{
@@ -151,7 +152,8 @@
 						"Rock|12|3d8+8"
 					]
 				}
-			]
+			],
+			"page": 226
 		},
 		{
 			"name": "Barovian Witch",
@@ -167,18 +169,18 @@
 			"ac": "10",
 			"hp": "16 (3d8+3)",
 			"speed": "30 ft.",
-			"str": "7",
-			"dex": "11",
-			"con": "13",
-			"int": "14",
-			"wis": "11",
-			"cha": "12",
+			"str": 7,
+			"dex": 11,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 12,
 			"skill": {
 				"arcana": "+4",
 				"perception": "+2"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "1/2",
 			"trait": [
@@ -186,9 +188,9 @@
 					"name": "Spellcasting",
 					"text": [
 						"The witch is a 3rd-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). The witch has the following wizard spells prepared:",
-						"• Cantrips (at will): mage hand, prestidigitation, ray of frost",
-						"•1st level (4 slots): ray of sickness, sleep, Tasha's hideous laughter",
-						"•2nd level (2 slots): alter self, invisibility"
+						"\u2022 Cantrips (at will): mage hand, prestidigitation, ray of frost",
+						"\u20221st level (4 slots): ray of sickness, sleep, Tasha's hideous laughter",
+						"\u20222nd level (2 slots): alter self, invisibility"
 					]
 				}
 			],
@@ -212,7 +214,8 @@
 					]
 				}
 			],
-			"spells": "mage hand, prestidigitation, ray of frost, ray of sickness, sleep, Tasha's hideous laughter, alter self, invisibility"
+			"spells": "mage hand, prestidigitation, ray of frost, ray of sickness, sleep, Tasha's hideous laughter, alter self, invisibility",
+			"page": 229
 		},
 		{
 			"name": "Broom of Animated Attack",
@@ -223,16 +226,16 @@
 			"ac": "15 (natural armor)",
 			"hp": "17 (5d6)",
 			"speed": "0 ft., fly 50 ft. (hover)",
-			"str": "10",
-			"dex": "17",
-			"con": "10",
-			"int": "1",
-			"wis": "5",
-			"cha": "1",
+			"str": 10,
+			"dex": 17,
+			"con": 10,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
 			"immune": "poison, psychic",
 			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone",
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
-			"passive": "7",
+			"passive": 7,
 			"cr": "1/4",
 			"trait": [
 				{
@@ -279,7 +282,8 @@
 						"If the broom is motionless and a creature grabs hold of it, the broom makes a Dexterity check contested by the creature's Strength check. If the broom wins the contest, it flies out of the creature's grasp and makes a melee attack against it with advantage on the attack roll."
 					]
 				}
-			]
+			],
+			"page": 226
 		},
 		{
 			"name": "Ezmerelda d'Avenir",
@@ -295,12 +299,12 @@
 			"ac": "17 (studded leather armor +1)",
 			"hp": "82 (11d8+33)",
 			"speed": "30 ft.",
-			"str": "14",
-			"dex": "19",
-			"con": "16",
-			"int": "16",
-			"wis": "11",
-			"cha": "17",
+			"str": 14,
+			"dex": 19,
+			"con": 16,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
 			"save": "Wis +3",
 			"skill": {
 				"acrobatics": "+7",
@@ -314,7 +318,7 @@
 				"stealth": "+7",
 				"survival": "+6"
 			},
-			"passive": "16",
+			"passive": 16,
 			"languages": "Common, Elvish",
 			"cr": "8",
 			"trait": [
@@ -328,11 +332,11 @@
 					"name": "Spellcasting",
 					"text": [
 						"Ezmerelda is a 7th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Ezmerelda has the following wizard spells prepared:",
-						"• Cantrips (at will): fire bolt, light, mage hand, prestidigitation",
-						"•1st level (4 slots): protection from good and evil, magic missile, shield",
-						"•2nd level (3 slots): darkvision, knock, mirror image",
-						"•3rd level (3 slots): clairvoyance, lightning bolt, magic circle",
-						"•4th level (1 slot): greater invisibility"
+						"\u2022 Cantrips (at will): fire bolt, light, mage hand, prestidigitation",
+						"\u20221st level (4 slots): protection from good and evil, magic missile, shield",
+						"\u20222nd level (3 slots): darkvision, knock, mirror image",
+						"\u20223rd level (3 slots): clairvoyance, lightning bolt, magic circle",
+						"\u20224th level (1 slot): greater invisibility"
 					]
 				}
 			],
@@ -383,7 +387,8 @@
 					]
 				}
 			],
-			"spells": "fire bolt, light, mage hand, prestidigitation, protection from evil and good, magic missile, shield, darkvision, knock, mirror image, clairvoyance, lightning bolt, magic circle, greater invisibility"
+			"spells": "fire bolt, light, mage hand, prestidigitation, protection from evil and good, magic missile, shield, darkvision, knock, mirror image, clairvoyance, lightning bolt, magic circle, greater invisibility",
+			"page": 231
 		},
 		{
 			"name": "Guardian Portrait",
@@ -394,16 +399,16 @@
 			"ac": "5 (natural armor)",
 			"hp": "22 (5d8)",
 			"speed": "0 ft.",
-			"str": "1",
-			"dex": "1",
-			"con": "10",
-			"int": "14",
-			"wis": "10",
-			"cha": "10",
+			"str": 1,
+			"dex": 1,
+			"con": 10,
+			"int": 14,
+			"wis": 10,
+			"cha": 10,
 			"immune": "poison",
 			"conditionImmune": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
 			"senses": "darkvision 60 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common, plus up to two other languages",
 			"cr": "1",
 			"trait": [
@@ -434,7 +439,8 @@
 					]
 				}
 			],
-			"spells": "counterspell, crown of madness, hypnotic pattern, telekinesis"
+			"spells": "counterspell, crown of madness, hypnotic pattern, telekinesis",
+			"page": 227
 		},
 		{
 			"name": "Izek Strazni",
@@ -450,17 +456,17 @@
 			"ac": "14 (studded leather armor)",
 			"hp": "112 (15d8+45)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "15",
-			"con": "16",
-			"int": "10",
-			"wis": "9",
-			"cha": "15",
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 9,
+			"cha": 15,
 			"skill": {
 				"intimidation": "+8",
 				"perception": "+2"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "5",
 			"trait": [
@@ -497,7 +503,8 @@
 						"Flame|5|3d6"
 					]
 				}
-			]
+			],
+			"page": 232
 		},
 		{
 			"name": "Madam Eva",
@@ -513,12 +520,12 @@
 			"ac": "10",
 			"hp": "88 (16d8+16)",
 			"speed": "20 ft.",
-			"str": "8",
-			"dex": "11",
-			"con": "12",
-			"int": "17",
-			"wis": "20",
-			"cha": "18",
+			"str": 8,
+			"dex": 11,
+			"con": 12,
+			"int": 17,
+			"wis": 20,
+			"cha": 18,
 			"save": "Con +5",
 			"skill": {
 				"arcana": "+7",
@@ -528,7 +535,7 @@
 				"perception": "+9",
 				"religion": "+7"
 			},
-			"passive": "19",
+			"passive": 19,
 			"languages": "Abyssal, Common, Elvish, Infernal",
 			"cr": "10",
 			"trait": [
@@ -536,15 +543,15 @@
 					"name": "Spellcasting",
 					"text": [
 						"Madam Eva is a 16th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). Madam Eva has the following cleric spells prepared:",
-						"• Cantrips (at will): light, mending, sacred flame, thaumaturgy",
-						"•1st level (4 slots): bane, command, detect evil and good, protection from evil and good",
-						"•2nd level (3 slots): lesser restoration, protection from poison, spiritual weapon",
-						"•3rd level (3 slots): create food and water, speak with dead, spirit guardians",
-						"•4th level (3 slots): divination, freedom of movement, guardians of faith",
-						"•5th level (2 slots): greater restoration, raise dead",
-						"•6th level (1 slot): find the path, harm, true seeing",
-						"•7th level (1 slot): fire storm, regenerate",
-						"•8th level (1 slot): earthquake"
+						"\u2022 Cantrips (at will): light, mending, sacred flame, thaumaturgy",
+						"\u20221st level (4 slots): bane, command, detect evil and good, protection from evil and good",
+						"\u20222nd level (3 slots): lesser restoration, protection from poison, spiritual weapon",
+						"\u20223rd level (3 slots): create food and water, speak with dead, spirit guardians",
+						"\u20224th level (3 slots): divination, freedom of movement, guardians of faith",
+						"\u20225th level (2 slots): greater restoration, raise dead",
+						"\u20226th level (1 slot): find the path, harm, true seeing",
+						"\u20227th level (1 slot): fire storm, regenerate",
+						"\u20228th level (1 slot): earthquake"
 					]
 				}
 			],
@@ -571,7 +578,8 @@
 					]
 				}
 			],
-			"spells": "light, mending, sacred flame, thaumaturgy, bane, command, detect evil and good, protection from evil and good, lesser restoration, protection from poison, spiritual weapon, create food and water, speak with dead, spirit guardians, divination, freedom of movement, guardians of faith, greater restoration, raise dead, find the path, harm, true seeing, fire storm, regenerate, earthquake"
+			"spells": "light, mending, sacred flame, thaumaturgy, bane, command, detect evil and good, protection from evil and good, lesser restoration, protection from poison, spiritual weapon, create food and water, speak with dead, spirit guardians, divination, freedom of movement, guardians of faith, greater restoration, raise dead, find the path, harm, true seeing, fire storm, regenerate, earthquake",
+			"page": 233
 		},
 		{
 			"name": "Mongrelfolk",
@@ -587,18 +595,18 @@
 			"ac": "11 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": "20 ft.",
-			"str": "12",
-			"dex": "9",
-			"con": "15",
-			"int": "9",
-			"wis": "10",
-			"cha": "6",
+			"str": 12,
+			"dex": 9,
+			"con": 15,
+			"int": 9,
+			"wis": 10,
+			"cha": 6,
 			"skill": {
 				"deception": "+2",
 				"perception": "+2",
 				"stealth": "+3"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "1/4",
 			"trait": [
@@ -656,7 +664,8 @@
 						"Dagger|3|1d4+1"
 					]
 				}
-			]
+			],
+			"page": 234
 		},
 		{
 			"name": "Phantom Warrior",
@@ -667,12 +676,12 @@
 			"ac": "16",
 			"hp": "45 (6d8+18)",
 			"speed": "30 ft.",
-			"str": "16",
-			"dex": "11",
-			"con": "16",
-			"int": "8",
-			"wis": "10",
-			"cha": "15",
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 8,
+			"wis": 10,
+			"cha": 15,
 			"skill": {
 				"perception": "+2",
 				"stealth": "+4"
@@ -681,7 +690,7 @@
 			"immune": "cold, necrotic, poison",
 			"conditionImmune": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
 			"senses": "darkvision 60 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "any languages it knew in life",
 			"cr": "3",
 			"trait": [
@@ -726,7 +735,8 @@
 						"The phantom warrior enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane."
 					]
 				}
-			]
+			],
+			"page": 235
 		},
 		{
 			"name": "Pidlwick II",
@@ -737,18 +747,18 @@
 			"ac": "14 (natural armor)",
 			"hp": "10 (3d6)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "14",
-			"con": "11",
-			"int": "8",
-			"wis": "13",
-			"cha": "10",
+			"str": 10,
+			"dex": 14,
+			"con": 11,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
 			"skill": {
 				"performance": "+3"
 			},
 			"immune": "poison",
 			"conditionImmune": "paralyzed, petrified, poisoned",
-			"passive": "11",
+			"passive": 11,
 			"languages": "understands Common but doesn't speak and can't read or write",
 			"cr": "1/4",
 			"trait": [
@@ -778,7 +788,8 @@
 						"Dart|4|1d4+2"
 					]
 				}
-			]
+			],
+			"page": 236
 		},
 		{
 			"name": "Rahadin",
@@ -794,12 +805,12 @@
 			"ac": "18 (studded leather)",
 			"hp": "135 (18d8+54)",
 			"speed": "35 ft.",
-			"str": "14",
-			"dex": "22",
-			"con": "17",
-			"int": "15",
-			"wis": "16",
-			"cha": "18",
+			"str": 14,
+			"dex": 22,
+			"con": 17,
+			"int": 15,
+			"wis": 16,
+			"cha": 18,
 			"save": "Con +7, Wis +7",
 			"skill": {
 				"deception": "+8",
@@ -809,7 +820,7 @@
 				"stealth": "+14"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "21",
+			"passive": 21,
 			"languages": "Common, Elvish",
 			"cr": "10",
 			"trait": [
@@ -869,7 +880,8 @@
 					]
 				}
 			],
-			"spells": "misty step, phantom steed, magic weapon, nondetection"
+			"spells": "misty step, phantom steed, magic weapon, nondetection",
+			"page": 237
 		},
 		{
 			"name": "Rictavio",
@@ -885,12 +897,12 @@
 			"ac": "12 (leather armor)",
 			"hp": "77 (14d8+14)",
 			"speed": "30 ft.",
-			"str": "9",
-			"dex": "12",
-			"con": "13",
-			"int": "16",
-			"wis": "18",
-			"cha": "16",
+			"str": 9,
+			"dex": 12,
+			"con": 13,
+			"int": 16,
+			"wis": 18,
+			"cha": 16,
 			"save": "Con +4, Wis +7",
 			"skill": {
 				"arcana": "+9",
@@ -900,7 +912,7 @@
 				"religion": "+6",
 				"sleight of hand": "+4"
 			},
-			"passive": "17",
+			"passive": 17,
 			"languages": "Abyssal, Common, Elvish, Infernal",
 			"cr": "5",
 			"trait": [
@@ -914,12 +926,12 @@
 					"name": "Spellcasting",
 					"text": [
 						"Rictavio is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). Rictavio has the following cleric spells prepared:",
-						"• Cantrips (at will): guidance, light, mending, thaumaturgy",
-						"•1st level (4 slots): cure wounds, detect evil and good, protection from evil and good, sanctuary",
-						"•2nd level (3 slots): augury, lesser restoration, protection from poison",
-						"•3rd level (3 slots): magic circle, remove curse, speak with dead",
-						"•4th level (3 slots): death ward, freedom of movement",
-						"•5th level (1 slot): dispel evil and good"
+						"\u2022 Cantrips (at will): guidance, light, mending, thaumaturgy",
+						"\u20221st level (4 slots): cure wounds, detect evil and good, protection from evil and good, sanctuary",
+						"\u20222nd level (3 slots): augury, lesser restoration, protection from poison",
+						"\u20223rd level (3 slots): magic circle, remove curse, speak with dead",
+						"\u20224th level (3 slots): death ward, freedom of movement",
+						"\u20225th level (1 slot): dispel evil and good"
 					]
 				},
 				{
@@ -946,7 +958,8 @@
 					]
 				}
 			],
-			"spells": "guidance, light, mending, thaumaturgy, cure wounds, detect evil and good, protection from evil and good, sanctuary, augury, lesser restoration, protection from poison, magic circle, remove curse, speak with dead, death ward, freedom of movement, dispel evil and good"
+			"spells": "guidance, light, mending, thaumaturgy, cure wounds, detect evil and good, protection from evil and good, sanctuary, augury, lesser restoration, protection from poison, magic circle, remove curse, speak with dead, death ward, freedom of movement, dispel evil and good",
+			"page": 238
 		},
 		{
 			"name": "Strahd Zombie",
@@ -957,17 +970,17 @@
 			"ac": "8",
 			"hp": "30 (4d8+12)",
 			"speed": "20 ft.",
-			"str": "13",
-			"dex": "6",
-			"con": "16",
-			"int": "3",
-			"wis": "6",
-			"cha": "5",
+			"str": 13,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
 			"save": "Wis +0",
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "8",
+			"passive": 8,
 			"languages": "understands the languages it knew in life but can't speak",
 			"cr": "1",
 			"trait": [
@@ -1011,7 +1024,8 @@
 						"Claw|3|1d6+1"
 					]
 				}
-			]
+			],
+			"page": 241
 		},
 		{
 			"name": "Strahd von Zarovich",
@@ -1027,12 +1041,12 @@
 			"ac": "16 (natural armor)",
 			"hp": "144 (17d8+68)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "18",
-			"con": "18",
-			"int": "20",
-			"wis": "15",
-			"cha": "18",
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 18,
 			"save": "Dex +9, Wis +7, Cha +9",
 			"skill": {
 				"arcana": "+15",
@@ -1042,7 +1056,7 @@
 			},
 			"resist": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"senses": "darkvision 120 ft.",
-			"passive": "22",
+			"passive": 22,
 			"languages": "Abyssal, Common, Draconic, Elvish, Giant, Infernal",
 			"cr": "15",
 			"trait": [
@@ -1077,12 +1091,12 @@
 					"name": "Spellcasting",
 					"text": [
 						"Strahd is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). Strahd has the following wizard spells prepared:",
-						"• Cantrips (at will): mage hand, prestidigitation, ray of frost",
-						"•1st level (4 slots): comprehend languages, fog cloud, sleep",
-						"•2nd level (3 slots): detect thoughts, gust of wind, mirror image",
-						"•3rd level (3 slots): animate dead, fireball, nondetection",
-						"•4th level (3 slots): blight, greater invisibility, polymorph",
-						"•5th level (1 slot): animate objects, scrying"
+						"\u2022 Cantrips (at will): mage hand, prestidigitation, ray of frost",
+						"\u20221st level (4 slots): comprehend languages, fog cloud, sleep",
+						"\u20222nd level (3 slots): detect thoughts, gust of wind, mirror image",
+						"\u20223rd level (3 slots): animate dead, fireball, nondetection",
+						"\u20224th level (3 slots): blight, greater invisibility, polymorph",
+						"\u20225th level (1 slot): animate objects, scrying"
 					]
 				},
 				{
@@ -1162,7 +1176,8 @@
 					]
 				}
 			],
-			"spells": "mage hand, prestidigitation, ray of frost, comprehend languages, fog cloud, sleep, detect thoughts, gust of wind, mirror image, animate dead, fireball, nondetection, blight, greater invisibility, polymorph, animate objects, scrying"
+			"spells": "mage hand, prestidigitation, ray of frost, comprehend languages, fog cloud, sleep, detect thoughts, gust of wind, mirror image, animate dead, fireball, nondetection, blight, greater invisibility, polymorph, animate objects, scrying",
+			"page": 240
 		},
 		{
 			"name": "Strahd's Animated Armor",
@@ -1173,12 +1188,12 @@
 			"ac": "21 (natural armor)",
 			"hp": "112 (15d8+45)",
 			"speed": "30 ft.",
-			"str": "17",
-			"dex": "13",
-			"con": "16",
-			"int": "9",
-			"wis": "10",
-			"cha": "9",
+			"str": 17,
+			"dex": 13,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 9,
 			"skill": {
 				"perception": "+3"
 			},
@@ -1186,7 +1201,7 @@
 			"immune": "lightning, poison",
 			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned",
 			"senses": "blindsight 60 ft. (blind beyond this radius)",
-			"passive": "13",
+			"passive": 13,
 			"languages": "understands Common but can't speak",
 			"cr": "6",
 			"trait": [
@@ -1235,7 +1250,8 @@
 						"|4|3d6"
 					]
 				}
-			]
+			],
+			"page": 227
 		},
 		{
 			"name": "Tree Blight",
@@ -1246,15 +1262,15 @@
 			"ac": "15 (natural armor)",
 			"hp": "149 (13d12+65)",
 			"speed": "30 ft.",
-			"str": "23",
-			"dex": "10",
-			"con": "20",
-			"int": "6",
-			"wis": "10",
-			"cha": "3",
+			"str": 23,
+			"dex": 10,
+			"con": 20,
+			"int": 6,
+			"wis": 10,
+			"cha": 3,
 			"conditionImmune": "blinded, deafened",
 			"senses": "blindsight 60 ft. (blind beyond this radius)",
-			"passive": "10",
+			"passive": 10,
 			"languages": "understands Common and Druidic but doesn't speak",
 			"cr": "7",
 			"trait": [
@@ -1305,7 +1321,8 @@
 						"Grasping Root|9|1d6+6"
 					]
 				}
-			]
+			],
+			"page": 230
 		},
 		{
 			"name": "Vladimir Horngaard",
@@ -1316,18 +1333,18 @@
 			"ac": "17 (half plate)",
 			"hp": "192 (16d8+64)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "14",
-			"con": "18",
-			"int": "13",
-			"wis": "16",
-			"cha": "18",
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 18,
 			"save": "Str +7, Con +7, Wis +6, Cha +7",
 			"resist": "necrotic, psychic",
 			"immune": "poison",
 			"conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned, stunned",
 			"senses": "darkvision 60 ft.",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common, Draconic",
 			"cr": "7",
 			"trait": [
@@ -1387,7 +1404,8 @@
 						"Vladimir targets one creature he can see within 30 feet of him and against which he has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until Vladimir deals damage to it, or until the end of Vladimir's next turn. When the paralysis ends, the target is frightened of Vladimir for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see Vladimir, ending the frightened condition on itself on a success."
 					]
 				}
-			]
+			],
+			"page": 241
 		},
 		{
 			"name": "Wereraven",
@@ -1404,18 +1422,18 @@
 			"ac": "12",
 			"hp": "31 (7d8)",
 			"speed": "30 ft., fly 50 ft. in raven and hybrid forms",
-			"str": "10",
-			"dex": "15",
-			"con": "11",
-			"int": "13",
-			"wis": "15",
-			"cha": "14",
+			"str": 10,
+			"dex": 15,
+			"con": 11,
+			"int": 13,
+			"wis": 15,
+			"cha": 14,
 			"skill": {
 				"insight": "+4",
 				"perception": "+6"
 			},
 			"immune": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons",
-			"passive": "16",
+			"passive": 16,
 			"languages": "Common (can't speak in raven form)",
 			"cr": "2",
 			"trait": [
@@ -1467,7 +1485,8 @@
 						"Hand Crossbow|4|1d6+2"
 					]
 				}
-			]
+			],
+			"page": 242
 		}
 	]
 }

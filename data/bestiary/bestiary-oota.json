@@ -9,16 +9,16 @@
 			"ac": "13 (natural armor)",
 			"hp": "59 (7d12+14)",
 			"speed": "20 ft.",
-			"str": "19",
-			"dex": "6",
-			"con": "15",
-			"int": "10",
-			"wis": "10",
-			"cha": "7",
+			"str": 19,
+			"dex": 6,
+			"con": 15,
+			"int": 10,
+			"wis": 10,
+			"cha": 7,
 			"resist": "bludgeoning, piercing",
 			"vulnerable": "fire",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "one language known by its creator",
 			"cr": "2",
 			"trait": [
@@ -45,7 +45,8 @@
 						"|6|3d6+4"
 					]
 				}
-			]
+			],
+			"page": 230
 		},
 		{
 			"name": "Baphomet",
@@ -61,12 +62,12 @@
 			"ac": "22 (natural armor)",
 			"hp": "333 (23d12+184)",
 			"speed": "40 ft.",
-			"str": "30",
-			"dex": "14",
-			"con": "26",
-			"int": "18",
-			"wis": "24",
-			"cha": "16",
+			"str": 30,
+			"dex": 14,
+			"con": 26,
+			"int": 18,
+			"wis": 24,
+			"cha": 16,
 			"save": "Dex +9, Con +15, Wis +14",
 			"skill": {
 				"intimidation": "+17",
@@ -76,7 +77,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "24",
+			"passive": 24,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "23",
 			"trait": [
@@ -192,7 +193,8 @@
 					]
 				}
 			],
-			"spells": "detect magic, dispel magic, dominate beast, hunter's mark, maze, wall of stone, teleport"
+			"spells": "detect magic, dispel magic, dominate beast, hunter's mark, maze, wall of stone, teleport",
+			"page": 235
 		},
 		{
 			"name": "Bridesmaid of Zuggtmoy",
@@ -203,14 +205,14 @@
 			"ac": "13 (natural armor)",
 			"hp": "22 (5d8)",
 			"speed": "20 ft.",
-			"str": "14",
-			"dex": "11",
-			"con": "11",
-			"int": "14",
-			"wis": "8",
-			"cha": "18",
+			"str": 14,
+			"dex": 11,
+			"con": 11,
+			"int": 14,
+			"wis": 8,
+			"cha": 18,
 			"senses": "darkvision 60 ft.",
-			"passive": "9",
+			"passive": 9,
 			"languages": "understands Abyssal but can't speak",
 			"cr": "1/8",
 			"trait": [
@@ -234,7 +236,8 @@
 						"The bridesmaid releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a DC 10 Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of indefinite madness (determined by rolling on the Madness of Zuggtmoy table in appendix D) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must be repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the \"Myconids\" entry in the Monster Manual)."
 					]
 				}
-			]
+			],
+			"page": 230
 		},
 		{
 			"name": "Chamberlain of Zuggtmoy",
@@ -245,15 +248,15 @@
 			"ac": "13 (natural armor)",
 			"hp": "45 (6d10+12)",
 			"speed": "20 ft.",
-			"str": "17",
-			"dex": "7",
-			"con": "14",
-			"int": "11",
-			"wis": "8",
-			"cha": "12",
+			"str": 17,
+			"dex": 7,
+			"con": 14,
+			"int": 11,
+			"wis": 8,
+			"cha": 12,
 			"resist": "bludgeoning, piercing",
 			"senses": "darkvision 60 ft.",
-			"passive": "9",
+			"passive": 9,
 			"languages": "Abyssal, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -298,7 +301,8 @@
 						"The chaberlain releases spores that burst out in a cloud that fills a 10-foot-radius sphere centered on it, and the cloud lingers for 1 minute. Any flesh-and-blood creature in the cloud when it appears, or that enters it later, must make a DC 12 Constitution saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy and also gains a random form of indefinite madness (determined by rolling on the Madness of Zuggtmoy table in appendix D) that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must be repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies and is reanimated as a spore servant if it's a type of creature that can be (see the \"Myconids\" entry in the Monster Manual)."
 					]
 				}
-			]
+			],
+			"page": 230
 		},
 		{
 			"name": "Chuul Spore Servant",
@@ -309,16 +313,16 @@
 			"ac": "16 (natural armor)",
 			"hp": "93 (11d10+33)",
 			"speed": "30 ft., swim 30 ft.",
-			"str": "19",
-			"dex": "10",
-			"con": "16",
-			"int": "2",
-			"wis": "6",
-			"cha": "1",
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
 			"immune": "poison",
 			"conditionImmune": "blinded, charmed, frightened, paralyzed, poisoned",
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
-			"passive": "8",
+			"passive": 8,
 			"cr": "4",
 			"action": [
 				{
@@ -336,7 +340,8 @@
 						"Pincer|6|2d6+4"
 					]
 				}
-			]
+			],
+			"page": 228
 		},
 		{
 			"name": "Demogorgon",
@@ -352,12 +357,12 @@
 			"ac": "22 (natural armor)",
 			"hp": "496 (34d12+272)",
 			"speed": "50 ft., swim 50 ft.",
-			"str": "29",
-			"dex": "14",
-			"con": "26",
-			"int": "20",
-			"wis": "17",
-			"cha": "25",
+			"str": 29,
+			"dex": 14,
+			"con": 26,
+			"int": 20,
+			"wis": 17,
+			"cha": 25,
 			"save": "Dex +10, Con +16, Wis +11, Cha +15",
 			"skill": {
 				"insight": "+11",
@@ -367,7 +372,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "29",
+			"passive": 29,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "26",
 			"trait": [
@@ -450,7 +455,8 @@
 					]
 				}
 			],
-			"spells": "detect magic, major image, dispel magic, fear, telekinesis, feeblemind, project image"
+			"spells": "detect magic, major image, dispel magic, fear, telekinesis, feeblemind, project image",
+			"page": 236
 		},
 		{
 			"name": "Derro",
@@ -466,17 +472,17 @@
 			"ac": "13 (leather armor)",
 			"hp": "13 (3d6+3)",
 			"speed": "30 ft.",
-			"str": "9",
-			"dex": "14",
-			"con": "12",
-			"int": "11",
-			"wis": "5",
-			"cha": "9",
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 5,
+			"cha": 9,
 			"skill": {
 				"stealth": "+4"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "7",
+			"passive": 7,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "1/4",
 			"trait": [
@@ -518,7 +524,8 @@
 						"|4|1d8+2"
 					]
 				}
-			]
+			],
+			"page": 224
 		},
 		{
 			"name": "Derro Savant",
@@ -534,17 +541,17 @@
 			"ac": "13 (leather armor)",
 			"hp": "49 (11d6+11)",
 			"speed": "30 ft.",
-			"str": "9",
-			"dex": "14",
-			"con": "12",
-			"int": "11",
-			"wis": "5",
-			"cha": "14",
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 5,
+			"cha": 14,
 			"skill": {
 				"stealth": "+4"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "7",
+			"passive": 7,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "3",
 			"trait": [
@@ -597,7 +604,8 @@
 					]
 				}
 			],
-			"spells": "acid splash, light, mage hand, message, ray of frost, burning hands, chromatic orb, sleep, invisibility, spider climb, blink, lightning bolt"
+			"spells": "acid splash, light, mage hand, message, ray of frost, burning hands, chromatic orb, sleep, invisibility, spider climb, blink, lightning bolt",
+			"page": 225
 		},
 		{
 			"name": "Droki",
@@ -613,17 +621,17 @@
 			"ac": "15 (studded leather)",
 			"hp": "31 (7d6+7)",
 			"speed": "30 ft. (60 ft. with boots of speed)",
-			"str": "11",
-			"dex": "16",
-			"con": "13",
-			"int": "10",
-			"wis": "5",
-			"cha": "16",
+			"str": 11,
+			"dex": 16,
+			"con": 13,
+			"int": 10,
+			"wis": 5,
+			"cha": 16,
 			"skill": {
 				"stealth": "+5"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "7",
+			"passive": 7,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -695,7 +703,8 @@
 					]
 				}
 			],
-			"spells": "minor illusion, darkness, fear, shatter"
+			"spells": "minor illusion, darkness, fear, shatter",
+			"page": 231
 		},
 		{
 			"name": "Drow Spore Servant",
@@ -706,15 +715,15 @@
 			"ac": "15 (chain shirt)",
 			"hp": "13 (3d8)",
 			"speed": "20 ft.",
-			"str": "10",
-			"dex": "14",
-			"con": "10",
-			"int": "2",
-			"wis": "6",
-			"cha": "1",
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
 			"conditionImmune": "blinded, charmed, frightened, paralyzed",
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
-			"passive": "8",
+			"passive": 8,
 			"cr": "1/8",
 			"action": [
 				{
@@ -726,7 +735,8 @@
 						"Shortsword|4|1d6+2"
 					]
 				}
-			]
+			],
+			"page": 229
 		},
 		{
 			"name": "Duergar Darkhaft",
@@ -742,15 +752,15 @@
 			"ac": "16 (scale mail, shield)",
 			"hp": "26 (4d8+4)",
 			"speed": "25 ft.",
-			"str": "14",
-			"dex": "11",
-			"con": "14",
-			"int": "11",
-			"wis": "10",
-			"cha": "9",
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
 			"resist": "poison",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -809,7 +819,8 @@
 					]
 				}
 			],
-			"spells": "friends, mage hand, disguise self, sleep"
+			"spells": "friends, mage hand, disguise self, sleep",
+			"page": 226
 		},
 		{
 			"name": "Duergar Kavalrachni",
@@ -825,15 +836,15 @@
 			"ac": "16 (scale mail, shield)",
 			"hp": "26 (4d8+4)",
 			"speed": "25 ft.",
-			"str": "14",
-			"dex": "11",
-			"con": "14",
-			"int": "11",
-			"wis": "10",
-			"cha": "9",
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
 			"resist": "poison",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -904,7 +915,8 @@
 						"The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
 					]
 				}
-			]
+			],
+			"page": 226
 		},
 		{
 			"name": "Duergar Keeper of the Flame",
@@ -920,15 +932,15 @@
 			"ac": "16 (scale mail, shield)",
 			"hp": "26 (4d8+4)",
 			"speed": "25 ft.",
-			"str": "14",
-			"dex": "11",
-			"con": "14",
-			"int": "11",
-			"wis": "10",
-			"cha": "9",
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
 			"resist": "poison",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -996,7 +1008,8 @@
 					]
 				}
 			],
-			"spells": "friends, message, command, guidance, mending, sacred flame, bane, inflict wounds, shield of faith, enhance ability, spiritual weapon"
+			"spells": "friends, message, command, guidance, mending, sacred flame, bane, inflict wounds, shield of faith, enhance ability, spiritual weapon",
+			"page": 226
 		},
 		{
 			"name": "Duergar Soulblade",
@@ -1012,15 +1025,15 @@
 			"ac": "14 (leather armor)",
 			"hp": "18 (4d8)",
 			"speed": "25 ft.",
-			"str": "11",
-			"dex": "16",
-			"con": "10",
-			"int": "11",
-			"wis": "10",
-			"cha": "12",
+			"str": 11,
+			"dex": 16,
+			"con": 10,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
 			"resist": "poison",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "1",
 			"trait": [
@@ -1075,7 +1088,8 @@
 					]
 				}
 			],
-			"spells": "blade ward, true strike, jump, hunter's mark"
+			"spells": "blade ward, true strike, jump, hunter's mark",
+			"page": 227
 		},
 		{
 			"name": "Duergar Spore Servant",
@@ -1086,16 +1100,16 @@
 			"ac": "16 (scale armor, shield)",
 			"hp": "26 (4d8+8)",
 			"speed": "15 ft.",
-			"str": "14",
-			"dex": "11",
-			"con": "14",
-			"int": "2",
-			"wis": "6",
-			"cha": "1",
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
 			"resist": "poison",
 			"conditionImmune": "blinded, charmed, frightened, paralyzed",
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
-			"passive": "8",
+			"passive": 8,
 			"cr": "1/2",
 			"action": [
 				{
@@ -1107,7 +1121,8 @@
 						"War Pick|4|1d8+2"
 					]
 				}
-			]
+			],
+			"page": 229
 		},
 		{
 			"name": "Duergar Stone Guard",
@@ -1123,15 +1138,15 @@
 			"ac": "18 (chain mail, shield)",
 			"hp": "39 (6d8+12)",
 			"speed": "25 ft.",
-			"str": "18",
-			"dex": "11",
-			"con": "14",
-			"int": "11",
-			"wis": "10",
-			"cha": "9",
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
 			"resist": "poison",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -1181,7 +1196,8 @@
 						"The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
 					]
 				}
-			]
+			],
+			"page": 227
 		},
 		{
 			"name": "Duergar Xarron",
@@ -1197,15 +1213,15 @@
 			"ac": "18 (platemail)",
 			"hp": "26 (4d8+8)",
 			"speed": "25 ft.",
-			"str": "16",
-			"dex": "11",
-			"con": "14",
-			"int": "11",
-			"wis": "10",
-			"cha": "9",
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
 			"resist": "poison",
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -1251,7 +1267,75 @@
 						"The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
 					]
 				}
-			]
+			],
+			"page": 226
+		},
+		{
+			"source": "OotA",
+			"name": "Emerald Enclave Scout",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": "lawful neutral",
+			"ac": "16 (breastplate)",
+			"hp": "19 (3d8+6)",
+			"speed": "25 ft.",
+			"str": 11,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"resist": "poison",
+			"senses": "darkvision 60 ft.",
+			"passive": 15,
+			"languages": "Common, Dwarvish",
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"text": [
+						"The scout has advantage on saving throws against poison."
+					]
+				},
+				{
+					"name": "Keen Hearing and Sight",
+					"text": [
+						"The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"text": [
+						"The scout makes two melee attacks."
+					]
+				},
+				{
+					"name": "War Pick",
+					"text": [
+						"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"text": [
+						"Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
+					]
+				}
+			],
+			"page": 130
 		},
 		{
 			"name": "Female Steeder",
@@ -1262,17 +1346,17 @@
 			"ac": "14 (natural armor)",
 			"hp": "30 (4d10+8)",
 			"speed": "30 ft., climb 30 ft.",
-			"str": "15",
-			"dex": "16",
-			"con": "14",
-			"int": "2",
-			"wis": "10",
-			"cha": "3",
+			"str": 15,
+			"dex": 16,
+			"con": 14,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
 			"skill": {
 				"stealth": "+7"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "1",
 			"trait": [
 				{
@@ -1308,7 +1392,8 @@
 						"|5|"
 					]
 				}
-			]
+			],
+			"page": 231
 		},
 		{
 			"name": "Fraz-Urb'luu",
@@ -1324,12 +1409,12 @@
 			"ac": "18 (natural armor)",
 			"hp": "350 (28d10+196)",
 			"speed": "40 ft., fly 40 ft.",
-			"str": "29",
-			"dex": "12",
-			"con": "25",
-			"int": "26",
-			"wis": "24",
-			"cha": "26",
+			"str": 29,
+			"dex": 12,
+			"con": 25,
+			"int": 26,
+			"wis": 24,
+			"cha": 26,
 			"save": "Dex +8, Con +15, Int +15, Wis +14",
 			"skill": {
 				"deception": "+15",
@@ -1340,7 +1425,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "24",
+			"passive": 24,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "23",
 			"trait": [
@@ -1422,7 +1507,44 @@
 					]
 				}
 			],
-			"spells": "alter self, detect magic, dispel magic, phantasmal force, confusion, dream, mislead, programmed illusion, seeming, mirage arcane, modify memory, project image"
+			"spells": "alter self, detect magic, dispel magic, phantasmal force, confusion, dream, mislead, programmed illusion, seeming, mirage arcane, modify memory, project image",
+			"page": 238
+		},
+		{
+			"source": "OotA",
+			"name": "Giant Riding Lizard",
+			"size": "L",
+			"type": "beast",
+			"alignment": "unaligned",
+			"ac": "12 (natural armor)",
+			"hp": "19 (3d10+3)",
+			"speed": "30 ft., climb 30ft.",
+			"str": 15,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"senses": "darkvision 30 ft.",
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"text": [
+						"The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"text": [
+						"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) piercing damage."
+					]
+				}
+			],
+			"page": 131
 		},
 		{
 			"name": "Graz'zt",
@@ -1439,12 +1561,12 @@
 			"ac": "20 (natural armor)",
 			"hp": "378 (36d10+180)",
 			"speed": "40 ft.",
-			"str": "22",
-			"dex": "15",
-			"con": "21",
-			"int": "23",
-			"wis": "21",
-			"cha": "26",
+			"str": 22,
+			"dex": 15,
+			"con": 21,
+			"int": 23,
+			"wis": 21,
+			"cha": 26,
 			"save": "Dex +9, Con +12, Wis +12",
 			"skill": {
 				"deception": "+15",
@@ -1456,7 +1578,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "22",
+			"passive": 22,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "24",
 			"trait": [
@@ -1544,7 +1666,8 @@
 					]
 				}
 			],
-			"spells": "charm person, crown of madness, detect magic, dispel magic, dissonant whispers, counterspell, darkness, dominate person, sanctuary, telekinesis, teleport, dominate monster, greater invisibility"
+			"spells": "charm person, crown of madness, detect magic, dispel magic, dissonant whispers, counterspell, darkness, dominate person, sanctuary, telekinesis, teleport, dominate monster, greater invisibility",
+			"page": 241
 		},
 		{
 			"name": "Grisha",
@@ -1563,18 +1686,18 @@
 			"ac": "18 (chain mail, shield)",
 			"hp": "33 (6d8+6)",
 			"speed": "30 ft.",
-			"str": "14",
-			"dex": "12",
-			"con": "12",
-			"int": "11",
-			"wis": "14",
-			"cha": "16",
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 16,
 			"save": "Wis +4, Cha +5",
 			"skill": {
 				"persuasion": "+5",
 				"religion": "+2"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -1606,7 +1729,8 @@
 					]
 				}
 			],
-			"spells": "guidance, light, sacred flame, thaumaturgy, cure wounds, divine favor, inflict wounds, protection from evil and good, shield of faith, continual flame, hold person, magic weapon, spiritual weapon, bestow curse, dispel magic, spirit guardian"
+			"spells": "guidance, light, sacred flame, thaumaturgy, cure wounds, divine favor, inflict wounds, protection from evil and good, shield of faith, continual flame, hold person, magic weapon, spiritual weapon, bestow curse, dispel magic, spirit guardian",
+			"page": 232
 		},
 		{
 			"name": "Hook Horror Spore Servant",
@@ -1617,16 +1741,16 @@
 			"ac": "15 (natural armor)",
 			"hp": "75 (10d10+10)",
 			"speed": "20 ft., climb 20 ft.",
-			"str": "18",
-			"dex": "10",
-			"con": "15",
-			"int": "2",
-			"wis": "6",
-			"cha": "1",
+			"str": 18,
+			"dex": 10,
+			"con": 15,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
 			"resist": "poison",
 			"conditionImmune": "blinded, charmed, frightened, paralyzed",
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
-			"passive": "8",
+			"passive": 8,
 			"cr": "3",
 			"action": [
 				{
@@ -1644,7 +1768,8 @@
 						"Hook|6|2d6+4"
 					]
 				}
-			]
+			],
+			"page": 68
 		},
 		{
 			"name": "Ixitxachitl",
@@ -1655,14 +1780,14 @@
 			"ac": "15 (natural armor)",
 			"hp": "18 (4d6+4)",
 			"speed": "0 ft., swim 30 ft.",
-			"str": "12",
-			"dex": "16",
-			"con": "13",
-			"int": "12",
-			"wis": "13",
-			"cha": "7",
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
 			"senses": "darkvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"languages": "Abyssal, Ixitxachitl",
 			"cr": "1/4",
 			"action": [
@@ -1687,7 +1812,8 @@
 						"|5|1d8+3"
 					]
 				}
-			]
+			],
+			"page": 225
 		},
 		{
 			"name": "Ixitxachitl Cleric",
@@ -1698,14 +1824,14 @@
 			"ac": "15 (natural armor)",
 			"hp": "18 (4d6+4)",
 			"speed": "0 ft., swim 30 ft.",
-			"str": "12",
-			"dex": "16",
-			"con": "13",
-			"int": "12",
-			"wis": "13",
-			"cha": "7",
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
 			"senses": "darkvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"languages": "Abyssal, Ixitxachitl",
 			"cr": "1/4",
 			"trait": [
@@ -1743,7 +1869,8 @@
 					]
 				}
 			],
-			"spells": "guidance, thaumaturgy, charm person, create or destroy water, hold person, silence, dispel magic, tongues"
+			"spells": "guidance, thaumaturgy, charm person, create or destroy water, hold person, silence, dispel magic, tongues",
+			"page": 225
 		},
 		{
 			"name": "Juiblex",
@@ -1759,12 +1886,12 @@
 			"ac": "18 (natural armor)",
 			"hp": "350 (28d12+168)",
 			"speed": "30 ft.",
-			"str": "24",
-			"dex": "10",
-			"con": "23",
-			"int": "20",
-			"wis": "20",
-			"cha": "16",
+			"str": 24,
+			"dex": 10,
+			"con": 23,
+			"int": 20,
+			"wis": 20,
+			"cha": 16,
 			"save": "Dex +7, Con +13, Wis +12",
 			"skill": {
 				"perception": "+12"
@@ -1773,7 +1900,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious",
 			"senses": "truesight 120 ft.",
-			"passive": "22",
+			"passive": 22,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "23",
 			"trait": [
@@ -1872,7 +1999,121 @@
 					]
 				}
 			],
-			"spells": "acid splash, detect magic, blight, contagion, gaseous form"
+			"spells": "acid splash, detect magic, blight, contagion, gaseous form",
+			"page": 243
+		},
+		{
+			"source": "OotA",
+			"name": "Lords' Alliance Guard",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": "chaotic good",
+			"ac": "16 (chain shirt, shield)",
+			"hp": "11 (2d8+2)",
+			"speed": "30ft.",
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": "darkvision 60ft.",
+			"passive": 12,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Dwarven Resilience",
+					"text": [
+						"The guard has advantage on saving throws against poison."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Halberd",
+					"text": [
+						"Melee Weapon Attack: +4 to hit, reach 10ft., one target. Hit: 7 (1d10+2) slashing damage."
+					]
+				}
+			],
+			"page": 131
+		},
+		{
+			"source": "OotA",
+			"name": "Lords' Alliance Spy",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": "neutral",
+			"ac": "13 (leather armor)",
+			"hp": "27 (6d8)",
+			"speed": "30ft.",
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"investigation": "+5",
+				"perception": "+6",
+				"persuasion": "+5",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"senses": "",
+			"passive": 16,
+			"languages": "Common, Dwarvish",
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Cunning Action",
+					"text": [
+						"On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"text": [
+						"The spy deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"text": [
+						"The spy makes two melee attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"text": [
+						"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"text": [
+						"Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage."
+					]
+				}
+			],
+			"page": 131
 		},
 		{
 			"name": "Male Steeder",
@@ -1883,17 +2124,17 @@
 			"ac": "12 (natural armor)",
 			"hp": "13 (2d8+4)",
 			"speed": "30 ft., climb 30 ft.",
-			"str": "15",
-			"dex": "12",
-			"con": "14",
-			"int": "2",
-			"wis": "10",
-			"cha": "3",
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
 			"skill": {
 				"stealth": "+5"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "1/4",
 			"trait": [
 				{
@@ -1929,7 +2170,8 @@
 						"|4|"
 					]
 				}
-			]
+			],
+			"page": 231
 		},
 		{
 			"name": "Narrak",
@@ -1945,18 +2187,18 @@
 			"ac": "12 (15 to mage armor)",
 			"hp": "40 (9d6+9)",
 			"speed": "30 ft.",
-			"str": "9",
-			"dex": "14",
-			"con": "13",
-			"int": "14",
-			"wis": "5",
-			"cha": "16",
+			"str": 9,
+			"dex": 14,
+			"con": 13,
+			"int": 14,
+			"wis": 5,
+			"cha": 16,
 			"skill": {
 				"arcana": "+4",
 				"stealth": "+4"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "7",
+			"passive": 7,
 			"languages": "Dwarvish, Undercommon",
 			"cr": "2",
 			"trait": [
@@ -2011,7 +2253,8 @@
 					]
 				}
 			],
-			"spells": "eldritch blast, friends, poison spray, armor of agathys, charm person, hex, hold person, ray of enfeeblement, spider climb"
+			"spells": "eldritch blast, friends, poison spray, armor of agathys, charm person, hex, hold person, ray of enfeeblement, spider climb",
+			"page": 232
 		},
 		{
 			"name": "Orcus",
@@ -2027,12 +2270,12 @@
 			"ac": "17 (natural armor)",
 			"hp": "405 (30d12+210)",
 			"speed": "40 ft., fly 40 ft.",
-			"str": "27",
-			"dex": "14",
-			"con": "25",
-			"int": "20",
-			"wis": "20",
-			"cha": "25",
+			"str": 27,
+			"dex": 14,
+			"con": 25,
+			"int": 20,
+			"wis": 20,
+			"cha": 25,
 			"save": "Dex +10, Con +15, Wis +13",
 			"skill": {
 				"arcana": "+12",
@@ -2042,7 +2285,7 @@
 			"immune": "necrotic, poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "22",
+			"passive": 22,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "26",
 			"trait": [
@@ -2134,7 +2377,8 @@
 					]
 				}
 			],
-			"spells": "chill touch, detect magic, create undead, dispel magic, time stop"
+			"spells": "chill touch, detect magic, create undead, dispel magic, time stop",
+			"page": 245
 		},
 		{
 			"name": "The Pudding King",
@@ -2151,12 +2395,12 @@
 			"ac": "13 (16 with mage armor)",
 			"hp": "49 (9d6+18)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "16",
-			"con": "14",
-			"int": "12",
-			"wis": "8",
-			"cha": "17",
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 8,
+			"cha": 17,
 			"save": "Con +5, Cha +6",
 			"skill": {
 				"arcana": "+4",
@@ -2167,7 +2411,7 @@
 			"resist": "acid, poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Abyssal, Gnomish, Terran, Undercommon",
 			"cr": "4",
 			"trait": [
@@ -2233,7 +2477,8 @@
 					]
 				}
 			],
-			"spells": "acid splash, light, mage hand, poison spray, prestidigitation, false life, mage armor, ray of sickness, shield, crown of madness, misty step, gaseous form, stinking cloud, blight, confusion, cloudkill"
+			"spells": "acid splash, light, mage hand, poison spray, prestidigitation, false life, mage armor, ray of sickness, shield, crown of madness, misty step, gaseous form, stinking cloud, blight, confusion, cloudkill",
+			"page": 233
 		},
 		{
 			"name": "Troglodyte Champion of Laogzed",
@@ -2249,19 +2494,19 @@
 			"ac": "14 (natural armor)",
 			"hp": "59 (7d8+28)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "12",
-			"con": "18",
-			"int": "8",
-			"wis": "23",
-			"cha": "12",
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 8,
+			"wis": 23,
+			"cha": 12,
 			"skill": {
 				"athletics": "+6",
 				"intimidation": "+3",
 				"stealth": "+3"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"languages": "Troglodyte",
 			"cr": "3",
 			"trait": [
@@ -2327,7 +2572,8 @@
 						"||3d6"
 					]
 				}
-			]
+			],
+			"page": 229
 		},
 		{
 			"name": "Vampiric Ixitxachitl",
@@ -2338,14 +2584,14 @@
 			"ac": "16 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": "0 ft., swim 30 ft.",
-			"str": "14",
-			"dex": "18",
-			"con": "13",
-			"int": "12",
-			"wis": "13",
-			"cha": "7",
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
 			"senses": "darkvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"languages": "Abyssal, Ixitxachitl",
 			"cr": "2",
 			"action": [
@@ -2370,7 +2616,8 @@
 						"|6|1d10+4"
 					]
 				}
-			]
+			],
+			"page": 226
 		},
 		{
 			"name": "Vampiric Ixitxachitl Cleric",
@@ -2381,14 +2628,14 @@
 			"ac": "16 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": "0 ft., swim 30 ft.",
-			"str": "14",
-			"dex": "18",
-			"con": "13",
-			"int": "12",
-			"wis": "13",
-			"cha": "7",
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
 			"senses": "darkvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"languages": "Abyssal, Ixitxachitl",
 			"cr": "2",
 			"trait": [
@@ -2426,7 +2673,63 @@
 					]
 				}
 			],
-			"spells": "guidance, thaumaturgy, charm person, create or destroy water, hold person, silence, dispel magic, tongues"
+			"spells": "guidance, thaumaturgy, charm person, create or destroy water, hold person, silence, dispel magic, tongues",
+			"page": 226
+		},
+		{
+			"source": "OotA",
+			"name": "Veteran Of The Gauntlet",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": "lawful good",
+			"ac": "17 (splint)",
+			"hp": "58 (9d8+18)",
+			"speed": "30ft.",
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": "Common, Dwarvish",
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"text": [
+						"The veteran makes two longsword attacks. If it has a shorts word drawn, it can also make a shortsword attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"text": [
+						"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) slashing damage, or 8 (1d10+3) slashing dam age if used with two hands."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"text": [
+						"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"text": [
+						"Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
+					]
+				}
+			],
+			"page": 130
 		},
 		{
 			"name": "Yeenoghu",
@@ -2442,12 +2745,12 @@
 			"ac": "22 (natural armor)",
 			"hp": "348 (24d12+192)",
 			"speed": "50 ft.",
-			"str": "29",
-			"dex": "16",
-			"con": "23",
-			"int": "15",
-			"wis": "24",
-			"cha": "15",
+			"str": 29,
+			"dex": 16,
+			"con": 23,
+			"int": 15,
+			"wis": 24,
+			"cha": 15,
 			"save": "Dex +10, Con +15, Wis +14",
 			"skill": {
 				"intimidation": "+9",
@@ -2457,7 +2760,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "24",
+			"passive": 24,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "24",
 			"trait": [
@@ -2545,7 +2848,8 @@
 					]
 				}
 			],
-			"spells": "detect magic, spiritual weapon, dispel magic, fear, invisibility, teleport"
+			"spells": "detect magic, spiritual weapon, dispel magic, fear, invisibility, teleport",
+			"page": 247
 		},
 		{
 			"name": "Yestabrod",
@@ -2556,16 +2860,16 @@
 			"ac": "15 (natural armor)",
 			"hp": "75 (10d10+20)",
 			"speed": "30 ft.",
-			"str": "12",
-			"dex": "10",
-			"con": "14",
-			"int": "13",
-			"wis": "15",
-			"cha": "10",
+			"str": 12,
+			"dex": 10,
+			"con": 14,
+			"int": 13,
+			"wis": 15,
+			"cha": 10,
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 120 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Abyssal, telepathy 60 ft.",
 			"cr": "4",
 			"trait": [
@@ -2619,7 +2923,63 @@
 						"||1d8+2"
 					]
 				}
-			]
+			],
+			"page": 233
+		},
+		{
+			"source": "OotA",
+			"name": "Zhentarim Thug",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": "neutral",
+			"ac": "11 (leather armor)",
+			"hp": "32 (5d8+10)",
+			"speed": "30ft.",
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"passive": 10,
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"text": [
+						"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"text": [
+						"The thug makes two melee attacks"
+					]
+				},
+				{
+					"name": "Mace",
+					"text": [
+						"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"text": [
+						"Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage."
+					]
+				}
+			],
+			"page": 131
 		},
 		{
 			"name": "Zuggtmoy",
@@ -2635,12 +2995,12 @@
 			"ac": "18 (natural armor)",
 			"hp": "304 (32d10+128)",
 			"speed": "30 ft.",
-			"str": "22",
-			"dex": "15",
-			"con": "18",
-			"int": "20",
-			"wis": "19",
-			"cha": "24",
+			"str": 22,
+			"dex": 15,
+			"con": 18,
+			"int": 20,
+			"wis": 19,
+			"cha": 24,
 			"save": "Dex +9, Con +11, Wis +11",
 			"skill": {
 				"perception": "+11"
@@ -2649,7 +3009,7 @@
 			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "truesight 120 ft.",
-			"passive": "21",
+			"passive": 21,
 			"languages": "all, telepathy 120 ft.",
 			"cr": "23",
 			"trait": [
@@ -2725,7 +3085,8 @@
 					]
 				}
 			],
-			"spells": "detect magic, locate animals or plants, ray of sickness, dispel magic, ensnaring strike, entangle, plant growth, etherealness, teleport"
+			"spells": "detect magic, locate animals or plants, ray of sickness, dispel magic, ensnaring strike, entangle, plant growth, etherealness, teleport",
+			"page": 249
 		}
 	]
 }

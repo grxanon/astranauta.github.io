@@ -4,7 +4,9 @@
 
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
+HASH_SUB_LIST_SEP = "~";
 HASH_START = "#";
+HASH_SUBCLASS = "sub:";
 
 STR_EMPTY = "";
 STR_VOID_LINK = "javascript:void(0)";
@@ -492,13 +494,15 @@ function utils_getAbilityData (abObj) {
 // PARSING =============================================================================================================
 Parser = {};
 Parser._parse_aToB = function (abMap, a) {
-	a = a.trim();
+	if (a === undefined || a === null) throw new Error("undefined or null object passed to parser");
+	if (typeof a === "string") a = a.trim();
 	if (abMap[a] !== undefined) return abMap[a];
 	return a;
 };
 
 Parser._parse_bToA = function (abMap, b) {
-	b = b.trim();
+	if (b === undefined || b === null) throw new Error("undefined or null object passed to parser");
+	if (typeof b === "string") b = b.trim();
 	for (const v in abMap) {
 		if (!abMap.hasOwnProperty(v)) continue;
 		if (abMap[v] === b) return v
@@ -562,10 +566,16 @@ Parser.armorFullToAbv = function (armor) {
 	return Parser._parse_bToA(Parser.ARMOR_ABV_TO_FULL, armor);
 };
 
+Parser._getSourceStringFromSource = function (source) {
+	if (source && source.source) return source.source;
+	return source;
+};
 Parser.sourceJsonToFull = function (source) {
+	source = Parser._getSourceStringFromSource(source);
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source).replace(/'/g, STR_APOSTROPHE);
 };
 Parser.sourceJsonToFullCompactPrefix = function (source) {
+	source = Parser._getSourceStringFromSource(source);
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_FULL, source)
 		.replace(/'/g, STR_APOSTROPHE)
 		.replace(UA_PREFIX, UA_PREFIX_SHORT)
@@ -574,6 +584,7 @@ Parser.sourceJsonToFullCompactPrefix = function (source) {
 		.replace(PS_PREFIX, PS_PREFIX_SHORT);
 };
 Parser.sourceJsonToAbv = function (source) {
+	source = Parser._getSourceStringFromSource(source);
 	return Parser._parse_aToB(Parser.SOURCE_JSON_TO_ABV, source);
 };
 
@@ -800,6 +811,39 @@ Parser.monTypeToPlural = function (type) {
 	return Parser._parse_aToB(Parser.MON_TYPE_TO_PLURAL, type);
 };
 
+Parser.CAT_ID_CREATURE = 1;
+Parser.CAT_ID_SPELL = 2;
+Parser.CAT_ID_BACKGROUND = 3;
+Parser.CAT_ID_ITEM = 4;
+Parser.CAT_ID_CLASS = 5;
+Parser.CAT_ID_CONDITION = 6;
+Parser.CAT_ID_FEAT = 7;
+Parser.CAT_ID_ELDRITCH_INVOCATION = 8;
+Parser.CAT_ID_PSIONIC = 9;
+Parser.CAT_ID_RACE = 10;
+Parser.CAT_ID_OTHER_REWARD = 11;
+Parser.CAT_ID_VARIANT_OPTIONAL_RULE = 12;
+Parser.CAT_ID_ADVENTURE = 13;
+
+Parser.CAT_ID_TO_FULL = {};
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CREATURE] = "Bestiary";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_SPELL] = "Spell";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_BACKGROUND] = "Background";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ITEM] = "Item";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CLASS] = "Class";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CONDITION] = "Condition";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_FEAT] = "Feat";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ELDRITCH_INVOCATION] = "Eldritch Invocation";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_PSIONIC] = "Psionic";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_RACE] = "Race";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_OTHER_REWARD] = "Other Reward";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_VARIANT_OPTIONAL_RULE] = "Variant/Optional Rule";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ADVENTURE] = "Adventure";
+
+Parser.pageCategoryToFull = function (catId) {
+	return Parser._parse_aToB(Parser.CAT_ID_TO_FULL, catId);
+};
+
 /**
  * Build a pair of strings; one with all current subclasses, one with all legacy subclasses
  *
@@ -856,28 +900,47 @@ Parser.spSubclassesToCurrentAndLegacyFull = function (classes) {
 	}
 };
 
-Parser.SP_SCHOOL_ABV_TO_FULL = {
-	"A": "Abjuration",
-	"V": "Evocation",
-	"E": "Enchantment",
-	"I": "Illusion",
-	"D": "Divination",
-	"N": "Necromancy",
-	"T": "Transmutation",
-	"C": "Conjuration",
-	"VM": "Void Magic"
-};
+SKL_ABV_ABJ = "A";
+SKL_ABV_EVO = "V";
+SKL_ABV_ENC = "E";
+SKL_ABV_ILL = "I";
+SKL_ABV_DIV = "D";
+SKL_ABV_NEC = "N";
+SKL_ABV_TRA = "T";
+SKL_ABV_CON = "C";
+SKL_ABV_VDM = "VM";
 
-Parser.SP_SCHOOL_ABV_TO_SHORT = {
-	"A": "Abj.",
-	"V": "Evoc.",
-	"E": "Ench.",
-	"I": "Illu.",
-	"D": "Divin.",
-	"N": "Necro.",
-	"T": "Trans.",
-	"C": "Conj."
-};
+SKL_ABJ = "Abjuration";
+SKL_EVO = "Evocation";
+SKL_ENC = "Enchantment";
+SKL_ILL = "Illusion";
+SKL_DIV = "Divination";
+SKL_NEC = "Necromancy";
+SKL_TRA = "Transmutation";
+SKL_CON = "Conjuration";
+SKL_VDM = "Void Magic";
+
+Parser.SP_SCHOOL_ABV_TO_FULL = {};
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ABJ] = SKL_ABJ;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_EVO] = SKL_EVO;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ENC] = SKL_ENC;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_ILL] = SKL_ILL;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_DIV] = SKL_DIV;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_NEC] = SKL_NEC;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_TRA] = SKL_TRA;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_CON] = SKL_CON;
+Parser.SP_SCHOOL_ABV_TO_FULL[SKL_ABV_VDM] = SKL_VDM;
+
+Parser.SP_SCHOOL_ABV_TO_SHORT = {};
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ABJ] = "Abj.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_EVO] = "Evoc.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ENC] = "Ench.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_ILL] = "Illu.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_DIV] = "Divin.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_NEC] = "Necro.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_TRA] = "Trans.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_CON] = "Conj.";
+Parser.SP_SCHOOL_ABV_TO_SHORT[SKL_ABV_VDM] = "Void";
 
 Parser.ATB_ABV_TO_FULL = {
 	"str": "Strength",
@@ -966,6 +1029,13 @@ SRC_ToA = "ToA";
 SRC_ToD = "ToD";
 SRC_TTP = "TTP";
 SRC_TYP = "TftYP";
+SRC_TYP_AtG = "TftYP-AtG";
+SRC_TYP_DiT = "TftYP-DiT";
+SRC_TYP_TFoF = "TftYP-TFoF";
+SRC_TYP_THSoT = "TftYP-THSoT";
+SRC_TYP_TSC = "TftYP-TSC";
+SRC_TYP_ToH = "TftYP-ToH";
+SRC_TYP_WPM = "TftYP-WPM";
 SRC_VGM = "VGM";
 SRC_XGE = "XGE";
 SRC_OGA = "OGA";
@@ -1050,6 +1120,7 @@ UA_PREFIX_SHORT = "UA: ";
 DM_PREFIX = "Deep Magic: ";
 DM_PREFIX_SHORT = "DM: ";
 PP3_SUFFIX = " (3pp)";
+TftYP_NAME = "Tales from the Yawning Portal";
 
 Parser.SOURCE_JSON_TO_FULL = {};
 Parser.SOURCE_JSON_TO_FULL[SRC_CoS] = "Curse of Strahd";
@@ -1069,7 +1140,14 @@ Parser.SOURCE_JSON_TO_FULL[SRC_SKT] = "Storm King's Thunder";
 Parser.SOURCE_JSON_TO_FULL[SRC_ToA] = "Tomb of Annihilation";
 Parser.SOURCE_JSON_TO_FULL[SRC_ToD] = "Tyranny of Dragons";
 Parser.SOURCE_JSON_TO_FULL[SRC_TTP] = "The Tortle Package";
-Parser.SOURCE_JSON_TO_FULL[SRC_TYP] = "Tales from the Yawning Portal";
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_AtG] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_DiT] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_TFoF] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_THSoT] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_TSC] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_ToH] = TftYP_NAME;
+Parser.SOURCE_JSON_TO_FULL[SRC_TYP_WPM] = TftYP_NAME;
 Parser.SOURCE_JSON_TO_FULL[SRC_VGM] = "Volo's Guide to Monsters";
 Parser.SOURCE_JSON_TO_FULL[SRC_XGE] = "Xanathar's Guide to Everything";
 Parser.SOURCE_JSON_TO_FULL[SRC_OGA] = "One Grung Above";
@@ -1155,6 +1233,13 @@ Parser.SOURCE_JSON_TO_ABV[SRC_ToA] = "ToA";
 Parser.SOURCE_JSON_TO_ABV[SRC_ToD] = "ToD";
 Parser.SOURCE_JSON_TO_ABV[SRC_TTP] = "TTP";
 Parser.SOURCE_JSON_TO_ABV[SRC_TYP] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_AtG] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_DiT] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_TFoF] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_THSoT] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_TSC] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_ToH] = "TftYP";
+Parser.SOURCE_JSON_TO_ABV[SRC_TYP_WPM] = "TftYP";
 Parser.SOURCE_JSON_TO_ABV[SRC_VGM] = "VGM";
 Parser.SOURCE_JSON_TO_ABV[SRC_XGE] = "XGE";
 Parser.SOURCE_JSON_TO_ABV[SRC_OGA] = "OGA";
@@ -1303,38 +1388,19 @@ function hasBeenReprinted (shortName, source) {
 }
 
 function isNonstandardSource (source) {
+	/* can accept sources of the form:
+	{
+		"source": "UAExample",
+		"forceStandard": true
+	}
+	 */
+	if (source && source.forceStandard !== undefined) {
+		return !source.forceStandard;
+	}
 	return (source !== undefined && source !== null) && (source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source.endsWith(SRC_3PP_SUFFIX) || source === SRC_OGA);
 }
 
 // CONVENIENCE/ELEMENTS ================================================================================================
-// TODO refactor/remove (switch to jQuery versions)
-function toggleCheckBox (cb) {
-	if (cb.checked === true) cb.checked = false;
-	else cb.checked = true;
-}
-
-function stopEvent (event) {
-	event.stopPropagation();
-	event.preventDefault();
-}
-
-function toggleVisible (element) {
-	if (isShowing(element)) hide(element);
-	else show(element);
-}
-
-function isShowing (element) {
-	return element.hasAttribute(ATB_STYLE) && element.getAttribute(ATB_STYLE).includes(STL_DISPLAY_INITIAL);
-}
-
-function show (element) {
-	element.setAttribute(ATB_STYLE, STL_DISPLAY_INITIAL);
-}
-
-function hide (element) {
-	element.setAttribute(ATB_STYLE, STL_DISPLAY_NONE);
-}
-
 function xor (a, b) {
 	return !a !== !b;
 }
@@ -1415,7 +1481,9 @@ function initFilterBox (...filterList) {
 }
 
 // ENCODING/DECODING ===================================================================================================
-function encodeForHash (toEncode) {
+UrlUtil = function () {
+};
+UrlUtil.encodeForHash = function (toEncode) {
 	if (toEncode instanceof Array) {
 		return toEncode.map(i => encodeForHashHelper(i)).join(HASH_LIST_SEP);
 	} else {
@@ -1423,9 +1491,50 @@ function encodeForHash (toEncode) {
 	}
 
 	function encodeForHashHelper (part) {
-		return encodeURIComponent(part).toLowerCase().replace(/'/g, "%27")
+		return encodeURIComponent(part).toLowerCase().replace(/'/g, "%27");
 	}
-}
+};
+
+UrlUtil.autoEncodeHash = function (obj) {
+	const curPage = UrlUtil.getCurrentPage();
+	const encoder = UrlUtil.URL_TO_HASH_BUILDER[curPage];
+	if (!encoder) throw new Error(`No encoder found for page ${curPage}`);
+	return encoder(obj);
+};
+
+UrlUtil.getCurrentPage = function () {
+	const pSplit = window.location.pathname.split("/");
+	return pSplit[pSplit.length - 1];
+};
+
+UrlUtil.PG_BESTIARY = "bestiary.html";
+UrlUtil.PG_SPELLS = "spells.html";
+UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
+UrlUtil.PG_ITEMS = "items.html";
+UrlUtil.PG_CLASSES = "classes.html";
+UrlUtil.PG_CONDITIONS = "conditions.html";
+UrlUtil.PG_FEATS = "feats.html";
+UrlUtil.PG_INVOCATIONS = "invocations.html";
+UrlUtil.PG_PSIONICS = "psionics.html";
+UrlUtil.PG_RACES = "races.html";
+UrlUtil.PG_REWARDS = "rewards.html";
+UrlUtil.PG_VARIATNRULES = "variantrules.html";
+UrlUtil.PG_ADVENTURE = "adventure.html";
+
+UrlUtil.URL_TO_HASH_BUILDER = {};
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = (it) => UrlUtil.encodeForHash([it.name, Parser.sourceJsonToAbv(it.source)]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_INVOCATIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PSIONICS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_REWARDS] = (it) => UrlUtil.encodeForHash(it.name);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VARIATNRULES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ADVENTURE] = (it) => UrlUtil.encodeForHash(it.id);
 
 // SORTING =============================================================================================================
 // TODO refactor into a class

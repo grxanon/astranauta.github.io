@@ -166,7 +166,7 @@ function addMonsters (data) {
 
 		textStack +=
 			`<li ${FLTR_ID}='${mI}'>
-				<a id=${mI} href='#${encodeForHash(mon.name)}_${encodeForHash(mon.source)}' title="${mon.name}">
+				<a id=${mI} href='#${UrlUtil.autoEncodeHash(mon)}' title="${mon.name}">
 					<span class='name col-xs-4 col-xs-4-2'>${mon.name}</span>
 					<span title="${Parser.sourceJsonToFull(mon.source)}" class='col-xs-1 col-xs-1-8 source source${abvSource}'>${abvSource}</span>
 					<span class='type col-xs-4 col-xs-4-3'>${mon._pTypes.asText.uppercaseFirst()}</span>
@@ -238,9 +238,9 @@ function loadhash (id) {
 	let entryList = {};
 	var mon = monsters[id];
 	var name = mon.name;
-	var source = mon.source;
+	let source = Parser.sourceJsonToAbv(mon.source);
+	let sourceFull = Parser.sourceJsonToFull(source)
 	var type = mon._pTypes.asText;
-	source = Parser.sourceJsonToAbv(source);
 
 	imgError = function (x) {
 		$(x).closest("th").css("padding-right", "0.2em");
@@ -249,7 +249,7 @@ function loadhash (id) {
 
 	$("th#name").html(
 		`<span class="stats-name">${name}</span>
-		<span class="stats-source source${source}" title="${Parser.sourceJsonToFull(source)}">${Parser.sourceJsonToAbv(source)}</span>
+		<span class="stats-source source${source}" title="${sourceFull}">${Parser.sourceJsonToAbv(source)}</span>
 		<a href="img/${source}/${name.replace(/"/g, "")}.png" target='_blank'>
 			<img src="img/${source}/${name.replace(/"/g, "")}.png" class='token' onerror='imgError(this)'>
 		</a>`
@@ -342,8 +342,7 @@ function loadhash (id) {
 		$("td span#senses").html("");
 	}
 
-	var passive = mon.passive || (10 + perception).toString;
-	$("td span#pp").html(passive)
+	$("td span#pp").html(mon.passive)
 
 	var languages = mon.languages;
 	if (languages) {
@@ -443,6 +442,18 @@ function loadhash (id) {
 			}
 		}
 	}
+
+	const variants = mon.variant;
+	const variantSect = $(`#variants`);
+	if (!variants) variantSect.hide();
+	else {
+		const rStack = [];
+		variants.forEach(v => renderer.recursiveEntryRender(v, rStack));
+		variantSect.html(`<td colspan=6>${rStack.join("")}</td>`);
+		variantSect.show();
+	}
+
+	$(`#source`).append(`<td colspan=6><b>Source: </b> <i>${sourceFull}</i>, page ${mon.page}</td>`);
 
 	const legendaries = mon.legendary;
 	$("tr.legendary").remove();

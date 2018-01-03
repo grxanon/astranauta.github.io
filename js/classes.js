@@ -1,9 +1,7 @@
 "use strict";
-const HASH_SUBCLASS = "sub:";
 const HASH_FEATURE = "f:";
 const HASH_HIDE_FEATURES = "hideclassfs:";
 const HASH_ALL_SOURCES = "allsrc:";
-const HASH_SUB_LIST_SEP = "~";
 
 const CLSS_FEATURE_LINK = "feature-link";
 const CLSS_ACTIVE = "active";
@@ -37,11 +35,11 @@ window.onload = function load () {
 };
 
 function getClassHash (aClass) {
-	return `#${encodeForHash(aClass.name)}${HASH_LIST_SEP}${encodeForHash(aClass.source)}`;
+	return `#${UrlUtil.autoEncodeHash(aClass)}`;
 }
 
 function getEncodedSubclass (name, source) {
-	return `${encodeForHash(name)}${HASH_SUB_LIST_SEP}${encodeForHash(source)}`;
+	return `${UrlUtil.encodeForHash(name)}${HASH_SUB_LIST_SEP}${UrlUtil.encodeForHash(source)}`;
 }
 
 function getTableDataScData (scName, scSource) {
@@ -55,6 +53,9 @@ function onJsonLoad (data) {
 	for (const c of classes) {
 		c.subclasses = c.subclasses.sort((a, b) => ascSort(a.name, b.name));
 	}
+
+	// for any non-standard source classes, mark subclasses from the same source as "forceStandard"
+	classes.filter(c => isNonstandardSource(c.source)).forEach(c => c.subclasses.filter(sc => sc.source === c.source).forEach(sc => sc.source = {"source": sc.source, "forceStandard": true}));
 
 	tableDefault = $("#stats").html();
 	statsProfDefault = $("#statsprof").html();
@@ -169,9 +170,9 @@ function loadhash (id) {
 		const lvlFeatureList = curClass.classFeatures[i];
 		for (let j = 0; j < lvlFeatureList.length; j++) {
 			const feature = lvlFeatureList[j];
-			const featureId = HASH_FEATURE + encodeForHash(feature.name) + "_" + i;
+			const featureId = `${HASH_FEATURE}${UrlUtil.encodeForHash(feature.name)}_${i}`;
 
-			const featureLinkPart = HASH_FEATURE + encodeForHash(feature.name) + i;
+			const featureLinkPart = `${HASH_FEATURE}${UrlUtil.encodeForHash(feature.name)}${i}`;
 			const featureLink = $(`<a href="${getClassHash(curClass)}${HASH_PART_SEP}${featureLinkPart}" class="${CLSS_FEATURE_LINK}" ${ATB_DATA_FEATURE_LINK}="${featureLinkPart}" ${ATB_DATA_FEATURE_ID}="${featureId}">${feature.name}</a>`);
 			featureLink.click(function () {
 				document.getElementById(featureId).scrollIntoView();
@@ -258,9 +259,8 @@ function loadhash (id) {
 		subclassPillWrapper.append(pill);
 	}
 
-	// if this is a UA class, toggle the "All Sources" button (this will call loadsub)
-	if (isUaClass) allSourcesToggle.click();
-	else (loadsub("")); // otherwise call loadsub with a blank sub-hash
+	// call loadsub with a blank sub-hash, to ensure the right content is displayed
+	loadsub("");
 
 	// helper functions
 	function makeGenericTogglePill (pillText, pillActiveClass, pillId, hashKey, defaultActive) {
@@ -443,8 +443,10 @@ function loadsub (sub) {
 			});
 
 			if (hideOtherSources) {
+				otherSrcSubFeat.not(`.${CLSS_SUBCLASS_FEATURE}`).filter(`:not([${ATB_DATA_SC}]):not([${ATB_DATA_SRC}])`).hide();
 				otherSrcSubFeat.not(`.${CLSS_SUBCLASS_FEATURE}`).filter(`[${ATB_DATA_SC}="${EntryRenderer.DATA_NONE}"][${ATB_DATA_SRC}="${EntryRenderer.DATA_NONE}"]`).hide();
 			} else {
+				otherSrcSubFeat.not(`.${CLSS_SUBCLASS_FEATURE}`).filter(`:not([${ATB_DATA_SC}]):not([${ATB_DATA_SRC}])`).show();
 				otherSrcSubFeat.not(`.${CLSS_SUBCLASS_FEATURE}`).filter(`[${ATB_DATA_SC}="${EntryRenderer.DATA_NONE}"][${ATB_DATA_SRC}="${EntryRenderer.DATA_NONE}"]`).show();
 			}
 		}
@@ -480,7 +482,7 @@ function loadsub (sub) {
 		toToggleCf.show();
 	}
 
-	// show UA/etc content as required
+	// show UA/etc pills as required
 	const srcToggle = $(`#${ID_OTHER_SOURCES_TOGGLE}`);
 	const toToggleSrc = $(`.${CLSS_SUBCLASS_PILL}.${CLSS_NON_STANDARD_SOURCE}`);
 	if (hideOtherSources) {
@@ -547,10 +549,11 @@ function loadsub (sub) {
 		$(`.${CLSS_SUBCLASS_PILL}`).removeClass(CLSS_ACTIVE);
 		$(`.${CLSS_SUBCLASS_FEATURE}`).hide();
 		$(`.${CLSS_SUBCLASS_PREFIX}`).hide();
-		$(`div.${CLSS_NON_STANDARD_SOURCE}`).hide();
-		// if we're hiding features from some sources, make sure these stay hidden
-		if (hideOtherSources) {
-			$(`.${CLSS_NON_STANDARD_SOURCE}`).not(`.${CLSS_SUBCLASS_PILL}`).hide();
+		const allNonstandard = $(`div.${CLSS_NON_STANDARD_SOURCE}`);
+		allNonstandard.hide();
+		// if we're showing features from other sources, make sure these stay visible
+		if (!hideOtherSources) {
+			allNonstandard.not(`.${CLSS_SUBCLASS_FEATURE}`).not(`.${CLSS_SUBCLASS_PILL}`).show();
 		}
 		// hide all table col groups
 		// TODO add handling for non-standard sources if UA non-caster->caster subclass are introduced

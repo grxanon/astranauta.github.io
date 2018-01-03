@@ -9,12 +9,12 @@
 			"ac": "21 (natural armor)",
 			"hp": "285 (30d8+150)",
 			"speed": "30 ft.",
-			"str": "13",
-			"dex": "16",
-			"con": "20",
-			"int": "27",
-			"wis": "21",
-			"cha": "20",
+			"str": 13,
+			"dex": 16,
+			"con": 20,
+			"int": 27,
+			"wis": 21,
+			"cha": 20,
 			"save": "Con +12, Int +15, Wis +12",
 			"skill": {
 				"arcana": "+22",
@@ -26,7 +26,7 @@
 			"immune": "necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, stunned ",
 			"senses": "truesight 120 ft.",
-			"passive": "22",
+			"passive": 22,
 			"languages": "Abyssal, Common, Draconic, Dwarvish, Elvish, Giant, Infernal, Primordial, Undercommon",
 			"cr": "23",
 			"trait": [
@@ -122,7 +122,8 @@
 						"Each creature within 20 feet of Acererak must make a DC 20 Constitution saving throw against this magic, taking 42 (12d6) necrotic damage on a failed save, or half as much damage on a successful one."
 					]
 				}
-			]
+			],
+			"page": 209
 		},
 		{
 			"source": "ToA",
@@ -138,12 +139,12 @@
 			"ac": "13 (hide armor)",
 			"hp": "30 (4d8+12)",
 			"speed": "25 ft.",
-			"str": "13",
-			"dex": "13",
-			"con": "17",
-			"int": "12",
-			"wis": "14",
-			"cha": "11",
+			"str": 13,
+			"dex": 13,
+			"con": 17,
+			"int": 12,
+			"wis": 14,
+			"cha": 11,
 			"skill": {
 				"perception": "+4",
 				"stealth": "+3",
@@ -151,7 +152,7 @@
 			},
 			"resist": "poison",
 			"senses": "darkvision 60 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Common, Dwarvish",
 			"cr": "1/4",
 			"trait": [
@@ -177,7 +178,8 @@
 						"Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6+1) slashing damage."
 					]
 				}
-			]
+			],
+			"page": 210
 		},
 		{
 			"source": "ToA",
@@ -188,19 +190,19 @@
 			"ac": "14 (natural armor)",
 			"hp": "49 (9d8+9)",
 			"speed": "20 ft., swim 30 ft.",
-			"str": "13",
-			"dex": "8",
-			"con": "12",
-			"int": "10",
-			"wis": "14",
-			"cha": "11",
+			"str": 13,
+			"dex": 8,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 11,
 			"skill": {
 				"perception": "+4",
 				"survival": "+4"
 			},
 			"resist": "poison",
 			"senses": "darkvision 60 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Common",
 			"cr": "1",
 			"trait": [
@@ -224,7 +226,8 @@
 						"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8+1) slashing damage, and the target is grappled (escape DC 11). The aldani has two claws, each of which can grapple only one target."
 					]
 				}
-			]
+			],
+			"page": 210
 		},
 		{
 			"source": "ToA",
@@ -235,18 +238,18 @@
 			"ac": "13",
 			"hp": "3 (1d6)",
 			"speed": "50 ft.",
-			"str": "2",
-			"dex": "16",
-			"con": "10",
-			"int": "2",
-			"wis": "14",
-			"cha": "10",
+			"str": 2,
+			"dex": 16,
+			"con": 10,
+			"int": 2,
+			"wis": 14,
+			"cha": 10,
 			"skill": {
 				"perception": "+4",
 				"stealth": "+5"
 			},
 			"senses": "darkvision 30 ft.",
-			"passive": "14",
+			"passive": 14,
 			"cr": "0",
 			"trait": [
 				{
@@ -263,7 +266,8 @@
 						"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4+3) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 211
 		},
 		{
 			"source": "ToA",
@@ -274,16 +278,16 @@
 			"ac": "14 (natural armor)",
 			"hp": "68 (8d12+16)",
 			"speed": "20 ft.",
-			"str": "19",
-			"dex": "9",
-			"con": "15",
-			"int": "2",
-			"wis": "6",
-			"cha": "3",
+			"str": 19,
+			"dex": 9,
+			"con": 15,
+			"int": 2,
+			"wis": 6,
+			"cha": 3,
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "8",
+			"passive": 8,
 			"cr": "3",
 			"trait": [
 				{
@@ -300,7 +304,8 @@
 						"Melee Weapon Attack: +6 to hit, reach 10 ft., one target Hit: 18 (4d6+4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
 					]
 				}
-			]
+			],
+			"page": 240
 		},
 		{
 			"source": "ToA",
@@ -316,12 +321,12 @@
 			"ac": "14 (studded leather)",
 			"hp": "82 (15d8+15)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "15",
-			"con": "13",
-			"int": "17",
-			"wis": "16",
-			"cha": "18",
+			"str": 10,
+			"dex": 15,
+			"con": 13,
+			"int": 17,
+			"wis": 16,
+			"cha": 18,
 			"save": "Dex +5, Cha +7",
 			"skill": {
 				"deception": "+7",
@@ -330,7 +335,7 @@
 				"survival": "+9"
 			},
 			"immune": "cold (while wearing the Ring of Winter)",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common, Draconic, Dwarvish, Goblin",
 			"cr": "7",
 			"trait": [
@@ -339,10 +344,10 @@
 					"text": [
 						"Artus wears the Ring of Winter. He and the ring can't be targeted by divination magic or perceived through magical scrying sensors. While attuned to and wearing the ring, Artus ceases to age and is immune to cold damage and the effects of extreme cold.",
 						"Artus wields Bookmark a +3 dagger with additional magical properties. As a bonus action, Artus can activate any one of the following properties while attuned to the dagger, provided he has the weapon drawn:",
-						"• Cause a blue gem set into the dagger's pommel to shed bright light in a 20-foot radius and dim light for an additional 20 feet, or make the gem go dark.",
-						"• Turn the dagger into a compass that, while resting on your palm, points north.",
-						"• Cast dimension door from the dagger. Once this property is used, it can't be used again until the next dawn.",
-						"• Cast compulsion (save DC 15) from the dagger. The range of the spell increases to 90 feet but it targets only spiders that are beasts. Once this property is used, it can't be used again until the next dawn."
+						"\u2022 Cause a blue gem set into the dagger's pommel to shed bright light in a 20-foot radius and dim light for an additional 20 feet, or make the gem go dark.",
+						"\u2022 Turn the dagger into a compass that, while resting on your palm, points north.",
+						"\u2022 Cast dimension door from the dagger. Once this property is used, it can't be used again until the next dawn.",
+						"\u2022 Cast compulsion (save DC 15) from the dagger. The range of the spell increases to 90 feet but it targets only spiders that are beasts. Once this property is used, it can't be used again until the next dawn."
 					]
 				}
 			],
@@ -369,12 +374,13 @@
 					"name": "Ring of Winter",
 					"text": [
 						"The Ring of Winter has 12 charges and regains all its expended charges daily at dawn. While attuned to and wearing the ring, Artus can expend the necessary number of charges to activate one of the following properties:",
-						"• Artus can expend 1 charge and use the ring to lower the temperature in a 120-foot-radius sphere centered on a point he can see within 300 feet of him. The temperature in that area drops 20 degrees per minute, to a minimum of -30 degrees Fahrenheit. Frost and ice begin to form on surfaces once the temperature drops below 32 degrees. This effect is permanent unless Artus uses the ring to end the effect as an action, at which point the temperature in the area returns to normal at a rate of 10 degrees per minute.",
-						"• Artus can cast one of the following spells from the ring (spell save DC 17) by expending the necessary number of charges: Bigby's hand (2 charges) the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist), cone of cold (2 charges), flesh to ice (3 charges; as flesh to stone except that the target turns to solid ice with the density and durability of stone), ice storm (2 charges), Otiluke's freezing sphere (3 charges), sleet storm (1 charge), spike growth (1 charge) the spikes are made of ice), or wall of ice (2 charges).",
-						"• Artus can expend the necessary number of charges and use the ring to create either an inanimate ice object (2 charges) or an animated ice creature (4 charges). The ice object can't have any moving parts, must be able to fit inside a 10-foot cube, and has the density and durability of metal or stone (Artus's choice). The ice creature must be modeled after a beast with a challenge rating of 2 or less. The ice creature has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: charmed, exhaustion, frightened, paralyzed, petrified, and poisoned. The ice creature obeys only its creator's commands. The the object or creature appears in an unoccupied space within 60 feet of Artus. It melts into a pool of normal water after 24 hours or when it drops to 0 hit points. In extreme heat, it loses 5 (1d10) hit points per minute as it melts. Use the guidelines in chapter 8 of the Dungeon Master's Guide to determine the hit points of an inanimate object if they become necessary."
+						"\u2022 Artus can expend 1 charge and use the ring to lower the temperature in a 120-foot-radius sphere centered on a point he can see within 300 feet of him. The temperature in that area drops 20 degrees per minute, to a minimum of -30 degrees Fahrenheit. Frost and ice begin to form on surfaces once the temperature drops below 32 degrees. This effect is permanent unless Artus uses the ring to end the effect as an action, at which point the temperature in the area returns to normal at a rate of 10 degrees per minute.",
+						"\u2022 Artus can cast one of the following spells from the ring (spell save DC 17) by expending the necessary number of charges: Bigby's hand (2 charges) the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist), cone of cold (2 charges), flesh to ice (3 charges; as flesh to stone except that the target turns to solid ice with the density and durability of stone), ice storm (2 charges), Otiluke's freezing sphere (3 charges), sleet storm (1 charge), spike growth (1 charge) the spikes are made of ice), or wall of ice (2 charges).",
+						"\u2022 Artus can expend the necessary number of charges and use the ring to create either an inanimate ice object (2 charges) or an animated ice creature (4 charges). The ice object can't have any moving parts, must be able to fit inside a 10-foot cube, and has the density and durability of metal or stone (Artus's choice). The ice creature must be modeled after a beast with a challenge rating of 2 or less. The ice creature has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: charmed, exhaustion, frightened, paralyzed, petrified, and poisoned. The ice creature obeys only its creator's commands. The the object or creature appears in an unoccupied space within 60 feet of Artus. It melts into a pool of normal water after 24 hours or when it drops to 0 hit points. In extreme heat, it loses 5 (1d10) hit points per minute as it melts. Use the guidelines in chapter 8 of the Dungeon Master's Guide to determine the hit points of an inanimate object if they become necessary."
 					]
 				}
-			]
+			],
+			"page": 212
 		},
 		{
 			"source": "ToA",
@@ -385,16 +391,16 @@
 			"ac": "13 (natural armor)",
 			"hp": "85 (10d10+30)",
 			"speed": "5 ft., climb 5 ft.",
-			"str": "18",
-			"dex": "10",
-			"con": "16",
-			"int": "1",
-			"wis": "10",
-			"cha": "1",
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 1,
+			"wis": 10,
+			"cha": 1,
 			"resist": "cold, fire",
 			"conditionImmune": "blinded, deafened, exhaustion, prone",
 			"senses": "blindsight 30 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "3",
 			"trait": [
 				{
@@ -417,7 +423,8 @@
 						"The assassin vine can animate normal vines and roots on the ground in a 15-foot square within 30 feet of it. These plants turn the ground in that area into difficult terrain. A creature in that area when the effect begins must succeed on a DC 13 Strength saving throw or be restrained by entangling vines and roots. A creature restrained by the plants can use its action to make a DC 13 Strength (Athletics) check, freeing itself on a successful check. The effect ends after 1 minute or when the assassin vine dies or uses Entangling Vines again."
 					]
 				}
-			]
+			],
+			"page": 213
 		},
 		{
 			"source": "ToA",
@@ -433,17 +440,17 @@
 			"ac": "7",
 			"hp": "225 (18d12+108)",
 			"speed": "0 ft., fly 50 ft. (hover)",
-			"str": "19",
-			"dex": "5",
-			"con": "22",
-			"int": "25",
-			"wis": "19",
-			"cha": "24",
+			"str": 19,
+			"dex": 5,
+			"con": 22,
+			"int": 25,
+			"wis": 19,
+			"cha": 24,
 			"save": "Con +11, Wis +9",
 			"immune": "cold, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
 			"senses": "darkvision 120 ft., truesight 120 ft.",
-			"passive": "24",
+			"passive": 24,
 			"languages": "understands Celestial but utters only obscene nonsense",
 			"cr": "13",
 			"trait": [
@@ -517,7 +524,8 @@
 						"The atropal lets out a withering wail. Any creature within 120 feet of the atropal that can hear the wail must succeed on a DC 19 Constitution saving throw or gain 1 level of exhaustion."
 					]
 				}
-			]
+			],
+			"page": 214
 		},
 		{
 			"source": "ToA",
@@ -528,13 +536,13 @@
 			"ac": "15",
 			"hp": "5 (2d4)",
 			"speed": "20 ft., climb 20 ft., swim 20 ft.",
-			"str": "1",
-			"dex": "20",
-			"con": "10",
-			"int": "14",
-			"wis": "16",
-			"cha": "16",
-			"passive": "17",
+			"str": 1,
+			"dex": 20,
+			"con": 10,
+			"int": 14,
+			"wis": 16,
+			"cha": 16,
+			"passive": 17,
 			"skill": {
 				"acrobatics": "+7",
 				"perception": "+7",
@@ -576,7 +584,8 @@
 						"The chwinga magically takes shelter inside a rock, a living plant, or a natural source of fresh water in its space. The chwinga can't be targeted by any attack, spell, or other effect while inside this shelter, and the shelter doesn't impair the chwinga's blindsight.The chwinga can use it's action to emerge from a shelter. If its shelter is destroyed, the chwinga is forced out and appears in the shelter's space, but is otherwise unharmed."
 					]
 				}
-			]
+			],
+			"page": 216
 		},
 		{
 			"source": "ToA",
@@ -592,18 +601,18 @@
 			"ac": "17 (breastplate, shield)",
 			"hp": "120 (16d8+48)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "13",
-			"con": "17",
-			"int": "14",
-			"wis": "16",
-			"cha": "18",
+			"str": 15,
+			"dex": 13,
+			"con": 17,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
 			"save": "Wis +6, Cha +7",
 			"skill": {
 				"athletics": "+5",
 				"medicine": "+6"
 			},
-			"passive": "13",
+			"passive": 13,
 			"languages": "understands Common but can't speak",
 			"cr": "5",
 			"trait": [
@@ -639,7 +648,8 @@
 						"Dragonbait chooses one creature he can see within 60 feet of him and determines its alignment, as long as the creature isn't hidden from divination magic by a spell or other magical effect."
 					]
 				}
-			]
+			],
+			"page": 218
 		},
 		{
 			"source": "ToA",
@@ -650,16 +660,16 @@
 			"ac": "13",
 			"hp": "26 (4d10+4)",
 			"speed": "30 ft., fly 40 ft.",
-			"str": "11",
-			"dex": "16",
-			"con": "12",
-			"int": "12",
-			"wis": "14",
-			"cha": "11",
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 11,
 			"skill": {
 				"perception": "+4"
 			},
-			"passive": "14",
+			"passive": 14,
 			"languages": "Auran, Common",
 			"cr": "1",
 			"trait": [
@@ -679,7 +689,8 @@
 						"Beak Melee Weapon Attack: +5 to hit, reach 5 ft., one target Hit: 5 (1d4+3) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 219
 		},
 		{
 			"source": "ToA",
@@ -690,13 +701,13 @@
 			"ac": "12",
 			"hp": "3 (1d6+4)",
 			"speed": "30 ft., climb 20 ft., fly 30 ft.",
-			"str": "8",
-			"dex": "14",
-			"con": "11",
-			"int": "5",
-			"wis": "12",
-			"cha": "6",
-			"passive": "11",
+			"str": 8,
+			"dex": 14,
+			"con": 11,
+			"int": 5,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
 			"cr": "0",
 			"trait": [
 				{
@@ -713,7 +724,8 @@
 						"Melee Weapon Attack:+1 to hit, reach 5 ft., one target Hit: 1 (1d4-1) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 220
 		},
 		{
 			"source": "ToA",
@@ -724,12 +736,12 @@
 			"ac": "17 (natural armor)",
 			"hp": "147 (1d6+4)",
 			"speed": "30 ft., fly 60 ft.",
-			"str": "19",
-			"dex": "11",
-			"con": "20",
-			"int": "6",
-			"wis": "11",
-			"cha": "9",
+			"str": 19,
+			"dex": 11,
+			"con": 20,
+			"int": 6,
+			"wis": 11,
+			"cha": 9,
 			"save": "Wis +4",
 			"skill": {
 				"perception": "+4"
@@ -738,7 +750,7 @@
 			"immune": "poison",
 			"conditionImmune": "exhaustion, petrified, poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Terran",
 			"cr": "10",
 			"trait": [
@@ -768,7 +780,8 @@
 						"Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (2d4+4) slashing damage."
 					]
 				}
-			]
+			],
+			"page": 221
 		},
 		{
 			"source": "ToA",
@@ -779,14 +792,14 @@
 			"ac": "17 (natural armor), 12 while prone",
 			"hp": "75 (10d10+20)",
 			"speed": "30 ft., swim 40 ft.",
-			"str": "19",
-			"dex": "10",
-			"con": "14",
-			"int": "2",
-			"wis": "12",
-			"cha": "5",
+			"str": 19,
+			"dex": 10,
+			"con": 14,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
 			"senses": "darvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"cr": "3",
 			"trait": [
 				{
@@ -809,7 +822,8 @@
 						"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 18 (4d6+4) slashing damage."
 					]
 				}
-			]
+			],
+			"page": 222
 		},
 		{
 			"source": "ToA",
@@ -820,16 +834,16 @@
 			"ac": "11 (natural armor)",
 			"hp": "59 (7d10+21)",
 			"speed": "30 ft., climb 30 ft.",
-			"str": "18",
-			"dex": "12",
-			"con": "16",
-			"int": "3",
-			"wis": "7",
-			"cha": "5",
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 3,
+			"wis": 7,
+			"cha": 5,
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "8",
+			"passive": 8,
 			"cr": "3",
 			"trait": [
 				{
@@ -864,7 +878,8 @@
 						"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4+4) slashing damage."
 					]
 				}
-			]
+			],
+			"page": 240
 		},
 		{
 			"source": "ToA",
@@ -875,19 +890,19 @@
 			"ac": "14 (natural armor)",
 			"hp": "16 (3d10)",
 			"speed": "30 ft., climb 20 ft.",
-			"str": "15",
-			"dex": "14",
-			"con": "11",
-			"int": "2",
-			"wis": "8",
-			"cha": "3",
+			"str": 15,
+			"dex": 14,
+			"con": 11,
+			"int": 2,
+			"wis": 8,
+			"cha": 3,
 			"skill": {
 				"athletics": "+4",
 				"perception": "+1",
 				"stealth": "+4"
 			},
 			"senses": "blindsight 30 ft.",
-			"passive": "11",
+			"passive": 11,
 			"cr": "1/2",
 			"trait": [
 				{
@@ -916,7 +931,8 @@
 						"The jaculi springs up to 30 feet in a straight line and makes a bite attack against a target within its reach. This attack has advantage if the jaculi springs at least 10 feet. If the attack hits, the bite deals an extra 7 (2d6) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 225
 		},
 		{
 			"source": "ToA",
@@ -927,17 +943,17 @@
 			"ac": "13 (natural armor)",
 			"hp": "67 (9d10+18)",
 			"speed": "30 ft.",
-			"str": "16",
-			"dex": "16",
-			"con": "14",
-			"int": "3",
-			"wis": "14",
-			"cha": "10",
+			"str": 16,
+			"dex": 16,
+			"con": 14,
+			"int": 3,
+			"wis": 14,
+			"cha": 10,
 			"skill": {
 				"perception": "+4",
 				"stealth": "+7"
 			},
-			"passive": "14",
+			"passive": 14,
 			"cr": "4",
 			"trait": [
 				{
@@ -984,7 +1000,8 @@
 						"The kamadan exhales sleep gas in a 30-foot cone. Each creature in that area must succeed on a DC 12 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if it takes damage or someone uses an action to wake it."
 					]
 				}
-			]
+			],
+			"page": 225
 		},
 		{
 			"source": "ToA",
@@ -1000,12 +1017,12 @@
 			"ac": "15 (studded leather, shield)",
 			"hp": "84 (13d8+26)",
 			"speed": "30 ft.",
-			"str": "16",
-			"dex": "12",
-			"con": "15",
-			"int": "14",
-			"wis": "14",
-			"cha": "16",
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 14,
+			"wis": 14,
+			"cha": 16,
 			"save": "Con +4, Wis +4",
 			"skill": {
 				"athletics": "+5",
@@ -1013,7 +1030,7 @@
 				"insight": "+4",
 				"intimidation": "+5"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Draconic, Dwarvish",
 			"cr": "4",
 			"trait": [
@@ -1049,7 +1066,8 @@
 						"Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 6 (1d10+1) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 227
 		},
 		{
 			"source": "ToA",
@@ -1060,19 +1078,19 @@
 			"ac": "12",
 			"hp": "45 (7d10+7)",
 			"speed": "5 ft.",
-			"str": "15",
-			"dex": "14",
-			"con": "12",
-			"int": "1",
-			"wis": "10",
-			"cha": "2",
+			"str": 15,
+			"dex": 14,
+			"con": 12,
+			"int": 1,
+			"wis": 10,
+			"cha": 2,
 			"skill": {
 				"perception": "+4",
 				"stealth": "+7"
 			},
 			"conditionImmune": "blinded, deafened, exhaustion, prone",
 			"senses": "tremorsense 30 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "1",
 			"trait": [
 				{
@@ -1095,7 +1113,8 @@
 						"Melee Weapon Attack: +4 to hit, reach 5 ft., one Medium or smaller creature. Hit: The target is trapped inside the mantrap's leafy jaws. While trapped in this way, the target is blinded and restrained, has total cover from an attacks and other effects outside the mantrap, and takes 14 (4d6) acid damage at the start of each of the target's turns. If the mantrap dies, the creature inside it is no longer restrained by it. A mantrap can engulf only one creature at a time."
 					]
 				}
-			]
+			],
+			"page": 227
 		},
 		{
 			"source": "ToA",
@@ -1111,19 +1130,19 @@
 			"ac": "10",
 			"hp": "13 (3d8)",
 			"speed": "30 ft.",
-			"str": "6",
-			"dex": "10",
-			"con": "11",
-			"int": "13",
-			"wis": "12",
-			"cha": "16",
+			"str": 6,
+			"dex": 10,
+			"con": 11,
+			"int": 13,
+			"wis": 12,
+			"cha": 16,
 			"skill": {
 				"deception": "+5",
 				"nature": "+3",
 				"persuasion": "+5",
 				"religion": "+3"
 			},
-			"passive": "11",
+			"passive": 11,
 			"languages": "Auran, Common, telepathy 30 ft.",
 			"cr": "1/8",
 			"trait": [
@@ -1143,7 +1162,8 @@
 						"Melee or Ranged Weapon Attack: +2 to hit. reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 228
 		},
 		{
 			"source": "ToA",
@@ -1154,17 +1174,17 @@
 			"ac": "12 (natural armor)",
 			"hp": "26 (4d10+4)",
 			"speed": "30 ft., fly 50 ft.",
-			"str": "15",
-			"dex": "13",
-			"con": "12",
-			"int": "9",
-			"wis": "10",
-			"cha": "11",
+			"str": 15,
+			"dex": 13,
+			"con": 12,
+			"int": 9,
+			"wis": 10,
+			"cha": 11,
 			"skill": {
 				"perception": "+2",
 				"survival": "+2"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "1",
 			"trait": [
@@ -1200,7 +1220,8 @@
 						"Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6+2) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 229
 		},
 		{
 			"source": "ToA",
@@ -1217,12 +1238,12 @@
 			"ac": "15 (bracers of defense)",
 			"hp": "127 (17d8+51) reduced to 107; subtract 1 for each day that passes during the adventure",
 			"speed": "30 ft.",
-			"str": "17",
-			"dex": "16",
-			"con": "17",
-			"int": "18",
-			"wis": "18",
-			"cha": "21",
+			"str": 17,
+			"dex": 16,
+			"con": 17,
+			"int": 18,
+			"wis": 18,
+			"cha": 21,
 			"save": "Con +6, Wis +7",
 			"skill": {
 				"deception": "+8",
@@ -1233,7 +1254,7 @@
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Abyssal, Common, Draconic",
 			"cr": "7",
 			"trait": [
@@ -1303,7 +1324,8 @@
 						"Melee Weapon Arrack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) slashing damage, or 8 (1d10+3) slashing damage when used with two hands, plus 7 (2d6) fire damage."
 					]
 				}
-			]
+			],
+			"page": 230
 		},
 		{
 			"source": "ToA",
@@ -1314,16 +1336,16 @@
 			"ac": "15 (natural armor)",
 			"hp": "157 (15d10+75)",
 			"speed": "50 ft. (in one direction chosen at the start of its turn)",
-			"str": "16",
-			"dex": "12",
-			"con": "15",
-			"int": "14",
-			"wis": "14",
-			"cha": "16",
+			"str": 16,
+			"dex": 12,
+			"con": 15,
+			"int": 14,
+			"wis": 14,
+			"cha": 16,
 			"immune": "poison; bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine weapons",
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened , paralyzed, petrified, poisoned, prone",
+			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone",
 			"senses": "blindsight 120 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "12",
 			"trait": [
 				{
@@ -1358,7 +1380,8 @@
 						"Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 25 (3d12+6) bludgeoning damage. If the target is a Large or smaller creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
 					]
 				}
-			]
+			],
+			"page": 231
 		},
 		{
 			"source": "ToA",
@@ -1369,17 +1392,17 @@
 			"ac": "12",
 			"hp": "27 (5d8+5)",
 			"speed": "30 ft., climb 30 ft.",
-			"str": "14",
-			"dex": "15",
-			"con": "12",
-			"int": "9",
-			"wis": "13",
-			"cha": "9",
+			"str": 14,
+			"dex": 15,
+			"con": 12,
+			"int": 9,
+			"wis": 13,
+			"cha": 9,
 			"skill": {
 				"athletics": "+6",
 				"perception": "+3"
 			},
-			"passive": "13",
+			"passive": 13,
 			"cr": "1",
 			"action": [
 				{
@@ -1406,7 +1429,8 @@
 						"The su-monster targets one creature it can see within 30 feet of it. The target must succeed on a DC 11 Wisdom saving throw or take 17 (5d6) psychic damage and be stunned for 1 minute. The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
-			]
+			],
+			"page": 232
 		},
 		{
 			"source": "ToA",
@@ -1422,12 +1446,12 @@
 			"ac": "14 (leather armor)",
 			"hp": "40 (9d8)",
 			"speed": "30 ft., climb 20 ft.",
-			"str": "10",
-			"dex": "17",
-			"con": "11",
-			"int": "13",
-			"wis": "14",
-			"cha": "15",
+			"str": 10,
+			"dex": 17,
+			"con": 11,
+			"int": 13,
+			"wis": 14,
+			"cha": 15,
 			"skill": {
 				"athletics": "+2",
 				"perception": "+4",
@@ -1435,7 +1459,7 @@
 				"survival": "+6"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Common plus any one language",
 			"cr": "1",
 			"trait": [
@@ -1471,7 +1495,8 @@
 						"Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6+3) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 232
 		},
 		{
 			"source": "ToA",
@@ -1487,12 +1512,12 @@
 			"ac": "12",
 			"hp": "22 (5d8)",
 			"speed": "30 ft., climb 20 ft.",
-			"str": "10",
-			"dex": "15",
-			"con": "11",
-			"int": "14",
-			"wis": "12",
-			"cha": "16",
+			"str": 10,
+			"dex": 15,
+			"con": 11,
+			"int": 14,
+			"wis": 12,
+			"cha": 16,
 			"skill": {
 				"perception": "+3",
 				"performance": "+7",
@@ -1500,7 +1525,7 @@
 				"stealth": "+4"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common plus any two languages",
 			"cr": "1/4",
 			"trait": [
@@ -1536,7 +1561,8 @@
 						"Ranged Weapon Attack: +4 to hit, range 20/ 60 ft., one target. Hit: 4 (1d4+2) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 233
 		},
 		{
 			"source": "ToA",
@@ -1547,15 +1573,15 @@
 			"ac": "10",
 			"hp": "11 (2d8+2)",
 			"speed": "5 ft.",
-			"str": "14",
-			"dex": "15",
-			"con": "12",
-			"int": "9",
-			"wis": "13",
-			"cha": "9",
+			"str": 14,
+			"dex": 15,
+			"con": 12,
+			"int": 9,
+			"wis": 13,
+			"cha": 9,
 			"conditionImmune": "blinded, deafened, exhaustion, prone",
 			"senses": "blindsight 30 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "1/2",
 			"action": [
 				{
@@ -1576,7 +1602,8 @@
 						"Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target takes 5 (2d4) poison damage at the start of each of its turns. The red blossom can grapple only one target at a time. Another creature within reach of the tri-flower frond can use its action to end the grapple on the target."
 					]
 				}
-			]
+			],
+			"page": 234
 		},
 		{
 			"source": "ToA",
@@ -1587,16 +1614,16 @@
 			"ac": "11 (natural armor)",
 			"hp": "136 (13d12+52)",
 			"speed": "40 ft.",
-			"str": "25",
-			"dex": "6",
-			"con": "19",
-			"int": "1",
-			"wis": "3",
-			"cha": "5",
+			"str": 25,
+			"dex": 6,
+			"con": 19,
+			"int": 1,
+			"wis": 3,
+			"cha": 5,
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
-			"passive": "6",
+			"passive": 6,
 			"cr": "8",
 			"trait": [
 				{
@@ -1631,7 +1658,8 @@
 						"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (3d8+7) bludgeoning damage."
 					]
 				}
-			]
+			],
+			"page": 241
 		},
 		{
 			"source": "ToA",
@@ -1647,12 +1675,12 @@
 			"ac": "11",
 			"hp": "31 (7d8)",
 			"speed": "30 ft.",
-			"str": "9",
-			"dex": "12",
-			"con": "10",
-			"int": "15",
-			"wis": "11",
-			"cha": "16",
+			"str": 9,
+			"dex": 12,
+			"con": 10,
+			"int": 15,
+			"wis": 11,
+			"cha": 16,
 			"save": "Con +2, Wis +2",
 			"skill": {
 				"animal handling": "+4",
@@ -1667,7 +1695,7 @@
 				"sleight of hand": "+3",
 				"survival": "+2"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Dwarvish, Elvish",
 			"cr": "1/4",
 			"trait": [
@@ -1687,7 +1715,8 @@
 						"Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d4+1) piercing damage."
 					]
 				}
-			]
+			],
+			"page": 235
 		},
 		{
 			"source": "ToA",
@@ -1703,12 +1732,12 @@
 			"ac": "13 (natural armor)",
 			"hp": "71 (11d8+22)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "11",
-			"con": "14",
-			"int": "18",
-			"wis": "16",
-			"cha": "18",
+			"str": 10,
+			"dex": 11,
+			"con": 14,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
 			"save": "Int +7, Wis +6",
 			"skill": {
 				"arcana": "+7",
@@ -1717,7 +1746,7 @@
 				"insight": "+6",
 				"survival": "+6"
 			},
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common, Draconic, Dwarvish, Elvish, Halfling",
 			"cr": "7",
 			"trait": [
@@ -1747,7 +1776,8 @@
 						"Melee Weapon Attack:+3 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage when used with two hands."
 					]
 				}
-			]
+			],
+			"page": 236
 		},
 		{
 			"source": "ToA",
@@ -1758,15 +1788,15 @@
 			"ac": "6",
 			"hp": "60 (11d8+11)",
 			"speed": "5 ft., climb 5 ft.",
-			"str": "12",
-			"dex": "3",
-			"con": "12",
-			"int": "1",
-			"wis": "10",
-			"cha": "3",
+			"str": 12,
+			"dex": 3,
+			"con": 12,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
 			"conditionImmune": "blinded, deafened, exhaustion, prone",
 			"senses": "blindsight 30 ft.",
-			"passive": "10",
+			"passive": 10,
 			"cr": "2",
 			"trait": [
 				{
@@ -1795,7 +1825,8 @@
 						"The creeper's flowers release a strong musk that targets all humanoids within 30 feet of it. Each target must succeed on a DC 11 Wisdom saving throw or be charmed by the creeper for 1 minute. A creature charmed in this way does nothing on its turn except move as close as it can to the creeper. A creature charmed by the creeper can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
-			]
+			],
+			"page": 237
 		},
 		{
 			"source": "ToA",
@@ -1806,15 +1837,15 @@
 			"ac": "9",
 			"hp": "33 (6d8+6)",
 			"speed": "20 ft.",
-			"str": "13",
-			"dex": "9",
-			"con": "12",
-			"int": "1",
-			"wis": "6",
-			"cha": "3",
+			"str": 13,
+			"dex": 9,
+			"con": 12,
+			"int": 1,
+			"wis": 6,
+			"cha": 3,
 			"conditionImmune": "charmed, exhaustion",
 			"senses": "blindsight 30 ft.",
-			"passive": "8",
+			"passive": 8,
 			"cr": "1/4",
 			"trait": [
 				{
@@ -1831,7 +1862,8 @@
 						"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8+1) bludgeoning damage."
 					]
 				}
-			]
+			],
+			"page": 237
 		},
 		{
 			"source": "ToA",
@@ -1847,13 +1879,13 @@
 			"ac": "13 (natural armor)",
 			"hp": "110 (17d8+34) ",
 			"speed": "30 ft.",
-			"str": "14",
-			"dex": "10",
-			"con": "14",
-			"int": "16",
-			"wis": "15",
-			"cha": "18",
-			"save": "Con +5, Wis +5 ",
+			"str": 14,
+			"dex": 10,
+			"con": 14,
+			"int": 16,
+			"wis": 15,
+			"cha": 18,
+			"save": "Con +5, Wis +5",
 			"skill": {
 				"arcana": "+6",
 				"history": "+9",
@@ -1862,7 +1894,7 @@
 			},
 			"resist": "fire",
 			"senses": "blindsight 10 ft., darkvision 60 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Draconic, Dwarvish, Primordial",
 			"cr": "8",
 			"trait": [
@@ -1912,7 +1944,8 @@
 						"Zindar exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 15 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				}
-			]
+			],
+			"page": 239
 		},
 		{
 			"source": "ToA",
@@ -1923,16 +1956,16 @@
 			"ac": "10 (see Natural Armor feature)",
 			"hp": "27 (6d6+6)",
 			"speed": "30 ft., climb 30 ft.",
-			"str": "13",
-			"dex": "11",
-			"con": "13",
-			"int": "3",
-			"wis": "12",
-			"cha": "7",
+			"str": 13,
+			"dex": 11,
+			"con": 13,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
 			"skill": {
 				"athletics": "+3"
 			},
-			"passive": "11",
+			"passive": 11,
 			"cr": "1/2",
 			"trait": [
 				{
@@ -1955,7 +1988,8 @@
 						"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6+1) slashing damage, and if the target is a creature wearing armor, carrying a shield, or in possession of a magic item that improves its AC, it must make a DC 11 Dexterity saving throw. On a failed save, one such item worn or carried by the creature (the target's choice) magically deteriorates, taking a permanent and cumulative -1 penalty to the AC it offers, and the zorbo gains a +1 bonus to AC until the start of its next turn. Armor reduced to an AC of 10 or a shield or magic item that drops to a 0 AC increase is destroyed."
 					]
 				}
-			]
+			],
+			"page": 241
 		}
 	]
 }

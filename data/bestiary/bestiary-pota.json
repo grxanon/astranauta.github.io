@@ -14,12 +14,12 @@
 			"ac": "13 (16 with mage armor)",
 			"hp": "66 (12d8+12)",
 			"speed": "30 ft.",
-			"str": "8",
-			"dex": "16",
-			"con": "12",
-			"int": "17",
-			"wis": "10",
-			"cha": "16",
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 17,
+			"wis": 10,
+			"cha": 16,
 			"skill": {
 				"arcana": "+6",
 				"history": "+6",
@@ -27,7 +27,7 @@
 			},
 			"resist": "lightning",
 			"senses": "darkvision 60 ft.",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Auran, Common, Elvish",
 			"cr": "7",
 			"trait": [
@@ -53,13 +53,13 @@
 					"name": "Spellcasting",
 					"text": [
 						"Aerisi is a 12th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Aerisi has the following wizard spells prepared:",
-						"• Cantrips (at will): gust, mage hand, message, prestidigitation, ray of frost, shocking grasp",
-						"• 1st level (4 slots): charm person, feather fall, mage armor, thunderwave",
-						"• 2nd level (3 slots): dust devil, gust of wind, invisibility",
-						"• 3rd level (3 slots): fly, gaseous form, lightning bolt",
-						"• 4th level (3 slots): ice storm, storm sphere",
-						"• 5th level (2 slots): cloudkill, seeming (cast each day)",
-						"• 6th level (1 slot): chain lightning"
+						"\u2022 Cantrips (at will): gust, mage hand, message, prestidigitation, ray of frost, shocking grasp",
+						"\u2022 1st level (4 slots): charm person, feather fall, mage armor, thunderwave",
+						"\u2022 2nd level (3 slots): dust devil, gust of wind, invisibility",
+						"\u2022 3rd level (3 slots): fly, gaseous form, lightning bolt",
+						"\u2022 4th level (3 slots): ice storm, storm sphere",
+						"\u2022 5th level (2 slots): cloudkill, seeming (cast each day)",
+						"\u2022 6th level (1 slot): chain lightning"
 					]
 				}
 			],
@@ -75,7 +75,9 @@
 					]
 				}
 			],
-			"spells": "gust (ee), mage hand, message, prestidigitation, ray of frost, shocking grasp, charm person, feather fall, mage armor, thunderwave, dust devil (ee), gust of wind, invisibility, fly, gaseous form, lightning bolt, ice storm, storm sphere (ee), cloudkill, seeming, chain lightning"
+			"legendaryGroup": "Aerisi Kalinoth",
+			"spells": "gust (ee), mage hand, message, prestidigitation, ray of frost, shocking grasp, charm person, feather fall, mage armor, thunderwave, dust devil (ee), gust of wind, invisibility, fly, gaseous form, lightning bolt, ice storm, storm sphere (ee), cloudkill, seeming, chain lightning",
+			"page": 192
 		},
 		{
 			"name": "Air Elemental Myrmidon",
@@ -86,17 +88,17 @@
 			"ac": "18 (plate)",
 			"hp": "117 (18d8+36)",
 			"speed": "30 ft., fly 30 ft.",
-			"str": "18",
-			"dex": "14",
-			"con": "14",
-			"int": "9",
-			"wis": "10",
-			"cha": "10",
+			"str": 18,
+			"dex": 14,
+			"con": 14,
+			"int": 9,
+			"wis": 10,
+			"cha": 10,
 			"resist": "lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "poison",
 			"conditionImmune": "paralyzed, petrified, poisoned, prone",
 			"senses": "darkvision 60 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Auran, one language of its creator's choice",
 			"cr": "7",
 			"trait": [
@@ -132,7 +134,8 @@
 						"Lightning Strike|7|1d8+4+4d8"
 					]
 				}
-			]
+			],
+			"page": 212
 		},
 		{
 			"name": "Bastian Thermandar",
@@ -148,19 +151,19 @@
 			"ac": "12 (15 with mage armor)",
 			"hp": "78 (12d8+24)",
 			"speed": "30 ft.",
-			"str": "12",
-			"dex": "14",
-			"con": "15",
-			"int": "11",
-			"wis": "9",
-			"cha": "18",
+			"str": 12,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 9,
+			"cha": 18,
 			"skill": {
 				"arcana": "+3",
 				"deception": "+7"
 			},
 			"resist": "fire",
 			"senses": "darkvision 60 ft.",
-			"passive": "9",
+			"passive": 9,
 			"languages": "Common, Ignan",
 			"cr": "8",
 			"trait": [
@@ -168,20 +171,20 @@
 					"name": "Innate Spellcasting",
 					"text": [
 						"Bastian's innate spellcasting ability is Constitution (spell save DC 13, +5 to hit with spell attacks). He can innately cast the following spells:",
-						"• At will: produce flame",
-						"• 1/day: burning hands"
+						"\u2022 At will: produce flame",
+						"\u2022 1/day: burning hands"
 					]
 				},
 				{
 					"name": "Spellcasting",
 					"text": [
 						"Bastian is a 9th-level spellcaster. His spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). Bastian knows the following sorcerer spells:",
-						"• Cantrips (at will): fire bolt, mage hand, message, prestidigitation, shocking grasp",
-						"• 1st level (4 slots): mage armor, magic missile, shield",
-						"• 2nd level (3 slots): misty step, scorching ray",
-						"• 3rd level (3 slots): counterspell, fireball",
-						"• 4th level (3 slots): dimension door, wall of fire",
-						"• 5th level (1 slot): hold monster"
+						"\u2022 Cantrips (at will): fire bolt, mage hand, message, prestidigitation, shocking grasp",
+						"\u2022 1st level (4 slots): mage armor, magic missile, shield",
+						"\u2022 2nd level (3 slots): misty step, scorching ray",
+						"\u2022 3rd level (3 slots): counterspell, fireball",
+						"\u2022 4th level (3 slots): dimension door, wall of fire",
+						"\u2022 5th level (1 slot): hold monster"
 					]
 				}
 			],
@@ -196,7 +199,8 @@
 					]
 				}
 			],
-			"spells": "produce flame, burning hands, fire bolt, mage hand, message, prestidigitation, shocking grasp, mage armor, magic missile, shield, misty step, scorching ray, counterspell, fireball, dimension door, wall of fire, hold monster"
+			"spells": "produce flame, burning hands, fire bolt, mage hand, message, prestidigitation, shocking grasp, mage armor, magic missile, shield, misty step, scorching ray, counterspell, fireball, dimension door, wall of fire, hold monster",
+			"page": 201
 		},
 		{
 			"name": "Black Earth Guard",
@@ -212,17 +216,17 @@
 			"ac": "18 (plate)",
 			"hp": "39 (6d8+12)",
 			"speed": "30 ft.",
-			"str": "17",
-			"dex": "11",
-			"con": "14",
-			"int": "10",
-			"wis": "10",
-			"cha": "9",
+			"str": 17,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 9,
 			"skill": {
 				"intimidation": "+1",
 				"perception": "+2"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "2",
 			"action": [
@@ -249,7 +253,8 @@
 						"When the guard is subjected to an effect that would move it, knock it prone, or both, it can use its reaction to be neither moved nor knocked prone."
 					]
 				}
-			]
+			],
+			"page": 195
 		},
 		{
 			"name": "Black Earth Priest",
@@ -265,18 +270,18 @@
 			"ac": "17 (splint)",
 			"hp": "45 (7d8+14)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "11",
-			"con": "14",
-			"int": "12",
-			"wis": "10",
-			"cha": "16",
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 16,
 			"skill": {
 				"intimidation": "+5",
 				"religion": "+3",
 				"persuasion": "+5"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common, Terran",
 			"cr": "3",
 			"trait": [
@@ -284,10 +289,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): acid splash, blade ward, light, mending, mold earth",
-						"• 1st level (4 slots): earth tremor, expeditious retreat, shield",
-						"• 2nd level (3 slots): shatter, spider climb",
-						"• 3rd level (2 slots): slow"
+						"\u2022 Cantrips (at will): acid splash, blade ward, light, mending, mold earth",
+						"\u2022 1st level (4 slots): earth tremor, expeditious retreat, shield",
+						"\u2022 2nd level (3 slots): shatter, spider climb",
+						"\u2022 3rd level (2 slots): slow"
 					]
 				}
 			],
@@ -316,7 +321,8 @@
 					]
 				}
 			],
-			"spells": "acid splash, blade ward, light, mending, mold earth (ee), earth tremor (ee), expeditious retreat, shield, shatter, spider climb, slow"
+			"spells": "acid splash, blade ward, light, mending, mold earth (ee), earth tremor (ee), expeditious retreat, shield, shatter, spider climb, slow",
+			"page": 195
 		},
 		{
 			"name": "Burrowshark",
@@ -332,19 +338,19 @@
 			"ac": "18 (plate)",
 			"hp": "82 (11d8+33)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "12",
-			"con": "16",
-			"int": "10",
-			"wis": "11",
-			"cha": "13",
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 13,
 			"skill": {
 				"animal handling": "+2",
 				"athletics": "+6",
 				"intimidation": "+3",
 				"perception": "+2"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "4",
 			"trait": [
@@ -380,7 +386,8 @@
 						"When the burrowshark is subjected to an effect that would move it, knock it prone, or both, it can use its reaction to be neither moved nor knocked prone."
 					]
 				}
-			]
+			],
+			"page": 196
 		},
 		{
 			"name": "Crushing Wave Priest",
@@ -396,18 +403,18 @@
 			"ac": "13 (chain shirt)",
 			"hp": "52 (8d8+16)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "11",
-			"con": "14",
-			"int": "10",
-			"wis": "11",
-			"cha": "16",
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 16,
 			"skill": {
 				"deception": "+5",
 				"religion": "+2",
 				"stealth": "+2"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Aquan, Common",
 			"cr": "2",
 			"trait": [
@@ -415,10 +422,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): chill touch, mage hand, minor illusion, prestidigitation, ray of frost",
-						"• 1st level (4 slots): expeditious retreat, ice knife, magic missile, shield",
-						"• 2nd level (3 slots): blur, hold person",
-						"• 3rd level (2 slots): sleet storm"
+						"\u2022 Cantrips (at will): chill touch, mage hand, minor illusion, prestidigitation, ray of frost",
+						"\u2022 1st level (4 slots): expeditious retreat, ice knife, magic missile, shield",
+						"\u2022 2nd level (3 slots): blur, hold person",
+						"\u2022 3rd level (2 slots): sleet storm"
 					]
 				}
 			],
@@ -434,7 +441,8 @@
 					]
 				}
 			],
-			"spells": "chill touch, mage hand, minor illusion, prestidigitation, ray of frost, expeditious retreat, ice knife (ee), magic missile, shield, blur, hold person, sleet storm"
+			"spells": "chill touch, mage hand, minor illusion, prestidigitation, ray of frost, expeditious retreat, ice knife (ee), magic missile, shield, blur, hold person, sleet storm",
+			"page": 205
 		},
 		{
 			"name": "Crushing Wave Reaver",
@@ -450,17 +458,17 @@
 			"ac": "14 (shield)",
 			"hp": "22 (4d8+4)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "14",
-			"con": "13",
-			"int": "10",
-			"wis": "11",
-			"cha": "8",
+			"str": 15,
+			"dex": 14,
+			"con": 13,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
 			"skill": {
 				"athletics": "+4",
 				"stealth": "+4"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common",
 			"cr": "1/2",
 			"action": [
@@ -483,7 +491,8 @@
 						"Javelin|4|1d6+2"
 					]
 				}
-			]
+			],
+			"page": 205
 		},
 		{
 			"name": "Dark Tide Knight",
@@ -499,17 +508,17 @@
 			"ac": "13",
 			"hp": "58 (9d8+18)",
 			"speed": "30 ft.",
-			"str": "17",
-			"dex": "16",
-			"con": "14",
-			"int": "10",
-			"wis": "11",
-			"cha": "11",
+			"str": 17,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
 			"skill": {
 				"athletics": "+7",
 				"stealth": "+7"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common",
 			"cr": "3",
 			"trait": [
@@ -562,7 +571,8 @@
 						"When an attacker the knight can see hits it with an attack, the knight can halve the damage against it."
 					]
 				}
-			]
+			],
+			"page": 205
 		},
 		{
 			"name": "Drannin Splithelm",
@@ -578,19 +588,19 @@
 			"ac": "18 (plate)",
 			"hp": "93 (11d8+44)",
 			"speed": "25 ft.",
-			"str": "19",
-			"dex": "10",
-			"con": "18",
-			"int": "11",
-			"wis": "8",
-			"cha": "12",
+			"str": 19,
+			"dex": 10,
+			"con": 18,
+			"int": 11,
+			"wis": 8,
+			"cha": 12,
 			"skill": {
 				"athletics": "+7",
 				"intimidation": "+4"
 			},
 			"resist": "cold, poison",
 			"senses": "darkvision 60 ft.",
-			"passive": "9",
+			"passive": 9,
 			"languages": "Common, Dwarvish",
 			"cr": "7",
 			"trait": [
@@ -619,7 +629,7 @@
 					]
 				},
 				{
-					"name": "Second  Wind (Recharges after a Short or Long Rest)",
+					"name": "Second Wind (Recharges after a Short or Long Rest)",
 					"text": [
 						"Drannin can use a bonus action to regain 16 (1d10+11) hit points."
 					],
@@ -650,7 +660,8 @@
 						"Greataxe|7|2d12+4"
 					]
 				}
-			]
+			],
+			"page": 210
 		},
 		{
 			"name": "Earth Elemental Myrmidon",
@@ -661,17 +672,17 @@
 			"ac": "18 (plate)",
 			"hp": "127 (17d8+51)",
 			"speed": "30 ft.",
-			"str": "18",
-			"dex": "10",
-			"con": "17",
-			"int": "8",
-			"wis": "10",
-			"cha": "10",
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
 			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "poison",
 			"conditionImmune": "paralyzed, petrified, poisoned, prone",
 			"senses": "darkvision 60 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Terran, one language of its creator's choice",
 			"cr": "7",
 			"trait": [
@@ -707,7 +718,8 @@
 						"Thunderous Strike|7|2d6+4+3d10"
 					]
 				}
-			]
+			],
+			"page": 212
 		},
 		{
 			"name": "Elizar Dryflagon",
@@ -723,17 +735,17 @@
 			"ac": "14 (hide)",
 			"hp": "71 (11d8+22)",
 			"speed": "30 ft.",
-			"str": "13",
-			"dex": "15",
-			"con": "14",
-			"int": "11",
-			"wis": "18",
-			"cha": "10",
+			"str": 13,
+			"dex": 15,
+			"con": 14,
+			"int": 11,
+			"wis": 18,
+			"cha": 10,
 			"skill": {
 				"arcana": "+3",
 				"deception": "+3"
 			},
-			"passive": "14",
+			"passive": 14,
 			"languages": "Common, Druidic",
 			"cr": "5",
 			"trait": [
@@ -741,11 +753,11 @@
 					"name": "Spellcasting",
 					"text": [
 						"Elizar is a 7th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). Elizar has the following druid spells prepared:",
-						"• Cantrips (at will): druidcraft, guidance, poison spray, produce flame",
-						"• 1st level (4 slots): animal friendship, faerie fire, healing word, jump, thunderwave",
-						"• 2nd level (3 slots): flame blade, spike growth",
-						"• 3rd level (3 slots): dispel magic, stinking cloud",
-						"• 4th level (2 slots): blight, wall of fire"
+						"\u2022 Cantrips (at will): druidcraft, guidance, poison spray, produce flame",
+						"\u2022 1st level (4 slots): animal friendship, faerie fire, healing word, jump, thunderwave",
+						"\u2022 2nd level (3 slots): flame blade, spike growth",
+						"\u2022 3rd level (3 slots): dispel magic, stinking cloud",
+						"\u2022 4th level (2 slots): blight, wall of fire"
 					]
 				},
 				{
@@ -766,7 +778,8 @@
 					]
 				}
 			],
-			"spells": "druidcraft, guidance, poison spray, produce flame, animal friendship, faerie fire, healing word, jump, thunderwave, flame blade, spike growth, dispel magic, stinking cloud, blight, wall of fire"
+			"spells": "druidcraft, guidance, poison spray, produce flame, animal friendship, faerie fire, healing word, jump, thunderwave, flame blade, spike growth, dispel magic, stinking cloud, blight, wall of fire",
+			"page": 202
 		},
 		{
 			"name": "Eternal Flame Guardian",
@@ -782,18 +795,18 @@
 			"ac": "17 (breastplate, shield; 15 while using a crossbow)",
 			"hp": "45 (7d8+14)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "13",
-			"con": "14",
-			"int": "8",
-			"wis": "11",
-			"cha": "13",
+			"str": 15,
+			"dex": 13,
+			"con": 14,
+			"int": 8,
+			"wis": 11,
+			"cha": 13,
 			"skill": {
 				"intimidation": "+3",
 				"perception": "+2"
 			},
 			"resist": "fire",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common",
 			"cr": "2",
 			"trait": [
@@ -833,7 +846,8 @@
 						"Heavy Crossbow|3|1d10+1"
 					]
 				}
-			]
+			],
+			"page": 200
 		},
 		{
 			"name": "Eternal Flame Priest",
@@ -849,19 +863,19 @@
 			"ac": "12 (15 with mage armor)",
 			"hp": "52 (8d8+16)",
 			"speed": "30 ft.",
-			"str": "12",
-			"dex": "15",
-			"con": "14",
-			"int": "10",
-			"wis": "11",
-			"cha": "16",
+			"str": 12,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 16,
 			"skill": {
 				"deception": "+5",
 				"intimidation": "+5",
 				"religion": "+2"
 			},
 			"resist": "fire",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common, Ignan",
 			"cr": "3",
 			"trait": [
@@ -869,10 +883,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): control flames, create bonfire, fire bolt, light, minor illusion",
-						"• 1st level (4 slots): burning hands, expeditious retreat, mage armor",
-						"• 2nd level (3 slots): blur, scorching ray",
-						"• 3rd level (2 slots): fireball"
+						"\u2022 Cantrips (at will): control flames, create bonfire, fire bolt, light, minor illusion",
+						"\u2022 1st level (4 slots): burning hands, expeditious retreat, mage armor",
+						"\u2022 2nd level (3 slots): blur, scorching ray",
+						"\u2022 3rd level (2 slots): fireball"
 					]
 				}
 			],
@@ -887,7 +901,8 @@
 					]
 				}
 			],
-			"spells": "control flames (ee), create bonfire (ee), fire bolt, light, minor illusion, burning hands, expeditious retreat, mage armor, blur, scorching ray, fireball"
+			"spells": "control flames (ee), create bonfire (ee), fire bolt, light, minor illusion, burning hands, expeditious retreat, mage armor, blur, scorching ray, fireball",
+			"page": 200
 		},
 		{
 			"name": "Fathomer",
@@ -903,18 +918,18 @@
 			"ac": "10 (13 with mage armor)",
 			"hp": "52 (8d8+16)",
 			"speed": "30 ft.",
-			"str": "14",
-			"dex": "11",
-			"con": "14",
-			"int": "11",
-			"wis": "11",
-			"cha": "15",
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
 			"skill": {
 				"arcana": "+2",
 				"perception": "+4",
 				"stealth": "+4"
 			},
-			"passive": "14",
+			"passive": 14,
 			"languages": "Aquan, Common",
 			"cr": "2",
 			"trait": [
@@ -935,10 +950,10 @@
 					"name": "Spellcasting (Human Form Only)",
 					"text": [
 						"The fathomer is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It has two 3rd-level spell slots, which it regains after finishing a short or long rest, and knows the following warlock spells:",
-						"• Cantrips (at will): chill touch, eldritch blast, mage hand",
-						"• 1st level: armor of Agathys, expeditious retreat, hex",
-						"• 2nd level: invisibility",
-						"• 3rd level: Vampiric touch"
+						"\u2022 Cantrips (at will): chill touch, eldritch blast, mage hand",
+						"\u2022 1st level: armor of Agathys, expeditious retreat, hex",
+						"\u2022 2nd level: invisibility",
+						"\u2022 3rd level: Vampiric touch"
 					]
 				}
 			],
@@ -962,7 +977,8 @@
 					]
 				}
 			],
-			"spells": "chill touch, eldritch blast, mage hand, armor of agathys, expeditious retreat, hex, invisibility, vampiric touch"
+			"spells": "chill touch, eldritch blast, mage hand, armor of agathys, expeditious retreat, hex, invisibility, vampiric touch",
+			"page": 207
 		},
 		{
 			"name": "Feathergale Knight",
@@ -978,17 +994,17 @@
 			"ac": "16 (scale)",
 			"hp": "33 (6d8+6)",
 			"speed": "30 ft.",
-			"str": "14",
-			"dex": "14",
-			"con": "12",
-			"int": "11",
-			"wis": "10",
-			"cha": "14",
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 14,
 			"skill": {
 				"animal handling": "+2",
 				"history": "+2"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Auran, Common",
 			"cr": "1",
 			"trait": [
@@ -996,8 +1012,8 @@
 					"name": "Spellcasting",
 					"text": [
 						"The knight is a 1st-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It knows the following sorcerer spell:",
-						"• Cantrips (at will): gust, light, message, ray of frost",
-						"• 1st level (2 slots): expeditious retreat, feather fall"
+						"\u2022 Cantrips (at will): gust, light, message, ray of frost",
+						"\u2022 1st level (2 slots): expeditious retreat, feather fall"
 					]
 				}
 			],
@@ -1029,7 +1045,8 @@
 					]
 				}
 			],
-			"spells": "gust (ee), light, message, ray of frost, expeditious retreat, feather fall"
+			"spells": "gust (ee), light, message, ray of frost, expeditious retreat, feather fall",
+			"page": 189
 		},
 		{
 			"name": "Fire Elemental Myrmidon",
@@ -1040,17 +1057,17 @@
 			"ac": "18 (plate)",
 			"hp": "117 (18d8+36)",
 			"speed": "40 ft.",
-			"str": "13",
-			"dex": "18",
-			"con": "15",
-			"int": "9",
-			"wis": "10",
-			"cha": "10",
+			"str": 13,
+			"dex": 18,
+			"con": 15,
+			"int": 9,
+			"wis": 10,
+			"cha": 10,
 			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "fire, poison",
 			"conditionImmune": "paralyzed, petrified, poisoned, prone",
 			"senses": "darkvision 60 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Ignan, one language of its creator's choice",
 			"cr": "7",
 			"trait": [
@@ -1098,7 +1115,8 @@
 						"Fiery Strikes|7|1d6+4+1d10"
 					]
 				}
-			]
+			],
+			"page": 213
 		},
 		{
 			"name": "Flamewrath",
@@ -1114,18 +1132,18 @@
 			"ac": "12 (15 with mage armor)",
 			"hp": "105 (14d8+42)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "14",
-			"con": "16",
-			"int": "11",
-			"wis": "10",
-			"cha": "16",
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
 			"skill": {
 				"arcana": "+3",
 				"religion": "+3"
 			},
 			"immune": "fire",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common, Ignan",
 			"cr": "6",
 			"trait": [
@@ -1133,11 +1151,11 @@
 					"name": "Spellcasting",
 					"text": [
 						"The flamewrath is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): control flames, fire bolt, friends, light, minor illusion",
-						"• 1st level (4 slots): burning hands, color spray, mage armor",
-						"• 2nd level (3 slots): scorching ray, suggestion",
-						"• 3rd level (3 slots): fireball, hypnotic pattern",
-						"• 4th level (1 slot): fire shield (see Wreathed in Flame)"
+						"\u2022 Cantrips (at will): control flames, fire bolt, friends, light, minor illusion",
+						"\u2022 1st level (4 slots): burning hands, color spray, mage armor",
+						"\u2022 2nd level (3 slots): scorching ray, suggestion",
+						"\u2022 3rd level (3 slots): fireball, hypnotic pattern",
+						"\u2022 4th level (1 slot): fire shield (see Wreathed in Flame)"
 					]
 				},
 				{
@@ -1158,7 +1176,8 @@
 					]
 				}
 			],
-			"spells": "control flames (ee), fire bolt, friends, light, minor illusion, burning hands, color spray, mage armor, scorching ray, suggestion, fireball, hypnotic pattern, fire shield"
+			"spells": "control flames (ee), fire bolt, friends, light, minor illusion, burning hands, color spray, mage armor, scorching ray, suggestion, fireball, hypnotic pattern, fire shield",
+			"page": 201
 		},
 		{
 			"name": "Gar Shatterkeel",
@@ -1174,18 +1193,18 @@
 			"ac": "16 (natural armor)",
 			"hp": "30 (15d8+45)",
 			"speed": "30 ft., swim 30 ft.",
-			"str": "15",
-			"dex": "15",
-			"con": "16",
-			"int": "12",
-			"wis": "18",
-			"cha": "13",
+			"str": 15,
+			"dex": 15,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 13,
 			"skill": {
 				"nature": "+8",
 				"survival": "+8"
 			},
 			"resist": "cold",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Aquan, Common",
 			"cr": "9",
 			"trait": [
@@ -1205,12 +1224,12 @@
 					"name": "Spellcasting",
 					"text": [
 						"Gar is a 9th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). He has the following druid spells prepared:",
-						"• Cantrips (at will): mending, resistance, shape water",
-						"• 1st level (4 slots): create or destroy water, cure wounds, fog cloud, thunderwave",
-						"• 2nd level (3 slots): darkvision, hold person, protection from poison",
-						"• 3rd level (3 slots): call lightning, sleet storm, tidal wave",
-						"• 4th level (3 slots): control water, ice storm",
-						"• 5th level (1 slot): scrying"
+						"\u2022 Cantrips (at will): mending, resistance, shape water",
+						"\u2022 1st level (4 slots): create or destroy water, cure wounds, fog cloud, thunderwave",
+						"\u2022 2nd level (3 slots): darkvision, hold person, protection from poison",
+						"\u2022 3rd level (3 slots): call lightning, sleet storm, tidal wave",
+						"\u2022 4th level (3 slots): control water, ice storm",
+						"\u2022 5th level (1 slot): scrying"
 					]
 				},
 				{
@@ -1253,7 +1272,9 @@
 					]
 				}
 			],
-			"spells": "mending, resistance, shape water (ee), create or destroy water, cure wounds, fog cloud, thunderwave, darkvision, hold person, protection from poison, call lightning, sleet storm, tidal wave (ee), control water, ice storm, scrying"
+			"legendaryGroup": "Gar Shatterkeel",
+			"spells": "mending, resistance, shape water (ee), create or destroy water, cure wounds, fog cloud, thunderwave, darkvision, hold person, protection from poison, call lightning, sleet storm, tidal wave (ee), control water, ice storm, scrying",
+			"page": 208
 		},
 		{
 			"name": "Ghald",
@@ -1269,19 +1290,19 @@
 			"ac": "15 (natural armor)",
 			"hp": "102 (12d10+36)",
 			"speed": "30 ft., swim 50 ft.",
-			"str": "19",
-			"dex": "17",
-			"con": "16",
-			"int": "14",
-			"wis": "13",
-			"cha": "17",
+			"str": 19,
+			"dex": 17,
+			"con": 16,
+			"int": 14,
+			"wis": 13,
+			"cha": 17,
 			"save": "Dex +6, Con +6, Int +5, Wis +4",
 			"skill": {
 				"insight": "+4",
 				"perception": "+7"
 			},
 			"senses": "darkvision 120 ft.",
-			"passive": "17",
+			"passive": 17,
 			"languages": "Common, Sahuagin",
 			"cr": "7",
 			"trait": [
@@ -1347,7 +1368,8 @@
 						"Garrote|7|2d4+4"
 					]
 				}
-			]
+			],
+			"page": 210
 		},
 		{
 			"name": "Hellenrae",
@@ -1363,12 +1385,12 @@
 			"ac": "16",
 			"hp": "78 (12d8+24)",
 			"speed": "30 ft.",
-			"str": "13",
-			"dex": "18",
-			"con": "14",
-			"int": "10",
-			"wis": "15",
-			"cha": "13",
+			"str": 13,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 15,
+			"cha": 13,
 			"skill": {
 				"acrobatics": "+7",
 				"athletics": "+4",
@@ -1378,7 +1400,7 @@
 			"immune": "poison",
 			"conditionImmune": "blinded, poisoned",
 			"senses": "blindsight 60 ft. (blind beyond this radius)",
-			"passive": "15",
+			"passive": 15,
 			"languages": "Common, Terran",
 			"cr": "5",
 			"trait": [
@@ -1431,7 +1453,8 @@
 						"Hellenrae adds 3 to her AC against one melee or ranged weapon attack that would hit her. To do so, she must be able to sense the attacker with her blindsight. If the attack misses, Hellenrae can make one melee attack against the attacker if it is within her reach."
 					]
 				}
-			]
+			],
+			"page": 198
 		},
 		{
 			"name": "Howling Hatred Initiate",
@@ -1447,18 +1470,18 @@
 			"ac": "13 (leather)",
 			"hp": "9 (2d8)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "15",
-			"con": "10",
-			"int": "10",
-			"wis": "9",
-			"cha": "11",
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 10,
+			"wis": 9,
+			"cha": 11,
 			"skill": {
 				"deception": "+2",
 				"religion": "+2",
 				"stealth": "+4"
 			},
-			"passive": "9",
+			"passive": 9,
 			"languages": "Common",
 			"cr": "1/8",
 			"trait": [
@@ -1485,7 +1508,8 @@
 						"Dagger|4|1d4+2"
 					]
 				}
-			]
+			],
+			"page": 190
 		},
 		{
 			"name": "Howling Hatred Priest",
@@ -1501,18 +1525,18 @@
 			"ac": "15 (studded leather)",
 			"hp": "45 (10d8)",
 			"speed": "30 ft.",
-			"str": "12",
-			"dex": "16",
-			"con": "10",
-			"int": "14",
-			"wis": "10",
-			"cha": "14",
+			"str": 12,
+			"dex": 16,
+			"con": 10,
+			"int": 14,
+			"wis": 10,
+			"cha": 14,
 			"skill": {
 				"acrobatics": "+5",
 				"intimidation": "+4",
 				"religion": "+4"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Auran, Common",
 			"cr": "2",
 			"trait": [
@@ -1526,10 +1550,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): blade ward, gust, light, prestidigitation, shocking grasp",
-						"• 1st level (4 slots): feather fall, shield, witch bolt",
-						"• 2nd level (3 slots): dust devil, gust of wind",
-						"• 3rd level (2 slots): gaseous form"
+						"\u2022 Cantrips (at will): blade ward, gust, light, prestidigitation, shocking grasp",
+						"\u2022 1st level (4 slots): feather fall, shield, witch bolt",
+						"\u2022 2nd level (3 slots): dust devil, gust of wind",
+						"\u2022 3rd level (2 slots): gaseous form"
 					]
 				}
 			],
@@ -1559,7 +1583,8 @@
 					]
 				}
 			],
-			"spells": "blade ward, gust (ee), light, prestidigitation, shocking grasp, feather fall, shield, witch bolt, dust devil (ee), gust of wind, gaseous form"
+			"spells": "blade ward, gust (ee), light, prestidigitation, shocking grasp, feather fall, shield, witch bolt, dust devil (ee), gust of wind, gaseous form",
+			"page": 190
 		},
 		{
 			"name": "Hurricane",
@@ -1575,16 +1600,16 @@
 			"ac": "14",
 			"hp": "33 (6d8+6)",
 			"speed": "45 ft.",
-			"str": "12",
-			"dex": "16",
-			"con": "13",
-			"int": "10",
-			"wis": "12",
-			"cha": "10",
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
 			"skill": {
 				"acrobatics": "+5"
 			},
-			"passive": "11",
+			"passive": 11,
 			"languages": "Auran, Common",
 			"cr": "2",
 			"trait": [
@@ -1592,9 +1617,9 @@
 					"name": "Spellcasting",
 					"text": [
 						"The hurricane is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): blade ward, gust, light, prestidigitation",
-						"• 1st level (4 slots): feather fall, jump, thunderwave",
-						"• 2nd level (2 slots): gust of wind"
+						"\u2022 Cantrips (at will): blade ward, gust, light, prestidigitation",
+						"\u2022 1st level (4 slots): feather fall, jump, thunderwave",
+						"\u2022 2nd level (2 slots): gust of wind"
 					]
 				},
 				{
@@ -1635,7 +1660,8 @@
 					]
 				}
 			],
-			"spells": "blade ward, gust (ee), light, prestidigitation, feather fall, jump, thunderwave, gust of wind"
+			"spells": "blade ward, gust (ee), light, prestidigitation, feather fall, jump, thunderwave, gust of wind",
+			"page": 191
 		},
 		{
 			"name": "Imix",
@@ -1646,18 +1672,18 @@
 			"ac": "17",
 			"hp": "325 (26d12+156)",
 			"speed": "50 ft., fly 50 ft.",
-			"str": "19",
-			"dex": "24",
-			"con": "22",
-			"int": "15",
-			"wis": "16",
-			"cha": "23",
+			"str": 19,
+			"dex": 24,
+			"con": 22,
+			"int": 15,
+			"wis": 16,
+			"cha": 23,
 			"save": "Dex +14, Con +13, Cha +13",
 			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "fire, poison",
 			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone, restrained",
 			"senses": "blindsight 120 ft.",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common, Ignan",
 			"cr": "19",
 			"trait": [
@@ -1698,8 +1724,8 @@
 					"name": "Innate Spellcasting",
 					"text": [
 						"Imix's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
-						"• At will: fireball, wall of fire",
-						"• 3/day each: fire storm, haste, teleport"
+						"\u2022 At will: fireball, wall of fire",
+						"\u2022 3/day each: fire storm, haste, teleport"
 					]
 				},
 				{
@@ -1767,7 +1793,9 @@
 					]
 				}
 			],
-			"spells": "fireball, wall of fire, fire storm, haste, teleport"
+			"legendaryGroup": "Imix",
+			"spells": "fireball, wall of fire, fire storm, haste, teleport",
+			"page": 214
 		},
 		{
 			"name": "Marlos Urnrayle",
@@ -1778,12 +1806,12 @@
 			"ac": "15 (natural armor)",
 			"hp": "136 (16d8+64)",
 			"speed": "30 ft.",
-			"str": "17",
-			"dex": "11",
-			"con": "18",
-			"int": "12",
-			"wis": "13",
-			"cha": "17",
+			"str": 17,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 13,
+			"cha": 17,
 			"skill": {
 				"arcana": "+4",
 				"deception": "+6",
@@ -1791,7 +1819,7 @@
 			},
 			"resist": "acid",
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Common, Terran",
 			"cr": "8",
 			"trait": [
@@ -1847,7 +1875,9 @@
 						"Ironfang|9|1d8+3+1d8"
 					]
 				}
-			]
+			],
+			"legendaryGroup": "Marlos Urnrayle",
+			"page": 199
 		},
 		{
 			"name": "Miraj Vizann",
@@ -1863,17 +1893,17 @@
 			"ac": "10 (13 with mage armor)",
 			"hp": "82 (11d8+33)",
 			"speed": "30 ft.",
-			"str": "12",
-			"dex": "10",
-			"con": "17",
-			"int": "13",
-			"wis": "11",
-			"cha": "18",
+			"str": 12,
+			"dex": 10,
+			"con": 17,
+			"int": 13,
+			"wis": 11,
+			"cha": 18,
 			"skill": {
 				"arcana": "+4",
 				"deception": "+7"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Common, Primordial",
 			"cr": "6",
 			"trait": [
@@ -1887,20 +1917,20 @@
 					"name": "Innate Spellcasting",
 					"text": [
 						"Miraj's innate spellcasting ability is Constitution (spell save DC 14). He can innately cast the following spell, requiring no material components:",
-						"• 1/day: pass without trace"
+						"\u2022 1/day: pass without trace"
 					]
 				},
 				{
 					"name": "Spellcasting",
 					"text": [
 						"Miraj is an 11th-level spellcaster. His spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). He knows the following sorcerer spells:",
-						"• Cantrips (at will): acid splash, blade ward, friends, light, message, mold earth",
-						"• 1st level (4 slots): chromatic orb, mage armor, magic missile",
-						"• 2nd level (3 slots): Maximilian's earthen grasp, shatter, suggestion",
-						"• 3rd level (3 slots): counterspell, erupting earth",
-						"• 4th level (3 slots): polymorph, stoneskin",
-						"• 5th level (2 slots): wall of stone",
-						"• 6th level (1 slot): move earth"
+						"\u2022 Cantrips (at will): acid splash, blade ward, friends, light, message, mold earth",
+						"\u2022 1st level (4 slots): chromatic orb, mage armor, magic missile",
+						"\u2022 2nd level (3 slots): Maximilian's earthen grasp, shatter, suggestion",
+						"\u2022 3rd level (3 slots): counterspell, erupting earth",
+						"\u2022 4th level (3 slots): polymorph, stoneskin",
+						"\u2022 5th level (2 slots): wall of stone",
+						"\u2022 6th level (1 slot): move earth"
 					]
 				}
 			],
@@ -1916,7 +1946,8 @@
 					]
 				}
 			],
-			"spells": "pass without trace, acid splash, blade ward, friends, light, message, mold earth (ee), chromatic orb, mage armor, magic missile, Maximilian's earthen grasp (ee), shatter, suggestion, counterspell, erupting earth (ee), polymorph, stoneskin, wall of stone, move earth"
+			"spells": "pass without trace, acid splash, blade ward, friends, light, message, mold earth (ee), chromatic orb, mage armor, magic missile, Maximilian's earthen grasp (ee), shatter, suggestion, counterspell, erupting earth (ee), polymorph, stoneskin, wall of stone, move earth",
+			"page": 198
 		},
 		{
 			"name": "Ogremoch",
@@ -1927,50 +1958,50 @@
 			"ac": "20 (natural armor)",
 			"hp": "526 (27d20+243)",
 			"speed": "50 ft., burrow 50 ft.",
-			"str": "26",
-			"dex": "11",
-			"con": "28",
-			"int": "11",
-			"wis": "15",
-			"cha": "22",
+			"str": 26,
+			"dex": 11,
+			"con": 28,
+			"int": 11,
+			"wis": 15,
+			"cha": 22,
 			"save": "Str +14, Con +15, Wis +8",
 			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "poison",
 			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone",
 			"senses": "blindsight 120 ft., tremorsense 120 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Terran",
 			"cr": "20",
 			"trait": [
 				{
 					"name": "Empowered Attacks",
 					"text": [
-						"Ogremoch's slam attacks are treated as magical and adamantine for the purpose of bypassing resistance and immunity to nonmagical attacks."
+						"Ogr\u00e9moch's slam attacks are treated as magical and adamantine for the purpose of bypassing resistance and immunity to nonmagical attacks."
 					]
 				},
 				{
 					"name": "Innate Spellcasting",
 					"text": [
-						"Ogremoch's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
-						"• At will: meld into stone, move earth, wall of stone"
+						"Ogr\u00e9moch's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
+						"\u2022 At will: meld into stone, move earth, wall of stone"
 					]
 				},
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"text": [
-						"If Ogremoch fails a saving throw, he can choose to succeed instead."
+						"If Ogr\u00e9moch fails a saving throw, he can choose to succeed instead."
 					]
 				},
 				{
 					"name": "Magic Resistance",
 					"text": [
-						"Ogremoch has advantage on saving throws against spells and other magical effects."
+						"Ogr\u00e9moch has advantage on saving throws against spells and other magical effects."
 					]
 				},
 				{
 					"name": "Siege Monster",
 					"text": [
-						"Ogremoch deals double damage to objects and structures with his melee and ranged weapon attacks."
+						"Ogr\u00e9moch deals double damage to objects and structures with his melee and ranged weapon attacks."
 					]
 				}
 			],
@@ -1978,7 +2009,7 @@
 				{
 					"name": "Multiattack",
 					"text": [
-						"Ogremoch makes two slam attacks."
+						"Ogr\u00e9moch makes two slam attacks."
 					]
 				},
 				{
@@ -2002,7 +2033,7 @@
 				{
 					"name": "Summon Elementals (1/Day)",
 					"text": [
-						"Ogremoch summons up to three earth elementals and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Ogremoch, and disappear if Ogremoch is reduced to 0 hit points."
+						"Ogr\u00e9moch summons up to three earth elementals and loses 30 hit points for each elemental he summons. Summoned elementals have maximum hit points, appear within 100 feet of Ogr\u00e9moch, and disappear if Ogr\u00e9moch is reduced to 0 hit points."
 					]
 				}
 			],
@@ -2010,23 +2041,25 @@
 				{
 					"name": "Illuminating Crystals",
 					"text": [
-						"Ogremoch's crystalline protrusions flare. Each creature within 30 feet of Ogremoch becomes outlined in orange light, shedding dim light in a 10-foot radius. Any attack roll against an affected creature has advantage if the attacker can see it, and the affected creature can't benefit from being invisible."
+						"Ogr\u00e9moch's crystalline protrusions flare. Each creature within 30 feet of Ogr\u00e9moch becomes outlined in orange light, shedding dim light in a 10-foot radius. Any attack roll against an affected creature has advantage if the attacker can see it, and the affected creature can't benefit from being invisible."
 					]
 				},
 				{
 					"name": "Stomp (Costs 2 Actions)",
 					"text": [
-						"Ogremoch stomps the ground, creating an earth tremor that extends in a 30-foot radius. Other creatures standing on the ground in that radius must succeed on a DC 23 Dexterity saving throw or fall prone."
+						"Ogr\u00e9moch stomps the ground, creating an earth tremor that extends in a 30-foot radius. Other creatures standing on the ground in that radius must succeed on a DC 23 Dexterity saving throw or fall prone."
 					]
 				},
 				{
 					"name": "Create Gargoyle (Costs 3 Actions)",
 					"text": [
-						"Ogremoch's hit points are reduced by 50 as he breaks off a chunk of his body and places it on the ground in an unoccupied space within 15 feet of him. The chunk of rock instantly transforms into a gargoyle and acts on the same initiative count as Ogremoch. Ogremoch can't use this action if he has 50 hit points or fewer. The gargoyle obeys Ogremoch's commands and fights until destroyed."
+						"Ogr\u00e9moch's hit points are reduced by 50 as he breaks off a chunk of his body and places it on the ground in an unoccupied space within 15 feet of him. The chunk of rock instantly transforms into a gargoyle and acts on the same initiative count as Ogr\u00e9moch. Ogr\u00e9moch can't use this action if he has 50 hit points or fewer. The gargoyle obeys Ogr\u00e9moch's commands and fights until destroyed."
 					]
 				}
 			],
-			"spells": "meld into stone, move earth, wall of stone"
+			"legendaryGroup": "Ogremoch",
+			"spells": "meld into stone, move earth, wall of stone",
+			"page": 216
 		},
 		{
 			"name": "Olhydra",
@@ -2037,18 +2070,18 @@
 			"ac": "18 (natural armor)",
 			"hp": "324 (24d12+168)",
 			"speed": "50 ft., swim 100 ft.",
-			"str": "21",
-			"dex": "22",
-			"con": "24",
-			"int": "17",
-			"wis": "18",
-			"cha": "23",
+			"str": 21,
+			"dex": 22,
+			"con": 24,
+			"int": 17,
+			"wis": 18,
+			"cha": 23,
 			"save": "Str +11, Con +13, Wis +10",
 			"resist": "lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "acid, cold, poison",
 			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone, restrained",
 			"senses": "blindsight 120 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Aquan",
 			"cr": "18",
 			"trait": [
@@ -2062,9 +2095,9 @@
 					"name": "Innate Spellcasting",
 					"text": [
 						"Olhydra's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). She can innately cast the following spells, requiring no material components:",
-						"• At will: wall of ice",
-						"• 3/day: ice storm",
-						"• 1/day: storm of vengeance"
+						"\u2022 At will: wall of ice",
+						"\u2022 3/day: ice storm",
+						"\u2022 1/day: storm of vengeance"
 					]
 				},
 				{
@@ -2145,7 +2178,9 @@
 					]
 				}
 			],
-			"spells": "wall of ice, ice storm, storm of vengeance"
+			"legendaryGroup": "Olhydra",
+			"spells": "wall of ice, ice storm, storm of vengeance",
+			"page": 218
 		},
 		{
 			"name": "One-Eyed Shiver",
@@ -2161,19 +2196,19 @@
 			"ac": "12 (15 with mage armor)",
 			"hp": "49 (9d8+9)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "14",
-			"con": "12",
-			"int": "13",
-			"wis": "13",
-			"cha": "17",
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 13,
+			"wis": 13,
+			"cha": 17,
 			"skill": {
 				"arcana": "+3",
 				"perception": "+3",
 				"intimidation": "+5"
 			},
 			"immune": "cold",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common",
 			"cr": "3",
 			"trait": [
@@ -2190,10 +2225,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"The one-eyed shiver is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): chill touch, mage hand",
-						"• 1st level (4 slots): fog cloud, mage armor, thunderwave",
-						"• 2nd level (3 slots): mirror image, misty step",
-						"• 3rd level (2 slots): fear"
+						"\u2022 Cantrips (at will): chill touch, mage hand",
+						"\u2022 1st level (4 slots): fog cloud, mage armor, thunderwave",
+						"\u2022 2nd level (3 slots): mirror image, misty step",
+						"\u2022 3rd level (2 slots): fear"
 					]
 				}
 			],
@@ -2214,7 +2249,8 @@
 					]
 				}
 			],
-			"spells": "chill touch, mage hand, fog cloud, mage armor, thunderwave, mirror image, misty step, fear"
+			"spells": "chill touch, mage hand, fog cloud, mage armor, thunderwave, mirror image, misty step, fear",
+			"page": 207
 		},
 		{
 			"name": "Oreioth",
@@ -2230,19 +2266,19 @@
 			"ac": "11 (14 with mage armor)",
 			"hp": "39 (6d8+12)",
 			"speed": "30 ft.",
-			"str": "8",
-			"dex": "13",
-			"con": "14",
-			"int": "16",
-			"wis": "9",
-			"cha": "11",
+			"str": 8,
+			"dex": 13,
+			"con": 14,
+			"int": 16,
+			"wis": 9,
+			"cha": 11,
 			"save": "Wis +1",
 			"skill": {
 				"arcana": "+5",
 				"investigation": "+5",
 				"medicine": "+1"
 			},
-			"passive": "9",
+			"passive": 9,
 			"languages": "Abyssal, Common",
 			"cr": "2",
 			"trait": [
@@ -2256,10 +2292,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"Oreioth is a 6th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the following wizard spells prepared:",
-						"• Cantrips (at will): chill touch, minor illusion, prestidigitation, shocking grasp",
-						"• 1st level (4 slots): false life, mage armor, magic missile, ray of sickness",
-						"• 2nd level (3 slots): crown of madness, misty step",
-						"• 3rd level (3 slots): animate dead, vampiric touch"
+						"\u2022 Cantrips (at will): chill touch, minor illusion, prestidigitation, shocking grasp",
+						"\u2022 1st level (4 slots): false life, mage armor, magic missile, ray of sickness",
+						"\u2022 2nd level (3 slots): crown of madness, misty step",
+						"\u2022 3rd level (3 slots): animate dead, vampiric touch"
 					]
 				},
 				{
@@ -2280,7 +2316,8 @@
 					]
 				}
 			],
-			"spells": "chill touch, minor illusion, prestidigitation, shocking grasp, false life, mage armor, magic missile, ray of sickness, crown of madness, misty step, animate dead, vampiric touch"
+			"spells": "chill touch, minor illusion, prestidigitation, shocking grasp, false life, mage armor, magic missile, ray of sickness, crown of madness, misty step, animate dead, vampiric touch",
+			"page": 212
 		},
 		{
 			"name": "Razerblast",
@@ -2296,18 +2333,18 @@
 			"ac": "17 (splint)",
 			"hp": "112 (15d8+75)",
 			"speed": "30 ft.",
-			"str": "16",
-			"dex": "11",
-			"con": "16",
-			"int": "9",
-			"wis": "10",
-			"cha": "13",
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 13,
 			"skill": {
 				"intimidation": "+4",
 				"perception": "+3"
 			},
 			"immune": "fire",
-			"passive": "13",
+			"passive": 13,
 			"languages": "Common, Ignan",
 			"cr": "5",
 			"trait": [
@@ -2344,7 +2381,8 @@
 						"Two Handed|6|1d8+3+1d6"
 					]
 				}
-			]
+			],
+			"page": 201
 		},
 		{
 			"name": "Sacred Stone Monk",
@@ -2360,19 +2398,19 @@
 			"ac": "14",
 			"hp": "22 (4d8+4)",
 			"speed": "40 ft.",
-			"str": "13",
-			"dex": "15",
-			"con": "12",
-			"int": "10",
-			"wis": "14",
-			"cha": "9",
+			"str": 13,
+			"dex": 15,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 9,
 			"skill": {
 				"acrobatics": "+4",
 				"athletics": "+3",
 				"perception": "+4"
 			},
 			"senses": "tremorsense 10 ft.",
-			"passive": "14",
+			"passive": 14,
 			"languages": "Common",
 			"cr": "1/2",
 			"trait": [
@@ -2413,7 +2451,8 @@
 						"The monk adds 2 to its AC against one melee or ranged weapon attack that would hit it. To do so, the monk must see the attacker."
 					]
 				}
-			]
+			],
+			"page": 196
 		},
 		{
 			"name": "Shoalar Quanderil",
@@ -2429,12 +2468,12 @@
 			"ac": "10 (13 with mage armor)",
 			"hp": "60 (8d8+24)",
 			"speed": "30 ft., swim 30 ft.",
-			"str": "11",
-			"dex": "12",
-			"con": "16",
-			"int": "14",
-			"wis": "10",
-			"cha": "17",
+			"str": 11,
+			"dex": 12,
+			"con": 16,
+			"int": 14,
+			"wis": 10,
+			"cha": 17,
 			"skill": {
 				"arcana": "+4",
 				"deception": "+5",
@@ -2442,7 +2481,7 @@
 				"persuasion": "+5"
 			},
 			"resist": "acid",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Aquan, Common",
 			"cr": "4",
 			"trait": [
@@ -2456,18 +2495,18 @@
 					"name": "Innate Spellcasting",
 					"text": [
 						"Shoalar's innate spellcasting ability is Constitution (spell save DC 13, +5 to hit with spell attacks). He can innately cast the following spells:",
-						"• At will: shape water",
-						"• 1/day: create or destroy water"
+						"\u2022 At will: shape water",
+						"\u2022 1/day: create or destroy water"
 					]
 				},
 				{
 					"name": "Spellcasting",
 					"text": [
 						"Shoalar is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). He knows the following sorcerer spells:",
-						"• Cantrips (at will): acid splash, chill touch, friends, prestidigitation, ray of frost",
-						"• 1st level (4 slots): disguise self, mage armor, magic missile",
-						"• 2nd level (3 slots): hold person, misty step",
-						"• 3rd level (2 slots): tidal wave"
+						"\u2022 Cantrips (at will): acid splash, chill touch, friends, prestidigitation, ray of frost",
+						"\u2022 1st level (4 slots): disguise self, mage armor, magic missile",
+						"\u2022 2nd level (3 slots): hold person, misty step",
+						"\u2022 3rd level (2 slots): tidal wave"
 					]
 				}
 			],
@@ -2482,7 +2521,8 @@
 					]
 				}
 			],
-			"spells": "shape water (ee), create or destroy water, acid splash, chill touch, friends, prestidigitation, ray of frost, disguise self, mage armor, magic missile, hold person, misty step, tidal wave (ee)"
+			"spells": "shape water (ee), create or destroy water, acid splash, chill touch, friends, prestidigitation, ray of frost, disguise self, mage armor, magic missile, hold person, misty step, tidal wave (ee)",
+			"page": 208
 		},
 		{
 			"name": "Skyweaver",
@@ -2498,17 +2538,17 @@
 			"ac": "12 (15 with mage armor)",
 			"hp": "44 (8d8+8)",
 			"speed": "30 ft.",
-			"str": "8",
-			"dex": "14",
-			"con": "12",
-			"int": "11",
-			"wis": "10",
-			"cha": "16",
+			"str": 8,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
 			"skill": {
 				"deception": "+5",
 				"persuasion": "+5"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Auran, Common",
 			"cr": "3",
 			"trait": [
@@ -2516,10 +2556,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"The Skyweaver is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): blade ward, light, message, ray of frost, shocking grasp",
-						"• 1st level (4 slots): feather fall, mage armor, witch bolt",
-						"• 2nd level (3 slots): gust of wind, invisibility",
-						"• 3rd level (3 slots): fly, lightning bolt"
+						"\u2022 Cantrips (at will): blade ward, light, message, ray of frost, shocking grasp",
+						"\u2022 1st level (4 slots): feather fall, mage armor, witch bolt",
+						"\u2022 2nd level (3 slots): gust of wind, invisibility",
+						"\u2022 3rd level (3 slots): fly, lightning bolt"
 					]
 				}
 			],
@@ -2534,7 +2574,8 @@
 					]
 				}
 			],
-			"spells": "blade ward, light, message, ray of frost, shocking grasp, feather fall, mage armor, witch bolt, gust of wind, invisibility, fly, lightning bolt"
+			"spells": "blade ward, light, message, ray of frost, shocking grasp, feather fall, mage armor, witch bolt, gust of wind, invisibility, fly, lightning bolt",
+			"page": 191
 		},
 		{
 			"name": "Stonemelder",
@@ -2550,18 +2591,18 @@
 			"ac": "17 (splint)",
 			"hp": "75 (10d8+30)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "10",
-			"con": "16",
-			"int": "12",
-			"wis": "11",
-			"cha": "17",
+			"str": 15,
+			"dex": 10,
+			"con": 16,
+			"int": 12,
+			"wis": 11,
+			"cha": 17,
 			"skill": {
 				"intimidation": "+5",
 				"perception": "+2"
 			},
 			"senses": "tremorsense 30 ft.",
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Terran",
 			"cr": "4",
 			"trait": [
@@ -2578,11 +2619,11 @@
 					"name": "Spellcasting",
 					"text": [
 						"The Stonemelder is a 7th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells:",
-						"• Cantrips (at will): acid splash, blade ward, light, mending, mold earth",
-						"• 1st level (4 slots): expeditious retreat, false life, shield",
-						"• 2nd level (3 slots): Maximilian's earthen grasp, shatter",
-						"• 3rd level (3 slots): erupting earth, meld into stone",
-						"• 4th level (1 slot): stoneskin"
+						"\u2022 Cantrips (at will): acid splash, blade ward, light, mending, mold earth",
+						"\u2022 1st level (4 slots): expeditious retreat, false life, shield",
+						"\u2022 2nd level (3 slots): Maximilian's earthen grasp, shatter",
+						"\u2022 3rd level (3 slots): erupting earth, meld into stone",
+						"\u2022 4th level (1 slot): stoneskin"
 					]
 				}
 			],
@@ -2597,7 +2638,8 @@
 					]
 				}
 			],
-			"spells": "acid splash, blade ward, light, mending, mold earth (ee), expeditious retreat, false life, shield, Maximilian's earthen grasp (ee), shatter, erupting earth (ee), meld into stone, stoneskin"
+			"spells": "acid splash, blade ward, light, mending, mold earth (ee), expeditious retreat, false life, shield, Maximilian's earthen grasp (ee), shatter, erupting earth (ee), meld into stone, stoneskin",
+			"page": 197
 		},
 		{
 			"name": "Thurl Merosska",
@@ -2613,19 +2655,19 @@
 			"ac": "16 (breastplate)",
 			"hp": "71 (11d8+21)",
 			"speed": "30 ft.",
-			"str": "16",
-			"dex": "14",
-			"con": "14",
-			"int": "11",
-			"wis": "10",
-			"cha": "15",
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 15,
 			"skill": {
 				"animal handling": "+2",
 				"athletics": "+5",
 				"deception": "+4",
 				"persuasion": "+4"
 			},
-			"passive": "10",
+			"passive": 10,
 			"languages": "Auran, Common",
 			"cr": "3",
 			"trait": [
@@ -2633,10 +2675,10 @@
 					"name": "Spellcasting",
 					"text": [
 						"Thurl is a 5th-level spellcaster. His spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). Thurl knows the following sorcerer spells:",
-						"• Cantrips (at will): friends, gust, light, message, ray of frost",
-						"• 1st level (4 slots): expeditious retreat, feather fall, jump",
-						"• 2nd level (3 slots): levitate, misty step",
-						"• 3rd level (2 slots): haste"
+						"\u2022 Cantrips (at will): friends, gust, light, message, ray of frost",
+						"\u2022 1st level (4 slots): expeditious retreat, feather fall, jump",
+						"\u2022 2nd level (3 slots): levitate, misty step",
+						"\u2022 3rd level (2 slots): haste"
 					]
 				}
 			],
@@ -2674,7 +2716,8 @@
 					]
 				}
 			],
-			"spells": "friends, gust (ee), light, message, ray of frost, expeditious retreat, feather fall, jump, levitate, misty step, haste"
+			"spells": "friends, gust (ee), light, message, ray of frost, expeditious retreat, feather fall, jump, levitate, misty step, haste",
+			"page": 192
 		},
 		{
 			"name": "Vanifer",
@@ -2690,12 +2733,12 @@
 			"ac": "15 (studded leather)",
 			"hp": "112 (15d8+45)",
 			"speed": "30 ft.",
-			"str": "11",
-			"dex": "16",
-			"con": "17",
-			"int": "12",
-			"wis": "13",
-			"cha": "19",
+			"str": 11,
+			"dex": 16,
+			"con": 17,
+			"int": 12,
+			"wis": 13,
+			"cha": 19,
 			"skill": {
 				"arcana": "+5",
 				"deception": "+8",
@@ -2703,7 +2746,7 @@
 			},
 			"immune": "fire",
 			"senses": "darkvision 60 ft.",
-			"passive": "11",
+			"passive": 11,
 			"languages": "Common, Ignan, Infernal",
 			"cr": "9",
 			"trait": [
@@ -2723,12 +2766,12 @@
 					"name": "Spellcasting",
 					"text": [
 						"Vanifer is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). Vanifer knows the following sorcerer spells:",
-						"• Cantrips (at will): chill touch, fire bolt, friends, mage hand, message, produce flame, thaumaturgy",
-						"• 1st level (4 slots): burning hands, chromatic orb, hellish rebuke, shield",
-						"• 2nd level (3 slots): darkness, detect thoughts, misty step, scorching ray",
-						"• 3rd level (3 slots): counterspell, fireball, hypnotic pattern",
-						"• 4th level (3 slots): wall of fire",
-						"• 5th level (2 slots): dominate person"
+						"\u2022 Cantrips (at will): chill touch, fire bolt, friends, mage hand, message, produce flame, thaumaturgy",
+						"\u2022 1st level (4 slots): burning hands, chromatic orb, hellish rebuke, shield",
+						"\u2022 2nd level (3 slots): darkness, detect thoughts, misty step, scorching ray",
+						"\u2022 3rd level (3 slots): counterspell, fireball, hypnotic pattern",
+						"\u2022 4th level (3 slots): wall of fire",
+						"\u2022 5th level (2 slots): dominate person"
 					]
 				}
 			],
@@ -2749,7 +2792,9 @@
 					]
 				}
 			],
-			"spells": "chill touch, fire bolt, friends, mage hand, message, produce flame, thaumaturgy, burning hands, chromatic orb, hellish rebuke, shield, darkness, detect thoughts, misty step, scorching ray, counterspell, fireball, hypnotic pattern, wall of fire, dominate person"
+			"legendaryGroup": "Vanifer",
+			"spells": "chill touch, fire bolt, friends, mage hand, message, produce flame, thaumaturgy, burning hands, chromatic orb, hellish rebuke, shield, darkness, detect thoughts, misty step, scorching ray, counterspell, fireball, hypnotic pattern, wall of fire, dominate person",
+			"page": 203
 		},
 		{
 			"name": "Water Elemental Myrmidon",
@@ -2760,17 +2805,17 @@
 			"ac": "18 (plate)",
 			"hp": "127 (17d8+51)",
 			"speed": "40 ft., swim 40 ft.",
-			"str": "18",
-			"dex": "14",
-			"con": "15",
-			"int": "8",
-			"wis": "10",
-			"cha": "10",
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
 			"resist": "acid; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "poison",
 			"conditionImmune": "paralyzed, petrified, poisoned, prone",
 			"senses": "darkvision 60 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Aquan, one language of its creator's choice",
 			"cr": "7",
 			"trait": [
@@ -2806,7 +2851,8 @@
 						"Freezing Strikes|7|1d6+4+1d10"
 					]
 				}
-			]
+			],
+			"page": 213
 		},
 		{
 			"name": "Wiggan Nettlebee",
@@ -2822,17 +2868,17 @@
 			"ac": "11 (16 with barkskin)",
 			"hp": "36 (8d6+8)",
 			"speed": "30 ft.",
-			"str": "8",
-			"dex": "12",
-			"con": "12",
-			"int": "14",
-			"wis": "15",
-			"cha": "13",
+			"str": 8,
+			"dex": 12,
+			"con": 12,
+			"int": 14,
+			"wis": 15,
+			"cha": 13,
 			"skill": {
 				"deception": "+3",
 				"insight": "+4"
 			},
-			"passive": "12",
+			"passive": 12,
 			"languages": "Common, Halfling",
 			"cr": "2",
 			"trait": [
@@ -2846,9 +2892,9 @@
 					"name": "Spellcasting",
 					"text": [
 						"Wiggan is a 4th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). He has the following cleric spells prepared:",
-						"• Cantrips (at will): guidance, light, mending, shillelagh, thaumaturgy",
-						"• 1st Level (4 slots): animal friendship, cure wounds, healing word, inflict wounds, speak with animals",
-						"• 2nd Level (3 slots): barkskin, spike growth, spiritual weapon"
+						"\u2022 Cantrips (at will): guidance, light, mending, shillelagh, thaumaturgy",
+						"\u2022 1st Level (4 slots): animal friendship, cure wounds, healing word, inflict wounds, speak with animals",
+						"\u2022 2nd Level (3 slots): barkskin, spike growth, spiritual weapon"
 					]
 				}
 			],
@@ -2870,7 +2916,8 @@
 					]
 				}
 			],
-			"spells": "guidance, light, mending, shillelagh, thaumaturgy, animal friendship, cure wounds, healing word, inflict wounds, speak with animals, barkskin, spike growth, spiritual weapon"
+			"spells": "guidance, light, mending, shillelagh, thaumaturgy, animal friendship, cure wounds, healing word, inflict wounds, speak with animals, barkskin, spike growth, spiritual weapon",
+			"page": 212
 		},
 		{
 			"name": "Windharrow",
@@ -2886,12 +2933,12 @@
 			"ac": "15 (studded leather)",
 			"hp": "55 (10d8+10)",
 			"speed": "30 ft.",
-			"str": "10",
-			"dex": "16",
-			"con": "12",
-			"int": "14",
-			"wis": "10",
-			"cha": "17",
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 17,
 			"skill": {
 				"acrobatics": "+5",
 				"deception": "+7",
@@ -2900,7 +2947,7 @@
 				"stealth": "+5"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "10",
+			"passive": 10,
 			"languages": "Auran, Common, Elvish",
 			"cr": "3",
 			"trait": [
@@ -2914,11 +2961,11 @@
 					"name": "Spellcasting",
 					"text": [
 						"Windharrow is an 8th-level spellcaster. His spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). Windharrow knows the following bard spells:",
-						"• Cantrips (at will): friends, prestidigitation, vicious mockery",
-						"• 1st level (4 slots): disguise self, dissonant whispers, thunderwave",
-						"• 2nd level (3 slots): invisibility, shatter, silence",
-						"• 3rd level (3 slots): nondetection, sending, tongues",
-						"• 4th level (2 slots): confusion, dimension door"
+						"\u2022 Cantrips (at will): friends, prestidigitation, vicious mockery",
+						"\u2022 1st level (4 slots): disguise self, dissonant whispers, thunderwave",
+						"\u2022 2nd level (3 slots): invisibility, shatter, silence",
+						"\u2022 3rd level (3 slots): nondetection, sending, tongues",
+						"\u2022 4th level (2 slots): confusion, dimension door"
 					]
 				}
 			],
@@ -2939,7 +2986,8 @@
 					]
 				}
 			],
-			"spells": "friends, prestidigitation, vicious mockery, disguise self, dissonant whispers, thunderwave, invisibility, shatter, silence, nondetection, sending, tongues, confusion, dimension door"
+			"spells": "friends, prestidigitation, vicious mockery, disguise self, dissonant whispers, thunderwave, invisibility, shatter, silence, nondetection, sending, tongues, confusion, dimension door",
+			"page": 192
 		},
 		{
 			"name": "Yan-C-Bin",
@@ -2950,18 +2998,18 @@
 			"ac": "22 (natural armor)",
 			"hp": "283 (21d12+147)",
 			"speed": "50 ft., fly 150 ft.",
-			"str": "18",
-			"dex": "24",
-			"con": "24",
-			"int": "16",
-			"wis": "21",
-			"cha": "23",
+			"str": 18,
+			"dex": 24,
+			"con": 24,
+			"int": 16,
+			"wis": 21,
+			"cha": 23,
 			"save": "Dex +13, Wis +11, Cha +12",
 			"resist": "cold, fire; bludgeoning, piercing, and slashing from nonmagical attacks",
 			"immune": "lightning, poison, thunder",
 			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone, restrained",
 			"senses": "blindsight 120 ft.",
-			"passive": "15",
+			"passive": 15,
 			"languages": "Auran",
 			"cr": "18",
 			"trait": [
@@ -2981,8 +3029,8 @@
 					"name": "Innate Spellcasting",
 					"text": [
 						"Yan-C-Bin's innate spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). He can innately cast the following spells, requiring no material components:",
-						"• At will: gust of wind, invisibility, lightning bolt",
-						"• 2/day each: chain lightning, cloudkill, haste"
+						"\u2022 At will: gust of wind, invisibility, lightning bolt",
+						"\u2022 2/day each: chain lightning, cloudkill, haste"
 					]
 				},
 				{
@@ -3059,7 +3107,9 @@
 					]
 				}
 			],
-			"spells": "gust of wind, invisibility, lightning bolt, chain lightning, cloudkill, haste"
+			"legendaryGroup": "Yan-C-Bin",
+			"spells": "gust of wind, invisibility, lightning bolt, chain lightning, cloudkill, haste",
+			"page": 221
 		}
 	]
 }

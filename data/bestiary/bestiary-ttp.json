@@ -9,19 +9,19 @@
 			"ac": "14 (natural armor)",
 			"hp": "75 (10d10+20)",
 			"speed": "15 ft., climb 30 ft.",
-			"str": "15",
-			"dex": "14",
-			"con": "14",
-			"int": "4",
-			"wis": "10",
-			"cha": "7",
+			"str": 15,
+			"dex": 14,
+			"con": 14,
+			"int": 4,
+			"wis": 10,
+			"cha": 7,
 			"skill": {
 				"athletics": "+4",
 				"perception": "+2",
 				"stealth": "+4"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": "12",
+			"passive": 12,
 			"cr": "4",
 			"action": [
 				{
@@ -49,7 +49,8 @@
 						"Tentacles|4|5d4+2"
 					]
 				}
-			]
+			],
+			"page": 21
 		},
 		{
 			"source": "TTP",
@@ -60,18 +61,18 @@
 			"ac": "17 (natural armor)",
 			"hp": "26 (4d6+12)",
 			"speed": "30 ft.",
-			"str": "12",
-			"dex": "10",
-			"con": "16",
-			"int": "9",
-			"wis": "14",
-			"cha": "11",
+			"str": 12,
+			"dex": 10,
+			"con": 16,
+			"int": 9,
+			"wis": 14,
+			"cha": 11,
 			"skill": {
 				"perception": "+4",
 				"stealth": "+2"
 			},
 			"senses": "darkvision 60 ft., tremorsense 30ft.",
-			"passive": "14",
+			"passive": 14,
 			"cr": "1/4",
 			"trait": [
 				{
@@ -97,7 +98,8 @@
 						"Club|3|1d4+1"
 					]
 				}
-			]
+			],
+			"page": 22
 		},
 		{
 			"source": "TTP",
@@ -108,18 +110,18 @@
 			"ac": "13 (natural armor)",
 			"hp": "13 (3d6+3)",
 			"speed": "30 ft.",
-			"str": "7",
-			"dex": "15",
-			"con": "12",
-			"int": "6",
-			"wis": "10",
-			"cha": "5",
+			"str": 7,
+			"dex": 15,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
 			"resist": "bludgeoning",
 			"immune": "poison",
 			"conditionImmune": "poisoned",
 			"senses": "darkvision 60 ft.",
 			"languages": "understands the languages it knew in life but can't speak",
-			"passive": "10",
+			"passive": 10,
 			"cr": "1/2",
 			"trait": [
 				{
@@ -145,7 +147,8 @@
 						"Venomous Claws|4|1d4+1+1d4"
 					]
 				}
-			]
+			],
+			"page": 22
 		},
 		{
 			"source": "TTP",
@@ -161,18 +164,18 @@
 			"ac": "17 (natural armor)",
 			"hp": "22 (4d8+4)",
 			"speed": "30 ft.",
-			"str": "15",
-			"dex": "10",
-			"con": "12",
-			"int": "11",
-			"wis": "13",
-			"cha": "12",
+			"str": 15,
+			"dex": 10,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 12,
 			"skill": {
 				"athletics": "+4",
 				"survival": "+3"
 			},
 			"languages": "Aquan, Common",
-			"passive": "11",
+			"passive": 11,
 			"cr": "1/4",
 			"trait": [
 				{
@@ -217,7 +220,8 @@
 						"The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is prone, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
 					]
 				}
-			]
+			],
+			"page": 23
 		},
 		{
 			"source": "TTP",
@@ -233,19 +237,19 @@
 			"ac": "17 (natural armor)",
 			"hp": "33 (6d8+6)",
 			"speed": "30 ft.",
-			"str": "14",
-			"dex": "10",
-			"con": "12",
-			"int": "11",
-			"wis": "15",
-			"cha": "12",
+			"str": 14,
+			"dex": 10,
+			"con": 12,
+			"int": 11,
+			"wis": 15,
+			"cha": 12,
 			"skill": {
 				"animal handling": "+4",
 				"nature": "+2",
 				"survival": "+4"
 			},
 			"languages": "Aquan, Common",
-			"passive": "12",
+			"passive": 12,
 			"cr": "2",
 			"trait": [
 				{
@@ -290,7 +294,8 @@
 						"The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is prone, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
 					]
 				}
-			]
+			],
+			"page": 23
 		}
 	]
 }
