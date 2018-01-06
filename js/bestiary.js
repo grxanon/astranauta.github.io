@@ -73,10 +73,10 @@ const typeFilter = new Filter({
 		"plant",
 		"undead"
 	],
-	displayFn: uppercaseFirst
+	displayFn: StrUtil.uppercaseFirst
 });
-const tagFilter = new Filter({header: "Tag", displayFn: uppercaseFirst});
-const miscFilter = new Filter({header: "Miscellaneous", items: ["Legendary"], displayFn: uppercaseFirst});
+const tagFilter = new Filter({header: "Tag", displayFn: StrUtil.uppercaseFirst});
+const miscFilter = new Filter({header: "Miscellaneous", items: ["Legendary"], displayFn: StrUtil.uppercaseFirst});
 
 const filterBox = initFilterBox(
 	sourceFilter,
@@ -135,8 +135,8 @@ function pageInit (loadedSources) {
 }
 
 function handleFilterChange () {
+	const f = filterBox.getValues();
 	list.filter(function (item) {
-		const f = filterBox.getValues();
 		const m = monsters[$(item.elm).attr(FLTR_ID)];
 
 		return sourceFilter.toDisplay(f, m.source) &&
@@ -247,11 +247,12 @@ function loadhash (id) {
 		$(x).remove();
 	};
 
+	const imgLink = UrlUtil.link(`img/${source}/${name.replace(/"/g, "")}.png`);
 	$("th#name").html(
 		`<span class="stats-name">${name}</span>
 		<span class="stats-source source${source}" title="${sourceFull}">${Parser.sourceJsonToAbv(source)}</span>
-		<a href="img/${source}/${name.replace(/"/g, "")}.png" target='_blank'>
-			<img src="img/${source}/${name.replace(/"/g, "")}.png" class='token' onerror='imgError(this)'>
+		<a href="${imgLink}" target='_blank'>
+			<img src="${imgLink}" class='token' onerror='imgError(this)'>
 		</a>`
 	);
 

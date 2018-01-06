@@ -2,6 +2,10 @@
 // Strict mode should not be used, as the roll20 script depends on this file //
 // ************************************************************************* //
 
+// in deployment, `_IS_DEPLOYED = true;` should be prepended to this file
+IS_DEPLOYED = typeof _IS_DEPLOYED !== "undefined" && _IS_DEPLOYED;
+DEPLOYED_STATIC_ROOT = "https://static.5etools.com/";
+
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
 HASH_SUB_LIST_SEP = "~";
@@ -102,7 +106,8 @@ String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
 		return str;
 	};
 
-function utils_joinPhraseArray (array, joiner, lastJoiner) {
+StrUtil = {};
+StrUtil.joinPhraseArray = function (array, joiner, lastJoiner) {
 	if (array.length === 0) return "";
 	if (array.length === 1) return array[0];
 	if (array.length === 2) return array.join(lastJoiner);
@@ -115,7 +120,10 @@ function utils_joinPhraseArray (array, joiner, lastJoiner) {
 		}
 		return outStr;
 	}
-}
+};
+StrUtil.uppercaseFirst = function (string) {
+	return string.uppercaseFirst();
+};
 
 String.prototype.uppercaseFirst = String.prototype.uppercaseFirst ||
 	function () {
@@ -124,10 +132,6 @@ String.prototype.uppercaseFirst = String.prototype.uppercaseFirst ||
 		if (str.length === 1) return str.charAt(0).toUpperCase();
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	};
-
-function uppercaseFirst (string) {
-	return string.uppercaseFirst();
-}
 
 // TEXT COMBINING ======================================================================================================
 function utils_combineText (textList, tagPerItem, textBlockInlineTitle) {
@@ -304,76 +308,6 @@ function makeTableTdClassText (tableObject, i) {
 		return tableObject.tdstyleclass === undefined || i >= tableObject.tdstyleclass.length ? "" : " class=\"" + tableObject.tdstyleclass[i] + "\"";
 	} else {
 		return makeTableThClassText(tableObject, i);
-	}
-}
-
-function utils_makePrerequisite (prereqList, shorthand, makeAsArray) {
-	shorthand = shorthand === undefined || shorthand === null ? false : shorthand;
-	makeAsArray = makeAsArray === undefined || makeAsArray === null ? false : makeAsArray;
-	const outStack = [];
-	if (prereqList === undefined || prereqList === null) return "";
-	for (let i = 0; i < prereqList.length; ++i) {
-		const pre = prereqList[i];
-		if (pre.race !== undefined) {
-			for (let j = 0; j < pre.race.length; ++j) {
-				if (shorthand) {
-					const DASH = "-";
-					const raceNameParts = pre.race[j].name.split(DASH);
-					let raceName = [];
-					for (let k = 0; k < raceNameParts.length; ++k) {
-						raceName.push(raceNameParts[k].uppercaseFirst());
-					}
-					raceName = raceName.join(DASH);
-					outStack.push(raceName + (pre.race[j].subrace !== undefined ? " (" + pre.race[j].subrace + ")" : ""))
-				} else {
-					const raceName = j === 0 ? pre.race[j].name.uppercaseFirst() : pre.race[j].name;
-					outStack.push(raceName + (pre.race[j].subrace !== undefined ? " (" + pre.race[j].subrace + ")" : ""))
-				}
-			}
-		}
-		if (pre.ability !== undefined) {
-			// this assumes all ability requirements are the same (13), correct as of 2017-10-06
-			let attCount = 0;
-			for (let j = 0; j < pre.ability.length; ++j) {
-				for (const att in pre.ability[j]) {
-					if (!pre.ability[j].hasOwnProperty(att)) continue;
-					if (shorthand) {
-						outStack.push(att.uppercaseFirst() + (attCount === pre.ability.length - 1 ? " 13+" : ""));
-					} else {
-						outStack.push(Parser.attAbvToFull(att) + (attCount === pre.ability.length - 1 ? " 13 or higher" : ""));
-					}
-					attCount++;
-				}
-			}
-		}
-		if (pre.proficiency !== undefined) {
-			// only handles armor proficiency requirements,
-			for (let j = 0; j < pre.proficiency.length; ++j) {
-				for (const type in pre.proficiency[j]) { // type is armor/weapon/etc.
-					if (!pre.proficiency[j].hasOwnProperty(type)) continue;
-					if (type === "armor") {
-						if (shorthand) {
-							outStack.push("prof " + Parser.armorFullToAbv(pre.proficiency[j][type]) + " armor");
-						} else {
-							outStack.push("Proficiency with " + pre.proficiency[j][type] + " armor");
-						}
-					}
-				}
-			}
-		}
-		if (pre.spellcasting === "YES") {
-			if (shorthand) {
-				outStack.push("Spellcasting");
-			} else {
-				outStack.push("The ability to cast at least one spell");
-			}
-		}
-	}
-	if (makeAsArray) {
-		return outStack;
-	} else {
-		if (shorthand) return outStack.join("/");
-		else return utils_joinPhraseArray(outStack, ", ", " or ");
 	}
 }
 
@@ -1110,6 +1044,7 @@ SRC_DM13_3PP = "DM-13" + SRC_3PP_SUFFIX;
 SRC_DM14_3PP = "DM-14" + SRC_3PP_SUFFIX;
 SRC_ToB_3PP = "ToB" + SRC_3PP_SUFFIX;
 SRC_CC_3PP = "CC" + SRC_3PP_SUFFIX;
+SRC_FEF_3PP = "FEF" + SRC_3PP_SUFFIX;
 
 AL_PREFIX = "Adventurers League: ";
 AL_PREFIX_SHORT = "AL: ";
@@ -1213,6 +1148,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_DM13_3PP] = DM_PREFIX + "#13 - Dragon Magic" + PP
 Parser.SOURCE_JSON_TO_FULL[SRC_DM14_3PP] = DM_PREFIX + "#14 - Elemental Magic" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_ToB_3PP] = "Tome of Beasts" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_CC_3PP] = "Critter Compendium" + PP3_SUFFIX;
+Parser.SOURCE_JSON_TO_FULL[SRC_FEF_3PP] = "Fifth Edition Foes" + PP3_SUFFIX;
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[SRC_CoS] = "CoS";
@@ -1305,6 +1241,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_DM13_3PP] = "DM13 (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM14_3PP] = "DM14 (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_ToB_3PP] = "ToB (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_CC_3PP] = "CC (3pp)";
+Parser.SOURCE_JSON_TO_ABV[SRC_FEF_3PP] = "FEF (3pp)";
 
 Parser.ITEM_TYPE_JSON_TO_ABV = {
 	"A": "Ammunition",
@@ -1507,6 +1444,16 @@ UrlUtil.getCurrentPage = function () {
 	return pSplit[pSplit.length - 1];
 };
 
+/**
+ * All internal URL construction should pass through here, to ensure `static.5etools.com` is used when required.
+ *
+ * @param href the link
+ */
+UrlUtil.link = function (href) {
+	if (IS_DEPLOYED) return `${DEPLOYED_STATIC_ROOT}${href}`;
+	return href;
+};
+
 UrlUtil.PG_BESTIARY = "bestiary.html";
 UrlUtil.PG_SPELLS = "spells.html";
 UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
@@ -1564,14 +1511,26 @@ function joinConjunct (arr, joinWith, conjunctWith) {
 
 // JSON LOADING ========================================================================================================
 function loadJSON (url, onLoadFunction, ...otherData) {
-	const request = new XMLHttpRequest();
-	request.open('GET', url, true);
-	request.overrideMimeType("application/json");
-	request.onload = function () {
-		const data = JSON.parse(this.response);
-		onLoadFunction(data, otherData);
-	};
+	const procUrl = UrlUtil.link(url);
+	const request = getRequest(procUrl);
+	if (procUrl !== url) {
+		request.onerror = function () {
+			const fallbackRequest = getRequest(url);
+			fallbackRequest.send();
+		};
+	}
 	request.send();
+
+	function getRequest (toUrl) {
+		const request = new XMLHttpRequest();
+		request.open("GET", toUrl, true);
+		request.overrideMimeType("application/json");
+		request.onload = function () {
+			const data = JSON.parse(this.response);
+			onLoadFunction(data, otherData);
+		};
+		return request;
+	}
 }
 
 /**
