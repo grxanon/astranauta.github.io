@@ -339,7 +339,7 @@ function EntryRenderer () {
 		function renderLink (self, entry) {
 			function getHoverString () {
 				if (!entry.href.hover) return "";
-				return `onmouseover="EntryRenderer.hover.show(this, '${entry.href.hover.page}', '${entry.href.hover.source}', '${entry.href.hash}')"`
+				return `onmouseover="EntryRenderer.hover.show(this, '${entry.href.hover.page}', '${entry.href.hover.source}', '${UrlUtil.encodeForHash(entry.href.hash)}')"`
 			}
 
 			let href;
@@ -698,7 +698,7 @@ EntryRenderer.feat = {
 };
 
 EntryRenderer.spell = {
-	getCompactRenderedString: function (spell) {
+	getCompactRenderedString: (spell) => {
 		if (!this.renderer) {
 			this.renderer = new EntryRenderer();
 		}
@@ -751,7 +751,7 @@ EntryRenderer.spell = {
 		return renderStack.join("");
 	},
 
-	getRenderedString: function (spell, renderer) {
+	getRenderedString: (spell, renderer) => {
 		const renderStack = [];
 		const sourceFull = Parser.sourceJsonToFull(spell.source);
 
@@ -1010,7 +1010,7 @@ EntryRenderer.item = {
 				if (item.weaponCategory) type.push(item.weaponCategory + " Weapon");
 				if (item.type) type.push(Parser.itemTypeToAbv(item.type));
 				if (item.poison) type.push("Poison");
-				item.type = type;
+				item.procType = type;
 				item.typeText = type.join(", ");
 
 				// bake in attunement
@@ -1043,10 +1043,106 @@ EntryRenderer.item = {
 	}
 };
 
+EntryRenderer.psionic = {
+	enhanceMode: (mode) => {
+		if (!mode.enhanced) {
+			mode.name = `${mode.name} ${getModeSuffix(mode, false)}`;
+
+			if (mode.submodes) {
+				mode.submodes.forEach(sm => {
+					sm.name = `${sm.name} ${getModeSuffix(sm, true)}`;
+				});
+			}
+
+			mode.enhanced = true;
+		}
+
+		function getModeSuffix (mode, subMode) {
+			subMode = subMode === undefined || subMode === null ? false : subMode;
+			const modeTitleArray = [];
+			const bracketPart = getModeTitleBracketPart();
+			if (bracketPart !== null) modeTitleArray.push(bracketPart);
+			if (subMode) return `${modeTitleArray.join(" ")}`;
+			else return `${modeTitleArray.join(" ")}</span>`;
+
+			function getModeTitleBracketPart () {
+				const modeTitleBracketArray = [];
+
+				if (mode.cost) modeTitleBracketArray.push(getModeTitleCost());
+				if (mode.concentration) modeTitleBracketArray.push(getModeTitleConcentration());
+
+				if (modeTitleBracketArray.length === 0) return null;
+				return `(${modeTitleBracketArray.join("; ")})`;
+
+				function getModeTitleCost () {
+					const costMin = mode.cost.min;
+					const costMax = mode.cost.max;
+					const costString = costMin === costMax ? costMin : `${costMin}-${costMax}`;
+					return `${costString} psi`;
+				}
+
+				function getModeTitleConcentration () {
+					return `conc., ${mode.concentration.duration} ${mode.concentration.unit}.`
+				}
+			}
+		}
+	},
+
+	getDisciplineText: (psionic, renderer) => {
+		const modeStringArray = [];
+		for (let i = 0; i < psionic.modes.length; ++i) {
+			modeStringArray.push(EntryRenderer.psionic.getModeString(psionic, renderer, i));
+		}
+
+		return `${EntryRenderer.psionic.getDescriptionString(psionic)}${EntryRenderer.psionic.getFocusString(psionic)}${modeStringArray.join(STR_EMPTY)}`;
+	},
+
+	getDescriptionString: (psionic) => {
+		return `<p>${psionic.description}</p>`;
+	},
+
+	getFocusString: (psionic) => {
+		return `<p><span class='psi-focus-title'>Psychic Focus.</span> ${psionic.focus}</p>`;
+	},
+
+	getModeString: (psionic, renderer, modeIndex) => {
+		const mode = psionic.modes[modeIndex];
+		EntryRenderer.psionic.enhanceMode(mode, false);
+
+		const renderStack = [];
+		renderer.recursiveEntryRender(mode, renderStack, 3);
+		const modeString = renderStack.join("");
+		if (psionic.modes[modeIndex].submodes === undefined) return modeString;
+		const subModeString = getSubModeString();
+		return `${modeString}${subModeString}`;
+
+		function getSubModeString () {
+			const subModes = psionic.modes[modeIndex].submodes;
+
+			const fauxEntry = {
+				type: "list",
+				style: "list-hang",
+				items: []
+			};
+
+			for (let i = 0; i < subModes.length; ++i) {
+				fauxEntry.items.push({
+					type: "item",
+					name: subModes[i].name,
+					entry: subModes[i].entries.join("<br>")
+				});
+			}
+			const renderStack = [];
+			renderer.recursiveEntryRender(fauxEntry, renderStack, 4);
+			return renderStack.join("");
+		}
+	}
+};
+
 EntryRenderer.hover = {
 	linkCache: {},
 
-	_addToCache: function (page, source, hash, item) {
+	_addToCache: (page, source, hash, item) => {
 		page = page.toLowerCase();
 		source = source.toLowerCase();
 		hash = hash.toLowerCase();
@@ -1058,7 +1154,7 @@ EntryRenderer.hover = {
 		srcLvl[hash] = item;
 	},
 
-	_getFromCache: function (page, source, hash) {
+	_getFromCache: (page, source, hash) => {
 		page = page.toLowerCase();
 		source = source.toLowerCase();
 		hash = hash.toLowerCase();
@@ -1066,7 +1162,7 @@ EntryRenderer.hover = {
 		return this.linkCache[page][source][hash];
 	},
 
-	_isCached: function (page, source, hash) {
+	_isCached: (page, source, hash) => {
 		page = page.toLowerCase();
 		source = source.toLowerCase();
 		hash = hash.toLowerCase();
@@ -1074,7 +1170,15 @@ EntryRenderer.hover = {
 		return this.linkCache[page] && this.linkCache[page][source] && this.linkCache[page][source][hash];
 	},
 
-	_makeWindow: function (winW, winH, ele, content) {
+	_makeWindow: () => {
+		const winW = EntryRenderer.hover._curHovering.winW;
+		const winH = EntryRenderer.hover._curHovering.winH;
+		const ele = EntryRenderer.hover._curHovering.ele;
+		const page = EntryRenderer.hover._curHovering.cPage;
+		const source = EntryRenderer.hover._curHovering.cSource;
+		const hash = EntryRenderer.hover._curHovering.cHash;
+		const content = EntryRenderer.hover._curHovering.renderFunction(EntryRenderer.hover._getFromCache(page, source, hash));
+
 		const offset = $(ele).offset();
 		const vpOffsetT = offset.top - $(document).scrollTop();
 		const vpOffsetL = offset.left - $(document).scrollLeft();
@@ -1119,25 +1223,64 @@ EntryRenderer.hover = {
 
 		$(ele).css("cursor", "");
 		EntryRenderer.hover._showInProgress = false;
+		EntryRenderer.hover._curHovering = null;
 	},
 
 	_showInProgress: false,
-	show: function (ele, page, source, hash) {
-		hash = UrlUtil.encodeForHash(hash);
-
+	_hoverId: 1,
+	_curHovering: null,
+	show: (ele, page, source, hash) => {
 		const winW = $(window).width();
 		const winH = $(window).height();
+
 		// don't show on mobile
-		if (winW <= 768 || EntryRenderer.hover._showInProgress) return;
+		if (winW <= 768) return;
+
+		let hoverId;
+		const curHoverId = $(ele).data("hover-id");
+		if (curHoverId) {
+			hoverId = curHoverId;
+		} else {
+			hoverId = EntryRenderer.hover._hoverId++;
+			$(ele).data("hover-id", hoverId);
+		}
+		let renderFunction;
+		switch (page) {
+			case UrlUtil.PG_SPELLS:
+				renderFunction = EntryRenderer.spell.getCompactRenderedString;
+				break;
+			case UrlUtil.PG_ITEMS:
+				renderFunction = EntryRenderer.item.getCompactRenderedString;
+				break;
+			default:
+				throw new Error(`No hover render function specified for page ${page}`)
+		}
+		EntryRenderer.hover._curHovering = {
+			hoverId: hoverId,
+			winW: winW,
+			winH: winH,
+			ele: ele,
+			renderFunction: renderFunction,
+			cPage: page,
+			cSource: source,
+			cHash: hash
+		};
+
+		// return if another event chain is handling the event
+		if (EntryRenderer.hover._showInProgress) {
+			return;
+		}
+
 		EntryRenderer.hover._showInProgress = true;
 		$(ele).css("cursor", "wait");
 
 		// clean up any old event listeners
 		$(ele).unbind("mouseleave");
 
-		function doRender (renderFunction, toRender) {
-			EntryRenderer.hover._makeWindow(winW, winH, ele, renderFunction(toRender));
-		}
+		// cancel hover if the mouse leaves
+		$(ele).bind("mouseleave", () => {
+			EntryRenderer.hover._curHovering = null;
+		});
 
 		switch (page) {
 			case UrlUtil.PG_SPELLS: {
@@ -1145,16 +1288,18 @@ EntryRenderer.hover = {
 
 				if (!EntryRenderer.hover._isCached(page, source, hash)) {
 					DataUtil.loadJSON(`${BASE_URL}index.json`, (data) => {
-						DataUtil.loadJSON(`${BASE_URL}${data[source]}`, (data) => {
+						const procData = {};
+						Object.keys(data).forEach(k => procData[k.toLowerCase()] = data[k]);
+						DataUtil.loadJSON(`${BASE_URL}${procData[source.toLowerCase()]}`, (data) => {
 							data.spell.forEach(spell => {
 								const spellHash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS](spell);
 								EntryRenderer.hover._addToCache(page, spell.source, spellHash, spell)
 							});
-							doRender(EntryRenderer.spell.getCompactRenderedString, EntryRenderer.hover._getFromCache(page, source, hash));
+							EntryRenderer.hover._makeWindow();
 						});
 					});
 				} else {
-					doRender(EntryRenderer.spell.getCompactRenderedString, EntryRenderer.hover._getFromCache(page, source, hash));
+					EntryRenderer.hover._makeWindow();
 				}
 				break;
 			}
@@ -1166,10 +1311,10 @@ EntryRenderer.hover = {
 							const itemHash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS](item);
 							EntryRenderer.hover._addToCache(page, item.source, itemHash, item)
 						});
-						doRender(EntryRenderer.item.getCompactRenderedString, EntryRenderer.hover._getFromCache(page, source, hash));
+						EntryRenderer.hover._makeWindow();
 					});
 				} else {
-					doRender(EntryRenderer.item.getCompactRenderedString, EntryRenderer.hover._getFromCache(page, source, hash));
+					EntryRenderer.hover._makeWindow();
 				}
 				break;
 			}

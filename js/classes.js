@@ -20,17 +20,26 @@ const ATB_DATA_FEATURE_LINK = "data-flink";
 const ATB_DATA_FEATURE_ID = "data-flink-id";
 const ATB_DATA_SC_LIST = "data-subclass-list";
 
+const HOMEBREW_STORAGE = "HOMEBREW_CHARACTER";
+
 let tableDefault;
 let statsProfDefault;
 let classTableDefault;
 
 let classes;
+let list;
+let homebrew;
 
 const jsonURL = "data/classes.json";
 
 const renderer = new EntryRenderer();
+const storage = window.localStorage;
 
 window.onload = function load () {
+	tableDefault = $("#pagecontent").html();
+	statsProfDefault = $("#statsprof").html();
+	classTableDefault = $("#classtable").html();
+
 	DataUtil.loadJSON(jsonURL, onJsonLoad);
 };
 
@@ -47,40 +56,63 @@ function getTableDataScData (scName, scSource) {
 }
 
 function onJsonLoad (data) {
-	classes = data.class;
+	list = search({
+		valueNames: ['name', 'source', 'uniqueid'],
+		listClass: "classes"
+	});
+	addData(data);
 
+	const rawBrew = storage.getItem(HOMEBREW_STORAGE);
+	if (rawBrew) {
+		try {
+			homebrew = JSON.parse(rawBrew);
+			homebrew.brew.forEach(brew => {
+				addData(brew);
+			});
+		} catch (e) {
+			// on error, purge all brew and reset hash
+			storage.removeItem(HOMEBREW_STORAGE);
+			homebrew = null;
+			window.location.hash = "";
+		}
+	}
+
+	initHistory();
+}
+
+function addData (data) {
 	// alphabetically sort subclasses
-	for (const c of classes) {
+	for (const c of data.class) {
 		c.subclasses = c.subclasses.sort((a, b) => ascSort(a.name, b.name));
 	}
 
 	// for any non-standard source classes, mark subclasses from the same source as "forceStandard"
-	classes.filter(c => isNonstandardSource(c.source)).forEach(c => c.subclasses.filter(sc => sc.source === c.source).forEach(sc => sc.source = {"source": sc.source, "forceStandard": true}));
+	data.class.filter(c => isNonstandardSource(c.source)).forEach(c => c.subclasses.filter(sc => sc.source === c.source).forEach(sc => sc.source = {"source": sc.source, "forceStandard": true}));
 
-	tableDefault = $("#pagecontent").html();
-	statsProfDefault = $("#statsprof").html();
-	classTableDefault = $("#classtable").html();
+	let i = 0;
+	if (!classes) {
+		classes = data.class;
+	} else {
+		i = classes.length;
+		classes = classes.concat(data.class);
+	}
 
 	const classTable = $("ul.classes");
 	let tempString = "";
-	for (let i = 0; i < classes.length; i++) {
+	for (; i < classes.length; i++) {
 		const curClass = classes[i];
 		tempString +=
-			`<li>
+			`<li ${curClass.uniqueId ? `data-unique-id="${curClass.uniqueId}"` : ""}>
 				<a id='${i}' href='${getClassHash(curClass)}' title='${curClass.name}'>
 					<span class='name col-xs-8'>${curClass.name}</span>
 					<span class='source col-xs-4 text-align-center source${Parser.sourceJsonToAbv(curClass.source)}' title='${Parser.sourceJsonToFull(curClass.source)}'>${Parser.sourceJsonToAbv(curClass.source)}</span>
+					<span class="uniqueid hidden">${curClass.uniqueId ? curClass.uniqueId : i}</span>
 				</a>
 			</li>`;
 	}
 	classTable.append(tempString);
-
-	const list = search({
-		valueNames: ['name', 'source'],
-		listClass: "classes"
-	});
-
-	initHistory()
+	list.reIndex();
+	list.sort("name");
 }
 
 function loadhash (id) {
@@ -89,11 +121,14 @@ function loadhash (id) {
 	$("#classtable").html(classTableDefault);
 	const curClass = classes[id];
 
-	const isUaClass = isNonstandardSource(curClass.source);
-
 	// name
 	$("th#nameTable").html(curClass.name);
 	$("th#nameSummary").html(curClass.name);
+	if (curClass.authors) {
+		$("th#author").html(`By ${curClass.authors.join(", ")}`).show();
+	} else {
+		$("th#author").html("").hide();
+	}
 
 	// SUMMARY SIDEBAR =================================================================================================
 	// hit dice and HP
@@ -563,5 +598,95 @@ function loadsub (sub) {
 				$(this).hide();
 			}
 		);
+	}
+}
+
+function manageBrew () {
+	const $body = $(`body`);
+	$body.css("overflow", "hidden");
+	const $overlay = $(`<div class="homebrew-overlay"/>`);
+	$overlay.on("click", () => {
+		$body.css("overflow", "");
+		$overlay.remove();
+	});
+	const $window = $(`
+		<div class="homebrew-window dropdown-menu" style="display: block;">
+			<h4>Manage Homebrew</h4>
+			<hr>
+		</div>`
+	);
+	$window.on("click", (evt) => {
+		evt.stopPropagation();
+	});
+	const $brewList = $(`<div></div>`);
+	$window.append($brewList);
+
+	refreshBrewList();
+
+	const $iptAdd = $(`<input type="file" accept=".json" style="display: none;">`).on("change", (evt) => {
+		addBrew(evt);
+	});
+	$window.append($(`<div class="text-align-center"/>`).append($(`<label class="btn btn-default btn-sm btn-file">Load Brew</label>`).append($iptAdd)));
+
+	$overlay.append($window);
+	$body.append($overlay);
+
+	function refreshBrewList () {
+		$brewList.html("");
+		if (homebrew) {
+			homebrew.brew.forEach(j => {
+				const $btnDel = $(`<button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash""></span></button>`).on("click", () => {
+					deleteBrew(j.uniqueId);
+				});
+				$brewList.append($(`<p>`).append($btnDel).append(`&nbsp;<b>${j.class.map(c => c.name).join(", ")} ${j.version ? ` (v${j.version})` : ""}</b> by ${j.authors ? j.authors.join(", ") : "Anonymous"}`));
+			});
+		}
+	}
+
+	function addBrew (event) {
+		const input = event.target;
+
+		const reader = new FileReader();
+		reader.onload = () => {
+			const text = reader.result;
+			const json = JSON.parse(text);
+			// ms timestamp ought to be unique enough
+			json.uniqueId = Date.now();
+
+			json.class.forEach(c => {
+				if (json.authors) {
+					if (!c.authors) {
+						c.authors = json.authors;
+					}
+				}
+				c.uniqueId = json.uniqueId;
+			});
+
+			if (!homebrew) {
+				homebrew = { brew: [json] };
+			} else {
+				homebrew.brew = homebrew.brew.concat(json);
+			}
+			storage.setItem(HOMEBREW_STORAGE, JSON.stringify(homebrew));
+
+			// reset the input
+			$(event.target).val("");
+
+			addData(json);
+
+			refreshBrewList();
+		};
+		reader.readAsText(input.files[0]);
+	}
+
+	function deleteBrew (uniqueId) {
+		const index = homebrew.brew.findIndex(it => it.uniqueId === uniqueId);
+		if (index >= 0) {
+			homebrew.brew.splice(index, 1);
+			storage.setItem(HOMEBREW_STORAGE, JSON.stringify(homebrew));
+			refreshBrewList();
+			list.remove("uniqueid", uniqueId);
+			_freshLoad();
+		}
 	}
 }

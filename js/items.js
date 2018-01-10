@@ -103,7 +103,7 @@ function populateTablesAndFilters () {
 
 		// populate filters
 		sourceFilter.addIfAbsent(source);
-		curitem.type.forEach(t => typeFilter.addIfAbsent(t));
+		curitem.procType.forEach(t => typeFilter.addIfAbsent(t));
 		tierTags.forEach(tt => tierFilter.addIfAbsent(tt));
 	}
 	// populate table
@@ -141,7 +141,7 @@ function populateTablesAndFilters () {
 			const i = itemList[$(item.elm).attr(FLTR_ID)];
 
 			return sourceFilter.toDisplay(f, i.source) &&
-				typeFilter.toDisplay(f, i.type) &&
+				typeFilter.toDisplay(f, i.procType) &&
 				tierFilter.toDisplay(f, i._fTier) &&
 				rarityFilter.toDisplay(f, i.rarity) &&
 				attunementFilter.toDisplay(f, i.attunementCategory) &&
@@ -163,9 +163,9 @@ function populateTablesAndFilters () {
 	}
 
 	$("#filtertools").find("button.sort").on("click", function () {
-		$(this).attr("sortby", $(this).attr("sortby") === "asc" ? "desc" : "asc");
-		magiclist.sort($(this).attr("sort"), {order: $(this).attr("sortby"), sortFunction: sortItems});
-		mundanelist.sort($(this).attr("sort"), {order: $(this).attr("sortby"), sortFunction: sortItems});
+		$(this).data("sortby", $(this).data("sortby") === "asc" ? "desc" : "asc");
+		magiclist.sort($(this).data("sort"), {order: $(this).data("sortby"), sortFunction: sortItems});
+		mundanelist.sort($(this).data("sort"), {order: $(this).data("sortby"), sortFunction: sortItems});
 	});
 
 	$("#itemcontainer").find("h3").not(":has(input)").click(function () {

@@ -648,7 +648,14 @@ Parser.spRangeToFull = function (range) {
 		return `Self (${size.amount}-${Parser.getSingletonUnit(size.type)}${getAreaStyleStr()})`;
 
 		function getAreaStyleStr () {
-			return range.type === RNG_SPHERE || range.type === RNG_HEMISPHERE ? "-radius" : " " + range.type;
+			switch (range.type) {
+				case RNG_SPHERE:
+					return "-radius";
+				case RNG_HEMISPHERE:
+					return `-radius ${range.type}`;
+				default:
+					return ` ${range.type}`
+			}
 		}
 	}
 };
@@ -713,6 +720,7 @@ Parser._spSubclassItem = function (fromSubclass) {
 	return `<span class="italic" title="Source: ${Parser.sourceJsonToFull(fromSubclass.subclass.source)}">${fromSubclass.subclass.name}${fromSubclass.subclass.subSubclass ? ` (${fromSubclass.subclass.subSubclass})` : ""}</span> <span title="Source: ${Parser.sourceJsonToFull(fromSubclass.class.source)}">${fromSubclass.class.name}</span>`;
 };
 
+// mon-prefix functions are for parsing monster data, and shared with the roll20 script
 Parser.monTypeToFullObj = function (type) {
 	const out = {type: "", tags: [], asText: ""};
 
@@ -750,6 +758,20 @@ Parser.monTypeToFullObj = function (type) {
 
 Parser.monTypeToPlural = function (type) {
 	return Parser._parse_aToB(Parser.MON_TYPE_TO_PLURAL, type);
+};
+
+// psi-prefix functions are for parsing psionic data, and shared with the roll20 script
+Parser.PSI_ABV_TYPE_TALENT = "T";
+Parser.PSI_ABV_TYPE_DISCIPLINE = "D";
+Parser.PSI_ORDER_NONE = "None";
+Parser.psiTypeToFull = (type) => {
+	if (type === Parser.PSI_ABV_TYPE_TALENT) return "Talent";
+	else if (type === Parser.PSI_ABV_TYPE_DISCIPLINE) return "Discipline";
+	else return type;
+};
+
+Parser.psiOrderToFull = (order) => {
+	return order === undefined ? Parser.PSI_ORDER_NONE : order;
 };
 
 Parser.CAT_ID_CREATURE = 1;
@@ -1032,6 +1054,7 @@ SRC_UAESR = SRC_UA_PREFIX + "ElfSubraces";
 SRC_UAMAC = SRC_UA_PREFIX + "MassCombat";
 SRC_UA3PE = SRC_UA_PREFIX + "ThreePillarExperience";
 SRC_UAGHI = SRC_UA_PREFIX + "GreyhawkInitiative";
+SRC_UATSC = SRC_UA_PREFIX + "ThreeSubclasses";
 
 SRC_3PP_SUFFIX = " 3pp";
 SRC_BOLS_3PP = "BoLS" + SRC_3PP_SUFFIX;
@@ -1139,6 +1162,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_UAESR] = UA_PREFIX + "Elf Subraces";
 Parser.SOURCE_JSON_TO_FULL[SRC_UAMAC] = UA_PREFIX + "Mass Combat";
 Parser.SOURCE_JSON_TO_FULL[SRC_UA3PE] = UA_PREFIX + "Three-Pillar Experience";
 Parser.SOURCE_JSON_TO_FULL[SRC_UAGHI] = UA_PREFIX + "Greyhawk Initiative";
+Parser.SOURCE_JSON_TO_FULL[SRC_UATSC] = UA_PREFIX + "Three Subclasses";
 Parser.SOURCE_JSON_TO_FULL[SRC_BOLS_3PP] = "Book of Lost Spells" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_DM01_3PP] = DM_PREFIX + "#01 - Clockwork" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_DM02_3PP] = DM_PREFIX + "#02 - Rune Magic" + PP3_SUFFIX;
@@ -1233,6 +1257,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_UAESR] = "UAESR";
 Parser.SOURCE_JSON_TO_ABV[SRC_UAMAC] = "UAMAC";
 Parser.SOURCE_JSON_TO_ABV[SRC_UA3PE] = "UA3PE";
 Parser.SOURCE_JSON_TO_ABV[SRC_UAGHI] = "UAGHI";
+Parser.SOURCE_JSON_TO_ABV[SRC_UATSC] = "UATSC";
 Parser.SOURCE_JSON_TO_ABV[SRC_BOLS_3PP] = "BoLS (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM01_3PP] = "DM01 (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM02_3PP] = "DM02 (3pp)";
@@ -1535,7 +1560,7 @@ DataUtil = {
 
 		const procUrl = UrlUtil.link(url);
 		if (this._loaded[procUrl]) {
-			handleAlreadyLoaded(url);
+			handleAlreadyLoaded(procUrl);
 			return;
 		}
 
