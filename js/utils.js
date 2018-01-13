@@ -10,6 +10,7 @@ DEPLOYED_STATIC_ROOT = "https://static.5etools.com/";
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
 HASH_SUB_LIST_SEP = "~";
+HASH_SUB_KV_SEP = ":";
 HASH_START = "#";
 HASH_SUBCLASS = "sub:";
 
@@ -789,6 +790,7 @@ Parser.CAT_ID_RACE = 10;
 Parser.CAT_ID_OTHER_REWARD = 11;
 Parser.CAT_ID_VARIANT_OPTIONAL_RULE = 12;
 Parser.CAT_ID_ADVENTURE = 13;
+Parser.CAT_ID_DEITY = 14;
 
 Parser.CAT_ID_TO_FULL = {};
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CREATURE] = "Bestiary";
@@ -804,6 +806,7 @@ Parser.CAT_ID_TO_FULL[Parser.CAT_ID_RACE] = "Race";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_OTHER_REWARD] = "Other Reward";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_VARIANT_OPTIONAL_RULE] = "Variant/Optional Rule";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_ADVENTURE] = "Adventure";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_DEITY] = "Deity";
 
 Parser.pageCategoryToFull = function (catId) {
 	return Parser._parse_aToB(Parser.CAT_ID_TO_FULL, catId);
@@ -1375,6 +1378,7 @@ function isNonstandardSource (source) {
 	if (source && source.forceStandard !== undefined) {
 		return !source.forceStandard;
 	}
+	if (source && source.source) source = source.source;
 	return (source !== undefined && source !== null) && (source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source.endsWith(SRC_3PP_SUFFIX) || source === SRC_OGA);
 }
 
@@ -1495,6 +1499,22 @@ UrlUtil.link = function (href) {
 	return href;
 };
 
+UrlUtil.unpackSubHash = function (subHash, unencode) {
+	// format is "key:value~list~sep~with~tilde"
+	if (subHash.includes(HASH_SUB_KV_SEP)) {
+		const keyValArr = subHash.split(HASH_SUB_KV_SEP).map(s => s.trim());
+		const out = {};
+		let k = keyValArr[0].toLowerCase();
+		if (unencode) k = decodeURIComponent(k);
+		let v = keyValArr[1].toLowerCase();
+		if (unencode) v = decodeURIComponent(v);
+		out[k] = v.split(HASH_SUB_LIST_SEP).map(s => s.trim());
+		return out;
+	} else {
+		throw new Error(`Baldy formatted subhash ${subHash}`)
+	}
+};
+
 UrlUtil.PG_BESTIARY = "bestiary.html";
 UrlUtil.PG_SPELLS = "spells.html";
 UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
@@ -1508,6 +1528,8 @@ UrlUtil.PG_RACES = "races.html";
 UrlUtil.PG_REWARDS = "rewards.html";
 UrlUtil.PG_VARIATNRULES = "variantrules.html";
 UrlUtil.PG_ADVENTURE = "adventure.html";
+UrlUtil.PG_DEITIES = "deities.html";
+UrlUtil.PG_CULTS = "cults.html";
 
 UrlUtil.URL_TO_HASH_BUILDER = {};
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
@@ -1523,6 +1545,8 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES] = (it) => UrlUtil.encodeForHash([i
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_REWARDS] = (it) => UrlUtil.encodeForHash(it.name);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VARIATNRULES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ADVENTURE] = (it) => UrlUtil.encodeForHash(it.id);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_DEITIES] = (it) => UrlUtil.encodeForHash(it.name);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CULTS] = (it) => UrlUtil.encodeForHash(it.name);
 
 // SORTING =============================================================================================================
 // TODO refactor into a class
@@ -1645,6 +1669,36 @@ function addListShowHide () {
 		hideSearchBtn.show();
 	});
 }
+
+// ROLLING =============================================================================================================
+RollerUtil = {
+	/**
+	 * Result in range: 0 to (max-1); inclusive
+	 * e.g. roll(20) gives results ranging from 0 to 19
+	 * @param max range max (exclusive)
+	 * @returns {number} rolled
+	 */
+	roll: (max) => {
+		return Math.floor(Math.random() * max);
+	},
+
+	addListRollButton: () => {
+		const listWrapper = $("#listcontainer");
+
+		const $btnRoll = $(`<button class="btn btn-default" id="feelinglucky" title="Feeling Lucky?"><span class="glyphicon glyphicon-random"></span></button>`);
+		$btnRoll.on("click", () => {
+			if (listWrapper.data("lists")) {
+				const allLists = listWrapper.data("lists");
+				const rollX = RollerUtil.roll(allLists.length);
+				const list = listWrapper.data("lists")[rollX];
+				const rollY = RollerUtil.roll(list.visibleItems.length);
+				window.location.hash = $(list.visibleItems[rollY].elm).find(`a`).prop("hash");
+			}
+		});
+
+		$(`#filter-search-input-group`).find(`#reset`).before($btnRoll);
+	}
+};
 
 // ID GENERATION =======================================================================================================
 CryptUtil = {
