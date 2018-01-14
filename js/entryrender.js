@@ -297,7 +297,7 @@ function EntryRenderer () {
 			const nextDepth = incDepth ? depth + 1 : depth;
 			const styleString = getStyleString();
 			const dataString = getDataString();
-			const preReqText = getPreReqText();
+			const preReqText = getPreReqText(self);
 			const headerSpan = entry.name !== undefined ? `<span class="entry-title">${entry.name}${inlineTitle ? "." : ""}</span> ` : "";
 
 			if (entry.entries || entry.name) {
@@ -331,8 +331,13 @@ function EntryRenderer () {
 				return dataString;
 			}
 
-			function getPreReqText () {
-				if (entry.prerequisite) return `<span class="prerequisite">Prerequisite: ${entry.prerequisite}</span>`;
+			function getPreReqText (self) {
+				// TODO refactor string rendering to make this easier
+				if (entry.prerequisite) {
+					const tempStack = [];
+					self.recursiveEntryRender({type: "inline", entries: [entry.prerequisite]}, tempStack);
+					return `<span class="prerequisite">Prerequisite: ${tempStack.join("")}</span>`;
+				}
 				return "";
 			}
 		}
@@ -473,10 +478,12 @@ function EntryRenderer () {
 								break;
 							case "@condition":
 								fauxEntry.href.path = "conditions.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
 							case "@background":
 								fauxEntry.href.path = "backgrounds.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
 
