@@ -166,6 +166,27 @@ function EntryRenderer () {
 					textStack.push(this.renderLink(entry));
 					break;
 
+				case "actions":
+					textStack.push(`<${this.wrapperTag} class="${EntryRenderer.HEAD_2}"><span class="entry-title">${entry.name}.</span> `);
+					for (let i = 0; i < entry.entries.length; i++) {
+						this.recursiveEntryRender(entry.entries[i], textStack, depth, "<p>", "</p>");
+					}
+					textStack.push(`</${this.wrapperTag}>`);
+					break;
+
+				case "attack":
+					renderPrefix();
+					textStack.push(`<i>${Parser.attackTypeToFull(entry.attackType)}:</i> `);
+					for (let i = 0; i < entry.attackEntries.length; i++) {
+						this.recursiveEntryRender(entry.attackEntries[i], textStack, depth);
+					}
+					textStack.push(` <i>Hit:</i> `);
+					for (let i = 0; i < entry.hitEntries.length; i++) {
+						this.recursiveEntryRender(entry.hitEntries[i], textStack, depth);
+					}
+					renderSuffix();
+					break;
+
 				// list items
 				case "item":
 					renderPrefix();
@@ -332,7 +353,6 @@ function EntryRenderer () {
 			}
 
 			function getPreReqText (self) {
-				// TODO refactor string rendering to make this easier
 				if (entry.prerequisite) {
 					const tempStack = [];
 					self.recursiveEntryRender({type: "inline", entries: [entry.prerequisite]}, tempStack);
@@ -390,11 +410,13 @@ function EntryRenderer () {
 							type: "dice",
 							rollable: true
 						};
+						const [rollText, displayText] = text.split("|");
+						if (displayText) fauxEntry.displayText = displayText;
 
 						switch (tag) {
 							case "@dice": {
 								// format: {@dice 1d2+3+4d5-6} // TODO do we need to handle e.g. 4d6+1-1d4+2 (negative dice exp)?
-								const spl = text.toLowerCase().replace(/\s/g, "").split(/[+-]/g).map(s => s.trim());
+								const spl = rollText.toLowerCase().replace(/\s/g, "").split(/[+-]/g).map(s => s.trim());
 								// recombine modifiers
 								const toRoll = [];
 								for (let i = 0; i < spl.length; ++i) {
@@ -423,7 +445,7 @@ function EntryRenderer () {
 									{
 										number: 1,
 										faces: 20,
-										modifier: Number(text),
+										modifier: Number(rollText),
 										hideDice: true
 									}
 								];
@@ -572,7 +594,7 @@ function EntryRenderer () {
 	this.renderLink = function (entry) {
 		function getHoverString () {
 			if (!entry.href.hover) return "";
-			return `onmouseover="EntryRenderer.hover.show(this, '${entry.href.hover.page}', '${entry.href.hover.source}', '${UrlUtil.encodeForHash(entry.href.hash)}')"`
+			return `onmouseover="EntryRenderer.hover.show(this, '${entry.href.hover.page}', '${entry.href.hover.source}', '${UrlUtil.encodeForHash(entry.href.hash).replace(/'/g, "\\'")}')"`
 		}
 
 		let href;
@@ -637,15 +659,39 @@ EntryRenderer.getEntryDice = function (entry) {
 		return stack.join("+");
 	}
 
+	const toDisplay = entry.displayText ? entry.displayText : getDiceAsStr();
+
 	// TODO make droll integration optional
 	if (typeof droll !== "undefined" && entry.rollable === true) {
 		// TODO output this somewhere nice
 		// TODO make this less revolting
 
 		// TODO output to small tooltip-stype bubble? Close on mouseout
-		return `<span class='roller unselectable' onclick='EntryRenderer._rollerClick(this, ${JSON.stringify(entry.toRoll)})'>${getDiceAsStr()}</span>`;
+		return `<span class='roller unselectable' onclick='EntryRenderer._rollerClick(this, ${JSON.stringify(entry.toRoll)})'>${toDisplay}</span>`;
 	} else {
-		return getDiceAsStr();
+		return toDisplay;
+	}
+};
+
+EntryRenderer.utils = {
+	getBorderTr: () => {
+		return `<tr><th class="border" colspan="6"></th></tr>`;
+	},
+
+	getNameTr: (it, addPageNum) => {
+		return `<tr>
+					<th class="name" colspan="6">
+						<span class="stats-name">${it.name}</span>
+						<span class="stats-source source${it.source}" title="${Parser.sourceJsonToAbv(it.source)}">
+							${Parser.sourceJsonToAbv(it.source)}${addPageNum && it.page ? ` p${it.page}` : ""}
+						</span>
+					</th>
+				</tr>`;
+	},
+
+	getPageTr: (it) => {
+		const addSourceText = it.additionalSources ? `. Additional information from ${it.additionalSources.map(as => `<i title="${Parser.sourceJsonToFull(as.source)}">${Parser.sourceJsonToAbv(as.source)}</i>, page ${as.page}`).join("; ")}.` : "";
+		return `${it.page ? `<td colspan=6><b>Source: </b> <i title="${Parser.sourceJsonToFull(it.source)}">${Parser.sourceJsonToAbv(it.source)}</i>, page ${it.page}${addSourceText}</td>` : ""}`;
 	}
 };
 
@@ -768,12 +814,7 @@ EntryRenderer.spell = {
 		const renderStack = [];
 
 		renderStack.push(`
-			<tr><th class="name" colspan="6">
-				<span class="stats-name">${spell.name}</span>
-				<span class="stats-source source${spell.source}" title="${Parser.sourceJsonToFull(spell.source)}">
-					${Parser.sourceJsonToAbv(spell.source)}${spell.page ? ` p${spell.page}` : ""}
-				</span>
-			</th></tr>
+			${EntryRenderer.utils.getNameTr(spell, true)}
 			<tr><td colspan="6">
 				<table class="summary">
 					<tr>
@@ -814,11 +855,10 @@ EntryRenderer.spell = {
 
 	getRenderedString: (spell, renderer) => {
 		const renderStack = [];
-		const sourceFull = Parser.sourceJsonToFull(spell.source);
 
 		renderStack.push(`
-			<tr><th class="border" colspan="6"></th></tr>
-			<tr><th class="name" colspan="6"><span class="stats-name">${spell.name}</span><span class="stats-source source${spell.source}" title="${sourceFull}">${Parser.sourceJsonToAbv(spell.source)}</span></th></tr>
+			${EntryRenderer.utils.getBorderTr()}
+			${EntryRenderer.utils.getNameTr(spell)}
 			<tr><td class="levelschoolritual" colspan="6"><span>${Parser.spLevelSchoolMetaToFull(spell.level, spell.school, spell.meta)}</span></td></tr>
 			<tr><td class="castingtime" colspan="6"><span class="bold">Casting Time: </span>${Parser.spTimeListToFull(spell.time)}</td></tr>
 			<tr><td class="range" colspan="6"><span class="bold">Range: </span>${Parser.spRangeToFull(spell.range)}</td></tr>
@@ -855,8 +895,8 @@ EntryRenderer.spell = {
 		}
 
 		renderStack.push(`
-			<td colspan=6><b>Source: </b> <i>${sourceFull}</i>, page ${spell.page}</td>
-			<tr><th class="border" colspan="6"></th></tr>
+			${EntryRenderer.utils.getPageTr(spell)}
+			${EntryRenderer.utils.getBorderTr()}
 		`);
 
 		return renderStack.join("");
@@ -886,9 +926,13 @@ EntryRenderer.item = {
 			}
 		}
 
+		function sortProperties (a, b) {
+			return ascSort(item._allPropertiesPtr[a].name, item._allPropertiesPtr[b].name)
+		}
+
 		let propertiesTxt = "";
 		if (item.property) {
-			const properties = item.property.split(",");
+			const properties = item.property.sort(sortProperties);
 			for (let i = 0; i < properties.length; i++) {
 				const prop = properties[i];
 				let a = item._allPropertiesPtr[prop].name;
@@ -910,7 +954,7 @@ EntryRenderer.item = {
 
 		const renderStack = [];
 
-		renderStack.push(`<tr><th class="name" colspan="6"><span class="stats-name">${item.name}</span><span class="stats-source source${item.source}" title="${Parser.sourceJsonToFull(item.source)}">${Parser.sourceJsonToAbv(item.source)}${item.page ? ` p${item.page}` : ""}</span></th></tr>`);
+		renderStack.push(EntryRenderer.utils.getNameTr(item, true));
 
 		renderStack.push(`<tr><td class="typerarityattunement" colspan="6">${item.typeText}${`${item.tier ? `, ${item.tier}` : ""}${item.rarity ? `, ${item.rarity}` : ""}`} ${item.reqAttune || ""}</td>`);
 
@@ -992,7 +1036,6 @@ EntryRenderer.item = {
 					const curRequires = curVariant.requires;
 					let hasRequired = curBasicItemName.indexOf(" (") === -1;
 					for (const requiredProperty in curRequires) if (curRequires.hasOwnProperty(requiredProperty) && curBasicItem[requiredProperty] !== curRequires[requiredProperty]) hasRequired = false;
-					// hasRequired = hasRequired && Object.keys(curRequires).every(req => curBasicItem[req] === curRequires.requires[req]);
 					if (curVariant.excludes) {
 						const curExcludes = curVariant.excludes;
 						for (const excludedProperty in curExcludes) if (curExcludes.hasOwnProperty(excludedProperty) && curBasicItem[excludedProperty] === curExcludes[excludedProperty]) hasRequired = false;
@@ -1037,8 +1080,7 @@ EntryRenderer.item = {
 				if (item.entries === undefined) itemList[i].entries = [];
 				if (item.type && typeList[item.type]) for (let j = 0; j < typeList[item.type].entries.length; j++) itemList[i].entries = pushObject(itemList[i].entries, typeList[item.type].entries[j]);
 				if (item.property) {
-					const properties = item.property.split(",");
-					for (let j = 0; j < properties.length; j++) if (propertyList[properties[j]].entries) for (let k = 0; k < propertyList[properties[j]].entries.length; k++) itemList[i].entries = pushObject(itemList[i].entries, propertyList[properties[j]].entries[k]);
+					for (let j = 0; j < item.property.length; j++) if (propertyList[item.property[j]].entries) for (let k = 0; k < propertyList[item.property[j]].entries.length; k++) itemList[i].entries = pushObject(itemList[i].entries, propertyList[item.property[j]].entries[k]);
 				}
 				// The following could be encoded in JSON, but they depend on more than one JSON property; maybe fix if really bored later
 				if (item.armor) {

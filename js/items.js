@@ -37,6 +37,10 @@ function sortItems (a, b, o) {
 	} else return 1;
 }
 
+function sortProperties (a, b) {
+
+}
+
 function deselectFilter (deselectProperty, deselectValue) {
 	return function (val) {
 		if (window.location.hash.length) {
@@ -73,8 +77,9 @@ function populateTablesAndFilters () {
 		items: ["Basic", "Generic Variant", "Specific Variant", "Other"],
 		deselFn: deselectFilter("category", "Specific Variant")
 	});
+	const miscFilter = new Filter({header: "Miscellaneous", items: ["Sentient"]});
 
-	const filterBox = initFilterBox(sourceFilter, typeFilter, tierFilter, rarityFilter, propertyFilter, attunementFilter, categoryFilter);
+	const filterBox = initFilterBox(sourceFilter, typeFilter, tierFilter, rarityFilter, propertyFilter, attunementFilter, categoryFilter, miscFilter);
 	const liList = {mundane: "", magic: ""}; // store the <li> tag content here and change the DOM once for each property after the loop
 
 	for (let i = 0; i < itemList.length; i++) {
@@ -91,7 +96,8 @@ function populateTablesAndFilters () {
 
 		// for filter to use
 		curitem._fTier = tierTags;
-		curitem._fProperties = curitem.property ? curitem.property.split(",").map(p => curitem._allPropertiesPtr[p].name).filter(n => n) : [];
+		curitem._fProperties = curitem.property ? curitem.property.map(p => curitem._allPropertiesPtr[p].name).filter(n => n) : [];
+		curitem._fMisc = curitem.sentient ? ["Sentient"] : [];
 
 		liList[rarity === "None" || rarity === "Unknown" || category === "Basic" ? "mundane" : "magic"] += `
 			<li ${FLTR_ID}=${i}>
@@ -149,7 +155,8 @@ function populateTablesAndFilters () {
 				rarityFilter.toDisplay(f, i.rarity) &&
 				propertyFilter.toDisplay(f, i._fProperties) &&
 				attunementFilter.toDisplay(f, i.attunementCategory) &&
-				categoryFilter.toDisplay(f, i.category);
+				categoryFilter.toDisplay(f, i.category) &&
+				miscFilter.toDisplay(f, i._fMisc);
 		}
 		mundanelist.filter(listFilter);
 		magiclist.filter(listFilter);

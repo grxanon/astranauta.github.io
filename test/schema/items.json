@@ -105,7 +105,11 @@
 						}
 					},
 					"property": {
-						"type": "string"
+						"type": "array",
+						"items": {
+							"type": "string",
+							"enum": ["T", "V", "H", "2H", "F", "L", "R", "A", "LD", "S", "AF", "RLD", "BF"]
+						}
 					},
 					"range": {
 						"type": "string"
@@ -153,6 +157,9 @@
 						"type": "string"
 					},
 					"wondrous": {
+						"type": "boolean"
+					},
+					"sentient": {
 						"type": "boolean"
 					},
 					"poison": {
