@@ -212,7 +212,7 @@ function loadhash (id) {
 		groupHeaders.append(`<th ${hasTitle ? `class="colGroupTitle"` : ""} colspan="${tGroup.colLabels.length}" ${subclassData}>${hasTitle ? tGroup.title : ""}</th>`);
 
 		for (let j = 0; j < tGroup.colLabels.length; j++) {
-			let lbl = EntryRenderer.renderEntry(renderer, tGroup.colLabels[j]);
+			let lbl = renderer.renderEntry(tGroup.colLabels[j]);
 			colHeaders.append(`<th class="centred-col" ${subclassData}>${lbl}</th>`)
 		}
 
@@ -664,7 +664,12 @@ function manageBrew () {
 	const $iptAdd = $(`<input multiple type="file" accept=".json" style="display: none;">`).on("change", (evt) => {
 		addBrew(evt);
 	});
-	$window.append($(`<div class="text-align-center"/>`).append($(`<label class="btn btn-default btn-sm btn-file">Load Brew</label>`).append($iptAdd)));
+	$window.append(
+		$(`<div class="text-align-center"/>`)
+			.append($(`<label class="btn btn-default btn-sm btn-file">Load File</label>`).append($iptAdd))
+			.append(" ")
+			.append(`<a href="https://github.com/TheGiddyLimit/homebrew" target="_blank"><button class="btn btn-default btn-sm btn-file">Get Brew</button></a>`)
+	);
 
 	$overlay.append($window);
 	$body.append($overlay);
