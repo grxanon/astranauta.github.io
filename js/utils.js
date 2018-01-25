@@ -6,6 +6,8 @@
 IS_DEPLOYED = typeof _IS_DEPLOYED !== "undefined" && _IS_DEPLOYED;
 VERSION_NUMBER = IS_DEPLOYED ? _IS_DEPLOYED : "-1";
 DEPLOYED_STATIC_ROOT = "https://static.5etools.com/";
+// for the roll20 script to set
+IS_ROLL20 = false;
 
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
@@ -13,6 +15,7 @@ HASH_SUB_LIST_SEP = "~";
 HASH_SUB_KV_SEP = ":";
 HASH_START = "#";
 HASH_SUBCLASS = "sub:";
+HASH_BLANK = "blankhash";
 
 STR_EMPTY = "";
 STR_VOID_LINK = "javascript:void(0)";
@@ -755,7 +758,7 @@ Parser.monTypeToFullObj = function (type) {
 	} else {
 		out.asText = `${type.type}`;
 	}
-	if (tempTags.length) out.asText += ` (${tempTags.join(", ")})`
+	if (tempTags.length) out.asText += ` (${tempTags.join(", ")})`;
 	return out;
 };
 
@@ -1410,7 +1413,15 @@ function isNonstandardSource (source) {
 		return !source.forceStandard;
 	}
 	if (source && source.source) source = source.source;
-	return (source !== undefined && source !== null) && (source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source.endsWith(SRC_3PP_SUFFIX) || source === SRC_OGA);
+	return (source !== undefined && source !== null) && (_isNonStandardSourceWiz(source) || _isNonStandardSource3pp(source));
+}
+
+function _isNonStandardSourceWiz (source) {
+	return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA;
+}
+
+function _isNonStandardSource3pp (source) {
+	return source.endsWith(SRC_3PP_SUFFIX);
 }
 
 // CONVENIENCE/ELEMENTS ================================================================================================
@@ -1423,6 +1434,10 @@ function xor (a, b) {
  */
 function implies (a, b) {
 	return (!a) || b;
+}
+
+function noModifierKeys (e) {
+	return !e.ctrlKey && !e.altKey && !e.metaKey;
 }
 
 // SEARCH AND FILTER ===================================================================================================
@@ -1442,6 +1457,28 @@ function search (options) {
 	} else {
 		listWrapper.data("lists", [list]);
 	}
+	$(window).on("keypress", (e) => {
+		// K up; J down
+		if (noModifierKeys(e)) {
+			if (e.key === "k" || e.key === "j") {
+				const $el = getSelectedListElement();
+
+				if ($el) {
+					if (e.key === "k") {
+						const prevLink = $el.parent().prev().find("a").attr("href");
+						if (prevLink !== undefined) {
+							window.location.hash = prevLink;
+						}
+					} else if (e.key === "j") {
+						const nextLink = $el.parent().next().find("a").attr("href");
+						if (nextLink !== undefined) {
+							window.location.hash = nextLink;
+						}
+					}
+				}
+			}
+		}
+	});
 	return list
 }
 
@@ -1526,7 +1563,8 @@ UrlUtil.getCurrentPage = function () {
  * @param href the link
  */
 UrlUtil.link = function (href) {
-	if (IS_DEPLOYED) return `${DEPLOYED_STATIC_ROOT}${href}?ver=${VERSION_NUMBER}`;
+	if (!IS_ROLL20 && IS_DEPLOYED) return `${DEPLOYED_STATIC_ROOT}${href}?ver=${VERSION_NUMBER}`;
+	else if (IS_DEPLOYED) return `${href}?ver=${VERSION_NUMBER}`;
 	return href;
 };
 
@@ -1686,6 +1724,13 @@ DataUtil = {
 				}
 			)
 		});
+	},
+
+	userDownload: function (filename, data) {
+		const $a = $(`<a href="data:text/json;charset=utf-8,${encodeURIComponent(data)}" download="${filename}.json" style="display: none;" target="_blank">DL</a>`);
+		$(`body`).append($a);
+		$a[0].click();
+		$a.remove();
 	}
 };
 

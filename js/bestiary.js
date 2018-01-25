@@ -169,8 +169,8 @@ function addMonsters (data) {
 			`<li ${FLTR_ID}="${mI}">
 				<a id=${mI} href="#${UrlUtil.autoEncodeHash(mon)}" title="${mon.name}">
 					<span class="name col-xs-4 col-xs-4-2">${mon.name}</span>
-					<span title="${Parser.sourceJsonToFull(mon.source)}" class="col-xs-1 col-xs-1-8 source source${abvSource}">${abvSource}</span>
-					<span class="type col-xs-4 col-xs-4-3">${mon._pTypes.asText.uppercaseFirst()}</span>
+					<span title="${Parser.sourceJsonToFull(mon.source)}" class="col-xs-2 source source${abvSource}">${abvSource}</span>
+					<span class="type col-xs-4 col-xs-4-1">${mon._pTypes.asText.uppercaseFirst()}</span>
 					<span class="col-xs-1 col-xs-1-7 text-align-center cr">${mon.cr}</span>
 				</a>
 			</li>`;
@@ -345,7 +345,6 @@ function loadhash (id) {
 	var traits = mon.trait;
 	$("tr.trait").remove();
 
-	let spellcasting = mon.spellcasting;
 	if (traits) {
 		for (var i = traits.length - 1; i >= 0; i--) {
 			var traitname = traits[i].name;
@@ -381,33 +380,9 @@ function loadhash (id) {
 		}
 	}
 
-	if (spellcasting) {
-		renderStack = [];
-		for (let i = 0; i < spellcasting.length; i++) {
-			let spellList = spellcasting[i]
-			renderer.recursiveEntryRender({type: "entries", name: spellList.name, entries: spellList.headerEntries ? spellList.headerEntries : []}, renderStack, 2);
-			if (spellList.will || spellList.daily) {
-				let spellArray = [];
-				if (spellList.will) spellArray.push(`At will: ${spellList.will.join(", ")}`);
-				if (spellList.daily) {
-					for (let j = 9; j > 0; j--) {
-						let daily = spellList.daily;
-						if (daily[j]) spellArray.push(`${j}/day: ${daily[j].join(", ")}`);
-						const jEach = `${j}e`;
-						if (daily[jEach]) spellArray.push(`${j}/day each: ${daily[jEach].join(", ")}`);
-					}
-				}
-				renderer.recursiveEntryRender({type: "entries", entries: spellArray}, renderStack, 1);
-			}
-			if (spellList.spells) {
-				for (let j = 0; j < 10; j++) {
-					let spells = spellList.spells[j];
-					if (spells) renderer.recursiveEntryRender({type: "entries", entries: [`${Parser.spLevelToFull(j)}${(j === 0 ? "s" : " level")} (${spells.slots ? `${spells.slots} slot${spells.slots > 1 ? "s" : ""}` : "at will"}): ${spells.spells.join(", ")}`]}, renderStack, 1);
-				}
-				if (spellList.footerEntries) renderer.recursiveEntryRender({type: "entries", entries: spellList.footerEntries}, renderStack, 1);
-			}
-		}
-		$(`tr#traits`).after(`<tr class='trait'><td colspan='6'>${utils_makeRoller(renderStack.join(""))}</td></tr>`);
+	if (mon.spellcasting) {
+		const spellcastingString = EntryRenderer.monster.getSpellcastingRenderedString(mon, renderer);
+		$(`tr#traits`).after(`<tr class='trait'><td colspan='6'>${utils_makeRoller(spellcastingString)}</td></tr>`);
 	}
 
 	const actions = mon.action;

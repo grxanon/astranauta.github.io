@@ -388,7 +388,7 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "Sneak Attack (1/turn)",
+					"name": "Sneak Attack (1/Turn)",
 					"text": [
 						"Darz deals an extra 7 (2d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Darz that isn't incapacitated and Darz doesn't have disadvantage on the attack roll."
 					],
@@ -1162,7 +1162,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Naxene is a 6th level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13; +5 to hit with spell attacks). She has the following wizard spells prepared:"
+						"Naxene is a 6th level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13; {@hit 5} to hit with spell attacks). She has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -1328,7 +1328,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Othovir is a 2nd-level spellcaster. His spellcasting ability is Charisma (spell save DC 13; +5 to hit with spell attacks). He has the following sorcerer spells prepared:"
+						"Othovir is a 2nd-level spellcaster. His spellcasting ability is Charisma (spell save DC 13; {@hit 5} to hit with spell attacks). He has the following sorcerer spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -1465,7 +1465,7 @@
 			"cr": "0",
 			"trait": [
 				{
-					"name": "Sneak Attack (1/turn)",
+					"name": "Sneak Attack (1/Turn)",
 					"text": [
 						"Shalvus deals an extra 7 (2d6) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Shalvus that isn't incapacitated and Shalvus doesn't have disadvantage on the attack roll."
 					],
@@ -1812,7 +1812,7 @@
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
-						"The shaman can innately cast the following spells. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks)."
+						"The shaman can innately cast the following spells. Its spellcasting ability is Wisdom (spell save DC 12, {@hit 4} to hit with spell attacks)."
 					],
 					"will": [
 						"{@spell dancing lights}",
@@ -1883,7 +1883,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The yakfolk is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The priest has the following cleric spells prepared:"
+						"The yakfolk is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, {@hit 6} to hit with spell attacks). The priest has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -1954,7 +1954,7 @@
 					]
 				},
 				{
-					"name": "Summon Earth Elemental (1/day)",
+					"name": "Summon Earth Elemental (1/Day)",
 					"text": [
 						"The yakfolk summons an earth elemental. The elemental appears in an unoccupied space within 60 feet of its summoner and acts as an ally of the summoner. It remains for 10 minutes, until it dies, or until its summoner dismisses it as an action."
 					]
@@ -1986,7 +1986,7 @@
 			"cr": "3",
 			"trait": [
 				{
-					"name": "Possession (Recharges after a rest",
+					"name": "Possession (Recharges after a rest)",
 					"text": [
 						"The yakfolk attempts to magically possess a humanoid or giant. The yakfolk must touch the target throughout a short rest or the attempt fails. At the end of the rest, the target must succeed a DC 12 Con saving throw or be possessed by the yakfolk, which disappears with everything its carrying and wearing. Until the possession ends, the target is incapacitated, loses control of its body, and it unaware of its surroundings. The yakfolk now controls the body and cannot be targeted by any attack, spell, or other effect, and it retains its alignment, its Intelligence, Wisdom, and Charisma scores; and its proficiencies. It otherwise uses the target's statistics, except the target's knowledge, class features, feats, and proficiencies.",
 						"The possession lats until either the body drops to 0 hit points, the yakfolk ends the possession as an action, or the yakfolk is forced out of the body by an effect such as dispel evil and good spell. When the possession ends, the yakfolk appears in an unoccupied space within 5 feet of the body and is stunned until the end of its next turn. If the host body dies while it is possessed by the yakfolk, the yakfolk dies as well and its body does not reappear."

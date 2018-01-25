@@ -370,12 +370,12 @@ function EntryRenderer () {
 		}
 
 		function renderString (self) {
-			const tagSplit = splitByTags();
+			const tagSplit = EntryRenderer.splitByTags(entry);
 			for (let i = 0; i < tagSplit.length; i++) {
 				const s = tagSplit[i];
 				if (s === undefined || s === null || s === "") continue;
 				if (s.charAt(0) === "@") {
-					const [tag, text] = splitFirstSpace(s);
+					const [tag, text] = EntryRenderer.splitFirstSpace(s);
 
 					if (tag === "@bold" || tag === "@b" || tag === "@italic" || tag === "@i" || tag === "@skill" || tag === "@action" || tag === "@link") { // FIXME remove "@link"
 						switch (tag) {
@@ -453,6 +453,27 @@ function EntryRenderer () {
 								break;
 							}
 						}
+					} else if (tag === "@filter") {
+						// format: {@filter Warlock Spells|spells|level=1;2|class=Warlock}
+						const [displayText, page, ...filters] = text.split("|");
+
+						const fauxEntry = {
+							type: "link",
+							text: displayText,
+							href: {
+								type: "internal",
+								path: `${page}.html`,
+								hash: HASH_BLANK,
+								subhashes: filters.map(f => {
+									const [fname, fvals] = f.split("=").map(s => s.trim()).filter(s => s);
+									return {
+										key: `filter${fname}`,
+										value: fvals.split(";").map(s => s.trim()).filter(s => s).join(HASH_SUB_LIST_SEP)
+									}
+								})
+							}
+						};
+						self.recursiveEntryRender(fauxEntry, textStack, depth);
 					} else {
 						const [name, source, displayText, ...others] = text.split("|");
 						const hash = `${name}${source ? `${HASH_LIST_SEP}${source}` : ""}`;
@@ -516,85 +537,11 @@ function EntryRenderer () {
 								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
-
-							case "@clSpellHead": {
-								// special tag used for class table spell level headers
-								// format: {@clSpellHead <sp class name>|<sp class source>|<display text>|<sp level>(|<sp level 2>|<sp level 3>|...)}
-								const fauxEntry = {
-									type: "link",
-									text: displayText,
-									href: {
-										type: "internal",
-										path: "spells.html",
-										hash: "acid splash_phb",
-										subhashes: [
-											{
-												key: "filterlevel",
-												value: others.map(o => Number(o)).join(HASH_SUB_LIST_SEP)
-											},
-											{
-												key: "filterclass",
-												value: `${name}${source.toLowerCase() === SRC_PHB.toLowerCase() ? "" : ` (${Parser.sourceJsonToAbv(source)})`}`
-											}
-										]
-									}
-								};
-								self.recursiveEntryRender(fauxEntry, textStack, depth);
-								break;
-							}
 						}
 					}
 				} else {
 					textStack.push(s);
 				}
-			}
-
-			function splitFirstSpace (string) {
-				return [
-					string.substr(0, string.indexOf(' ')),
-					string.substr(string.indexOf(' ') + 1)
-				]
-			}
-
-			function splitByTags () {
-				let tagDepth = 0;
-				let inTag = false;
-				let char, char2;
-				const out = [];
-				let curStr = "";
-				for (let i = 0; i < entry.length; ++i) {
-					char = entry.charAt(i);
-					char2 = i < entry.length - 1 ? entry.charAt(i + 1) : null;
-
-					switch (char) {
-						case "{":
-							if (char2 === "@") {
-								if (tagDepth++ > 0) {
-									curStr += char;
-								} else {
-									out.push(curStr);
-									inTag = false;
-									curStr = "";
-								}
-							} else {
-								curStr += char;
-							}
-							break;
-						case "}":
-							if (--tagDepth === 0) {
-								out.push(curStr);
-								curStr = "";
-							} else {
-								curStr += char;
-							}
-							break;
-						default:
-							curStr += char;
-					}
-				}
-				if (curStr.length > 0) out.push(curStr);
-
-				return out;
 			}
 		}
 	};
@@ -643,6 +590,54 @@ function EntryRenderer () {
 		return tempStack.join("");
 	};
 }
+
+EntryRenderer.splitFirstSpace = function (string) {
+	return [
+		string.substr(0, string.indexOf(' ')),
+		string.substr(string.indexOf(' ') + 1)
+	];
+};
+
+EntryRenderer.splitByTags = function (string) {
+	let tagDepth = 0;
+	let inTag = false;
+	let char, char2;
+	const out = [];
+	let curStr = "";
+	for (let i = 0; i < string.length; ++i) {
+		char = string.charAt(i);
+		char2 = i < string.length - 1 ? string.charAt(i + 1) : null;
+
+		switch (char) {
+			case "{":
+				if (char2 === "@") {
+					if (tagDepth++ > 0) {
+						curStr += char;
+					} else {
+						out.push(curStr);
+						inTag = false;
+						curStr = "";
+					}
+				} else {
+					curStr += char;
+				}
+				break;
+			case "}":
+				if (--tagDepth === 0) {
+					out.push(curStr);
+					curStr = "";
+				} else {
+					curStr += char;
+				}
+				break;
+			default:
+				curStr += char;
+		}
+	}
+	if (curStr.length > 0) out.push(curStr);
+
+	return out;
+};
 
 EntryRenderer._rollerClick = function (ele, toRoll) {
 	const $ele = $(ele);
@@ -1001,6 +996,64 @@ EntryRenderer.monster = {
 		`);
 
 		return renderStack.join("");
+	},
+
+	getSpellcastingRenderedString: (mon, renderer) => {
+		const spellcasting = mon.spellcasting;
+		const renderStack = [];
+		for (let i = 0; i < spellcasting.length; i++) {
+			let spellList = spellcasting[i];
+			renderer.recursiveEntryRender({type: "entries", name: spellList.name, entries: spellList.headerEntries ? spellList.headerEntries : []}, renderStack, 2);
+			if (spellList.constant || spellList.will || spellList.rest || spellList.daily || spellList.weekly) {
+				let spellArray = [];
+				if (spellList.constant) spellArray.push(`Constant: ${spellList.constant.join(", ")}`);
+				if (spellList.will) spellArray.push(`At will: ${spellList.will.join(", ")}`);
+				if (spellList.rest) {
+					for (let j = 9; j > 0; j--) {
+						let rest = spellList.rest;
+						if (rest[j]) spellArray.push(`${j}/rest: ${rest[j].join(", ")}`);
+						const jEach = `${j}e`;
+						if (rest[jEach]) spellArray.push(`${j}/rest each: ${rest[jEach].join(", ")}`);
+					}
+				}
+				if (spellList.daily) {
+					for (let j = 9; j > 0; j--) {
+						let daily = spellList.daily;
+						if (daily[j]) spellArray.push(`${j}/day: ${daily[j].join(", ")}`);
+						const jEach = `${j}e`;
+						if (daily[jEach]) spellArray.push(`${j}/day each: ${daily[jEach].join(", ")}`);
+					}
+				}
+				if (spellList.weekly) {
+					for (let j = 9; j > 0; j--) {
+						let weekly = spellList.weekly;
+						if (weekly[j]) spellArray.push(`${j}/week: ${weekly[j].join(", ")}`);
+						const jEach = `${j}e`;
+						if (weekly[jEach]) spellArray.push(`${j}/week each: ${weekly[jEach].join(", ")}`);
+					}
+				}
+				renderer.recursiveEntryRender({type: "entries", entries: spellArray}, renderStack, 1);
+			}
+			if (spellList.spells) {
+				for (let j = 0; j < 10; j++) {
+					let spells = spellList.spells[j];
+					if (spells) {
+						let lower = spells.lower;
+						let levelCantrip = `${Parser.spLevelToFull(j)}${(j === 0 ? "s" : " level")}`;
+						let slotsAtWill = ` (at will)`;
+						let slots = spells.slots;
+						if (slots >= 0) slotsAtWill = slots > 0 ? ` (${slots} slot${slots > 1 ? "s" : ""})` : ``;
+						if (lower) {
+							levelCantrip = `${Parser.spLevelToFull(lower)}-${levelCantrip}`;
+							if (slots >= 0) slotsAtWill = slots > 0 ? ` (${slots} ${Parser.spLevelToFull(j)}-level slot${slots > 1 ? "s" : ""})` : ``;
+						}
+						renderer.recursiveEntryRender({type: "entries", entries: [`${levelCantrip} ${slotsAtWill}: ${spells.spells.join(", ")}`]}, renderStack, 1);
+					}
+				}
+			}
+			if (spellList.footerEntries) renderer.recursiveEntryRender({type: "entries", entries: spellList.footerEntries}, renderStack, 1);
+		}
+		return renderStack.join("");
 	}
 };
 
@@ -1078,19 +1131,26 @@ EntryRenderer.item = {
 	/**
 	 * Runs callback with itemList as argument
 	 * @param callback
+	 * @param urls optional overrides for default URLs
 	 */
-	buildList: function (callback) {
+	buildList: function (callback, urls) {
+		if (!urls) urls = {};
 		let itemList;
 		let basicItemList;
 		let variantList;
 		const propertyList = {};
 		const typeList = {};
 
-		DataUtil.loadJSON("data/items.json", addBasicItems);
+		// allows URLs to be overriden (used by roll20 script)
+		const itemUrl = urls.items || "data/items.json";
+		const basicItemUrl = urls.basicitems || "data/basicitems.json";
+		const magicVariantUrl = urls.magicvariants || "data/magicvariants.json";
+
+		DataUtil.loadJSON(itemUrl, addBasicItems);
 
 		function addBasicItems (itemData) {
 			itemList = itemData.item;
-			DataUtil.loadJSON("data/basicitems.json", addVariants);
+			DataUtil.loadJSON(basicItemUrl, addVariants);
 		}
 
 		function addVariants (basicItemData) {
@@ -1110,7 +1170,7 @@ EntryRenderer.item = {
 					"entries": itemTypeList[i].entries
 				};
 			}
-			DataUtil.loadJSON("data/magicvariants.json", mergeBasicItems);
+			DataUtil.loadJSON(magicVariantUrl, mergeBasicItems);
 		}
 
 		function mergeBasicItems (variantData) {
