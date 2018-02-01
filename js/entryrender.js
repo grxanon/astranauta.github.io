@@ -23,6 +23,7 @@ function EntryRenderer () {
 	this.baseUrl = "";
 
 	this._subVariant = false;
+	this._firstSection = true;
 
 	/**
 	 * Set the tag used to group rendered elements
@@ -39,6 +40,14 @@ function EntryRenderer () {
 	 */
 	this.setBaseUrl = function (url) {
 		this.baseUrl = url;
+	};
+
+	/**
+	 * Other sections should be prefixed with a vertical divider
+	 * @param bool
+	 */
+	this.setFirstSection = function (bool) {
+		this._firstSection = bool;
 	};
 
 	// TODO convert params to options object
@@ -58,7 +67,8 @@ function EntryRenderer () {
 	 * @param forcePrefixSuffix force the prefix and suffix to be added (useful for the first call from external code)
 	 */
 	this.recursiveEntryRender = function (entry, textStack, depth, prefix, suffix, forcePrefixSuffix) {
-		depth = depth === undefined || depth === null ? entry.type === "section" ? -1 : 0 : depth;
+		depth = depth === undefined || depth === null ? 0 : depth;
+		if (entry.type === "section") depth = -1;
 		prefix = prefix === undefined || prefix === null ? null : prefix;
 		suffix = suffix === undefined || suffix === null ? null : suffix;
 		forcePrefixSuffix = forcePrefixSuffix === undefined || forcePrefixSuffix === null ? false : forcePrefixSuffix;
@@ -145,7 +155,7 @@ function EntryRenderer () {
 					break;
 				case "abilityGeneric":
 					renderPrefix();
-					textStack.push(`<span class='ability-block'><span>${entry.name}</span> = ${entry.text}${entry.attributes ? ` ${utils_makeAttChoose(entry.attributes)}` : ""}</span>`);
+					textStack.push(`<span class='ability-block'>${entry.name ? `<span>${entry.name}</span>  = ` : ""}${entry.text}${entry.attributes ? ` ${utils_makeAttChoose(entry.attributes)}` : ""}</span>`);
 					renderSuffix();
 					break;
 
@@ -205,7 +215,7 @@ function EntryRenderer () {
 					let href;
 					if (entry.href.type === "internal") {
 						const imgPart = `img/${entry.href.path}`;
-						href = this.baseUrl === "" ? `${this.baseUrl}${imgPart}` : UrlUtil.link(imgPart);
+						href = this.baseUrl !== "" ? `${this.baseUrl}${imgPart}` : UrlUtil.link(imgPart);
 					}
 					textStack.push(`
 						<div class="img-wrapper">
@@ -265,9 +275,13 @@ function EntryRenderer () {
 
 			for (let i = 0; i < entry.rows.length; ++i) {
 				textStack.push("<tr>");
-				for (let j = 0; j < entry.rows[i].length; ++j) {
-					textStack.push(`<td ${makeTableTdClassText(j)}>`);
-					self.recursiveEntryRender(entry.rows[i][j], textStack, depth + 1);
+				const r = entry.rows[i];
+				const roRender = r.type === "row" ? r.row : r;
+				for (let j = 0; j < roRender.length; ++j) {
+					const toRenderCell = roRender[j].type === "cell" ? roRender[j].entry : roRender[j];
+					textStack.push(`<td ${makeTableTdClassText(j)} ${roRender[j].width ? `colspan="${roRender[j].width}"` : ""}>`);
+					if (r.style === "row-indent-first" && j === 0) textStack.push(`<span class="tbl-tab-intent"/>`);
+					self.recursiveEntryRender(toRenderCell, textStack, depth + 1);
 					textStack.push("</td>");
 				}
 				textStack.push("</tr>");
@@ -324,6 +338,13 @@ function EntryRenderer () {
 			const dataString = getDataString();
 			const preReqText = getPreReqText(self);
 			const headerSpan = entry.name !== undefined ? `<span class="entry-title">${entry.name}${inlineTitle ? "." : ""}</span> ` : "";
+
+			if (depth === -1) {
+				if (!self._firstSection) {
+					textStack.push(`<hr class="section-break">`);
+				}
+				self._firstSection = false;
+			}
 
 			if (entry.entries || entry.name) {
 				textStack.push(`<${self.wrapperTag} ${dataString} ${styleString}>${headerSpan}${preReqText}`);
@@ -565,7 +586,7 @@ function EntryRenderer () {
 			// baseURL is blank by default
 			href = `${this.baseUrl}${entry.href.path}#`;
 			if (entry.href.hash !== undefined) {
-				href += UrlUtil.encodeForHash(entry.href.hash);
+				href += entry.href.hashPreEncoded ? entry.href.hash : UrlUtil.encodeForHash(entry.href.hash);
 			}
 			if (entry.href.subhashes !== undefined) {
 				for (let i = 0; i < entry.href.subhashes.length; i++) {
@@ -1002,7 +1023,7 @@ EntryRenderer.reward = {
 		const renderStack = [];
 
 		if (reward.type === "Demonic Boon") {
-			const benefits = {type: "list", style: "list-hang", items: []};
+			const benefits = {type: "list", style: "list-hang-notitle", items: []};
 			benefits.items.push({
 				type: "item",
 				name: "Ability Score Adjustment:",

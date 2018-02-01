@@ -154,6 +154,17 @@ String.prototype.toTitleCase = String.prototype.toTitleCase ||
 		return str;
 	};
 
+// as we're targeting ES6
+String.prototype.ltrim = String.prototype.ltrim ||
+	function () {
+		return this.replace(/^\s+/, "");
+	};
+
+String.prototype.rtrim = String.prototype.rtrim ||
+	function () {
+		return this.replace(/\s+$/, "");
+	};
+
 StrUtil = {
 	joinPhraseArray: function (array, joiner, lastJoiner) {
 		if (array.length === 0) return "";
@@ -177,6 +188,10 @@ StrUtil = {
 	TITLE_LOWER_WORDS: ["A", "An", "The", "And", "But", "Or", "For", "Nor", "As", "At", "By", "For", "From", "In", "Into", "Near", "Of", "On", "Onto", "To", "With"],
 	// Certain words such as initialisms or acronyms should be left uppercase
 	TITLE_UPPER_WORDS: ["Id", "Tv"]
+};
+
+RegExp.escape = function (string) {
+	return string.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
 };
 
 // TEXT COMBINING ======================================================================================================
@@ -1522,6 +1537,28 @@ function noModifierKeys (e) {
 	return !e.ctrlKey && !e.altKey && !e.metaKey;
 }
 
+if (typeof window !== "undefined") {
+	window.addEventListener("load", () => {
+		// Add a selector to match exact text (case insensitive) to jQuery's arsenal
+		$.expr[':'].textEquals = (el, i, m) => {
+			const searchText = m[3];
+			const match = $(el).text().toLowerCase().trim().match(`^${RegExp.escape(searchText.toLowerCase())}$`);
+			return match && match.length > 0;
+		};
+
+		// Add a selector to match contained text (case insensitive)
+		$.expr[':'].containsInsensitive = (el, i, m) => {
+			const searchText = m[3];
+			const textNode = $(el).contents().filter((i, e) => {
+				return e.nodeType === 3;
+			})[0];
+			if (!textNode) return false;
+			const match = textNode.nodeValue.toLowerCase().trim().match(`${RegExp.escape(searchText.toLowerCase())}`);
+			return match && match.length > 0;
+		};
+	});
+}
+
 // LIST AND SEARCH =====================================================================================================
 ListUtil = {
 	_first: true,
@@ -1566,9 +1603,13 @@ ListUtil = {
 										if (l.visibleItems.length) {
 											const goTo = $(l.visibleItems[l.visibleItems.length - 1].elm).find("a").attr("href");
 											if (goTo) window.location.hash = goTo;
-											break;
+											return;
 										}
 									}
+								}
+								const fromPrevSibling = it.$el.closest(`ul`).parent().prev(`li`).find(`ul li`).last().find("a").attr("href");
+								if (fromPrevSibling) {
+									window.location.hash = fromPrevSibling;
 								}
 							} else if (e.key === "j") {
 								const nextLink = it.$el.parent().next().find("a").attr("href");
@@ -1582,9 +1623,13 @@ ListUtil = {
 										if (l.visibleItems.length) {
 											const goTo = $(l.visibleItems[0].elm).find("a").attr("href");
 											if (goTo) window.location.hash = goTo;
-											break;
+											return;
 										}
 									}
+								}
+								const fromNxtSibling = it.$el.closest(`ul`).parent().next(`li`).find(`ul li`).first().find("a").attr("href");
+								if (fromNxtSibling) {
+									window.location.hash = fromNxtSibling;
 								}
 							}
 						}
@@ -1794,10 +1839,6 @@ function listSort (itemA, itemB, options) {
 		const initialCompare = compareBy(valueName);
 		return initialCompare === 0 ? compareBy(defaultValueName) : initialCompare;
 	}
-}
-// ARRAYS ==============================================================================================================
-function joinConjunct (arr, joinWith, conjunctWith) {
-	return arr.length === 1 ? String(arr[0]) : arr.length === 2 ? arr.join(conjunctWith) : arr.slice(0, -1).join(joinWith) + conjunctWith + arr.slice(-1);
 }
 
 // JSON LOADING ========================================================================================================
@@ -2107,5 +2148,9 @@ CollectionUtil = {
 		values () {
 			return this.map.values();
 		}
+	},
+
+	joinConjunct: (arr, joinWith, conjunctWith) => {
+		return arr.length === 1 ? String(arr[0]) : arr.length === 2 ? arr.join(conjunctWith) : arr.slice(0, -1).join(joinWith) + conjunctWith + arr.slice(-1);
 	}
 };
