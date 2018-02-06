@@ -184,6 +184,13 @@ div.omnisearch-pagination-wrapper > .pg-right {
 }
 
 /* hoverbox */
+.hoverlink {
+	position: fixed;
+	background: #337ab733;
+	border-radius: 4px;
+	z-index: 202;
+}
+
 .hoverbox {
 	position: fixed;
 	max-width: 600px;
@@ -542,6 +549,10 @@ table.stats table caption {
 
 th.border {
 	height: 4px;
+}
+
+th.border-thin {
+	height: 1px;
 }
 
 td.divider div {
@@ -1722,24 +1733,24 @@ table.stats.stats-book div.statsBlockHead div.statsBlockSubHead > span.entry-tit
 	font-size: 1.6em;
 }
 
-table.stats tr.subclass-feature div.statsBlockHead > span.entry-title,
-table.stats tr.subclass-feature div.statsBlockHead div.statsBlockSubHead > span.entry-title {
+table.stats .subclass-feature div.statsBlockHead > span.entry-title,
+table.stats .subclass-feature div.statsBlockHead div.statsBlockSubHead > span.entry-title {
 	color: #337ab7;
 	border-bottom-color: #337ab7;
 }
 
-table.stats tr.spicy-sauce.subclass-feature div.statsBlockHead > span.entry-title,
-table.stats tr.spicy-sauce.subclass-feature div.statsBlockHead div.statsBlockSubHead > span.entry-title,
-table.stats tr.class-feature div.statsBlockHead .spicy-sauce > span.entry-title,
-table.stats tr.class-feature div.statsBlockHead .spicy-sauce div.statsBlockSubHead > span.entry-title {
+table.stats .spicy-sauce.subclass-feature div.statsBlockHead > span.entry-title,
+table.stats .spicy-sauce.subclass-feature div.statsBlockHead div.statsBlockSubHead > span.entry-title,
+table.stats .class-feature div.statsBlockHead .spicy-sauce > span.entry-title,
+table.stats .class-feature div.statsBlockHead .spicy-sauce div.statsBlockSubHead > span.entry-title {
 	color: #1d965d;
 	border-bottom-color: #1d965d;
 }
 
-table.stats tr.refreshing-brew.subclass-feature div.statsBlockHead > span.entry-title,
-table.stats tr.refreshing-brew.subclass-feature div.statsBlockHead div.statsBlockSubHead > span.entry-title,
-table.stats tr.class-feature div.statsBlockHead .refreshing-brew > span.entry-title,
-table.stats tr.class-feature div.statsBlockHead .refreshing-brew div.statsBlockSubHead > span.entry-title {
+table.stats .refreshing-brew.subclass-feature div.statsBlockHead > span.entry-title,
+table.stats .refreshing-brew.subclass-feature div.statsBlockHead div.statsBlockSubHead > span.entry-title,
+table.stats .class-feature div.statsBlockHead .refreshing-brew > span.entry-title,
+table.stats .class-feature div.statsBlockHead .refreshing-brew div.statsBlockSubHead > span.entry-title {
 	color: #8c3b96;
 	border-bottom-color: #8c3b96;
 }

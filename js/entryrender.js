@@ -327,7 +327,7 @@ function EntryRenderer () {
 
 		function handleOptions (self) {
 			if (entry.entries) {
-				entry.entries = entry.entries.sort((a, b) => a.name && b.name ? ascSort(a.name, b.name) : a.name ? -1 : b.name ? 1 : 0);
+				entry.entries = entry.entries.sort((a, b) => a.name && b.name ? SortUtil.ascSort(a.name, b.name) : a.name ? -1 : b.name ? 1 : 0);
 				handleEntriesOptionsInvocationPatron(self, false);
 			}
 		}
@@ -346,7 +346,7 @@ function EntryRenderer () {
 			const styleString = getStyleString();
 			const dataString = getDataString();
 			const preReqText = getPreReqText(self);
-			const headerSpan = entry.name !== undefined ? `<span class="entry-title">${entry.name}${inlineTitle ? "." : ""}</span> ` : "";
+			const headerSpan = entry.name !== undefined ? `<span class="entry-title">${self.renderEntry({type: "inline", entries: [entry.name]})}${inlineTitle ? "." : ""}</span> ` : "";
 
 			if (depth === -1) {
 				if (!self._firstSection) {
@@ -1093,11 +1093,62 @@ EntryRenderer.race = {
 		let speed;
 		if (race.speed.walk) {
 			speed = race.speed.walk + "ft.";
-			if (race.speed.climb) speed += `, climb ${race.speed.climb}ft.`
+			if (race.speed.climb) speed += `, climb ${race.speed.climb}ft.`;
+			if (race.speed.fly) speed += `, fly ${race.speed.fly}ft.`;
+			if (race.speed.swim) speed += `, swim ${race.speed.swim}ft.`;
 		} else {
 			speed = race.speed + (race.speed === "Varies" ? "" : "ft. ");
 		}
 		return speed;
+	},
+
+	mergeSubraces: (races) => {
+		const out = [];
+		races.forEach(r => {
+			Array.prototype.push.apply(out, EntryRenderer.race._mergeSubrace(r));
+		});
+		return out;
+	},
+
+	_mergeSubrace: (race) => {
+		if (race.subraces) {
+			const out = [];
+
+			race.subraces.forEach(s => {
+				const cpy = JSON.parse(JSON.stringify(race));
+				delete cpy.subraces;
+
+				// merge names, abilities, entries
+				if (s.name) {
+					cpy.name = `${cpy.name} (${s.name})`;
+					delete s.name;
+				}
+				if (s.ability) {
+					if (!cpy.ability) cpy.ability = {};
+					cpy.ability = Object.assign(cpy.ability, s.ability);
+					delete s.ability;
+				}
+				if (s.entries) {
+					s.entries.forEach(e => {
+						if (e.data && e.data.overwrite) {
+							const toOverwrite = cpy.entries.findIndex(it => it.name.toLowerCase().trim() === e.data.overwrite.toLowerCase().trim());
+							cpy.entries[toOverwrite] = e;
+						} else {
+							cpy.entries.push(e);
+						}
+					});
+					delete s.entries;
+				}
+
+				// overwrite everything else
+				Object.assign(cpy, s);
+
+				out.push(cpy);
+			});
+			return out;
+		} else {
+			return [race];
+		}
 	}
 };
 
@@ -1317,7 +1368,7 @@ EntryRenderer.item = {
 		}
 
 		function sortProperties (a, b) {
-			return ascSort(item._allPropertiesPtr[a].name, item._allPropertiesPtr[b].name)
+			return SortUtil.ascSort(item._allPropertiesPtr[a].name, item._allPropertiesPtr[b].name)
 		}
 
 		let propertiesTxt = "";
@@ -1607,15 +1658,15 @@ EntryRenderer.psionic = {
 			modeStringArray.push(EntryRenderer.psionic.getModeString(psionic, renderer, i));
 		}
 
-		return `${EntryRenderer.psionic.getDescriptionString(psionic)}${EntryRenderer.psionic.getFocusString(psionic)}${modeStringArray.join(STR_EMPTY)}`;
+		return `${EntryRenderer.psionic.getDescriptionString(psionic, renderer)}${EntryRenderer.psionic.getFocusString(psionic, renderer)}${modeStringArray.join(STR_EMPTY)}`;
 	},
 
-	getDescriptionString: (psionic) => {
-		return `<p>${psionic.description}</p>`;
+	getDescriptionString: (psionic, renderer) => {
+		return `<p>${renderer.renderEntry({type: "inline", entries: [psionic.description]})}</p>`;
 	},
 
-	getFocusString: (psionic) => {
-		return `<p><span class='psi-focus-title'>Psychic Focus.</span> ${psionic.focus}</p>`;
+	getFocusString: (psionic, renderer) => {
+		return `<p><span class='psi-focus-title'>Psychic Focus.</span> ${renderer.renderEntry({type: "inline", entries: [psionic.focus]})}</p>`;
 	},
 
 	getModeString: (psionic, renderer, modeIndex) => {
@@ -1634,7 +1685,7 @@ EntryRenderer.psionic = {
 
 			const fauxEntry = {
 				type: "list",
-				style: "list-hang",
+				style: "list-hang-notitle",
 				items: []
 			};
 
@@ -1669,6 +1720,7 @@ EntryRenderer.psionic = {
 
 EntryRenderer.hover = {
 	linkCache: {},
+	_isInit: false,
 
 	_addToCache: (page, source, hash, item) => {
 		page = page.toLowerCase();
@@ -1731,6 +1783,29 @@ EntryRenderer.hover = {
 		const fromRight = vpOffsetL > $(window).width() / 2;
 
 		const $hov = $(`<div class="hoverbox" style="right: -600px"/>`);
+
+		const $body = $(`body`);
+		const $ele = $(ele);
+		// make a fake invisible copy of the link in outer space, which our mouse now hovers over
+		const $fakeHov = $(`<a class="hoverlink" data-hover-id="${$ele.data("hover-id")}" href="${$ele.prop("href")}"/>`)
+			.width($ele.width())
+			.height($ele.height())
+			.css("top", $ele.offset().top - $(window).scrollTop())
+			.css("left", $ele.offset().left - $(window).scrollLeft());
+		$body.append($fakeHov);
+
+		$fakeHov.on("mouseleave", (evt) => {
+			$fakeHov.remove();
+			EntryRenderer.hover._cleanWindows();
+			if (!$brdrTop.data("perm") && !evt.shiftKey) {
+				teardown();
+			} else {
+				$(ele).data("hover-active", true);
+				// use attr to let the CSS see it
+				$brdrTop.attr("data-perm", true);
+			}
+		});
+
 		const $stats = $(`<table class="stats"></table>`);
 		$stats.append(content);
 		let drag = {};
@@ -1777,6 +1852,7 @@ EntryRenderer.hover = {
 		$brdrTop.on("dblclick", () => {
 			const curState = $brdrTop.attr("data-display-title");
 			$brdrTop.attr("data-display-title", curState === "false");
+			$brdrTop.attr("data-perm", true);
 		});
 		$brdrTop.append($hovTitle);
 		const $btnClose = $(`<span class="delete-icon glyphicon glyphicon-remove"></span>`)
@@ -1789,23 +1865,13 @@ EntryRenderer.hover = {
 			.append($stats)
 			.append(`<div class="hoverborder"></div>`);
 
-		$(`body`).append($hov);
+		$body.append($hov);
 
 		if (fromBottom) $hov.css("top", vpOffsetT - $hov.height());
 		else $hov.css("top", vpOffsetT + $(ele).height() + 1);
 
 		if (fromRight) $hov.css("left", vpOffsetL - $hov.width());
 		else $hov.css("left", vpOffsetL + $(ele).width() + 1);
-
-		$(ele).on("mouseleave", (evt) => {
-			if (!$brdrTop.data("perm") && !evt.shiftKey) {
-				teardown();
-			} else {
-				$(ele).data("hover-active", true);
-				// use attr to let the CSS see it
-				$brdrTop.attr("data-perm", true);
-			}
-		});
 
 		adjustPosition(true);
 
@@ -1854,6 +1920,13 @@ EntryRenderer.hover = {
 	_hoverId: 1,
 	_curHovering: null,
 	show: (evt, ele, page, source, hash) => {
+		if (!EntryRenderer.hover._isInit) {
+			EntryRenderer.hover._isInit = true;
+			$(`body`).on("click", () => {
+				EntryRenderer.hover._cleanWindows();
+			});
+		}
+
 		// don't show on mobile
 		if ($(window).width() <= 768) return;
 
@@ -1939,6 +2012,9 @@ EntryRenderer.hover = {
 				EntryRenderer.hover._curHovering = null;
 			}
 		});
+
+		// clean up any abandoned windows
+		EntryRenderer.hover._cleanWindows();
 
 		function loadMultiSource (page, baseUrl, listProp) {
 			if (!EntryRenderer.hover._isCached(page, source, hash)) {
@@ -2044,6 +2120,10 @@ EntryRenderer.hover = {
 				break;
 			}
 		}
+	},
+
+	_cleanWindows: () => {
+		$(`a.hoverlink`).trigger(`mouseleave`);
 	}
 };
 
