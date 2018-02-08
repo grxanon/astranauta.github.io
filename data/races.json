@@ -65,7 +65,7 @@
 						{
 							"name": "Unending Breath",
 							"entries": [
-								"You can hold your breath indefinitely while you're not incapacitated."
+								"You can hold your breath indefinitely while you're not {@condition incapacitated}."
 							],
 							"type": "entries"
 						},
@@ -200,7 +200,7 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
 					],
 					"type": "entries"
 				},
@@ -567,7 +567,7 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
 					],
 					"type": "entries"
 				},
@@ -703,7 +703,7 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
 					],
 					"type": "entries"
 				},
@@ -1108,7 +1108,7 @@
 				{
 					"name": "Fey Ancestry",
 					"entries": [
-						"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
 					],
 					"type": "entries"
 				},
@@ -1425,7 +1425,7 @@
 						{
 							"name": "Duergar Resilience",
 							"entries": [
-								"You have advantage on saving throws against poison, and you have resistance against poison damage. You also have advantage on saving throws against illusions and against being charmed or paralyzed."
+								"You have advantage on saving throws against poison, and you have resistance against poison damage. You also have advantage on saving throws against illusions and against being {@condition charmed} or {@condition paralyzed}."
 							],
 							"type": "entries"
 						},
@@ -1539,7 +1539,7 @@
 				{
 					"name": "Brave",
 					"entries": [
-						"You have advantage on saving throws against being frightened."
+						"You have advantage on saving throws against being {@condition frightened}."
 					],
 					"type": "entries"
 				},
@@ -1728,7 +1728,7 @@
 						{
 							"name": "Shifting Feature",
 							"entries": [
-								"While shifting, you can make a bite attack as an action. This is a melee weapon attack that uses Strength for its attack roll and damage bonus and deals 1d6 piercing damage. If this attack hits a target that is your size or smaller, the target is also grappled."
+								"While shifting, you can make a bite attack as an action. This is a melee weapon attack that uses Strength for its attack roll and damage bonus and deals 1d6 piercing damage. If this attack hits a target that is your size or smaller, the target is also {@condition grappled}."
 							],
 							"type": "entries"
 						}
@@ -2201,7 +2201,7 @@
 						{
 							"name": "Necrotic Shroud",
 							"entries": [
-								"Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.",
+								"Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn.",
 								"Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.",
 								"Once you use this trait, you can't use it again until you finish a long rest."
 							],
@@ -2266,7 +2266,7 @@
 				{
 					"name": "Hidden Step",
 					"entries": [
-						"As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest."
+						"As a bonus action, you can magically turn {@condition invisible} until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest."
 					],
 					"type": "entries"
 				},
@@ -2447,7 +2447,7 @@
 				{
 					"name": "Pack Tactics",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated."
+						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
 					],
 					"type": "entries"
 				},
@@ -2736,7 +2736,7 @@
 				{
 					"name": "Poison Immunity",
 					"entries": [
-						"You are immune to poison damage and the poisoned condition."
+						"You are immune to poison damage and the {@condition poisoned} condition."
 					],
 					"type": "entries"
 				},
@@ -2942,7 +2942,7 @@
 				{
 					"name": "Hammering Horns",
 					"entries": [
-						"When you use the Attack action during your turn to make a melee attack, you can attempt to shove a creature with your horns as a bonus action. You cannot use this shove attempt to knock a creature prone."
+						"When you use the Attack action during your turn to make a melee attack, you can attempt to shove a creature with your horns as a bonus action. You cannot use this shove attempt to knock a creature {@condition prone}."
 					],
 					"type": "entries"
 				},
@@ -2970,7 +2970,7 @@
 			]
 		},
 		{
-			"name": "Merfolk",
+			"name": "Merfolk (Zendikar)",
 			"source": "PSZ",
 			"page": 13,
 			"size": "M",
@@ -3163,7 +3163,7 @@
 				{
 					"name": "Brave",
 					"entries": [
-						"You have advantage on saving throws against being frightened."
+						"You have advantage on saving throws against being {@condition frightened}."
 					],
 					"type": "entries"
 				},
@@ -3212,7 +3212,7 @@
 				{
 					"name": "Blood Thirst",
 					"entries": [
-						"You can drain blood and life energy from a willing creature, or one that is grappled by you, incapacitated, or restrained. Make a melee attack against the target. If you hit, you deal 1 piercing damage and 1d6 necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid killed in this way becomes a null (see \"Zendikar Bestiary\")."
+						"You can drain blood and life energy from a willing creature, or one that is {@condition grappled} by you, {@condition incapacitated}, or {@condition restrained}. Make a melee attack against the target. If you hit, you deal 1 piercing damage and 1d6 necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid killed in this way becomes a null (see \"Zendikar Bestiary\")."
 					],
 					"type": "entries"
 				},
@@ -3615,7 +3615,7 @@
 				{
 					"name": "Khenra Twins.",
 					"entries": [
-						"If your twin is alive and you can see your twin, whenever you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If your twin is dead (or if you were born without a twin), you can't be frightened."
+						"If your twin is alive and you can see your twin, whenever you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll. If your twin is dead (or if you were born without a twin), you can't be {@condition frightened}."
 					],
 					"type": "entries"
 				},
@@ -3706,14 +3706,14 @@
 					"entries": [
 						"Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes.",
 						"If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage.",
-						"If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is grappled (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is restrained, and you can't constrict another target."
+						"If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and the target is {@condition grappled} (escape DC 8 + your proficiency bonus + your Strength modifier). Until this grapple ends, the target is {@condition restrained}, and you can't constrict another target."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Poison Immunity",
 					"entries": [
-						"You are immune to poison damage and can't be poisoned."
+						"You are immune to poison damage and can't be {@condition poisoned}."
 					],
 					"type": "entries"
 				},
@@ -3842,7 +3842,7 @@
 				{
 					"name": "Shell Defense",
 					"entries": [
-						"You can withdraw into your shell as an action. until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reaction, and the only action you can take is a bonus action to emerge from your shell."
+						"You can withdraw into your shell as an action. until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reaction, and the only action you can take is a bonus action to emerge from your shell."
 					],
 					"type": "entries"
 				},
@@ -3894,14 +3894,14 @@
 					"type": "entries",
 					"name": "Poison Immunity",
 					"entries": [
-						"You're immune to poison damage and the poisoned condition."
+						"You're immune to poison damage and the {@condition poisoned} condition."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Poisonous Skin",
 					"entries": [
-						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on a DC 12 Constitution saving throw or become {@condition poisoned} for 1 minute. A {@condition poisoned} creature no longer in direct contact with you can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
 						"You can also apply this poison to any piercing weapon as part of an attack with that weapon, though when you hit the poison reacts differently. The target must succeed on a DC 12 Constitution saving throw or take 2d4 poison damage."
 					]
 				},
@@ -3916,7 +3916,7 @@
 					"type": "entries",
 					"name": "Water Dependency",
 					"entries": [
-						"If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of exhaustion at the end of that day. You can only recover from this exhaustion through magic or by immersing yourself in water for at least 1 hour."
+						"If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of {@condition exhaustion} at the end of that day. You can only recover from this {@condition exhaustion} through magic or by immersing yourself in water for at least 1 hour."
 					]
 				},
 				{
@@ -3927,6 +3927,400 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Bullywug",
+			"source": "DMG",
+			"page": 282,
+			"ability": {
+				"int": -2,
+				"cha": -2
+			},
+			"size": "M",
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Amphibious",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+				{
+					"name": "Speak with Frogs and Toads",
+					"type": "entries",
+					"entries": [
+						"You can communicate simple concepts to frogs and toads when you speak in Bullywug."
+					]
+				},
+				{
+					"name": "Swamp Camouflage",
+					"type": "entries",
+					"entries": [
+						"You have advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"type": "entries",
+					"entries": [
+						"Your long jump is up to 20 ft. and your high jump is up to 10 ft., with or without a running start."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Bullywug."
+					]
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Gnoll",
+			"source": "DMG",
+			"page": 282,
+			"ability": {
+				"str": 2,
+				"int": -2
+			},
+			"darkvision": 60,
+			"size": "M",
+			"speed": 30,
+			"entries": [
+				{
+					"name": "Bite",
+					"entries": [
+						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Rampage",
+					"entries": [
+						"When you reduce a creature to 0 hit points with a melee attack on your turn, you can take a bonus action to move up to half your speed and make a bite attack."
+					]
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Grimlock",
+			"source": "DMG",
+			"page": 282,
+			"ability": {
+				"str": 2,
+				"cha": -2
+			},
+			"size": "M",
+			"speed": 30,
+			"entries": [
+				{
+					"name": "Blindsight",
+					"entries": [
+						"You have no eyes, and cannot be blinded. You can perceive your surroundings within 30 ft., or 10 ft. while deafened. You are considered blind beyond this radius."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stone Camouflage",
+					"entries": [
+						"You have advantage on Dexterity (Stealth) checks made to hide in rocky terrain."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Undercommon."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Hobgoblin",
+			"source": "DMG",
+			"page": 282,
+			"darkvision": 60,
+			"size": "M",
+			"speed": 30,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Martial Advantage",
+					"entries": [
+						"Once per turn, you can deal an extra 7 (2d6) damage to a creature you hit with a weapon attack if that creature is within 5 ft. of an ally of yours that isn't incapacitated."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Goblin."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Kuo-Toa",
+			"source": "DMG",
+			"page": 282,
+			"size": "M",
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"darkvision": 120,
+			"entries": [
+				{
+					"name": "Amphibious",
+					"type": "entries",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"type": "entries",
+					"entries": [
+						"You can sense the presence of any creature within 30 feet of you that is invisible or on the Ethereal Plane. You can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"type": "entries",
+					"entries": [
+						"You have advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"type": "entries",
+					"entries": [
+						"While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Superior Darkvision",
+					"entries": [
+						"You have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Undercommon."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Merfolk",
+			"source": "DMG",
+			"page": 282,
+			"size": "M",
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"entries": [
+				{
+					"name": "Amphibious",
+					"type": "entries",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Aquan."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Skeleton",
+			"source": "DMG",
+			"page": 282,
+			"ability": {
+				"dex": 2,
+				"int": -4,
+				"cha": -4
+			},
+			"size": "M",
+			"speed": 30,
+			"darkvision": 60,
+			"entries": [
+				{
+				    "type": "entries",
+				    "name": "Brittle Bones",
+				    "entries": [
+				        "You are vulnerable to bludgeoning damage."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Undead Nature",
+				    "entries": [
+				        "You are immune to poison damage and exhaustion, and you can't be poisoned. You don't require air, food, drink, or sleep."
+				    ]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can't speak, but you can understand the languages you knew in life."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Troglodyte",
+			"source": "DMG",
+			"page": 282,
+			"ability": {
+				"str": 2,
+				"con": 2,
+				"int": -4,
+				"cha": -4
+			},
+			"size": "M",
+			"speed": 30,
+			"darkvision": 60,
+			"entries": [
+				{
+					"name": "Chameleon Skin",
+					"type": "entries",
+					"entries": [
+						"You have advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"name": "Stench",
+					"type": "entries",
+					"entries": [
+						"Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a DC 12 Constitution saving throw or be poisoned until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"type": "entries",
+					"entries": [
+						"While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Natural Armor",
+					"entries": [
+						"Your thick hide grants you a +1 bonus to Armor Class."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Troglodyte."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
+		},
+		{
+			"name": "Zombie",
+			"source": "DMG",
+			"page": 282,
+			"ability": {
+				"str": 1,
+				"con": 2,
+				"int": -6,
+				"wis": -4,
+				"cha": -4
+			},
+			"size": "M",
+			"speed": 30,
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Undead Nature",
+					"entries": [
+						"You are immune to poison damage and exhaustion, and you can't be poisoned. You don't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can't speak, but you can understand the languages you knew in life."
+					],
+					"type": "entries"
+				}
+			],
+			"npc": true
 		}
 	]
 }
