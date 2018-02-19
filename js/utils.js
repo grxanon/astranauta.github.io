@@ -123,6 +123,14 @@ String.prototype.uppercaseFirst = String.prototype.uppercaseFirst ||
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	};
 
+String.prototype.lowercaseFirst = String.prototype.lowercaseFirst ||
+	function () {
+		const str = this.toString();
+		if (str.length === 0) return str;
+		if (str.length === 1) return str.charAt(0).toLowerCase();
+		return str.charAt(0).toLowerCase() + str.slice(1);
+	};
+
 String.prototype.toTitleCase = String.prototype.toTitleCase ||
 	function () {
 		let str;
@@ -848,8 +856,8 @@ Parser.levelToFull = function (level) {
 };
 
 Parser.invoSpellToFull = function (spell) {
-	if (spell === "Eldritch Blast") return spell + " cantrip";
-	if (spell === "Hex/Curse") return "Hex spell or a warlock feature that curses";
+	if (spell === "Eldritch Blast") return EntryRenderer.getDefaultRenderer().renderEntry(`{@spell ${spell}} cantrip`);
+	if (spell === "Hex/Curse") return EntryRenderer.getDefaultRenderer().renderEntry("{@spell Hex} spell or a warlock feature that curses");
 	return STR_NONE
 };
 
@@ -899,6 +907,7 @@ Parser.CAT_ID_DEITY = 14;
 Parser.CAT_ID_OBJECT = 15;
 Parser.CAT_ID_TRAP = 16;
 Parser.CAT_ID_HAZARD = 17;
+Parser.CAT_ID_QUICKREF = 18;
 
 Parser.CAT_ID_TO_FULL = {};
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_CREATURE] = "Bestiary";
@@ -918,6 +927,7 @@ Parser.CAT_ID_TO_FULL[Parser.CAT_ID_DEITY] = "Deity";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_OBJECT] = "Object";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_TRAP] = "Trap";
 Parser.CAT_ID_TO_FULL[Parser.CAT_ID_HAZARD] = "Hazard";
+Parser.CAT_ID_TO_FULL[Parser.CAT_ID_QUICKREF] = "Quick Reference";
 
 Parser.pageCategoryToFull = function (catId) {
 	return Parser._parse_aToB(Parser.CAT_ID_TO_FULL, catId);
@@ -1113,6 +1123,7 @@ SRC_EEPC = "EEPC";
 SRC_EET = "EET";
 SRC_HotDQ = "HotDQ";
 SRC_LMoP = "LMoP";
+SRC_Mag = "Mag";
 SRC_MM = "MM";
 SRC_OotA = "OotA";
 SRC_PHB = "PHB";
@@ -1230,6 +1241,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_EEPC] = "Elemental Evil Player's Companion";
 Parser.SOURCE_JSON_TO_FULL[SRC_EET] = "Elemental Evil: Trinkets";
 Parser.SOURCE_JSON_TO_FULL[SRC_HotDQ] = "Hoard of the Dragon Queen";
 Parser.SOURCE_JSON_TO_FULL[SRC_LMoP] = "Lost Mine of Phandelver";
+Parser.SOURCE_JSON_TO_FULL[SRC_Mag] = "Dragon Magazine";
 Parser.SOURCE_JSON_TO_FULL[SRC_MM] = "Monster Manual";
 Parser.SOURCE_JSON_TO_FULL[SRC_OotA] = "Out of the Abyss";
 Parser.SOURCE_JSON_TO_FULL[SRC_PHB] = "Player's Handbook";
@@ -1326,6 +1338,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_EEPC] = "EEPC";
 Parser.SOURCE_JSON_TO_ABV[SRC_EET] = "EET";
 Parser.SOURCE_JSON_TO_ABV[SRC_HotDQ] = "HotDQ";
 Parser.SOURCE_JSON_TO_ABV[SRC_LMoP] = "LMoP";
+Parser.SOURCE_JSON_TO_ABV[SRC_Mag] = "Mag";
 Parser.SOURCE_JSON_TO_ABV[SRC_MM] = "MM";
 Parser.SOURCE_JSON_TO_ABV[SRC_OotA] = "OotA";
 Parser.SOURCE_JSON_TO_ABV[SRC_PHB] = "PHB";
@@ -1520,7 +1533,7 @@ function isNonstandardSource (source) {
 }
 
 function _isNonStandardSourceWiz (source) {
-	return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA;
+	return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA || source === SRC_Mag;
 }
 
 function _isNonStandardSource3pp (source) {
@@ -1771,6 +1784,7 @@ UrlUtil.PG_DEITIES = "deities.html";
 UrlUtil.PG_CULTS = "cults.html";
 UrlUtil.PG_OBJECTS = "objects.html";
 UrlUtil.PG_TRAPS_HAZARDS = "trapshazards.html";
+UrlUtil.PG_QUICKREF = "quickreference.html";
 
 UrlUtil.URL_TO_HASH_BUILDER = {};
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
@@ -1809,6 +1823,7 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_DEITY] = UrlUtil.PG_DEITIES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_OBJECT] = UrlUtil.PG_OBJECTS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_TRAP] = UrlUtil.PG_TRAPS_HAZARDS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_HAZARD] = UrlUtil.PG_TRAPS_HAZARDS;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_QUICKREF] = UrlUtil.PG_QUICKREF;
 
 if (!IS_DEPLOYED && !IS_ROLL20 && typeof window !== "undefined") {
 	// for local testing, hotkey to get a link to the current page on the main site
@@ -1982,11 +1997,13 @@ RollerUtil = {
 		const $btnRoll = $(`<button class="btn btn-default" id="feelinglucky" title="Feeling Lucky?"><span class="glyphicon glyphicon-random"></span></button>`);
 		$btnRoll.on("click", () => {
 			if (listWrapper.data("lists")) {
-				const allLists = listWrapper.data("lists");
-				const rollX = RollerUtil.roll(allLists.length);
-				const list = listWrapper.data("lists")[rollX];
-				const rollY = RollerUtil.roll(list.visibleItems.length);
-				window.location.hash = $(list.visibleItems[rollY].elm).find(`a`).prop("hash");
+				const allLists = listWrapper.data("lists").filter(l => l.visibleItems.length);
+				if (allLists.length) {
+					const rollX = RollerUtil.roll(allLists.length);
+					const list = allLists[rollX];
+					const rollY = RollerUtil.roll(list.visibleItems.length);
+					window.location.hash = $(list.visibleItems[rollY].elm).find(`a`).prop("hash");
+				}
 			}
 		});
 

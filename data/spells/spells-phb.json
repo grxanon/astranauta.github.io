@@ -2006,7 +2006,7 @@
 			"entries": [
 				"You attempt to send one creature that you can see within range to another place of existence. The target must succeed on a Charisma saving throw or be banished.",
 				"If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition incapacitated}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
-				"If the target is native to a different plane of existence that the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
+				"If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
 			],
 			"entriesHigherLevel": [
 				{
@@ -21200,12 +21200,12 @@
 							{
 								"type": "cell",
 								"roll": {
-									"min": 2,
+									"min": 1,
 									"max": 4,
 									"pad": true
 								}
 							},
-							"Dragonborn"
+							"{@race Dragonborn}"
 						],
 						[
 							{
@@ -21216,7 +21216,7 @@
 									"pad": true
 								}
 							},
-							"Dwarf, hill"
+							"{@race dwarf (hill)|phb|Dwarf, hill}"
 						],
 						[
 							{
@@ -21226,7 +21226,7 @@
 									"max": 21
 								}
 							},
-							"Dwarf, mountain"
+							"{@race dwarf (mountain)|phb|Dwarf, mountain}"
 						],
 						[
 							{
@@ -21236,7 +21236,7 @@
 									"max": 25
 								}
 							},
-							"Elf, dark"
+							"{@race elf (drow)|phb|Elf, dark}"
 						],
 						[
 							{
@@ -21246,7 +21246,7 @@
 									"max": 34
 								}
 							},
-							"Elf, high"
+							"{@race elf (high)|phb|Elf, high}"
 						],
 						[
 							{
@@ -21256,7 +21256,7 @@
 									"max": 42
 								}
 							},
-							"Elf, wood"
+							"{@race elf (wood)|phb|Elf, wood}"
 						],
 						[
 							{
@@ -21266,7 +21266,7 @@
 									"max": 46
 								}
 							},
-							"Gnome, forest"
+							"{@race gnome (forest)|phb|Gnome, forest}"
 						],
 						[
 							{
@@ -21276,7 +21276,7 @@
 									"max": 52
 								}
 							},
-							"Gnome, rock"
+							"{@race gnome (rock)|phb|Gnome, rock}"
 						],
 						[
 							{
@@ -21286,7 +21286,7 @@
 									"max": 56
 								}
 							},
-							"Half-elf"
+							"{@race Half-elf}"
 						],
 						[
 							{
@@ -21296,7 +21296,7 @@
 									"max": 60
 								}
 							},
-							"Half-orc"
+							"{@race Half-orc}"
 						],
 						[
 							{
@@ -21306,7 +21306,7 @@
 									"max": 68
 								}
 							},
-							"Halfling, lightfoot"
+							"{@race halfling (lightfoot)|phb|Halfling, lightfoot}"
 						],
 						[
 							{
@@ -21316,7 +21316,7 @@
 									"max": 76
 								}
 							},
-							"Halfling, stout"
+							"{@race halfling (stout)|phb|Halfling, stout}"
 						],
 						[
 							{
@@ -21326,7 +21326,7 @@
 									"max": 96
 								}
 							},
-							"Human"
+							"{@race Human}"
 						],
 						[
 							{
@@ -21337,7 +21337,7 @@
 									"pad": true
 								}
 							},
-							"Tiefling"
+							"{@race Tiefling}"
 						]
 					]
 				},
