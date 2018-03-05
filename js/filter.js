@@ -12,9 +12,8 @@
  */
 class FilterBox {
 	static getSelectedSources () {
-		const cookie = Cookies.get(FilterBox._COOKIE_NAME);
-		if (cookie) {
-			const parsed = JSON.parse(cookie);
+		const parsed = StorageUtil.getForPage(FilterBox._STORAGE_NAME);
+		if (parsed) {
 			const sources = parsed[FilterBox.SOURCE_HEADER];
 			if (sources) {
 				const totals = sources._totals;
@@ -55,19 +54,27 @@ class FilterBox {
 
 		this.headers = {};
 		this.$disabledOverlay = $(`<div class="list-disabled-overlay"/>`);
-		const cookie = Cookies.get(FilterBox._COOKIE_NAME);
-		this.cookieValues = cookie ? JSON.parse(cookie) : null;
+
+		// clean legacy cookies
+		// TODO remove this somewhere down the line
+		Cookies.remove(FilterBox._STORAGE_NAME);
+		Cookies.remove(FilterBox._STORAGE_NAME, {path: window.location.pathname});
+		// end clean legacy cookies
+
+		this.storedValues = StorageUtil.getForPage(FilterBox._STORAGE_NAME);
 		this.$rendered = [];
 		this.dropdownVisible = false;
 		this.modeAndOr = "AND";
+		this.$txtCount = $(`<span style="margin-left: auto"/>`);
 	}
 
 	/**
 	 * Render the "Filters" button in the inputGroup
 	 */
 	render () {
+		const firstRender = this.$rendered.length === 0;
 		// save the current values to re-apply if we're re-rendering
-		const curValues = this.$rendered.length > 0 ? this.getValues() : null;
+		const curValues = firstRender ? null : this.getValues();
 		// remove any previously rendered elements
 		this._wipeRendered();
 
@@ -78,10 +85,10 @@ class FilterBox {
 		const $inputGroup = $(this.inputGroup);
 
 		const $outer = makeOuterList();
+		const self = this;
+		const $hdrLine = $(`<li class="filter-item"/>`);
+		const $hdrLineInner = $(`<div class="h-wrap"/>`).appendTo($hdrLine);
 		if (this.filterList.length > 1) {
-			const self = this;
-			const $hdrAndOr = $(`<li class="filter-item"/>`);
-			const $innHdr = $(`<div class="h-wrap">Combine filters as... </div>`);
 			const $btnAndOr = $(`<button class="btn btn-default btn-xs" style="width: 3em;">${this.modeAndOr}</button>`)
 				.data("andor", this.modeAndOr)
 				.on(EVNT_CLICK, () => {
@@ -90,9 +97,10 @@ class FilterBox {
 					$btnAndOr.text(nxt);
 					$btnAndOr.data("andor", nxt);
 				});
-			$hdrAndOr.append($innHdr.append(`<div style="display: inline-block; width: 10px;"/>`).append($btnAndOr));
-			$outer.append($hdrAndOr).append(makeDivider());
+			$hdrLineInner.append(`Combine filters as... `).append(`<div style="display: inline-block; width: 10px;"/>`).append($btnAndOr);
 		}
+		$hdrLineInner.append(this.$txtCount);
+		$outer.append($hdrLine).append(makeDivider());
 		for (let i = 0; i < this.filterList.length; ++i) {
 			$outer.append(makeOuterItem(this, this.filterList[i], this.$miniView));
 			if (i < this.filterList.length - 1) $outer.append(makeDivider());
@@ -105,8 +113,10 @@ class FilterBox {
 		this.$rendered.push(this.$miniView);
 
 		addShowHideHandlers(this);
-		addResetHandler(this);
-		addCookieHandler(this);
+		if (firstRender) {
+			addResetHandler(this);
+			addSaveHandler(this);
+		}
 
 		if (this.dropdownVisible) {
 			$filterButton.find("button").click();
@@ -338,13 +348,13 @@ class FilterBox {
 						}
 					);
 
-					// If re-render, use previous values. Otherwise, if there's a cookie, cookie values. Otherwise, default the pills
+					// If re-render, use previous values. Otherwise, if there's stored values, stored values. Otherwise, default the pills
 					if (curValues) {
 						let valNum = curValues[filter.header][iText];
 						if (valNum < 0) valNum = 2;
 						_setter($pill, $miniPill, FilterBox._PILL_STATES[valNum], iText, iChangeFn, true);
-					} else if (self.cookieValues && self.cookieValues[filter.header] && self.cookieValues[filter.header][iText] !== undefined) {
-						let valNum = self.cookieValues[filter.header][iText];
+					} else if (self.storedValues && self.storedValues[filter.header] && self.storedValues[filter.header][iText] !== undefined) {
+						let valNum = self.storedValues[filter.header][iText];
 						if (valNum < 0) valNum = 2;
 						_setter($pill, $miniPill, FilterBox._PILL_STATES[valNum], iText, iChangeFn, true);
 					} else {
@@ -422,9 +432,13 @@ class FilterBox {
 				$grid.data(
 					"setValues",
 					function (toVal) {
+						const toNo = toVal.filter(it => it[0] === "!").map(it => it.slice(1));
+						const toYes = toVal.filter(it => it[0] !== "!");
 						$pills.forEach((p) => {
-							if (toVal.includes(p.val().toLowerCase())) {
+							if (toYes.includes(p.val().toLowerCase())) {
 								$(p).data("setter")(FilterBox._PILL_STATES[1])
+							} else if (toNo.includes(p.val().toLowerCase())) {
+								$(p).data("setter")(FilterBox._PILL_STATES[2])
 							} else {
 								$(p).data("setter")(FilterBox._PILL_STATES[0])
 							}
@@ -486,10 +500,10 @@ class FilterBox {
 			}
 		}
 
-		function addCookieHandler (self) {
-			window.addEventListener("unload", function () {
+		function addSaveHandler (self) {
+			window.addEventListener("beforeunload", function () {
 				const state = self.getValues();
-				Cookies.set(FilterBox._COOKIE_NAME, state, {expires: 365, path: window.location.pathname})
+				StorageUtil.setForPage(FilterBox._STORAGE_NAME, state);
 			});
 		}
 	}
@@ -585,6 +599,10 @@ class FilterBox {
 		return this.modeAndOr === "AND" ? res.every(it => it) : res.find(it => it);
 	}
 
+	setCount (count, maxCount) {
+		this.$txtCount.html(`Showing ${count}/${maxCount}`);
+	}
+
 	/**
 	 * Helper which resets an section of the filter
 	 * @param header the name of the section to reset
@@ -623,7 +641,7 @@ FilterBox.CLS_DROPDOWN_MENU_FILTER = "dropdown-menu-filter";
 FilterBox.EVNT_VALCHANGE = "valchange";
 FilterBox.SOURCE_HEADER = "Source";
 FilterBox._PILL_STATES = ["ignore", "yes", "no"];
-FilterBox._COOKIE_NAME = "filterState";
+FilterBox._STORAGE_NAME = "filterState";
 
 class Filter {
 	/**

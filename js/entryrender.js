@@ -605,7 +605,10 @@ function EntryRenderer () {
 								break;
 							case "@class": {
 								if (others.length) {
-									fauxEntry.href.subhashes = [{"key": "sub", "value": others[0].trim() + "~phb"}] // TODO pass this in
+									fauxEntry.href.subhashes = [{"key": "sub", "value": others[0].trim() + "~phb"}]; // TODO pass this in
+									if (others.length === 2) {
+										fauxEntry.href.subhashes.push({key: "f", value: others[1].trim()})
+									}
 								}
 								fauxEntry.href.path = "classes.html";
 								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
@@ -779,6 +782,10 @@ EntryRenderer.utils = {
 		return `<tr><th class="border" colspan="6"></th></tr>`;
 	},
 
+	getDividerTr: () => {
+		return `<tr><td class="divider" colspan="6"><div></div></td></tr>`;
+	},
+
 	getNameTr: (it, addPageNum, prefix, suffix) => {
 		return `<tr>
 					<th class="name" colspan="6">
@@ -797,6 +804,55 @@ EntryRenderer.utils = {
 	_getPageTrText: (it) => {
 		const addSourceText = it.additionalSources && it.additionalSources.length ? `. Additional information from ${it.additionalSources.map(as => `<i title="${Parser.sourceJsonToFull(as.source)}">${Parser.sourceJsonToAbv(as.source)}</i>, page ${as.page}`).join("; ")}.` : "";
 		return it.page ? `<b>Source: </b> <i title="${Parser.sourceJsonToFull(it.source)}">${Parser.sourceJsonToAbv(it.source)}</i>, page ${it.page}${addSourceText}` : ""
+	},
+
+	tabButton: (label, funcChange, funcPopulate) => {
+		return {
+			label: label,
+			funcChange: funcChange,
+			funcPopulate: funcPopulate
+		};
+	},
+
+	_tabs: {},
+	_curTab: null,
+	bindTabButtons: (...tabButtons) => {
+		EntryRenderer._tabs = {};
+		EntryRenderer._curTab = null;
+
+		const $content = $("#pagecontent");
+		const $wrpTab = $(`#stat-tabs`);
+
+		$wrpTab.find(`.stat-tab-gen`).remove();
+		EntryRenderer.utils._tabs[tabButtons[0].label] = tabButtons[0];
+		EntryRenderer.utils._curTab = tabButtons[0];
+
+		const toAdd = tabButtons.map((tb, i) => {
+			const $t = $(`<span class="stat-tab ${i === 0 ? `stat-tab-sel` : ""} btn btn-default stat-tab-gen">${tb.label}</span>`);
+			tb.$t = $t;
+			$t.click(() => {
+				const curTab = EntryRenderer.utils._curTab;
+				const tabs = EntryRenderer.utils._tabs;
+
+				if (curTab.label !== tb.label) {
+					EntryRenderer.utils._curTab.$t.removeClass(`stat-tab-sel`);
+					EntryRenderer.utils._curTab = tb;
+					$t.addClass(`stat-tab-sel`);
+					tabs[curTab.label].content = $content.children().detach();
+
+					tabs[tb.label] = tb;
+					if (!tabs[tb.label].content && tb.funcPopulate) {
+						tb.funcPopulate();
+					} else {
+						$content.append(tabs[tb.label].content);
+					}
+					if (tb.funcChange) tb.funcChange();
+				}
+			});
+			return $t;
+		});
+
+		toAdd.reverse().forEach($t => $wrpTab.prepend($t));
 	}
 };
 
@@ -988,7 +1044,7 @@ EntryRenderer.spell = {
 			<tr><td class="range" colspan="6"><span class="bold">Range: </span>${Parser.spRangeToFull(spell.range)}</td></tr>
 			<tr><td class="components" colspan="6"><span class="bold">Components: </span>${Parser.spComponentsToFull(spell.components)}</td></tr>
 			<tr><td class="range" colspan="6"><span class="bold">Duration: </span>${Parser.spDurationToFull(spell.duration)}</td></tr>
-			<tr><td class="divider" colspan="6"><div></div></td></tr>
+			${EntryRenderer.utils.getDividerTr()}
 		`);
 
 		const entryList = {type: "entries", entries: spell.entries};
@@ -1141,7 +1197,7 @@ EntryRenderer.race = {
 					<tr>
 						<td class="text-align-center">${ability.asText}</td>
 						<td class="text-align-center">${Parser.sizeAbvToFull(race.size)}</td>
-						<td class="text-align-center">${EntryRenderer.race.getSpeedString(race)}</td>
+						<td class="text-align-center">${Parser.getSpeedString(race)}</td>
 					</tr>
 				</table>
 			</td></tr>
@@ -1151,19 +1207,6 @@ EntryRenderer.race = {
 		renderStack.push("</td></tr>");
 
 		return renderStack.join("");
-	},
-
-	getSpeedString: (race) => {
-		let speed;
-		if (race.speed.walk) {
-			speed = race.speed.walk + "ft.";
-			if (race.speed.climb) speed += `, climb ${race.speed.climb}ft.`;
-			if (race.speed.fly) speed += `, fly ${race.speed.fly}ft.`;
-			if (race.speed.swim) speed += `, swim ${race.speed.swim}ft.`;
-		} else {
-			speed = race.speed + (race.speed === "Varies" ? "" : "ft. ");
-		}
-		return speed;
 	},
 
 	mergeSubraces: (races) => {
@@ -1181,6 +1224,8 @@ EntryRenderer.race = {
 
 			srCopy.forEach(s => {
 				const cpy = JSON.parse(JSON.stringify(race));
+				cpy._baseName = cpy.name;
+				cpy._baseSource = cpy.source;
 				delete cpy.subraces;
 
 				// merge names, abilities, entries
@@ -1303,7 +1348,7 @@ EntryRenderer.monster = {
 					<tr>
 						<td>${mon.ac}</td>					
 						<td>${mon.hp}</td>					
-						<td>${mon.speed}</td>					
+						<td>${Parser.getSpeedString(mon)}</td>					
 						<td>${Parser.monCrToFull(mon.cr)}</td>					
 					</tr>
 				</table>			
@@ -1479,14 +1524,13 @@ EntryRenderer.item = {
 		const [damage, damageType, propertiesTxt] = EntryRenderer.item.getDamageAndPropertiesText(item);
 		renderStack.push(`<tr><td colspan="2">${item.value ? item.value + (item.weight ? ", " : "") : ""}${item.weight ? item.weight + (Number(item.weight) === 1 ? " lb." : " lbs.") : ""}</td><td class="damageproperties" colspan="4">${damage} ${damageType} ${propertiesTxt}</tr>`);
 
-		renderStack.push(`<tr><td class="divider" colspan="6"><div></div></td></tr>`);
-
-		renderStack.push(`<tr class='text'><td colspan='6' class='text'>`);
-
-		const entryList = {type: "entries", entries: item.entries};
-		renderer.recursiveEntryRender(entryList, renderStack, 1);
-
-		renderStack.push(`</td></tr>`);
+		if (item.entries && item.entries.length) {
+			renderStack.push(EntryRenderer.utils.getDividerTr());
+			renderStack.push(`<tr class='text'><td colspan='6' class='text'>`);
+			const entryList = {type: "entries", entries: item.entries};
+			renderer.recursiveEntryRender(entryList, renderStack, 1);
+			renderStack.push(`</td></tr>`);
+		}
 
 		return renderStack.join("");
 	},
@@ -1857,6 +1901,7 @@ EntryRenderer.hover = {
 		const source = EntryRenderer.hover._curHovering.cSource;
 		const hash = EntryRenderer.hover._curHovering.cHash;
 		const permanent = EntryRenderer.hover._curHovering.permanent;
+		const clientX = EntryRenderer.hover._curHovering.clientX;
 
 		// if we've outrun the loading, restart
 		if (!EntryRenderer.hover._isCached(page, source, hash)) {
@@ -1974,8 +2019,8 @@ EntryRenderer.hover = {
 		if (fromBottom) $hov.css("top", vpOffsetT - $hov.height());
 		else $hov.css("top", vpOffsetT + $(ele).height() + 1);
 
-		if (fromRight) $hov.css("left", vpOffsetL - $hov.width());
-		else $hov.css("left", vpOffsetL + $(ele).width() + 1);
+		if (fromRight) $hov.css("left", (clientX || vpOffsetL) - $hov.width());
+		else $hov.css("left", clientX || (vpOffsetL + $(ele).width() + 1));
 
 		adjustPosition(true);
 
@@ -2087,7 +2132,8 @@ EntryRenderer.hover = {
 			cPage: page,
 			cSource: source,
 			cHash: hash,
-			permanent: evt.shiftKey
+			permanent: evt.shiftKey,
+			clientX: evt.clientX
 		};
 
 		// return if another event chain is handling the event
@@ -2231,6 +2277,22 @@ EntryRenderer.hover = {
 	_cleanWindows: () => {
 		const ks = Object.keys(EntryRenderer.hover._active);
 		ks.forEach(hovId => EntryRenderer.hover._teardownWindow(hovId));
+	},
+
+	bindPopoutButton: (toList) => {
+		const $btnPop = $(`#btn-popout`);
+		$btnPop.off("click");
+		$btnPop.on("click", (evt) => {
+			if (lastLoadedId !== null) {
+				EntryRenderer.hover.doPopout($btnPop, toList, lastLoadedId, evt.clientX);
+			}
+		});
+	},
+
+	doPopout: ($btnPop, list, index, clientX) => {
+		$btnPop.attr("data-hover-active", false);
+		const it = list[index];
+		EntryRenderer.hover.show({shiftKey: true, clientX: clientX}, $btnPop.get(), UrlUtil.getCurrentPage(), it.source, UrlUtil.autoEncodeHash(it));
 	}
 };
 
@@ -2460,7 +2522,6 @@ EntryRenderer.dice = {
 			const v = EntryRenderer.dice._rollParsed(toRoll);
 			const lbl = rolledBy.label && (!rolledBy.name || rolledBy.label.trim().toLowerCase() !== rolledBy.name.trim().toLowerCase()) ? rolledBy.label : null;
 
-			// debugger
 			const totalPart = toRoll.successThresh
 				? `<span class="roll">${v.total > 100 - toRoll.successThresh ? "success" : "failure"}</span>`
 				: `<span class="roll ${v.allMax ? "roll-max" : v.allMin ? "roll-min" : ""}">${v.total}</span>`;
