@@ -565,6 +565,7 @@ Parser.levelToXpThreshold = function (level) {
 
 Parser.crToNumber = function (cr) {
 	if (cr === "Unknown" || cr === undefined) return 100;
+	if (cr.cr) return Parser.crToNumber(cr.cr);
 	const parts = cr.trim().split("/");
 	if (parts.length === 1) return Number(parts[0]);
 	else if (parts.length === 2) return Number(parts[0]) / Number(parts[1]);
@@ -831,6 +832,16 @@ Parser.monTypeToFullObj = function (type) {
 
 Parser.monTypeToPlural = function (type) {
 	return Parser._parse_aToB(Parser.MON_TYPE_TO_PLURAL, type);
+};
+
+Parser.monCrToFull = function (cr) {
+	if (typeof cr === "string") return `${cr} (${Parser.crToXp(cr)} XP)`;
+	else {
+		const stack = [Parser.monCrToFull(cr.cr)];
+		if (cr.lair) stack.push(`${Parser.monCrToFull(cr.lair)} when encountered in lair`);
+		if (cr.coven) stack.push(`${Parser.monCrToFull(cr.coven)} when part of a coven`);
+		return stack.join(" or ");
+	}
 };
 
 // psi-prefix functions are for parsing psionic data, and shared with the roll20 script
@@ -1873,6 +1884,18 @@ SortUtil = {
 			const initialCompare = compareBy(valueName);
 			return initialCompare === 0 ? compareBy(defaultValueName) : initialCompare;
 		}
+	},
+
+	/**
+	 * "Special Equipment" first, then alphabetical
+	 */
+	monTraitSort: (a, b) => {
+		if (!a && !b) return 0;
+		if (!a) return -1;
+		if (!b) return 1;
+		if (a.toLowerCase().trim() === "special equipment") return -1;
+		if (b.toLowerCase().trim() === "special equipment") return 1;
+		return SortUtil.ascSort(a, b)
 	}
 };
 
