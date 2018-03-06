@@ -51,7 +51,7 @@ window.onload = function load () {
 };
 
 let PSIONIC_LIST;
-
+let filterBox;
 function onJsonLoad (data) {
 	PSIONIC_LIST = data.psionic;
 
@@ -66,7 +66,7 @@ function onJsonLoad (data) {
 		items: ["Avatar", "Awakened", "Immortal", "Nomad", "Wu Jen", Parser.PSI_ORDER_NONE]
 	});
 
-	const filterBox = initFilterBox(sourceFilter, typeFilter, orderFilter);
+	filterBox = initFilterBox(sourceFilter, typeFilter, orderFilter);
 
 	let tempString = "";
 	PSIONIC_LIST.forEach(function (p, i) {
@@ -125,7 +125,6 @@ function onJsonLoad (data) {
 	initHistory();
 	handleFilterChange();
 	RollerUtil.addListRollButton();
-	EntryRenderer.hover.bindPopoutButton(PSIONIC_LIST);
 
 	const subList = ListUtil.initSublist({
 		valueNames: ["name", "type", "order", "id"],
@@ -135,6 +134,10 @@ function onJsonLoad (data) {
 		primaryLists: [list]
 	});
 	ListUtil.bindPinButton();
+	EntryRenderer.hover.bindPopoutButton(PSIONIC_LIST);
+	UrlUtil.bindLinkExportButton(filterBox);
+	ListUtil.bindDownloadButton();
+	ListUtil.bindUploadButton();
 	ListUtil.initGenericPinnable();
 	ListUtil.loadState();
 }
@@ -175,4 +178,8 @@ function loadhash (jsonIndex) {
 		STATS_ORDER_AND_TYPE.innerHTML = `${selectedPsionic[JSON_ITEM_ORDER]} ${Parser.psiTypeToFull(selectedPsionic[JSON_ITEM_TYPE])}`;
 		STATS_TEXT.innerHTML = EntryRenderer.psionic.getDisciplineText(selectedPsionic, renderer);
 	}
+}
+
+function loadsub (sub) {
+	filterBox.setFromSubHashes(sub);
 }

@@ -100,7 +100,7 @@ class FilterBox {
 			$hdrLineInner.append(`Combine filters as... `).append(`<div style="display: inline-block; width: 10px;"/>`).append($btnAndOr);
 		}
 		$hdrLineInner.append(this.$txtCount);
-		$outer.append($hdrLine).append(makeDivider());
+		if (!this.filterList[0].minimalUI) $outer.append($hdrLine).append(makeDivider());
 		for (let i = 0; i < this.filterList.length; ++i) {
 			$outer.append(makeOuterItem(this, this.filterList[i], this.$miniView));
 			if (i < this.filterList.length - 1) $outer.append(makeDivider());
@@ -170,12 +170,13 @@ class FilterBox {
 			}
 
 			function makeHeaderLine ($grid) {
-				const $line = $(`<div class="h-wrap"/>`);
+				const minimalClass = filter.minimalUI ? "filter-minimal" : "";
+				const $line = $(`<div class="h-wrap ${minimalClass}"/>`);
 				const $label = $(`<div>${namePrefix ? `<span class="text-muted">${namePrefix}: </span>` : ""}${filter.header}</div>`);
 				$line.append($label);
 
 				function makeAndOrBtn (defState, tooltip) {
-					const $btn = $(` <button class="btn btn-default btn-xs" style="width: 3em;" title="${tooltip}">${defState}</button>`)
+					const $btn = $(` <button class="btn btn-default btn-xs ${minimalClass}" style="width: 3em;" title="${tooltip}">${defState}</button>`)
 						.data("andor", defState);
 					return $btn
 						.on(EVNT_CLICK, () => {
@@ -195,13 +196,13 @@ class FilterBox {
 				};
 
 				const $quickBtns = $(`<span class="btn-group quick-btns" style="margin-left: auto;"/>`);
-				const $all = $(`<button class="btn btn-default btn-xs">All</button>`);
+				const $all = $(`<button class="btn btn-default btn-xs ${minimalClass}">All</button>`);
 				$quickBtns.append($all);
-				const $clear = $(`<button class="btn btn-default btn-xs">Clear</button>`);
+				const $clear = $(`<button class="btn btn-default btn-xs ${minimalClass}">Clear</button>`);
 				$quickBtns.append($clear);
-				const $none = $(`<button class="btn btn-default btn-xs">None</button>`);
+				const $none = $(`<button class="btn btn-default btn-xs ${minimalClass}">None</button>`);
 				$quickBtns.append($none);
-				const $default = $(`<button class="btn btn-default btn-xs">Default</button>`);
+				const $default = $(`<button class="btn btn-default btn-xs ${minimalClass}">Default</button>`);
 				$quickBtns.append($default);
 				$line.append($quickBtns);
 
@@ -210,7 +211,7 @@ class FilterBox {
 				$line.append(`<div style="display: inline-block; width: 5px;">`).append($logicBtns);
 
 				const $summary = $(`<span class="summary" style="margin-left: auto;"/>`);
-				const $summaryInclude = $(`<span class="include" title="Hiding  includes"/>`);
+				const $summaryInclude = $(`<span class="include" title="Hiding includes"/>`);
 				const $summarySpacer = $(`<span class="spacer"/>`);
 				const $summaryExclude = $(`<span class="exclude" title="Hidden excludes"/>`);
 				$summary.append($summaryInclude);
@@ -219,7 +220,7 @@ class FilterBox {
 				$summary.hide();
 				$line.append($summary);
 
-				const $showHide = $(`<button class="btn btn-default btn-xs show-hide-button" style="margin-left: 12px;">Hide</button>`);
+				const $showHide = $(`<button class="btn btn-default btn-xs show-hide-button ${minimalClass}" style="margin-left: 12px;">Hide</button>`);
 				$line.append($showHide);
 
 				$showHide.on(EVNT_CLICK, function () {
@@ -565,7 +566,7 @@ class FilterBox {
 		});
 		const toRemove = [];
 		Object.keys(unpacked)
-			.filter(k => k.startsWith("filter"))
+			.filter(k => k.startsWith(FilterBox._SUB_HASH_PREFIX))
 			.forEach(rawSubhash => {
 				const header = rawSubhash.substring(6);
 
@@ -590,6 +591,29 @@ class FilterBox {
 			setSuppressHistory(true);
 			window.location.hash = `#${link}${outSub.length ? `${HASH_PART_SEP}${outSub.join(HASH_PART_SEP)}` : ""}`;
 		}
+	}
+
+	getAsSubHashes () {
+		const cur = this.getValues();
+		const out = {};
+
+		Object.keys(cur).forEach(name => {
+			const vals = cur[name];
+			const outName = `${FilterBox._SUB_HASH_PREFIX}${name}`;
+
+			if (vals._totals.yes || vals._totals.no) {
+				out[outName] = [];
+				Object.keys(vals).forEach(vK => {
+					if (vK.startsWith("_")) return;
+					const vV = vals[vK];
+					if (!vV) return;
+					out[outName].push(`${vV < 0 ? "!" : ""}${vK}`);
+				});
+			} else {
+				out[outName] = [HASH_SUB_NONE];
+			}
+		});
+		return out;
 	}
 
 	toDisplay (curr, ...vals) {
@@ -642,6 +666,7 @@ FilterBox.EVNT_VALCHANGE = "valchange";
 FilterBox.SOURCE_HEADER = "Source";
 FilterBox._PILL_STATES = ["ignore", "yes", "no"];
 FilterBox._STORAGE_NAME = "filterState";
+FilterBox._SUB_HASH_PREFIX = "filter";
 
 class Filter {
 	/**
@@ -676,6 +701,7 @@ class Filter {
 		this.selFn = options.selFn;
 		this.deselFn = options.deselFn;
 		this.attrName = options.attrName;
+		this.minimalUI = options.minimalUI;
 	}
 
 	/**
