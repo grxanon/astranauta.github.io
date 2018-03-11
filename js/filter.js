@@ -593,6 +593,16 @@ class FilterBox {
 		}
 	}
 
+	setFromValues (values) {
+		Object.keys(this.headers).forEach(hk => {
+			if (values[hk]) {
+				const cur = this.headers[hk];
+				const toSet = values[hk];
+				cur.ele.data("setValues")(toSet)
+			}
+		});
+	}
+
 	getAsSubHashes () {
 		const cur = this.getValues();
 		const out = {};
@@ -656,6 +666,15 @@ class FilterBox {
 		this.$rendered.forEach($e => $e.remove());
 		this.$rendered = [];
 		this.$disabledOverlay.detach();
+	}
+
+	static nextIfHidden (fromList, unless) {
+		if (lastLoadedId && !unless) {
+			const last = fromList[lastLoadedId];
+			const lastHash = UrlUtil.autoEncodeHash(last);
+			const link = $("#listcontainer").find(`.list a[href="#${lastHash.toLowerCase()}"]`);
+			if (!link.length) _freshLoad();
+		}
 	}
 }
 
