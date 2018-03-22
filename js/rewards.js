@@ -76,8 +76,6 @@ function onJsonLoad (data) {
 		FilterBox.nextIfHidden(rewardList);
 	}
 
-	initHistory();
-	handleFilterChange();
 	RollerUtil.addListRollButton();
 
 	const subList = ListUtil.initSublist({
@@ -94,6 +92,9 @@ function onJsonLoad (data) {
 	ListUtil.bindUploadButton();
 	ListUtil.initGenericPinnable();
 	ListUtil.loadState();
+
+	History.init();
+	handleFilterChange();
 }
 
 function getSublistItem (reward, pinId) {
@@ -119,4 +120,5 @@ function loadhash (id) {
 
 function loadsub (sub) {
 	filterBox.setFromSubHashes(sub);
+	ListUtil.setFromSubHashes(sub);
 }

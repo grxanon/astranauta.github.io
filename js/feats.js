@@ -47,7 +47,7 @@ function onJsonLoad (data) {
 		curfeat._slPrereq = prereqText;
 
 		tempString += `
-			<li ${FLTR_ID}="${i}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
+			<li class="row" ${FLTR_ID}="${i}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
 				<a id='${i}' href='#${UrlUtil.autoEncodeHash(curfeat)}' title='${name}'>
 					<span class='${CLS_COL_1}'>${name}</span>
 					<span class='${CLS_COL_2}' title='${Parser.sourceJsonToFull(curfeat.source)}'>${Parser.sourceJsonToAbv(curfeat.source)}</span>
@@ -96,8 +96,6 @@ function onJsonLoad (data) {
 		FilterBox.nextIfHidden(featlist);
 	}
 
-	initHistory();
-	handleFilterChange();
 	RollerUtil.addListRollButton();
 
 	const subList = ListUtil.initSublist({
@@ -114,6 +112,9 @@ function onJsonLoad (data) {
 	ListUtil.bindUploadButton();
 	ListUtil.initGenericPinnable();
 	ListUtil.loadState();
+
+	History.init();
+	handleFilterChange();
 }
 
 function getSublistItem (feat, pinId) {
@@ -153,4 +154,5 @@ function loadhash (id) {
 
 function loadsub (sub) {
 	filterBox.setFromSubHashes(sub);
+	ListUtil.setFromSubHashes(sub);
 }

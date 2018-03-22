@@ -39,8 +39,8 @@ function sortItems (a, b, o) {
 
 function deselectFilter (deselectProperty, deselectValue) {
 	return function (val) {
-		if (window.location.hash.length) {
-			const itemProperty = itemList[getSelectedListElement().attr("id")][deselectProperty];
+		if (window.location.hash.length && !window.location.hash.startsWith(`#${HASH_BLANK}`)) {
+			const itemProperty = itemList[History.getSelectedListElement().attr("id")][deselectProperty];
 			if (itemProperty === deselectValue) {
 				return deselNoHash();
 			} else {
@@ -202,8 +202,6 @@ function populateTablesAndFilters () {
 
 	RollerUtil.addListRollButton();
 	addListShowHide();
-	initHistory();
-	handleFilterChange();
 
 	const subList = ListUtil.initSublist(
 		{
@@ -224,6 +222,9 @@ function populateTablesAndFilters () {
 	ListUtil.bindUploadButton();
 	ListUtil.initGenericAddable();
 	ListUtil.loadState();
+
+	History.init();
+	handleFilterChange();
 }
 
 function onSublistChange () {
@@ -274,7 +275,7 @@ function loadhash (id) {
 	$content.find("td#source span").html(`<i>${sourceFull}</i>, page ${item.page}${addSourceText || ""}`);
 
 	$content.find("td span#value").html(item.value ? item.value + (item.weight ? ", " : "") : "");
-	$content.find("td span#weight").html(item.weight ? item.weight + (Number(item.weight) === 1 ? " lb." : " lbs.") : "");
+	$content.find("td span#weight").html(item.weight ? item.weight + (Number(item.weight) === 1 ? " lb." : " lbs.") + (item.weightNote ? ` ${item.weightNote}` : "") : "");
 	$content.find("td span#rarity").html((item.tier ? ", " + item.tier : "") + (item.rarity ? ", " + item.rarity : ""));
 	$content.find("td span#attunement").html(item.reqAttune ? item.reqAttune : "");
 	$content.find("td span#type").html(item.typeText);
@@ -313,7 +314,7 @@ function loadhash (id) {
 		</tr>`);
 
 	$content.find(".items span.roller").contents().unwrap();
-	$content.find("#pagecontent span.roller").click(function () {
+	$content.find("span.roller").click(function () {
 		const roll = $(this).attr("data-roll").replace(/\s+/g, "");
 		EntryRenderer.dice.roll(roll, {
 			name: item.name,
@@ -324,6 +325,7 @@ function loadhash (id) {
 
 function loadsub (sub) {
 	filterBox.setFromSubHashes(sub);
+	ListUtil.setFromSubHashes(sub);
 }
 
 const TOOL_INS_ADDITIONAL_ENTRIES = [

@@ -49,6 +49,10 @@ header {
 		&::after {
 			content: '.';
 		}
+
+		&.header-tools::after {
+			color: #e0e0e0;
+		}
 	}
 
 	p {
@@ -206,6 +210,10 @@ header {
 	box-shadow: 0 0 12px 0 black;
 	max-height: 96vh;
 	overflow-y: auto;
+
+	@media (max-width: 1023px) {
+		max-width: 95vw;
+	}
 
 	&::-webkit-scrollbar-track {
 		background: #a0a0a0;
@@ -573,12 +581,20 @@ input.search {
 }
 
 th.name {
+	position: relative;
+
 	span.stats-name {
 		float: left;
 	}
 
 	span.stats-source {
 		float: right;
+	}
+
+	div.name-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
 	}
 }
 
@@ -1232,8 +1248,7 @@ div#subclasses span.fluff-active {
 }
 
 div#subclasses span[data-state='1'] {
-	background: repeating-linear-gradient(45deg, #1d965d, #1d965d 15px, lightgrey 15px, lightgrey 30px);
-	color: white;
+	background: repeating-linear-gradient(45deg, #1d965d, #1d965d 17px, lightgrey 17px, lightgrey 34px);
 }
 
 div#subclasses span[data-state='2'] {
@@ -1265,6 +1280,7 @@ div#subclasses span[data-state='2'] {
 img.token {
 	position: absolute;
 	z-index: 10;
+	top: 0;
 	right: 0.1em;
 	float: right;
 	width: auto;
@@ -1333,35 +1349,35 @@ table.stats p.subtrait {
 
 /* spells page */
 .school_A {
-	color: #4f658a;
+	color: #00b921;
 }
 
 .school_V {
-	color: #930000;
+	color: #bb0100;
 }
 
 .school_E {
-	color: #763769;
+	color: #b30083;
 }
 
 .school_I {
-	color: #493160;
+	color: #006dbd;
 }
 
 .school_D {
-	color: #366370;
+	color: #00adb3;
 }
 
 .school_N {
-	color: #357e20;
+	color: #6c00cc;
 }
 
 .school_T {
-	color: #745010;
+	color: #ccbe00;
 }
 
 .school_C {
-	color: #949020;
+	color: #bd0044;
 }
 
 /****************************************
@@ -2439,7 +2455,7 @@ table.stats div.statsBlockInsetReadaloud {
 	color: black;
 }
 
-.header-tools {
+.header-tools span {
 	color: #e0e0e0;
 }
 
@@ -2491,6 +2507,14 @@ table.stats div.statsBlockInsetReadaloud {
 	header {
 		color: white;
 		background-color: transparent;
+
+		h1.header-tools::after {
+			color: dimgrey;
+		}
+
+		h1.header-tools span {
+			color: dimgrey;
+		}
 	}
 
 	.text-muted {
@@ -2856,7 +2880,7 @@ table.stats div.statsBlockInsetReadaloud {
 		}
 
 		&[data-state='1'] {
-			background: repeating-linear-gradient(45deg, #1d965d, #1d965d 15px, black 15px, black 30px);
+			background: repeating-linear-gradient(45deg, #1d965d, #1d965d 17px, black 17px, black 34px);
 		}
 
 		&[data-state='2'] {
@@ -2903,8 +2927,8 @@ table.stats div.statsBlockInsetReadaloud {
 		color: $font-color;
 	}
 
-	.header-tools {
-		color: dimgrey; /* lol */
+	.header-tools span {
+		color: dimgrey;
 	}
 
 	.hoverbox .hoverborder .window-title {

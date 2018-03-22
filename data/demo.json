@@ -33,7 +33,8 @@
 								"Creatures: {@creature goblin} assumes MM by default, {@creature cow|vgm} can have sources added with a pipe, {@creature cow|vgm|and optional link text added with another pipe}.",
 								"Backgrounds: {@background Charlatan} assumes PHB by default, {@background Anthropologist|toa} can have sources added with a pipe, {@background Anthropologist|ToA|and optional link text added with another pipe}.",
 								"Races: {@race Human} assumes PHB by default, {@race Aarakocra|eepc} can have sources added with a pipe, {@race Aarakocra|eepc|and optional link text added with another pipe}.",
-								"Classes: {@class fighter} assumes PHB by default, {@class artificer|uaartificer} can have sources added with a pipe, {@class fighter|phb|optional link text added with another pipe}, {@class fighter|phb|subclasses added|Eldritch Knight} with another pipe, {@class fighter|phb|and class feature added|Eldritch Knight|Martial Archetype 3} with another pipe (number denotes level, since names can be duplicate).",
+								"Invocations: {@invocation Agonizing Blast} assumes PHB by default, {@invocation Aspect of the Moon|xge} can have sources added with a pipe, {@invocation Aspect of the Moon|xge|and optional link text added with another pipe}.",
+								"Classes: {@class fighter} assumes PHB by default, {@class artificer|uaartificer} can have sources added with a pipe, {@class fighter|phb|optional link text added with another pipe}, {@class fighter|phb|subclasses added|Eldritch Knight} with another pipe, {@class fighter|phb|and class feature added|Eldritch Knight|phb|Martial Archetype 3} with another pipe (number denotes level, since names can be duplicate).",
 								"Conditions: {@condition stunned} assumes PHB by default, {@condition stunned|phb} can have sources added with a pipe (not that it's ever useful), {@condition stunned|phb|and optional link text added with another pipe}."
 							]
 						},
@@ -51,6 +52,7 @@
 								"{@filter Bard cantrips and first-level spells|spells|level=0;1|class=bard}",
 								"{@filter Beast with challenge rating 1 or lower|bestiary|cr=0;1/8;1/4;1/2;1|type=beast}",
 								"{@filter Divination and Evocation spells|spells|school=D;V}",
+								"{@filter All uncommon magic items|items|source=null|type=null|tier=null|rarity=uncommon|property=null|attunement=null|category=null|miscellaneous=Magic}",
 								{
 								    "type": "entries",
 								    "name": "Note",

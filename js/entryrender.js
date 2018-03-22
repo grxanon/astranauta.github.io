@@ -144,7 +144,7 @@ function EntryRenderer () {
 						if (i !== entry.entries.length - 1) textStack.push(`<br>`);
 						else textStack.push(`</i>`);
 					}
-					textStack.push(`<span class="quote-by">\u2014 ${entry.by}</span>`);
+					textStack.push(`<span class="quote-by">\u2014 ${entry.by}${entry.from ? `, <i>${entry.from}</i>` : ""}</span>`);
 					textStack.push(`</p>`);
 					break;
 
@@ -615,9 +615,10 @@ function EntryRenderer () {
 								break;
 							case "@class": {
 								if (others.length) {
-									fauxEntry.href.subhashes = [{"key": "sub", "value": others[0].trim() + "~phb"}]; // TODO pass this in
-									if (others.length === 2) {
-										fauxEntry.href.subhashes.push({key: "f", value: others[1].trim()})
+									const scSource = others.length > 1 ? `~${others[1].trim()}` : "~phb";
+									fauxEntry.href.subhashes = [{"key": "sub", "value": others[0].trim() + scSource}];
+									if (others.length > 2) {
+										fauxEntry.href.subhashes.push({key: "f", value: others[2].trim()})
 									}
 								}
 								fauxEntry.href.path = "classes.html";
@@ -657,6 +658,15 @@ function EntryRenderer () {
 								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
 								fauxEntry.href.hover = {
 									page: UrlUtil.PG_RACES,
+									source: source || SRC_PHB
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
+							case "@invocation":
+								fauxEntry.href.path = "invocations.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_INVOCATIONS,
 									source: source || SRC_PHB
 								};
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
@@ -799,10 +809,12 @@ EntryRenderer.utils = {
 	getNameTr: (it, addPageNum, prefix, suffix) => {
 		return `<tr>
 					<th class="name" colspan="6">
-						<span class="stats-name">${prefix || ""}${it.name}${suffix || ""}</span>
-						<span class="stats-source source${it.source}" title="${Parser.sourceJsonToAbv(it.source)}">
-							${Parser.sourceJsonToAbv(it.source)}${addPageNum && it.page ? ` p${it.page}` : ""}
-						</span>
+						<div class="name-inner">
+							<span class="stats-name">${prefix || ""}${it.name}${suffix || ""}</span>
+							<span class="stats-source source${it.source}" title="${Parser.sourceJsonToAbv(it.source)}">
+								${Parser.sourceJsonToAbv(it.source)}${addPageNum && it.page ? ` p${it.page}` : ""}
+							</span>
+						</div>
 					</th>
 				</tr>`;
 	},
@@ -1129,21 +1141,24 @@ EntryRenderer.background = {
 };
 
 EntryRenderer.invocation = {
-	getPrerequisiteText: (invo) => {
+	getPrerequisiteText: (prerequisites, orMode) => {
 		const prereqs = [
-			(!invo.prerequisites.patron || invo.prerequisites.patron === STR_ANY) ? null : `${invo.prerequisites.patron} patron`,
-			(!invo.prerequisites.pact || invo.prerequisites.pact === STR_ANY) ? null : Parser.invoPactToFull(invo.prerequisites.pact),
-			(!invo.prerequisites.level || invo.prerequisites.level === STR_ANY) ? null : `${Parser.levelToFull(invo.prerequisites.level)} level`,
-			(!invo.prerequisites.spell || invo.prerequisites.spell === STR_NONE) ? null : Parser.invoSpellToFull(invo.prerequisites.spell)
+			(!prerequisites.patron || prerequisites.patron === STR_ANY) ? null : `${prerequisites.patron} patron`,
+			(!prerequisites.pact || prerequisites.pact === STR_ANY || prerequisites.pact === STR_SPECIAL) ? null : Parser.invoPactToFull(prerequisites.pact),
+			(!prerequisites.level || prerequisites.level === STR_ANY) ? null : `${Parser.levelToFull(prerequisites.level)} level`,
+			(!prerequisites.feature || prerequisites.feature === STR_NONE) ? null : `${prerequisites.feature} feature`,
+			(!prerequisites.spell || prerequisites.spell === STR_NONE) ? null : Parser.invoSpellToFull(prerequisites.spell)
 		].filter(f => f);
-		return prereqs.length ? `Prerequisites: ${prereqs.join(", ")}` : "";
+		if (prerequisites.or && !orMode) prerequisites.or.map(p => EntryRenderer.invocation.getPrerequisiteText(p, true)).forEach(s => prereqs.push(s));
+		if (orMode) return prereqs.join(" or ");
+		else return prereqs.length ? `Prerequisites: ${prereqs.join(", ")}` : "";
 	},
 
 	getCompactRenderedString: (invo) => {
 		const renderer = EntryRenderer.getDefaultRenderer();
 		const renderStack = [];
 
-		const prereqs = EntryRenderer.invocation.getPrerequisiteText(invo);
+		const prereqs = EntryRenderer.invocation.getPrerequisiteText(invo.prerequisites);
 		renderStack.push(`
 			${EntryRenderer.utils.getNameTr(invo, true)}
 			<tr class="text"><td colspan="6">
@@ -1290,9 +1305,9 @@ EntryRenderer.object = {
 					</tr>
 					<tr>
 						<td class="text-align-center">${Parser.sizeAbvToFull(obj.size)} object</td>					
-						<td class="text-align-center">${obj.ac}</td>					
-						<td class="text-align-center">${obj.hp}</td>					
-						<td class="text-align-center">${obj.immune}</td>					
+						<td class="text-align-center">${obj.ac}</td>
+						<td class="text-align-center">${obj.hp}</td>
+						<td class="text-align-center">${obj.immune}</td>
 					</tr>
 				</table>			
 			</td></tr>
@@ -1515,7 +1530,7 @@ EntryRenderer.item = {
 		renderStack.push(`<tr><td class="typerarityattunement" colspan="6">${item.typeText}${`${item.tier ? `, ${item.tier}` : ""}${item.rarity ? `, ${item.rarity}` : ""}`} ${item.reqAttune || ""}</td>`);
 
 		const [damage, damageType, propertiesTxt] = EntryRenderer.item.getDamageAndPropertiesText(item);
-		renderStack.push(`<tr><td colspan="2">${item.value ? item.value + (item.weight ? ", " : "") : ""}${item.weight ? item.weight + (Number(item.weight) === 1 ? " lb." : " lbs.") : ""}</td><td class="damageproperties" colspan="4">${damage} ${damageType} ${propertiesTxt}</tr>`);
+		renderStack.push(`<tr><td colspan="2">${item.value ? item.value + (item.weight ? ", " : "") : ""}${item.weight ? item.weight + (Number(item.weight) === 1 ? " lb." : " lbs.") + (item.weightNote ? ` ${item.weightNote}` : "") : ""}</td><td class="damageproperties" colspan="4">${damage} ${damageType} ${propertiesTxt}</tr>`);
 
 		if (item.entries && item.entries.length) {
 			renderStack.push(EntryRenderer.utils.getDividerTr());
@@ -2061,7 +2076,7 @@ EntryRenderer.hover = {
 		}
 
 		// don't show on mobile
-		if ($(window).width() <= 1024) return;
+		if ($(window).width() <= 1024 && !evt.shiftKey) return;
 
 		const alreadyHovering = $(ele).data("hover-active");
 		if (alreadyHovering) return;
@@ -2277,8 +2292,8 @@ EntryRenderer.hover = {
 			.off("click")
 			.attr("title", "Popout Window");
 		$btnPop.on("click", (evt) => {
-			if (lastLoadedId !== null) {
-				EntryRenderer.hover.doPopout($btnPop, toList, lastLoadedId, evt.clientX);
+			if (History.lastLoadedId !== null) {
+				EntryRenderer.hover.doPopout($btnPop, toList, History.lastLoadedId, evt.clientX);
 			}
 		});
 	},

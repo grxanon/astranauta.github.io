@@ -71,6 +71,7 @@ ATB_DATA_SRC = "data-source";
 STR_CANTRIP = "Cantrip";
 STR_NONE = "None";
 STR_ANY = "Any";
+STR_SPECIAL = "Special";
 
 RNG_SPECIAL = "special";
 RNG_POINT = "point";
@@ -779,6 +780,7 @@ Parser.invoSpellToFull = function (spell) {
 };
 
 Parser.invoPactToFull = function (pact) {
+	if (pact === "Appendage") return "Pact of the Appendage";
 	if (pact === "Chain") return "Pact of the Chain";
 	if (pact === "Tome") return "Pact of the Tome";
 	if (pact === "Blade") return "Pact of the Blade";
@@ -864,8 +866,8 @@ Parser.spSubclassesToCurrentAndLegacyFull = function (classes) {
 	const toCheck = [];
 	classes.fromSubclass
 		.sort((a, b) => {
-			const byName = SortUtil.ascSort(a.class.name, b.class.name);
-			return byName || SortUtil.ascSort(a.subclass.name, b.subclass.name);
+			const byName = SortUtil.ascSort(a.subclass.name, b.subclass.name);
+			return byName || SortUtil.ascSort(a.class.name, b.class.name);
 		})
 		.forEach(c => {
 			const nm = c.subclass.name;
@@ -1138,6 +1140,7 @@ SRC_FEF_3PP = "FEF" + SRC_3PP_SUFFIX;
 SRC_GDoF_3PP = "GDoF" + SRC_3PP_SUFFIX;
 SRC_ToB_3PP = "ToB" + SRC_3PP_SUFFIX;
 
+SRC_STREAM = "Stream";
 SRC_HOMEBREW = "Homebrew";
 
 AL_PREFIX = "Adventurers League: ";
@@ -1247,6 +1250,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_FEF_3PP] = "Fifth Edition Foes" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_GDoF_3PP] = "Gem Dragons of Faerûn" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_ToB_3PP] = "Tome of Beasts" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_HOMEBREW] = "Homebrew";
+Parser.SOURCE_JSON_TO_FULL[SRC_STREAM] = "Livestream";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[SRC_CoS] = "CoS";
@@ -1344,6 +1348,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_FEF_3PP] = "FEF (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_GDoF_3PP] = "GDoF (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_ToB_3PP] = "ToB (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_HOMEBREW] = "Brew";
+Parser.SOURCE_JSON_TO_ABV[SRC_STREAM] = "Stream";
 
 Parser.ITEM_TYPE_JSON_TO_ABV = {
 	"A": "Ammunition",
@@ -1450,7 +1455,7 @@ function isNonstandardSource (source) {
 }
 
 function _isNonStandardSourceWiz (source) {
-	return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA || source === SRC_Mag;
+	return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA || source === SRC_Mag || source === SRC_STREAM;
 }
 
 function _isNonStandardSource3pp (source) {
@@ -1503,8 +1508,24 @@ function copyText (text) {
 	$temp.remove();
 }
 
+function showCopiedEffect ($ele) {
+	const $temp = $(`<div class="copied-tip"><span>Copied!</span></div>`);
+	const pos = $ele.offset();
+	$temp.css({
+		top: pos.top - 17,
+		left: pos.left - 36 + ($ele.width() / 2)
+	}).appendTo($(`body`)).animate({
+		top: "-=8",
+		opacity: 0
+	}, 250, () => {
+		$temp.remove();
+	});
+}
+
 // LIST AND SEARCH =====================================================================================================
 ListUtil = {
+	SUB_HASH_PREFIX: "sublistselected",
+
 	_first: true,
 
 	search: (options) => {
@@ -1532,7 +1553,7 @@ ListUtil = {
 				// K up; J down
 				if (noModifierKeys(e)) {
 					if (e.key === "k" || e.key === "j") {
-						const it = getSelectedListElementWithIndex();
+						const it = History.getSelectedListElementWithIndex();
 
 						if (it) {
 							if (e.key === "k") {
@@ -1617,6 +1638,15 @@ ListUtil = {
 	},
 
 	openContextMenu: (evt, ele) => {
+		const anySel = ListUtil._primaryLists.find(l => ListUtil.isAnySelected(l));
+		const $menu = $(`#contextMenu`);
+		if (anySel) {
+			$menu.find(`[data-ctx-id=3]`).show();
+			$menu.find(`[data-ctx-id=4]`).show();
+		} else {
+			$menu.find(`[data-ctx-id=3]`).hide();
+			$menu.find(`[data-ctx-id=4]`).hide();
+		}
 		ListUtil._handleOpenContextMenu(evt, ele, "contextMenu");
 	},
 
@@ -1702,8 +1732,8 @@ ListUtil = {
 		ListUtil.getOrTabRightButton(`btn-pin`, `pushpin`)
 			.off("click")
 			.on("click", () => {
-				if (!ListUtil.isSublisted(lastLoadedId)) ListUtil.doSublistAdd(lastLoadedId, true);
-				else ListUtil.doSublistRemove(lastLoadedId);
+				if (!ListUtil.isSublisted(History.lastLoadedId)) ListUtil.doSublistAdd(History.lastLoadedId, true);
+				else ListUtil.doSublistRemove(History.lastLoadedId);
 			})
 			.attr("title", "Pin (Toggle)");
 	},
@@ -1712,37 +1742,44 @@ ListUtil = {
 		ListUtil.getOrTabRightButton(`btn-sublist-add`, `plus`)
 			.off("click")
 			.on("click", (evt) => {
-				if (evt.shiftKey) ListUtil.doSublistAdd(lastLoadedId, true, 20);
-				else ListUtil.doSublistAdd(lastLoadedId, true);
+				if (evt.shiftKey) ListUtil.doSublistAdd(History.lastLoadedId, true, 20);
+				else ListUtil.doSublistAdd(History.lastLoadedId, true);
 			})
-			.attr("title", "Add (Shift for 20)");
+			.attr("title", "Add (SHIFT for 20)");
 	},
 
 	bindSubtractButton: () => {
 		ListUtil.getOrTabRightButton(`btn-sublist-subtract`, `minus`)
 			.off("click")
 			.on("click", (evt) => {
-				if (evt.shiftKey) ListUtil.doSublistSubtract(lastLoadedId, 20);
-				else ListUtil.doSublistSubtract(lastLoadedId);
+				if (evt.shiftKey) ListUtil.doSublistSubtract(History.lastLoadedId, 20);
+				else ListUtil.doSublistSubtract(History.lastLoadedId);
 			})
-			.attr("title", "Subtract (Shift for 20)");
+			.attr("title", "Subtract (SHIFT for 20)");
 	},
 
 	bindDownloadButton: () => {
-		ListUtil.getOrTabRightButton(`btn-sublist-download`, `download`)
-			.off("click")
-			.on("click", () => {
-				const filename = `${UrlUtil.getCurrentPage().replace(".html", "")}-sublist`;
-				DataUtil.userDownload(filename, JSON.stringify(ListUtil._getExportableSublist(), null, "\t"));
+		const $btn = ListUtil.getOrTabRightButton(`btn-sublist-download`, `download`);
+		$btn.off("click")
+			.on("click", (evt) => {
+				if (evt.shiftKey) {
+					const toEncode = JSON.stringify(ListUtil._getExportableSublist());
+					const parts = [window.location.href, (UrlUtil.packSubHash(ListUtil.SUB_HASH_PREFIX, [toEncode], true))];
+					copyText(parts.join(HASH_PART_SEP));
+					showCopiedEffect($btn);
+				} else {
+					const filename = `${UrlUtil.getCurrentPage().replace(".html", "")}-sublist`;
+					DataUtil.userDownload(filename, JSON.stringify(ListUtil._getExportableSublist(), null, "\t"));
+				}
 			})
-			.attr("title", "Download List");
+			.attr("title", "Download List (SHIFT for Link)");
 	},
 
 	bindUploadButton: (funcPreload) => {
 		const $btn = ListUtil.getOrTabRightButton(`btn-sublist-upload`, `upload`);
 		$btn.off("click")
-			.on("click", () => {
-				function loadSaved (event) {
+			.on("click", (evt) => {
+				function loadSaved (event, additive) {
 					const input = event.target;
 
 					const reader = new FileReader();
@@ -1750,7 +1787,7 @@ ListUtil = {
 						const text = reader.result;
 						const json = JSON.parse(text);
 						const funcOnload = () => {
-							ListUtil._loadSavedSublist(json.items);
+							ListUtil._loadSavedSublist(json.items, additive);
 							$iptAdd.remove();
 							ListUtil._finaliseSublist();
 						};
@@ -1760,12 +1797,40 @@ ListUtil = {
 					reader.readAsText(input.files[0]);
 				}
 
+				const additive = evt.shiftKey;
 				const $iptAdd = $(`<input type="file" accept=".json" style="position: fixed; top: -100px; left: -100px; display: none;">`).on("change", (evt) => {
-					loadSaved(evt);
+					loadSaved(evt, additive);
 				}).appendTo($(`body`));
 				$iptAdd.click();
 			})
-			.attr("title", "Upload List");
+			.attr("title", "Upload List (SHIFT for Add Only)");
+	},
+
+	setFromSubHashes: (subHashes, funcPreload) => {
+		function funcOnload (json) {
+			ListUtil._loadSavedSublist(json.items, false);
+			ListUtil._finaliseSublist();
+
+			const [link, ...sub] = History._getHashParts();
+			const outSub = [];
+			Object.keys(unpacked)
+				.filter(k => k !== ListUtil.SUB_HASH_PREFIX)
+				.forEach(k => {
+					outSub.push(`${k}${HASH_SUB_KV_SEP}${unpacked[k].join(HASH_SUB_LIST_SEP)}`)
+				});
+			History.setSuppressHistory(true);
+			window.location.hash = `#${link}${outSub.length ? `${HASH_PART_SEP}${outSub.join(HASH_PART_SEP)}` : ""}`;
+		}
+
+		const unpacked = {};
+		subHashes.forEach(s => Object.assign(unpacked, UrlUtil.unpackSubHash(s, true)));
+		const setFrom = unpacked[ListUtil.SUB_HASH_PREFIX];
+		if (setFrom) {
+			const json = JSON.parse(setFrom);
+
+			if (funcPreload) funcPreload(json, () => funcOnload(json));
+			else funcOnload(json);
+		}
 	},
 
 	doSublistAdd: (index, doFinalise, addCount) => {
@@ -1828,11 +1893,11 @@ ListUtil = {
 		ListUtil._handleCallUpdateFn();
 	},
 
-	doSublistRemoveAll: () => {
+	doSublistRemoveAll: (noSave) => {
 		ListUtil._pinned = {};
 		ListUtil.sublist.clear();
 		ListUtil._updateSublistVisibility();
-		ListUtil._saveSublist();
+		if (!noSave) ListUtil._saveSublist();
 		ListUtil._handleCallUpdateFn();
 	},
 
@@ -1854,6 +1919,14 @@ ListUtil = {
 			.forEach(it => forEachFunc(it));
 	},
 
+	getSelectedCount: (list) => {
+		return list.items.filter(it => it.elm.className.includes("list-multi-selected")).length;
+	},
+
+	isAnySelected: (list) => {
+		return !!list.items.find(it => it.elm.className.includes("list-multi-selected"));
+	},
+
 	_handleCallUpdateFn: () => {
 		if (ListUtil._sublistChangeFn) ListUtil._sublistChangeFn();
 	},
@@ -1873,9 +1946,10 @@ ListUtil = {
 		}
 	},
 
-	_loadSavedSublist: (items) => {
+	_loadSavedSublist: (items, additive) => {
+		if (!additive) ListUtil.doSublistRemoveAll(true);
 		items.forEach(it => {
-			const $ele = _getListElem(it.h);
+			const $ele = History._getListElem(it.h);
 			const itId = $ele ? $ele.attr("id") : null;
 			if (itId != null) ListUtil.doSublistAdd(itId, false, Number(it.c));
 		});
@@ -2185,17 +2259,7 @@ UrlUtil.bindLinkExportButton = (filterBox) => {
 			parts.unshift(url);
 
 			copyText(parts.join(HASH_PART_SEP));
-			const $temp = $(`<div class="copied-tip"><span>Copied!</span></div>`);
-			const pos = $btn.offset();
-			$temp.css({
-				top: pos.top - 17,
-				left: pos.left - 36 + ($btn.width() / 2)
-			}).appendTo($(`body`)).animate({
-				top: "-=8",
-				opacity: 0
-			}, 250, () => {
-				$temp.remove();
-			});
+			showCopiedEffect($btn);
 		})
 		.attr("title", "Get Link (Including Filters)")
 };
@@ -2327,7 +2391,7 @@ DataUtil = {
 	},
 
 	userDownload: function (filename, data) {
-		const $a = $(`<a href="data:text/json;charset=utf-8,${encodeURIComponent(data)}" download="${filename}.json" style="display: none;" target="_blank">DL</a>`);
+		const $a = $(`<a href="data:text/json;charset=utf-8,${encodeURIComponent(data)}" download="${filename}.json" style="display: none;">DL</a>`);
 		$(`body`).append($a);
 		$a[0].click();
 		$a.remove();
@@ -2613,7 +2677,7 @@ BrewUtil = {
 				BrewUtil.storage.setItem(HOMEBREW_STORAGE, JSON.stringify(BrewUtil.homebrew));
 				refreshBrewList();
 				BrewUtil._list.remove("uniqueid", uniqueId);
-				hashchange();
+				History.hashChange();
 			}
 		}
 
