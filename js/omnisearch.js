@@ -1,4 +1,5 @@
 const Omnisearch = {
+	_PLACEHOLDER_TEXT: "Search everywhere...",
 	_searchIndex: null,
 	_onFirstLoad: null,
 	_loadingSearch: false,
@@ -7,16 +8,16 @@ const Omnisearch = {
 	init: init = function () {
 		const $nav = $(`#navbar`);
 		$nav.append(`
-		<div class="input-group" style="padding: 3px 0;">
-			<input id="omnisearch-input" class="form-control" placeholder="Search everywhere..." title="Disclaimer: unlikely to search everywhere. Use with caution.">
-			<div class="input-group-btn">
-				<button class="btn btn-default" id="omnisearch-submit" ><span class="glyphicon glyphicon-search"></span></button>
+			<div class="input-group" id="wrp-omnisearch-input">
+				<input id="omnisearch-input" class="form-control" placeholder="${Omnisearch._PLACEHOLDER_TEXT}" title="Disclaimer: unlikely to search everywhere. Use with caution.">
+				<div class="input-group-btn">
+					<button class="btn btn-default" id="omnisearch-submit" ><span class="glyphicon glyphicon-search"></span></button>
+				</div>
 			</div>
-		</div>
-	`);
-		$nav.after(`<div class="omnisearch-output-wrapper"><div id="omnisearch-output" class="omnisearch-output"></div></div>`);
+		`);
+		$nav.after(`<div id="omnisearch-output-wrapper"><div id="omnisearch-output"></div></div>`);
 
-		const $searchOutWrapper = $(`.omnisearch-output-wrapper`);
+		const $searchOutWrapper = $(`#omnisearch-output-wrapper`);
 		const $searchOut = $(`#omnisearch-output`);
 		const $searchIn = $(`#omnisearch-input`);
 		const $searchSubmit = $(`#omnisearch-submit`);
@@ -60,6 +61,8 @@ const Omnisearch = {
 			e.stopPropagation();
 			doSearch();
 		});
+
+		initScrollHandler();
 
 		const MAX_RESULTS = 15;
 		function doSearch () {
@@ -127,13 +130,13 @@ const Omnisearch = {
 
 				$searchOut.empty();
 				const show3pp = doShow3pp();
-				const $btn3pp = $(`<button class="btn btn-default btn-xs btn-file">${show3pp ? "Exclude" : "Include"} 3pp</button>`)
+				const $btn3pp = $(`<button class="btn btn-default btn-xs btn-file" title="Filter third-party product results">${show3pp ? "Exclude" : "Include"} 3pp</button>`)
 					.on("click", () => {
 						setShow3pp(!show3pp);
 						doSearch();
 					});
 				const showUa = doShowUaEtc();
-				const $btnUaEtc = $(`<button class="btn btn-default btn-xs btn-file">${showUa ? "Exclude" : "Include"} UA, etc</button>`)
+				const $btnUaEtc = $(`<button class="btn btn-default btn-xs btn-file" title="Filter Unearthed Arcana and other unofficial source results">${showUa ? "Exclude" : "Include"} UA, etc</button>`)
 					.on("click", () => {
 						setShowUaEtc(!showUa);
 						doSearch();
@@ -204,6 +207,26 @@ const Omnisearch = {
 			showUaEtc = value ? CK_SHOW : CK_HIDE;
 			Cookies.set(COOKIE_NAME_UA_ETC, showUaEtc, {expires: 365});
 		}
+
+		function initScrollHandler () {
+			$(window).on("scroll", () => {
+				if ($(window).width() < 768) {
+					$searchIn.attr("placeholder", Omnisearch._PLACEHOLDER_TEXT);
+					$("#wrp-omnisearch-input").removeClass("scrolled");
+					$searchOut.removeClass("scrolled");
+				} else {
+					if ($(window).scrollTop() > 50) {
+						$searchIn.attr("placeholder", "");
+						$("#wrp-omnisearch-input").addClass("scrolled");
+						$searchOut.addClass("scrolled");
+					} else {
+						$searchIn.attr("placeholder", Omnisearch._PLACEHOLDER_TEXT);
+						$("#wrp-omnisearch-input").removeClass("scrolled");
+						$searchOut.removeClass("scrolled");
+					}
+				}
+			});
+		}
 	},
 
 	doSearchLoad: function () {
@@ -221,7 +244,7 @@ const Omnisearch = {
 			this.addField("n");
 			this.addField("cf");
 			this.addField("s");
-			this.setRef("id")
+			this.setRef("id");
 			elasticlunr.clearStopWords();
 		});
 		data.forEach(d => {

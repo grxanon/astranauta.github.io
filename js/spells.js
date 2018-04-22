@@ -8,6 +8,7 @@ const META_ADD_CONC = "Concentration";
 const META_ADD_V = "Verbal";
 const META_ADD_S = "Somatic";
 const META_ADD_M = "Material";
+const META_ADD_M_COST = "Material with Cost";
 // real meta tags
 const META_RITUAL = "Ritual";
 const META_TECHNOMAGIC = "Technomagic";
@@ -200,6 +201,7 @@ function getMetaFilterObj (s) {
 	if (s.components.v) out.push(META_ADD_V);
 	if (s.components.s) out.push(META_ADD_S);
 	if (s.components.m) out.push(META_ADD_M);
+	if (s.components.m && s.components.m.cost) out.push(META_ADD_M_COST);
 	return out;
 }
 
@@ -217,13 +219,14 @@ function handleBrew (homebrew) {
 
 window.onload = function load () {
 	multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addSpells, () => {
-		BrewUtil.addBrewData(handleBrew, HOMEBREW_STORAGE);
+		BrewUtil.addBrewData(handleBrew);
 		BrewUtil.makeBrewButton("manage-brew");
-		BrewUtil.setList(list);
+		BrewUtil.bind({list, filterBox, sourceFilter});
 	});
 };
 
 let list;
+let spellBookView;
 const sourceFilter = getSourceFilter();
 const levelFilter = new Filter({
 	header: "Level",
@@ -237,7 +240,7 @@ const subclassFilter = new Filter({header: "Subclass"});
 const classAndSubclassFilter = new MultiFilter("Classes", classFilter, subclassFilter);
 const metaFilter = new Filter({
 	header: "Tag",
-	items: [META_ADD_CONC, META_ADD_V, META_ADD_S, META_ADD_M, META_RITUAL, META_TECHNOMAGIC]
+	items: [META_ADD_CONC, META_ADD_V, META_ADD_S, META_ADD_M, META_ADD_M_COST, META_RITUAL, META_TECHNOMAGIC]
 });
 const schoolFilter = new Filter({
 	header: "School",
@@ -309,7 +312,6 @@ function pageInit (loadedSources) {
 	tableDefault = $("#pagecontent").html();
 
 	sourceFilter.items = Object.keys(loadedSources).map(src => new FilterItem(src, loadSource(JSON_LIST_NAME, addSpells)));
-	sourceFilter.items.push(new FilterItem("Homebrew", () => {}));
 	sourceFilter.items.sort(SortUtil.ascSort);
 
 	list = ListUtil.search({
@@ -340,6 +342,32 @@ function pageInit (loadedSources) {
 		sortFunction: sortSpells
 	});
 	ListUtil.initGenericPinnable();
+
+	spellBookView = new BookModeView("bookview", $(`#btn-spellbook`), "Please pin some spells first",
+		($tbl) => {
+			const toShow = ListUtil.getSublistedIds().map(id => spellList[id]);
+			let numShown = 0;
+			const stack = [];
+			for (let i = 0; i < 10; ++i) {
+				const atLvl = toShow.filter(sp => sp.level === i);
+				if (atLvl.length) {
+					const levelText = i === 0 ? `${Parser.spLevelToFull(i)}s` : `${Parser.spLevelToFull(i)}-level Spells`;
+					stack.push(EntryRenderer.utils.getBorderTr(`<span class="spacer-name">${levelText}</span>`));
+
+					stack.push(`<tr class="spellbook-level"><td>`);
+					atLvl.forEach(sp => {
+						stack.push(`<table class="spellbook-entry"><tbody>`);
+						stack.push(EntryRenderer.spell.getCompactRenderedString(sp));
+						stack.push(`</tbody></table>`);
+					});
+					stack.push(`</td></tr>`);
+				}
+				numShown += atLvl.length;
+			}
+			$tbl.append(stack.join(""));
+			return numShown;
+		}
+	);
 }
 
 function getSublistItem (spell, pinId) {
@@ -348,7 +376,7 @@ function getSublistItem (spell, pinId) {
 			<a href="#${UrlUtil.autoEncodeHash(spell)}" title="${spell.name}">
 				<span class="name col-xs-3 col-xs-3-9">${spell.name}</span>
 				<span class="level col-xs-1 col-xs-1-5">${Parser.spLevelToFull(spell.level)}</span>
-				<span class="time col-xs-1 col-xs-1-8" title="${Parser.spTimeListToFull(spell.time)}">${getTblTimeStr(spell.time[0])}</span>
+				<span class="time col-xs-1 col-xs-1-8">${getTblTimeStr(spell.time[0])}</span>
 				<span class="school col-xs-1 col-xs-1-2 school_${spell.school}" title="${Parser.spSchoolAbvToFull(spell.school)}">${Parser.spSchoolAbvToShort(spell.school)}</span>
 				<span class="range col-xs-3 col-xs-3-6">${Parser.spRangeToFull(spell.range)}</span>		
 				<span class="id hidden">${pinId}</span>				
@@ -447,16 +475,17 @@ function addSpells (data) {
 					<span class="name col-xs-3 col-xs-3-5">${spell.name}</span>
 					<span class="source col-xs-1 col-xs-1-7 source${Parser.stringToCasedSlug(spell.source)}" title="${Parser.sourceJsonToFull(spell.source)}">${Parser.sourceJsonToAbv(spell.source)}</span>
 					<span class="level col-xs-1 col-xs-1-5">${levelText}</span>
-					<span class="time col-xs-1 col-xs-1-7" title="${Parser.spTimeListToFull(spell.time)}">${getTblTimeStr(spell.time[0])}</span>
+					<span class="time col-xs-1 col-xs-1-7">${getTblTimeStr(spell.time[0])}</span>
 					<span class="school col-xs-1 col-xs-1-2 school_${spell.school}" title="${Parser.spSchoolAbvToFull(spell.school)}">${Parser.spSchoolAbvToShort(spell.school)}</span>
 					<span class="range col-xs-2 col-xs-2-4">${Parser.spRangeToFull(spell.range)}</span>
 
-					<span class="classes" style="display: none">${Parser.spClassesToFull(spell.classes)}</span>
+					<span class="classes" style="display: none">${Parser.spClassesToFull(spell.classes, true)}</span>
 					<span class="uniqueid hidden">${spell.uniqueId ? spell.uniqueId : spI}</span>
 				</a>
 			</li>`;
 
 		// populate filters
+		sourceFilter.addIfAbsent(new FilterItem(spell.source, () => {}));
 		spell._fClasses.forEach(c => classFilter.addIfAbsent(c));
 		spell._fSubclasses.forEach(sc => subclassFilter.addIfAbsent(sc));
 	}
@@ -464,6 +493,7 @@ function addSpells (data) {
 	spellTable.append(tempString);
 
 	// sort filters
+	sourceFilter.items.sort(SortUtil.ascSort);
 	classFilter.items.sort(SortUtil.ascSort);
 	subclassFilter.items.sort(SortUtil.ascSort);
 
@@ -561,6 +591,7 @@ function loadhash (id) {
 	const $pageContent = $("#pagecontent");
 	const spell = spellList[id];
 	$pageContent.html(EntryRenderer.spell.getRenderedString(spell, renderer));
+	loadsub([]);
 }
 
 function handleUnknownHash (link, sub) {
@@ -578,4 +609,8 @@ function handleUnknownHash (link, sub) {
 function loadsub (sub) {
 	filterBox.setFromSubHashes(sub);
 	ListUtil.setFromSubHashes(sub, sublistFuncPreload);
+
+	const bookViewHash = sub.find(it => it.startsWith(spellBookView.hashKey));
+	if (bookViewHash && UrlUtil.unpackSubHash(bookViewHash)[spellBookView.hashKey][0] === "true") spellBookView.open();
+	else spellBookView.teardown();
 }

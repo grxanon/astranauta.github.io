@@ -5,7 +5,9 @@
 			"size": "H",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "59 (7d12+14)",
 			"speed": {
@@ -17,8 +19,13 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 7,
-			"resist": "bludgeoning, piercing",
-			"vulnerable": "fire",
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "one language known by its creator",
@@ -57,7 +64,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "22 (natural armor)",
 			"hp": "333 (23d12+184)",
 			"speed": {
@@ -74,9 +84,28 @@
 				"intimidation": "+17",
 				"perception": "+14"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 24,
 			"languages": "all, telepathy 120 ft.",
@@ -203,7 +232,10 @@
 			"size": "M",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "22 (5d8)",
 			"speed": {
@@ -248,7 +280,10 @@
 			"size": "L",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "45 (6d10+12)",
 			"speed": {
@@ -260,7 +295,10 @@
 			"int": 11,
 			"wis": 8,
 			"cha": 12,
-			"resist": "bludgeoning, piercing",
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 9,
 			"languages": "Abyssal, Undercommon",
@@ -312,7 +350,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "93 (11d10+33)",
 			"speed": {
@@ -325,8 +365,16 @@
 			"int": 2,
 			"wis": 6,
 			"cha": 1,
-			"immune": "poison",
-			"conditionImmune": "blinded, charmed, frightened, paralyzed, poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
 			"passive": 8,
 			"cr": "4",
@@ -356,7 +404,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "22 (natural armor)",
 			"hp": "496 (34d12+272)",
 			"speed": {
@@ -374,9 +425,28 @@
 				"insight": "+11",
 				"perception": "+19"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 29,
 			"languages": "all, telepathy 120 ft.",
@@ -485,7 +555,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (leather armor)",
 			"hp": "13 (3d6+3)",
 			"speed": {
@@ -550,7 +623,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (leather armor)",
 			"hp": "49 (11d6+11)",
 			"speed": {
@@ -656,7 +732,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (studded leather)",
 			"hp": "31 (7d6+7)",
 			"speed": {
@@ -757,7 +836,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (chain shirt)",
 			"hp": "13 (3d8)",
 			"speed": {
@@ -769,7 +850,12 @@
 			"int": 2,
 			"wis": 6,
 			"cha": 1,
-			"conditionImmune": "blinded, charmed, frightened, paralyzed",
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
 			"passive": 8,
 			"cr": "1/8",
@@ -793,7 +879,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (scale mail, shield)",
 			"hp": "26 (4d8+4)",
 			"speed": {
@@ -805,7 +894,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 9,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
@@ -880,7 +971,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (scale mail, shield)",
 			"hp": "26 (4d8+4)",
 			"speed": {
@@ -892,7 +986,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 9,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
@@ -967,7 +1063,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (scale mail, shield)",
 			"hp": "26 (4d8+4)",
 			"speed": {
@@ -979,7 +1078,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 9,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
@@ -1083,7 +1184,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (leather armor)",
 			"hp": "18 (4d8)",
 			"speed": {
@@ -1095,7 +1199,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 12,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
@@ -1165,7 +1271,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (scale armor, shield)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -1177,8 +1285,15 @@
 			"int": 2,
 			"wis": 6,
 			"cha": 1,
-			"resist": "poison",
-			"conditionImmune": "blinded, charmed, frightened, paralyzed",
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
 			"passive": 8,
 			"cr": "1/2",
@@ -1202,7 +1317,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (chain mail, shield)",
 			"hp": "39 (6d8+12)",
 			"speed": {
@@ -1214,7 +1332,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 9,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
@@ -1271,7 +1391,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (platemail)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -1283,7 +1406,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 9,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 10,
 			"languages": "Dwarvish, Undercommon",
@@ -1340,7 +1465,10 @@
 					"dwarf"
 				]
 			},
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "16 (breastplate)",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -1358,7 +1486,9 @@
 				"stealth": "+6",
 				"survival": "+5"
 			},
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 15,
 			"languages": "Common, Dwarvish",
@@ -1404,7 +1534,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -1463,7 +1595,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "350 (28d10+196)",
 			"speed": {
@@ -1482,9 +1617,28 @@
 				"perception": "+14",
 				"stealth": "+8"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 24,
 			"languages": "all, telepathy 120 ft.",
@@ -1588,7 +1742,9 @@
 			"name": "Giant Riding Lizard",
 			"size": "L",
 			"type": "beast",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "19 (3d10+3)",
 			"speed": {
@@ -1633,7 +1789,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "20 (natural armor)",
 			"hp": "378 (36d10+180)",
 			"speed": {
@@ -1652,9 +1811,28 @@
 				"perception": "+12",
 				"persuasion": "+15"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 22,
 			"languages": "all, telepathy 120 ft.",
@@ -1776,7 +1954,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "18 (chain mail, shield)",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -1862,7 +2043,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "75 (10d10+10)",
 			"speed": {
@@ -1875,8 +2058,15 @@
 			"int": 2,
 			"wis": 6,
 			"cha": 1,
-			"resist": "poison",
-			"conditionImmune": "blinded, charmed, frightened, paralyzed",
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "blindsight 30 ft. (blind beyond this radius)",
 			"passive": 8,
 			"cr": "3",
@@ -1901,7 +2091,10 @@
 			"size": "S",
 			"type": "aberration",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "18 (4d6+4)",
 			"speed": {
@@ -1942,7 +2135,10 @@
 			"size": "S",
 			"type": "aberration",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "18 (4d6+4)",
 			"speed": {
@@ -2025,7 +2221,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "350 (28d12+168)",
 			"speed": {
@@ -2041,9 +2240,37 @@
 			"skill": {
 				"perception": "+12"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 22,
 			"languages": "all, telepathy 120 ft.",
@@ -2161,7 +2388,10 @@
 					"dwarf"
 				]
 			},
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "16 (chain shirt, shield)",
 			"hp": "11 (2d8+2)",
 			"speed": {
@@ -2207,7 +2437,9 @@
 					"human"
 				]
 			},
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13 (leather armor)",
 			"hp": "27 (6d8)",
 			"speed": {
@@ -2272,7 +2504,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "13 (2d8+4)",
 			"speed": {
@@ -2331,7 +2565,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (15 to mage armor)",
 			"hp": "40 (9d6+9)",
 			"speed": {
@@ -2436,7 +2673,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "405 (30d12+210)",
 			"speed": {
@@ -2454,9 +2694,29 @@
 				"arcana": "+12",
 				"perception": "+12"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "necrotic, poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 22,
 			"languages": "all, telepathy 120 ft.",
@@ -2569,7 +2829,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (16 with mage armor)",
 			"hp": "49 (9d6+18)",
 			"speed": {
@@ -2588,8 +2851,13 @@
 				"stealth": "+6",
 				"survival": "+2"
 			},
-			"resist": "acid, poison",
-			"conditionImmune": "poisoned",
+			"resist": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 12,
 			"languages": "Abyssal, Gnomish, Terran, Undercommon",
@@ -2717,7 +2985,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "59 (7d8+28)",
 			"speed": {
@@ -2797,7 +3068,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -2838,7 +3112,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -2921,7 +3198,10 @@
 					"human"
 				]
 			},
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "17 (splint)",
 			"hp": "58 (9d8+18)",
 			"speed": {
@@ -2978,7 +3258,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "22 (natural armor)",
 			"hp": "348 (24d12+192)",
 			"speed": {
@@ -2995,9 +3278,28 @@
 				"intimidation": "+9",
 				"perception": "+14"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 24,
 			"languages": "all, telepathy 120 ft.",
@@ -3101,7 +3403,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "75 (10d10+20)",
 			"speed": {
@@ -3113,8 +3418,12 @@
 			"int": 13,
 			"wis": 15,
 			"cha": 10,
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 12,
 			"languages": "Abyssal, telepathy 60 ft.",
@@ -3180,7 +3489,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "20 (dwarven plate)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -3301,7 +3613,9 @@
 					"human"
 				]
 			},
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "11 (leather armor)",
 			"hp": "32 (5d8+10)",
 			"speed": {
@@ -3353,7 +3667,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "OotA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "44 (4d10+22)",
 			"speed": {
@@ -3426,7 +3742,10 @@
 				]
 			},
 			"source": "OotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "304 (32d10+128)",
 			"speed": {
@@ -3442,9 +3761,28 @@
 			"skill": {
 				"perception": "+11"
 			},
-			"resist": "cold, fire, lightning",
-			"immune": "poison; bludgeoning, piercing, and slashing that is nonmagical",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "that is nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 21,
 			"languages": "all, telepathy 120 ft.",

@@ -3,7 +3,6 @@ const HASH_FEATURE = "f:";
 const HASH_HIDE_FEATURES = "hideclassfs:";
 const HASH_SHOW_FLUFF = "showfluff:";
 const HASH_SOURCES = "sources:";
-const HASH_COMP_VIEW = "compview:";
 const HASH_BOOK_VIEW = "bookview:";
 
 const CLSS_FEATURE_LINK = "feature-link";
@@ -36,8 +35,8 @@ let tableDefault;
 let statsProfDefault;
 let classTableDefault;
 
-let classes;
 let list;
+let subclassComparisonView;
 
 const jsonURL = "data/classes.json";
 
@@ -67,17 +66,13 @@ function cleanScSource (source) {
 	return Parser._getSourceStringFromSource(source);
 }
 
-function cleanSetHash (toSet) {
-	window.location.hash = toSet.replace(/,+/g, ",").replace(/,$/, "").toLowerCase();
-}
-
 function setSourceState (toState) {
 	const hash = window.location.hash;
 	if (hash.includes(HASH_SOURCES)) {
 		// handle old hash style
-		cleanSetHash(hash.replace(/sources:(\d|true|false)/, `${HASH_SOURCES}${toState}`));
+		History.cleanSetHash(hash.replace(/sources:(\d|true|false)/, `${HASH_SOURCES}${toState}`));
 	} else {
-		cleanSetHash(`${hash}${HASH_PART_SEP}${HASH_SOURCES}${toState}`)
+		History.cleanSetHash(`${hash}${HASH_PART_SEP}${HASH_SOURCES}${toState}`)
 	}
 }
 
@@ -121,22 +116,9 @@ function onJsonLoad (data) {
 	}
 	addClassData(data);
 
-	BrewUtil.addBrewData(handleBrew, HOMEBREW_STORAGE);
-	BrewUtil.makeBrewButton("manage-brew", () => {
-		const cur = filterBox.getValues();
-		if (cur["Source"]) {
-			cur["Source"][SRC_HOMEBREW] = 1;
-			const sources = [];
-			Object.keys(cur["Source"]).forEach(k => {
-				const val = cur["Source"][k];
-				if (val === 1) sources.push(k.toLowerCase());
-				if (val === -1) sources.push(`!${k.toLowerCase()}`);
-			});
-			filterBox.setFromValues({Source: sources});
-			handleFilterChange()
-		}
-	});
-	BrewUtil.setList(list);
+	BrewUtil.addBrewData(handleBrew);
+	BrewUtil.makeBrewButton("manage-brew");
+	BrewUtil.bind({list, filterBox, sourceFilter});
 
 	function handleBrew (homebrew) {
 		addClassData(homebrew);
@@ -169,6 +151,8 @@ function handleFilterChange () {
 	});
 }
 
+let classes = [];
+let clI = 0;
 function addClassData (data) {
 	if (!data.class || !data.class.length) return;
 
@@ -178,27 +162,21 @@ function addClassData (data) {
 	}
 
 	// for any non-standard source classes, mark subclasses from the same source as "forceStandard"
-	data.class.filter(c => isNonstandardSource(c.source) || c.source === SRC_HOMEBREW).forEach(c => c.subclasses.filter(sc => sc.source === c.source).forEach(sc => sc.source = {"source": sc.source, "forceStandard": true}));
+	data.class.filter(c => isNonstandardSource(c.source) || BrewUtil.hasSourceJson(c.source)).forEach(c => c.subclasses.filter(sc => sc.source === c.source).forEach(sc => sc.source = {"source": sc.source, "forceStandard": true}));
 
-	let i = 0;
-	if (!classes) {
-		classes = data.class;
-	} else {
-		i = classes.length;
-		classes = classes.concat(data.class);
-	}
+	classes = classes.concat(data.class);
 
 	const classTable = $("ul.classes");
 	let tempString = "";
-	for (; i < classes.length; i++) {
-		const curClass = classes[i];
+	for (; clI < classes.length; clI++) {
+		const curClass = classes[clI];
 		curClass._fSource = isNonstandardSource(curClass.source) ? "Others" : "Core";
 		tempString +=
-			`<li class="row" ${FLTR_ID}="${i}" ${curClass.uniqueId ? `data-unique-id="${curClass.uniqueId}"` : ""}>
-				<a id='${i}' href='${getClassHash(curClass)}' title='${curClass.name}'>
+			`<li class="row" ${FLTR_ID}="${clI}" ${curClass.uniqueId ? `data-unique-id="${curClass.uniqueId}"` : ""}>
+				<a id='${clI}' href='${getClassHash(curClass)}' title='${curClass.name}'>
 					<span class='name col-xs-8'>${curClass.name}</span>
 					<span class='source col-xs-4 text-align-center source${Parser.sourceJsonToAbv(curClass.source)}' title='${Parser.sourceJsonToFull(curClass.source)}'>${Parser.sourceJsonToAbv(curClass.source)}</span>
-					<span class="uniqueid hidden">${curClass.uniqueId ? curClass.uniqueId : i}</span>
+					<span class="uniqueid hidden">${curClass.uniqueId ? curClass.uniqueId : clI}</span>
 				</a>
 			</li>`;
 	}
@@ -219,7 +197,7 @@ function getSubclassStyles (sc) {
 	const nonStandard = isNonstandardSource(sc.source) || hasBeenReprinted(sc.shortName, sc.source);
 	if (nonStandard) styleClasses.push(CLSS_NON_STANDARD_SOURCE);
 	if (subclassIsFreshUa(sc)) styleClasses.push(CLSS_FRESH_UA);
-	if (cleanScSource(sc.source) === SRC_HOMEBREW) styleClasses.push(CLSS_HOMEBREW_SOURCE);
+	if (BrewUtil.hasSourceJson(cleanScSource(sc.source))) styleClasses.push(CLSS_HOMEBREW_SOURCE);
 	return styleClasses;
 }
 
@@ -306,6 +284,7 @@ function loadhash (id) {
 	$("#equipment").find("div").html(`${fromBackground}${defList}${goldAlt}`);
 
 	// FEATURE TABLE ===================================================================================================
+	renderer.resetHeaderIndex();
 	const tData = curClass.classTableGroups;
 	const groupHeaders = $("#groupHeaders");
 	const colHeaders = $("#colHeaders");
@@ -353,7 +332,8 @@ function loadhash (id) {
 	for (let i = 0; i < levelTrs.length; i++) {
 		// track class table feature names
 		const tblLvlFeatures = levelTrs[i].find(".features");
-		const featureNames = [];
+		// used to build class table
+		const featureLinks = [];
 
 		// add class features to render stack
 		const lvlFeatureList = curClass.classFeatures[i];
@@ -367,12 +347,12 @@ function loadhash (id) {
 			featureLink.click(function () {
 				document.getElementById(featureId).scrollIntoView();
 			});
-			if (feature.type !== "inset") featureNames.push(featureLink);
+			if (feature.type !== "inset") featureLinks.push(featureLink);
 
 			const styleClasses = [CLSS_CLASS_FEATURE];
 			if (feature.gainSubclassFeature) styleClasses.push(CLSS_GAIN_SUBCLASS_FEATURE);
 
-			renderer.recursiveEntryRender(feature, renderStack, 0, `<tr id="${featureId}" class="${styleClasses.join(" ")}"><td colspan="6">`, `</td></tr>`, true);
+			renderer.recursiveEntryRender(feature, renderStack, 0, `<tr id="${featureId}" class="text ${styleClasses.join(" ")}"><td colspan="6">`, `</td></tr>`, true);
 
 			// add subclass features to render stack if appropriate
 			if (feature.gainSubclassFeature) {
@@ -393,7 +373,7 @@ function loadhash (id) {
 						}
 
 						const styleClasses = getSubclassStyles(subClass);
-						renderer.recursiveEntryRender(subFeature, renderStack, 0, `<tr class="${styleClasses.join(" ")}" ${ATB_DATA_SC}="${subClass.name}" ${ATB_DATA_SRC}="${cleanScSource(subClass.source)}"><td colspan="6">`, `</td></tr>`, true);
+						renderer.recursiveEntryRender(subFeature, renderStack, 0, `<tr class="text ${styleClasses.join(" ")}" ${ATB_DATA_SC}="${subClass.name}" ${ATB_DATA_SRC}="${cleanScSource(subClass.source)}"><td colspan="6">`, `</td></tr>`, true);
 					}
 				}
 				subclassIndex++;
@@ -401,12 +381,12 @@ function loadhash (id) {
 		}
 
 		// render class table feature names
-		if (featureNames.length === 0) tblLvlFeatures.html("\u2014");
+		if (featureLinks.length === 0) tblLvlFeatures.html("\u2014");
 		else {
-			for (let j = 0; j < featureNames.length; j++) {
-				tblLvlFeatures.append(featureNames[j]);
-				if (j < featureNames.length - 1) tblLvlFeatures.append(", ");
-			}
+			featureLinks.forEach(($it, j) => {
+				tblLvlFeatures.append($it);
+				if (j < featureLinks.length - 1) tblLvlFeatures.append(", ");
+			})
 		}
 	}
 	topBorder.after(renderStack.join(""));
@@ -421,7 +401,7 @@ function loadhash (id) {
 
 	// show/hide class features pill
 	makeGenericTogglePill("Class Features", CLSS_CLASS_FEATURES_ACTIVE, ID_CLASS_FEATURES_TOGGLE, HASH_HIDE_FEATURES, true, "Toggle class features");
-	makeGenericTogglePill("Detail Info", CLSS_FLUFF_ACTIVE, ID_FLUFF_TOGGLE, HASH_SHOW_FLUFF, false, "Toggle class detail information (Source: Xanathar's Guide to Everything)");
+	if (curClass.fluff) makeGenericTogglePill("Detail Info", CLSS_FLUFF_ACTIVE, ID_FLUFF_TOGGLE, HASH_SHOW_FLUFF, false, `Toggle class detail information (Source: Xanathar's Guide to Everything, page ${curClass.fluffPage})`);
 
 	// show/hide UA/other sources
 	makeSourceCyclePill();
@@ -440,7 +420,7 @@ function loadhash (id) {
 		const styleClasses = [CLSS_ACTIVE, CLSS_SUBCLASS_PILL];
 		if (nonStandardSource) styleClasses.push(CLSS_NON_STANDARD_SOURCE);
 		if (subclassIsFreshUa(subClasses[i])) styleClasses.push(CLSS_FRESH_UA);
-		if (cleanScSource(subClasses[i].source) === SRC_HOMEBREW) styleClasses.push(CLSS_HOMEBREW_SOURCE);
+		if (BrewUtil.hasSourceJson(cleanScSource(subClasses[i].source))) styleClasses.push(CLSS_HOMEBREW_SOURCE);
 		const pillText = hasBeenReprinted(subClasses[i].shortName, subClasses[i].source) ? `${subClasses[i].shortName} (${Parser.sourceJsonToAbv(subClasses[i].source)})` : subClasses[i].shortName;
 		const pill = $(`<span class="${styleClasses.join(" ")}" ${ATB_DATA_SC}="${subClasses[i].name}" ${ATB_DATA_SRC}="${cleanScSource(subClasses[i].source)}" title="Source: ${Parser.sourceJsonToFull(subClasses[i].source)}"><span>${pillText}</span></span>`);
 		pill.click(function () {
@@ -451,7 +431,7 @@ function loadhash (id) {
 	}
 
 	// call loadsub with a blank sub-hash, to ensure the right content is displayed
-	loadsub("");
+	loadsub([]);
 
 	function makeSourceCyclePill () {
 		const $pill = $(`<span title="Cycle through source types" id="${ID_OTHER_SOURCES_TOGGLE}" data-state="0" style="min-width: 8em;"><span>${STRS_SOURCE_STATES[0]}</span></span>`);
@@ -491,7 +471,7 @@ function loadhash (id) {
 				outStack.push(hashKey + "false")
 			}
 
-			cleanSetHash(outStack.join(HASH_PART_SEP));
+			History.cleanSetHash(outStack.join(HASH_PART_SEP));
 		}
 	}
 
@@ -539,12 +519,12 @@ function loadhash (id) {
 			if (!hasSubclassHash) outStack.push(subclassLink);
 		}
 
-		cleanSetHash(outStack.join(HASH_PART_SEP));
+		History.cleanSetHash(outStack.join(HASH_PART_SEP));
 	}
 }
 
 let prevFeature = null;
-
+let prevSub = null;
 function loadsub (sub) {
 	const curHash = window.location.hash;
 
@@ -555,6 +535,8 @@ function loadsub (sub) {
 	let sources = null;
 	let bookView = null;
 	let comparisonView = null;
+
+	let partCache = null;
 
 	function sliceTrue (hashPart, findString) {
 		return hashPart.slice(findString.length) === "true";
@@ -569,11 +551,11 @@ function loadsub (sub) {
 		if (hashPart.startsWith(HASH_SHOW_FLUFF)) showFluff = sliceTrue(hashPart, HASH_SHOW_FLUFF);
 		if (hashPart.startsWith(HASH_SOURCES)) sources = hashPart.slice(HASH_SOURCES.length);
 		if (hashPart.startsWith(HASH_BOOK_VIEW)) bookView = sliceTrue(hashPart, HASH_BOOK_VIEW);
-		if (hashPart.startsWith(HASH_COMP_VIEW)) comparisonView = sliceTrue(hashPart, HASH_COMP_VIEW);
+		if (subclassComparisonView && hashPart.startsWith(subclassComparisonView.hashKey)) comparisonView = sliceTrue(hashPart, `${subclassComparisonView.hashKey}:`);
 	}
 
-	const hideAllSources = !ClassBookView.bookViewActive && (sources === null || sources === STR_SOURCES_OFFICIAL);
-	const hideSomeSources = !ClassBookView.bookViewActive && sources === STR_SOURCES_MIXED;
+	const hideAllSources = !ClassBookView.active && (sources === null || sources === STR_SOURCES_OFFICIAL);
+	const hideSomeSources = !ClassBookView.active && sources === STR_SOURCES_MIXED;
 
 	// deselect any pills that would be hidden
 	if (subclasses !== null && (hideAllSources || hideSomeSources)) {
@@ -599,7 +581,7 @@ function loadsub (sub) {
 			const curParts = History._getHashParts();
 			if (curParts.length > 1) {
 				const newParts = [curParts[0]].concat(newHashStack);
-				cleanSetHash(HASH_START + newParts.join(HASH_PART_SEP));
+				History.cleanSetHash(HASH_START + newParts.join(HASH_PART_SEP));
 			}
 			return;
 		}
@@ -607,6 +589,7 @@ function loadsub (sub) {
 
 	if (subclasses !== null) {
 		updateClassTableLinks();
+		updateNavLinks();
 
 		const $toShow = [];
 		const $toHide = [];
@@ -739,12 +722,13 @@ function loadsub (sub) {
 	}
 
 	updateClassTableLinks();
+	updateNavLinks();
 
 	if (bookView) ClassBookView.open();
 	else ClassBookView.teardown();
 
-	if (comparisonView) SubclassComparisonView.open();
-	else SubclassComparisonView.teardown();
+	if (comparisonView && subclassComparisonView) subclassComparisonView.open();
+	else if (subclassComparisonView) subclassComparisonView.teardown();
 
 	function handleTableGroups (shownInTable, tableDataTag, show) {
 		$(`[data-subclass-list]`).each(
@@ -774,23 +758,90 @@ function loadsub (sub) {
 		);
 	}
 
-	function updateClassTableLinks () {
-		const hashParts = curHash.slice(1).split(HASH_PART_SEP);
-		const outParts = [];
-		for (let i = 0; i < hashParts.length; i++) {
-			const part = hashParts[i];
-			if (!part.startsWith(HASH_FEATURE)) outParts.push(part);
+	function getFeatureLink (featurePart) {
+		if (!partCache) {
+			const hashParts = curHash.slice(1).split(HASH_PART_SEP);
+			partCache = [];
+			for (let i = 0; i < hashParts.length; i++) {
+				const part = hashParts[i];
+				if (!part.startsWith(HASH_FEATURE)) partCache.push(part);
+			}
 		}
+		return HASH_START + partCache.join(HASH_PART_SEP) + HASH_PART_SEP + featurePart;
+	}
+
+	function updateClassTableLinks () {
 		$(`.${CLSS_FEATURE_LINK}`).each(
 			function () {
 				const $this = $(this);
-				this.href = HASH_START + outParts.join(HASH_PART_SEP) + HASH_PART_SEP + $this.attr(ATB_DATA_FEATURE_LINK);
+				this.href = getFeatureLink($this.attr(ATB_DATA_FEATURE_LINK));
 			}
 		)
 	}
 
+	function updateNavLinks () {
+		function makeScroller ($nav, idTr, parentTr, idClass, displayText, scrollTo) {
+			let navClass;
+			switch (idClass) {
+				case "statsBlockSectionHead":
+					navClass = "n1";
+					break;
+				case "statsBlockHead":
+					navClass = "n2";
+					break;
+				case "statsBlockSubHead":
+					navClass = "n3";
+					break;
+			}
+			if (typeof navClass !== "undefined") {
+				const subClass = parentTr.length ? parentTr.hasClass("subclass-feature") : false;
+				const ua = parentTr.length ? parentTr.hasClass("spicy-sauce") : false;
+				const brew = parentTr.length ? parentTr.hasClass("refreshing-brew") : false;
+				$(`<div class="nav-item ${navClass} ${brew ? "purple" : ua ? "green" : subClass ? "blue" : ""}">${displayText}</div>`).on("click", () => {
+					if (idTr.length) {
+						window.location.hash = getFeatureLink(idTr.attr("id"))
+					}
+
+					const $it = $(`[data-title-index="${scrollTo}"]`);
+					if ($it.get()[0]) $it.get()[0].scrollIntoView();
+				}).appendTo($nav);
+			}
+		}
+
+		if (!CollectionUtil.arrayEq(prevSub, sub)) { // checking array equality is faster than hitting the DOM
+			setTimeout(() => {
+				const $nav = $(`#sticky-nav`);
+				const $hr = $nav.find(`hr`);
+				const $navBody = $nav.find(`.nav-body`).empty();
+				const $navHead = $nav.find(`.nav-head`);
+				$navHead.find(`div`).off("click").on("click", () => {
+					$navBody.toggle();
+					$hr.toggle();
+					const nextState = Number(!Number($navHead.attr("data-state")));
+					$navHead.attr("data-state", nextState);
+				});
+				const $titles = $(`.entry-title`);
+				$titles.each((i, e) => {
+					const $e = $(e);
+					const pClass = $e.parent().attr("class").trim();
+					if (pClass === "statsInlineHead") return; // consider enabling these for e.g. maneuvers?
+					if (!$e.is(":visible")) return;
+					const idTr = $e.closest(`tr[id]`);
+					const pTr = $e.closest(`tr`);
+					const displayText = $e.contents().filter(function () {
+						return this.nodeType === 3;
+					})[0].nodeValue.replace(/[:.]$/g, "");
+					const scrollTo = $e.data("title-index");
+					makeScroller($navBody, idTr, pTr, pClass, displayText, scrollTo);
+				});
+			}, 5); // delay hack to allow rendering to catch up
+		}
+		prevSub = sub;
+	}
+
 	function hideAllSubclasses () {
 		updateClassTableLinks();
+		updateNavLinks();
 		const $pgContent = $(`#pagecontent`);
 		$(`.${CLSS_SUBCLASS_PILL}`).removeClass(CLSS_ACTIVE);
 		$pgContent.find(`.${CLSS_SUBCLASS_FEATURE}`).hide();
@@ -812,99 +863,46 @@ function loadsub (sub) {
 }
 
 function initCompareMode () {
-	$(`#btn-comparemode`).on("click", () => {
-		cleanSetHash(`${window.location.hash}${HASH_PART_SEP}${SubclassComparisonView.SUBHASH}`);
-	});
-}
-
-const SubclassComparisonView = {
-	SUBHASH: `${HASH_COMP_VIEW}true`,
-	compareViewActive: false,
-	_$body: null,
-	_$wrpBookUnder: null,
-	_$wrpBook: null,
-
-	open: () => {
-		function hashTeardown () {
-			cleanSetHash(window.location.hash.replace(SubclassComparisonView.SUBHASH, ""));
-		}
-
-		if (SubclassComparisonView.compareViewActive) return;
-		SubclassComparisonView.compareViewActive = true;
-
-		const $body = $(`body`);
-		const $wrpBookUnder = $(`<div class="book-view-under"/>`);
-		const $wrpBook = $(`<div class="book-view"/>`);
-		SubclassComparisonView._$body = $body;
-		SubclassComparisonView._$wrpBookUnder = $wrpBookUnder;
-		SubclassComparisonView._$wrpBook = $wrpBook;
-
-		$body.css("overflow", "hidden");
-
-		const $bkTbl = $(`<table class="stats stats-book" style="font-size: 1.0em; font-family: inherit;"/>`);
-		const $brdTop = $(`<tr><th class="border close-border" style="width: 100%;"><div/></th></tr>`);
-		const $btnClose = $(`<span class="delete-icon glyphicon glyphicon-remove"></span>`)
-			.on("click", () => {
-				hashTeardown();
-			});
-		$brdTop.find(`div`).append($btnClose);
-		$bkTbl.append($brdTop);
-
-		const $tbl = $(`<table class="stats stats-book" style="width: auto; margin: 0 auto; font-family: inherit;"/>`);
-		const renderStack = [];
-		const numScLvls = curClass.subclasses[0].subclassFeatures.length;
-		for (let i = 0; i < numScLvls; ++i) {
-			renderStack.push(`<tr>`);
-			curClass.subclasses.forEach((sc, j) => {
-				renderStack.push(`<td class="subclass-features-${j} ${getSubclassStyles(sc).join(" ")}">`);
-				sc.subclassFeatures[i].forEach(f => {
-					renderer.recursiveEntryRender(f, renderStack);
+	subclassComparisonView = new BookModeView(
+		"compview", $(`#btn-comparemode`), "Please select some subclasses first",
+		($tbl) => {
+			const renderStack = [];
+			const numScLvls = curClass.subclasses[0].subclassFeatures.length;
+			for (let i = 0; i < numScLvls; ++i) {
+				renderStack.push(`<tr class="text">`);
+				curClass.subclasses.forEach((sc, j) => {
+					renderStack.push(`<td class="subclass-features-${j} ${getSubclassStyles(sc).join(" ")}">`);
+					sc.subclassFeatures[i].forEach(f => {
+						renderer.recursiveEntryRender(f, renderStack);
+					});
+					renderStack.push(`</td>`);
 				});
-				renderStack.push(`</td>`);
-			});
-			renderStack.push(`</tr>`);
-			renderStack.push(`<tr><th colspan="6"><hr></th></tr>`);
-		}
-		$tbl.append(renderStack.join(""));
-
-		let numShown = 0;
-		curClass.subclasses.forEach((sc, i) => {
-			const $pill = $(`.sc-pill[data-subclass="${sc.name}"]`);
-			if (!($pill.hasClass("active"))) {
-				$tbl.find(`.subclass-features-${i}`).hide();
-			} else {
-				numShown++;
+				renderStack.push(`</tr>`);
+				renderStack.push(`<tr><th colspan="6"><hr></th></tr>`);
 			}
-		});
+			$tbl.append(renderStack.join(""));
 
-		$tbl.find(`tr > td > div`).css("width", "400px");
-		const $tblRow = $(`<tr/>`);
-		$tblRow.append($(`<div style="overflow: auto; max-height: calc(100vh - 16px); ${numShown ? "" : "display: none;"}"/>`).append($tbl));
-		const $msgRow = $(`<tr ${numShown ? `style="display: none;"` : ""}><td class="text-align-center"><span class="initial-message">Please select some subclasses first</span><br></td></tr>`);
-		$msgRow.find(`td`).append($(`<button class="btn btn-default">Close</button>`).on("click", () => {
-			hashTeardown();
-		}));
-		$bkTbl.append($tblRow).append($msgRow).append(EntryRenderer.utils.getBorderTr());
+			let numShown = 0;
+			curClass.subclasses.forEach((sc, i) => {
+				const $pill = $(`.sc-pill[data-subclass="${sc.name}"]`);
+				if (!($pill.hasClass("active"))) {
+					$tbl.find(`.subclass-features-${i}`).hide();
+				} else {
+					numShown++;
+				}
+			});
 
-		$wrpBook.append($bkTbl);
-		$body.append($wrpBookUnder).append($wrpBook);
-	},
+			$tbl.find(`tr > td > div`).css("width", "400px");
 
-	teardown: () => {
-		if (SubclassComparisonView.compareViewActive) {
-			SubclassComparisonView._$body.css("overflow", "");
-			SubclassComparisonView._$wrpBookUnder.remove();
-			SubclassComparisonView._$wrpBook.remove();
-			SubclassComparisonView.compareViewActive = false;
+			return numShown;
 		}
-	}
-};
+	);
+}
 
 const ClassBookView = {
 	SUBHASH: `${HASH_BOOK_VIEW}true`,
 	bookViewActive: false,
 	_$body: null,
-	_$wrpBookUnder: null,
 	_$wrpBook: null,
 	_$bkTbl: null,
 	_$scToggles: {},
@@ -916,19 +914,17 @@ const ClassBookView = {
 		}
 
 		function hashTeardown () {
-			cleanSetHash(window.location.hash.replace(ClassBookView.SUBHASH, ""));
+			History.cleanSetHash(window.location.hash.replace(ClassBookView.SUBHASH, ""));
 		}
 
-		if (ClassBookView.bookViewActive) return;
-		ClassBookView.bookViewActive = true;
+		if (ClassBookView.active) return;
+		ClassBookView.active = true;
 
 		setSourceState(STR_SOURCES_ALL);
 
 		const $body = $(`body`);
-		const $wrpBookUnder = $(`<div class="book-view-under"/>`);
-		const $wrpBook = $(`<div class="book-view"/>`);
+		const $wrpBook = $(`<div class="book-mode"/>`);
 		ClassBookView._$body = $body;
-		ClassBookView._$wrpBookUnder = $wrpBookUnder;
 		ClassBookView._$wrpBook = $wrpBook;
 
 		$body.css("overflow", "hidden");
@@ -947,9 +943,9 @@ const ClassBookView = {
 
 		const renderStack = [];
 		renderer.setFirstSection(true);
-		renderer.recursiveEntryRender({type: "section", name: curClass.name}, renderStack, 0, `<tr><td colspan="6">`, `</td></tr>`, true);
+		renderer.recursiveEntryRender({type: "section", name: curClass.name}, renderStack, 0, `<tr class="text"><td colspan="6">`, `</td></tr>`, true);
 
-		renderStack.push(`<tr class="class-features"><td colspan="6">`);
+		renderStack.push(`<tr class="text class-features"><td colspan="6">`);
 		curClass.classFeatures.forEach(lvl => {
 			lvl.forEach(cf => {
 				renderer.recursiveEntryRender(cf, renderStack);
@@ -958,7 +954,7 @@ const ClassBookView = {
 		renderStack.push(`</td></tr>`);
 
 		curClass.subclasses.forEach((sc, i) => {
-			renderStack.push(`<tr class="subclass-features-${i} ${getSubclassStyles(sc).join(" ")}"><td colspan="6">`);
+			renderStack.push(`<tr class="text subclass-features-${i} ${getSubclassStyles(sc).join(" ")}"><td colspan="6">`);
 			sc.subclassFeatures.forEach(lvl => {
 				lvl.forEach(f => {
 					renderer.recursiveEntryRender(f, renderStack);
@@ -1012,18 +1008,17 @@ const ClassBookView = {
 		const $pnlBlank = $(`<div class="pnl-menu pnl-menu-pad"/>`);
 
 		$wrpBook.append($pnlMenu).append($pnlContent).append($pnlBlank);
-		$body.append($wrpBookUnder).append($wrpBook);
+		$body.append($wrpBook);
 	},
 
 	teardown: () => {
-		if (ClassBookView.bookViewActive) {
+		if (ClassBookView.active) {
 			ClassBookView._$bkTbl = null;
 			ClassBookView._$scToggles = {};
 
 			ClassBookView._$body.css("overflow", "");
-			ClassBookView._$wrpBookUnder.remove();
 			ClassBookView._$wrpBook.remove();
-			ClassBookView.bookViewActive = false;
+			ClassBookView.active = false;
 		}
 	},
 
@@ -1048,7 +1043,7 @@ const ClassBookView = {
 			});
 		}
 
-		if (ClassBookView.bookViewActive) {
+		if (ClassBookView.active) {
 			// $toShow/$toHide are lists of subclass pills
 			doUpdate($toShow, true);
 			doUpdate($toHide, false);
@@ -1058,6 +1053,6 @@ const ClassBookView = {
 
 function initReaderMode () {
 	$(`#btn-readmode`).on("click", () => {
-		cleanSetHash(`${window.location.hash}${HASH_PART_SEP}${ClassBookView.SUBHASH}`);
+		History.cleanSetHash(`${window.location.hash}${HASH_PART_SEP}${ClassBookView.SUBHASH}`);
 	});
 }

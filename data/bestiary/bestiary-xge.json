@@ -5,7 +5,9 @@
 			"name": "Tiny Servant",
 			"size": "T",
 			"type": "construct",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "10 (4d4)",
 			"speed": {
@@ -20,8 +22,20 @@
 			"cha": 1,
 			"passive": 10,
 			"cr": "Unknown",
-			"immune": "poison, psychic",
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
 			"senses": "blindsight 60 ft. (blind beyond this radius)",
 			"action": [
 				{

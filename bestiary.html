@@ -16,6 +16,13 @@
 	<script type="text/javascript" src="lib/js-cookie.js"></script>
 	<script type="text/javascript" src="js/styleswitch.js"></script>
 	<script type="text/javascript" src="js/navigation.js"></script>
+
+	<style>
+		#wrp-profbonusdice {
+			display: inline-block;
+			margin-right: 5px;
+		}
+	</style>
 </head>
 
 <body>
@@ -157,15 +164,11 @@
 				<tr class="trait">
 					<td colspan="6"><span class="name">Trait.</span> <span class="content">Content.</span></td>
 				</tr>
-				<tr id="actions">
-					<td colspan="6"><span>Actions</span></td>
-				</tr>
+				<tr id="actions"><td colspan="6"><span>Actions</span></td></tr>
 				<tr class="action">
 					<td colspan="6"><span class="name">Action.</span> <span class="content">Content.</span></td>
 				</tr>
-				<tr id="reactions">
-					<td colspan="6"><span>Reactions</span></td>
-				</tr>
+				<tr id="reactions"><td colspan="6"><span>Reactions</span></td></tr>
 				<tr class="reaction">
 					<td colspan="6"><span class="name">Reaction.</span> <span class="content">Content.</span></td>
 				</tr>
@@ -194,10 +197,13 @@
 				</tr>
 			</table>
 			<br>
-			<div class="col-xs-12" id="wrp-profbonusdice">
-				<button class="btn btn-block btn-default btn-xs" type="button" id="profbonusdice"
-						title="WARNING: Very experimental &mdash; use with caution">Use Proficiency Dice
-				</button>
+			<div class="text-align-center">
+				<div id="wrp-profbonusdice">
+					<button class="btn btn-default btn-sm" type="button" id="profbonusdice"
+							title="WARNING: Very experimental &mdash; use with caution">Use Proficiency Dice
+					</button>
+				</div>
+				<button class="btn btn-default btn-sm btn-file" id="manage-brew">Manage Homebrew</button>
 			</div>
 		</div>
 	</div>
@@ -213,11 +219,5 @@
 <script type="text/javascript" src="lib/list.js"></script>
 <script type="text/javascript" src="lib/bootstrap.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>
-<script type="text/javascript">
-	imgError = function (x) {
-		$(x).closest("th").css("padding-right", "0.2em");
-		$(x).remove();
-	};
-</script>
 </body>
 </html>

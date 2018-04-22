@@ -453,7 +453,7 @@
 					"name": "Avariel",
 					"source": "UAElfSubraces",
 					"speed": {
-						"walk": 25,
+						"walk": 30,
 						"fly": 30
 					},
 					"entries": [
@@ -1081,7 +1081,7 @@
 								[
 									"Copper",
 									"Acid",
-									"15ft. cone (Dex. save)"
+									"5 by 30ft. line (Dex. save)"
 								],
 								[
 									"Gold",

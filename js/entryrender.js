@@ -24,6 +24,7 @@ function EntryRenderer () {
 
 	this._subVariant = false;
 	this._firstSection = true;
+	this._headerIndex = 1;
 
 	/**
 	 * Set the tag used to group rendered elements
@@ -48,6 +49,10 @@ function EntryRenderer () {
 	 */
 	this.setFirstSection = function (bool) {
 		this._firstSection = bool;
+	};
+
+	this.resetHeaderIndex = function () {
+		this._headerIndex = 1;
 	};
 
 	// TODO convert params to options object
@@ -78,8 +83,6 @@ function EntryRenderer () {
 			// the root entry (e.g. "Rage" in barbarian "classFeatures") is assumed to be of type "entries"
 			const type = entry.type === undefined || entry.type === "section" ? "entries" : entry.type;
 			switch (type) {
-				// TODO add an "insert box" type
-
 				// recursive
 				case "entries":
 					handleEntries(this);
@@ -103,7 +106,7 @@ function EntryRenderer () {
 					break;
 				case "inset":
 					textStack.push(`<${this.wrapperTag} class="statsBlockInset">`);
-					if (typeof entry.name !== 'undefined') textStack.push(`<span class="entry-title">${entry.name}</span>`);
+					if (typeof entry.name !== 'undefined') textStack.push(`<span class="entry-title" data-title-index="${this._headerIndex++}">${entry.name}</span>`);
 					for (let i = 0; i < entry.entries.length; i++) {
 						this.recursiveEntryRender(entry.entries[i], textStack, 2, "<p>", "</p>");
 					}
@@ -111,7 +114,7 @@ function EntryRenderer () {
 					break;
 				case "insetReadaloud":
 					textStack.push(`<${this.wrapperTag} class="statsBlockInsetReadaloud">`);
-					if (typeof entry.name !== 'undefined') textStack.push(`<span class="entry-title">${entry.name}</span>`);
+					if (typeof entry.name !== 'undefined') textStack.push(`<span class="entry-title" data-title-index="${this._headerIndex++}">${entry.name}</span>`);
 					for (let i = 0; i < entry.entries.length; i++) {
 						this.recursiveEntryRender(entry.entries[i], textStack, 2, "<p>", "</p>");
 					}
@@ -119,7 +122,7 @@ function EntryRenderer () {
 					break;
 				case "variant":
 					textStack.push(`<${this.wrapperTag} class="statsBlockInset">`);
-					textStack.push(`<span class="entry-title">Variant: ${entry.name}</span>`);
+					textStack.push(`<span class="entry-title" data-title-index="${this._headerIndex++}">Variant: ${entry.name}</span>`);
 					for (let i = 0; i < entry.entries.length; i++) {
 						this.recursiveEntryRender(entry.entries[i], textStack, 2, "<p>", "</p>");
 					}
@@ -203,7 +206,7 @@ function EntryRenderer () {
 					break;
 
 				case "actions":
-					textStack.push(`<${this.wrapperTag} class="${EntryRenderer.HEAD_2}"><span class="entry-title">${entry.name}.</span> `);
+					textStack.push(`<${this.wrapperTag} class="${EntryRenderer.HEAD_2}"><span class="entry-title" data-title-index="${this._headerIndex++}">${entry.name}.</span> `);
 					for (let i = 0; i < entry.entries.length; i++) {
 						this.recursiveEntryRender(entry.entries[i], textStack, depth, "<p>", "</p>");
 					}
@@ -232,6 +235,15 @@ function EntryRenderer () {
 				case "itemSpell":
 					renderPrefix();
 					this.recursiveEntryRender(entry.entry, textStack, depth, `<p>${entry.name}</span> `, "</p>");
+					renderSuffix();
+					break;
+
+				// entire data records
+				case "dataCreature":
+					renderPrefix();
+					textStack.push(`<table class="statsDataInset">`);
+					textStack.push(EntryRenderer.monster.getCompactRenderedString(entry.dataCreature, this));
+					textStack.push(`</table>`);
 					renderSuffix();
 					break;
 
@@ -282,7 +294,7 @@ function EntryRenderer () {
 		function renderTable (self) {
 			// TODO add handling for rowLabel property
 
-			textStack.push("<table>");
+			textStack.push(`<table class="striped-odd">`);
 
 			if (entry.caption !== undefined) {
 				textStack.push(`<caption>${entry.caption}</caption>`);
@@ -392,7 +404,7 @@ function EntryRenderer () {
 			const styleString = getStyleString();
 			const dataString = getDataString();
 			const preReqText = getPreReqText(self);
-			const headerSpan = entry.name !== undefined ? `<span class="entry-title">${self.renderEntry({type: "inline", entries: [entry.name]})}${inlineTitle ? "." : ""}</span> ` : "";
+			const headerSpan = entry.name !== undefined ? `<span class="entry-title" data-title-index="${self._headerIndex++}">${self.renderEntry({type: "inline", entries: [entry.name]})}${inlineTitle ? "." : ""}</span> ` : "";
 
 			if (depth === -1) {
 				if (!self._firstSection) {
@@ -449,7 +461,7 @@ function EntryRenderer () {
 		function _getStyleClass (source) {
 			const outList = [];
 			if (isNonstandardSource(source)) outList.push(CLSS_NON_STANDARD_SOURCE);
-			if (source === SRC_HOMEBREW) outList.push(CLSS_HOMEBREW_SOURCE);
+			if (BrewUtil.hasSourceJson(source)) outList.push(CLSS_HOMEBREW_SOURCE);
 			return outList.join(" ");
 		}
 
@@ -582,6 +594,21 @@ function EntryRenderer () {
 							text: displayText
 						};
 						self.recursiveEntryRender(fauxEntry, textStack, depth);
+					} else if (tag === "@book") {
+						// format: {@book Display Text|DMG< |chapter< |section > >}
+						const [displayText, book, chapter, section] = text.split("|");
+						const hash = `${book}${chapter ? `${HASH_PART_SEP}${chapter}${section ? `${HASH_PART_SEP}${UrlUtil.encodeForHash(section)}` : ""}` : ""}`;
+						const fauxEntry = {
+							type: "link",
+							href: {
+								type: "internal",
+								path: "book.html",
+								hash,
+								hashPreEncoded: true
+							},
+							text: displayText
+						};
+						self.recursiveEntryRender(fauxEntry, textStack, depth);
 					} else {
 						const [name, source, displayText, ...others] = text.split("|");
 						const hash = `${name}${source ? `${HASH_LIST_SEP}${source}` : ""}`;
@@ -590,7 +617,7 @@ function EntryRenderer () {
 							type: "link",
 							href: {
 								type: "internal",
-								hash: hash
+								hash
 							},
 							text: (displayText || name)
 						};
@@ -671,6 +698,15 @@ function EntryRenderer () {
 								};
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
+							case "@reward":
+								fauxEntry.href.path = "rewards.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_DMG;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_REWARDS,
+									source: source || SRC_DMG
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
 						}
 					}
 				} else {
@@ -718,8 +754,7 @@ function EntryRenderer () {
 	 * @param depth
 	 * @returns {string}
 	 */
-	this.renderEntry = function (entry, depth) {
-		depth = depth === undefined || depth === null ? 0 : depth;
+	this.renderEntry = function (entry, depth = 0) {
 		const tempStack = [];
 		this.recursiveEntryRender(entry, tempStack, depth);
 		return tempStack.join("");
@@ -785,25 +820,26 @@ EntryRenderer.getEntryDice = function (entry, name) {
 	}
 
 	function pack (obj) {
-		return `'${JSON.stringify(obj).replace(/'/g, `\\'`).replace(/"/g, `&quot;`)}'`;
+		return `'${JSON.stringify(obj).escapeQuotes()}'`;
 	}
 
 	const toDisplay = entry.displayText ? entry.displayText : getDiceAsStr();
 
-	if (entry.rollable === true) {
-		return `<span class='roller unselectable' onclick="EntryRenderer.dice.rollerClick(this, ${pack(entry)}${name ? `, '${name.replace(/'/g, `\\'`).replace(/"/g, `&quot;`)}'` : ""})">${toDisplay}</span>`;
-	} else {
-		return toDisplay;
-	}
+	if (entry.rollable === true) return `<span class='roller' onclick="EntryRenderer.dice.rollerClick(this, ${pack(entry)}${name ? `, '${name.escapeQuotes()}'` : ""})">${toDisplay}</span>`;
+	else return toDisplay;
 };
 
 EntryRenderer.utils = {
-	getBorderTr: () => {
-		return `<tr><th class="border" colspan="6"></th></tr>`;
+	getBorderTr: (optText) => {
+		return `<tr><th class="border" colspan="6">${optText || ""}</th></tr>`;
 	},
 
 	getDividerTr: () => {
 		return `<tr><td class="divider" colspan="6"><div></div></td></tr>`;
+	},
+
+	getSourceSubText (it) {
+		return it.sourceSub ? ` \u2014 ${it.sourceSub}` : "";
 	},
 
 	getNameTr: (it, addPageNum, prefix, suffix) => {
@@ -811,7 +847,7 @@ EntryRenderer.utils = {
 					<th class="name" colspan="6">
 						<div class="name-inner">
 							<span class="stats-name">${prefix || ""}${it.name}${suffix || ""}</span>
-							<span class="stats-source source${it.source}" title="${Parser.sourceJsonToAbv(it.source)}">
+							<span class="stats-source source${it.source}" title="${Parser.sourceJsonToFull(it.source)}${EntryRenderer.utils.getSourceSubText(it)}">
 								${Parser.sourceJsonToAbv(it.source)}${addPageNum && it.page ? ` p${it.page}` : ""}
 							</span>
 						</div>
@@ -825,7 +861,8 @@ EntryRenderer.utils = {
 
 	_getPageTrText: (it) => {
 		const addSourceText = it.additionalSources && it.additionalSources.length ? `. Additional information from ${it.additionalSources.map(as => `<i title="${Parser.sourceJsonToFull(as.source)}">${Parser.sourceJsonToAbv(as.source)}</i>, page ${as.page}`).join("; ")}.` : "";
-		return it.page ? `<b>Source: </b> <i title="${Parser.sourceJsonToFull(it.source)}">${Parser.sourceJsonToAbv(it.source)}</i>, page ${it.page}${addSourceText}` : ""
+		const sourceSub = EntryRenderer.utils.getSourceSubText(it);
+		return it.page ? `<b>Source: </b> <i title="${Parser.sourceJsonToFull(it.source)}${sourceSub}">${Parser.sourceJsonToAbv(it.source)}${sourceSub}</i>, page ${it.page}${addSourceText}` : ""
 	},
 
 	tabButton: (label, funcChange, funcPopulate) => {
@@ -1018,7 +1055,7 @@ EntryRenderer.spell = {
 		renderStack.push(`
 			${EntryRenderer.utils.getNameTr(spell, true)}
 			<tr><td colspan="6">
-				<table class="summary">
+				<table class="summary striped-even">
 					<tr>
 						<th colspan="1">Level</th>
 						<th colspan="1">School</th>
@@ -1196,7 +1233,7 @@ EntryRenderer.race = {
 		renderStack.push(`
 			${EntryRenderer.utils.getNameTr(race, true)}
 			<tr><td colspan="6">
-				<table class="summary">
+				<table class="summary striped-even">
 					<tr>
 						<th class="col-xs-4 text-align-center">Ability Sores</th>
 						<th class="col-xs-4 text-align-center">Size</th>
@@ -1279,7 +1316,7 @@ EntryRenderer.deity = {
 				<div class="summary-flexer">
 					<p><b>Pantheon:</b> ${deity.pantheon}</p>
 					${deity.category ? `<p><b>Category:</b> ${deity.category}</p>` : ""}
-					<p><b>Alignment:</b> ${deity.alignment.map(a => Parser.dtAlignmentToFull(a)).join(" ")}</p>
+					<p><b>Alignment:</b> ${deity.alignment.map(a => Parser.alignmentAbvToFull(a)).join(" ")}</p>
 					<p><b>Domains:</b> ${deity.domains.join(", ")}</p>
 					${deity.altNames ? `<p><b>Alternate Names:</b> ${deity.altNames.join(", ")}</p>` : ""}
 					<p><b>Symbol:</b> ${deity.symbol}</p>
@@ -1296,7 +1333,7 @@ EntryRenderer.object = {
 		return `
 			${EntryRenderer.utils.getNameTr(obj, true)}
 			<tr><td colspan="6">
-				<table class="summary">
+				<table class="summary striped-even">
 					<tr>
 						<th class="col-xs-3 text-align-center">Type</th>
 						<th class="col-xs-3 text-align-center">AC</th>
@@ -1331,19 +1368,35 @@ EntryRenderer.traphazard = {
 };
 
 EntryRenderer.monster = {
-	getCompactRenderedString: (mon) => {
-		const renderer = EntryRenderer.getDefaultRenderer();
+	getLegendaryActionIntro: (mon) => {
+		const legendaryActions = mon.legendaryActions || 3;
+		const legendaryName = mon.name.split(",");
+		return `${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryName[0]} regains spent legendary actions at the start of its turn.`
+	},
+
+	getCompactRenderedString: (mon, renderer) => {
+		renderer = renderer || EntryRenderer.getDefaultRenderer();
 
 		function makeAbilityRoller (ability) {
 			const mod = Parser.getAbilityModifier(mon[ability]);
 			return renderer.renderEntry(`{@dice 1d20${mod}|${mon[ability]} (${mod})|${Parser.attAbvToFull(ability)}`);
 		}
 
+		function getSection (title, key, depth) {
+			return mon[key] ? `
+			<tr class="mon-sect-header"><td colspan="6"><span>${title}</span></td></tr>
+			<tr class="text compact"><td colspan="6">
+			${key === "legendary" && mon.legendary ? `<p>${EntryRenderer.monster.getLegendaryActionIntro(mon)}</p>` : ""}
+			${mon[key].map(it => it.rendered || renderer.renderEntry(it, depth)).join("")}
+			</td></tr>
+			` : ""
+		}
+
 		const renderStack = [];
 
 		renderStack.push(`
 			${EntryRenderer.utils.getNameTr(mon, true)}
-			<tr><td colspan="6"><i>${Parser.sizeAbvToFull(mon.size)}, ${Parser.monTypeToFullObj(mon.type).asText}, ${mon.alignment}</i></td></tr>
+			<tr><td colspan="6"><i>${Parser.sizeAbvToFull(mon.size)}, ${Parser.monTypeToFullObj(mon.type).asText}, ${Parser.alignmentListToFull(mon.alignment).toLowerCase()}</i></td></tr>
 			<tr><td colspan="6"><div class="border"></div></td></tr>
 			<tr><td colspan="6">
 				<table class="summary-noback">
@@ -1363,7 +1416,7 @@ EntryRenderer.monster = {
 			</td></tr>
 			<tr><td colspan="6"><div class="border"></div></td></tr>
 			<tr><td colspan="6">
-				<table class="summary">
+				<table class="summary striped-even">
 					<tr>
 						<th class="col-xs-2 text-align-center">STR</th>
 						<th class="col-xs-2 text-align-center">DEX</th>
@@ -1389,12 +1442,24 @@ EntryRenderer.monster = {
 					${mon.skill ? `<p><b>Skills:</b> ${Object.keys(mon.skill).sort().map(s => `${s.uppercaseFirst()} ${mon.skill[s]}`)}</p>` : ""}
 					<p><b>Senses:</b> ${mon.senses ? `${mon.senses}, ` : ""}passive Perception ${mon.passive}</p>
 					<p><b>Languages:</b> ${mon.languages ? mon.languages : `\u2014`}</p>
-					${mon.vulnerable ? `<p><b>Damage Vuln.:</b> ${mon.vulnerable}</p>` : ""}
-					${mon.resist ? `<p><b>Damage Res.:</b> ${mon.resist}</p>` : ""}
-					${mon.immune ? `<p><b>Damage Imm.:</b> ${mon.immune}</p>` : ""}
-					${mon.conditionImmune ? `<p><b>Condition Imm.:</b> ${mon.conditionImmune}</p>` : ""}
+					${mon.vulnerable ? `<p><b>Damage Vuln.:</b> ${Parser.monImmResToFull(mon.vulnerable)}</p>` : ""}
+					${mon.resist ? `<p><b>Damage Res.:</b> ${Parser.monImmResToFull(mon.resist)}</p>` : ""}
+					${mon.immune ? `<p><b>Damage Imm.:</b> ${Parser.monImmResToFull(mon.immune)}</p>` : ""}
+					${mon.conditionImmune ? `<p><b>Condition Imm.:</b> ${Parser.monCondImmToFull(mon.conditionImmune)}</p>` : ""}
 				</div>
 			</td></tr>
+			${mon.trait ? `<tr><td colspan="6"><div class="border"></div></td></tr>
+			<tr class="text compact"><td colspan="6">
+			${EntryRenderer.monster.getOrderedTraits(mon, renderer).map(it => it.rendered || renderer.renderEntry(it, 3)).join("")}
+			</td></tr>` : ""}
+			${getSection("Actions", "action", 3)}
+			${getSection("Reactions", "reaction", 3)}
+			${getSection("Legendary Actions", "legendary", 3)}
+			${mon.variant ? `
+			<tr class="text compact"><td colspan="6">
+			${mon.variant.map(it => it.rendered || renderer.renderEntry(it)).join("")}
+			</td></tr>
+			` : ""}
 		`);
 
 		return renderStack.join("");
@@ -1530,7 +1595,7 @@ EntryRenderer.item = {
 		renderStack.push(`<tr><td class="typerarityattunement" colspan="6">${item.typeText}${`${item.tier ? `, ${item.tier}` : ""}${item.rarity ? `, ${item.rarity}` : ""}`} ${item.reqAttune || ""}</td>`);
 
 		const [damage, damageType, propertiesTxt] = EntryRenderer.item.getDamageAndPropertiesText(item);
-		renderStack.push(`<tr><td colspan="2">${item.value ? item.value + (item.weight ? ", " : "") : ""}${item.weight ? item.weight + (Number(item.weight) === 1 ? " lb." : " lbs.") + (item.weightNote ? ` ${item.weightNote}` : "") : ""}</td><td class="damageproperties" colspan="4">${damage} ${damageType} ${propertiesTxt}</tr>`);
+		renderStack.push(`<tr><td colspan="2">${item.value ? item.value + (item.weight ? ", " : "") : ""}${Parser.itemWeightToFull(item)}</td><td class="damageproperties" colspan="4">${damage} ${damageType} ${propertiesTxt}</tr>`);
 
 		if (item.entries && item.entries.length) {
 			renderStack.push(EntryRenderer.utils.getDividerTr());
@@ -1544,6 +1609,8 @@ EntryRenderer.item = {
 	},
 
 	_builtList: null,
+	_propertyList: {},
+	_typeList: {},
 	/**
 	 * Runs callback with itemList as argument
 	 * @param callback
@@ -1556,8 +1623,6 @@ EntryRenderer.item = {
 		let itemList;
 		let basicItemList;
 		let variantList;
-		const propertyList = {};
-		const typeList = {};
 
 		// allows URLs to be overriden (used by roll20 script)
 		const itemUrl = urls.items || "data/items.json";
@@ -1577,13 +1642,13 @@ EntryRenderer.item = {
 			const itemTypeList = basicItemData.itemType;
 			// Convert the property and type list JSONs into look-ups, i.e. use the abbreviation as a JSON property name
 			for (let i = 0; i < itemPropertyList.length; i++) {
-				propertyList[itemPropertyList[i].abbreviation] = itemPropertyList[i].name ? JSON.parse(JSON.stringify(itemPropertyList[i])) : {
+				EntryRenderer.item._propertyList[itemPropertyList[i].abbreviation] = itemPropertyList[i].name ? JSON.parse(JSON.stringify(itemPropertyList[i])) : {
 					"name": itemPropertyList[i].entries[0].name.toLowerCase(),
 					"entries": itemPropertyList[i].entries
 				};
 			}
 			for (let i = 0; i < itemTypeList.length; i++) {
-				typeList[itemTypeList[i].abbreviation] = itemTypeList[i].name ? JSON.parse(JSON.stringify(itemTypeList[i])) : {
+				EntryRenderer.item._typeList[itemTypeList[i].abbreviation] = itemTypeList[i].name ? JSON.parse(JSON.stringify(itemTypeList[i])) : {
 					"name": itemTypeList[i].entries[0].name.toLowerCase(),
 					"entries": itemTypeList[i].entries
 				};
@@ -1651,87 +1716,86 @@ EntryRenderer.item = {
 		}
 
 		function enhanceItems () {
-			const priceRe = /^(\d+)(\w+)$/;
 			for (let i = 0; i < itemList.length; i++) {
 				const item = itemList[i];
-				if (item.noDisplay) continue;
-				if (itemList[i].type === "GV") itemList[i].category = "Generic Variant";
-				if (itemList[i].category === undefined) itemList[i].category = "Other";
-				if (item.entries === undefined) itemList[i].entries = [];
-				if (item.type && typeList[item.type]) for (let j = 0; j < typeList[item.type].entries.length; j++) itemList[i].entries = pushObject(itemList[i].entries, typeList[item.type].entries[j]);
-				if (item.property) {
-					for (let j = 0; j < item.property.length; j++) if (propertyList[item.property[j]].entries) for (let k = 0; k < propertyList[item.property[j]].entries.length; k++) itemList[i].entries = pushObject(itemList[i].entries, propertyList[item.property[j]].entries[k]);
-				}
-				// The following could be encoded in JSON, but they depend on more than one JSON property; maybe fix if really bored later
-				if (item.armor) {
-					if (item.resist) itemList[i].entries = pushObject(itemList[i].entries, "You have resistance to " + item.resist + " damage while you wear this armor.");
-					if (item.armor && item.stealth) itemList[i].entries = pushObject(itemList[i].entries, "The wearer has disadvantage on Stealth (Dexterity) checks.");
-					if (item.type === "HA" && item.strength) itemList[i].entries = pushObject(itemList[i].entries, "If the wearer has a Strength score lower than " + item.strength + ", their speed is reduced by 10 feet.");
-				} else if (item.resist) {
-					if (item.type === "P") itemList[i].entries = pushObject(itemList[i].entries, "When you drink this potion, you gain resistance to " + item.resist + " damage for 1 hour.");
-					if (item.type === "RG") itemList[i].entries = pushObject(itemList[i].entries, "You have resistance to " + item.resist + " damage while wearing this ring.");
-				}
-				if (item.type === "SCF") {
-					if (item.scfType === "arcane") itemList[i].entries = pushObject(itemList[i].entries, "An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, using it in place of any material component which does not list a cost.");
-					if (item.scfType === "druid") itemList[i].entries = pushObject(itemList[i].entries, "A druid can use such a druidic focus as a spellcasting focus, using it in place of any material component that does not have a cost.");
-					if (item.scfType === "holy") {
-						itemList[i].entries = pushObject(itemList[i].entries, "A holy symbol is a representation of a god or pantheon.");
-						itemList[i].entries = pushObject(itemList[i].entries, "A cleric or paladin can use a holy symbol as a spellcasting focus, using it in place of any material components which do not list a cost. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.");
-					}
-				}
-
-				// bind pointer to propertyList
-				if (item.property) {
-					item._allPropertiesPtr = propertyList;
-				}
-
-				// bake in types
-				const type = [];
-				if (item.wondrous) type.push("Wondrous Item");
-				if (item.technology) type.push(item.technology);
-				if (item.age) type.push(item.age);
-				if (item.weaponCategory) type.push(item.weaponCategory + " Weapon");
-				if (item.type) type.push(Parser.itemTypeToAbv(item.type));
-				if (item.poison) type.push("Poison");
-				item.procType = type;
-				item.typeText = type.join(", ");
-
-				// bake in attunement
-				let attunement = "No";
-				if (item.reqAttune !== undefined) {
-					if (item.reqAttune === "YES") {
-						attunement = "Yes";
-						item.reqAttune = "(Requires Attunement)"
-					} else if (item.reqAttune === "OPTIONAL") {
-						attunement = "Optional";
-						item.reqAttune = "(Attunement Optional)"
-					} else if (item.reqAttune.toLowerCase().startsWith("by")) {
-						attunement = "By...";
-						item.reqAttune = "(Requires Attunement " + item.reqAttune + ")";
-					} else {
-						attunement = "Yes"; // throw any weird ones in the "Yes" category (e.g. "outdoors at night")
-						item.reqAttune = "(Requires Attunement " + item.reqAttune + ")";
-					}
-				}
-				item.attunementCategory = attunement;
-
-				// format price nicely
-				// 5 characters because e.g. XXXgp is fine
-				if (item.value && item.value.length > 5) {
-					const m = priceRe.exec(item.value);
-					if (m) {
-						item.value = `${Number(m[1]).toLocaleString()}${m[2]}`;
-					}
-				}
+				EntryRenderer.item.enhanceItem(item);
 			}
 			EntryRenderer.item._builtList = itemList;
 			callback(itemList);
 		}
+	},
 
-		function pushObject (targetObject, objectToBePushed) {
-			const copiedObject = JSON.parse(JSON.stringify(targetObject));
-			copiedObject.push(objectToBePushed);
-			return copiedObject;
+	_priceRe: /^(\d+)(\w+)$/,
+	enhanceItem (item) {
+		item._isEnhanced = true;
+		if (item.noDisplay) return;
+		if (item.type === "GV") item.category = "Generic Variant";
+		if (item.category === undefined) item.category = "Other";
+		if (item.entries === undefined) item.entries = [];
+		if (item.type && EntryRenderer.item._typeList[item.type]) for (let j = 0; j < EntryRenderer.item._typeList[item.type].entries.length; j++) item.entries.push(EntryRenderer.item._typeList[item.type].entries[j]);
+		if (item.property) {
+			for (let j = 0; j < item.property.length; j++) if (EntryRenderer.item._propertyList[item.property[j]].entries) for (let k = 0; k < EntryRenderer.item._propertyList[item.property[j]].entries.length; k++) item.entries.push(EntryRenderer.item._propertyList[item.property[j]].entries[k]);
+		}
+		// The following could be encoded in JSON, but they depend on more than one JSON property; maybe fix if really bored later
+		if (item.armor) {
+			if (item.resist) item.entries.push("You have resistance to " + item.resist + " damage while you wear this armor.");
+			if (item.armor && item.stealth) item.entries.push("The wearer has disadvantage on Stealth (Dexterity) checks.");
+			if (item.type === "HA" && item.strength) item.entries.push("If the wearer has a Strength score lower than " + item.strength + ", their speed is reduced by 10 feet.");
+		} else if (item.resist) {
+			if (item.type === "P") item.entries.push("When you drink this potion, you gain resistance to " + item.resist + " damage for 1 hour.");
+			if (item.type === "RG") item.entries.push("You have resistance to " + item.resist + " damage while wearing this ring.");
+		}
+		if (item.type === "SCF") {
+			if (item.scfType === "arcane") item.entries.push("An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, using it in place of any material component which does not list a cost.");
+			if (item.scfType === "druid") item.entries.push("A druid can use such a druidic focus as a spellcasting focus, using it in place of any material component that does not have a cost.");
+			if (item.scfType === "holy") {
+				item.entries.push("A holy symbol is a representation of a god or pantheon.");
+				item.entries.push("A cleric or paladin can use a holy symbol as a spellcasting focus, using it in place of any material components which do not list a cost. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.");
+			}
+		}
+
+		// bind pointer to propertyList
+		if (item.property) {
+			item._allPropertiesPtr = EntryRenderer.item._propertyList;
+		}
+
+		// bake in types
+		const type = [];
+		if (item.wondrous) type.push("Wondrous Item");
+		if (item.technology) type.push(item.technology);
+		if (item.age) type.push(item.age);
+		if (item.weaponCategory) type.push(item.weaponCategory + " Weapon");
+		if (item.type) type.push(Parser.itemTypeToAbv(item.type));
+		if (item.poison) type.push("Poison");
+		item.procType = type;
+		item.typeText = type.join(", ");
+
+		// bake in attunement
+		let attunement = "No";
+		if (item.reqAttune !== undefined) {
+			if (item.reqAttune === "YES") {
+				attunement = "Yes";
+				item.reqAttune = "(Requires Attunement)"
+			} else if (item.reqAttune === "OPTIONAL") {
+				attunement = "Optional";
+				item.reqAttune = "(Attunement Optional)"
+			} else if (item.reqAttune.toLowerCase().startsWith("by")) {
+				attunement = "By...";
+				item.reqAttune = "(Requires Attunement " + item.reqAttune + ")";
+			} else {
+				attunement = "Yes"; // throw any weird ones in the "Yes" category (e.g. "outdoors at night")
+				item.reqAttune = "(Requires Attunement " + item.reqAttune + ")";
+			}
+		}
+		item.attunementCategory = attunement;
+
+		// format price nicely
+		// 5 characters because e.g. XXXgp is fine
+		if (item.value && item.value.length > 5) {
+			const m = EntryRenderer.item._priceRe.exec(item.value);
+			if (m) {
+				item.value = `${Number(m[1]).toLocaleString()}${m[2]}`;
+			}
 		}
 	}
 };
@@ -1938,7 +2002,7 @@ EntryRenderer.hover = {
 
 		$ele.on("mouseleave", (evt) => {
 			EntryRenderer.hover._cleanWindows();
-			if (!$brdrTop.data("perm") && !evt.shiftKey) {
+			if (!($brdrTop.attr("data-perm") === "true") && !evt.shiftKey) {
 				teardown();
 			} else {
 				$(ele).attr("data-hover-active", true);
@@ -1951,7 +2015,7 @@ EntryRenderer.hover = {
 		const $stats = $(`<table class="stats"></table>`);
 		$stats.append(content);
 		let drag = {};
-		const $brdrTop = $(`<div class="hoverborder top" ${permanent ? `data-perm="true"` : ""}></div>`)
+		const $brdrTop = $(`<div class="hoverborder top" ${permanent ? `data-perm="true"` : ""} data-hover-id="${hoverId}"></div>`)
 			.on("mousedown", (evt) => {
 				$hov.css("z-index", 201); // temporarily display it on top
 				drag.on = true;
@@ -2066,8 +2130,9 @@ EntryRenderer.hover = {
 	_BAR_HEIGHT: 16,
 	_showInProgress: false,
 	_hoverId: 1,
+	_popoutId: -1,
 	_curHovering: null,
-	show: (evt, ele, page, source, hash) => {
+	show: (evt, ele, page, source, hash, isPopout) => {
 		if (!EntryRenderer.hover._isInit) {
 			EntryRenderer.hover._isInit = true;
 			$(`body`).on("click", () => {
@@ -2078,17 +2143,25 @@ EntryRenderer.hover = {
 		// don't show on mobile
 		if ($(window).width() <= 1024 && !evt.shiftKey) return;
 
-		const alreadyHovering = $(ele).data("hover-active");
-		if (alreadyHovering) return;
-
 		let hoverId;
-		const curHoverId = $(ele).data("hover-id");
-		if (curHoverId) {
-			hoverId = curHoverId;
+		if (isPopout) {
+			// always use a new hover ID if popout
+			hoverId = EntryRenderer.hover._popoutId--;
+			$(ele).attr("data-hover-id", hoverId);
 		} else {
-			hoverId = EntryRenderer.hover._hoverId++;
-			$(ele).data("hover-id", hoverId);
+			const curHoverId = $(ele).attr("data-hover-id");
+			if (curHoverId) {
+				hoverId = Number(curHoverId);
+			} else {
+				hoverId = EntryRenderer.hover._hoverId++;
+				$(ele).attr("data-hover-id", hoverId);
+			}
 		}
+
+		const alreadyHovering = $(ele).attr("data-hover-active");
+		const $curWin = $(`.hoverborder[data-hover-id="${hoverId}"]`);
+		if (alreadyHovering === "true" && $curWin.length) return;
+
 		let renderFunction;
 		switch (page) {
 			case UrlUtil.PG_SPELLS:
@@ -2301,7 +2374,7 @@ EntryRenderer.hover = {
 	doPopout: ($btnPop, list, index, clientX) => {
 		$btnPop.attr("data-hover-active", false);
 		const it = list[index];
-		EntryRenderer.hover.show({shiftKey: true, clientX: clientX}, $btnPop.get(), UrlUtil.getCurrentPage(), it.source, UrlUtil.autoEncodeHash(it));
+		EntryRenderer.hover.show({shiftKey: true, clientX: clientX}, $btnPop.get(), UrlUtil.getCurrentPage(), it.source, UrlUtil.autoEncodeHash(it), true);
 	}
 };
 
@@ -2455,9 +2528,12 @@ EntryRenderer.dice = {
 	rollerClick: (ele, packed, name) => {
 		const $ele = $(ele);
 		const entry = JSON.parse(packed);
-		// TODO
 		function attemptToGetTitle () {
-			let titleMaybe = $(ele).closest(`div`).find(`.entry-title`).first().text();
+			// try use table caption
+			let titleMaybe = $(ele).closest(`table`).find(`caption`).text();
+			if (titleMaybe) return titleMaybe;
+			// otherwise, use the section title, where applicable
+			titleMaybe = $(ele).closest(`div`).find(`.entry-title`).first().text();
 			if (titleMaybe) {
 				titleMaybe = titleMaybe.replace(/[.,:]$/, "");
 			}

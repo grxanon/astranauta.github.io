@@ -1,7 +1,7 @@
 {
 	"name": "5etools",
 	"author": "TheGiddyLimit",
-	"version": "1.23.0",
+	"version": "1.37.0",
 	"license": "MIT",
 	"description": "A site dedicated to making playing games with your friends as easy as possible.",
 	"scripts": {
@@ -33,5 +33,6 @@
 		"stylelint": "^9.0.0",
 		"stylelint-config-sass-guidelines": "^5.0.0",
 		"uglify-es": "^3.3.9"
-	}
+	},
+	"dependencies": {}
 }

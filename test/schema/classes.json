@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-06/schema#",
+	"version": "1.0.0",
 
 	"title": "ClassArray",
 	"type": "object",
@@ -264,6 +265,9 @@
 					"items": {
 						"items": {"$ref": "/Entry"}
 					}
+				},
+				"fluffPage": {
+					"type": "integer"
 				}
 			},
 			"required": [

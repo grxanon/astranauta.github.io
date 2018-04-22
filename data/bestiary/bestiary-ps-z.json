@@ -6,7 +6,10 @@
 			"name": "Archon Of Redemption",
 			"size": "L",
 			"type": "celestial",
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "136 (16d8+64)",
 			"speed": {
@@ -24,8 +27,22 @@
 				"insight": "+9",
 				"perception": "+9"
 			},
-			"resist": "radiant; bludgeoning, piercing, and slashing from",
-			"conditionImmune": "charmed, exhaustion, frightened",
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 19,
 			"languages": "all, telepathy 120 ft.",
@@ -100,7 +117,10 @@
 			"name": "Felidar",
 			"size": "L",
 			"type": "celestial",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "12",
 			"hp": "67 (9d10+18)",
 			"speed": {
@@ -112,8 +132,14 @@
 			"int": 11,
 			"wis": 17,
 			"cha": 16,
-			"immune": "poison",
-			"conditionImmune": "charmed, paralyzed, poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "Celestial, telepathy 60 ft.",
@@ -217,7 +243,10 @@
 			"name": "Kraken",
 			"size": "H",
 			"type": "monstrosity",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "230 (20d12+100)",
 			"speed": {
@@ -234,8 +263,13 @@
 				"athletics": "+14",
 				"perception": "+9"
 			},
-			"resist": "cold",
-			"immune": "lightning, thunder",
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"lightning",
+				"thunder"
+			],
 			"senses": "darkvision 120 ft.",
 			"passive": 19,
 			"languages": "Common",

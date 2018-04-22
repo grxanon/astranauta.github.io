@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-06/schema#",
+	"version": "1.0.0",
 	"title": "Invocations",
 	"type": "object",
 
@@ -16,7 +17,7 @@
 				"pact": {
 					"type": "string",
 					"enum": [
-						"Chain", "Tome", "Blade", "Appendage"
+						"Chain", "Tome", "Blade"
 					]
 				},
 				"patron": {

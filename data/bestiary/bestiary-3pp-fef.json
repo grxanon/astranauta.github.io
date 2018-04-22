@@ -5,7 +5,10 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "85 (10d10+30)",
 			"speed": {
@@ -22,8 +25,15 @@
 			"skill": {
 				"perception": "+7"
 			},
-			"resist": "acid, cold, fire, lightning",
-			"immune": "thunder",
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"thunder"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 17,
 			"languages": "Common (via telepathy)",
@@ -69,7 +79,10 @@
 			"size": "H",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor, ring of protection +2)",
 			"hp": "136 (13d12+52)",
 			"speed": {
@@ -87,8 +100,15 @@
 				"perception": "+11",
 				"intimidation": "+9"
 			},
-			"resist": "acid, cold, fire, lightning",
-			"immune": "thunder",
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"thunder"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 21,
 			"languages": "Common (via telepathy)",
@@ -179,7 +199,10 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "82 (11d10+22)",
 			"speed": {
@@ -196,8 +219,15 @@
 			"skill": {
 				"perception": "+9"
 			},
-			"resist": "acid, cold, fire, lightning",
-			"immune": "thunder",
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"thunder"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 19,
 			"languages": "Common (via telepathy)",
@@ -275,7 +305,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "22 (5d8)",
 			"speed": {
@@ -338,7 +371,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "85 (10d8+40)",
 			"speed": {
@@ -411,7 +447,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "127 (17d8+51)",
 			"speed": {
@@ -427,8 +466,21 @@
 				"perception": "+6",
 				"stealth": "+7"
 			},
-			"resist": "nonmagical damage except from silver weapons",
-			"vulnerable": "bludgeoning, piercing, and slashing damage from silver weapons",
+			"resist": [
+				{
+					"special": "nonmagical damage except from silver weapons"
+				}
+			],
+			"vulnerable": [
+				{
+					"vulnerable": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from silver weapons"
+				}
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 16,
 			"languages": "Deep Speech (understands but doesn't speak)",
@@ -468,7 +520,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -486,7 +541,7 @@
 				"stealth": "+3"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Unique (Decapus)",
 			"cr": "2",
 			"page": 79,
@@ -541,7 +596,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "85 (10d8+40)",
 			"speed": {
@@ -557,9 +615,16 @@
 			"skill": {
 				"deception": "+9"
 			},
-			"resist": "cold, lightning",
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"resist": [
+				"cold",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 3,
 			"languages": "Deep Speech, Unique",
@@ -628,7 +693,9 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "38 (7d8+7)",
 			"speed": {
@@ -644,9 +711,12 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"conditionImmune": "prone, unconscious",
+			"conditionImmune": [
+				"prone",
+				"unconscious"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 88,
@@ -708,7 +778,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13",
 			"hp": "65 (10d8+20)",
 			"speed": {
@@ -724,7 +797,9 @@
 				"insight": "+5",
 				"perception": "+5"
 			},
-			"resist": "cold",
+			"resist": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 15,
 			"languages": "Common, Abyssal, Celestial, Infernal, Unique (Encephalon)",
@@ -788,7 +863,9 @@
 			"size": "H",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "200 (16d12+96)",
 			"speed": {
@@ -806,8 +883,12 @@
 				"perception": "+5",
 				"stealth": "+4"
 			},
-			"resist": "fire",
-			"immune": "lightning",
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"lightning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 15,
 			"languages": "None",
@@ -871,7 +952,10 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13",
 			"hp": "85 (10d10+30)",
 			"speed": {
@@ -884,8 +968,19 @@
 			"wis": 12,
 			"cha": 6,
 			"save": "Dex +6, Wis +4",
-			"resist": "bludgeoning, piercing, and slashing from nonsilver weapons",
-			"immune": "acid",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonsilver weapons"
+				}
+			],
+			"immune": [
+				"acid"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common (understands but can't speak)",
@@ -923,7 +1018,9 @@
 			"size": "S",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "12",
 			"hp": "11 (2d8+2)",
 			"speed": {
@@ -936,9 +1033,11 @@
 			"int": 8,
 			"wis": 9,
 			"cha": 8,
-			"resist": "bludgeoning",
+			"resist": [
+				"bludgeoning"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Deep Speech",
 			"cr": "1/4",
 			"page": 130,
@@ -976,7 +1075,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13",
 			"hp": "36 (8d8)",
 			"speed": {
@@ -988,10 +1090,24 @@
 			"int": 8,
 			"wis": 10,
 			"cha": 10,
-			"immune": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"conditionImmune": "paralyzed, poisoned, prone, restrained",
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
 			"senses": "truesight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Deep Speech",
 			"cr": "2",
 			"page": 138,
@@ -1035,7 +1151,10 @@
 			"size": "H",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "97 (15d12)",
 			"speed": {
@@ -1051,9 +1170,15 @@
 				"arcana": "+7",
 				"stealth": "+6"
 			},
-			"resist": "cold",
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Deep Speech, Unique",
@@ -1113,7 +1238,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (foresight bonus)",
 			"hp": "45 (7d8+14)",
 			"speed": {
@@ -1180,7 +1308,10 @@
 			"size": "H",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "171 (18d12+54)",
 			"speed": {
@@ -1194,9 +1325,11 @@
 			"wis": 10,
 			"cha": 16,
 			"save": "Cha +7, Con +7, Str +10",
-			"resist": "acid",
+			"resist": [
+				"acid"
+			],
 			"senses": "darkvision 120 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Telepathy",
 			"cr": "11",
 			"page": 225,
@@ -1303,7 +1436,9 @@
 			"size": "S",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13",
 			"hp": "13 (3d6+3 )",
 			"speed": {
@@ -1318,9 +1453,11 @@
 			"skill": {
 				"acrobatics": "+5"
 			},
-			"immune": "lightning",
+			"immune": [
+				"lightning"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 241,
@@ -1352,7 +1489,10 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "7",
 			"hp": "16 (3d10)",
 			"speed": {
@@ -1364,8 +1504,32 @@
 			"int": 10,
 			"wis": 16,
 			"cha": 10,
-			"immune": "bludgeoning and slashing damage from nonmagical or nonsilver weapons, acid, necrotic, piercing, poison",
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, poisoned, prone, restrained, stunned, unconscious",
+			"immune": [
+				"acid",
+				"necrotic",
+				"piercing",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"slashing"
+					],
+					"note": "damage from nonmagical or nonsilver weapons"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 3,
 			"languages": "Common",
@@ -1405,7 +1569,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17",
 			"hp": "45 (6d8+18)",
 			"speed": {
@@ -1417,7 +1583,12 @@
 			"int": 5,
 			"wis": 12,
 			"cha": 17,
-			"immune": "nonmagical, thunder",
+			"immune": [
+				{
+					"special": "nonmagical"
+				},
+				"thunder"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Unknown, but seems to understand a bit of most languages",
@@ -1481,7 +1652,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "95 (10d10+40)",
 			"speed": {
@@ -1494,7 +1667,7 @@
 			"wis": 10,
 			"cha": 6,
 			"senses": "darkvision 60ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "4",
 			"page": 24,
@@ -1526,7 +1699,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "59 (7d10+21)",
 			"speed": {
@@ -1539,7 +1714,7 @@
 			"wis": 10,
 			"cha": 9,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 24,
@@ -1565,7 +1740,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "30 (4d8+12)",
 			"speed": {
@@ -1579,7 +1756,7 @@
 			"wis": 10,
 			"cha": 9,
 			"senses": "tremorsense 60 ft. when underwater",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/2",
 			"page": 25,
@@ -1611,7 +1788,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13",
 			"hp": "31 (7d8)",
 			"speed": {
@@ -1624,8 +1803,13 @@
 			"int": 1,
 			"wis": 12,
 			"cha": 3,
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -1659,7 +1843,9 @@
 			"size": "S",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "13 (3d8)",
 			"speed": {
@@ -1672,10 +1858,15 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 3,
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 34,
@@ -1713,7 +1904,9 @@
 			"size": "S",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "5 (2d6-2)",
 			"speed": {
@@ -1728,7 +1921,7 @@
 			"wis": 10,
 			"cha": 7,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 48,
@@ -1754,7 +1947,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "9 (2d8)",
 			"speed": {
@@ -1770,7 +1965,7 @@
 				"stealth": "+4"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 49,
@@ -1802,7 +1997,10 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "10",
 			"hp": "102 (12d10+36)",
 			"speed": {
@@ -1815,7 +2013,9 @@
 			"int": 3,
 			"wis": 12,
 			"cha": 6,
-			"resist": "bludgeoning damage",
+			"resist": [
+				"bludgeoning"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -1855,7 +2055,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -1868,9 +2070,20 @@
 			"int": 1,
 			"wis": 5,
 			"cha": 1,
-			"resist": "bludgeoning, and slashing damage",
-			"immune": "piercing damage",
-			"conditionImmune": "frightened, paralyzed, prone, restrained, stunned",
+			"resist": [
+				"bludgeoning",
+				"slashing"
+			],
+			"immune": [
+				"piercing"
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"stunned"
+			],
 			"senses": "darkvision 10 ft.",
 			"passive": -2,
 			"languages": "None",
@@ -1904,7 +2117,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "21 (natural armor)",
 			"hp": "161 (17d10+68)",
 			"speed": {
@@ -1917,8 +2132,12 @@
 			"int": 1,
 			"wis": 12,
 			"cha": 4,
-			"immune": "psychic",
-			"conditionImmune": "frightened",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -1964,7 +2183,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "22 (3d10+6)",
 			"speed": {
@@ -1979,11 +2200,18 @@
 			"skill": {
 				"stealth": "+2"
 			},
-			"immune": "psychic",
-			"conditionImmune": "frightened, stunned",
-			"vulnerable": "fire",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"stunned"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 61,
@@ -2015,7 +2243,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "52 (7d8+21)",
 			"speed": {
@@ -2065,7 +2295,9 @@
 			"size": "T",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "3 (2d4-2)",
 			"speed": {
@@ -2103,7 +2335,9 @@
 			"size": "H",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "114 (12d12+36)",
 			"speed": {
@@ -2117,7 +2351,7 @@
 			"wis": 11,
 			"cha": 2,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "6",
 			"page": 142,
@@ -2161,7 +2395,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "65 (10d10+10)",
 			"speed": {
@@ -2174,7 +2410,7 @@
 			"wis": 11,
 			"cha": 2,
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "2",
 			"page": 142,
@@ -2192,7 +2428,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -2230,7 +2468,9 @@
 			"size": "S",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "2 (1d6-1)",
 			"speed": {
@@ -2242,9 +2482,11 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 2,
-			"vulnerable": "fire",
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 160,
@@ -2262,7 +2504,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "16 (3d8+3)",
 			"speed": {
@@ -2323,7 +2567,9 @@
 			"size": "S",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "9 (2d6+2)",
 			"speed": {
@@ -2361,7 +2607,9 @@
 			"size": "H",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "128 (10d12+50)",
 			"speed": {
@@ -2406,7 +2654,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "44 (8d10)",
 			"speed": {
@@ -2460,7 +2710,9 @@
 			"size": "H",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "105 (10d12+40)",
 			"speed": {
@@ -2498,7 +2750,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "136 (13d10+65)",
 			"speed": {
@@ -2548,7 +2802,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "26 (4d10+4)",
 			"speed": {
@@ -2579,7 +2835,9 @@
 			"size": "H",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "76 (9d12+18)",
 			"speed": {
@@ -2591,9 +2849,13 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 6,
-			"conditionImmune": "charmed, poisoned, restrained",
+			"conditionImmune": [
+				"charmed",
+				"poisoned",
+				"restrained"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "4",
 			"page": 217,
@@ -2631,7 +2893,9 @@
 			"size": "S",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "7 (2d6)",
 			"speed": {
@@ -2644,7 +2908,7 @@
 			"wis": 9,
 			"cha": 3,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/8",
 			"page": 236,
@@ -2675,7 +2939,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "45 (6d10+12)",
 			"speed": {
@@ -2688,9 +2954,11 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 2,
-			"conditionImmune": "frightened",
+			"conditionImmune": [
+				"frightened"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "2",
 			"page": 70,
@@ -2733,7 +3001,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "60 (8d10+16)",
 			"speed": {
@@ -2745,7 +3015,9 @@
 			"int": 1,
 			"wis": 12,
 			"cha": 2,
-			"conditionImmune": "prone",
+			"conditionImmune": [
+				"prone"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -2778,7 +3050,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "7 (2d6)",
 			"speed": {
@@ -2834,7 +3109,9 @@
 			"size": "M",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -2846,11 +3123,30 @@
 			"int": 10,
 			"wis": 11,
 			"cha": 1,
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison, psychic",
-			"conditionImmune": "exhaustion, frightened, paralyzed, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 43,
@@ -2882,7 +3178,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "15 (2d10+4)",
 			"speed": {
@@ -2895,9 +3193,28 @@
 			"int": 1,
 			"wis": 8,
 			"cha": 1,
-			"resist": "piercing and slashing damage from nonmagical weapons, necrotic",
-			"immune": "fire, poison, pyschic",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned, stunned, unconscious",
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -1,
 			"languages": "None",
@@ -2925,7 +3242,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "42 (5d10+15)",
 			"speed": {
@@ -2938,11 +3257,26 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 1,
-			"resist": "piercing, slashing, necrotic",
-			"immune": "acid, poison, psychic",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned, stunned, unconscious",
+			"resist": [
+				"piercing",
+				"slashing",
+				"necrotic"
+			],
+			"immune": [
+				"acid",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "2",
 			"page": 96,
@@ -2968,7 +3302,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "57 (6d12+18)",
 			"speed": {
@@ -2981,11 +3317,26 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 4,
-			"resist": "piercing, slashing, necrotic",
-			"immune": "lightning, poison, psychic",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned, stunned, unconscious",
+			"resist": [
+				"piercing",
+				"slashing",
+				"necrotic"
+			],
+			"immune": [
+				"lightning",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 97,
@@ -3023,7 +3374,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "114 (12d10+48)",
 			"speed": {
@@ -3035,11 +3388,31 @@
 			"int": 3,
 			"wis": 11,
 			"cha": 1,
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons or adamantine",
-			"immune": "force, lightning, poison, psychic, radiant, thunder",
-			"conditionImmune": "charmed, frightened, paralyzed,",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons or adamantine"
+				}
+			],
+			"immune": [
+				"force",
+				"lightning",
+				"poison",
+				"psychic",
+				"radiant",
+				"thunder"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Understands the language of it's creator but can't speak",
 			"cr": "7",
 			"page": 126,
@@ -3095,7 +3468,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "152 (16d10+64)",
 			"speed": {
@@ -3107,11 +3482,29 @@
 			"int": 3,
 			"wis": 11,
 			"cha": 1,
-			"resist": "cold",
-			"immune": "bludgeoning, piercing, and slashing damage from nonmagical weapons or adamantine, fire, poison, psychic",
-			"conditionImmune": "charmed, frightened, paralyzed",
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from weapons that are neither magical nor adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "darkvision",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Understands the language of it's creator but can't speak",
 			"cr": "9",
 			"page": 127,
@@ -3167,7 +3560,9 @@
 			"size": "M",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "42 (5d10+15)",
 			"speed": {
@@ -3179,9 +3574,28 @@
 			"int": 6,
 			"wis": 8,
 			"cha": 2,
-			"resist": "cold, fire, lightning",
-			"immune": "bludgeoning, piercing, and slashing damage from nonmagical weapons or adamantine, poison, psychic",
-			"conditionImmune": "charmed, frightened, paralyzed",
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from weapons that are neither magical nor adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -1,
 			"languages": "Understands the language of it's creator but can't speak",
@@ -3221,7 +3635,9 @@
 			"size": "M",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "60 (8d8+24)",
 			"speed": {
@@ -3233,12 +3649,32 @@
 			"int": 3,
 			"wis": 9,
 			"cha": 1,
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons or adamantine",
-			"immune": "cold, poison, psychic, radiant",
-			"conditionImmune": "charmed, frightened, paralyzed",
-			"vulnerable": "fire",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons or adamantine"
+				}
+			],
+			"immune": [
+				"cold",
+				"poison",
+				"psychic",
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Understands the language of it's creator but can't speak",
 			"cr": "3",
 			"page": 129,
@@ -3282,7 +3718,9 @@
 			"size": "M",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "9 (2d8)",
 			"speed": {
@@ -3297,12 +3735,31 @@
 			"skill": {
 				"acrobatics": "+5"
 			},
-			"resist": "bludgeoning damage from nonmagical weapons",
-			"immune": "necrotic, piercing, poison, psychic",
-			"conditionImmune": "frightened, poisoned, stunned, unconscious",
-			"vulnerable": "fire",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (understands but can't speak)",
 			"cr": "1/8",
 			"page": 180,
@@ -3328,7 +3785,9 @@
 			"size": "M",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (scale mail)",
 			"hp": "65 (10d8+20)",
 			"speed": {
@@ -3340,11 +3799,34 @@
 			"int": 5,
 			"wis": 11,
 			"cha": 12,
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons, acid, lightning",
-			"immune": "cold, fire, necrotic, poison, psychic",
-			"conditionImmune": "charmed, frightened, paralyzed, poisoned, stunned, unconscious",
+			"resist": [
+				"acid",
+				"lightning",
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"cold",
+				"fire",
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "none",
 			"cr": "3",
 			"page": 206,
@@ -3376,7 +3858,9 @@
 			"size": "L",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "114 (12d10+48)",
 			"speed": {
@@ -3392,8 +3876,12 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"immune": "acid",
-			"conditionImmune": "paralyzed",
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Draconic",
@@ -3491,7 +3979,9 @@
 			"size": "L",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "114 (12d10+48)",
 			"speed": {
@@ -3507,8 +3997,12 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"immune": "electricity",
-			"conditionImmune": "paralyzed",
+			"immune": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Draconic",
@@ -3606,7 +4100,9 @@
 			"size": "L",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "114 (12d10+48)",
 			"speed": {
@@ -3622,8 +4118,12 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"immune": "acid",
-			"conditionImmune": "paralyzed",
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Draconic",
@@ -3721,7 +4221,9 @@
 			"size": "L",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "114 (12d10+48)",
 			"speed": {
@@ -3737,8 +4239,12 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"immune": "fire",
-			"conditionImmune": "paralyzed",
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Draconic",
@@ -3836,7 +4342,9 @@
 			"size": "L",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "114 (12d10+48)",
 			"speed": {
@@ -3852,8 +4360,12 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"immune": "cold",
-			"conditionImmune": "paralyzed",
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Draconic",
@@ -3951,7 +4463,10 @@
 			"size": "S",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "27 (6d6+6)",
 			"speed": {
@@ -3967,10 +4482,14 @@
 			"skill": {
 				"stealth": "+3"
 			},
-			"immune": "fire",
-			"conditionImmune": "paralyzed",
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"paralyzed"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Draconic",
 			"cr": "1",
 			"page": 86,
@@ -4014,7 +4533,10 @@
 			"size": "S",
 			"type": "dragon",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "22 (5d6+5)",
 			"speed": {
@@ -4027,9 +4549,16 @@
 			"int": 7,
 			"wis": 7,
 			"cha": 10,
-			"immune": "cold",
-			"conditionImmune": "paralyzed, unconscious",
-			"vulnerable": "fire",
+			"immune": [
+				"cold"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -1,
 			"languages": "Draconic",
@@ -4100,7 +4629,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "168 (16d12+64)",
 			"speed": {
@@ -4117,7 +4649,12 @@
 				"athletics": "+9",
 				"perception": "+5"
 			},
-			"conditionImmune": "paralyzed, prone, stunned, unconscious",
+			"conditionImmune": [
+				"paralyzed",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 15,
 			"languages": "Aquan, Draconic",
@@ -4178,7 +4715,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "232 (16d20+64)",
 			"speed": {
@@ -4195,7 +4735,12 @@
 				"athletics": "+10",
 				"perception": "+6"
 			},
-			"conditionImmune": "paralyzed, prone, stunned, unconscious",
+			"conditionImmune": [
+				"paralyzed",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 16,
 			"languages": "Aquan, Draconic",
@@ -4256,7 +4801,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18",
 			"hp": "85 (10d10+30)",
 			"speed": {
@@ -4273,7 +4821,12 @@
 				"athletics": "+7",
 				"perception": "+3"
 			},
-			"conditionImmune": "paralyzed, prone, stunned, unconscious",
+			"conditionImmune": [
+				"paralyzed",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "Aquan, Draconic",
@@ -4306,7 +4859,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "19 (natural armor)",
 			"hp": "310 (20d20+100)",
 			"speed": {
@@ -4324,7 +4880,12 @@
 				"athletics": "+14",
 				"perception": "+9"
 			},
-			"conditionImmune": "paralyzed, prone, stunned, unconscious",
+			"conditionImmune": [
+				"paralyzed",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 19,
 			"languages": "Understands Aquan and Draconic but seldom speaks",
@@ -4429,7 +4990,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14",
 			"hp": "97 (13d10+26)",
 			"speed": {
@@ -4447,7 +5011,12 @@
 				"athletics": "+4",
 				"perception": "+4"
 			},
-			"conditionImmune": "paralyzed, prone, stunned, unconscious",
+			"conditionImmune": [
+				"paralyzed",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Understands Aquan but seldom speaks",
@@ -4485,7 +5054,9 @@
 			"size": "M",
 			"type": "elemental",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -4498,11 +5069,17 @@
 			"int": 3,
 			"wis": 11,
 			"cha": 7,
-			"immune": "fire",
-			"conditionImmune": "prone",
-			"vulnerable": "thunder",
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"vulnerable": [
+				"thunder"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 148,
@@ -4534,7 +5111,9 @@
 			"size": "L",
 			"type": "elemental",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "75 (10d10+20)",
 			"speed": {
@@ -4549,11 +5128,23 @@
 			"skill": {
 				"athletics": "+5"
 			},
-			"resist": "bludgeoning, and slashing damage from nonmagical weapons",
-			"immune": "fire",
-			"vulnerable": "cold",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "blindsight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Ignan (understands but can't speak)",
 			"cr": "4",
 			"page": 166,
@@ -4591,7 +5182,9 @@
 			"size": "L",
 			"type": "elemental",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "26 (4d10+4)",
 			"speed": {
@@ -4604,11 +5197,26 @@
 			"int": 4,
 			"wis": 11,
 			"cha": 11,
-			"resist": "piercing and slashing damage from nonmagical weapons",
-			"immune": "poison",
-			"conditionImmune": "paralyzed, poisoned, prone, stunned, unconscoius",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Understands Terran but can't speak",
 			"cr": "1",
 			"page": 196,
@@ -4634,7 +5242,10 @@
 			"size": "L",
 			"type": "elemental",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural aromr)",
 			"hp": "76 (9d10+27)",
 			"speed": {
@@ -4649,10 +5260,27 @@
 			"skill": {
 				"athletics": "+4"
 			},
-			"resist": "piercing and slashing damage from nonmagical weapons",
-			"immune": "fire, poison",
-			"conditionImmune": "paralyzed, poisoned, stunned, unconscious",
-			"vulnerable": "cold",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Ignan, Terran",
@@ -4704,7 +5332,9 @@
 			"size": "S",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "11",
 			"hp": "9 (2d6+2)",
 			"speed": {
@@ -4725,7 +5355,16 @@
 				"nature": "+3",
 				"stealth": "+5"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common, Sylvan",
@@ -4791,7 +5430,10 @@
 			"size": "L",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "95 (10d10+40)",
 			"speed": {
@@ -4864,7 +5506,10 @@
 			"size": "L",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "104 (11d10+44)",
 			"speed": {
@@ -4880,7 +5525,16 @@
 			"skill": {
 				"stealth": "+5"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonsilver or nongood weapons",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonsilver or nongood weapons"
+				}
+			],
 			"senses": "blindsight 10 ft., darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Understands Common and Sylvan but can't speak",
@@ -4956,7 +5610,10 @@
 			"size": "S",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "13 (leather armor)",
 			"hp": "27 (6d6+6)",
 			"speed": {
@@ -4972,8 +5629,21 @@
 				"sleight of hand": "+4",
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"conditionImmune": "charmed, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common, Sylvan",
@@ -5075,7 +5745,9 @@
 			"size": "M",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "11",
 			"hp": "45 (7d8+14)",
 			"speed": {
@@ -5121,7 +5793,10 @@
 			"size": "S",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "11",
 			"hp": "3 (1d6)",
 			"speed": {
@@ -5192,7 +5867,10 @@
 			"size": "S",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "7 (2d6)",
 			"speed": {
@@ -5271,7 +5949,10 @@
 			"size": "S",
 			"type": "fey",
 			"source": "FEF 3pp",
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "11",
 			"hp": "18 (4d6+4)",
 			"speed": {
@@ -5287,7 +5968,15 @@
 				"perception": "+3",
 				"survival": "+3"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "Terran, Undercommon",
@@ -5358,7 +6047,10 @@
 			"size": "M",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (chain shirt)",
 			"hp": "78 (12d8+24)",
 			"speed": {
@@ -5373,10 +6065,27 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical waepons",
-			"immune": "cold, psychic",
-			"conditionImmune": "frightened, stunned",
-			"vulnerable": "fire",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical waepons"
+				}
+			],
+			"immune": [
+				"cold",
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"stunned"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common",
@@ -5435,7 +6144,10 @@
 			"size": "L",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "19 (natural armor)",
 			"hp": "287 (25d10+150)",
 			"speed": {
@@ -5456,8 +6168,21 @@
 				"intimidation": "+10",
 				"perception": "+11"
 			},
-			"resist": "acid, cold, fire, all damage not inflicted by good-aligned attackers or good-aligned weapons",
-			"immune": "lightning, poison, all damage from water-based or water-effecting spells",
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				{
+					"special": "all damage not inflicted by good-aligned attackers or good-aligned weapons"
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison",
+				{
+					"special": "all damage from water-based or water-effecting spells"
+				}
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 21,
 			"languages": "Abyssal, Celestial, Common, Draconic, Giant, Infernal, telepathy to 100 ft.",
@@ -5615,7 +6340,10 @@
 			"size": "L",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "161 (19d10+76)",
 			"speed": {
@@ -5629,9 +6357,28 @@
 			"wis": 15,
 			"cha": 18,
 			"save": "Dex +9, Con +9, Int +9, Cha +9",
-			"resist": "acid, cold, psychic",
-			"immune": "bludgeoning, piercing, and slashing from nonmagical weapons, lightning, poison",
-			"conditionImmune": "charmed, frightened, poisoned",
+			"resist": [
+				"acid",
+				"cold",
+				"psychic"
+			],
+			"immune": [
+				"lightning",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 2,
 			"languages": "Abyssal",
@@ -5702,7 +6449,10 @@
 			"size": "M",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (half plate armor +1)",
 			"hp": "81 (10d8+36)",
 			"speed": {
@@ -5734,7 +6484,16 @@
 				"performance": "+7",
 				"persuasion": "+7"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
 			"senses": "truesight 60 ft.",
 			"passive": 17,
 			"languages": "Abyssal, Common",
@@ -5809,7 +6568,9 @@
 			"size": "S",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13",
 			"hp": "13 (3d6+3)",
 			"speed": {
@@ -5826,8 +6587,12 @@
 				"acrobatics": "+5",
 				"stealth": "+5"
 			},
-			"immune": "fire",
-			"vulnerable": "cold",
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -5847,7 +6612,10 @@
 			"size": "L",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "97 (13d10+26)",
 			"speed": {
@@ -5866,8 +6634,13 @@
 				"intimidation": "+5",
 				"perception": "+3"
 			},
-			"immune": "acid, fire",
-			"vulnerable": "cold",
+			"immune": [
+				"acid",
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "Auran, Ignan",
@@ -5943,7 +6716,10 @@
 			"size": "L",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "76 (9d10+27)",
 			"speed": {
@@ -5961,11 +6737,21 @@
 				"history": "+6",
 				"stealth": "+3"
 			},
-			"resist": "piercing, slashing, acid",
-			"immune": "bludgeoning",
-			"conditionImmune": "blinded, deafened, prone",
+			"resist": [
+				"piercing",
+				"slashing",
+				"acid"
+			],
+			"immune": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"prone"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Abyssal, Deep Speech, Primordial",
 			"cr": "4",
 			"page": 119,
@@ -6056,7 +6842,9 @@
 			"size": "S",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "33 (6d6+12)",
 			"speed": {
@@ -6069,10 +6857,19 @@
 			"int": 10,
 			"wis": 11,
 			"cha": 10,
-			"immune": "cold, fire, poison",
-			"conditionImmune": "paralyzed, poisoned, stunned, unconscious",
+			"immune": [
+				"cold",
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common, Ignan (understands but can't speak)",
 			"cr": "2",
 			"page": 157,
@@ -6122,7 +6919,10 @@
 			"size": "L",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "13",
 			"hp": "19 (3d10+3)",
 			"speed": {
@@ -6134,9 +6934,18 @@
 			"int": 7,
 			"wis": 10,
 			"cha": 12,
-			"immune": "bludgeoning, piercing, and slashing damage from nonmagical or nonsilver weapons",
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical or nonsilver weapons"
+				}
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Abyssal",
 			"cr": "1",
 			"page": 159,
@@ -6174,7 +6983,10 @@
 			"size": "S",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "13 (3d6+3)",
 			"speed": {
@@ -6188,7 +7000,7 @@
 			"wis": 11,
 			"cha": 12,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Infernal",
 			"cr": "1/4",
 			"page": 197,
@@ -6214,7 +7026,10 @@
 			"size": "M",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "22 (5d8)",
 			"speed": {
@@ -6229,10 +7044,26 @@
 			"skill": {
 				"stealth": "+6"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "poisoned",
-			"vulnerable": "radiant",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"vulnerable": [
+				"radiant"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -6271,7 +7102,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "168 (16d10+80)",
 			"speed": {
@@ -6285,9 +7119,29 @@
 			"wis": 17,
 			"cha": 18,
 			"save": "Dex +8, Con +9, Wis +7",
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"immune": "cold, psychic, thunder",
-			"conditionImmune": "charmed, frightened, paralyzed, prone, restrained, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"psychic",
+				"thunder"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 3,
 			"languages": "Abyssal, telepathy",
@@ -6365,7 +7219,9 @@
 			"size": "H",
 			"type": "giant",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13 (hide armor)",
 			"hp": "115 (11d12+44)",
 			"speed": {
@@ -6381,7 +7237,7 @@
 				"intimidation": "+3"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Giant",
 			"cr": "6",
 			"page": 26,
@@ -6437,7 +7293,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (chains)",
 			"hp": "126 (11d12+55)",
 			"speed": {
@@ -6507,7 +7366,10 @@
 			"size": "L",
 			"type": "giant",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "105 (10d10+50)",
 			"speed": {
@@ -6561,7 +7423,10 @@
 			"size": "S",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "15 (rag armor, see below)",
 			"hp": "16 (3d6+6)",
 			"speed": {
@@ -6577,7 +7442,7 @@
 				"sleight of hand": "+5",
 				"stealth": "+7"
 			},
-			"passive": 0,
+			"passive": 10,
 			"languages": "Deep Speech, Undercommon",
 			"cr": "1/4",
 			"page": 74,
@@ -6627,7 +7492,10 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "15 (hide armor)",
 			"hp": "48 (6d8+12)",
 			"speed": {
@@ -6643,7 +7511,7 @@
 				"sleight of hand": "+5",
 				"stealth": "+7"
 			},
-			"passive": 0,
+			"passive": 10,
 			"languages": "Deep Speech, Undercommon",
 			"cr": "2",
 			"page": 74,
@@ -6706,7 +7574,9 @@
 			"size": "S",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13",
 			"hp": "9 (2d6+2)",
 			"speed": {
@@ -6776,7 +7646,9 @@
 			"size": "S",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13",
 			"hp": "9 (2d6+2)",
 			"speed": {
@@ -6878,7 +7750,10 @@
 			"size": "S",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13",
 			"hp": "7 (2d6)",
 			"speed": {
@@ -6933,7 +7808,9 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -6945,10 +7822,17 @@
 			"int": 10,
 			"wis": 11,
 			"cha": 11,
-			"immune": "fire, damage from metal weapons",
-			"vulnerable": "cold",
+			"immune": [
+				"fire",
+				{
+					"special": "damage from metal weapons"
+				}
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Ignan",
 			"cr": "1",
 			"page": 161,
@@ -6998,7 +7882,9 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -7010,10 +7896,17 @@
 			"int": 10,
 			"wis": 11,
 			"cha": 13,
-			"immune": "fire, damage from metal weapons",
-			"vulnerable": "cold",
+			"immune": [
+				"fire",
+				{
+					"special": "damage from metal weapons"
+				}
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Ignan",
 			"cr": "1",
 			"page": 161,
@@ -7088,7 +7981,9 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -7168,7 +8063,9 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -7275,7 +8172,10 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -7290,7 +8190,7 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common, Unique",
 			"cr": "1",
 			"page": 213,
@@ -7334,7 +8234,10 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "13",
 			"hp": "18 (4d8)",
 			"speed": {
@@ -7395,7 +8298,10 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "12",
 			"hp": "11 (2d8+2)",
 			"speed": {
@@ -7457,7 +8363,9 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -7473,8 +8381,12 @@
 				"athletics": "+5",
 				"survival": "+3"
 			},
-			"immune": "cold",
-			"vulnerable": "fire",
+			"immune": [
+				"cold"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"passive": 1,
 			"languages": "Unique",
 			"cr": "1",
@@ -7522,7 +8434,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -7541,9 +8456,18 @@
 			"int": 7,
 			"wis": 10,
 			"cha": 8,
-			"immune": "bludgeoning, piercing and slashing damage from nonmagical and nonsilver weapons",
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical and nonsilver weapons"
+				}
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common, Unique",
 			"cr": "2",
 			"page": 246,
@@ -7579,7 +8503,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "103 (9d10+54)",
 			"speed": {
@@ -7596,8 +8522,16 @@
 				"athletics": "+4",
 				"stealth": "+0"
 			},
-			"resist": "poison",
-			"conditionImmune": "paralyzed, poisoned, prone, stunned, unconscious",
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Common, Draconic (understands but can't speak)",
@@ -7655,7 +8589,9 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "78 (12d6+36)",
 			"speed": {
@@ -7668,9 +8604,15 @@
 			"int": 2,
 			"wis": 13,
 			"cha": 11,
-			"resist": "fire",
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -7716,7 +8658,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "95 (10d10+40)",
 			"speed": {
@@ -7778,7 +8723,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15",
 			"hp": "59 (7d10+21)",
 			"speed": {
@@ -7839,7 +8786,9 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13",
 			"hp": "5 (2d6-2)",
 			"speed": {
@@ -7882,7 +8831,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "39 (6d10+6)",
 			"speed": {
@@ -7898,7 +8849,7 @@
 				"stealth": "+4"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"cr": "1",
 			"page": 32,
 			"trait": [
@@ -7929,7 +8880,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "87 (8d10+32)",
 			"speed": {
@@ -7942,8 +8895,12 @@
 			"int": 4,
 			"wis": 13,
 			"cha": 11,
-			"conditionImmune": "Prone",
-			"vulnerable": "thunder",
+			"conditionImmune": [
+				"prone"
+			],
+			"vulnerable": [
+				"thunder"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -7975,7 +8932,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "76 ( 8d10+24)",
 			"speed": {
@@ -7987,8 +8946,12 @@
 			"int": 4,
 			"wis": 8,
 			"cha": 4,
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -1,
 			"languages": "None",
@@ -8022,7 +8985,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "51 (6d10+18)",
 			"speed": {
@@ -8038,8 +9003,12 @@
 			"skill": {
 				"perception": "+2"
 			},
-			"immune": "psychic",
-			"conditionImmune": "frightened",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 12,
 			"languages": "None",
@@ -8079,7 +9048,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "57 (6d10+24)",
 			"speed": {
@@ -8135,7 +9107,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "13",
 			"hp": "13 (3d8)",
 			"speed": {
@@ -8196,7 +9171,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "45 (6d10+12)",
 			"speed": {
@@ -8210,7 +9188,7 @@
 			"wis": 10,
 			"cha": 11,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "4",
 			"page": 66,
@@ -8254,7 +9232,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -8308,7 +9289,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "59 (7d10+21)",
 			"speed": {
@@ -8322,9 +9305,12 @@
 			"wis": 11,
 			"cha": 5,
 			"save": "Wis +2",
-			"conditionImmune": "blinded, prone",
+			"conditionImmune": [
+				"blinded",
+				"prone"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 78,
@@ -8354,7 +9340,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "11",
 			"hp": "11 (2d8+2)",
 			"speed": {
@@ -8394,7 +9383,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -8412,7 +9404,9 @@
 				"acrobatics": "+5",
 				"stealth": "+5"
 			},
-			"resist": "fire",
+			"resist": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common, Unique (Eblis)",
@@ -8474,7 +9468,9 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -8530,7 +9526,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (padded leather)",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -8600,7 +9599,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "34 (4d10+12)",
 			"speed": {
@@ -8613,10 +9614,14 @@
 			"int": 1,
 			"wis": 11,
 			"cha": 2,
-			"immune": "fire",
-			"vulnerable": "cold",
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "2",
 			"page": 101,
@@ -8654,7 +9659,9 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "4 (1d6+1)",
 			"speed": {
@@ -8667,10 +9674,14 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 2,
-			"immune": "fire",
-			"vulnerable": "cold",
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/8",
 			"page": 101,
@@ -8702,7 +9713,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "38 (4d10+16)",
 			"speed": {
@@ -8718,9 +9731,17 @@
 			"skill": {
 				"perception": "+3"
 			},
-			"resist": "fire",
-			"immune": "poison",
-			"conditionImmune": "blinded, poisoned, prone",
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"poisoned",
+				"prone"
+			],
 			"senses": "blindsight 60 ft.",
 			"passive": 13,
 			"languages": "Unique (Flail Snail)",
@@ -8811,7 +9832,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "52 (7d10+21)",
 			"speed": {
@@ -8885,7 +9909,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "55 (10d8+10)",
 			"speed": {
@@ -8898,11 +9925,25 @@
 			"int": 6,
 			"wis": 11,
 			"cha": 7,
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons or nt made of adamantine",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, poisoned",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons or nt made of adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft (while motionless)",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "4",
 			"page": 113,
@@ -8946,7 +9987,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "34 (4d8+16)",
 			"speed": {
@@ -8962,11 +10006,26 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons or not made of adamantine",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, paralyzed, poisoned",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons or not made of adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft. (while motionless)",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common, Terran",
 			"cr": "1",
 			"page": 115,
@@ -9010,7 +10069,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "114 (12d8+60)",
 			"speed": {
@@ -9026,9 +10088,24 @@
 			"skill": {
 				"stealth": "+5"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons or not made of adamantine",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, paralyzed, poisoned",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons or not made of adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft. (while motionless)",
 			"passive": 1,
 			"languages": "Common, Terran",
@@ -9074,7 +10151,9 @@
 			"size": "H",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "12",
 			"hp": "159 (13d12+75)",
 			"speed": {
@@ -9091,8 +10170,12 @@
 				"perception": "+9",
 				"stealth": "+6"
 			},
-			"conditionImmune": "prone",
-			"vulnerable": "radiant",
+			"conditionImmune": [
+				"prone"
+			],
+			"vulnerable": [
+				"radiant"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 19,
 			"languages": "None",
@@ -9138,7 +10221,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "95 (10d10+40)",
 			"speed": {
@@ -9251,7 +10336,9 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -9293,7 +10380,9 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "5 (2d4)",
 			"speed": {
@@ -9306,7 +10395,7 @@
 			"wis": 10,
 			"cha": 3,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 141,
@@ -9344,7 +10433,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "12",
 			"hp": "34 (4d10+12)",
 			"speed": {
@@ -9389,7 +10481,9 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -9405,8 +10499,12 @@
 				"perception": "+3",
 				"stealth": "+5"
 			},
-			"immune": "cold",
-			"vulnerable": "fire",
+			"immune": [
+				"cold"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "None",
@@ -9446,7 +10544,9 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "4 (1d8)",
 			"speed": {
@@ -9488,7 +10588,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -9546,7 +10648,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -9604,7 +10708,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "27 (5d8+5)",
 			"speed": {
@@ -9673,7 +10780,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "39 (6d10+6)",
 			"speed": {
@@ -9691,7 +10801,7 @@
 				"stealth": "+4"
 			},
 			"senses": "drakvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Unique (Leucrotta)",
 			"cr": "2",
 			"page": 164,
@@ -9741,7 +10851,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "10 (3d8-3)",
 			"speed": {
@@ -9759,7 +10872,7 @@
 				"stealth": "+4"
 			},
 			"senses": "drakvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Unique (Leucrotta)",
 			"cr": "1/4",
 			"page": 164,
@@ -9809,7 +10922,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "68 (8d10+24)",
 			"speed": {
@@ -9825,9 +10940,11 @@
 			"skill": {
 				"stealth": "+3"
 			},
-			"resist": "pyschic",
+			"resist": [
+				"psychic"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "4",
 			"page": 165,
@@ -9865,7 +10982,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "4 (1d8)",
 			"speed": {
@@ -9879,7 +10999,7 @@
 			"wis": 11,
 			"cha": 6,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/8",
 			"page": 169,
@@ -9897,7 +11017,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "39 (6d10+6)",
 			"speed": {
@@ -9910,8 +11033,13 @@
 			"wis": 14,
 			"cha": 15,
 			"save": "Dex +5",
-			"immune": "poison",
-			"conditionImmune": "charmed, poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Common, telepathy (with charmed primates)",
@@ -9945,7 +11073,10 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "21 (6d6)",
 			"speed": {
@@ -9958,8 +11089,12 @@
 			"int": 3,
 			"wis": 13,
 			"cha": 9,
-			"immune": "fire",
-			"vulnerable": "cold",
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Understands Common but can't speak",
@@ -9987,7 +11122,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "59 (7d10+21)",
 			"speed": {
@@ -10000,7 +11138,10 @@
 			"wis": 12,
 			"cha": 9,
 			"save": "Con +5",
-			"conditionImmune": "charmed, stunned",
+			"conditionImmune": [
+				"charmed",
+				"stunned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common",
@@ -10046,7 +11187,9 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "16 (3d8+3)",
 			"speed": {
@@ -10081,7 +11224,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -10132,7 +11278,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "45 (7d10+7)",
 			"speed": {
@@ -10147,7 +11295,9 @@
 			"skill": {
 				"stealth": "+6"
 			},
-			"immune": "fire",
+			"immune": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
 			"passive": 2,
 			"languages": "Common",
@@ -10193,7 +11343,9 @@
 			"size": "H",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "115 (11d12+44)",
 			"speed": {
@@ -10211,7 +11363,15 @@
 				"perception": "+5",
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": 15,
 			"languages": "Common",
@@ -10245,7 +11405,10 @@
 			"size": "H",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14",
 			"hp": "149 (13d12+65)",
 			"speed": {
@@ -10259,11 +11422,19 @@
 			"wis": 10,
 			"cha": 6,
 			"save": "Dex +8",
-			"resist": "bludgeoning, fire",
-			"immune": "acid",
-			"conditionImmune": "charmed, prone",
+			"resist": [
+				"bludgeoning",
+				"fire"
+			],
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"charmed",
+				"prone"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "9",
 			"page": 242,
@@ -10319,7 +11490,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "9 (2d8)",
 			"speed": {
@@ -10333,7 +11507,7 @@
 			"wis": 11,
 			"cha": 10,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Unique, Undercommon",
 			"cr": "1/8",
 			"page": 243,
@@ -10357,7 +11531,9 @@
 			"size": "S",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "1 (1d6-2)",
 			"speed": {
@@ -10370,7 +11546,7 @@
 			"wis": 10,
 			"cha": 3,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "0",
 			"page": 249,
@@ -10401,7 +11577,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (studded leather)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -10415,7 +11594,7 @@
 			"wis": 11,
 			"cha": 13,
 			"senses": "darkvision 60 ft., tremorsense 60 ft. in water",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Aquan",
 			"cr": "1",
 			"page": 233,
@@ -10489,7 +11668,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (studded leather)",
 			"hp": "70 (10d10+20)",
 			"speed": {
@@ -10503,7 +11685,7 @@
 			"wis": 11,
 			"cha": 13,
 			"senses": "darkvision 60 ft., tremorsense 60 ft. in water",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Aquan",
 			"cr": "5",
 			"page": 233,
@@ -10546,7 +11728,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (studded leather)",
 			"hp": "50 (7d10+14)",
 			"speed": {
@@ -10560,7 +11745,7 @@
 			"wis": 11,
 			"cha": 13,
 			"senses": "darkvision 60 ft., tremorsense 60 ft. in water",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Aquan",
 			"cr": "3",
 			"page": 233,
@@ -10610,7 +11795,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (studded leather)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -10706,7 +11894,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "114 (12d12+36)",
 			"speed": {
@@ -10772,7 +11962,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "12",
 			"hp": "32 (5d8+10)",
 			"speed": {
@@ -10849,7 +12042,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "13 (3d8)",
 			"speed": {
@@ -10867,7 +12063,15 @@
 			"skill": {
 				"deception": "+4"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical or nonadamantine weapons",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical or nonadamantine weapons"
+				},
+				"bludgeoning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common",
@@ -10918,7 +12122,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -10937,7 +12144,15 @@
 				"deception": "+4",
 				"stealth": "+5"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical or nonadamantine weapons",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical or nonadamantine weapons"
+				},
+				"bludgeoning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common",
@@ -10994,7 +12209,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13",
 			"hp": "13 (3d8)",
 			"speed": {
@@ -11017,7 +12235,15 @@
 				"deception": "+4",
 				"perception": "+4"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical or nonadamantine weapons",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical or nonadamantine weapons"
+				},
+				"bludgeoning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common",
@@ -11062,7 +12288,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -11081,7 +12310,15 @@
 				"deception": "+4",
 				"perception": "+4"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical or nonadamantine weapons",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical or nonadamantine weapons"
+				},
+				"bludgeoning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common",
@@ -11133,7 +12370,9 @@
 			"size": "L",
 			"type": "ooze",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "75 (10d10+20)",
 			"speed": {
@@ -11148,9 +12387,23 @@
 			"skill": {
 				"stealth": "+2"
 			},
-			"immune": "bludgeoning, piercing and slashing from nonmagical weapons",
-			"conditionImmune": "prone, paralyzed",
-			"vulnerable": "radiant",
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"prone",
+				"paralyzed"
+			],
+			"vulnerable": [
+				"radiant"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -1,
 			"languages": "None",
@@ -11196,7 +12449,9 @@
 			"size": "L",
 			"type": "ooze",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14",
 			"hp": "85 (10d8+40)",
 			"speed": {
@@ -11208,11 +12463,34 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 10,
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons, cold",
-			"immune": "acid, lightning, poison",
-			"conditionImmune": "paralyzed, poisoned, restrained, stunned, unconscious, magic missile",
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				},
+				{
+					"special": "magic missile"
+				}
+			],
+			"immune": [
+				"acid",
+				"lightning",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "5",
 			"page": 151,
@@ -11268,7 +12546,9 @@
 			"size": "L",
 			"type": "ooze",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "5",
 			"hp": "57 (6d10+24)",
 			"speed": {
@@ -11281,9 +12561,28 @@
 			"int": 0,
 			"wis": 1,
 			"cha": 1,
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
-			"immune": "cold, psychic",
-			"conditionImmune": "blinded, exhaustion, frightened, paralyzed, poisoned, prone, stunned",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"cold",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": -4,
 			"languages": "None",
@@ -11329,7 +12628,9 @@
 			"size": "L",
 			"type": "ooze",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "115 (10d10+60)",
 			"speed": {
@@ -11342,10 +12643,32 @@
 			"int": 1,
 			"wis": 1,
 			"cha": 1,
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
-			"immune": "fire, poison, psychic",
-			"conditionImmune": "blinded, exhaustion, frightened, paralyzed, poisoned, prone, stunned",
-			"vulnerable": "cold",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": -4,
 			"languages": "None",
@@ -11385,7 +12708,9 @@
 			"size": "M",
 			"type": "ooze",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "10",
 			"hp": "42 (5d8+20)",
 			"speed": {
@@ -11397,11 +12722,24 @@
 			"int": 0,
 			"wis": 10,
 			"cha": 7,
-			"resist": "fire",
-			"immune": "poison, psychic",
-			"conditionImmune": "blinded, exhaustion, frightened, paralyzed, poisoned, prone, stunned",
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
 			"senses": "blindsight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "2",
 			"page": 187,
@@ -11451,7 +12789,9 @@
 			"size": "S",
 			"type": "ooze",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14",
 			"hp": "32 (5d6+15)",
 			"speed": {
@@ -11467,10 +12807,21 @@
 			"skill": {
 				"stealth": "+6"
 			},
-			"immune": "poison, psychic",
-			"conditionImmune": "blinded, charmed, exhaustion, paralyzed, poisoned, prone, stunned",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
 			"senses": "blindsight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 215,
@@ -11513,7 +12864,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "39 (6d10+6)",
 			"speed": {
@@ -11528,9 +12881,28 @@
 			"skill": {
 				"stealth": "+5"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"immune": "psychic",
-			"conditionImmune": "blinded, charmed, frightened, paralyzed, poisoned, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -4,
 			"languages": "None",
@@ -11582,7 +12954,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "57 (6d10+24)",
 			"speed": {
@@ -11595,9 +12969,17 @@
 			"wis": 11,
 			"cha": 11,
 			"save": "Con +6",
-			"conditionImmune": "blinded, charmed, deafened, frightened, prone, stunned, unconscious",
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "blindsight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 30,
@@ -11635,7 +13017,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "51 (6d10+18)",
 			"speed": {
@@ -11648,9 +13032,18 @@
 			"wis": 13,
 			"cha": 9,
 			"save": "Con +5",
-			"immune": "psychic",
-			"conditionImmune": "frightened, exhaustion, stunned, unconscious",
-			"vulnerable": "necrotic",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"exhaustion",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"necrotic"
+			],
 			"senses": "tremorsense 30 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -11670,7 +13063,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "19 (3d10+3)",
 			"speed": {
@@ -11686,9 +13081,25 @@
 			"skill": {
 				"stealth": "+3"
 			},
-			"resist": "bludgeoning, and piercing damage from nonmagical weapons",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": -5,
 			"languages": "None",
@@ -11722,7 +13133,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "10",
 			"hp": "103 (9d10+54)",
 			"speed": {
@@ -11737,9 +13150,24 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, and piercing damage from nonmagical weapons",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -11779,7 +13207,9 @@
 			"size": "H",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "225 (18d12+108)",
 			"speed": {
@@ -11794,9 +13224,25 @@
 			"skill": {
 				"perception": "+5"
 			},
-			"resist": "bludgeoning, and piercing damage from nonmagical weapons, fire",
-			"immune": "psychic",
-			"conditionImmune": "frightened, prone, stunned, unconscious",
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": 15,
 			"languages": "Common (understands but can't speak)",
@@ -11842,7 +13288,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -11854,10 +13302,16 @@
 			"int": 4,
 			"wis": 10,
 			"cha": 1,
-			"immune": "psychic",
-			"conditionImmune": "frightened, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (Understands but can't speak)",
 			"cr": "2",
 			"page": 112,
@@ -11901,7 +13355,10 @@
 			"size": "H",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "132 (11d12+55)",
 			"speed": {
@@ -11917,8 +13374,13 @@
 				"perception": "+4",
 				"stealth": "+5"
 			},
-			"resist": "bludgeoning, piercing",
-			"vulnerable": "fire",
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common",
@@ -11991,7 +13453,10 @@
 			"size": "S",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "17 (5d6)",
 			"speed": {
@@ -12004,8 +13469,14 @@
 			"int": 7,
 			"wis": 12,
 			"cha": 16,
-			"immune": "psychic",
-			"conditionImmune": "frightened, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "truesight 60 ft.",
 			"passive": 1,
 			"languages": "Telepathy",
@@ -12036,7 +13507,10 @@
 			"size": "H",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "92 (8d12+40)",
 			"speed": {
@@ -12048,10 +13522,23 @@
 			"int": 6,
 			"wis": 12,
 			"cha": 10,
-			"resist": "bludgeoning, piercing",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscoius",
-			"vulnerable": "lightning",
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"lightning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common",
@@ -12115,7 +13602,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "8 (natural armor)",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -12128,11 +13617,20 @@
 			"wis": 10,
 			"cha": 10,
 			"save": "Con +4",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
-			"vulnerable": "fire",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 152,
@@ -12162,7 +13660,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "32 (5d8+10)",
 			"speed": {
@@ -12174,8 +13674,17 @@
 			"int": 6,
 			"wis": 12,
 			"cha": 6,
-			"resist": "bludgeoning damage from nonmagical weapons.",
-			"vulnerable": "fire",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": 1,
 			"languages": "Sylvan (understands but can't speak)",
@@ -12207,7 +13716,10 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "27 (5d8+5)",
 			"speed": {
@@ -12224,7 +13736,9 @@
 				"deception": "+5",
 				"persuasion": "+5"
 			},
-			"resist": "fire",
+			"resist": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common, Sylvan, telepathy",
@@ -12270,7 +13784,10 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "9",
 			"hp": "26 (4d8+8)",
 			"speed": {
@@ -12282,9 +13799,22 @@
 			"int": 3,
 			"wis": 6,
 			"cha": 4,
-			"immune": "lightning, piercing, psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
-			"vulnerable": "acid, cold, fire",
+			"immune": [
+				"lightning",
+				"piercing",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"acid",
+				"cold",
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -2,
 			"languages": "None",
@@ -12328,7 +13858,9 @@
 			"size": "H",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "149 (13d12+65)",
 			"speed": {
@@ -12341,10 +13873,22 @@
 			"wis": 13,
 			"cha": 11,
 			"save": "Dex +4, Con +5",
-			"resist": "bludgeoning, piercing",
-			"immune": "lightning, psychic",
-			"conditionImmune": "charmed, stunned, unconscoius",
-			"vulnerable": "fire",
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common, Sylvan",
@@ -12396,7 +13940,10 @@
 			"size": "H",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "76 (8d12+24)",
 			"speed": {
@@ -12409,10 +13956,28 @@
 			"wis": 13,
 			"cha": 12,
 			"save": "Con +6",
-			"resist": "bludgeoning and piercing damage from nonmagical weapons",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
-			"vulnerable": "fire",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Sylvan, Treant",
@@ -12438,7 +14003,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "8",
 			"hp": "93 (11d10+33)",
 			"speed": {
@@ -12453,11 +14020,27 @@
 			"skill": {
 				"athletics": "+4"
 			},
-			"resist": "bludgeoning, slashing",
-			"immune": "poison, psychic",
-			"conditionImmune": "charmed, frightened, poisoned, prone, restrained, stunned, unconscious",
-			"vulnerable": "fire",
-			"passive": 0,
+			"resist": [
+				"bludgeoning",
+				"slashing"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"passive": 10,
 			"languages": "None",
 			"cr": "4",
 			"page": 224,
@@ -12501,7 +14084,10 @@
 			"size": "H",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "105 (10d12+40)",
 			"speed": {
@@ -12514,9 +14100,21 @@
 			"wis": 14,
 			"cha": 10,
 			"save": "Dex +1, Con +7",
-			"resist": "bludgeoning, fire, piercing",
-			"immune": "lightning, psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				"bludgeoning",
+				"fire",
+				"piercing"
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Common, Deep Speech, Sylvan",
@@ -12578,7 +14176,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -12590,10 +14190,18 @@
 			"int": 0,
 			"wis": 10,
 			"cha": 2,
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 30 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/2",
 			"page": 232,
@@ -12637,7 +14245,9 @@
 			"size": "S",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "9",
 			"hp": "27 (5d6+10)",
 			"speed": {
@@ -12652,10 +14262,28 @@
 			"skill": {
 				"athletics": "+5"
 			},
-			"resist": "bludgeoning damage from nonmagical weapons",
-			"immune": "piercing, psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
-			"vulnerable": "slashing",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"piercing",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"slashing"
+			],
 			"senses": "tremorsense 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -12695,7 +14323,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "133 (14d10+56)",
 			"speed": {
@@ -12713,9 +14343,24 @@
 				"perception": "+8",
 				"stealth": "+3"
 			},
-			"resist": "bludgeoning and piercing damage from nonmagical weapons",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft., plantsense 120 ft.",
 			"passive": 18,
 			"languages": "None",
@@ -12779,7 +14424,9 @@
 			"size": "S",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "5",
 			"hp": "3 (1d6)",
 			"speed": {
@@ -12791,7 +14438,19 @@
 			"int": 0,
 			"wis": 0,
 			"cha": 0,
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, poisoned, prone, restrained, stunned, unconscious",
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
 			"passive": -5,
 			"cr": "0",
 			"page": 248,
@@ -12821,7 +14480,9 @@
 			"size": "L",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "25 (3d10+9)",
 			"speed": {
@@ -12833,10 +14494,18 @@
 			"int": 0,
 			"wis": 10,
 			"cha": 8,
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 250,
@@ -12880,7 +14549,10 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "9",
 			"hp": "19 (3d8+6)",
 			"speed": {
@@ -12892,10 +14564,17 @@
 			"int": 2,
 			"wis": 10,
 			"cha": 1,
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 251,
@@ -12926,7 +14605,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "10",
 			"hp": "34 (4d10+12)",
 			"speed": {
@@ -12938,9 +14619,19 @@
 			"int": 2,
 			"wis": 12,
 			"cha": 6,
-			"resist": "fire",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 30 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -12985,7 +14676,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "45 (6d8+18)",
 			"speed": {
@@ -12997,11 +14691,26 @@
 			"int": 4,
 			"wis": 11,
 			"cha": 6,
-			"resist": "piercing damage from nonmagical weapons, lightning",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				"lightning",
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (Understands but can't speak)",
 			"cr": "2",
 			"page": 108,
@@ -13030,7 +14739,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "16 (3d8+3)",
 			"speed": {
@@ -13043,10 +14754,16 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 1,
-			"immune": "psychic",
-			"conditionImmune": "frightened, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "blindsight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/4",
 			"page": 109,
@@ -13077,7 +14794,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "52 (7d8+21)",
 			"speed": {
@@ -13094,11 +14814,20 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, fire",
-			"immune": "pyschic",
-			"conditionImmune": "frightened, stunned, unconscious",
+			"resist": [
+				"bludgeoning",
+				"fire"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft (while motionless)",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (understands but can't speak)",
 			"cr": "3",
 			"page": 114,
@@ -13147,7 +14876,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "11",
 			"hp": "4 (1d6+1)",
 			"speed": {
@@ -13160,11 +14892,20 @@
 			"int": 8,
 			"wis": 10,
 			"cha": 9,
-			"resist": "fire",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/8",
 			"page": 167,
@@ -13193,7 +14934,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "14 (4d10-8)",
 			"speed": {
@@ -13208,11 +14951,25 @@
 			"skill": {
 				"stealth": "+5"
 			},
-			"immune": "lightning, piercing, psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
-			"vulnerable": "acid, cold, fire",
+			"immune": [
+				"lightning",
+				"piercing",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"acid",
+				"cold",
+				"fire"
+			],
 			"senses": "tremorsense 30 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "0",
 			"page": 176,
@@ -13253,7 +15010,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "10",
 			"hp": "22 (5d6+5)",
 			"speed": {
@@ -13265,10 +15025,18 @@
 			"int": 0,
 			"wis": 11,
 			"cha": 1,
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, prone, stunned, unconscious",
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "tremorsense 30 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/2",
 			"page": 182,
@@ -13299,7 +15067,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "8",
 			"hp": "9 (2d8)",
 			"speed": {
@@ -13311,9 +15081,31 @@
 			"int": 0,
 			"wis": 0,
 			"cha": 0,
-			"immune": "bludgeoning, piercing, slashing, cold, fire, necrotic, poison, psychic",
-			"conditionImmune": "blinded, charmed, deafened, frightened, paralyzed, poisoned, prone, restrained, stunned, unconscious",
-			"vulnerable": "acid",
+			"immune": [
+				"bludgeoning",
+				"piercing",
+				"slashing",
+				"cold",
+				"fire",
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"acid"
+			],
 			"passive": -5,
 			"languages": "None",
 			"cr": "1/2",
@@ -13345,7 +15137,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "49 (11d6+11)",
 			"speed": {
@@ -13365,9 +15160,24 @@
 				"perception": "+5",
 				"persuasion": "+4"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
-			"immune": "psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 15,
 			"languages": "Common, Deep Speech, Sylvan, Undercommon",
@@ -13462,7 +15272,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (wicker armor)",
 			"hp": "60 (8d8+24)",
 			"speed": {
@@ -13477,9 +15289,24 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "piercing damage from nonmagical weapons",
-			"immune": "lightning, psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Unique, understands Undercommon but doesn't speak",
@@ -13530,7 +15357,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "10 (3d6)",
 			"speed": {
@@ -13545,11 +15374,26 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "piercing damage from nonmagical weapons",
-			"immune": "lightning, psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Unique, understands Undercommon but doesn't speak",
 			"cr": "1/8",
 			"page": 239,
@@ -13586,7 +15430,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (plant fiber armor)",
 			"hp": "28 (6d6+6)",
 			"speed": {
@@ -13601,9 +15447,24 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "piercing damage from nonmagical weapons",
-			"immune": "lightning, psychic",
-			"conditionImmune": "charmed, frightened, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"lightning",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Unique, understands Undercommon but doesn't speak",
@@ -13643,7 +15504,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "27 (6d8)",
 			"speed": {
@@ -13655,9 +15519,19 @@
 			"int": 11,
 			"wis": 13,
 			"cha": 14,
-			"resist": "fire, necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -13703,7 +15577,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -13720,8 +15597,18 @@
 				"perception": "+4",
 				"persuasion": "+6"
 			},
-			"immune": "cold, lightning, necrotic, poison",
-			"conditionImmune": "frightened, poisoned, exhaustion, unconscious",
+			"immune": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned",
+				"exhaustion",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common, Infernal",
@@ -13779,7 +15666,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "71 (11d8+22)",
 			"speed": {
@@ -13796,8 +15686,18 @@
 				"perception": "+4",
 				"persuasion": "+7"
 			},
-			"immune": "cold, lightning, necrotic, poison",
-			"conditionImmune": "frightened, poisoned, exhaustion, unconscious",
+			"immune": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned",
+				"exhaustion",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common, Infernal",
@@ -13855,7 +15755,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "99 (18d8+18)",
 			"speed": {
@@ -13873,8 +15776,18 @@
 				"perception": "+6",
 				"persuasion": "+8"
 			},
-			"immune": "cold, lightning, necrotic, poison",
-			"conditionImmune": "frightened, poisoned, exhaustion, unconscious",
+			"immune": [
+				"cold",
+				"lightning",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned",
+				"exhaustion",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 16,
 			"languages": "Common, Infernal",
@@ -13938,7 +15851,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "45 (6d8+18)",
 			"speed": {
@@ -13951,9 +15867,26 @@
 			"wis": 13,
 			"cha": 14,
 			"save": "Wis +3",
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons, necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -13999,7 +15932,9 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "11 (plus armor worn)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -14012,10 +15947,18 @@
 			"int": 3,
 			"wis": 10,
 			"cha": 6,
-			"immune": "necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 68,
@@ -14047,7 +15990,9 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "15 (chain shirt)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -14063,9 +16008,26 @@
 				"insight": "+4",
 				"perception": "+6"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 16,
 			"languages": "Common",
@@ -14099,7 +16061,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -14111,9 +16076,18 @@
 			"int": 12,
 			"wis": 12,
 			"cha": 14,
-			"resist": "necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common",
@@ -14153,7 +16127,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "51 (6d8+24)",
 			"speed": {
@@ -14168,9 +16145,25 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons, necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons, necrotic"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "Common",
@@ -14233,7 +16226,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "16 (3d8+3)",
 			"speed": {
@@ -14249,10 +16245,22 @@
 			"skill": {
 				"intimidation": "+4"
 			},
-			"resist": "necrotic",
-			"immune": "cold, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
-			"vulnerable": "fire",
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"cr": "1",
@@ -14277,7 +16285,9 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "10",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -14293,11 +16303,28 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons or not made of adamantine",
-			"immune": "necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons or not made of adamantine"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "2",
 			"page": 118,
@@ -14335,7 +16362,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "11",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -14348,10 +16378,22 @@
 			"wis": 11,
 			"cha": 13,
 			"save": "Wis +2",
-			"resist": "piercing damage from nonmagical weapons, necrotic",
-			"conditionImmune": "charmed, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons, necrotic"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (understands but can't speak)",
 			"cr": "1/2",
 			"page": 139,
@@ -14389,7 +16431,10 @@
 			"size": "L",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "52 (7d10+14)",
 			"speed": {
@@ -14405,12 +16450,32 @@
 			"skill": {
 				"stealth": "+2"
 			},
-			"resist": "bludgeoning, piercing, and slashing from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned",
-			"vulnerable": "fire",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 143,
@@ -14442,7 +16507,10 @@
 			"size": "S",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "21 (6d4+6)",
 			"speed": {
@@ -14455,8 +16523,18 @@
 			"wis": 14,
 			"cha": 8,
 			"save": "Wis +4",
-			"immune": "necrotic, poison",
-			"conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "None",
@@ -14496,7 +16574,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -14509,9 +16590,25 @@
 			"int": 2,
 			"wis": 14,
 			"cha": 12,
-			"resist": "piercing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "None",
@@ -14563,7 +16660,9 @@
 			"size": "T",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "1 (1d4-1)",
 			"speed": {
@@ -14576,8 +16675,15 @@
 			"int": 2,
 			"wis": 12,
 			"cha": 12,
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -14617,7 +16723,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "67 (15d8)",
 			"speed": {
@@ -14635,9 +16744,25 @@
 				"deception": "+6",
 				"sleight of hand": "+6"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 2,
 			"languages": "Common and two others",
@@ -14689,7 +16814,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "7 (2d8-2)",
 			"speed": {
@@ -14704,12 +16832,35 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons, acid, cold, fire, lightning, thunder",
-			"immune": "necrotic, poison",
-			"conditionImmune": "poisoned, prone, stunned, unconscious",
-			"vulnerable": "radiant",
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"radiant"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/8",
 			"page": 208,
@@ -14735,7 +16886,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "19 (splint Mail +2)",
 			"hp": "150 (20d8+60)",
 			"speed": {
@@ -14753,9 +16907,24 @@
 				"intimidation": "+7",
 				"perception": "+6"
 			},
-			"resist": "piercing and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "truesight 60 ft.",
 			"passive": 16,
 			"languages": "Common, any other language the warrior knew in life",
@@ -14831,7 +17000,10 @@
 			"size": "L",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "19 (natural armor)",
 			"hp": "152 (16d10+64)",
 			"speed": {
@@ -14849,9 +17021,27 @@
 				"intimidation": "+10",
 				"perception": "+9"
 			},
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, restrained, stunned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "truesight 60 ft.",
 			"passive": 19,
 			"languages": "None",
@@ -14917,7 +17107,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (chain mail)",
 			"hp": "97 (15d8+14)",
 			"speed": {
@@ -14930,11 +17123,25 @@
 			"wis": 10,
 			"cha": 10,
 			"save": "Wis +3",
-			"resist": "piercing and slashing damage from nonmagical weapons, necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons, necrotic"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Abyssal, Common",
 			"cr": "7",
 			"page": 212,
@@ -14978,7 +17185,10 @@
 			"size": "L",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "52 (8d10+8)",
 			"speed": {
@@ -14991,10 +17201,21 @@
 			"int": 7,
 			"wis": 10,
 			"cha": 13,
-			"immune": "necrotic, poison, all nonmagical damage",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"special": "nonmagical"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "truesight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Understands Giant but doesn't speak",
 			"cr": "4",
 			"page": 234,
@@ -15050,7 +17271,10 @@
 			"size": "T",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "11",
 			"hp": "3 (1d4+1)",
 			"speed": {
@@ -15064,8 +17288,15 @@
 			"wis": 6,
 			"cha": 5,
 			"save": "Wis +0",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, poisoned, frightened, unconscious",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned",
+				"frightened",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": -2,
 			"languages": "None",
@@ -15110,7 +17341,10 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -15124,11 +17358,28 @@
 			"wis": 10,
 			"cha": 12,
 			"save": "Wis +2",
-			"resist": "bludgeoning, piercing and slashing damage from nonmagical weapons",
-			"immune": "necrotic, poison",
-			"conditionImmune": "charmed, exhaustion, frightened, paralyzed, poisoned",
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "and slashing damage from nonmagical weapons"
+				},
+				"bludgeoning"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common",
 			"cr": "2",
 			"page": 173,
@@ -15166,7 +17417,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "45 (7d8+14)",
 			"speed": {
@@ -15181,9 +17435,11 @@
 			"skill": {
 				"stealth": "+3"
 			},
-			"vulnerable": "fire",
+			"vulnerable": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (understands but can't speak)",
 			"cr": "2",
 			"page": 6,
@@ -15215,7 +17471,10 @@
 			"size": "M",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "66 (12d8+12)",
 			"speed": {
@@ -15231,10 +17490,18 @@
 				"intimidation": "+5",
 				"stealth": "+5"
 			},
-			"resist": "magic",
-			"immune": "magic",
+			"resist": [
+				{
+					"special": "magic spells and spell-like effects"
+				}
+			],
+			"conditionImmune": [
+				{
+					"special": "nondamaging effects from magic spells and spell-like effects"
+				}
+			],
 			"senses": "blindsight 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Any",
 			"cr": "5",
 			"page": 15,
@@ -15310,7 +17577,10 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "68 (8d10+24)",
 			"speed": {
@@ -15322,7 +17592,11 @@
 			"int": 10,
 			"wis": 12,
 			"cha": 13,
-			"resist": "all nonmagical damage",
+			"resist": [
+				{
+					"special": "all nonmagical damage"
+				}
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -15362,7 +17636,10 @@
 			"size": "L",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "90 (12d8+36)",
 			"speed": {
@@ -15380,9 +17657,17 @@
 				"perception": "+8",
 				"stealth": "+3"
 			},
-			"resist": "all nonmagical damage",
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"resist": [
+				{
+					"special": "all nonmagical damage"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 18,
 			"languages": "Understands Common and most other languages but does not speak",
@@ -15440,7 +17725,9 @@
 			"size": "S",
 			"type": "aberration",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "4 (1d6+1)",
 			"speed": {
@@ -15480,7 +17767,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "93 (11d10+33)",
 			"speed": {
@@ -15497,9 +17786,11 @@
 			"skill": {
 				"stealth": "+2"
 			},
-			"conditionImmune": "charmed",
+			"conditionImmune": [
+				"charmed"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "none",
 			"cr": "4",
 			"page": 11,
@@ -15517,7 +17808,9 @@
 			"size": "M",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "120 (16d8+48)",
 			"speed": {
@@ -15531,7 +17824,9 @@
 			"int": 0,
 			"wis": 12,
 			"cha": 9,
-			"conditionImmune": "charmed",
+			"conditionImmune": [
+				"charmed"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",
@@ -15563,7 +17858,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "68 (8d10+24)",
 			"speed": {
@@ -15575,7 +17872,9 @@
 			"int": 2,
 			"wis": 12,
 			"cha": 2,
-			"immune": "lightning",
+			"immune": [
+				"lightning"
+			],
 			"senses": "tremorsense 60 ft. (in water)",
 			"passive": 1,
 			"languages": "None",
@@ -15621,7 +17920,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "95 (10d10+40)",
 			"speed": {
@@ -15633,12 +17934,31 @@
 			"int": 3,
 			"wis": 11,
 			"cha": 1,
-			"resist": "bludgeoing, piercing, and slashing damage except from adamantine weapons",
-			"immune": "fire, poison",
-			"conditionImmune": "paralyzed, poisoned, stunned, unconscious",
-			"vulnerable": "cold",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage except from adamantine weapons"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"cr": "6",
 			"page": 37,
 			"trait": [
@@ -15683,7 +18003,9 @@
 			"size": "L",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "102 (12d10+36)",
 			"speed": {
@@ -15695,11 +18017,30 @@
 			"int": 6,
 			"wis": 10,
 			"cha": 6,
-			"resist": "magic",
-			"immune": "piercing damage from nonmagical weapons, poison",
-			"conditionImmune": "charmed, frightened, paralyzed, poisoned, stunned, unconscious",
+			"resist": [
+				{
+					"special": "Magic spells and spell-like effects"
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				},
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common",
 			"cr": "6",
 			"page": 10,
@@ -15743,7 +18084,9 @@
 			"size": "M",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -15755,11 +18098,30 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 6,
-			"resist": "magic",
-			"immune": "piercing damage from nonmagical weapons, poison",
-			"conditionImmune": "charmed, frightened, paralyzed, poisoned, stunned, unconscious",
+			"resist": [
+				{
+					"special": "magic"
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				},
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common",
 			"cr": "2",
 			"page": 10,
@@ -15797,7 +18159,9 @@
 			"size": "S",
 			"type": "construct",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "13 (3d6+3)",
 			"speed": {
@@ -15809,11 +18173,30 @@
 			"int": 8,
 			"wis": 9,
 			"cha": 6,
-			"resist": "magic",
-			"immune": "piercing damage from nonmagical weapons, poison",
-			"conditionImmune": "charmed, frightened, paralyzed, poisoned, stunned, unconscious",
+			"resist": [
+				{
+					"special": "magic"
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				},
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common",
 			"cr": "1/2",
 			"page": 9,
@@ -15857,7 +18240,9 @@
 			"size": "M",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "152 (16d8+80)",
 			"speed": {
@@ -15875,9 +18260,26 @@
 				"perception": "+4",
 				"stealth": "+8"
 			},
-			"resist": "bludgeoning, piercing, and slashing damage from nonmagical weapons.",
-			"immune": "poison",
-			"conditionImmune": "paralyzed, poisoned, prone, restrained, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common, Primordial",
@@ -15935,7 +18337,9 @@
 			"size": "L",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "102 (12d10+36)",
 			"speed": {
@@ -15983,7 +18387,10 @@
 			"size": "M",
 			"type": "fiend",
 			"source": "FEF 3pp",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "65 (10d8+20)",
 			"speed": {
@@ -16000,8 +18407,12 @@
 				"perception": "+6",
 				"stealth": "+7"
 			},
-			"immune": "fire",
-			"vulnerable": "cold",
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 16,
 			"languages": "Common, Infernal",
@@ -16069,7 +18480,10 @@
 			"size": "M",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "13 (mage armor)",
 			"hp": "38 (7d8+7)",
 			"speed": {
@@ -16084,7 +18498,7 @@
 			"skill": {
 				"history": "+5"
 			},
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common, Abyssal",
 			"cr": "4",
 			"page": 5,
@@ -16148,7 +18562,10 @@
 			"size": "S",
 			"type": "humanoid",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "12",
 			"hp": "27 (6d6+6)",
 			"speed": {
@@ -16168,7 +18585,7 @@
 				"stealth": "+4"
 			},
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1",
 			"page": 56,
@@ -16206,7 +18623,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "45 (6d10+12)",
 			"speed": {
@@ -16246,7 +18666,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "39 (6d10+6)",
 			"speed": {
@@ -16339,7 +18762,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "alignment varies",
+			"alignment": [
+				"A"
+			],
 			"ac": "12",
 			"hp": "32 (5d10+5)",
 			"speed": {
@@ -16353,7 +18778,7 @@
 			"wis": 10,
 			"cha": 10,
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Any (understands via telepathy but can't speak)",
 			"cr": "1/8",
 			"page": 18,
@@ -16385,7 +18810,9 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "60 (8d8+24)",
 			"speed": {
@@ -16440,7 +18867,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "60 (8d10+16)",
 			"speed": {
@@ -16455,7 +18885,7 @@
 			"skill": {
 				"athletics": "+7"
 			},
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 36,
@@ -16485,7 +18915,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "22 (3d10+6)",
 			"speed": {
@@ -16498,9 +18930,16 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 8,
-			"resist": "slashing damage from nonmagical weapons",
+			"resist": [
+				{
+					"resist": [
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Unique (crabman)",
 			"cr": "1",
 			"page": 69,
@@ -16532,7 +18971,9 @@
 			"size": "M",
 			"type": "plant",
 			"source": "FEF 3pp",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "14",
 			"hp": "52 (7d8+21)",
 			"speed": {
@@ -16548,11 +18989,24 @@
 			"skill": {
 				"stealth": "+4"
 			},
-			"resist": "slashing, and piercing damage from nonmagical weapons",
-			"immune": "lightning, fire",
-			"conditionImmune": "prone",
+			"resist": [
+				{
+					"resist": [
+						"slashing",
+						"piercing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"lightning",
+				"fire"
+			],
+			"conditionImmune": [
+				"prone"
+			],
 			"senses": "darkvision 60 ft., tremorsense 120 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "Common (understands but can't speak)",
 			"cr": "3",
 			"page": 8,
@@ -16607,7 +19061,9 @@
 				]
 			},
 			"source": "FEF 3pp",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "76 (9d10+27)",
 			"speed": {
@@ -16619,10 +19075,25 @@
 			"int": 0,
 			"wis": 11,
 			"cha": 1,
-			"resist": "bludgeoning and slashing damage from nonmagical weapons, fire, lightning",
-			"conditionImmune": "charmed, prone, stunned, unconscious",
+			"resist": [
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
 			"senses": "Tremorsense 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "3",
 			"page": 16,
@@ -16654,7 +19125,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "11",
 			"hp": "15 (2d8+6)",
 			"speed": {
@@ -16666,11 +19140,28 @@
 			"int": 3,
 			"wis": 10,
 			"cha": 10,
-			"resist": "bludgeoning, piercing, and slashing from nonmagical weapons, necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
-			"passive": 0,
+			"passive": 10,
 			"languages": "None",
 			"cr": "1/2",
 			"page": 40,
@@ -16714,7 +19205,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (chain shirt)",
 			"hp": "45 (6d8+18)",
 			"speed": {
@@ -16726,9 +19220,27 @@
 			"int": 10,
 			"wis": 12,
 			"cha": 14,
-			"resist": "bludgeoning, piercing, and slashign damage from nonmagical weapons",
-			"immune": "cold, necrotic, poison",
-			"conditionImmune": "exhaustion, frightened, poisoned, unconscious",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "damage from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"unconscious"
+			],
 			"passive": 1,
 			"languages": "Any language it spoke when alive; communicates telepathically with all undead within 100 feet",
 			"cr": "3",
@@ -16805,7 +19317,10 @@
 			"size": "S",
 			"type": "undead",
 			"source": "FEF 3pp",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "3 (1d6)",
 			"speed": {
@@ -16817,9 +19332,17 @@
 			"int": 3,
 			"wis": 12,
 			"cha": 6,
-			"resist": "necrotic",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, poisoned, unconscious",
+			"resist": [
+				"necrotic"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 1,
 			"languages": "None",

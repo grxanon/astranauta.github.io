@@ -5,7 +5,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "DMG",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "20",
 			"hp": "half the hit point maximum of its summoner",
 			"speed": {
@@ -21,8 +24,18 @@
 			"int": 16,
 			"wis": 16,
 			"cha": 16,
-			"immune": "necrotic, poison",
-			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, unconscious",
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
 			"senses": "darkvision 60 ft., truesight 60 ft.",
 			"passive": 13,
 			"languages": "all languages known to its summoner",
@@ -56,7 +69,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "DMG",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11",
 			"hp": "19 (3d10+3)",
 			"speed": {
@@ -79,7 +94,10 @@
 			"name": "Larva",
 			"size": "M",
 			"type": "fiend",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "9",
 			"hp": "9 (2d8)",
 			"speed": {

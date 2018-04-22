@@ -923,7 +923,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Allfaiths Shrine",
+					"name": "1. Allfaiths Shrine",
 					"entries": [
 						{
 							"type": "inset",
@@ -943,7 +943,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "The Swinging Sword",
+					"name": "2. The Swinging Sword",
 					"entries": [
 						{
 							"type": "inset",
@@ -1001,7 +1001,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "The Helm at Highsun",
+					"name": "3. The Helm at Highsun",
 					"entries": [
 						{
 							"type": "inset",
@@ -1043,7 +1043,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Mother Yalanthas",
+					"name": "4. Mother Yalanthas",
 					"entries": [
 						{
 							"type": "inset",
@@ -1070,7 +1070,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Thelorns Safe Journeys",
+					"name": "5. Thelorns Safe Journeys",
 					"entries": [
 						{
 							"type": "inset",
@@ -1103,7 +1103,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Chansyrl Fine Harness",
+					"name": "6. Chansyrl Fine Harness",
 					"entries": [
 						{
 							"type": "inset",
@@ -1124,7 +1124,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Helvur Tarnlar, Clothier",
+					"name": "7. Helvur Tarnlar, Clothier",
 					"entries": [
 						{
 							"type": "inset",
@@ -1159,7 +1159,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Lorrens Bakery",
+					"name": "8. Lorrens Bakery",
 					"entries": [
 						{
 							"type": "inset",
@@ -1192,7 +1192,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Tantur Smithy",
+					"name": "9. Tantur Smithy",
 					"entries": [
 						{
 							"type": "inset",
@@ -1214,7 +1214,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Drouth Fine Poultry",
+					"name": "10. Drouth Fine Poultry",
 					"entries": [
 						{
 							"type": "inset",
@@ -1234,7 +1234,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Jalessa Ornra, Butcher",
+					"name": "11. Jalessa Ornra, Butcher",
 					"entries": [
 						{
 							"type": "inset",
@@ -1270,7 +1270,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Dornen Finestone",
+					"name": "12. Dornen Finestone",
 					"entries": [
 						{
 							"type": "inset",
@@ -1303,7 +1303,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Ironhead Arms",
+					"name": "13. Ironhead Arms",
 					"entries": [
 						"Three years ago, an old sellsword and caravan guard by the name of Feng Ironhead decided to settle in Red Larch and open a shop dealing in arms and armor, both new and used. Over a long career of shepherding caravans and pack trains from one end of the North to the other, Ironhead (male half-orc veteran) decided that there was money to be made by keeping guards-for-hire and mercenaries supplied with decent, affordable gear.",
 						{
@@ -1317,7 +1317,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Mhandyvvers Poultry",
+					"name": "14. Mhandyvvers Poultry",
 					"entries": [
 						{
 							"type": "inset",
@@ -1350,7 +1350,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Haeleeyas",
+					"name": "15. Haeleeyas",
 					"entries": [
 						"Originally from Amn, Haeleeya Hanadroum (female human Tethyrian commoner) operates a bathhouse and dress shop in her large, well-appointed home.",
 						{
@@ -1371,7 +1371,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Waelvurs Wagonworks",
+					"name": "16. Waelvurs Wagonworks",
 					"entries": [
 						"Ilmeth Waelvur (male Tethyrian human bandit) operates a cheaper alternative to Thelorns Safe Journeys, making and selling replacement wheels and axles for wagons.",
 						{
@@ -1412,7 +1412,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Gaelkurs",
+					"name": "17. Gaelkurs",
 					"entries": [
 						"This seedy wooden building serves as Red Larchs used tools and goods shop, its barber, and an unofficial second tavern for locals.",
 						{
@@ -1447,7 +1447,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Mellikho Stoneworks",
+					"name": "18. Mellikho Stoneworks",
 					"entries": [
 						{
 							"type": "inset",
@@ -1490,7 +1490,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Luruths Tannery",
+					"name": "19. Luruths Tannery",
 					"entries": [
 						{
 							"type": "inset",
@@ -1510,7 +1510,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Bethendurs Storage",
+					"name": "20. Bethendurs Storage",
 					"entries": [
 						{
 							"type": "inset",
@@ -1531,7 +1531,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "The Market",
+					"name": "21. The Market",
 					"entries": [
 						{
 							"type": "inset",
@@ -1551,7 +1551,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Vallivoes Sundries",
+					"name": "22. Vallivoes Sundries",
 					"entries": [
 						{
 							"type": "inset",
@@ -1924,6 +1924,160 @@
 									"1d2 hill giants"
 								]
 							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Aarakocra Scouts",
+						    "entries": [
+								"These 1d4+1 {@creature aarakocra} attack those who appear to be elemental cultists. Otherwise, the aarakocra might be helpful."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Aarakocra War Band",
+						    "entries": [
+						        "A war band consists of 1d6+3 {@creature aarakocra} and an {@creature air elemental}. They interact like the scouts, above."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Air Cult Scouts",
+						    "entries": [
+								"A group of scouts for the air cult consists of 1d4+1 {@creature hurricane|pota|hurricanes} in {@item wingwear|pota}. See chapter 7 for the cultists’ statistics and wingwear description."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Air Cult Skyriders",
+						    "entries": [
+						        "One {@creature Feathergale knight|pota} leads 1d4 {@creature Skyweaver|pota|Skyweavers}. They all ride {@creature giant vulture|mm|giant vultures}. See chapter 7 for the cultists’ statistics."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Caravan",
+						    "entries": [
+								"A caravan consists of a merchant and his or her entourage heading for the nearest settlement. The group consists of 1d4+2 {@creature guard|mm|guards}, 2d4 {@creature commoner|mm|commoners}, and the caravan leader (a {@creature spy})."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Dwarf Miners",
+						    "entries": [
+								"A band of dwarf miners consists of 1d4+1 shield dwarf {@creature scout|mm|scouts} and a pugnacious leader (a shield dwarf {@creature thug})."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Earth Cult Marauders",
+						    "entries": [
+								"A band of marauders for the earth cult consists of 1d4+1 {@creature Black Earth guard|pota|Black Earth guards}, a {@creature Black Earth priest|pota}, and 1d4-1 {@creature ogre|mm|ogres}. See chapter 7 for the cultists’ statistics."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Earth Cult Robbers",
+						    "entries": [
+								"These earth cult robbers stake out spots to waylay Passersby. The group consists of 1d4+1 {@creature bandit|mm|bandits} and 1d4 {@creature Black Earth guard|pota|Black Earth guards} (see chapter 7)."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Elementals",
+						    "entries": [
+								"A small group of elementals wanders freely. Roll a d4 to determine the type of elementals: 1, {@creature air elemental|mm|air}; 2, {@creature earth elemental|mm|earth}; 3, {@creature fire elemental|mm|fire}; 4, {@creature water elemental|mm|water}."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "Elk Tribe Hunters",
+						    "entries": [
+								"This group includes a {@creature berserker} and 1d4+1 tribal warriors. They are hostile (see “The Uthgardt Tribes” section at the end of this chapter)."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Fire Cult Raiders",
+						    "entries": [
+								"The fire cult sends out raiders that include 2d6 {@creature Eternal Flame guardian|pota|Eternal Flame guardians} and an {@creature Eternal Flame priest|pota}. See chapter 7 for the cultists’ statistics."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Fire Cult War Band",
+						    "entries": [
+								"A war band of the fire cult consists of 1d6 {@creature Eternal Flame guardian|pota|Eternal Flame guardians}, an {@creature Eternal Flame priest|pota}, and 1d3 {@creature hell hound|mm|hell hounds}. See chapter 7 for the cultists’ statistics."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Homestead",
+						    "entries": [
+								"The party discovers a homestead. Roll a d6 to determine the race of the people there: 1-3, Tethyrian human; 4, Illuskan human; 5-6, halfling. A homestead consists of 1d6 adult {@creature commoner|mm|commoners} and 1d6-1 noncombatant children. Residents might provide friendly adventurers with food and shelter."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Keelboat",
+						    "entries": [
+								"A river trader’s {@item keelboat} carries 1d4+4 {@creature commoner|mm|commoners} (the sailors), 1d4 {@creature guard|mm|guards}, and a captain (a {@creature spy}). They are willing to offer passage to adventurers heading in the same direction."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Knights of Samular",
+						    "entries": [
+								"This armed patrol consists of 1d4 {@creature veteran|mm|veterans} and 1d4 {@creature guard|mm|guards}. They hail from Summit Hall and offer a hearty “Well met!” to the characters."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Mephits",
+						    "entries": [
+								"Several mephits travel in a pack. Roll a d6 to determine the mephit type: 1, {@creature dust mephit|mm|dust}; 2, {@creature ice mephit|mm|ice}; 3, {@creature magma mephit|mm|magma}; 4, {@creature mud mephit|mm|mud}; 5, {@creature smoke mephit|mm|smoke}; 6, {@creature steam mephit|mm|steam}."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Pilgrims",
+						    "entries": [
+								"A group of pilgrims includes 2d6 {@creature commoner|mm|commoners}, 1d4+1 {@creature guard|mm|guards}, 1d4 {@creature acolyte|mm|acolytes}, and a {@creature priest} bound for a holy or special site. They’re happy for company."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "River Pirates",
+						    "entries": [
+								"A {@item keelboat} carries 2d4 {@creature bandit|mm|bandits}, 1d4 {@creature thug|mm|thugs}, and a pirate captain (a {@creature bandit captain})."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Shepherds",
+						    "entries": [
+								"A group of shepherds watch over herd animals. Roll a d6 to determine the shepherds’ race: 1-4, human; 5-6, halfling. The group consists of 1d4 {@creature commoner|mm|commoners} and 1d2 leaders ({@creature scout|mm|scouts})."
+						    ]
+						},
+						{
+						    "type": "entries",
+						    "name": "The Watchful Knight",
+						    "entries": [
+								"Once, this {@creature helmed horror} stood watch in the common room of the Inn of the Watchful Knight in Beliard. It chooses one character at random, advances to within 5 feet, then studies the target for several seconds. If attacked, it fights back, retreating after it loses half its hit points. Otherwise, it follows the chosen character for 1d3 days, guarding its temporary master in combat. At the end of that time the {@creature helmed horror} wanders off again."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Water Cult Marauders",
+						    "entries": [
+								"A marauder gang of the water cult consists of 2d6 {@creature Crushing Wave reaver|pota|Crushing Wave reavers}, a {@creature Crushing Wave priest|pota}, and 1d2 {@creature fathomer|pota|fathomers}. See chapter 7 for the cultists’ statistics."
+							]
+						},
+						{
+						    "type": "entries",
+						    "name": "Water Cult Raiders",
+						    "entries": [
+								"A group of raiders from the water cult includes 2d6 {@creature Crushing Wave reaver|pota|Crushing Wave reavers}, a {@creature Crushing Wave priest|pota}, and a {@creature one-eyed shiver|pota}. The leader is a {@creature Dark Tide knight|pota} mounted on a {@creature giant crocodile}. See chapter 7 for the cultists’ statistics."
+						    ]
 						}
 					]
 				},
@@ -2750,7 +2904,7 @@
 					"type": "entries",
 					"name": "Fiery Fangs",
 					"entries": [
-						"The fire cult is less concerned with maintaining appearances than the other elemental cults. When Vanifer or her lieutenants receive word that a band of adventurers is trying to ferret out the cult, they send a pack of {@b three hell hounds} after the party. The hounds need only get the scent of the characters through spilled blood or discarded items. This encounter can take place wherever the characters are at the time, whether traveling between sites or ostensibly safe at an inn.",
+						"The fire cult is less concerned with maintaining appearances than the other elemental cults. When Vanifer or her lieutenants receive word that a band of adventurers is trying to ferret out the cult, they send a pack of three {@creature hell hound|mm|hell hounds} after the party. The hounds need only get the scent of the characters through spilled blood or discarded items. This encounter can take place wherever the characters are at the time, whether traveling between sites or ostensibly safe at an inn.",
 						"If the characters encounter the hell hounds in the wilderness, the hounds appear a short distance behind the characters, following their tracks and baying with eagerness. If the characters are resting at an inn, they're interrupted by screaming and barking coming from the inns common room, where the pack breaks through windows and terrifies the staff. (Its all the better if the characters are eating a meal there themselves).",
 						{
 							"type": "image",
@@ -2909,7 +3063,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Stable Level",
+					"name": "S1. Stable Level",
 					"entries": [
 						{
 							"type": "inset",
@@ -2924,7 +3078,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Front Hall",
+					"name": "S2. Front Hall",
 					"entries": [
 						{
 							"type": "inset",
@@ -2953,28 +3107,28 @@
 				},
 				{
 					"type": "entries",
-					"name": "Weapons Locker",
+					"name": "S3. Weapons Locker",
 					"entries": [
 						"The Feathergale knights stow weapons and armor here under lock and key. The weapon racks currently hold four longswords, four suits of scale mail, four shields, four helmets, four longbows, and four quivers of twenty arrows each."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Central Stairs",
+					"name": "S4. Central Stairs",
 					"entries": [
 						"A single spiral stair runs through the towers center, with landings at each floor. The stairs have a handrail along the outer edge."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Initiate Dormitory",
+					"name": "S5. Initiate Dormitory",
 					"entries": [
 						"Howling Hatred initiates, priests, hurricanes, and skyweavers sleep in this room on four double bunks. Most cultists spend their days in other parts of the spire."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Kitchen",
+					"name": "S6. Kitchen",
 					"entries": [
 						{
 							"type": "inset",
@@ -2987,7 +3141,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Solarium",
+					"name": "S7. Solarium",
 					"entries": [
 						{
 							"type": "inset",
@@ -3001,7 +3155,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Great Hall",
+					"name": "S8. Great Hall",
 					"entries": [
 						{
 							"type": "inset",
@@ -3014,7 +3168,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Knights Cells",
+					"name": "S9. Knights Cells",
 					"entries": [
 						{
 							"type": "inset",
@@ -3027,7 +3181,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Merosskas Apartment",
+					"name": "S10. Merosskas Apartment",
 					"entries": [
 						{
 							"type": "inset",
@@ -3056,7 +3210,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Pinnacle",
+					"name": "S11. Pinnacle",
 					"entries": [
 						{
 							"type": "inset",
@@ -4761,23 +4915,27 @@
 							"rows": [
 								[
 									"1",
-									"1d4 commoners (see area M19)"
+									"1d4 {@creature commoner|mm|commoners} (see area M19)"
 								],
 								[
 									"2",
-									"As per result 1, and 1 orog (see area M18)"
+									"As per result 1, and 1 {@creature orog} (see area M18)"
 								],
 								[
 									"3",
-									"1d3 Sacred Stone monks (see area M7)"
+									"1d3 {@creature Sacred Stone Monk|pota|Sacred Stone monks} (see area M7)"
 								],
 								[
 									"4",
-									"1d3 violet fungi"
+									"1d3 {@creature violet fungus|mm|violet fungi}"
 								],
 								[
 									"5",
-									"1 grick"
+									"1 {@creature grick}"
+								],
+								[
+									"6",
+									"Jurth and 1d2 {@creature orog|mm|orogs} (see area M18)"
 								]
 							]
 						},
@@ -13407,7 +13565,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Owlbear Greetings",
+					"name": "X1. Owlbear Greetings",
 					"entries": [
 						{
 							"type": "inset",
@@ -13430,7 +13588,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Crumbling Arch",
+					"name": "X2. Crumbling Arch",
 					"entries": [
 						"The road passes through a free-standing arch-an example of how some of the Besilmer stonework has withstood the ravages of time.",
 						{
@@ -13444,7 +13602,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Watchtower",
+					"name": "X3. Watchtower",
 					"entries": [
 						{
 							"type": "inset",
@@ -13458,7 +13616,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Ancient Hall",
+					"name": "X4. Ancient Hall",
 					"entries": [
 						{
 							"type": "inset",
@@ -13512,7 +13670,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Cistern",
+					"name": "X5. Cistern",
 					"entries": [
 						{
 							"type": "inset",
@@ -13534,7 +13692,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Amphitheater",
+					"name": "X6. Amphitheater",
 					"entries": [
 						{
 							"type": "inset",
@@ -13555,7 +13713,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Entrance to the Crypts",
+					"name": "X7. Entrance to the Crypts",
 					"entries": [
 						{
 							"type": "inset",
@@ -13568,7 +13726,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Hall of the Fallen",
+					"name": "X8. Hall of the Fallen",
 					"entries": [
 						{
 							"type": "inset",
@@ -13583,7 +13741,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "False Crypt",
+					"name": "X9. False Crypt",
 					"entries": [
 						"This particular crypt looks unremarkable among the others, but it reveals a secret.",
 						{
@@ -13607,7 +13765,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "False Tomb",
+					"name": "X10. False Tomb",
 					"entries": [
 						"The characters reach this area by descending the stairs from area X9.",
 						{

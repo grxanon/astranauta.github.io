@@ -1667,7 +1667,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 8
 		},
 		{
 			"name": "Bard",
@@ -2375,7 +2376,7 @@
 										"type": "entries",
 										"name": "Peerless Skill",
 										"entries": [
-											"Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roil the die for the ability check, but before the DM tells you whether you succeed or fail."
+											"Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail."
 										]
 									}
 								]
@@ -3404,7 +3405,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 12
 		},
 		{
 			"name": "Cleric",
@@ -6390,16 +6392,15 @@
 					"shortName": "Grave"
 				},
 				{
-					"name": "Order Domain (Livestream)",
+					"name": "Order Domain (UA)",
 					"subclassFeatures": [
 						[
 							{
-								"name": "Order Domain (Livestream)",
+								"name": "Order Domain (UA)",
 								"entries": [
-									"The order domain presents the concept of service for an organization, society, or institution; whether that service is rendered in utter obedience to the letter of the law, or unquestioned fealty to a deity's edicts. Gods who offer this domain include Bane, Erathis, Phoitus, Wee Jas, Aureon, Maglubiyet, and Asmodeus.",
-									"The gods of order promote obedience to the law above all else, rather than a specific individual or the passing influence of emotion or popular rule. They teach that contracts and law are inviolable and must be upheld. Their followers are typically concerned with how things are done, rather than whether an action's results are just. Following the law and obeying its edicts is critical, especially when it benefits these clerics and their deities.",
-									"More importantly, law establishes hierarchies and power relationships. Those selected by the law to lead must be obeyed. Those who obey must do so to the best of their abilities. In this manner law creates an intricate web of obligations that allows society to forge order and security from a chaotic world.",
-									"Clerics of order are typically tasked with enforcing the rule of law. They are leaders by decree rather than inspiration, but those who follow their dictates reap powerful benefits.",
+									"The Order domain represents discipline, as well as service to a society or an institution, whether that service is rendered in obedience to or enforcement of the law\u2014civil, religious, or both. Gods on many worlds grant access to this domain, including Bane, Tyr, Majere, Erathis, Pholtus, Wee Jas, Aureon, Maglubiyet, Nuada, Athena, Anubis, Forseti, and Asmodeus.",
+									"The ideal of order is obedience to the law above all else, rather than to a specific individual or the passing influence of emotion or popular rule. Clerics of order are typically concerned with how things are done, rather than whether an action's results are just. Following the law and obeying its edicts is critical, especially when it benefits these clerics and their deities.",
+									"More importantly, law establishes hierarchies. Those selected by the law to lead must be obeyed. Those who obey must do so to the best of their ability. In this manner, law creates an intricate web of obligations that allows society to forge order and security in a chaotic multiverse.",
 									"At each indicated cleric level, you add the listed spells to your spells prepared.",
 									{
 										"type": "table",
@@ -6415,11 +6416,11 @@
 										"rows": [
 											[
 												"1st",
-												"{@spell bless}, {@spell command}"
+												"{@spell command}, {@spell heroism}"
 											],
 											[
 												"3rd",
-												"{@spell hold person}, {@spell spiritual weapon}"
+												"{@spell enhance ability}, {@spell hold person}"
 											],
 											[
 												"5th",
@@ -6427,7 +6428,7 @@
 											],
 											[
 												"7th",
-												"{@spell dominate beast}, {@spell guardian of faith}"
+												"{@spell compulsion}, {@spell locate creature}"
 											],
 											[
 												"9th",
@@ -6446,7 +6447,7 @@
 										"type": "entries",
 										"name": "Voice of Authority",
 										"entries": [
-											"Starting at 1st level, you can invoke the power of law to claim authority over others. Once per turn when you target an ally with a 1st level or higher spell, that ally can use their reaction to make a single melee or ranged weapon attack against a target of your choice. If a single spell targets multiple allies, only one ally gains this benefit."
+											"Starting at 1st level, you can invoke the power of law to drive an ally to attack. Immediately after you cast a spell on an ally using a spell slot of 1st level or higher, that ally can use their reaction to make one weapon attack against a target of your choice that you can see. If the spell targets more than one ally, you choose the ally who can make the attack."
 										]
 									}
 								]
@@ -6459,10 +6460,8 @@
 										"type": "entries",
 										"name": "Channel Divinity: Order's Demand",
 										"entries": [
-											"Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over chaotic mobs.",
-											"As an action you present your holy symbol and roll 6d10. The total is the hit points of creatures this spell can affect. Creatures within 60 feet of you that can see or hear you are affected in ascending order of their current hit points (ignoring unconscious creatures).",
-											"Starting with the creature that has the lowest current hit points, each creature is affected as if it failed its saving throw against a Command spell cast by you. You must obey the restrictions on that spell, except the creature does not need to share a language with you. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.",
-											"Creatures immune to being charmed aren't affected by this ability."
+											"Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.",
+											"As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to fall prone when they fail the saving throw."
 										]
 									}
 								]
@@ -6473,10 +6472,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Channel divinity: Order's Judgment",
+										"name": "Order's Dominion",
 										"entries": [
-											"Starting at 6th level, you can use your Channel Divinity to mark an enemy for destruction.",
-											"As a bonus action, you present your holy symbol and select a creature you can see within 30 feet of you. Until the start of your next turn, you and your allies gain a +5 bonus to all damage rolls against that creature. If the damage applies to multiple creatures including the chosen one, the bonus applies only to that creature."
+											"At 6th level, you become extraordinarily adept at channeling magical energy to compel others.",
+											"When you cast a spell of the enchantment school using a spell slot of 2nd level or higher, you regain one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level."
 										]
 									}
 								]
@@ -6489,7 +6488,7 @@
 										"type": "entries",
 										"name": "Divine Strike",
 										"entries": [
-											"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8."
+											"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8."
 										]
 									}
 								]
@@ -6502,15 +6501,15 @@
 										"type": "entries",
 										"name": "Order's Wrath",
 										"entries": [
-											"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. When you apply your Divine Strike damage to a creature, your allies gain the benefits of your Divine Strike against that creature until the start of your next turn."
+											"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Strike damage to a creature, that creature takes an extra 2d8 force damage the first time each turn that any ally of yours hits it with a weapon attack. This benefit lasts until the start of your next turn."
 										]
 									}
 								]
 							}
 						]
 					],
-					"source": "Stream",
-					"shortName": "Order (Stream)"
+					"source": "UAOrderDomain",
+					"shortName": "Order (UA)"
 				}
 			],
 			"fluff": [
@@ -6761,7 +6760,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 17
 		},
 		{
 			"name": "Druid",
@@ -8686,7 +8686,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 21
 		},
 		{
 			"name": "Fighter",
@@ -8928,6 +8929,121 @@
 							3,
 							3,
 							1
+						]
+					]
+				},
+				{
+					"subclasses": [
+						{
+							"name": "Warlord",
+							"source": "Stream"
+						}
+					],
+					"colLabels": [
+						"Insight Uses",
+						"Insight Max",
+						"Gambits"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							1,
+							0
+						],
+						[
+							3,
+							1,
+							0
+						],
+						[
+							3,
+							1,
+							0
+						],
+						[
+							3,
+							1,
+							0
+						],
+						[
+							7,
+							2,
+							3
+						],
+						[
+							7,
+							2,
+							3
+						],
+						[
+							7,
+							2,
+							3
+						],
+						[
+							9,
+							2,
+							4
+						],
+						[
+							9,
+							2,
+							4
+						],
+						[
+							9,
+							2,
+							4
+						],
+						[
+							14,
+							3,
+							5
+						],
+						[
+							14,
+							3,
+							5
+						],
+						[
+							14,
+							3,
+							5
+						],
+						[
+							16,
+							3,
+							6
+						],
+						[
+							16,
+							3,
+							6
+						],
+						[
+							16,
+							3,
+							6
+						],
+						[
+							20,
+							4,
+							7
+						],
+						[
+							20,
+							4,
+							7
 						]
 					]
 				}
@@ -11673,6 +11789,272 @@
 					],
 					"source": "UAThreeSubclasses",
 					"shortName": "Brute (UA)"
+				},
+				{
+					"name": "Warlord (Livestream)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Warlord (Livestream)",
+								"entries": [
+									"{@i Transcribed on 2018-03-28. [Square bracketed text] denotes transcriber's annotations.}",
+									{
+										"type": "entries",
+										"name": "Tactical Focus",
+										"entries": [
+											"At 3rd level, your tactical acumen allows you to study an area of a battlefield and provide direction to your allies that can tilt a battle in your favor.",
+											"As a bonus action or as part of the attack action, you can select an area on the ground that measures 10 feet on each side. This area is your tactical focus. It remains your tactical focus until you use this ability again or you are unable to take actions.",
+											"When you select an area as your tactical focus, you choose one of your tactics to apply to that area. You gain three tactics at 3rd level. You gain an additional tactic at 7th and 15 level. Each time you complete a long rest, you can swap on of your tactics for a different one.",
+											{
+												"type": "options",
+												"name": "Tactics",
+												"entries": [
+													"The stratagems are presented in alphabetical order.",
+													{
+														"type": "entries",
+														"name": "Advance",
+														"entries": [
+															"You and your allies can move 10 ft. in your tactical focus for every 5 feet of movement expended there. {@i [Changed during stream to \"You and your allies can basically teleport into your focus. Movement on allies turn.\" Specifically, the movement is not made as a reaction\u2014your allies can use their movement on their turn(s) to move towards the focus, and gain bonuses to speed or other effects (for example, ignoring difficult terrain, or movement does not provoke opportunity attacks) to aid and incentivize this. Additionally, this may replace \"Cover That Flank\" in future.]}"
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Clear the area",
+														"entries": [
+															"If an ally hits a creature in your tactical focus with an attack, the ally can move that creature 5 ft. in addition to the attack's other effects."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Cover That Flank",
+														"entries": [
+															"When a hostile creature that you can see enters your tactical focus, up to three target creatures of your choice that can see the creature can use a reaction to move up to their speed. The targets must end their movement in the tactical focus. A target creature that ends this movement adjacent to the triggering creature regains its reaction."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Get Down",
+														"entries": [
+															"If an allied creature in your tactical focus must make a Dexterity saving throw it can use its reaction to move up to its speed. If this movement takes it out of the range or area of the effect that caused the saving throw, it is no longer subjected to the effect. {@i [In future, this may be changed to instead give advantage on the saving throw, or require the creature to drop prone, or cancel the creature's next move.]}"
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Form Shield Wall",
+														"entries": [
+															"Allies in your tactical focus gain a +2 bonus to AC while they are adjacent to an ally using a shield. {@i [In future, this will likely be changed to benefit only creatures not already wielding a shield, and to affect each creature at most once.]}"
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Reorder Ranks",
+														"entries": [
+															"Allies in your tactical focus do not provoke opportunity attacks while they are within 5 feet of an ally. In addition, you and your allies can end movement in an ally's space. That ally immediately moves so that you do not occupy the same space, but it must end that move at least partially occupying your tactical focus. {@i [Noted as requiring cleanup.]}"
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Tactician's Insight",
+										"entries": [
+											"Starting at 3rd level, you can grant your allies useful tactical insights while they are in the area of your tactical focus.",
+											"You gain a number of uses of insight based on your fighter level.",
+											"As a bonus action or as a part of an attack action you grant insight to yourself or allies in your tactical focus. You grant this benefit to yourself and as many allies as you wish in your focus, but you cannot expend more uses than you currently have {@i [or more than the maximum in the table below. A creature can receive more than one Tactician's Insight when you take this action.]}",
+											"A creature that gains your insight can use it in two ways. It can regain hit points immediately upon receiving it. Roll 2d10 and the creature regains that many hit points. If the creature would gain hit points that place it above its maximum, it gains the difference as temporary hit points.",
+											"Alternatively, a creature can save the insight to use when it hits with an attack. It increases the attack's damage by 2d10.",
+											"You regain expended uses of Tactician's Insight when you complete a long rest.",
+											{
+												"type": "table",
+												"caption": "Tactician's Insight",
+												"colLabels": [
+													"Fighter Level",
+													"Uses",
+													"Maximum",
+													"Gambits"
+												],
+												"colStyles": [
+													"col-xs-4 text-align-center",
+													"col-xs-2 text-align-center",
+													"col-xs-2 text-align-center",
+													"col-xs-2 text-align-center",
+													"col-xs-2 text-align-center"
+												],
+												"rows": [
+													["3", 		2, 	1, 0],
+													["4-6", 	3, 	1, 0],
+													["7-9", 	7, 	2, 3],
+													["10-12", 	9, 	2, 4],
+													["13-15", 	14, 3, 5],
+													["16-18", 	16, 3, 6],
+													["19-20", 	20, 4, 7]
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Additional Tactic",
+										"entries": [
+											"At 7th level, you learn an additional tactic of your choice."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Tactical Gambits",
+										"entries": [
+											"Starting at 7th level, your tactical cunning allows you to seize the moment in battle.",
+											"At 7th level, you learn two gambits. You learn an additional gambit at 10th and 18th level.",
+											"You use a gambit as an action. You can use your gambits a number of times based on your fighter level.",
+											"Each time you complete a long rest, you regain all expended uses of your gambits and can swap one of your gambits for a different one.",
+											{
+												"type": "entries",
+												"name": "Saving Throws",
+												"entries": [
+													"A gambit sometimes requires a saving throw. The saving throw DC is calculated as follows:",
+													{
+														"type": "abilityDc",
+														"name": "Gambit",
+														"attributes": [
+															"int"
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Gambits",
+												"entries": [
+													"The gambits are presented in alphabetical order.",
+													{
+														"type": "entries",
+														"name": "Aggressive Advance",
+														"entries": [
+															"You and your allies howl in rage and glower at your foes, making a display that sends fear into their hearts.",
+															"Hostile creatures within 60 feet of you that can see you must make a Wisdom saving throw. On a failed save, a creature is frightened of your tactical focus. A creature frightened by this effect can repeat the saving throw at the end of each of its turns, ending the effect on a successful save. As part of this gambit, you may take the attack action. {@i [In future, may be changed to require you or an ally to be present within the focus.]}"
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Cut Them Down!",
+														"entries": [
+															"You direct your allies to strike with perfect timing. Landing blows just as your enemies are of balance to send them tumbling to the ground.",
+															"Until the end of your next turn, hostile creatures in your tactical focus that you can see must make Strength saves each time they are hit by an attack. On a failed save, they are knocked prone. As part of this gambit, you may take the attack action."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Luring Gambit",
+														"entries": [
+															"You entangle your weapon with a chose foe, luring it to duel you as your allies close in for the kill.",
+															"As part of this gambit, you may take the attack action. If you hit a creature with a weapon attack during your turn, it must make a Wisdom saving throw. On a failed save, your allies are invisible to it until the end of your next turn."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Pile On",
+														"entries": [
+															"You direct your allies' attacks against a target, each blow building on the next to build a devastating result. Select a creature in your tactical focus that you can see. At the start of your next turn, that creature must make a Constitution saving throw if you or an ally has hit it with an attack since you used this ability. It suffers disadvantage on the saving throw if it has been hit by three or more attacks {@i [in future, this may be changed to \"hit by three or more creatures\"]}. On a failed saving throw, the creature is stunned until the end of your next turn.",
+															"As part of this gambit, you may take the attack action."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Pincer Movement",
+														"entries": [
+															"With precise timing, you order your allies to charge into the enemy, dealing body checks that leave your foes entangles and helpless.",
+															"Up to two allies that can see or hear you can use their reactions to move up to their speed. Any creature adjacent to both of your allies or to you and one of the chosen allies at the end of their movement must make a Strength saving throw or become restrained until the end of your next turn. As part of this gambit, you may take the attack action."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Vexing Maneuvers",
+														"entries": [
+															"With precise movements, you and your allies dash around the foes to leave them confused and unable to pick out their most dangerous targets.",
+															"Each enemy in your tactical focus that you can see must make an Intelligence saving throw. On a failed save, it cannot leave your tactical focus using its move until the end of your next turn. As part of this gambit you may take the attack action."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Additional Gambit",
+										"entries": [
+											"At 10th level, you learn an additional gambit of your choice."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Lead from the Front",
+										"entries": [
+											"At 10th level you strike with a cunning insight that allows your allies to make effective follow up attacks.",
+											"If you hit a creature with a weapon attack, it has disadvantage on all saving throws against your gambits until the end of your next turn."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Additional Tactic",
+										"entries": [
+											"At 15th level, you learn an additional tactic of your choice."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Tactical Maneuvers",
+										"entries": [
+											"At 15th level, you can provide leadership that allows your allies to move in perfect harmony.",
+											"In place of moving, you can instead allow up to three allies who can see or hear you to move up to half their speed. The chosen allies must be capable of taking actions in order to move in this manner."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Additional Gambit",
+										"entries": [
+											"At 18th level, you learn an additional gambit of your choice."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Perfect Coordination",
+										"entries": [
+											"Starting at 18th level, you gain the ability to unleash a devastating combination of your allies' abilities. As a bonus action, select up to five allies who can see or hear you. They can use their reactions to immediately take actions.",
+											"Once you use this ability, you cannot use it again until you complete a long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "Stream",
+					"shortName": "Warlord (Stream)"
 				}
 			],
 			"fluff": [
@@ -11915,7 +12297,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 27
 		},
 		{
 			"name": "Monk",
@@ -13913,7 +14296,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 32
 		},
 		{
 			"name": "Paladin",
@@ -16536,7 +16920,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 36
 		},
 		{
 			"name": "Ranger",
@@ -18383,7 +18768,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 40
 		},
 		{
 			"name": "Ranger (Revised)",
@@ -20436,7 +20822,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 40
 		},
 		{
 			"name": "Ranger (Spell-less)",
@@ -22197,7 +22584,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 40
 		},
 		{
 			"name": "Rogue",
@@ -23782,6 +24170,69 @@
 					],
 					"source": "XGE",
 					"shortName": "Swashbuckler"
+				},
+				{
+					"name": "Acrobat (Livestream)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Acrobat",
+								"entries": [
+									"{@i Transcribed on 2018-04-07. [Square bracketed text] denotes transcriber's annotations.}",
+									"Your archetype grants you features at 3rd level and then again at 9th, 13th, and 17th level.",
+									{
+										"type": "entries",
+										"name": "Aerial Artistry",
+										"entries": [
+											"Starting at 3rd level, you gain the ability {@i [to]} move with incredible speed, precision, and power, Few obstacles can prevent you from reaching your destination.",
+											"When you move, you can instead take two short movements by flying. Each movement is half your speed, and you must end each one on a solid object or {@i [the]} ground. If you do not, you fall and your movement ends."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Fearless Aerialist",
+										"entries": [
+											"Starting at 9th level, you no longer take damage from falling."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Unchained Agility",
+										"entries": [
+											"At 13th level, your agility, speed and flexibility allow you to escape from almost any danger. You gain the benefits of {@spell freedom of movement}."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Aerial Mastery",
+										"entries": [
+											"At 17th level your Aerial Artistry ability improves. When you move you can instead take four short movements by flying. {@i [Each short movement is still limited to half your speed, and between each movement you must still touch a solid object or the ground. If you do not, you fall and your movement ends.]}"
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "Stream",
+					"shortName": "Acrobat (Stream)"
 				}
 			],
 			"fluff": [
@@ -24026,7 +24477,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 44
 		},
 		{
 			"name": "Sorcerer",
@@ -26643,7 +27095,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 48
 		},
 		{
 			"name": "Warlock",
@@ -29302,6 +29755,140 @@
 					],
 					"source": "XGE",
 					"shortName": "Hexblade"
+				},
+				{
+					"name": "The Kraken (Livestream)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "The Kraken (Livestream)",
+								"entries": [
+									"You made a pact with a Kraken somewhere in the world's ocean.",
+									{
+										"type": "entries",
+										"name": "Expanded Spell List",
+										"entries": [
+											"The Kraken lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+											{
+												"type": "table",
+												"caption": "Kraken Patron Expanded Spells",
+												"colLabels": [
+													"Spell Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-xs-3 text-align-center",
+													"col-xs-9"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell thunderwave}, {@spell create or destroy water}"
+													],
+													[
+														"2nd",
+														"{@spell augury}, {@spell gust of wind}"
+													],
+													[
+														"3rd",
+														"{@spell call lightning}, {@spell water breathing}"
+													],
+													[
+														"4th",
+														"{@spell evard's black tentacles}, {@spell control water}"
+													],
+													[
+														"5th",
+														"{@spell commune with nature}, {@spell cone of cold}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Grasp of the Kraken",
+										"entries": [
+											"Starting at 1st level, you gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength saving throw against your Warlock spell save DC. Creatures that fail their saving throws are {@condition grappled} for 1 minute or until you use this ability again. The spectral tentacle's Strength (Athletics) bonus is 2 + your proficiency bonus and its reach is 10 feet."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Inky Escape",
+										"entries": [
+											"At 6th level, you gain the ability to call upon your patron to escape from your foes. As a reaction when you take damage, you can cast {@spell darkness} centered on a point within 5 ft. of you. The spell lasts until the end of your next turn, and it has no effect on your vision.",
+											"Once you use this ability, you cannot use it until you complete a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Scion of the Depths",
+										"entries": [
+											"Starting at 10th level, your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a swim speed equal to your normal speed.",
+											"You gain immunity to lightning damage. When your immunity reduces damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your proficiency bonus."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Unleash the Kraken",
+										"entries": [
+											"At 14th level, you gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 ft. of you and choose one of the following effects."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Transport",
+												"entries": [
+													"You and up to 5 creatures of your choosing that you can see are grasped by tentacles that emerge from the portal. A second portal opens at a point of your choice within 100 miles that you have visited in the past 24 hours, depositing you and your chosen allies there."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Fury",
+												"entries": [
+													"The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity saving throws against your Warlock spell save DC.  Creatures that fail their saving throws take {@dice 10d6} bludgeoning damage and are {@condition restrained} for 1 minute. Creatures that succeed take half the bludgeoning damage and are not {@condition restrained}. On its turn, a {@condition restrained} creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end its {@condition restrained} condition."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"Once you use this ability, you cannot use it until you complete a long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "Stream",
+					"shortName": "Kraken (Stream)"
 				}
 			],
 			"fluff": [
@@ -29467,7 +30054,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 53
 		},
 		{
 			"name": "Wizard",
@@ -32012,7 +32600,8 @@
 						}
 					]
 				}
-			]
+			],
+			"fluffPage": 58
 		},
 		{
 			"name": "Artificer",

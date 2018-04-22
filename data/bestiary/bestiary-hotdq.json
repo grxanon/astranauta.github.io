@@ -5,7 +5,9 @@
 			"size": "M",
 			"type": "dragon",
 			"source": "HotDQ",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "22 (4d6+8)",
 			"speed": {
@@ -21,7 +23,9 @@
 				"perception": "+4",
 				"stealth": "+4"
 			},
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "understands Draconic but can't speak it",
@@ -60,7 +64,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (16 with mage armor)",
 			"hp": "39 (6d8+12)",
 			"speed": {
@@ -165,7 +172,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (splint)",
 			"hp": "138 (12d12+60)",
 			"speed": {
@@ -274,7 +284,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "19 (splint, shield)",
 			"hp": "93 (11d10+33)",
 			"speed": {
@@ -342,7 +355,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (studded leather, shield)",
 			"hp": "52 (7d10+14)",
 			"speed": {
@@ -451,7 +467,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (chain mail)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -539,7 +558,9 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "15 (leather armor)",
 			"hp": "22 (4d6+8)",
 			"speed": {
@@ -631,7 +652,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (splint)",
 			"hp": "57 (6d12+18)",
 			"speed": {
@@ -649,7 +673,9 @@
 				"intimidation": "+3",
 				"perception": "+4"
 			},
-			"resist": "lightning",
+			"resist": [
+				"lightning"
+			],
 			"senses": "blindsight 10 ft., darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common, Draconic",
@@ -706,7 +732,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "15 (studded leather armor, shield)",
 			"hp": "59 (7d8+28)",
 			"speed": {
@@ -827,7 +856,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (15 with the Black Dragon Mask)",
 			"hp": "90 (12d8+36)",
 			"speed": {
@@ -844,8 +876,13 @@
 				"arcana": "+5",
 				"stealth": "+9"
 			},
-			"immune": "acid",
-			"conditionImmune": "charmed, frightened",
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
 			"senses": "blindsight 10 ft., darkvision 120 ft.",
 			"passive": 11,
 			"languages": "Common, Draconic, Infernal, Giant, Netherese",
@@ -941,7 +978,10 @@
 				]
 			},
 			"source": "HotDQ",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (scale mail +1, shield)",
 			"hp": "58 (9d8+18)",
 			"speed": {

@@ -2,10 +2,12 @@ const fs = require('fs');
 const Validator = require('jsonschema').Validator;
 const validator = new Validator();
 const helperFile = "entry.json";
+const bestiaryFile = "bestiary/bestiary.json";
 validator.addSchema(require(`./schema/${helperFile}`), "/Entry");
+validator.addSchema(require(`./schema/${bestiaryFile}`), "/Bestiary");
 const TESTS_PASSED = 0;
 const TESTS_FAILED = 1;
-var results = [];
+let results = [];
 const expected = [];
 const existing = [];
 

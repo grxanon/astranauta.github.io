@@ -10,7 +10,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "12",
 			"hp": "6 (3d4)",
 			"speed": {
@@ -75,7 +78,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "15 (chain shirt, shield)",
 			"hp": "13 (2d8+4)",
 			"speed": {
@@ -87,7 +93,9 @@
 			"int": 10,
 			"wis": 11,
 			"cha": 11,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"skill": {
 				"athletics": "+4",
 				"perception": "+2"
@@ -142,7 +150,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "12",
 			"hp": "18 (4d8)",
 			"speed": {
@@ -204,7 +215,9 @@
 			"size": "L",
 			"type": "beast",
 			"source": "SKT",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13",
 			"hp": "34 (4d10+12)",
 			"speed": {
@@ -272,7 +285,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "14 (breastplate)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -346,7 +362,9 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "12",
 			"hp": "27(5d8+5)",
 			"speed": {
@@ -412,7 +430,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "10",
 			"hp": "9 (2d8)",
 			"speed": {
@@ -474,7 +495,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "14 (breastplate, shield)",
 			"hp": "30 (4d8+12)",
 			"speed": {
@@ -491,7 +515,9 @@
 				"intimidation": "+2",
 				"perception": "+2"
 			},
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 12,
 			"languages": "Common, Dwarvish",
@@ -540,7 +566,9 @@
 			"size": "H",
 			"type": "beast",
 			"source": "SKT",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "76 (8d12+24)",
 			"speed": {
@@ -594,7 +622,10 @@
 			"size": "G",
 			"type": "dragon",
 			"source": "SKT",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "22 (natural armor)",
 			"hp": "481 (26d20+208)",
 			"speed": {
@@ -613,7 +644,9 @@
 				"perception": "+17",
 				"stealth": "+7"
 			},
-			"immune": "lightning",
+			"immune": [
+				"lightning"
+			],
 			"senses": "blindsight 60 ft., darkvision 120 ft.",
 			"passive": 27,
 			"languages": "Common, Draconic, Giant, Terran",
@@ -716,7 +749,9 @@
 			"size": "H",
 			"type": "plant",
 			"source": "SKT",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "59 (7d12+14)",
 			"speed": {
@@ -728,8 +763,13 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 7,
-			"resist": "bludgeoning, piercing",
-			"vulnerable": "fire",
+			"resist": [
+				"bludgeoning",
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
 			"passive": 10,
 			"languages": "Common",
 			"cr": "0",
@@ -771,7 +811,10 @@
 			"size": "G",
 			"type": "elemental",
 			"source": "SKT",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "16",
 			"hp": "341 (22d20+110)",
 			"speed": {
@@ -784,9 +827,30 @@
 			"wis": 10,
 			"cha": 19,
 			"save": "Con +12, Wis +7, Cha +11",
-			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "fire, poison",
-			"conditionImmune": "charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
 			"senses": "blindsight 120 ft.",
 			"passive": 10,
 			"languages": "Ignan",
@@ -886,7 +950,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "17 (splint)",
 			"hp": "58 (9d8+18)",
 			"speed": {
@@ -951,7 +1018,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "10",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -1016,7 +1086,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "12",
 			"hp": "18 (4d8)",
 			"speed": {
@@ -1083,7 +1156,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "10 (13 with mage armor)",
 			"hp": "27 (6d8)",
 			"speed": {
@@ -1173,7 +1249,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "11",
 			"hp": "9 (2d6+2)",
 			"speed": {
@@ -1185,7 +1264,9 @@
 			"int": 11,
 			"wis": 10,
 			"cha": 16,
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"skill": {
 				"perception": "+2",
 				"performance": "+7",
@@ -1246,7 +1327,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "10 (13 with mage armor)",
 			"hp": "16 (3d8+3)",
 			"speed": {
@@ -1326,7 +1410,9 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "SKT",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "42 (5d10+15)",
 			"speed": {
@@ -1377,7 +1463,9 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "13 (leather)",
 			"hp": "27 (6d8)",
 			"speed": {
@@ -1446,7 +1534,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "18 (plate)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -1513,7 +1604,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "14 (leather)",
 			"hp": "22 (5d8)",
 			"speed": {
@@ -1573,7 +1667,10 @@
 			"size": "T",
 			"type": "beast",
 			"source": "SKT",
-			"alignment": "chaotic neutral",
+			"alignment": [
+				"C",
+				"N"
+			],
 			"ac": "12",
 			"hp": "5 (2d4)",
 			"speed": {
@@ -1591,8 +1688,12 @@
 				"perception": "+5",
 				"stealth": "+4"
 			},
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"passive": 15,
 			"languages": "understands Common but can't speak",
 			"cr": "0",
@@ -1646,7 +1747,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "12 (leather)",
 			"hp": "58 (9d8+18)",
 			"speed": {
@@ -1714,7 +1818,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13",
 			"hp": "38 (7d8+7)",
 			"speed": {
@@ -1782,7 +1889,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "SKT",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12 (hide armor)",
 			"hp": "52 (7d10+14)",
 			"speed": {
@@ -1887,7 +1997,10 @@
 			"size": "L",
 			"type": "monstrosity",
 			"source": "SKT",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "11 (leather)",
 			"hp": "60 (8d10+16)",
 			"speed": {
@@ -1950,7 +2063,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "15",
 			"hp": "22 (5d8)",
 			"speed": {
@@ -2015,7 +2131,9 @@
 			"size": "Huge",
 			"type": "undead",
 			"source": "SKT",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "68 (8d12+16)",
 			"speed": {
@@ -2028,8 +2146,16 @@
 			"wis": 12,
 			"cha": 5,
 			"save": "Str +7",
-			"immune": "poison, poisoned, exhaustion",
-			"vulnerable": "bludgeoning",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned",
+				"exhaustion"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
 			"passive": 11,
 			"senses": "darkvision 60 ft.",
 			"cr": "3",
@@ -2059,7 +2185,10 @@
 				]
 			},
 			"source": "SKT",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "472 (27d20+189)",
 			"speed": {
@@ -2073,8 +2202,21 @@
 			"wis": 18,
 			"cha": 20,
 			"save": "Str +17, Dex +7, Con +14, Int +13, Wis +11",
-			"immune": "lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"conditionImmune": "frightened, paralyzed",
+			"immune": [
+				"lightning",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"paralyzed"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 14,
 			"languages": "understands Abyssal, Celestial, Infernal, and Primordial but can't speak, telepathy 120 ft.",
@@ -2246,7 +2388,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "9 (natural armor)",
 			"hp": "160 (10d12+40)",
 			"speed": {
@@ -2297,7 +2442,9 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "17 (natural armor)",
 			"hp": "170 (11d12+55)",
 			"speed": {
@@ -2381,7 +2528,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (patchwork armor)",
 			"hp": "189 (12d12+60)",
 			"speed": {
@@ -2398,7 +2548,9 @@
 				"athletics": "+9",
 				"perception": "+3"
 			},
-			"immune": "cold",
+			"immune": [
+				"cold"
+			],
 			"passive": 13,
 			"languages": "Common, Giant, Giant Owl",
 			"cr": "8",
@@ -2466,7 +2618,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (plate)",
 			"hp": "221 (13d12+78)",
 			"speed": {
@@ -2483,8 +2638,12 @@
 				"athletics": "+11",
 				"perception": "+6"
 			},
-			"immune": "fire",
-			"resist": "lightning",
+			"immune": [
+				"fire"
+			],
+			"resist": [
+				"lightning"
+			],
 			"passive": 16,
 			"languages": "Common, Elvish, and Giant",
 			"cr": "9",
@@ -2535,7 +2694,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "200 (16d12+96)",
 			"speed": {
@@ -2672,7 +2834,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "16 (scale mail)",
 			"hp": "330 (20d12+100)",
 			"speed": {
@@ -2692,8 +2857,13 @@
 				"history": "+8",
 				"perception": "+9"
 			},
-			"resist": "cold",
-			"immune": "lightning, thunder",
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"lightning",
+				"thunder"
+			],
 			"passive": 19,
 			"languages": "Common, Giant",
 			"cr": "13",
@@ -2764,7 +2934,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "21 (+3 plate armor)",
 			"hp": "204 (12d12+60)",
 			"speed": {
@@ -2781,7 +2954,9 @@
 				"athletics": "+9",
 				"perception": "+3"
 			},
-			"immune": "cold",
+			"immune": [
+				"cold"
+			],
 			"passive": 13,
 			"languages": "Common, Giant",
 			"cr": "9",
@@ -2826,7 +3001,10 @@
 			"size": "L",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (chain shirt)",
 			"hp": "30 (4d10+8)",
 			"speed": {
@@ -2838,7 +3016,9 @@
 			"int": 10,
 			"wis": 10,
 			"cha": 10,
-			"immune": "fire",
+			"immune": [
+				"fire"
+			],
 			"passive": 10,
 			"languages": "Common, Giant",
 			"cr": "1",
@@ -2863,7 +3043,10 @@
 			"size": "H",
 			"type": "giant",
 			"source": "SKT",
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "200 (16d12+96)",
 			"speed": {
@@ -2925,6 +3108,29 @@
 			],
 			"page": 33,
 			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Zephyros's innate spellcasting ability is Charisma. He can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell fog cloud}",
+						"{@spell light}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell feather fall}",
+							"{@spell fly}",
+							"{@spell misty step}",
+							"{@spell telekinesis}"
+						],
+						"1e": [
+							"{@spell control weather}",
+							"{@spell gaseous form}"
+						]
+					}
+				},
 				{
 					"name": "Innate Spellcasting",
 					"headerEntries": [
@@ -2995,7 +3201,10 @@
 			"size": "G",
 			"type": "dragon",
 			"source": "SKT",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "22 (natural armor)",
 			"hp": "546 (28d20+252)",
 			"speed": {
@@ -3014,7 +3223,9 @@
 				"perception": "+16",
 				"stealth": "+7"
 			},
-			"immune": "fire",
+			"immune": [
+				"fire"
+			],
 			"senses": "blindsight 60 ft., darkvision 120 ft.",
 			"passive": 26,
 			"languages": "Common, Draconic",

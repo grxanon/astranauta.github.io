@@ -5,7 +5,10 @@
 			"name": "Acererak",
 			"size": "M",
 			"type": "undead",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "21 (natural armor)",
 			"hp": "285 (30d8+150)",
 			"speed": {
@@ -24,9 +27,33 @@
 				"insight": "+12",
 				"perception": "+12"
 			},
-			"resist": "cold, lightning",
-			"immune": "necrotic, poison; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, stunned",
+			"resist": [
+				"cold",
+				"lightning"
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
 			"senses": "truesight 120 ft.",
 			"passive": 22,
 			"languages": "Abyssal, Common, Draconic, Dwarvish, Elvish, Giant, Infernal, Primordial, Undercommon",
@@ -202,7 +229,9 @@
 					"dwarf"
 				]
 			},
-			"alignment": "any alignment",
+			"alignment": [
+				"A"
+			],
 			"ac": "13 (hide armor)",
 			"hp": "30 (4d8+12)",
 			"speed": {
@@ -219,7 +248,9 @@
 				"stealth": "+3",
 				"survival": "+4"
 			},
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common, Dwarvish",
@@ -270,7 +301,10 @@
 			"name": "Aldani (Lobsterfolk)",
 			"size": "M",
 			"type": "monstrosity",
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "49 (9d8+9)",
 			"speed": {
@@ -287,7 +321,9 @@
 				"perception": "+4",
 				"survival": "+4"
 			},
-			"resist": "poison",
+			"resist": [
+				"poison"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Common",
@@ -321,7 +357,9 @@
 			"name": "Almiraj",
 			"size": "S",
 			"type": "beast",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13",
 			"hp": "3 (1d6)",
 			"speed": {
@@ -370,7 +408,9 @@
 			"name": "Ankylosaurus Zombie",
 			"size": "H",
 			"type": "undead",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "68 (8d12+16)",
 			"speed": {
@@ -382,8 +422,12 @@
 			"int": 2,
 			"wis": 6,
 			"cha": 3,
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 8,
 			"cr": "3",
@@ -415,7 +459,10 @@
 					"human"
 				]
 			},
-			"alignment": "neutral good",
+			"alignment": [
+				"N",
+				"G"
+			],
 			"ac": "14 (studded leather)",
 			"hp": "82 (15d8+15)",
 			"speed": {
@@ -434,7 +481,14 @@
 				"insight": "+6",
 				"survival": "+9"
 			},
-			"immune": "cold (while wearing the Ring of Winter)",
+			"immune": [
+				{
+					"immune": [
+						"cold"
+					],
+					"preNote": "While wearing the Ring of Winter:"
+				}
+			],
 			"passive": 13,
 			"languages": "Common, Draconic, Dwarvish, Goblin",
 			"cr": "7",
@@ -487,7 +541,9 @@
 			"name": "Assassin Vine",
 			"size": "L",
 			"type": "plant",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "85 (10d10+30)",
 			"speed": {
@@ -500,8 +556,16 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 1,
-			"resist": "cold, fire",
-			"conditionImmune": "blinded, deafened, exhaustion, prone",
+			"resist": [
+				"cold",
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"prone"
+			],
 			"senses": "blindsight 30 ft.",
 			"passive": 10,
 			"cr": "3",
@@ -539,7 +603,10 @@
 					"titan"
 				]
 			},
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "7",
 			"hp": "225 (18d12+108)",
 			"speed": {
@@ -556,8 +623,24 @@
 			"wis": 19,
 			"cha": 24,
 			"save": "Con +11, Wis +9",
-			"immune": "cold, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"conditionImmune": "charmed, exhaustion, frightened, poisoned",
+			"immune": [
+				"cold",
+				"necrotic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
 			"senses": "darkvision 120 ft., truesight 120 ft.",
 			"passive": 24,
 			"languages": "understands Celestial but utters only obscene nonsense",
@@ -641,7 +724,9 @@
 			"name": "Chwinga",
 			"size": "T",
 			"type": "elemental",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "15",
 			"hp": "5 (2d4)",
 			"speed": {
@@ -717,7 +802,10 @@
 					"saurial"
 				]
 			},
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "17 (breastplate, shield)",
 			"hp": "120 (16d8+48)",
 			"speed": {
@@ -778,7 +866,10 @@
 			"name": "Eblis",
 			"size": "L",
 			"type": "monstrosity",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13",
 			"hp": "26 (4d10+4)",
 			"speed": {
@@ -828,7 +919,9 @@
 			"name": "Flying Monkey",
 			"size": "S",
 			"type": "beast",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "3 (1d6+4)",
 			"speed": {
@@ -867,9 +960,12 @@
 			"name": "Giant Four-Armed Gargoyle",
 			"size": "L",
 			"type": "elemental",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (natural armor)",
-			"hp": "147 (1d6+4)",
+			"hp": "147 (1d10+70)",
 			"speed": {
 				"walk": 30,
 				"fly": 60
@@ -884,9 +980,24 @@
 			"skill": {
 				"perception": "+4"
 			},
-			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine weapons",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, petrified, poisoned",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks not made with adamantine weapons"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Terran",
@@ -926,7 +1037,9 @@
 			"name": "Giant Snapping Turtle",
 			"size": "L",
 			"type": "beast",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "17 (natural armor), 12 while prone",
 			"hp": "75 (10d10+20)",
 			"speed": {
@@ -971,7 +1084,10 @@
 			"name": "Girallon Zombie",
 			"size": "L",
 			"type": "undead",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "59 (7d10+21)",
 			"speed": {
@@ -984,8 +1100,12 @@
 			"int": 3,
 			"wis": 7,
 			"cha": 5,
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 8,
 			"cr": "3",
@@ -1007,7 +1127,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The zombie makes five an attacks: one with its bite and four with its claws."
+						"The zombie makes five attacks: one with its bite and four with its claws."
 					]
 				},
 				{
@@ -1030,7 +1150,9 @@
 			"name": "Jaculi",
 			"size": "L",
 			"type": "beast",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "14 (natural armor)",
 			"hp": "16 (3d10)",
 			"speed": {
@@ -1086,7 +1208,9 @@
 			"name": "Kamadan",
 			"size": "L",
 			"type": "monstrosity",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "67 (9d10+18)",
 			"speed": {
@@ -1162,7 +1286,10 @@
 					"human"
 				]
 			},
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (studded leather, shield)",
 			"hp": "84 (13d8+26)",
 			"speed": {
@@ -1225,7 +1352,9 @@
 			"name": "Mantrap",
 			"size": "L",
 			"type": "plant",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "12",
 			"hp": "45 (7d10+7)",
 			"speed": {
@@ -1241,7 +1370,12 @@
 				"perception": "+4",
 				"stealth": "+7"
 			},
-			"conditionImmune": "blinded, deafened, exhaustion, prone",
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"prone"
+			],
 			"senses": "tremorsense 30 ft.",
 			"passive": 10,
 			"cr": "1",
@@ -1279,7 +1413,10 @@
 					"human"
 				]
 			},
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "10",
 			"hp": "13 (3d8)",
 			"speed": {
@@ -1339,7 +1476,10 @@
 			"name": "Pterafolk",
 			"size": "L",
 			"type": "monstrosity",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12 (natural armor)",
 			"hp": "26 (4d10+4)",
 			"speed": {
@@ -1406,7 +1546,10 @@
 					"yuan-ti"
 				]
 			},
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (bracers of defense)",
 			"hp": "127 (17d8+51) reduced to 107; subtract 1 for each day that passes during the adventure",
 			"speed": {
@@ -1425,8 +1568,12 @@
 				"religion": "+7",
 				"stealth": "+6"
 			},
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 14,
 			"languages": "Abyssal, Common, Draconic",
@@ -1563,7 +1710,9 @@
 			"name": "Stone Juggernaut",
 			"size": "L",
 			"type": "construct",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "157 (15d10+75)",
 			"speed": {
@@ -1578,8 +1727,28 @@
 			"int": 14,
 			"wis": 14,
 			"cha": 16,
-			"immune": "poison; bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine weapons",
-			"conditionImmune": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone",
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks not made with adamantine weapons"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
 			"senses": "blindsight 120 ft.",
 			"passive": 10,
 			"cr": "12",
@@ -1624,7 +1793,10 @@
 			"name": "Su-Monster",
 			"size": "M",
 			"type": "monstrosity",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12",
 			"hp": "27 (5d8+5)",
 			"speed": {
@@ -1681,7 +1853,10 @@
 					"tabaxi"
 				]
 			},
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "14 (leather armor)",
 			"hp": "40 (9d8)",
 			"speed": {
@@ -1750,7 +1925,10 @@
 					"tabaxi"
 				]
 			},
-			"alignment": "chaolic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "12",
 			"hp": "22 (5d8)",
 			"speed": {
@@ -1814,7 +1992,9 @@
 			"name": "Tri-Flower Frond",
 			"size": "M",
 			"type": "plant",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "10",
 			"hp": "11 (2d8+2)",
 			"speed": {
@@ -1826,7 +2006,12 @@
 			"int": 9,
 			"wis": 13,
 			"cha": 9,
-			"conditionImmune": "blinded, deafened, exhaustion, prone",
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"prone"
+			],
 			"senses": "blindsight 30 ft.",
 			"passive": 10,
 			"cr": "1/2",
@@ -1863,7 +2048,9 @@
 			"name": "Tyrannosaurus Zombie",
 			"size": "H",
 			"type": "undead",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "11 (natural armor)",
 			"hp": "136 (13d12+52)",
 			"speed": {
@@ -1875,8 +2062,12 @@
 			"int": 1,
 			"wis": 3,
 			"cha": 5,
-			"immune": "poison",
-			"conditionImmune": "poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 6,
 			"cr": "8",
@@ -1926,7 +2117,10 @@
 					"human"
 				]
 			},
-			"alignment": "chaotic good",
+			"alignment": [
+				"C",
+				"G"
+			],
 			"ac": "11",
 			"hp": "31 (7d8)",
 			"speed": {
@@ -2000,7 +2194,10 @@
 					"half-elf"
 				]
 			},
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "71 (11d8+22)",
 			"speed": {
@@ -2100,7 +2297,9 @@
 			"name": "Yellow Musk Creeper",
 			"size": "M",
 			"type": "plant",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "6",
 			"hp": "60 (11d8+11)",
 			"speed": {
@@ -2113,7 +2312,12 @@
 			"int": 1,
 			"wis": 10,
 			"cha": 3,
-			"conditionImmune": "blinded, deafened, exhaustion, prone",
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"exhaustion",
+				"prone"
+			],
 			"senses": "blindsight 30 ft.",
 			"passive": 10,
 			"cr": "2",
@@ -2152,7 +2356,9 @@
 			"name": "Yellow Musk Zombie",
 			"size": "M",
 			"type": "undead",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "9",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -2164,7 +2370,10 @@
 			"int": 1,
 			"wis": 6,
 			"cha": 3,
-			"conditionImmune": "charmed, exhaustion",
+			"conditionImmune": [
+				"charmed",
+				"exhaustion"
+			],
 			"senses": "blindsight 30 ft.",
 			"passive": 8,
 			"cr": "1/4",
@@ -2196,7 +2405,10 @@
 					"half-dragon"
 				]
 			},
-			"alignment": "lawful good",
+			"alignment": [
+				"L",
+				"G"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "110 (17d8+34)",
 			"speed": {
@@ -2215,7 +2427,9 @@
 				"insight": "+5",
 				"investigation": "+9"
 			},
-			"resist": "fire",
+			"resist": [
+				"fire"
+			],
 			"senses": "blindsight 10 ft., darkvision 60 ft.",
 			"passive": 12,
 			"languages": "Common, Draconic, Dwarvish, Primordial",
@@ -2329,7 +2543,9 @@
 			"name": "Zorbo",
 			"size": "S",
 			"type": "monstrosity",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "10 (see Natural Armor feature)",
 			"hp": "27 (6d6+6)",
 			"speed": {
@@ -2376,7 +2592,9 @@
 			"size": "H",
 			"type": "monstrosity",
 			"source": "ToA",
-			"alignment": "unaligned",
+			"alignment": [
+				"U"
+			],
 			"ac": "13 (natural armor)",
 			"hp": "200 (19d12+52)",
 			"speed": {
@@ -2451,7 +2669,10 @@
 			"size": "M",
 			"type": "undead",
 			"source": "ToA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (studded leather)",
 			"hp": "45 (6d8+18)",
 			"speed": {
@@ -2467,9 +2688,24 @@
 				"perception": "+3",
 				"stealth": "+4"
 			},
-			"resist": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
-			"immune": "poison",
-			"conditionImmune": "exhaustion, poisoned",
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "the languages he knew in life",
@@ -2576,7 +2812,10 @@
 				]
 			},
 			"source": "ToA",
-			"alignment": "lawful neutral",
+			"alignment": [
+				"L",
+				"N"
+			],
 			"ac": "12",
 			"hp": "31 (7d8)",
 			"speed": {
@@ -2605,12 +2844,12 @@
 					]
 				},
 				{
-				    "type": "inset",
-				    "name": "Dance of the Seven Winds",
-				    "entries": [
-				        "Asharra knows a ritual called the Dance of the Seven Winds, which temporarily grants magical flight to as many as ten nonflying creatures. The ritual, which takes 10 minutes to complete, can only be performed by an aarakocra elder and requires a black orchid as a material component.",
+					"type": "inset",
+					"name": "Dance of the Seven Winds",
+					"entries": [
+						"Asharra knows a ritual called the Dance of the Seven Winds, which temporarily grants magical flight to as many as ten nonflying creatures. The ritual, which takes 10 minutes to complete, can only be performed by an aarakocra elder and requires a black orchid as a material component.",
 						"Asharra must grind the orchid to powder, inhale it, and dance in circles around the ritual's beneficiaries uninterrupted while seven other aarakocra chant prayers to the Wind Dukes of Aaqa. When the dance concludes, Asharra's wings disappear and she loses the ability to fly. The ritual's beneficiaries each gain a magical flying speed of 30 feet (allowing them to fly 4 miles per hour). This benefit lasts for 3 days, after which Asharra's wings reappear and she regains the ability to fly."
-				    ]
+					]
 				}
 			],
 			"action": [

@@ -5,6 +5,7 @@
 	"id": "/Entry",
 	"description": "A recursively renderable object.",
 	"type": ["string", "integer", "object"],
+	"version": "1.1.0",
 
 	"definitions" : {
 		"entry": {
@@ -780,6 +781,18 @@
 					"additionalProperties": false
 				}
 			]
+		},
+		"entryDataCreature": {
+			"properties": {
+				"type": {"const": "dataCreature"},
+				"dataCreature": {
+					"$ref" : "/Bestiary#/definitions/creature"
+				}
+			},
+			"required": [
+				"type",
+				"dataCreature"
+			]
 		}
 	},
 
@@ -811,6 +824,8 @@
 		{"$ref": "#/definitions/entryImage"},
 		{"$ref": "#/definitions/entryActions"},
 		{"$ref": "#/definitions/entryAttack"},
+		{"$ref": "#/definitions/entryAttack"},
+		{"$ref": "#/definitions/entryDataCreature"},
 		{"type": "string"},
 		{"type": "integer"}
 	]

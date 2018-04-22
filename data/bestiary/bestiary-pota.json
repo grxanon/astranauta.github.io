@@ -10,7 +10,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (16 with mage armor)",
 			"hp": "66 (12d8+12)",
 			"speed": {
@@ -27,7 +30,9 @@
 				"history": "+6",
 				"perception": "+3"
 			},
-			"resist": "lightning",
+			"resist": [
+				"lightning"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 13,
 			"languages": "Auran, Common, Elvish",
@@ -133,7 +138,9 @@
 			"size": "M",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "18 (plate)",
 			"hp": "117 (18d8+36)",
 			"speed": {
@@ -146,9 +153,27 @@
 			"int": 9,
 			"wis": 10,
 			"cha": 10,
-			"resist": "lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "poison",
-			"conditionImmune": "paralyzed, petrified, poisoned, prone",
+			"resist": [
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 10,
 			"languages": "Auran, one language of its creator's choice",
@@ -193,7 +218,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12 (15 with mage armor)",
 			"hp": "78 (12d8+24)",
 			"speed": {
@@ -209,7 +237,9 @@
 				"arcana": "+3",
 				"deception": "+7"
 			},
-			"resist": "fire",
+			"resist": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 9,
 			"languages": "Common, Ignan",
@@ -302,7 +332,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (plate)",
 			"hp": "39 (6d8+12)",
 			"speed": {
@@ -355,7 +388,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (splint)",
 			"hp": "45 (7d8+14)",
 			"speed": {
@@ -449,7 +485,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (plate)",
 			"hp": "82 (11d8+33)",
 			"speed": {
@@ -512,7 +551,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (chain shirt)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -593,7 +635,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (shield)",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -638,7 +683,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13",
 			"hp": "58 (9d8+18)",
 			"speed": {
@@ -711,7 +759,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (plate)",
 			"hp": "93 (11d8+44)",
 			"speed": {
@@ -727,7 +778,10 @@
 				"athletics": "+7",
 				"intimidation": "+4"
 			},
-			"resist": "cold, poison",
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 9,
 			"languages": "Common, Dwarvish",
@@ -791,7 +845,9 @@
 			"size": "M",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "18 (plate)",
 			"hp": "127 (17d8+51)",
 			"speed": {
@@ -803,9 +859,25 @@
 			"int": 8,
 			"wis": 10,
 			"cha": 10,
-			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "poison",
-			"conditionImmune": "paralyzed, petrified, poisoned, prone",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 10,
 			"languages": "Terran, one language of its creator's choice",
@@ -850,7 +922,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14 (hide)",
 			"hp": "71 (11d8+22)",
 			"speed": {
@@ -946,7 +1021,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (breastplate, shield; 15 while using a crossbow)",
 			"hp": "45 (7d8+14)",
 			"speed": {
@@ -962,7 +1040,9 @@
 				"intimidation": "+3",
 				"perception": "+2"
 			},
-			"resist": "fire",
+			"resist": [
+				"fire"
+			],
 			"passive": 12,
 			"languages": "Common",
 			"cr": "2",
@@ -1006,7 +1086,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "12 (15 with mage armor)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -1023,7 +1106,9 @@
 				"intimidation": "+5",
 				"religion": "+2"
 			},
-			"resist": "fire",
+			"resist": [
+				"fire"
+			],
 			"passive": 10,
 			"languages": "Common, Ignan",
 			"cr": "3",
@@ -1087,7 +1172,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "10 (13 with mage armor)",
 			"hp": "52 (8d8+16)",
 			"speed": {
@@ -1185,7 +1273,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (scale)",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -1256,7 +1347,9 @@
 			"size": "M",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "18 (plate)",
 			"hp": "117 (18d8+36)",
 			"speed": {
@@ -1268,9 +1361,26 @@
 			"int": 9,
 			"wis": 10,
 			"cha": 10,
-			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "fire, poison",
-			"conditionImmune": "paralyzed, petrified, poisoned, prone",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 10,
 			"languages": "Ignan, one language of its creator's choice",
@@ -1327,7 +1437,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (15 with mage armor)",
 			"hp": "105 (14d8+42)",
 			"speed": {
@@ -1343,7 +1456,9 @@
 				"arcana": "+3",
 				"religion": "+3"
 			},
-			"immune": "fire",
+			"immune": [
+				"fire"
+			],
 			"passive": 10,
 			"languages": "Common, Ignan",
 			"cr": "6",
@@ -1422,7 +1537,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (natural armor)",
 			"hp": "30 (15d8+45)",
 			"speed": {
@@ -1439,7 +1557,9 @@
 				"nature": "+8",
 				"survival": "+8"
 			},
-			"resist": "cold",
+			"resist": [
+				"cold"
+			],
 			"passive": 14,
 			"languages": "Aquan, Common",
 			"cr": "9",
@@ -1557,7 +1677,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "102 (12d10+36)",
 			"speed": {
@@ -1643,7 +1766,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16",
 			"hp": "78 (12d8+24)",
 			"speed": {
@@ -1661,8 +1787,13 @@
 				"insight": "+5",
 				"perception": "+5"
 			},
-			"immune": "poison",
-			"conditionImmune": "blinded, poisoned",
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"poisoned"
+			],
 			"senses": "blindsight 60 ft. (blind beyond this radius)",
 			"passive": 15,
 			"languages": "Common, Terran",
@@ -1727,7 +1858,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "13 (leather)",
 			"hp": "9 (2d8)",
 			"speed": {
@@ -1781,7 +1915,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (studded leather)",
 			"hp": "45 (10d8)",
 			"speed": {
@@ -1881,7 +2018,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14",
 			"hp": "33 (6d8+6)",
 			"speed": {
@@ -1974,7 +2114,10 @@
 			"size": "H",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17",
 			"hp": "325 (26d12+156)",
 			"speed": {
@@ -1988,9 +2131,29 @@
 			"wis": 16,
 			"cha": 23,
 			"save": "Dex +14, Con +13, Cha +13",
-			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "fire, poison",
-			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone, restrained",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
 			"senses": "blindsight 120 ft.",
 			"passive": 13,
 			"languages": "Common, Ignan",
@@ -2112,7 +2275,10 @@
 			"size": "M",
 			"type": "monstrosity",
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (natural armor)",
 			"hp": "136 (16d8+64)",
 			"speed": {
@@ -2129,7 +2295,9 @@
 				"deception": "+6",
 				"perception": "+4"
 			},
-			"resist": "acid",
+			"resist": [
+				"acid"
+			],
 			"senses": "darkvision 60 ft., tremorsense 60 ft.",
 			"passive": 14,
 			"languages": "Common, Terran",
@@ -2195,7 +2363,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "10 (13 with mage armor)",
 			"hp": "82 (11d8+33)",
 			"speed": {
@@ -2310,7 +2481,10 @@
 			"size": "G",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "20 (natural armor)",
 			"hp": "526 (27d20+243)",
 			"speed": {
@@ -2324,9 +2498,27 @@
 			"wis": 15,
 			"cha": 22,
 			"save": "Str +14, Con +15, Wis +8",
-			"resist": "bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "poison",
-			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
 			"senses": "blindsight 120 ft., tremorsense 120 ft.",
 			"passive": 12,
 			"languages": "Common, Terran",
@@ -2424,7 +2616,10 @@
 			"size": "H",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "18 (natural armor)",
 			"hp": "324 (24d12+168)",
 			"speed": {
@@ -2438,9 +2633,31 @@
 			"wis": 18,
 			"cha": 23,
 			"save": "Str +11, Con +13, Wis +10",
-			"resist": "lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "acid, cold, poison",
-			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone, restrained",
+			"resist": [
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"acid",
+				"cold",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
 			"senses": "blindsight 120 ft.",
 			"passive": 14,
 			"languages": "Aquan",
@@ -2553,7 +2770,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (15 with mage armor)",
 			"hp": "49 (9d8+9)",
 			"speed": {
@@ -2570,7 +2790,9 @@
 				"perception": "+3",
 				"intimidation": "+5"
 			},
-			"immune": "cold",
+			"immune": [
+				"cold"
+			],
 			"passive": 13,
 			"languages": "Common",
 			"cr": "3",
@@ -2645,7 +2867,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "11 (14 with mage armor)",
 			"hp": "39 (6d8+12)",
 			"speed": {
@@ -2741,7 +2966,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "17 (splint)",
 			"hp": "112 (15d8+75)",
 			"speed": {
@@ -2757,7 +2985,9 @@
 				"intimidation": "+4",
 				"perception": "+3"
 			},
-			"immune": "fire",
+			"immune": [
+				"fire"
+			],
 			"passive": 13,
 			"languages": "Common, Ignan",
 			"cr": "5",
@@ -2801,7 +3031,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "14",
 			"hp": "22 (4d8+4)",
 			"speed": {
@@ -2870,7 +3103,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "10 (13 with mage armor)",
 			"hp": "60 (8d8+24)",
 			"speed": {
@@ -2889,7 +3125,9 @@
 				"insight": "+2",
 				"persuasion": "+5"
 			},
-			"resist": "acid",
+			"resist": [
+				"acid"
+			],
 			"passive": 10,
 			"languages": "Aquan, Common",
 			"cr": "4",
@@ -2975,7 +3213,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "chaotic evil",
+			"alignment": [
+				"C",
+				"E"
+			],
 			"ac": "12 (15 with mage armor)",
 			"hp": "44 (8d8+8)",
 			"speed": {
@@ -3055,7 +3296,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "17 (splint)",
 			"hp": "75 (10d8+30)",
 			"speed": {
@@ -3150,7 +3394,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "lawful evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "16 (breastplate)",
 			"hp": "71 (11d8+21)",
 			"speed": {
@@ -3251,7 +3498,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (studded leather)",
 			"hp": "112 (15d8+45)",
 			"speed": {
@@ -3268,7 +3518,9 @@
 				"deception": "+8",
 				"performance": "+8"
 			},
-			"immune": "fire",
+			"immune": [
+				"fire"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 11,
 			"languages": "Common, Ignan, Infernal",
@@ -3368,7 +3620,9 @@
 			"size": "M",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral",
+			"alignment": [
+				"N"
+			],
 			"ac": "18 (plate)",
 			"hp": "127 (17d8+51)",
 			"speed": {
@@ -3381,9 +3635,26 @@
 			"int": 8,
 			"wis": 10,
 			"cha": 10,
-			"resist": "acid; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "poison",
-			"conditionImmune": "paralyzed, petrified, poisoned, prone",
+			"resist": [
+				"acid",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
 			"senses": "darkvision 60 ft.",
 			"passive": 10,
 			"languages": "Aquan, one language of its creator's choice",
@@ -3428,7 +3699,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "11 (16 with barkskin)",
 			"hp": "36 (8d6+8)",
 			"speed": {
@@ -3518,7 +3792,10 @@
 				]
 			},
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "15 (studded leather)",
 			"hp": "55 (10d8+10)",
 			"speed": {
@@ -3618,7 +3895,10 @@
 			"size": "H",
 			"type": "elemental",
 			"source": "PotA",
-			"alignment": "neutral evil",
+			"alignment": [
+				"L",
+				"E"
+			],
 			"ac": "22 (natural armor)",
 			"hp": "283 (21d12+147)",
 			"speed": {
@@ -3632,9 +3912,32 @@
 			"wis": 21,
 			"cha": 23,
 			"save": "Dex +13, Wis +11, Cha +12",
-			"resist": "cold, fire; bludgeoning, piercing, and slashing from nonmagical attacks",
-			"immune": "lightning, poison, thunder",
-			"conditionImmune": "charmed, frightened, paralyzed, petrified, poisoned, prone, restrained",
+			"resist": [
+				"cold",
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison",
+				"thunder"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
 			"senses": "blindsight 120 ft.",
 			"passive": 15,
 			"languages": "Auran",

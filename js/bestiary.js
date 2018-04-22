@@ -15,6 +15,26 @@ function ascSortCr (a, b) {
 	return SortUtil.ascSort(Parser.crToNumber(a), Parser.crToNumber(b))
 }
 
+function imgError (x) {
+	$(x).closest("th").css("padding-right", "0.2em");
+	$(x).remove();
+}
+
+function getAllImmRest (toParse, key) {
+	function recurse (it) {
+		if (typeof it === "string") {
+			out.push(it);
+		} else if (it[key]) {
+			it[key].forEach(nxt => recurse(nxt));
+		}
+	}
+	const out = [];
+	toParse.forEach(it => {
+		recurse(it);
+	});
+	return out;
+}
+
 const meta = {};
 
 function loadMeta (nextFunction) {
@@ -39,16 +59,23 @@ function loadFluffIndex (nextFunction) {
 	});
 }
 
+function handleBrew (homebrew) {
+	addMonsters(homebrew.monster);
+}
+
 window.onload = function load () {
 	loadMeta(() => {
 		loadFluffIndex(() => {
-			multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addMonsters);
+			multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addMonsters, () => {
+				BrewUtil.addBrewData(handleBrew);
+				BrewUtil.makeBrewButton("manage-brew");
+				BrewUtil.bind({list, filterBox, sourceFilter});
+			});
 		});
 	});
 };
 
 let list;
-// TODO alignment filter
 const sourceFilter = getSourceFilter();
 const crFilter = new Filter({header: "CR"});
 const sizeFilter = new Filter({
@@ -89,6 +116,74 @@ const typeFilter = new Filter({
 	displayFn: StrUtil.uppercaseFirst
 });
 const tagFilter = new Filter({header: "Tag", displayFn: StrUtil.uppercaseFirst});
+const alignmentFilter = new Filter({
+	header: "Alignment",
+	items: ["L", "NX", "C", "G", "NY", "E", "N", "U", "A"],
+	displayFn: Parser.alignmentAbvToFull
+});
+const DMG_TYPES = [
+	"acid",
+	"bludgeoning",
+	"cold",
+	"fire",
+	"force",
+	"lightning",
+	"necrotic",
+	"piercing",
+	"poison",
+	"psychic",
+	"radiant",
+	"slashing",
+	"thunder"
+];
+const CONDS = [
+	"blinded",
+	"charmed",
+	"deafened",
+	"exhaustion",
+	"frightened",
+	"grappled",
+	"incapacitated",
+	"invisible",
+	"paralyzed",
+	"petrified",
+	"poisoned",
+	"prone",
+	"restrained",
+	"stunned",
+	"unconscious",
+	// not really a condition, but whatever
+	"disease"
+];
+function dispVulnFilter (item) {
+	return `${StrUtil.uppercaseFirst(item)} Vuln`;
+}
+const vulnerableFilter = new Filter({
+	header: "Damage Vulnerabilities",
+	items: DMG_TYPES,
+	displayFn: dispVulnFilter
+});
+function dispResFilter (item) {
+	return `${StrUtil.uppercaseFirst(item)} Res`;
+}
+const resistFilter = new Filter({
+	header: "Damage Resistance",
+	items: DMG_TYPES,
+	displayFn: dispResFilter
+});
+function dispImmFilter (item) {
+	return `${StrUtil.uppercaseFirst(item)} Imm`;
+}
+const immuneFilter = new Filter({
+	header: "Damage Immunity",
+	items: DMG_TYPES,
+	displayFn: dispImmFilter
+});
+const conditionImmuneFilter = new Filter({
+	header: "Condition Immunity",
+	items: CONDS,
+	displayFn: StrUtil.uppercaseFirst
+});
 const miscFilter = new Filter({header: "Miscellaneous", items: ["Familiar", "Legendary", "Swarm"], displayFn: StrUtil.uppercaseFirst});
 
 const filterBox = initFilterBox(
@@ -98,6 +193,11 @@ const filterBox = initFilterBox(
 	speedFilter,
 	typeFilter,
 	tagFilter,
+	alignmentFilter,
+	vulnerableFilter,
+	resistFilter,
+	immuneFilter,
+	conditionImmuneFilter,
 	miscFilter
 );
 
@@ -108,7 +208,7 @@ function pageInit (loadedSources) {
 	sourceFilter.items.sort(SortUtil.ascSort);
 
 	list = ListUtil.search({
-		valueNames: ["name", "source", "type", "cr"],
+		valueNames: ["name", "source", "type", "cr", "group"],
 		listClass: "monsters"
 	});
 	list.on("updated", () => {
@@ -186,6 +286,11 @@ function handleFilterChange () {
 			m._fSpeed,
 			m._pTypes.type,
 			m._pTypes.tags,
+			m._fAlign,
+			m._fVuln,
+			m._fRes,
+			m._fImm,
+			m._fCondImm,
 			m._fMisc
 		);
 	});
@@ -195,7 +300,10 @@ function handleFilterChange () {
 let monsters = [];
 let mI = 0;
 
+const _NEUT_ALIGNS = ["NX", "NY"];
 function addMonsters (data) {
+	if (!data || !data.length) return;
+
 	monsters = monsters.concat(data);
 
 	const table = $("ul.monsters");
@@ -206,6 +314,17 @@ function addMonsters (data) {
 		mon._pTypes = Parser.monTypeToFullObj(mon.type); // store the parsed type
 		mon._pCr = mon.cr === undefined ? "Unknown" : (mon.cr.cr || mon.cr);
 		mon._fSpeed = Object.keys(mon.speed).filter(k => mon.speed[k]);
+		const tempAlign = typeof mon.alignment[0] === "object"
+			? Array.prototype.concat.apply([], mon.alignment.map(a => a.alignment))
+			: [...mon.alignment];
+		if (tempAlign.includes("N") && !tempAlign.includes("G") && !tempAlign.includes("E")) tempAlign.push("NY");
+		else if (tempAlign.includes("N") && !tempAlign.includes("L") && !tempAlign.includes("C")) tempAlign.push("NX");
+		else if (tempAlign.length === 1 && tempAlign.includes("N")) Array.prototype.push.apply(tempAlign, _NEUT_ALIGNS);
+		mon._fAlign = tempAlign;
+		mon._fVuln = mon.vulnerable ? getAllImmRest(mon.vulnerable, "vulnerable") : [];
+		mon._fRes = mon.resist ? getAllImmRest(mon.resist, "resist") : [];
+		mon._fImm = mon.immune ? getAllImmRest(mon.immune, "immune") : [];
+		mon._fCondImm = mon.conditionImmune ? getAllImmRest(mon.conditionImmune, "conditionImmune") : [];
 
 		const abvSource = Parser.sourceJsonToAbv(mon.source);
 
@@ -213,13 +332,15 @@ function addMonsters (data) {
 			`<li class="row" ${FLTR_ID}="${mI}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
 				<a id=${mI} href="#${UrlUtil.autoEncodeHash(mon)}" title="${mon.name}">
 					<span class="name col-xs-4 col-xs-4-2">${mon.name}</span>
-					<span title="${Parser.sourceJsonToFull(mon.source)}" class="col-xs-2 source source${abvSource}">${abvSource}</span>
+					<span title="${Parser.sourceJsonToFull(mon.source)}${EntryRenderer.utils.getSourceSubText(mon)}" class="col-xs-2 source source${abvSource}">${abvSource}</span>
 					<span class="type col-xs-4 col-xs-4-1">${mon._pTypes.asText.uppercaseFirst()}</span>
 					<span class="col-xs-1 col-xs-1-7 text-align-center cr">${mon._pCr}</span>
+					${mon.group ? `<span class="group hidden">${mon.group}</span>` : ""}
 				</a>
 			</li>`;
 
 		// populate filters
+		sourceFilter.addIfAbsent(new FilterItem(mon.source, () => {}));
 		crFilter.addIfAbsent(mon._pCr);
 		mon._pTypes.tags.forEach(t => tagFilter.addIfAbsent(t));
 		mon._fMisc = mon.legendary || mon.legendaryGroup ? ["Legendary"] : [];
@@ -230,6 +351,7 @@ function addMonsters (data) {
 	table.append(textStack);
 
 	// sort filters
+	sourceFilter.items.sort(SortUtil.ascSort);
 	crFilter.items.sort(ascSortCr);
 	typeFilter.items.sort(SortUtil.ascSort);
 	tagFilter.items.sort(SortUtil.ascSort);
@@ -420,15 +542,10 @@ function loadhash (id) {
 	let sourceFull = Parser.sourceJsonToFull(mon.source);
 	var type = mon._pTypes.asText;
 
-	imgError = function (x) {
-		$(x).closest("th").css("padding-right", "0.2em");
-		$(x).remove();
-	};
-
-	const imgLink = UrlUtil.link(`img/${source}/${name.replace(/"/g, "")}.png`);
+	const imgLink = mon.tokenURL || UrlUtil.link(`img/${source}/${name.replace(/"/g, "")}.png`);
 	$content.find("th.name").html(
 		`<span class="stats-name">${name}</span>
-		<span class="stats-source source${source}" title="${sourceFull}">${Parser.sourceJsonToAbv(source)}</span>
+		<span class="stats-source source${source}" title="${sourceFull}${EntryRenderer.utils.getSourceSubText(mon)}">${source}</span>
 		<a href="${imgLink}" target="_blank">
 			<img src="${imgLink}" class="token" onerror="imgError(this)">
 		</a>`
@@ -438,7 +555,7 @@ function loadhash (id) {
 
 	$content.find("td span#type").html(type);
 
-	$content.find("td span#alignment").html(mon.alignment);
+	$content.find("td span#alignment").html(Parser.alignmentListToFull(mon.alignment).toLowerCase());
 
 	$content.find("td span#ac").html(mon.ac);
 
@@ -485,7 +602,7 @@ function loadhash (id) {
 	var dmgvuln = mon.vulnerable;
 	if (dmgvuln) {
 		$content.find("td span#dmgvuln").parent().show();
-		$content.find("td span#dmgvuln").html(dmgvuln);
+		$content.find("td span#dmgvuln").html(Parser.monImmResToFull(dmgvuln));
 	} else {
 		$content.find("td span#dmgvuln").parent().hide();
 	}
@@ -493,7 +610,7 @@ function loadhash (id) {
 	var dmgres = mon.resist;
 	if (dmgres) {
 		$content.find("td span#dmgres").parent().show();
-		$content.find("td span#dmgres").html(dmgres);
+		$content.find("td span#dmgres").html(Parser.monImmResToFull(dmgres));
 	} else {
 		$content.find("td span#dmgres").parent().hide();
 	}
@@ -501,7 +618,7 @@ function loadhash (id) {
 	var dmgimm = mon.immune;
 	if (dmgimm) {
 		$content.find("td span#dmgimm").parent().show();
-		$content.find("td span#dmgimm").html(dmgimm);
+		$content.find("td span#dmgimm").html(Parser.monImmResToFull(dmgimm));
 	} else {
 		$content.find("td span#dmgimm").parent().hide();
 	}
@@ -509,7 +626,7 @@ function loadhash (id) {
 	var conimm = mon.conditionImmune;
 	if (conimm) {
 		$content.find("td span#conimm").parent().show();
-		$content.find("td span#conimm").html(conimm);
+		$content.find("td span#conimm").html(Parser.monCondImmToFull(conimm));
 	} else {
 		$content.find("td span#conimm").parent().hide();
 	}
@@ -561,6 +678,7 @@ function loadhash (id) {
 
 	const srcCpy = {
 		source: mon.source,
+		sourceSub: mon.sourceSub,
 		page: mon.page
 	};
 	const additional = mon.additionalSources ? JSON.parse(JSON.stringify(mon.additionalSources)) : [];
@@ -582,9 +700,7 @@ function loadhash (id) {
 	$content.find("tr.legendary").remove();
 	if (legendary) {
 		renderSection("legendary", "legendary", legendary, 1);
-		const legendaryActions = mon.legendaryActions || 3;
-		const legendaryName = name.split(",");
-		$content.find("tr#legendaries").after(`<tr class='legendary'><td colspan='6' class='legendary'><span class='name'></span> <span>${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryName[0]} regains spent legendary actions at the start of its turn.</span></td></tr>`);
+		$content.find("tr#legendaries").after(`<tr class='legendary'><td colspan='6' class='legendary'><span class='name'></span> <span>${EntryRenderer.monster.getLegendaryActionIntro(mon)}</span></td></tr>`);
 	}
 
 	const legendaryGroup = mon.legendaryGroup;
@@ -606,7 +722,7 @@ function loadhash (id) {
 		sectionEntries.forEach(e => {
 			if (e.rendered) renderStack.push(e.rendered);
 			else renderer.recursiveEntryRender(e, renderStack, sectionLevel + 1);
-		})
+		});
 		$content.find(`tr#${pluralSectionTrClass}`).after(`<tr class='${sectionTrClass}'><td colspan='6' class='${sectionTdClass}'>${renderStack.join("")}</td></tr>`);
 	}
 
@@ -684,7 +800,7 @@ function loadhash (id) {
 
 	function renderSkillOrSaveRoller (itemName, profBonusString, profDiceString, isSave) {
 		const mode = isProfDiceMode ? PROF_MODE_DICE : PROF_MODE_BONUS;
-		return `<span class='roller unselectable' title="${itemName} ${isSave ? " save" : ""}" data-roll-alt="1d20;${profDiceString}" data-roll='1d20${profBonusString}' ${ATB_PROF_MODE}='${mode}' ${ATB_PROF_DICE_STR}="+${profDiceString}" ${ATB_PROF_BONUS_STR}="${profBonusString}">${isProfDiceMode ? profDiceString : profBonusString}</span>`;
+		return `<span class='roller' title="${itemName} ${isSave ? " save" : ""}" data-roll-alt="1d20;${profDiceString}" data-roll='1d20${profBonusString}' ${ATB_PROF_MODE}='${mode}' ${ATB_PROF_DICE_STR}="+${profDiceString}" ${ATB_PROF_BONUS_STR}="${profBonusString}">${isProfDiceMode ? profDiceString : profBonusString}</span>`;
 	}
 
 	// inline rollers
