@@ -28,6 +28,7 @@ function currentPage () {
 
 	const current = $(`li[data-page="${currentPage}"]`);
 	current.addClass("active");
+	current.siblings().removeClass("active");
 	current.parent().closest("li").addClass("active");
 }
 
@@ -85,6 +86,7 @@ function navigation () {
 	UL('utils', 'ul_utils', 'dropdown-menu');
 	LI('ul_utils', 'converter.html', 'Stat Block to JSON');
 	LI('ul_utils', 'demo.html', 'Renderer Demo');
+	LI('ul_utils', 'roll20.html', 'Roll20 Script Help');
 
 	LISwitcher('navbar', 'daynightMode', 'nightModeToggle', '#', 'styleSwitcher.toggleActiveStyleSheet(); return false;');
 

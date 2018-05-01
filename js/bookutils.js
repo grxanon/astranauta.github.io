@@ -240,8 +240,13 @@ const BookUtil = {
 			$(`.book-head-header`).html(cleanName(fromIndex[0].name));
 			$(`.book-head-message`).html("Browse content. Press F to find.");
 			BookUtil.loadBook(fromIndex[0], bookId, hashParts);
+			currentPage();
 		} else {
-			throw new Error("No book with ID: " + bookId);
+			if (!window.location.hash) {
+				window.history.back();
+			} else {
+				throw new Error("No book with ID: " + bookId);
+			}
 		}
 	},
 

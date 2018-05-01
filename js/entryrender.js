@@ -25,6 +25,8 @@ function EntryRenderer () {
 	this._subVariant = false;
 	this._firstSection = true;
 	this._headerIndex = 1;
+	this._tagExportDict = null;
+	this._roll20Ids = null;
 
 	/**
 	 * Set the tag used to group rendered elements
@@ -32,6 +34,7 @@ function EntryRenderer () {
 	 */
 	this.setWrapperTag = function (tag) {
 		this.wrapperTag = tag;
+		return this;
 	};
 
 	/**
@@ -41,6 +44,7 @@ function EntryRenderer () {
 	 */
 	this.setBaseUrl = function (url) {
 		this.baseUrl = url;
+		return this;
 	};
 
 	/**
@@ -49,13 +53,49 @@ function EntryRenderer () {
 	 */
 	this.setFirstSection = function (bool) {
 		this._firstSection = bool;
+		return this;
 	};
 
+	/**
+	 * Headers are ID'd using the attribute `data-title-index` using an incrementing int. This resets it to 1.
+	 */
 	this.resetHeaderIndex = function () {
 		this._headerIndex = 1;
+		return this;
 	};
 
-	// TODO convert params to options object
+	/**
+	 * Pass an object to have the renderer export lists of found @-tagged content during renders
+	 *
+	 * @param toObj the object to fill with exported data. Example results:
+	 * 			{
+	 *				commoner_mm: {page: "bestiary.html", source: "MM", hash: "commoner_mm"},
+	 *				storm%20giant_mm: {page: "bestiary.html", source: "MM", hash: "storm%20giant_mm"},
+ 	 *				detect%20magic_phb: {page: "spells.html", source: "PHB", hash: "detect%20magic_phb"}
+	 *			}
+	 * 			These results intentionally match those used for hover windows, so can use the same cache/loading paths
+	 */
+	this.doExportTags = function (toObj) {
+		this._tagExportDict = toObj;
+		return this;
+	};
+
+	/**
+	 * Reset/disable tag export
+	 */
+	this.resetExportTags = function () {
+		this._tagExportDict = null;
+		return this;
+	};
+
+	this.setRoll20Ids = function (roll20Ids) {
+		this._roll20Ids = roll20Ids;
+	};
+
+	this.resetRoll20Ids = function () {
+		this._roll20Ids = null;
+	};
+
 	// TODO provide a Roll20 mode (expose list of found monsters/etc to be imported; add links to these)
 	// TODO general conditional rendering function -- make use of "data" property (see backgrounds JSON + backgrounds hover render)
 	//      - can be used to clean up R20 script Subclass rendering when implemented
@@ -67,16 +107,19 @@ function EntryRenderer () {
 	 * @param entry An "entry" usually defined in JSON. A schema is available in tests/schema
 	 * @param textStack A reference to an array, which will hold all our strings as we recurse
 	 * @param depth The current recursion depth. Optional; default 0, or -1 for type "section" entries
-	 * @param prefix The (optional) prefix to be added to the textStack before whatever is added by the current call
-	 * @param suffix The (optional) suffix to be added to the textStack after whatever is added by the current call
-	 * @param forcePrefixSuffix force the prefix and suffix to be added (useful for the first call from external code)
+	 * @param options
+	 *          .prefix The (optional) prefix to be added to the textStack before whatever is added by the current call
+	 *          .suffix The (optional) suffix to be added to the textStack after whatever is added by the current call
+	 *          .forcePrefixSuffix force the prefix and suffix to be added (useful for the first call from external code)
 	 */
-	this.recursiveEntryRender = function (entry, textStack, depth, prefix, suffix, forcePrefixSuffix) {
+	this.recursiveEntryRender = function (entry, textStack, depth, options) {
 		depth = depth === undefined || depth === null ? 0 : depth;
 		if (entry.type === "section") depth = -1;
-		prefix = prefix === undefined || prefix === null ? null : prefix;
-		suffix = suffix === undefined || suffix === null ? null : suffix;
-		forcePrefixSuffix = forcePrefixSuffix === undefined || forcePrefixSuffix === null ? false : forcePrefixSuffix;
+		// process options
+		if (!options) options = {};
+		const prefix = options.prefix === undefined || options.prefix === null ? null : options.prefix;
+		const suffix = options.suffix === undefined || options.suffix === null ? null : options.suffix;
+		const forcePrefixSuffix = options.forcePrefixSuffix === undefined || options.forcePrefixSuffix === null ? false : options.forcePrefixSuffix;
 
 		if (forcePrefixSuffix) renderPrefix();
 		if (typeof entry === "object") {
@@ -96,7 +139,7 @@ function EntryRenderer () {
 						textStack.push(`<ul ${entry.style ? `class="${entry.style}"` : ""}>`);
 						for (let i = 0; i < entry.items.length; i++) {
 							const style = getLiStyleClass(entry.items[i]);
-							this.recursiveEntryRender(entry.items[i], textStack, depth + 1, `<li ${style ? `class="${style}"` : ""}>`, "</li>");
+							this.recursiveEntryRender(entry.items[i], textStack, depth + 1, {prefix: `<li ${style ? `class="${style}"` : ""}>`, suffix: "</li>"});
 						}
 						textStack.push("</ul>");
 					}
@@ -108,7 +151,7 @@ function EntryRenderer () {
 					textStack.push(`<${this.wrapperTag} class="statsBlockInset">`);
 					if (typeof entry.name !== 'undefined') textStack.push(`<span class="entry-title" data-title-index="${this._headerIndex++}">${entry.name}</span>`);
 					for (let i = 0; i < entry.entries.length; i++) {
-						this.recursiveEntryRender(entry.entries[i], textStack, 2, "<p>", "</p>");
+						this.recursiveEntryRender(entry.entries[i], textStack, 2, {prefix: "<p>", suffix: "</p>"});
 					}
 					textStack.push(`</${this.wrapperTag}>`);
 					break;
@@ -116,7 +159,7 @@ function EntryRenderer () {
 					textStack.push(`<${this.wrapperTag} class="statsBlockInsetReadaloud">`);
 					if (typeof entry.name !== 'undefined') textStack.push(`<span class="entry-title" data-title-index="${this._headerIndex++}">${entry.name}</span>`);
 					for (let i = 0; i < entry.entries.length; i++) {
-						this.recursiveEntryRender(entry.entries[i], textStack, 2, "<p>", "</p>");
+						this.recursiveEntryRender(entry.entries[i], textStack, 2, {prefix: "<p>", suffix: "</p>"});
 					}
 					textStack.push(`</${this.wrapperTag}>`);
 					break;
@@ -124,7 +167,7 @@ function EntryRenderer () {
 					textStack.push(`<${this.wrapperTag} class="statsBlockInset">`);
 					textStack.push(`<span class="entry-title" data-title-index="${this._headerIndex++}">Variant: ${entry.name}</span>`);
 					for (let i = 0; i < entry.entries.length; i++) {
-						this.recursiveEntryRender(entry.entries[i], textStack, 2, "<p>", "</p>");
+						this.recursiveEntryRender(entry.entries[i], textStack, 2, {prefix: "<p>", suffix: "</p>"});
 					}
 					if (entry.variantSource) {
 						textStack.push(EntryRenderer.utils._getPageTrText(entry.variantSource));
@@ -136,7 +179,7 @@ function EntryRenderer () {
 					this._subVariant = true;
 					const fauxEntry = entry;
 					fauxEntry.type = "entries";
-					this.recursiveEntryRender(fauxEntry, textStack, 2, "<p>", "</p>");
+					this.recursiveEntryRender(fauxEntry, textStack, 2, {prefix: "<p>", suffix: "</p>"});
 					this._subVariant = false;
 					break;
 				}
@@ -202,13 +245,13 @@ function EntryRenderer () {
 					textStack.push(EntryRenderer.getEntryDice(entry, entry.name));
 					break;
 				case "link":
-					textStack.push(this.renderLink(entry));
+					textStack.push(this.renderLink(this, entry));
 					break;
 
 				case "actions":
 					textStack.push(`<${this.wrapperTag} class="${EntryRenderer.HEAD_2}"><span class="entry-title" data-title-index="${this._headerIndex++}">${entry.name}.</span> `);
 					for (let i = 0; i < entry.entries.length; i++) {
-						this.recursiveEntryRender(entry.entries[i], textStack, depth, "<p>", "</p>");
+						this.recursiveEntryRender(entry.entries[i], textStack, depth, {prefix: "<p>", suffix: "</p>"});
 					}
 					textStack.push(`</${this.wrapperTag}>`);
 					break;
@@ -229,12 +272,12 @@ function EntryRenderer () {
 				// list items
 				case "item":
 					renderPrefix();
-					this.recursiveEntryRender(entry.entry, textStack, depth, `<p><span class="bold">${entry.name}</span> `, "</p>");
+					this.recursiveEntryRender(entry.entry, textStack, depth, {prefix: `<p><span class="bold">${entry.name}</span> `, suffix: "</p>"});
 					renderSuffix();
 					break;
 				case "itemSpell":
 					renderPrefix();
-					this.recursiveEntryRender(entry.entry, textStack, depth, `<p>${entry.name}</span> `, "</p>");
+					this.recursiveEntryRender(entry.entry, textStack, depth, {prefix: `<p>${entry.name}</span> `, suffix: "</p>"});
 					renderSuffix();
 					break;
 
@@ -242,8 +285,16 @@ function EntryRenderer () {
 				case "dataCreature":
 					renderPrefix();
 					textStack.push(`<table class="statsDataInset">`);
+					textStack.push(`<thead><tr><th class="dataCreature__header" colspan="6" onclick="((ele) => {
+						$(ele).find('.dataCreature__name').toggle(); 
+						$(ele).find('.dataCreature__showHide').text($(ele).text().includes('+') ? '[\u2013]' : '[+]'); 
+						$(ele).closest('table').find('tbody').toggle()
+					})(this)">
+						<span style="display: none;" class="dataCreature__name">${entry.dataCreature.name}</span>
+						<span class="dataCreature__showHide">[\u2013]</span>
+					</th></tr></thead><tbody>`);
 					textStack.push(EntryRenderer.monster.getCompactRenderedString(entry.dataCreature, this));
-					textStack.push(`</table>`);
+					textStack.push(`</tbody></table>`);
 					renderSuffix();
 					break;
 
@@ -302,10 +353,24 @@ function EntryRenderer () {
 			textStack.push("<thead>");
 			textStack.push("<tr>");
 
+			let autoMkRoller = false;
 			if (entry.colLabels) {
+				autoMkRoller = entry.colLabels.length === 2 && RollerUtil.isRollCol(entry.colLabels[0]);
+				if (autoMkRoller) {
+					// scan the first column to ensure all rollable
+					const notRollable = entry.rows.find(it => {
+						try {
+							return !/\d+(-\d+)?/.exec(it[0]);
+						} catch (e) {
+							return true;
+						}
+					});
+					if (notRollable) autoMkRoller = false;
+				}
+
 				for (let i = 0; i < entry.colLabels.length; ++i) {
 					textStack.push(`<th ${getTableThClassText(i)}>`);
-					self.recursiveEntryRender(entry.colLabels[i], textStack, depth);
+					self.recursiveEntryRender(autoMkRoller && i === 0 ? `{@dice ${entry.colLabels[i]}}` : entry.colLabels[i], textStack, depth);
 					textStack.push(`</th>`);
 				}
 			}
@@ -317,8 +382,32 @@ function EntryRenderer () {
 			for (let i = 0; i < entry.rows.length; ++i) {
 				textStack.push("<tr>");
 				const r = entry.rows[i];
-				const roRender = r.type === "row" ? r.row : r;
+				let roRender = r.type === "row" ? r.row : r;
 				for (let j = 0; j < roRender.length; ++j) {
+					// preconvert rollables
+					if (autoMkRoller && j === 0) {
+						roRender = JSON.parse(JSON.stringify(roRender));
+						const m = /(\d+)(-(\d+))?/.exec(roRender[j]); // should always match; validated earlier
+						if (m[1] && !m[2]) {
+							roRender[j] = {
+								type: "cell",
+								roll: {
+									exact: Number(m[1])
+								}
+							};
+							if (m[1][0] === "0") roRender[j].pad = true;
+						} else {
+							roRender[j] = {
+								type: "cell",
+								roll: {
+									min: Number(m[1]),
+									max: Number(m[3])
+								}
+							};
+							if (m[1][0] === "0" || m[3][0] === "0") roRender[j].pad = true;
+						}
+					}
+
 					let toRenderCell;
 					if (roRender[j].type === "cell") {
 						if (roRender[j].entry) {
@@ -417,7 +506,7 @@ function EntryRenderer () {
 				textStack.push(`<${self.wrapperTag} ${dataString} ${styleString}>${headerSpan}${preReqText}`);
 				if (entry.entries) {
 					for (let i = 0; i < entry.entries.length; i++) {
-						self.recursiveEntryRender(entry.entries[i], textStack, nextDepth, "<p>", "</p>");
+						self.recursiveEntryRender(entry.entries[i], textStack, nextDepth, {prefix: "<p>", suffix: "</p>"});
 					}
 				}
 				textStack.push(`</${self.wrapperTag}>`);
@@ -707,6 +796,24 @@ function EntryRenderer () {
 								};
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
+							case "@feat":
+								fauxEntry.href.path = "feats.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_PHB;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_FEATS,
+									source: source || SRC_PHB
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
+							case "@psionic":
+								fauxEntry.href.path = "psionics.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_UATMC;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_PSIONICS,
+									source: source || SRC_UATMC
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
 						}
 					}
 				} else {
@@ -716,10 +823,18 @@ function EntryRenderer () {
 		}
 	};
 
-	this.renderLink = function (entry) {
+	this.renderLink = function (self, entry) {
 		function getHoverString () {
 			if (!entry.href.hover) return "";
-			return `onmouseover="EntryRenderer.hover.show(event, this, '${entry.href.hover.page}', '${entry.href.hover.source}', '${UrlUtil.encodeForHash(entry.href.hash).replace(/'/g, "\\'")}')"`
+			const procHash = UrlUtil.encodeForHash(entry.href.hash).replace(/'/g, "\\'");
+			if (self._tagExportDict) {
+				self._tagExportDict[procHash] = {
+					page: entry.href.hover.page,
+					source: entry.href.hover.source,
+					hash: procHash
+				};
+			}
+			return `onmouseover="EntryRenderer.hover.show(event, this, '${entry.href.hover.page}', '${entry.href.hover.source}', '${procHash}')"`
 		}
 
 		let href;
@@ -743,6 +858,14 @@ function EntryRenderer () {
 			}
 		} else if (entry.href.type === "external") {
 			href = entry.href.url;
+		}
+		// overwrite href if there's an available Roll20 handout/character
+		if (entry.href.hover && self._roll20Ids) {
+			const procHash = UrlUtil.encodeForHash(entry.href.hash);
+			const id = self._roll20Ids[procHash];
+			if (id) {
+				href = `http://journal.roll20.net/${id.type}/${id.roll20Id}`;
+			}
 		}
 		return `<a href="${href}" target="_blank" ${getHoverString()}>${entry.text}</a>`;
 	};
@@ -875,29 +998,31 @@ EntryRenderer.utils = {
 
 	_tabs: {},
 	_curTab: null,
+	_prevTab: null,
 	bindTabButtons: (...tabButtons) => {
-		EntryRenderer._tabs = {};
-		EntryRenderer._curTab = null;
+		EntryRenderer.utils._tabs = {};
+		EntryRenderer.utils._prevTab = EntryRenderer.utils._curTab;
+		EntryRenderer.utils._curTab = null;
 
 		const $content = $("#pagecontent");
 		const $wrpTab = $(`#stat-tabs`);
 
 		$wrpTab.find(`.stat-tab-gen`).remove();
-		EntryRenderer.utils._tabs[tabButtons[0].label] = tabButtons[0];
-		EntryRenderer.utils._curTab = tabButtons[0];
 
+		let initialTab = null;
 		const toAdd = tabButtons.map((tb, i) => {
-			const $t = $(`<span class="stat-tab ${i === 0 ? `stat-tab-sel` : ""} btn btn-default stat-tab-gen">${tb.label}</span>`);
+			const toSel = (!EntryRenderer.utils._prevTab && i === 0) || (EntryRenderer.utils._prevTab && EntryRenderer.utils._prevTab.label === tb.label);
+			const $t = $(`<span class="stat-tab ${toSel ? `stat-tab-sel` : ""} btn btn-default stat-tab-gen">${tb.label}</span>`);
 			tb.$t = $t;
 			$t.click(() => {
 				const curTab = EntryRenderer.utils._curTab;
 				const tabs = EntryRenderer.utils._tabs;
 
-				if (curTab.label !== tb.label) {
-					EntryRenderer.utils._curTab.$t.removeClass(`stat-tab-sel`);
+				if (!curTab || curTab.label !== tb.label) {
+					if (curTab) curTab.$t.removeClass(`stat-tab-sel`);
 					EntryRenderer.utils._curTab = tb;
 					$t.addClass(`stat-tab-sel`);
-					tabs[curTab.label].content = $content.children().detach();
+					if (curTab) tabs[curTab.label].content = $content.children().detach();
 
 					tabs[tb.label] = tb;
 					if (!tabs[tb.label].content && tb.funcPopulate) {
@@ -908,10 +1033,12 @@ EntryRenderer.utils = {
 					if (tb.funcChange) tb.funcChange();
 				}
 			});
+			if (EntryRenderer.utils._prevTab && EntryRenderer.utils._prevTab.label === tb.label) initialTab = $t;
 			return $t;
 		});
 
 		toAdd.reverse().forEach($t => $wrpTab.prepend($t));
+		(initialTab || toAdd[toAdd.length - 1]).click();
 	}
 };
 
@@ -975,6 +1102,13 @@ EntryRenderer.feat = {
 					outStack.push("Spellcasting");
 				} else {
 					outStack.push("The ability to cast at least one spell");
+				}
+			}
+			if (pre.special) {
+				if (isShorthand) outStack.push("Special");
+				else {
+					const renderer = EntryRenderer.getDefaultRenderer();
+					outStack.push(renderer.renderEntry(pre.special));
 				}
 			}
 		}
@@ -1625,9 +1759,9 @@ EntryRenderer.item = {
 		let variantList;
 
 		// allows URLs to be overriden (used by roll20 script)
-		const itemUrl = urls.items || "data/items.json";
-		const basicItemUrl = urls.basicitems || "data/basicitems.json";
-		const magicVariantUrl = urls.magicvariants || "data/magicvariants.json";
+		const itemUrl = urls.items || `${EntryRenderer.getDefaultRenderer().baseUrl}data/items.json`;
+		const basicItemUrl = urls.basicitems || `${EntryRenderer.getDefaultRenderer().baseUrl}data/basicitems.json`;
+		const magicVariantUrl = urls.magicvariants || `${EntryRenderer.getDefaultRenderer().baseUrl}data/magicvariants.json`;
 
 		DataUtil.loadJSON(itemUrl, addBasicItems);
 
@@ -1950,6 +2084,141 @@ EntryRenderer.hover = {
 		return EntryRenderer.hover.linkCache[page] && EntryRenderer.hover.linkCache[page][source] && EntryRenderer.hover.linkCache[page][source][hash];
 	},
 
+	_doFillThenCall: (page, source, hash, callbackFn) => {
+		function loadPopulate (data, listProp) {
+			data[listProp].forEach(it => {
+				const itHash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
+				EntryRenderer.hover._addToCache(page, it.source, itHash, it)
+			});
+		}
+
+		function loadMultiSource (page, baseUrl, listProp) {
+			if (!EntryRenderer.hover._isCached(page, source, hash)) {
+				BrewUtil.addBrewData((data) => {
+					if (!data[listProp]) return;
+					loadPopulate(data, listProp);
+				});
+				DataUtil.loadJSON(`${EntryRenderer.getDefaultRenderer().baseUrl}${baseUrl}index.json`, (data) => {
+					const procData = {};
+					Object.keys(data).forEach(k => procData[k.toLowerCase()] = data[k]);
+					DataUtil.loadJSON(`${EntryRenderer.getDefaultRenderer().baseUrl}${baseUrl}${procData[source.toLowerCase()]}`, (data) => {
+						loadPopulate(data, listProp);
+						callbackFn();
+					});
+				});
+			} else {
+				callbackFn();
+			}
+		}
+
+		function loadSimple (page, jsonFile, listProp) {
+			if (!EntryRenderer.hover._isCached(page, source, hash)) {
+				BrewUtil.addBrewData((data) => {
+					if (!data[listProp]) return;
+					loadPopulate(data, listProp);
+				});
+				DataUtil.loadJSON(`${EntryRenderer.getDefaultRenderer().baseUrl}data/${jsonFile}`, (data) => {
+					if (listProp instanceof Array) listProp.forEach(p => loadPopulate(data, p));
+					else loadPopulate(data, listProp);
+					callbackFn();
+				});
+			} else {
+				callbackFn();
+			}
+		}
+
+		switch (page) {
+			case UrlUtil.PG_SPELLS: {
+				loadMultiSource(page, `data/spells/`, "spell");
+				break;
+			}
+
+			case UrlUtil.PG_BESTIARY: {
+				loadMultiSource(page, `data/bestiary/`, "monster");
+				break;
+			}
+
+			case UrlUtil.PG_ITEMS: {
+				if (!EntryRenderer.hover._isCached(page, source, hash)) {
+					BrewUtil.addBrewData((data) => {
+						if (!data.item) return;
+						data.item.forEach(it => {
+							if (!it._isEnhanced) EntryRenderer.item.enhanceItem(it);
+							const itHash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
+							EntryRenderer.hover._addToCache(page, it.source, itHash, it)
+						});
+					});
+					EntryRenderer.item.buildList((allItems) => {
+						allItems.forEach(item => {
+							const itemHash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS](item);
+							EntryRenderer.hover._addToCache(page, item.source, itemHash, item)
+						});
+						callbackFn();
+					});
+				} else {
+					callbackFn();
+				}
+				break;
+			}
+
+			case UrlUtil.PG_CONDITIONS: {
+				loadSimple(page, "conditions.json", "condition");
+				break;
+			}
+			case UrlUtil.PG_BACKGROUNDS: {
+				loadSimple(page, "backgrounds.json", "background");
+				break;
+			}
+			case UrlUtil.PG_FEATS: {
+				loadSimple(page, "feats.json", "feat");
+				break;
+			}
+			case UrlUtil.PG_INVOCATIONS: {
+				loadSimple(page, "invocations.json", "invocation");
+				break;
+			}
+			case UrlUtil.PG_PSIONICS: {
+				loadSimple(page, "psionics.json", "psionic");
+				break;
+			}
+			case UrlUtil.PG_REWARDS: {
+				loadSimple(page, "rewards.json", "reward");
+				break;
+			}
+			case UrlUtil.PG_RACES: {
+				if (!EntryRenderer.hover._isCached(page, source, hash)) {
+					BrewUtil.addBrewData((data) => {
+						if (!data.race) return;
+						loadPopulate(data, "race");
+					});
+					DataUtil.loadJSON(`${EntryRenderer.getDefaultRenderer().baseUrl}data/races.json`, (data) => {
+						const merged = EntryRenderer.race.mergeSubraces(data.race);
+						merged.forEach(race => {
+							const raceHash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES](race);
+							EntryRenderer.hover._addToCache(page, race.source, raceHash, race)
+						});
+						callbackFn();
+					});
+				} else {
+					callbackFn();
+				}
+				break;
+			}
+			case UrlUtil.PG_DEITIES: {
+				loadSimple(page, "deities.json", "deity");
+				break;
+			}
+			case UrlUtil.PG_OBJECTS: {
+				loadSimple(page, "objects.json", "object");
+				break;
+			}
+			case UrlUtil.PG_TRAPS_HAZARDS: {
+				loadSimple(page, "trapshazards.json", ["trap", "hazard"]);
+				break;
+			}
+		}
+	},
+
 	_teardownWindow: (hoverId) => {
 		const obj = EntryRenderer.hover._active[hoverId];
 		if (obj) {
@@ -2238,121 +2507,7 @@ EntryRenderer.hover = {
 			}
 		});
 
-		function loadMultiSource (page, baseUrl, listProp) {
-			if (!EntryRenderer.hover._isCached(page, source, hash)) {
-				DataUtil.loadJSON(`${baseUrl}index.json`, (data) => {
-					const procData = {};
-					Object.keys(data).forEach(k => procData[k.toLowerCase()] = data[k]);
-					DataUtil.loadJSON(`${baseUrl}${procData[source.toLowerCase()]}`, (data) => {
-						data[listProp].forEach(it => {
-							const itHash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
-							EntryRenderer.hover._addToCache(page, it.source, itHash, it)
-						});
-						EntryRenderer.hover._makeWindow();
-					});
-				});
-			} else {
-				EntryRenderer.hover._makeWindow();
-			}
-		}
-
-		function loadSimple (page, jsonFile, listProp) {
-			function populate (data, listProp) {
-				data[listProp].forEach(it => {
-					const itHash = UrlUtil.URL_TO_HASH_BUILDER[page](it);
-					EntryRenderer.hover._addToCache(page, it.source, itHash, it)
-				});
-			}
-
-			if (!EntryRenderer.hover._isCached(page, source, hash)) {
-				DataUtil.loadJSON(`data/${jsonFile}`, (data) => {
-					if (listProp instanceof Array) listProp.forEach(p => populate(data, p));
-					else populate(data, listProp);
-					EntryRenderer.hover._makeWindow();
-				});
-			} else {
-				EntryRenderer.hover._makeWindow();
-			}
-		}
-
-		switch (page) {
-			case UrlUtil.PG_SPELLS: {
-				loadMultiSource(page, `data/spells/`, "spell");
-				break;
-			}
-
-			case UrlUtil.PG_BESTIARY: {
-				loadMultiSource(page, `data/bestiary/`, "monster");
-				break;
-			}
-
-			case UrlUtil.PG_ITEMS: {
-				if (!EntryRenderer.hover._isCached(page, source, hash)) {
-					EntryRenderer.item.buildList((allItems) => {
-						allItems.forEach(item => {
-							const itemHash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS](item);
-							EntryRenderer.hover._addToCache(page, item.source, itemHash, item)
-						});
-						EntryRenderer.hover._makeWindow();
-					});
-				} else {
-					EntryRenderer.hover._makeWindow();
-				}
-				break;
-			}
-
-			case UrlUtil.PG_CONDITIONS: {
-				loadSimple(page, "conditions.json", "condition");
-				break;
-			}
-			case UrlUtil.PG_BACKGROUNDS: {
-				loadSimple(page, "backgrounds.json", "background");
-				break;
-			}
-			case UrlUtil.PG_FEATS: {
-				loadSimple(page, "feats.json", "feat");
-				break;
-			}
-			case UrlUtil.PG_INVOCATIONS: {
-				loadSimple(page, "invocations.json", "invocation");
-				break;
-			}
-			case UrlUtil.PG_PSIONICS: {
-				loadSimple(page, "psionics.json", "psionic");
-				break;
-			}
-			case UrlUtil.PG_REWARDS: {
-				loadSimple(page, "rewards.json", "reward");
-				break;
-			}
-			case UrlUtil.PG_RACES: {
-				if (!EntryRenderer.hover._isCached(page, source, hash)) {
-					DataUtil.loadJSON(`data/races.json`, (data) => {
-						const merged = EntryRenderer.race.mergeSubraces(data.race);
-						merged.forEach(race => {
-							const raceHash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES](race);
-							EntryRenderer.hover._addToCache(page, race.source, raceHash, race)
-						});
-						EntryRenderer.hover._makeWindow();
-					});
-				} else {
-					EntryRenderer.hover._makeWindow();
-				}
-				break;
-			}
-			case UrlUtil.PG_DEITIES: {
-				loadSimple(page, "deities.json", "deity");
-				break;
-			}
-			case UrlUtil.PG_OBJECTS: {
-				loadSimple(page, "objects.json", "object");
-				break;
-			}
-			case UrlUtil.PG_TRAPS_HAZARDS: {
-				loadSimple(page, "trapshazards.json", ["trap", "hazard"]);
-				break;
-			}
-		}
+		EntryRenderer.hover._doFillThenCall(page, source, hash, EntryRenderer.hover._makeWindow);
 	},
 
 	_cleanWindows: () => {

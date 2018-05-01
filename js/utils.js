@@ -2603,6 +2603,11 @@ RollerUtil = {
 		});
 
 		$(`#filter-search-input-group`).find(`#reset`).before($btnRoll);
+	},
+
+	isRollCol (string) {
+		if (typeof string !== "string") return false;
+		return !!/^(\d+)?d\d+([+-](\d+)?d\d+)*$/.exec(string.trim());
 	}
 };
 
@@ -2691,6 +2696,7 @@ BrewUtil = {
 		}
 
 		function purgeBrew () {
+			window.alert("Error when loading homebrew! Purging corrupt data...");
 			BrewUtil.storage.removeItem(HOMEBREW_STORAGE);
 			BrewUtil.homebrew = null;
 			window.location.hash = "";
@@ -2786,6 +2792,8 @@ BrewUtil = {
 						return ["reward"];
 					case UrlUtil.PG_PSIONICS:
 						return ["psionic"];
+					case UrlUtil.PG_VARIATNRULES:
+						return ["variantrule"];
 					default:
 						throw new Error(`No homebrew properties defined for category ${page}`);
 				}
@@ -2848,6 +2856,11 @@ BrewUtil = {
 
 				// populate list
 				function populateList () {
+					function getDisplayCat (cat) {
+						if (cat === "variantrule") return "Variant Rule";
+						return cat.uppercaseFirst();
+					}
+
 					function getExtraInfo (category, entry) {
 						switch (category) {
 							case "subclass":
@@ -2865,7 +2878,7 @@ BrewUtil = {
 						BrewUtil.homebrew[cat].filter(it => it.source === source).forEach(it => {
 							stack += `<li><section onclick="ListUtil.toggleCheckbox(event, this)">
 							<span class="col-xs-7 name">${it.name}</span>
-							<span class="col-xs-4 category">${cat.uppercaseFirst()}${getExtraInfo(cat, it)}</span>
+							<span class="col-xs-4 category">${getDisplayCat(cat)}${getExtraInfo(cat, it)}</span>
 							<span class="col-xs-1 text-align-center"><input type="checkbox" onclick="event.stopPropagation()"></span>
 							<span class="hidden uid">${it.uniqueId}</span>
 						</section></li>`;
@@ -2976,7 +2989,7 @@ BrewUtil = {
 			}
 
 			// prepare for storage
-			["class", "subclass", "spell", "monster", "background", "feat", "invocation", "race", "deity", "item", "psionic", "reward", "object", "trap", "hazard"].forEach(storePrep);
+			["class", "subclass", "spell", "monster", "background", "feat", "invocation", "race", "deity", "item", "psionic", "reward", "object", "trap", "hazard", "variantrule"].forEach(storePrep);
 
 			// store
 			function checkAndAdd (prop) {
@@ -3022,6 +3035,7 @@ BrewUtil = {
 			let itemsToAdd = json.item;
 			let rewardsToAdd = json.reward;
 			let psionicsToAdd = json.psionic;
+			let variantRulesToAdd = json.variantrule;
 			if (!BrewUtil.homebrew) {
 				BrewUtil.homebrew = json;
 			} else {
@@ -3042,6 +3056,7 @@ BrewUtil = {
 				itemsToAdd = checkAndAdd("item");
 				rewardsToAdd = checkAndAdd("reward");
 				psionicsToAdd = checkAndAdd("psionic");
+				variantRulesToAdd = checkAndAdd("variantrule");
 			}
 			BrewUtil.storage.setItem(HOMEBREW_STORAGE, JSON.stringify(BrewUtil.homebrew));
 
@@ -3090,6 +3105,9 @@ BrewUtil = {
 					break;
 				case UrlUtil.PG_PSIONICS:
 					addPsionics({psionic: psionicsToAdd});
+					break;
+				case UrlUtil.PG_VARIATNRULES:
+					addVariantRules({variantrule: variantRulesToAdd});
 					break;
 				default:
 					throw new Error(`No homebrew add function defined for category ${page}`);
@@ -3520,6 +3538,17 @@ CollectionUtil = {
 };
 
 // OVERLAY VIEW ========================================================================================================
+/**
+ * Relies on:
+ * - page implementing HashUtil's `loadsub` with handling to show/hide the book view based on hashKey changes
+ * - page running no-argument `loadsub` when `hashchange` occurs
+ *
+ * @param hashKey to use in the URL so that forward/back can open/close the view
+ * @param $openBtn jQuery-selected button to bind click open/close
+ * @param noneVisibleMsg "error" message to display if user has not selected any viewable content
+ * @param popTblGetNumShown function which should populate the view with HTML content and return the number of items displayed
+ * @constructor
+ */
 function BookModeView (hashKey, $openBtn, noneVisibleMsg, popTblGetNumShown) {
 	this.hashKey = hashKey;
 	this.$openBtn = $openBtn;
