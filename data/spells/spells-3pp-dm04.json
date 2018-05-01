@@ -85,7 +85,7 @@
 				]
 			},
 			"entries": [
-				"You summon a seething sphere of dark energy 5 feet in diameter. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and reduces the stun to incapacitation. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failure or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions that turn. Creatures take damage only upon entering the well—they take no additional damage for remaining in it—but if they leave the well and are pulled back in again, they take damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well's upper-dimensional space at one time. When the well's duration ends, all creatures inside it tumble out in a heap, landing prone."
+				"You summon a seething sphere of dark energy 5 feet in diameter. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and reduces the stun to incapacitation. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failure or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions that turn. Creatures take damage only upon entering the well\u2014they take no additional damage for remaining in it\u2014but if they leave the well and are pulled back in again, they take damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well's upper-dimensional space at one time. When the well's duration ends, all creatures inside it tumble out in a heap, landing prone."
 			],
 			"entriesHigherLevel": [
 				{
@@ -643,7 +643,7 @@
 				]
 			},
 			"entries": [
-				"You create a shadow play against a screen or wall. The surface can encompass up to 100 square feet. The number of creatures that can see the shadow play equals your Intelligence score. The shadowy figures make no sound but they can dance, run, move, kiss, fight, and so forth. Most of the figures are generic types—a rabbit, a dwarf—but a number of them equal to your Intelligence modifier can be recognizable as specific individuals."
+				"You create a shadow play against a screen or wall. The surface can encompass up to 100 square feet. The number of creatures that can see the shadow play equals your Intelligence score. The shadowy figures make no sound but they can dance, run, move, kiss, fight, and so forth. Most of the figures are generic types\u2014a rabbit, a dwarf\u2014but a number of them equal to your Intelligence modifier can be recognizable as specific individuals."
 			]
 		},
 		{

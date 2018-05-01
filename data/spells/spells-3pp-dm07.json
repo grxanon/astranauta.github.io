@@ -552,7 +552,7 @@
 				]
 			},
 			"entries": [
-				"You direct a bolt of rainbow colors toward a creature of your choice within range. If it hits, the target takes 3d8 damage of a random type (determined by rolling on the Damage Type table; see Twisted Arcana). If your attack roll was odd (the roll itself, not the adjusted result), the bolt leaps to a new target of your choice within range that has not already been targeted by frenzied bolt, requiring a new spell attack roll to hit. The bolt continues leaping to new targets until you roll an even number on your spell attack, miss a target, or run out of potential targets. All targets must be within range from you. You and your allies are legal targets for this spell, if you are particularly lucky—or unlucky."
+				"You direct a bolt of rainbow colors toward a creature of your choice within range. If it hits, the target takes 3d8 damage of a random type (determined by rolling on the Damage Type table; see Twisted Arcana). If your attack roll was odd (the roll itself, not the adjusted result), the bolt leaps to a new target of your choice within range that has not already been targeted by frenzied bolt, requiring a new spell attack roll to hit. The bolt continues leaping to new targets until you roll an even number on your spell attack, miss a target, or run out of potential targets. All targets must be within range from you. You and your allies are legal targets for this spell, if you are particularly lucky\u2014or unlucky."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1045,7 +1045,7 @@
 			},
 			"entries": [
 				"You surround yourself with the forces of chaos. Wild lights and strange sounds surround you, making stealth impossible. While wild shield is active, you can spend a reaction to absorb a spell that targets you or whose area of effect you are within. An absorbed spell has no effect, but absorbing a spell causes a chaos magic surge as if you had cast a spell, with you as the caster for all magic surge effects.",
-				"Wild shield ends when the duration expires or when it absorbs 4 levels of spells. If you try to absorb a spell whose level exceeds the spell levels remaining, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level – the levels wild shield can still absorb. If the check succeeds, the spell is absorbed; if the check fails, the spell takes its full effect. The chaos magic surge happens regardless of whether the spell is absorbed."
+				"Wild shield ends when the duration expires or when it absorbs 4 levels of spells. If you try to absorb a spell whose level exceeds the spell levels remaining, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level \u2014 the levels wild shield can still absorb. If the check succeeds, the spell is absorbed; if the check fails, the spell takes its full effect. The chaos magic surge happens regardless of whether the spell is absorbed."
 			],
 			"entriesHigherLevel": [
 				{
