@@ -395,7 +395,11 @@ function EntryRenderer () {
 									exact: Number(m[1])
 								}
 							};
-							if (m[1][0] === "0") roRender[j].pad = true;
+							if (m[1][0] === "0") roRender[j].roll.pad = true;
+							if (roRender[j].roll.exact === 0 && i === entry.rows.length - 1) {
+								roRender[j].exact = 100;
+								roRender[j].entry = "00";
+							}
 						} else {
 							roRender[j] = {
 								type: "cell",
@@ -404,7 +408,11 @@ function EntryRenderer () {
 									max: Number(m[3])
 								}
 							};
-							if (m[1][0] === "0" || m[3][0] === "0") roRender[j].pad = true;
+							if (m[1][0] === "0" || m[3][0] === "0") roRender[j].roll.pad = true;
+							if (roRender[j].roll.max === 0 && i === entry.rows.length - 1) {
+								roRender[j].max = 100;
+								roRender[j].entry = "00";
+							}
 						}
 					}
 
@@ -415,7 +423,7 @@ function EntryRenderer () {
 						} else if (roRender[j].roll) {
 							if (roRender[j].roll.entry) {
 								toRenderCell = roRender[j].roll.entry;
-							} else if (roRender[j].roll.exact) {
+							} else if (roRender[j].roll.exact !== undefined) {
 								toRenderCell = roRender[j].roll.pad ? StrUtil.padNumber(roRender[j].roll.exact, 2, "0") : roRender[j].roll.exact;
 							} else {
 								toRenderCell = roRender[j].roll.pad ? `${StrUtil.padNumber(roRender[j].roll.min, 2, "0")}-${StrUtil.padNumber(roRender[j].roll.max, 2, "0")}` : `${roRender[j].roll.min}-${roRender[j].roll.max}`
@@ -450,7 +458,7 @@ function EntryRenderer () {
 					return num;
 				}
 				if (ent.roll) {
-					return `data-roll-min="${convertZeros(ent.roll.exact || ent.roll.min)}" data-roll-max="${convertZeros(ent.roll.exact || ent.roll.max)}"`
+					return `data-roll-min="${convertZeros(ent.roll.exact !== undefined ? ent.roll.exact : ent.roll.min)}" data-roll-max="${convertZeros(ent.roll.exact !== undefined ? ent.roll.exact : ent.roll.max)}"`
 				}
 				return "";
 			}
@@ -948,7 +956,7 @@ EntryRenderer.getEntryDice = function (entry, name) {
 
 	const toDisplay = entry.displayText ? entry.displayText : getDiceAsStr();
 
-	if (entry.rollable === true) return `<span class='roller' onclick="EntryRenderer.dice.rollerClick(this, ${pack(entry)}${name ? `, '${name.escapeQuotes()}'` : ""})">${toDisplay}</span>`;
+	if (entry.rollable === true) return `<span class='roller render-roller' title="${name ? `${name.escapeQuotes()}` : ""}" onclick="EntryRenderer.dice.rollerClick(this, ${pack(entry)}${name ? `, '${name.escapeQuotes()}'` : ""})">${toDisplay}</span>`;
 	else return toDisplay;
 };
 
@@ -1508,12 +1516,34 @@ EntryRenderer.monster = {
 		return `${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryName[0]} regains spent legendary actions at the start of its turn.`
 	},
 
+	// ultimately these rollers should become part of the JSON
+	legacy: {
+		attemptToGetTitle: (ele) => {
+			let titleMaybe = $(ele.parentElement).find(".entry-title")[0];
+			if (titleMaybe !== undefined) {
+				titleMaybe = titleMaybe.innerHTML;
+				if (titleMaybe) {
+					titleMaybe = titleMaybe.substring(0, titleMaybe.length - 1).trim();
+				}
+			}
+			return titleMaybe;
+		}
+	},
+
 	getCompactRenderedString: (mon, renderer) => {
 		renderer = renderer || EntryRenderer.getDefaultRenderer();
 
 		function makeAbilityRoller (ability) {
 			const mod = Parser.getAbilityModifier(mon[ability]);
 			return renderer.renderEntry(`{@dice 1d20${mod}|${mon[ability]} (${mod})|${Parser.attAbvToFull(ability)}`);
+		}
+
+		function makeSkillRoller (name, mod) {
+			return renderer.renderEntry(`${name} {@dice 1d20${mod}|${mod}|${name}`);
+		}
+
+		function makeSaveRoller (attr, mod) {
+			return renderer.renderEntry(`${attr.uppercaseFirst()} {@dice 1d20${mod}|${mod}|${Parser.attAbvToFull([attr])} save`);
 		}
 
 		function getSection (title, key, depth) {
@@ -1542,7 +1572,7 @@ EntryRenderer.monster = {
 					</tr>
 					<tr>
 						<td>${mon.ac}</td>					
-						<td>${mon.hp}</td>					
+						<td>${EntryRenderer.monster.getRenderedHp(mon.hp)}</td>					
 						<td>${Parser.getSpeedString(mon)}</td>					
 						<td>${Parser.monCrToFull(mon.cr)}</td>					
 					</tr>
@@ -1572,8 +1602,8 @@ EntryRenderer.monster = {
 			<tr><td colspan="6"><div class="border"></div></td></tr>
 			<tr><td colspan="6">
 				<div class="summary-flexer">
-					${mon.save ? `<p><b>Saving Throws:</b> ${mon.save}</p>` : ""}
-					${mon.skill ? `<p><b>Skills:</b> ${Object.keys(mon.skill).sort().map(s => `${s.uppercaseFirst()} ${mon.skill[s]}`)}</p>` : ""}
+					${mon.save ? `<p><b>Saving Throws:</b> ${Object.keys(mon.save).map(s => makeSaveRoller(s, mon.save[s])).join(", ")}</p>` : ""}
+					${mon.skill ? `<p><b>Skills:</b> ${Object.keys(mon.skill).sort().map(s => makeSkillRoller(s.uppercaseFirst(), mon.skill[s])).join(", ")}</p>` : ""}
 					<p><b>Senses:</b> ${mon.senses ? `${mon.senses}, ` : ""}passive Perception ${mon.passive}</p>
 					<p><b>Languages:</b> ${mon.languages ? mon.languages : `\u2014`}</p>
 					${mon.vulnerable ? `<p><b>Damage Vuln.:</b> ${Parser.monImmResToFull(mon.vulnerable)}</p>` : ""}
@@ -1597,6 +1627,10 @@ EntryRenderer.monster = {
 		`);
 
 		return renderStack.join("");
+	},
+
+	getRenderedHp: (hp) => {
+		return hp.special ? hp.special : EntryRenderer.getDefaultRenderer().renderEntry(`${hp.average} ({@dice ${hp.formula}|${hp.formula}|Hit Points})`);
 	},
 
 	getSpellcastingRenderedTraits: (mon, renderer) => {

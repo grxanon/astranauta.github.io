@@ -158,7 +158,7 @@
 				"Your first step in playing an adventurer in the Dungeons & Dragons game is to imagine and create a character of your own. Your character is a combination of various statistics, roleplaying hooks, and your imagination. You choose a race (such as human or halfling) and a class (such as fighter or wizard). You also invent the personality, appearance, and backstory of your character. Once completed, your character serves as your representative in the game, your avatar in the Dungeons & Dragons world.",
 				"Before you dive into step 1 below, think about the kind of adventurer you want to play. You might be a courageous fighter, a skulking rogue, a fervent cleric, or a flamboyant wizard. Or you might be more interested in an unconventional character, such as a brave rogue who likes hand-to-hand combat, or a sharpshooter who picks off enemies from afar. Do you like fantasy fiction featuring dwarves or elves? Try building a character of one of those races. Do you want your character to be the toughest adventurer at the table? Consider a class like barbarian or paladin. If you don't know where else to begin, take a look at the illustrations in this book to see what catches your interest.",
 				"Once you have a character in mind, roll on these steps in order, making decisions that reflect the character you want. Your conception of your character might evolve with each choice you make. What's important is that you come to the table with a character you're excited to play.",
-				"Throughout this chapter, we use the term {@b character sheet} to mean whatever you use to track your character, whether its a formal character sheet (like the one at the end of this book), some form of digital record, or a piece of notebook paper. An official D&D character sheet is a fine place to start until you know what information you need and how you use it during the game.",
+				"Throughout this chapter, we use the term {@b character sheet} to mean whatever you use to track your character, whether it's a formal character sheet (like the one at the end of this book), some form of digital record, or a piece of notebook paper. An official D&D character sheet is a fine place to start until you know what information you need and how you use it during the game.",
 				{
 					"type": "entries",
 					"entries": [
@@ -1913,8 +1913,7 @@
 											"type": "entries",
 											"name": "Heavy Armor",
 											"entries": [
-												"Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely.",
-												"If the Armor table shows \"Str 13\" or \"Str 15\" in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score."
+												"Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor table shows \"Str 13\" or \"Str 15\" in the Strength column for an armor type, the armor reduces the wearer's speed by 10 feet unless the wearer has a Strength score equal to or higher than the listed score."
 											]
 										},
 										{
@@ -2612,8 +2611,7 @@
 											"type": "entries",
 											"name": "Ammunition",
 											"entries": [
-												"You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield. [new paragraph] If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see \"Improvised Weapons\" late in the section). A sling must be loaded to deal any damage when used in this way.",
-												"Loading a one-handed weapon requires a free hand."
+												"You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield. [new paragraph] If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see \"Improvised Weapons\" late in the section). A sling must be loaded to deal any damage when used in this way. Loading a one-handed weapon requires a free hand."
 											]
 										},
 										{
@@ -2648,8 +2646,7 @@
 											"type": "entries",
 											"name": "Range",
 											"entries": [
-												"A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range.",
-												"When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range."
+												"A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range."
 											]
 										},
 										{
@@ -4623,8 +4620,7 @@
 											"type": "entries",
 											"name": "Squalid",
 											"entries": [
-												" You live in a leaky stable, a mud-floored hut just outside town, or a vermin-infested boarding house in the worst part of town. You have shelter from the elements, but you live in a desperate and often violent environment, in places rife with disease, hunger, and misfortune.",
-												"You are beneath the notice of most people, and you have few legal protections. Most people at this lifestyle level have suffered some terrible setback. They might be disturbed, marked as exiles, or suffer from disease."
+												" You live in a leaky stable, a mud-floored hut just outside town, or a vermin-infested boarding house in the worst part of town. You have shelter from the elements, but you live in a desperate and often violent environment, in places rife with disease, hunger, and misfortune. You are beneath the notice of most people, and you have few legal protections. Most people at this lifestyle level have suffered some terrible setback. They might be disturbed, marked as exiles, or suffer from disease."
 											]
 										},
 										{
@@ -5366,7 +5362,7 @@
 							"name": "Hit Points and Hit Dice",
 							"entries": [
 								"You gain the hit points from your new class as described for levels after 1st. You gain the 1st-level hit points for a class only when you are a 1st-level character.",
-								"You add together the Hit Dice granted by all your classes to form your pool of Hit Dice. if the Hit Dice are the same die type, you can simply pool them together. For example, both the fighter and the paladin have a d10. so if you area paladin 5/fighter 5, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, keep track of them separately. If you area paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice."
+								"You add together the Hit Dice granted by all your classes to form your pool of Hit Dice. if the Hit Dice are the same die type, you can simply pool them together. For example, both the fighter and the paladin have a d10. so if you are a paladin 5/fighter 5, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, keep track of them separately. If you area paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice."
 							]
 						},
 						{
@@ -6443,7 +6439,7 @@
 									"name": "Finding a Hidden Object",
 									"entries": [
 										"When your character searches for a hidden object such as a secret door or a trap, the DM typically asks you to make a Wisdom (Perception) check. Such a check can be used to find hidden details or other information and clues that you might otherwise overlook.",
-										"In most cases, you need to describe where you are looking in order for the DM to determine your chance of success. For example, a key is hidden beneath a set of folded clothes in the top drawer of a bureau. If you tell the DM that you pace around the room, looking at the walls and furniture for clues, you have no chance of finding they key, regardless of your Wisdom (Perception) check result. You would have to specify that you were opening the drawers or searching the bureau in order to have any chance of success."
+										"In most cases, you need to describe where you are looking in order for the DM to determine your chance of success. For example, a key is hidden beneath a set of folded clothes in the top drawer of a bureau. If you tell the DM that you pace around the room, looking at the walls and furniture for clues, you have no chance of finding the key, regardless of your Wisdom (Perception) check result. You would have to specify that you were opening the drawers or searching the bureau in order to have any chance of success."
 									]
 								}
 							]
@@ -6645,7 +6641,7 @@
 									"name": "Difficult Terrain",
 									"entries": [
 										"The travel speeds given in the Travel Pace table assume relatively simple terrain: roads, open plains, or clear dungeon corridors. But adventurers often face dense forests, deep swamps, rubble-filled ruins, steep mountains, and ice-covered ground\u2014all considered difficult terrain.",
-										"You move at half speed in difficult terrain-moving 1 foot in difficult terrain costs 2 feet of speed\u2014so you can cover only half the normal distance in a minute, an hour, or a day."
+										"You move at half speed in difficult terrain\u2014moving 1 foot in difficult terrain costs 2 feet of speed\u2014so you can cover only half the normal distance in a minute, an hour, or a day."
 									]
 								}
 							]
@@ -6828,7 +6824,7 @@
 									"entries": [
 										"The most fundamental tasks of adventuring\u2014noticing danger, finding hidden objects, hitting an enemy in combat, and targeting a spell, to name just a few\u2014rely heavily on a character's ability to see. Darkness and other effects that obscure vision can prove a significant hindrance.",
 										"A given area might be lightly or heavily obscured. In a {@b lightly obscured} area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.",
-										"{@b A heavily obscured} area\u2014such as darkness, opaque fog, or dense foliage-blocks vision entirely. A creature in a heavily obscured area effectively suffers from the blinded condition (see the appendix). A heavily obscured area doesn't blind you, but you are effectively blinded when you try to see something obscured by it.",
+										"{@b A heavily obscured} area\u2014such as darkness, opaque fog, or dense foliage\u2014blocks vision entirely. A creature in a heavily obscured area effectively suffers from the blinded condition (see the appendix). A heavily obscured area doesn't blind you, but you are effectively blinded when you try to see something obscured by it.",
 										"The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.",
 										"{@b Bright light} lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.",
 										"{@b Dim light}, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.",

@@ -326,7 +326,7 @@
 					"type": "entries",
 					"name": "Bomb",
 					"entries": [
-						"As an action, a character can light this bomb and throw it at a point up to 60 fee t away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take 3d6 fire damage."
+						"As an action, a character can light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take 3d6 fire damage."
 					]
 				},
 				{
@@ -342,7 +342,7 @@
 					"name": "Dynamite",
 					"entries": [
 						"As an action, a creature can light a stick of dynamite and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must make a DC 12 Dexterity saving throw, taking 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one.",
-						"A character can bind sticks of dynamite together so they explode at the same time. Each additional stick in creases the damage by 1d6 (to a maximum of 10d6) and the burst radius by 5 feet (to a maximum of 20 feet).",
+						"A character can bind sticks of dynamite together so they explode at the same time. Each additional stick increases the damage by 1d6 (to a maximum of 10d6) and the burst radius by 5 feet (to a maximum of 20 feet).",
 						"Dynamite can be rigged with a longer fuse to explode after a set amount of time, usually 1 to 6 rounds. Roll initiative for the dynamite. After the set number of rounds goes by, the dynamite explodes on that initiative."
 					]
 				},
@@ -670,7 +670,7 @@
 							"name": "Turns",
 							"entries": [
 								"On its turn, a creature moves as normal but must take the action it selected or take no action at all.",
-								"Once everyone has acted, the process repeats. Everyone in the battle selects an action. rolls initiative, and takes turns in order."
+								"Once everyone has acted, the process repeats. Everyone in the battle selects an action, rolls initiative, and takes turns in order."
 							]
 						}
 					]
@@ -864,7 +864,7 @@
 		{
 			"name": "Level Advancement Without XP",
 			"entries": [
-				"You can do away with experience points entirely and control the rat e of character advancement. Advance characters based on how many sessions they play, or when they accomplish significant story goals in the campaign. In either case, you tell the players when their characters gain a level.",
+				"You can do away with experience points entirely and control the rate of character advancement. Advance characters based on how many sessions they play, or when they accomplish significant story goals in the campaign. In either case, you tell the players when their characters gain a level.",
 				"This method of level advancement can be particularly helpful if your campaign doesn't include much combat, or includes so much combat that tracking XP becomes tiresome."
 			],
 			"source": "DMG"
@@ -1137,7 +1137,7 @@
 					"name": "Hit Points and Hit Dice",
 					"entries": [
 						"You gain the hit points from your new class as described for levels after 1st. You gain the 1st-level hit points for a class only when you are a 1st-level character.",
-						"You add together the Hit Dice granted by all your classes to form your pool of Hit Dice. if the Hit Dice are the same die type, you can simply pool them together. For example, both the fighter and the paladin have a d10, so if you are a paladin 5/fighter 5, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, keep track of them separately. If you area paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice."
+						"You add together the Hit Dice granted by all your classes to form your pool of Hit Dice. if the Hit Dice are the same die type, you can simply pool them together. For example, both the fighter and the paladin have a d10, so if you are a paladin 5/fighter 5, you have ten d10 Hit Dice. If your classes give you Hit Dice of different types, keep track of them separately. If you are a paladin 5/cleric 5, for example, you have five d10 Hit Dice and five d8 Hit Dice."
 					]
 				},
 				{

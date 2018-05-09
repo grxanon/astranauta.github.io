@@ -274,7 +274,14 @@ function loadparser (data) {
 
 			// hit points
 			if (i === 3) {
-				stats.hp = curline.split("Hit Points ")[1];
+				const rawHp = curline.split("Hit Points ")[1];
+				// split HP into average and formula
+				const m = /^(\d+) \((.*?)\)$/.exec(rawHp);
+				if (!m) stats.hp = {special: rawHp}; // for e.g. Avatar of Death
+				stats.hp = {
+					average: Number(m[1]),
+					formula: m[2]
+				};
 				continue;
 			}
 
@@ -339,6 +346,17 @@ function loadparser (data) {
 			// saves (optional)
 			if (!curline.indexOf("Saving Throws ")) {
 				stats.save = curline.split("Saving Throws ")[1];
+				// TODO parse to new format
+				// convert to object format
+				if (stats.save && stats.save.trim()) {
+					const spl = stats.save.split(",").map(it => it.trim().toLowerCase()).filter(it => it);
+					const nu = {};
+					spl.forEach(it => {
+						const sv = it.split(" ");
+						nu[sv[0]] = sv[1];
+					});
+					stats.save = nu;
+				}
 				continue;
 			}
 
@@ -357,6 +375,7 @@ function loadparser (data) {
 						newSkills[name] = val;
 					});
 					stats.skill = newSkills;
+					if (stats.skill[""]) delete stats.skill[""]; // remove empty properties
 				} catch (ignored) {
 					// because the linter doesn't like empty blocks...
 					continue;
@@ -367,6 +386,7 @@ function loadparser (data) {
 			// damage vulnerabilities (optional)
 			if (!curline.indexOf("Damage Vulnerabilities ")) {
 				stats.vulnerable = curline.split("Vulnerabilities ")[1];
+				stats.vulnerable = tryParseSpecialDamage(stats.vulnerable, "vulnerable");
 				continue;
 			}
 
@@ -436,7 +456,6 @@ function loadparser (data) {
 						onreactions = !curline.toUpperCase().indexOf("REACTIONS");
 						onlegendaries = !curline.toUpperCase().indexOf("LEGENDARY ACTIONS");
 						onlegendarydescription = onlegendaries;
-
 						i++;
 						curline = statblock[i];
 					}
@@ -445,26 +464,59 @@ function loadparser (data) {
 					curtrait.name = "";
 					curtrait.entries = [];
 
-					if (!onlegendarydescription) {
-						// first paragraph
-						curtrait.name = curline.split(/([.!])/g)[0];
-						curtrait.entries.push(curline.split(".").splice(1).join(".").trim());
-					} else {
+					const parseAction = line => {
+						curtrait.name = line.split(/([.!])/g)[0];
+						curtrait.entries.push(line.split(".").splice(1).join(".").trim());
+					};
+
+					if (onlegendarydescription) {
+						// usually the first paragraph is a description of how many legendary actions the creature can make
+						// but in the case that it's missing the substring "legendary" and "action" it's probably an action
+						const compressed = curline.replace(/\s*/g, "").toLowerCase();
+						if (!compressed.includes("legendary") && !compressed.includes("action")) onlegendarydescription = false;
+					}
+
+					if (onlegendarydescription) {
 						curtrait.entries.push(curline.trim());
 						onlegendarydescription = false;
+					} else {
+						parseAction(curline);
 					}
 
 					i++;
 					curline = statblock[i];
 
 					// get paragraphs
-					while (curline && curline.match(/^([A-Zot][a-z'’`]+( \(.*\)| )?)+([.!])+/g) === null && !moveon(curline)) {
+					// connecting words can start with: o ("of", "or"); t ("the"); a ("and", "at"). Accept numbers, e.g. (Costs 2 Actions)
+					// allow numbers
+					// allow "a" and "I" as single-character words
+					while (curline && curline.match(/^(([A-Z0-9ota][a-z0-9'’`]+|[aI])( \(.*\)| )?)+([.!])+/g) === null && !moveon(curline)) {
 						curtrait.entries.push(curline.trim());
 						i++;
 						curline = statblock[i];
 					}
 
 					if (curtrait.name || curtrait.entries) {
+						// convert dice tags
+						if (curtrait.entries) {
+							curtrait.entries = curtrait.entries.filter(it => it.trim()).map(e => {
+								if (typeof e !== "string") return e;
+
+								// replace e.g. "+X to hit"
+								e = e.replace(/([-+])?\d+(?= to hit)/g, function (match) {
+									return `{@hit ${match}}`
+								});
+
+								// replace e.g. "2d4+2"
+								e = e.replace(/\d+d\d+(\s?([-+])\s?\d+\s?)?/g, function (match) {
+									return `{@dice ${match}}`;
+								});
+
+								return e;
+							});
+						}
+
+						// convert spellcasting
 						if (ontraits) {
 							if (curtrait.name.toLowerCase().includes("spellcasting")) {
 								curtrait = tryParseSpellcasting(curtrait);

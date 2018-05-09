@@ -9,6 +9,12 @@ DEPLOYED_STATIC_ROOT = "https://static.5etools.com/";
 // for the roll20 script to set
 IS_ROLL20 = false;
 
+// the GitHub API has a 60 requests/hour limit per IP which we quickly hit if the user refreshes their Roll20 a couple of times
+// embed shitty OAth2 details here to enable 5k/hour requests per IP (sending them with requests to the API relaxes the limit)
+// naturally these are client-visible and should not be used to secure anything
+HOMEBREW_CLIENT_ID = `67e57877469da38a85a7`;
+HOMEBREW_CLIENT_SECRET = `c00dede21ca63a855abcd9a113415e840aca3f92`;
+
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
 HASH_SUB_LIST_SEP = "~";
@@ -2285,8 +2291,12 @@ UrlUtil.getCurrentPage = function () {
  * @param href the link
  */
 UrlUtil.link = function (href) {
-	if (!IS_ROLL20 && IS_DEPLOYED) return `${DEPLOYED_STATIC_ROOT}${href}?ver=${VERSION_NUMBER}`;
-	else if (IS_DEPLOYED) return `${href}?ver=${VERSION_NUMBER}`;
+	function addGetParam (curr) {
+		if (href.includes("?")) return `${curr}&ver=${VERSION_NUMBER}`;
+		else return `${curr}?ver=${VERSION_NUMBER}`;
+	}
+	if (!IS_ROLL20 && IS_DEPLOYED) return addGetParam(`${DEPLOYED_STATIC_ROOT}${href}`);
+	else if (IS_DEPLOYED) return addGetParam(href);
 	return href;
 };
 
@@ -2798,14 +2808,14 @@ BrewUtil = {
 						throw new Error(`No homebrew properties defined for category ${page}`);
 				}
 			}
-			const urls = getBrewDirs().map(it => ({url: `https://api.github.com/repos/TheGiddyLimit/homebrew/contents/${it}?${(new Date()).getTime()}`}));
+			const urls = getBrewDirs().map(it => ({url: `https://api.github.com/repos/TheGiddyLimit/homebrew/contents/${it}?client_id=${HOMEBREW_CLIENT_ID}&client_secret=${HOMEBREW_CLIENT_SECRET}&${(new Date()).getTime()}`}));
 			DataUtil.multiLoadJSON(urls, null, (json) => {
 				let stack = "";
 				const all = [].concat.apply([], json);
 				all.forEach(it => {
 					stack += `<li>
 						<section onclick="BrewUtil.addBrewRemote(this, '${(it.download_url || "").escapeQuotes()}')">
-							<span class="col-xs-4 filename">${it.name}</span>
+							<span class="col-xs-4 filename">${it.name.trim().replace(/\.json$/, "")}</span>
 							<span class="col-xs-8 source" title="${it.download_url}">${it.download_url}</span>
 						</section>
 					</li>`;
@@ -2909,7 +2919,7 @@ BrewUtil = {
 						$overlay2.click();
 					} else {
 						toDel.forEach(it => {
-							const deleteFn = getDeleteFunction(it.category.toLowerCase());
+							const deleteFn = getDeleteFunction(it.category.toLowerCase().replace(/ /g, ""));
 							deleteFn(it.uid, false);
 						});
 						populateList();
@@ -3223,6 +3233,7 @@ BrewUtil = {
 				case "item":
 				case "reward":
 				case "psionic":
+				case "variantrule":
 					return deleteGenericBrew(category);
 				case "subclass":
 					return deleteSubclassBrew;
