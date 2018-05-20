@@ -4,6 +4,7 @@ const JSON_URL = "data/deities.json";
 const STR_REPRINTED = "reprinted";
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	DataUtil.loadJSON(JSON_URL, onJsonLoad);
 };
 
@@ -109,6 +110,7 @@ function addDeities (data) {
 	let tempString = "";
 	for (; dtI < deitiesList.length; dtI++) {
 		const g = deitiesList[dtI];
+		if (ExcludeUtil.isExcluded(g.name, "deity", g.source)) continue;
 		const abvSource = Parser.sourceJsonToAbv(g.source);
 
 		g.alignment.sort(SortUtil.alignmentSort);
@@ -197,8 +199,8 @@ function loadhash (jsonIndex) {
 	const renderStack = [];
 	if (deity.entries) renderer.recursiveEntryRender({entries: deity.entries}, renderStack);
 
-	const $content = $(`#pagecontent`);
-	$content.html(`
+	const $content = $(`#pagecontent`).empty();
+	$content.append(`
 		${EntryRenderer.utils.getBorderTr()}
 		${EntryRenderer.utils.getNameTr(deity, false, "", `, ${deity.title.toTitleCase()}`)}
 		<tr><td colspan="6"><span class="bold">Pantheon: </span>${deity.pantheon}</td></tr>

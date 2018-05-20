@@ -3,6 +3,7 @@
 const JSON_URL = "data/trapshazards.json";
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	DataUtil.loadJSON(JSON_URL, onJsonLoad);
 };
 
@@ -43,6 +44,8 @@ function addTrapsHazards (data) {
 	let tempString = "";
 	for (; thI < trapsAndHazardsList.length; thI++) {
 		const it = trapsAndHazardsList[thI];
+		if (it.trapType === "HAZ" && ExcludeUtil.isExcluded(it.name, "hazard", it.source)) continue;
+		else if (it.trapType !== "HAZ" && ExcludeUtil.isExcluded(it.name, "trap", it.source)) continue;
 		const abvSource = Parser.sourceJsonToAbv(it.source);
 
 		tempString += `
@@ -92,8 +95,8 @@ function loadhash (jsonIndex) {
 
 	renderer.recursiveEntryRender({entries: it.entries}, renderStack, 2);
 
-	const $content = $(`#pagecontent`);
-	$content.html(`
+	const $content = $(`#pagecontent`).empty();
+	$content.append(`
 		${EntryRenderer.utils.getBorderTr()}
 		${EntryRenderer.utils.getNameTr(it)}
 		<tr class="text"><td colspan="6"><i>${Parser.trapTypeToFull(it.trapType)}</i></td>

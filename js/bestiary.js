@@ -10,8 +10,6 @@ window.PROF_MODE_BONUS = "bonus";
 window.PROF_MODE_DICE = "dice";
 window.PROF_DICE_MODE = PROF_MODE_BONUS;
 
-let tableDefault = "";
-
 function ascSortCr (a, b) {
 	// always put unknown values last
 	if (a === "Unknown" || a === undefined) a = "999";
@@ -68,6 +66,7 @@ function handleBrew (homebrew) {
 }
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	loadMeta(() => {
 		loadFluffIndex(() => {
 			multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addMonsters, () => {
@@ -207,8 +206,6 @@ const filterBox = initFilterBox(
 );
 
 function pageInit (loadedSources) {
-	tableDefault = $("#pagecontent").html();
-
 	sourceFilter.items = Object.keys(loadedSources).map(src => new FilterItem(src, loadSource(JSON_LIST_NAME, addMonsters)));
 	sourceFilter.items.sort(SortUtil.ascSort);
 
@@ -335,6 +332,7 @@ function addMonsters (data) {
 	// build the table
 	for (; mI < monsters.length; mI++) {
 		const mon = monsters[mI];
+		if (ExcludeUtil.isExcluded(mon.name, "monster", mon.source)) continue;
 		mon._pTypes = Parser.monTypeToFullObj(mon.type); // store the parsed type
 		mon._pCr = mon.cr === undefined ? "Unknown" : (mon.cr.cr || mon.cr);
 		mon._fSpeed = Object.keys(mon.speed).filter(k => mon.speed[k]);
@@ -444,21 +442,14 @@ function sortMonsters (a, b, o) {
 	return 0;
 }
 
-function objToTitleCaseStringWithCommas (obj) {
-	return Object.keys(obj).map(function (k) {
-		return k.uppercaseFirst() + " " + obj[k]
-	}).join(", ");
-}
-
 let profBtn = null;
 // load selected monster stat block
 function loadhash (id) {
-	const $content = $("#pagecontent");
+	const $content = $("#pagecontent").empty();
 	const $wrpBtnProf = $(`#wrp-profbonusdice`);
 
 	const mon = monsters[id];
 
-	$content.html(tableDefault);
 	if (profBtn !== null) {
 		$wrpBtnProf.append(profBtn);
 		profBtn = null;
@@ -551,7 +542,7 @@ function loadhash (id) {
 		var skills = mon.skill;
 		if (skills) {
 			$content.find("td span#skills").parent().show();
-			$content.find("td span#skills").html(objToTitleCaseStringWithCommas(skills));
+			$content.find("td span#skills").html(EntryRenderer.monster.getSkillsString(mon));
 		} else {
 			$content.find("td span#skills").parent().hide();
 		}
@@ -742,6 +733,7 @@ function loadhash (id) {
 		}
 
 		function renderSkillOrSaveRoller (itemName, profBonusString, isSave) {
+			itemName = itemName.replace(/plus one of the following:/g, "").replace(/^or\s*/, "");
 			return EntryRenderer.getDefaultRenderer().renderEntry(`{@dice 1d20${profBonusString}|${profBonusString}|${itemName}${isSave ? " save" : ""}`);
 		}
 
@@ -832,57 +824,61 @@ function loadhash (id) {
 		const $td = $(`<td colspan='6' class='text'/>`).appendTo($tr);
 		$content.append(EntryRenderer.utils.getBorderTr());
 		renderer.setFirstSection(true);
-		if (ixFluff[mon.source]) {
-			DataUtil.loadJSON(JSON_DIR + ixFluff[mon.source], (data) => {
-				const fluff = data.monster.find(it => (it.name === mon.name && it.source === mon.source));
 
-				if (!fluff) {
-					$td.empty();
-					$td.append(HTML_NO_INFO);
-					return;
+		function handleFluff (data) {
+			const fluff = mon.fluff || data.monster.find(it => (it.name === mon.name && it.source === mon.source));
+
+			if (!fluff) {
+				$td.empty();
+				$td.append(HTML_NO_INFO);
+				return;
+			}
+
+			if (fluff._copy) {
+				const cpy = data.monster.find(it => fluff._copy.name === it.name && fluff._copy.source === it.source);
+				// preserve these
+				const name = fluff.name;
+				const src = fluff.source;
+				const images = fluff.images;
+				Object.assign(fluff, cpy);
+				fluff.name = name;
+				fluff.source = src;
+				if (images) fluff.images = images;
+				delete fluff._copy;
+			}
+
+			if (fluff._appendCopy) {
+				const cpy = data.monster.find(it => fluff._appendCopy.name === it.name && fluff._appendCopy.source === it.source);
+				if (cpy.images) {
+					if (!fluff.images) fluff.images = cpy.images;
+					else fluff.images = fluff.images.concat(cpy.images);
 				}
-
-				if (fluff._copy) {
-					const cpy = data.monster.find(it => fluff._copy.name === it.name && fluff._copy.source === it.source);
-					// preserve these
-					const name = fluff.name;
-					const src = fluff.source;
-					const images = fluff.images;
-					Object.assign(fluff, cpy);
-					fluff.name = name;
-					fluff.source = src;
-					if (images) fluff.images = images;
-					delete fluff._copy;
+				if (cpy.entries) {
+					if (!fluff.entries) fluff.entries = cpy.entries;
+					else fluff.entries.entries = fluff.entries.entries.concat(cpy.entries.entries);
 				}
+				delete fluff._appendCopy;
+			}
 
-				if (fluff._appendCopy) {
-					const cpy = data.monster.find(it => fluff._appendCopy.name === it.name && fluff._appendCopy.source === it.source);
-					if (cpy.images) {
-						if (!fluff.images) fluff.images = cpy.images;
-						else fluff.images = fluff.images.concat(cpy.images);
-					}
-					if (cpy.entries) {
-						if (!fluff.entries) fluff.entries = cpy.entries;
-						else fluff.entries.entries = fluff.entries.entries.concat(cpy.entries.entries);
-					}
-					delete fluff._appendCopy;
-				}
-
-				if (showImages) {
-					if (fluff.images) {
-						fluff.images.forEach(img => $td.append(renderer.renderEntry(img, 1)));
-					} else {
-						$td.append(HTML_NO_IMAGES);
-					}
+			if (showImages) {
+				if (fluff.images) {
+					fluff.images.forEach(img => $td.append(renderer.renderEntry(img, 1)));
 				} else {
-					if (fluff.entries) {
-						const depth = fluff.entries.type === "section" ? -1 : 2;
-						$td.append(renderer.renderEntry(fluff.entries, depth));
-					} else {
-						$td.append(HTML_NO_INFO);
-					}
+					$td.append(HTML_NO_IMAGES);
 				}
-			});
+			} else {
+				if (fluff.entries) {
+					const depth = fluff.entries.type === "section" ? -1 : 2;
+					$td.append(renderer.renderEntry(fluff.entries, depth));
+				} else {
+					$td.append(HTML_NO_INFO);
+				}
+			}
+		}
+
+		if (ixFluff[mon.source] || mon.fluff) {
+			if (mon.fluff) handleFluff();
+			else DataUtil.loadJSON(JSON_DIR + ixFluff[mon.source], handleFluff);
 		} else {
 			$td.empty();
 			if (showImages) $td.append(HTML_NO_IMAGES);

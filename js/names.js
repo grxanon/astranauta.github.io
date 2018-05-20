@@ -64,6 +64,7 @@ function loadhash (id) {
 	const race = nameList[iLoad];
 	const table = race.tables[jLoad].table;
 	const tableName = getTableName(race, race.tables[jLoad]);
+	const diceType = race.tables[jLoad].diceType;
 
 	let htmlText = `
 		<tr>
@@ -73,7 +74,7 @@ function loadhash (id) {
 					<thead>
 						<tr>
 							<th class="col-xs-2 text-align-center">
-								<span class="roller" onclick="rollAgainstTable('${iLoad}', '${jLoad}')">d100</span>
+								<span class="roller" onclick="rollAgainstTable('${iLoad}', '${jLoad}')">d${diceType}</span>
 							</th>
 							<th class="col-xs-10">Name</th>
 						</tr>
@@ -110,12 +111,17 @@ function rollAgainstTable (iLoad, jLoad) {
 	const table = race.tables[jLoad];
 	const rollTable = table.table;
 
-	const roll = EntryRenderer.dice.randomise(100) - 1; // -1 since results are 1-100
+	rollTable._rMax = rollTable.rMax == null ? Math.max(...rollTable.filter(it => it.min != null).map(it => it.min), ...rollTable.filter(it => it.max != null).map(it => it.max)) : rollTable.rMax;
+	rollTable._rMin = rollTable._rMin == null ? Math.min(...rollTable.filter(it => it.min != null).map(it => it.min), ...rollTable.filter(it => it.max != null).map(it => it.max)) : rollTable._rMin;
+
+	const roll = EntryRenderer.dice.randomise(rollTable._rMax, rollTable._rMin);
 
 	let result;
 	for (let i = 0; i < rollTable.length; i++) {
 		const row = rollTable[i];
-		if (roll >= row.min && (row.max === undefined || roll <= row.max)) {
+		const trueMin = row.max != null && row.max < row.min ? row.max : row.min;
+		const trueMax = row.max != null && row.max > row.min ? row.max : row.min;
+		if (roll >= trueMin && roll <= trueMax) {
 			result = getRenderedText(row.enc);
 			break;
 		}

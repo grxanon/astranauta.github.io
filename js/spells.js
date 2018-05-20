@@ -77,7 +77,7 @@ function getNormalisedTime (time) {
 			multiplier = 3600;
 			break;
 	}
-	if (time.length > 1) offset += 1;
+	if (time.length > 1) offset += 0.5;
 	return (multiplier * firstTime.number) + offset;
 }
 
@@ -218,6 +218,7 @@ function handleBrew (homebrew) {
 }
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	multisourceLoad(JSON_DIR, JSON_LIST_NAME, pageInit, addSpells, () => {
 		BrewUtil.addBrewData(handleBrew);
 		BrewUtil.makeBrewButton("manage-brew");
@@ -239,7 +240,7 @@ const classFilter = new Filter({header: "Class"});
 const subclassFilter = new Filter({header: "Subclass"});
 const classAndSubclassFilter = new MultiFilter("Classes", classFilter, subclassFilter);
 const metaFilter = new Filter({
-	header: "Tag",
+	header: "Components/Miscellaneous",
 	items: [META_ADD_CONC, META_ADD_V, META_ADD_S, META_ADD_M, META_ADD_M_COST, META_RITUAL, META_TECHNOMAGIC]
 });
 const schoolFilter = new Filter({
@@ -418,6 +419,7 @@ function addSpells (data) {
 	let tempString = "";
 	for (; spI < spellList.length; spI++) {
 		const spell = spellList[spI];
+		if (ExcludeUtil.isExcluded(spell.name, "spell", spell.source)) continue;
 
 		let levelText = Parser.spLevelToFull(spell.level);
 		if (spell.meta && spell.meta.ritual) levelText += " (rit.)";
@@ -588,9 +590,9 @@ function sortSpells (a, b, o) {
 
 const renderer = new EntryRenderer();
 function loadhash (id) {
-	const $pageContent = $("#pagecontent");
+	const $pageContent = $("#pagecontent").empty();
 	const spell = spellList[id];
-	$pageContent.html(EntryRenderer.spell.getRenderedString(spell, renderer));
+	$pageContent.append(EntryRenderer.spell.getRenderedString(spell, renderer));
 	loadsub([]);
 }
 

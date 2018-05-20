@@ -396,10 +396,6 @@ function EntryRenderer () {
 								}
 							};
 							if (m[1][0] === "0") roRender[j].roll.pad = true;
-							if (roRender[j].roll.exact === 0 && i === entry.rows.length - 1) {
-								roRender[j].exact = 100;
-								roRender[j].entry = "00";
-							}
 						} else {
 							roRender[j] = {
 								type: "cell",
@@ -409,10 +405,6 @@ function EntryRenderer () {
 								}
 							};
 							if (m[1][0] === "0" || m[3][0] === "0") roRender[j].roll.pad = true;
-							if (roRender[j].roll.max === 0 && i === entry.rows.length - 1) {
-								roRender[j].max = 100;
-								roRender[j].entry = "00";
-							}
 						}
 					}
 
@@ -570,15 +562,8 @@ function EntryRenderer () {
 				if (s.charAt(0) === "@") {
 					const [tag, text] = EntryRenderer.splitFirstSpace(s);
 
-					if (tag === "@bold" || tag === "@b" || tag === "@italic" || tag === "@i" || tag === "@skill" || tag === "@action") {
+					if (tag === "@bold" || tag === "@b" || tag === "@italic" || tag === "@i" || tag === "@note" || tag === "@skill" || tag === "@action") {
 						switch (tag) {
-							// FIXME remove "@link"
-							case "@link":
-								textStack.push(`<u>`);
-								self.recursiveEntryRender(text, textStack, depth);
-								textStack.push(`</u>`);
-								break;
-
 							case "@b":
 							case "@bold":
 								textStack.push(`<b>`);
@@ -588,6 +573,11 @@ function EntryRenderer () {
 							case "@i":
 							case "@italic":
 								textStack.push(`<i>`);
+								self.recursiveEntryRender(text, textStack, depth);
+								textStack.push(`</i>`);
+								break;
+							case "@note":
+								textStack.push(`<i class="text-muted">`);
 								self.recursiveEntryRender(text, textStack, depth);
 								textStack.push(`</i>`);
 								break;
@@ -1513,21 +1503,8 @@ EntryRenderer.monster = {
 	getLegendaryActionIntro: (mon) => {
 		const legendaryActions = mon.legendaryActions || 3;
 		const legendaryName = mon.name.split(",");
+		// FIXME add "The" in front of the name(s) depending on "titled" NPC state
 		return `${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryName[0]} regains spent legendary actions at the start of its turn.`
-	},
-
-	// ultimately these rollers should become part of the JSON
-	legacy: {
-		attemptToGetTitle: (ele) => {
-			let titleMaybe = $(ele.parentElement).find(".entry-title")[0];
-			if (titleMaybe !== undefined) {
-				titleMaybe = titleMaybe.innerHTML;
-				if (titleMaybe) {
-					titleMaybe = titleMaybe.substring(0, titleMaybe.length - 1).trim();
-				}
-			}
-			return titleMaybe;
-		}
 	},
 
 	getCompactRenderedString: (mon, renderer) => {
@@ -1704,6 +1681,24 @@ EntryRenderer.monster = {
 			trait = trait ? trait.concat(spellTraits) : spellTraits;
 		}
 		if (trait) return trait.sort((a, b) => SortUtil.monTraitSort(a.name, b.name));
+	},
+
+	getSkillsString (mon) {
+		function doSortMapJoinSkillKeys (obj, keys, joinWithOr) {
+			const toJoin = keys.sort(SortUtil.ascSort).map(s => `${s.uppercaseFirst()} ${obj[s]}`);
+			return joinWithOr ? CollectionUtil.joinConjunct(toJoin, ", ", ", or ") : toJoin.join(", ")
+		}
+
+		const skills = doSortMapJoinSkillKeys(mon.skill, Object.keys(mon.skill).filter(k => k !== "other"));
+		if (mon.skill.other) {
+			const others = mon.skill.other.map(it => {
+				if (it.oneOf) {
+					return `plus one of the following: ${doSortMapJoinSkillKeys(it.oneOf, Object.keys(it.oneOf), true)}`
+				}
+				throw new Error(`Unhandled monster "other" skill properties!`)
+			});
+			return `${skills}, ${others.join(", ")}`
+		} else return skills;
 	}
 };
 
@@ -1965,6 +1960,12 @@ EntryRenderer.item = {
 				item.value = `${Number(m[1]).toLocaleString()}${m[2]}`;
 			}
 		}
+	},
+
+	promiseData: (urls) => {
+		return new Promise((resolve, reject) => {
+			EntryRenderer.item.buildList((data) => resolve({item: data}), urls);
+		});
 	}
 };
 
@@ -2581,11 +2582,11 @@ EntryRenderer.dice = {
 		return typeof window !== "undefined" && typeof window.crypto !== "undefined";
 	},
 
-	randomise: (max) => {
+	randomise: (max, min = 1) => {
 		if (EntryRenderer.dice.isCrypto()) {
-			return EntryRenderer.dice._randomise(1, max + 1);
+			return EntryRenderer.dice._randomise(min, max + min);
 		} else {
-			return RollerUtil.roll(max) + 1;
+			return RollerUtil.roll(max) + min;
 		}
 	},
 

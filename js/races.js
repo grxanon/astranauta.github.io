@@ -1,9 +1,9 @@
 "use strict";
 const JSON_URL = "data/races.json";
 const JSON_FLUFF_URL = "data/fluff-races.json";
-let tableDefault = "";
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	DataUtil.loadJSON(JSON_URL, onJsonLoad)
 };
 
@@ -48,8 +48,6 @@ function onJsonLoad (data) {
 		valueNames: ['name', 'ability', 'size', 'source', 'clean-name'],
 		listClass: "races"
 	});
-
-	tableDefault = $("#pagecontent").html();
 
 	const jsonRaces = EntryRenderer.race.mergeSubraces(data.race);
 
@@ -125,6 +123,7 @@ function addRaces (data) {
 	let tempString = "";
 	for (; rcI < raceList.length; rcI++) {
 		const race = raceList[rcI];
+		if (ExcludeUtil.isExcluded(race.name, "race", race.source)) continue;
 
 		const ability = race.ability ? utils_getAbilityData(race.ability) : {asTextShort: "None"};
 		race._fAbility = race.ability ? getAbilityObjs(race.ability).map(a => mapAbilityObjToFull(a)) : []; // used for filtering
@@ -222,8 +221,7 @@ function getSublistItem (race, pinId) {
 
 const renderer = new EntryRenderer();
 function loadhash (id) {
-	const $pgContent = $("#pagecontent");
-	$pgContent.html(tableDefault);
+	const $pgContent = $("#pagecontent").empty();
 	$pgContent.find("td").show();
 
 	const race = raceList[id];

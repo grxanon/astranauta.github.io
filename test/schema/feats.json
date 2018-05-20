@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-06/schema#",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"type": "object",
 	"properties": {
 		"feat": {
@@ -87,6 +87,25 @@
 					},
 					"source": {
 						"type": "string"
+					},
+					"additionalSources": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"source": {
+									"type": "string"
+								},
+								"page": {
+									"type": "integer"
+								}
+							},
+							"required": [
+								"source",
+								"page"
+							],
+							"additionalProperties": false
+						}
 					},
 					"page": {
 						"type": "integer"

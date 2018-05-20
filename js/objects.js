@@ -3,6 +3,7 @@
 const JSON_URL = "data/objects.json";
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	DataUtil.loadJSON(JSON_URL, onJsonLoad);
 };
 
@@ -43,6 +44,7 @@ function addObjects (data) {
 	let tempString = "";
 	for (; obI < objectsList.length; obI++) {
 		const obj = objectsList[obI];
+		if (ExcludeUtil.isExcluded(obj.name, "object", obj.source)) continue;
 		const abvSource = Parser.sourceJsonToAbv(obj.source);
 
 		tempString += `
@@ -93,8 +95,8 @@ function loadhash (jsonIndex) {
 	if (obj.entries) renderer.recursiveEntryRender({entries: obj.entries}, renderStack, 2);
 	if (obj.actionEntries) renderer.recursiveEntryRender({entries: obj.actionEntries}, renderStack, 2);
 
-	const $content = $(`#pagecontent`);
-	$content.html(`
+	const $content = $(`#pagecontent`).empty();
+	$content.append(`
 		${EntryRenderer.utils.getBorderTr()}
 		${EntryRenderer.utils.getNameTr(obj)}
 		<tr class="text"><td colspan="6"><i>${obj.type !== "generic" ? `${Parser.sizeAbvToFull(obj.size)} object` : `Variable size object`}</i><br></td></tr>

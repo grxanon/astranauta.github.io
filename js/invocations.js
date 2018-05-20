@@ -30,6 +30,7 @@ const LIST_LEVEL = "level";
 const LIST_SPELL = "spell";
 
 window.onload = function load () {
+	ExcludeUtil.initialise();
 	DataUtil.loadJSON(JSON_URL, onJsonLoad);
 };
 
@@ -113,6 +114,7 @@ function addInvocations (data) {
 	let tempString = "";
 	for (; ivI < invoList.length; ivI++) {
 		const p = invoList[ivI];
+		if (ExcludeUtil.isExcluded(p.name, "invocation", p.source)) continue;
 
 		if (!p.prerequisites) p.prerequisites = {};
 		if (!p.prerequisites.pact) p.prerequisites.pact = p.prerequisites.or && p.prerequisites.or.find(it => it.pact) ? STR_SPECIAL : STR_ANY;
@@ -213,22 +215,17 @@ function getSublistItem (inv, pinId) {
 }
 
 function loadhash (jsonIndex) {
-	const $content = $(`#pagecontent`);
-	const $name = $content.find(`th.name`);
-	const STATS_PREREQUISITES = document.getElementById(ID_STATS_PREREQUISITES);
-	const STATS_TEXT = document.getElementById(ID_TEXT);
-
+	const $content = $(`#pagecontent`).empty();
 	const inv = invoList[jsonIndex];
-
-	$name.html(inv[JSON_ITEM_NAME]);
-
-	loadInvocation();
-
-	function loadInvocation () {
-		STATS_PREREQUISITES.innerHTML = EntryRenderer.invocation.getPrerequisiteText(inv.prerequisites);
-		STATS_TEXT.innerHTML = EntryRenderer.getDefaultRenderer().renderEntry({entries: inv.entries}, 1);
-		$content.find(`#source`).html(`<td colspan=6><b>Source: </b> <i>${Parser.sourceJsonToFull(inv.source)}</i>${inv.page ? `, page ${inv.page}` : ""}</td>`);
-	}
+	$content.append(`
+		${EntryRenderer.utils.getBorderTr()}
+		${EntryRenderer.utils.getNameTr(inv)}
+		${Object.keys(inv.prerequisites).length ? `<tr><td colspan="6"><span class="prerequisites">${EntryRenderer.invocation.getPrerequisiteText(inv.prerequisites)}</span></td></tr>` : ""}
+		<tr><td class="divider" colspan="6"><div></div></td></tr>
+		<tr><td colspan="6">${EntryRenderer.getDefaultRenderer().renderEntry({entries: inv.entries}, 1)}</td></tr>
+		${EntryRenderer.utils.getPageTr(inv)}
+		${EntryRenderer.utils.getBorderTr()}
+	`);
 }
 
 function loadsub (sub) {
