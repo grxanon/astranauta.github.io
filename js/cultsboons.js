@@ -5,33 +5,90 @@ window.onload = function load () {
 	DataUtil.loadJSON(JSON_URL, onJsonLoad);
 };
 
-let cultListAndBoon;
+function cultBoonTypeToFull (type) {
+	return type === "c" ? "Cult" : "Demonic Boon";
+}
+
+let cultsAndBoonsList;
+const sourceFilter = getSourceFilter();
+let filterBox;
+let list;
 function onJsonLoad (data) {
+	list = ListUtil.search({
+		valueNames: ['name', "source", "type"],
+		listClass: "cultsboons",
+		sortFunction: SortUtil.listSort
+	});
+
+	const typeFilter = new Filter({
+		header: "Type",
+		items: ["b", "c"],
+		displayFn: cultBoonTypeToFull
+	});
+	filterBox = initFilterBox(
+		sourceFilter,
+		typeFilter
+	);
+
+	list.on("updated", () => {
+		filterBox.setCount(list.visibleItems.length, list.items.length);
+	});
+
+	// filtering function
+	$(filterBox).on(
+		FilterBox.EVNT_VALCHANGE,
+		handleFilterChange
+	);
+
 	data.cult.forEach(it => it._type = "c");
 	data.boon.forEach(it => it._type = "b");
-	cultListAndBoon = data.cult.concat(data.boon);
+	cultsAndBoonsList = data.cult.concat(data.boon);
 
 	let tempString = "";
-	cultListAndBoon.forEach((it, i) => {
+	cultsAndBoonsList.forEach((it, i) => {
 		tempString += `
-			<li>
+			<li class="row" ${FLTR_ID}="${i}">
 				<a id="${i}" href="#${UrlUtil.autoEncodeHash(it)}" title="${it.name}">
-					<span class="name" title="${it.name}">${it.name}</span>
+					<span class="type col-xs-3 text-align-center">${cultBoonTypeToFull(it._type)}</span>
+					<span class="name col-xs-7">${it.name}</span>
+					<span class="source col-xs-2" title='${Parser.sourceJsonToFull(it.source)}'>${Parser.sourceJsonToAbv(it.source)}</span>
 				</a>
 			</li>`;
+
+		// populate filters
+		sourceFilter.addIfAbsent(it.source);
 	});
+	const lastSearch = ListUtil.getSearchTermAndReset(list);
 	$("ul.cultsboons").append(tempString);
 
-	const list = ListUtil.search({
-		valueNames: ['name'],
-		listClass: "cultsboons"
-	});
+	// sort filters
+	sourceFilter.items.sort(SortUtil.ascSort);
 
+	list.reIndex();
+	if (lastSearch) list.search(lastSearch);
+	list.sort("type");
+
+	filterBox.render();
+	handleFilterChange();
 	History.init();
 }
 
+// filtering function
+function handleFilterChange () {
+	const f = filterBox.getValues();
+	list.filter(function (item) {
+		const cb = cultsAndBoonsList[$(item.elm).attr(FLTR_ID)];
+		return filterBox.toDisplay(
+			f,
+			cb.source,
+			cb._type
+		);
+	});
+	FilterBox.nextIfHidden(cultsAndBoonsList);
+}
+
 function loadhash (id) {
-	const it = cultListAndBoon[id];
+	const it = cultsAndBoonsList[id];
 
 	const renderer = new EntryRenderer();
 	const renderStack = [];
@@ -41,7 +98,7 @@ function loadhash (id) {
 		if (it.goal || it.cultists || it.signaturespells) {
 			const fauxList = {
 				type: "list",
-				style: "list-hang",
+				style: "list-hang-notitle",
 				items: []
 			};
 			if (it.goal) {
@@ -94,8 +151,9 @@ function loadhash (id) {
 			renderer.recursiveEntryRender({entries: it.entries}, renderStack, 1);
 			$("#pagecontent").html(`
 				<tr><th class="border" colspan="6"></th></tr>
-				<tr><th class="name" colspan="6"><span class="stats-name">${it.name}</span><span class="stats-source source${it.source}" title="${sourceFull}">${Parser.sourceJsonToAbv(it.source)}</span></th></tr>
+				<tr><th class="name" colspan="6"><span class="stats-name">${it._type === "b" ? `Demonic Boon: ` : ""}${it.name}</span><span class="stats-source source${it.source}" title="${sourceFull}">${Parser.sourceJsonToAbv(it.source)}</span></th></tr>
 				<tr class='text'><td colspan='6'>${renderStack.join("")}</td></tr>
+				${EntryRenderer.utils.getPageTr(it)}
 				<tr><th class="border" colspan="6"></th></tr>
 			`);
 		}

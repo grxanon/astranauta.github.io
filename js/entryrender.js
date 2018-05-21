@@ -1503,8 +1503,7 @@ EntryRenderer.monster = {
 	getLegendaryActionIntro: (mon) => {
 		const legendaryActions = mon.legendaryActions || 3;
 		const legendaryName = mon.name.split(",");
-		// FIXME add "The" in front of the name(s) depending on "titled" NPC state
-		return `${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${legendaryName[0]} regains spent legendary actions at the start of its turn.`
+		return `${mon.isNamedCreature ? "" : "The "}${legendaryName[0]} can take ${legendaryActions} legendary action${legendaryActions > 1 ? "s" : ""}, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. ${mon.isNamedCreature ? "" : "The "}${legendaryName[0]} regains spent legendary actions at the start of its turn.`
 	},
 
 	getCompactRenderedString: (mon, renderer) => {
@@ -1774,6 +1773,18 @@ EntryRenderer.item = {
 	_builtList: null,
 	_propertyList: {},
 	_typeList: {},
+	_addProperty (p) {
+		EntryRenderer.item._propertyList[p.abbreviation] = p.name ? JSON.parse(JSON.stringify(p)) : {
+			"name": p.entries[0].name.toLowerCase(),
+			"entries": p.entries
+		};
+	},
+	_addType (t) {
+		EntryRenderer.item._typeList[t.abbreviation] = t.name ? JSON.parse(JSON.stringify(t)) : {
+			"name": t.entries[0].name.toLowerCase(),
+			"entries": t.entries
+		};
+	},
 	/**
 	 * Runs callback with itemList as argument
 	 * @param callback
@@ -1801,21 +1812,9 @@ EntryRenderer.item = {
 
 		function addVariants (basicItemData) {
 			basicItemList = basicItemData.basicitem;
-			const itemPropertyList = basicItemData.itemProperty;
-			const itemTypeList = basicItemData.itemType;
 			// Convert the property and type list JSONs into look-ups, i.e. use the abbreviation as a JSON property name
-			for (let i = 0; i < itemPropertyList.length; i++) {
-				EntryRenderer.item._propertyList[itemPropertyList[i].abbreviation] = itemPropertyList[i].name ? JSON.parse(JSON.stringify(itemPropertyList[i])) : {
-					"name": itemPropertyList[i].entries[0].name.toLowerCase(),
-					"entries": itemPropertyList[i].entries
-				};
-			}
-			for (let i = 0; i < itemTypeList.length; i++) {
-				EntryRenderer.item._typeList[itemTypeList[i].abbreviation] = itemTypeList[i].name ? JSON.parse(JSON.stringify(itemTypeList[i])) : {
-					"name": itemTypeList[i].entries[0].name.toLowerCase(),
-					"entries": itemTypeList[i].entries
-				};
-			}
+			basicItemData.itemProperty.forEach(p => EntryRenderer.item._addProperty(p));
+			basicItemData.itemType.forEach(t => EntryRenderer.item._addType(t));
 			DataUtil.loadJSON(magicVariantUrl, mergeBasicItems);
 		}
 
