@@ -4,7 +4,7 @@ const JSON_DIR = "data/bestiary/";
 const META_URL = "meta.json";
 const FLUFF_INDEX = "fluff-index.json";
 const JSON_LIST_NAME = "monster";
-const renderer = new EntryRenderer();
+const renderer = EntryRenderer.getDefaultRenderer();
 
 window.PROF_MODE_BONUS = "bonus";
 window.PROF_MODE_DICE = "dice";
@@ -138,6 +138,11 @@ const alignmentFilter = new Filter({
 	items: ["L", "NX", "C", "G", "NY", "E", "N", "U", "A"],
 	displayFn: Parser.alignmentAbvToFull
 });
+const environmentFilter = new Filter({
+	header: "Environment",
+	items: ["arctic", "coastal", "desert", "forest", "grassland", "hill", "mountain", "swamp", "underdark", "underwater", "urban"],
+	displayFn: StrUtil.uppercaseFirst
+});
 const DMG_TYPES = [
 	"acid",
 	"bludgeoning",
@@ -211,6 +216,7 @@ const filterBox = initFilterBox(
 	typeFilter,
 	tagFilter,
 	alignmentFilter,
+	environmentFilter,
 	vulnerableFilter,
 	resistFilter,
 	immuneFilter,
@@ -321,6 +327,7 @@ function handleFilterChange () {
 			m._pTypes.type,
 			m._pTypes.tags,
 			m._fAlign,
+			m.environment,
 			m._fVuln,
 			m._fRes,
 			m._fImm,
@@ -356,6 +363,7 @@ function addMonsters (data) {
 		else if (tempAlign.includes("N") && !tempAlign.includes("L") && !tempAlign.includes("C")) tempAlign.push("NX");
 		else if (tempAlign.length === 1 && tempAlign.includes("N")) Array.prototype.push.apply(tempAlign, _NEUT_ALIGNS);
 		mon._fAlign = tempAlign;
+		mon.environment = mon.environment || [];
 		mon._fVuln = mon.vulnerable ? getAllImmRest(mon.vulnerable, "vulnerable") : [];
 		mon._fRes = mon.resist ? getAllImmRest(mon.resist, "resist") : [];
 		mon._fImm = mon.immune ? getAllImmRest(mon.immune, "immune") : [];
@@ -458,6 +466,8 @@ function sortMonsters (a, b, o) {
 let profBtn = null;
 // load selected monster stat block
 function loadhash (id) {
+	renderer.setFirstSection(true);
+
 	const $content = $("#pagecontent").empty();
 	const $wrpBtnProf = $(`#wrp-profbonusdice`);
 

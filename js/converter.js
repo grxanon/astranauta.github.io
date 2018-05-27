@@ -283,10 +283,12 @@ function loadparser (data) {
 		// split HP into average and formula
 		const m = /^(\d+) \((.*?)\)$/.exec(rawHp);
 		if (!m) stats.hp = {special: rawHp}; // for e.g. Avatar of Death
-		stats.hp = {
-			average: Number(m[1]),
-			formula: m[2]
-		};
+		else {
+			stats.hp = {
+				average: Number(m[1]),
+				formula: m[2]
+			};
+		}
 	}
 
 	function setCleanSpeed (stats, line) {
@@ -327,7 +329,7 @@ function loadparser (data) {
 		let byHand = false;
 
 		splitSpeed(line.toLowerCase()).map(it => it.trim()).forEach(s => {
-			const m = /^(\w+?\s+)?(\d+) ft\.( .*)?$/.exec(s);
+			const m = /^(\w+?\s+)?(\d+)\s*ft\.( .*)?$/.exec(s);
 			if (!m) {
 				byHand = true;
 				return;
@@ -408,10 +410,10 @@ function loadparser (data) {
 	}
 
 	function setCleanSenses (stats, line) {
-		stats.senses = line.split("Senses")[1].split("passive Perception")[0].trim();
-		if (!stats.senses.indexOf("passive Perception")) stats.senses = "";
+		stats.senses = line.toLowerCase().split("senses")[1].split("passive perception")[0].trim();
+		if (!stats.senses.indexOf("passive perception")) stats.senses = "";
 		if (stats.senses[stats.senses.length - 1] === ",") stats.senses = stats.senses.substring(0, stats.senses.length - 1);
-		stats.passive = tryConvertNumber(line.split("passive Perception")[1].trim());
+		stats.passive = tryConvertNumber(line.toLowerCase().split("passive perception")[1].trim());
 	}
 
 	function setCleanLanguages (stats, line) {
@@ -754,6 +756,7 @@ function loadparser (data) {
 		}
 
 		let prevLine = null;
+		let curLineRaw = null;
 		let curLine = null;
 		let prevBlank = true;
 		let nextPrevBlank = true;
@@ -829,15 +832,19 @@ function loadparser (data) {
 		let i = 0;
 		for (; i < toConvert.length; i++) {
 			prevLine = curLine;
+			curLineRaw = toConvert[i].trim();
 			curLine = toConvert[i].trim();
 
-			if (curLine === "") {
+			if (curLine === "" || curLine.toLowerCase() === "\\pagebreak") {
 				prevBlank = true;
 				continue;
 			} else nextPrevBlank = false;
 			curLine = stripQuote(curLine).trim();
 			if (curLine === "") continue;
-			else if (curLine === "___" && prevBlank) {
+			else if (
+				(curLine === "___" && prevBlank) || // handle nicely separated blocks
+				curLineRaw === "___" // lines multiple stacked blocks
+			) {
 				if (stats !== null) hasMultipleBlocks = true;
 				doOutputStatblock();
 				prevBlank = nextPrevBlank;

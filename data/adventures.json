@@ -68,6 +68,20 @@
 						"type": "part",
 						"identifier": 4
 					}
+				},
+				{
+					"name": "Magic Items",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					}
+				},
+				{
+					"name": "Monsters",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
 				}
 			],
 			"level": {
@@ -340,6 +354,30 @@
 					"ordinal": {
 						"type": "episode",
 						"identifier": 8
+					}
+				},
+				{
+					"name": "What Happens Next?"
+				},
+				{
+					"name": "Backgrounds",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					}
+				},
+				{
+					"name": "Monsters",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
+				},
+				{
+					"name": "Magic Items",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "C"
 					}
 				}
 			],
@@ -1121,10 +1159,14 @@
 					]
 				},
 				{
+					"name": "Character Options",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					}
+				},
+				{
 					"name": "Death House",
-					"headers": [
-
-					],
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "B"
@@ -1132,9 +1174,6 @@
 				},
 				{
 					"name": "Treasures",
-					"headers": [
-
-					],
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "C"
@@ -1142,12 +1181,23 @@
 				},
 				{
 					"name": "Monsters and NPCs",
-					"headers": [
-
-					],
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "D"
+					}
+				},
+				{
+					"name": "The Tarokka Deck",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "E"
+					}
+				},
+				{
+					"name": "Handouts",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "F"
 					}
 				}
 			],
@@ -1567,7 +1617,6 @@
 						"Princes of the Apocalypse",
 						"Using the Elemental Cults",
 						"Out of the Abyss"
-
 					],
 					"ordinal": {
 						"type": "appendix",

@@ -306,6 +306,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -615,6 +618,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"mountain",
+				"hill"
 			]
 		},
 		{
@@ -933,7 +940,12 @@
 					]
 				}
 			],
-			"page": 207
+			"page": 207,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Babau",
@@ -1031,6 +1043,10 @@
 						"{@spell levitate}"
 					]
 				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
 			]
 		},
 		{
@@ -1109,7 +1125,10 @@
 					]
 				}
 			],
-			"page": 122
+			"page": 122,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Bard",
@@ -1336,6 +1355,13 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
 			]
 		},
 		{
@@ -1647,6 +1673,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"arctic"
 			]
 		},
 		{
@@ -1710,7 +1739,16 @@
 					]
 				}
 			],
-			"page": 158
+			"page": 158,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"swamp",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Blackguard",
@@ -1868,7 +1906,16 @@
 					]
 				}
 			],
-			"page": 158
+			"page": 158,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"swamp",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Bodak",
@@ -1958,7 +2005,12 @@
 					]
 				}
 			],
-			"page": 127
+			"page": 127,
+			"environment": [
+				"underdark",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Boggle",
@@ -2034,7 +2086,13 @@
 					]
 				}
 			],
-			"page": 128
+			"page": 128,
+			"environment": [
+				"underdark",
+				"forest",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Brontosaurus",
@@ -2077,7 +2135,11 @@
 					]
 				}
 			],
-			"page": 139
+			"page": 139,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Catoblepas",
@@ -2132,7 +2194,10 @@
 					]
 				}
 			],
-			"page": 129
+			"page": 129,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Cave Fisher",
@@ -2204,7 +2269,10 @@
 					]
 				}
 			],
-			"page": 130
+			"page": 130,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Champion",
@@ -2353,7 +2421,10 @@
 					]
 				}
 			],
-			"page": 131
+			"page": 131,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Choldrith",
@@ -2468,6 +2539,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -2609,6 +2683,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"mountain"
 			]
 		},
 		{
@@ -2816,7 +2893,11 @@
 					]
 				}
 			],
-			"page": 133
+			"page": 133,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Darkling",
@@ -2873,7 +2954,13 @@
 					]
 				}
 			],
-			"page": 134
+			"page": 134,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Darkling Elder",
@@ -2936,7 +3023,13 @@
 					]
 				}
 			],
-			"page": 134
+			"page": 134,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Death Kiss",
@@ -3010,7 +3103,10 @@
 					]
 				}
 			],
-			"page": 124
+			"page": 124,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Deep Rothé",
@@ -3064,6 +3160,9 @@
 						"{@spell dancing lights}"
 					]
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -3157,7 +3256,11 @@
 					]
 				}
 			],
-			"page": 135
+			"page": 135,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Deinonychus",
@@ -3214,7 +3317,12 @@
 					]
 				}
 			],
-			"page": 139
+			"page": 139,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Devourer",
@@ -3280,7 +3388,10 @@
 					]
 				}
 			],
-			"page": 138
+			"page": 138,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Dimetrodon",
@@ -3318,7 +3429,11 @@
 					]
 				}
 			],
-			"page": 139
+			"page": 139,
+			"environment": [
+				"swamp",
+				"coastal"
+			]
 		},
 		{
 			"name": "Diviner",
@@ -3508,7 +3623,11 @@
 					]
 				}
 			],
-			"page": 208
+			"page": 208,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Draegloth",
@@ -3603,6 +3722,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -3742,6 +3864,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -4058,7 +4183,11 @@
 					]
 				}
 			],
-			"page": 147
+			"page": 147,
+			"environment": [
+				"underdark",
+				"mountain"
+			]
 		},
 		{
 			"name": "Firenewt Warlock of Imix",
@@ -4155,6 +4284,12 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill",
+				"desert"
 			]
 		},
 		{
@@ -4219,7 +4354,13 @@
 					]
 				}
 			],
-			"page": 142
+			"page": 142,
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Flail Snail",
@@ -4296,7 +4437,12 @@
 					]
 				}
 			],
-			"page": 144
+			"page": 144,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Flind",
@@ -4378,7 +4524,13 @@
 					]
 				}
 			],
-			"page": 153
+			"page": 153,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Froghemoth",
@@ -4459,7 +4611,11 @@
 					]
 				}
 			],
-			"page": 145
+			"page": 145,
+			"environment": [
+				"underdark",
+				"swamp"
+			]
 		},
 		{
 			"name": "Frost Giant Everlasting One",
@@ -4548,7 +4704,11 @@
 					]
 				}
 			],
-			"page": 148
+			"page": 148,
+			"environment": [
+				"coastal",
+				"arctic"
+			]
 		},
 		{
 			"name": "Gauth",
@@ -4626,7 +4786,10 @@
 					]
 				}
 			],
-			"page": 125
+			"page": 125,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Gazer",
@@ -4701,7 +4864,10 @@
 					]
 				}
 			],
-			"page": 126
+			"page": 126,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Giant Strider",
@@ -4753,7 +4919,12 @@
 					]
 				}
 			],
-			"page": 143
+			"page": 143,
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Girallon",
@@ -4813,7 +4984,10 @@
 					]
 				}
 			],
-			"page": 152
+			"page": 152,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Gnoll Flesh Gnawer",
@@ -4884,7 +5058,13 @@
 					]
 				}
 			],
-			"page": 154
+			"page": 154,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Gnoll Hunter",
@@ -4956,7 +5136,13 @@
 					]
 				}
 			],
-			"page": 154
+			"page": 154,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Gnoll Witherling",
@@ -5028,7 +5214,13 @@
 					]
 				}
 			],
-			"page": 155
+			"page": 155,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Green Guard Drake",
@@ -5091,7 +5283,16 @@
 					]
 				}
 			],
-			"page": 158
+			"page": 158,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"swamp",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Grung",
@@ -5158,16 +5359,6 @@
 					"entries": [
 						"The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
 					]
-				},
-				{
-					"name": "Variant: Grung Poison",
-					"entries": [
-						"Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
-						"A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.",
-						"Green. The poisoned creature can't move except to climb or make standing jumps. If the creature is flying, it can't take any actions or reactions unless it lands.",
-						"Blue. The poisoned creature must shout loudly or otherwise make a loud noise at the start and end of its turn.",
-						"Purple. The poisoned creature feels a desperate need to soak itself in liquid or mud. It can't take actions or move except to do so or to reach a body of liquid or mud."
-					]
 				}
 			],
 			"action": [
@@ -5178,7 +5369,23 @@
 					]
 				}
 			],
-			"page": 156
+			"page": 156,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Grung Poison",
+					"entries": [
+						"Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
+						"A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.",
+						"Green. The poisoned creature can't move except to climb or make standing jumps. If the creature is flying, it can't take any actions or reactions unless it lands.",
+						"Blue. The poisoned creature must shout loudly or otherwise make a loud noise at the start and end of its turn.",
+						"Purple. The poisoned creature feels a desperate need to soak itself in liquid or mud. It can't take actions or move except to do so or to reach a body of liquid or mud."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Grung Elite Warrior",
@@ -5245,15 +5452,6 @@
 					"entries": [
 						"The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
 					]
-				},
-				{
-					"name": "Variant: Grung Poison",
-					"entries": [
-						"Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
-						"A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.",
-						"Orange. The poisoned creature is frightened of its allies.",
-						"Gold. The poisoned creature is charmed and can speak Grung."
-					]
 				}
 			],
 			"action": [
@@ -5276,7 +5474,22 @@
 					]
 				}
 			],
-			"page": 157
+			"page": 157,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Grung Poison",
+					"entries": [
+						"Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
+						"A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.",
+						"Orange. The poisoned creature is frightened of its allies.",
+						"Gold. The poisoned creature is charmed and can speak Grung."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Grung Wildling",
@@ -5343,14 +5556,6 @@
 					"entries": [
 						"The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
 					]
-				},
-				{
-					"name": "Variant: Grung Poison",
-					"entries": [
-						"Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
-						"A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.",
-						"Red. The poisoned creature must use its action to eat if food is within reach."
-					]
 				}
 			],
 			"action": [
@@ -5397,6 +5602,20 @@
 						}
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Grung Poison",
+					"entries": [
+						"Grung poison loses its potency 1 minute after being removed from a grung. A similar breakdown occurs if the grung dies.",
+						"A creature poisoned by a grung can suffer an additional effect that varies depending on the grung's skin color. This effect lasts until the creature is no longer poisoned by the grung.",
+						"Red. The poisoned creature must use its action to eat if food is within reach."
+					]
+				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -5434,7 +5653,11 @@
 					]
 				}
 			],
-			"page": 140
+			"page": 140,
+			"environment": [
+				"grassland",
+				"swamp"
+			]
 		},
 		{
 			"name": "Hobgoblin Devastator",
@@ -5541,6 +5764,11 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
 			]
 		},
 		{
@@ -5640,6 +5868,11 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
 			]
 		},
 		{
@@ -5884,6 +6117,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -6199,6 +6435,12 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"mountain",
+				"grassland",
+				"desert",
+				"coastal"
 			]
 		},
 		{
@@ -6276,7 +6518,13 @@
 					]
 				}
 			],
-			"page": 165
+			"page": 165,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Kobold Inventor",
@@ -6355,7 +6603,14 @@
 					]
 				}
 			],
-			"page": 166
+			"page": 166,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Kobold Scale Sorcerer",
@@ -6455,6 +6710,13 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban"
 			]
 		},
 		{
@@ -6560,6 +6822,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -6734,7 +6999,11 @@
 					]
 				}
 			],
-			"page": 169
+			"page": 169,
+			"environment": [
+				"grassland",
+				"desert"
+			]
 		},
 		{
 			"name": "Martial Arts Adept",
@@ -6964,7 +7233,10 @@
 					]
 				}
 			],
-			"page": 137
+			"page": 137,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Meenlock",
@@ -7029,7 +7301,12 @@
 					]
 				}
 			],
-			"page": 170
+			"page": 170,
+			"environment": [
+				"forest",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Mind Flayer Psion",
@@ -7154,6 +7431,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -7238,7 +7518,10 @@
 					]
 				}
 			],
-			"page": 176
+			"page": 176,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Morkoth",
@@ -7399,7 +7682,11 @@
 					}
 				}
 			],
-			"legendaryGroup": "Morkoth"
+			"legendaryGroup": "Morkoth",
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Mouth of Grolantor",
@@ -7465,7 +7752,11 @@
 					]
 				}
 			],
-			"page": 149
+			"page": 149,
+			"environment": [
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Necromancer",
@@ -7664,7 +7955,11 @@
 					]
 				}
 			],
-			"page": 180
+			"page": 180,
+			"environment": [
+				"underdark",
+				"hill"
+			]
 		},
 		{
 			"name": "Neogi Hatchling",
@@ -7715,7 +8010,11 @@
 					]
 				}
 			],
-			"page": 179
+			"page": 179,
+			"environment": [
+				"underdark",
+				"hill"
+			]
 		},
 		{
 			"name": "Neogi Master",
@@ -7829,6 +8128,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"hill"
 			]
 		},
 		{
@@ -7909,6 +8212,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -8000,6 +8306,11 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"hill"
 			]
 		},
 		{
@@ -8082,7 +8393,14 @@
 					]
 				}
 			],
-			"page": 183
+			"page": 183,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Orc Claw of Luthic",
@@ -8183,6 +8501,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"mountain"
 			]
 		},
 		{
@@ -8273,6 +8595,13 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
 			]
 		},
 		{
@@ -8341,7 +8670,14 @@
 					]
 				}
 			],
-			"page": 184
+			"page": 184,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Orc Red Fang of Shargaas",
@@ -8432,7 +8768,14 @@
 					]
 				}
 			],
-			"page": 185
+			"page": 185,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Ox",
@@ -8480,7 +8823,10 @@
 					]
 				}
 			],
-			"page": 208
+			"page": 208,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Quetzalcoatlus",
@@ -8532,7 +8878,12 @@
 					]
 				}
 			],
-			"page": 140
+			"page": 140,
+			"environment": [
+				"mountain",
+				"hill",
+				"coastal"
+			]
 		},
 		{
 			"name": "Quickling",
@@ -8595,7 +8946,10 @@
 					]
 				}
 			],
-			"page": 187
+			"page": 187,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Red Guard Drake",
@@ -8650,7 +9004,16 @@
 					]
 				}
 			],
-			"page": 158
+			"page": 158,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"swamp",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Redcap",
@@ -8717,7 +9080,12 @@
 					]
 				}
 			],
-			"page": 188
+			"page": 188,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill"
+			]
 		},
 		{
 			"name": "Rothé",
@@ -8760,7 +9128,10 @@
 					]
 				}
 			],
-			"page": 208
+			"page": 208,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Sea Spawn",
@@ -8821,7 +9192,11 @@
 					]
 				}
 			],
-			"page": 189
+			"page": 189,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Shadow Mastiff",
@@ -8897,7 +9272,12 @@
 					]
 				}
 			],
-			"page": 190
+			"page": 190,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill"
+			]
 		},
 		{
 			"name": "Shoosuva",
@@ -8985,7 +9365,13 @@
 					]
 				}
 			],
-			"page": 137
+			"page": 137,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Slithering Tracker",
@@ -9102,7 +9488,11 @@
 					]
 				}
 			],
-			"page": 191
+			"page": 191,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Spawn of Kyuss",
@@ -9175,7 +9565,11 @@
 					]
 				}
 			],
-			"page": 192
+			"page": 192,
+			"environment": [
+				"underdark",
+				"desert"
+			]
 		},
 		{
 			"name": "Stegosaurus",
@@ -9209,7 +9603,11 @@
 					]
 				}
 			],
-			"page": 140
+			"page": 140,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Stench Kow",
@@ -9344,7 +9742,12 @@
 					]
 				}
 			],
-			"page": 150
+			"page": 150,
+			"environment": [
+				"mountain",
+				"hill",
+				"coastal"
+			]
 		},
 		{
 			"name": "Storm Giant Quintessent",
@@ -9461,7 +9864,14 @@
 				}
 			],
 			"legendaryGroup": "Storm Giant Quintessent",
-			"page": 151
+			"page": 151,
+			"environment": [
+				"underwater",
+				"mountain",
+				"desert",
+				"coastal",
+				"arctic"
+			]
 		},
 		{
 			"name": "Swarm of Cranium Rats",
@@ -9555,6 +9965,10 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
 			]
 		},
 		{
@@ -9615,7 +10029,11 @@
 					]
 				}
 			],
-			"page": 208
+			"page": 208,
+			"environment": [
+				"underdark",
+				"swamp"
+			]
 		},
 		{
 			"name": "Swashbuckler",
@@ -9775,7 +10193,12 @@
 					]
 				}
 			],
-			"page": 186
+			"page": 186,
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Thorny",
@@ -9832,7 +10255,11 @@
 					]
 				}
 			],
-			"page": 197
+			"page": 197,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Tlincalli",
@@ -9892,7 +10319,10 @@
 					]
 				}
 			],
-			"page": 193
+			"page": 193,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Transmuter",
@@ -10064,7 +10494,10 @@
 					]
 				}
 			],
-			"page": 194
+			"page": 194,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Ulitharid",
@@ -10169,6 +10602,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10230,7 +10666,12 @@
 					]
 				}
 			],
-			"page": 195
+			"page": 195,
+			"environment": [
+				"underdark",
+				"swamp",
+				"desert"
+			]
 		},
 		{
 			"name": "Vegepygmy",
@@ -10294,7 +10735,11 @@
 					]
 				}
 			],
-			"page": 196
+			"page": 196,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Vegepygmy Chief",
@@ -10370,7 +10815,11 @@
 					]
 				}
 			],
-			"page": 197
+			"page": 197,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Velociraptor",
@@ -10427,7 +10876,11 @@
 					]
 				}
 			],
-			"page": 140
+			"page": 140,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "War Priest",
@@ -11044,7 +11497,6 @@
 			"passive": 12,
 			"languages": "understands Draconic but can't speak it",
 			"cr": "2",
-			"trait": [],
 			"action": [
 				{
 					"name": "Multiattack",
@@ -11065,7 +11517,16 @@
 					]
 				}
 			],
-			"page": 158
+			"page": 158,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"swamp",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Wood Woad",
@@ -11151,7 +11612,10 @@
 					]
 				}
 			],
-			"page": 198
+			"page": 198,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Xvart",
@@ -11222,7 +11686,11 @@
 					]
 				}
 			],
-			"page": 200
+			"page": 200,
+			"environment": [
+				"underdark",
+				"hill"
+			]
 		},
 		{
 			"name": "Xvart Speaker",
@@ -11293,7 +11761,11 @@
 					]
 				}
 			],
-			"page": 200
+			"page": 200,
+			"environment": [
+				"underdark",
+				"hill"
+			]
 		},
 		{
 			"name": "Xvart Warlock of Raxivort",
@@ -11397,6 +11869,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"hill"
 			]
 		},
 		{
@@ -11479,7 +11955,12 @@
 					]
 				}
 			],
-			"page": 201
+			"page": 201,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Yuan-ti Anathema",
@@ -11493,7 +11974,7 @@
 			},
 			"source": "VGM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "16 (natural armor)",
@@ -11555,24 +12036,6 @@
 					"entries": [
 						"The anathema has advantage on Wisdom (Perception) checks and on saving throws against being blinded. charmed, deafened, frightened, stunned, or knocked unconscious."
 					]
-				},
-				{
-					"name": "Variant: Acid Slime",
-					"entries": [
-						"As a bonus action, the yuan-ti can coat its body in a slimy acid that lasts for 1 minute. A creature that touches the yuan-ti, hits it with a melee attack while within 5 feet of it, or is hit by its constrict attack takes 5 ({@dice 1d10}) acid damage."
-					]
-				},
-				{
-					"name": "Variant: Chameleon Skin",
-					"entries": [
-						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
-					]
-				},
-				{
-					"name": "Variant: Shed Skin (1/Day)",
-					"entries": [
-						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
-					]
 				}
 			],
 			"action": [
@@ -11625,6 +12088,34 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Acid Slime",
+					"entries": [
+						"As a bonus action, the yuan-ti can coat its body in a slimy acid that lasts for 1 minute. A creature that touches the yuan-ti, hits it with a melee attack while within 5 feet of it, or is hit by its constrict attack takes 5 ({@dice 1d10}) acid damage."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Chameleon Skin",
+					"entries": [
+						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Shed Skin (1/Day)",
+					"entries": [
+						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"desert"
 			]
 		},
 		{
@@ -11638,7 +12129,7 @@
 			},
 			"source": "VGM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "14 (natural armor)",
@@ -11685,18 +12176,6 @@
 					"entries": [
 						"At the start of its turn, the broodguard can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
 					]
-				},
-				{
-					"name": "Variant: Chameleon Skin",
-					"entries": [
-						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
-					]
-				},
-				{
-					"name": "Variant: Shed Skin (1/Day)",
-					"entries": [
-						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
-					]
 				}
 			],
 			"action": [
@@ -11719,7 +12198,28 @@
 					]
 				}
 			],
-			"page": 203
+			"page": 203,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Chameleon Skin",
+					"entries": [
+						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Shed Skin (1/Day)",
+					"entries": [
+						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"desert"
+			]
 		},
 		{
 			"name": "Yuan-ti Mind Whisperer",
@@ -11733,7 +12233,7 @@
 			},
 			"source": "VGM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "14 (natural armor)",
@@ -11791,18 +12291,6 @@
 					"name": "Sseth's Blessing",
 					"entries": [
 						"When the yuan-ti reduces an enemy to 0 hit points, the yuan-ti gains 9 temporary hit points."
-					]
-				},
-				{
-					"name": "Variant: Chameleon Skin",
-					"entries": [
-						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
-					]
-				},
-				{
-					"name": "Variant: Shed Skin (1/Day)",
-					"entries": [
-						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
 					]
 				}
 			],
@@ -11873,6 +12361,27 @@
 						}
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Chameleon Skin",
+					"entries": [
+						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Shed Skin (1/Day)",
+					"entries": [
+						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"desert"
 			]
 		},
 		{
@@ -11887,7 +12396,7 @@
 			},
 			"source": "VGM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "14 (natural armor)",
@@ -11939,18 +12448,6 @@
 					"name": "Magic Resistance",
 					"entries": [
 						"The yuan-ti has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Variant: Chameleon Skin",
-					"entries": [
-						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
-					]
-				},
-				{
-					"name": "Variant: Shed Skin (1/Day)",
-					"entries": [
-						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
 					]
 				}
 			],
@@ -12027,6 +12524,27 @@
 						}
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Chameleon Skin",
+					"entries": [
+						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Shed Skin (1/Day)",
+					"entries": [
+						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"desert"
 			]
 		},
 		{
@@ -12041,7 +12559,7 @@
 			},
 			"source": "VGM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "14 (natural armor)",
@@ -12093,18 +12611,6 @@
 					"name": "Poison's Disciple (2/Day)",
 					"entries": [
 						"The first time the yuan-ti hits with a melee attack on its turn, it can deal an extra 16 ({@dice 3d10}) poison damage to the target."
-					]
-				},
-				{
-					"name": "Variant: Chameleon Skin",
-					"entries": [
-						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
-					]
-				},
-				{
-					"name": "Variant: Shed Skin (1/Day)",
-					"entries": [
-						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
 					]
 				}
 			],
@@ -12175,6 +12681,27 @@
 						}
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Chameleon Skin",
+					"entries": [
+						"The yuan-ti has advantage on Dexterity (Stealth) checks made to hide."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Shed Skin (1/Day)",
+					"entries": [
+						"The yuan-ti can shed its skin as a bonus action to free itself from a grapple, shackles, or other restraints. If the yuan-ti spends 1 minute eating its shed skin, it regains hit points equal to half its hit point maximum."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"desert"
 			]
 		}
 	]

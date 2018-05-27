@@ -63,7 +63,10 @@
 					]
 				}
 			],
-			"page": 12
+			"page": 12,
+			"environment": [
+				"mountain"
+			]
 		},
 		{
 			"name": "Aboleth",
@@ -170,7 +173,10 @@
 					]
 				}
 			],
-			"page": 13
+			"page": 13,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Abominable Yeti",
@@ -253,7 +259,10 @@
 					]
 				}
 			],
-			"page": 306
+			"page": 306,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Acolyte",
@@ -440,7 +449,10 @@
 					]
 				}
 			],
-			"page": 88
+			"page": 88,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Adult Blue Dracolich",
@@ -568,7 +580,10 @@
 					]
 				}
 			],
-			"page": 84
+			"page": 84,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Adult Blue Dragon",
@@ -679,7 +694,11 @@
 					]
 				}
 			],
-			"page": 91
+			"page": 91,
+			"environment": [
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Adult Brass Dragon",
@@ -808,7 +827,10 @@
 					]
 				}
 			],
-			"page": 105
+			"page": 105,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Adult Bronze Dragon",
@@ -949,7 +971,10 @@
 					]
 				}
 			],
-			"page": 108
+			"page": 108,
+			"environment": [
+				"coastal"
+			]
 		},
 		{
 			"name": "Adult Copper Dragon",
@@ -1077,7 +1102,10 @@
 					]
 				}
 			],
-			"page": 112
+			"page": 112,
+			"environment": [
+				"hill"
+			]
 		},
 		{
 			"name": "Adult Gold Dragon",
@@ -1219,7 +1247,11 @@
 					]
 				}
 			],
-			"page": 114
+			"page": 114,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Adult Green Dragon",
@@ -1342,7 +1374,10 @@
 					]
 				}
 			],
-			"page": 94
+			"page": 94,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Adult Red Dragon",
@@ -1453,7 +1488,11 @@
 					]
 				}
 			],
-			"page": 98
+			"page": 98,
+			"environment": [
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Adult Silver Dragon",
@@ -1588,7 +1627,11 @@
 					]
 				}
 			],
-			"page": 117
+			"page": 117,
+			"environment": [
+				"mountain",
+				"urban"
+			]
 		},
 		{
 			"name": "Adult White Dragon",
@@ -1706,7 +1749,10 @@
 					]
 				}
 			],
-			"page": 101
+			"page": 101,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Air Elemental",
@@ -1791,7 +1837,11 @@
 					]
 				}
 			],
-			"page": 124
+			"page": 124,
+			"environment": [
+				"mountain",
+				"desert"
+			]
 		},
 		{
 			"name": "Allosaurus",
@@ -1842,7 +1892,10 @@
 					]
 				}
 			],
-			"page": 79
+			"page": 79,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Ancient Black Dragon",
@@ -1959,7 +2012,10 @@
 					]
 				}
 			],
-			"page": 87
+			"page": 87,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Ancient Blue Dragon",
@@ -2070,7 +2126,11 @@
 					]
 				}
 			],
-			"page": 90
+			"page": 90,
+			"environment": [
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Ancient Brass Dragon",
@@ -2206,7 +2266,10 @@
 					]
 				}
 			],
-			"page": 104
+			"page": 104,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Ancient Bronze Dragon",
@@ -2347,7 +2410,10 @@
 					]
 				}
 			],
-			"page": 107
+			"page": 107,
+			"environment": [
+				"coastal"
+			]
 		},
 		{
 			"name": "Ancient Copper Dragon",
@@ -2482,7 +2548,10 @@
 					]
 				}
 			],
-			"page": 110
+			"page": 110,
+			"environment": [
+				"hill"
+			]
 		},
 		{
 			"name": "Ancient Gold Dragon",
@@ -2624,7 +2693,11 @@
 					]
 				}
 			],
-			"page": 113
+			"page": 113,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Ancient Green Dragon",
@@ -2747,7 +2820,10 @@
 					]
 				}
 			],
-			"page": 93
+			"page": 93,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Ancient Red Dragon",
@@ -2858,7 +2934,11 @@
 					]
 				}
 			],
-			"page": 97
+			"page": 97,
+			"environment": [
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Ancient Silver Dragon",
@@ -2993,7 +3073,11 @@
 					]
 				}
 			],
-			"page": 116
+			"page": 116,
+			"environment": [
+				"mountain",
+				"urban"
+			]
 		},
 		{
 			"name": "Ancient White Dragon",
@@ -3111,7 +3195,10 @@
 					]
 				}
 			],
-			"page": 100
+			"page": 100,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Androsphinx",
@@ -3284,6 +3371,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"desert"
 			]
 		},
 		{
@@ -3395,7 +3485,11 @@
 					]
 				}
 			],
-			"page": 21
+			"page": 21,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Ankylosaurus",
@@ -3429,7 +3523,10 @@
 					]
 				}
 			],
-			"page": 79
+			"page": 79,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Ape",
@@ -3480,7 +3577,10 @@
 					]
 				}
 			],
-			"page": 317
+			"page": 317,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Arcanaloth",
@@ -3980,7 +4080,10 @@
 					]
 				}
 			],
-			"page": 317
+			"page": 317,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Awakened Tree",
@@ -4030,7 +4133,10 @@
 					]
 				}
 			],
-			"page": 317
+			"page": 317,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Axe Beak",
@@ -4064,7 +4170,11 @@
 					]
 				}
 			],
-			"page": 317
+			"page": 317,
+			"environment": [
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Azer",
@@ -4173,7 +4283,11 @@
 					]
 				}
 			],
-			"page": 318
+			"page": 318,
+			"environment": [
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Badger",
@@ -4217,7 +4331,10 @@
 					]
 				}
 			],
-			"page": 318
+			"page": 318,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Balor",
@@ -4327,17 +4444,20 @@
 					"entries": [
 						"The balor magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
 					]
-				},
+				}
+			],
+			"page": 55,
+			"variant": [
 				{
-					"name": "Variant: Summon Demon (1/Day)",
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
 					"entries": [
 						"The demon chooses what to summon and attempts a magical summoning.",
 						"A balor has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d8} {@creature vrock}s, {@dice 1d6} {@creature hezrou}s, {@dice 1d4} {@creature glabrezu}s, {@dice 1d3} {@creature nalfeshnee}s, {@dice 1d2} {@creature marilith}s, or one {@creature goristro}.",
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			],
-			"page": 55
+			]
 		},
 		{
 			"name": "Bandit",
@@ -4561,7 +4681,11 @@
 					]
 				}
 			],
-			"page": 23
+			"page": 23,
+			"environment": [
+				"forest",
+				"coastal"
+			]
 		},
 		{
 			"name": "Barbed Devil",
@@ -4756,14 +4880,6 @@
 					"entries": [
 						"Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 9 ({@dice 1d10+4}) bludgeoning damage."
 					]
-				},
-				{
-					"name": "Variant: Summon Demon (1/Day)",
-					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A barlgura has a {@chance 30|30 percent|30% summoning chance} chance of summoning one barlgura.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 56,
@@ -4783,6 +4899,17 @@
 							"{@spell invisibility} (self only)"
 						]
 					}
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
+					"entries": [
+						"The demon chooses what to summon and attempts a magical summoning.",
+						"A barlgura has a {@chance 30|30 percent|30% summoning chance} chance of summoning one barlgura.",
+						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
 				}
 			]
 		},
@@ -4829,7 +4956,10 @@
 					]
 				}
 			],
-			"page": 24
+			"page": 24,
+			"environment": [
+				"mountain"
+			]
 		},
 		{
 			"name": "Bat",
@@ -5047,7 +5177,10 @@
 					]
 				}
 			],
-			"page": 25
+			"page": 25,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Beholder",
@@ -5137,7 +5270,10 @@
 					]
 				}
 			],
-			"page": 28
+			"page": 28,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Beholder Zombie",
@@ -5207,7 +5343,10 @@
 					]
 				}
 			],
-			"page": 316
+			"page": 316,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Berserker",
@@ -5313,7 +5452,10 @@
 					]
 				}
 			],
-			"page": 318
+			"page": 318,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Black Dragon Wyrmling",
@@ -5457,7 +5599,10 @@
 					]
 				}
 			],
-			"page": 241
+			"page": 241,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Blink Dog",
@@ -5511,7 +5656,10 @@
 					]
 				}
 			],
-			"page": 318
+			"page": 318,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Blood Hawk",
@@ -5563,7 +5711,15 @@
 					]
 				}
 			],
-			"page": 319
+			"page": 319,
+			"environment": [
+				"mountain",
+				"grassland",
+				"forest",
+				"hill",
+				"coastal",
+				"arctic"
+			]
 		},
 		{
 			"name": "Blue Dragon Wyrmling",
@@ -5672,15 +5828,6 @@
 					"entries": [
 						"The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
 					]
-				},
-				{
-					"name": "Variant: Control Gem",
-					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
-					]
 				}
 			],
 			"action": [
@@ -5703,7 +5850,19 @@
 					]
 				}
 			],
-			"page": 276
+			"page": 276,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Control Gem",
+					"entries": [
+						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
+						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
+						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
+						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
+					]
+				}
+			]
 		},
 		{
 			"name": "Boar",
@@ -5751,7 +5910,12 @@
 					]
 				}
 			],
-			"page": 319
+			"page": 319,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Bone Devil",
@@ -6032,6 +6196,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -6115,6 +6282,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -6329,7 +6499,12 @@
 					]
 				}
 			],
-			"page": 319
+			"page": 319,
+			"environment": [
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Bugbear",
@@ -6395,7 +6570,12 @@
 					]
 				}
 			],
-			"page": 33
+			"page": 33,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Bugbear Chief",
@@ -6474,7 +6654,12 @@
 					]
 				}
 			],
-			"page": 33
+			"page": 33,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Bulette",
@@ -6527,7 +6712,12 @@
 					]
 				}
 			],
-			"page": 34
+			"page": 34,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Bullywug",
@@ -6610,7 +6800,10 @@
 					]
 				}
 			],
-			"page": 35
+			"page": 35,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Cambion",
@@ -6720,6 +6913,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"urban"
 			]
 		},
 		{
@@ -6754,7 +6950,10 @@
 					]
 				}
 			],
-			"page": 320
+			"page": 320,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Carrion Crawler",
@@ -6819,7 +7018,10 @@
 					]
 				}
 			],
-			"page": 37
+			"page": 37,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Cat",
@@ -6867,7 +7069,13 @@
 				}
 			],
 			"page": 320,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"grassland",
+				"forest",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Cave Bear",
@@ -6926,7 +7134,10 @@
 					]
 				}
 			],
-			"page": 334
+			"page": 334,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Centaur",
@@ -6993,7 +7204,11 @@
 					]
 				}
 			],
-			"page": 38
+			"page": 38,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Chain Devil",
@@ -7172,17 +7387,20 @@
 					"entries": [
 						"Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one creature. Hit: 16 ({@dice 4d6+2}) piercing damage plus 24 ({@dice 7d6}) necrotic damage, and the target's hit point maximum is reduced by an amount equal to the necrotic damage taken. If this effect reduces a creature's hit point maximum to 0, the creature dies. This reduction to a creature's hit point maximum lasts until the creature finishes a long rest or until it is affected by a spell like greater restoration."
 					]
-				},
+				}
+			],
+			"page": 57,
+			"variant": [
 				{
-					"name": "Variant: Summon Demon (1/Day)",
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
 					"entries": [
 						"The demon chooses what to summon and attempts a magical summoning.",
 						"A chasme has a {@chance 30|30 percent|30% summoning chance} chance of summoning one chasme.",
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			],
-			"page": 57
+			]
 		},
 		{
 			"name": "Chimera",
@@ -7247,7 +7465,13 @@
 					]
 				}
 			],
-			"page": 39
+			"page": 39,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Chuul",
@@ -7320,7 +7544,10 @@
 					]
 				}
 			],
-			"page": 40
+			"page": 40,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Clay Golem",
@@ -7508,7 +7735,10 @@
 					]
 				}
 			],
-			"page": 41
+			"page": 41,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Cloud Giant",
@@ -7637,6 +7867,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"mountain"
 			]
 		},
 		{
@@ -7673,7 +7906,10 @@
 					]
 				}
 			],
-			"page": 42
+			"page": 42,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Commoner",
@@ -7755,7 +7991,13 @@
 					]
 				}
 			],
-			"page": 320
+			"page": 320,
+			"environment": [
+				"underwater",
+				"forest",
+				"swamp",
+				"desert"
+			]
 		},
 		{
 			"name": "Copper Dragon Wyrmling",
@@ -7942,6 +8184,12 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"grassland",
+				"forest",
+				"urban",
+				"desert"
 			]
 		},
 		{
@@ -7989,7 +8237,10 @@
 					]
 				}
 			],
-			"page": 320
+			"page": 320,
+			"environment": [
+				"coastal"
+			]
 		},
 		{
 			"name": "Crawling Claw",
@@ -8087,7 +8338,11 @@
 					]
 				}
 			],
-			"page": 320
+			"page": 320,
+			"environment": [
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Cult Fanatic",
@@ -8294,7 +8549,15 @@
 					]
 				}
 			],
-			"page": 45
+			"page": 45,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"hill",
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Dao",
@@ -8351,17 +8614,6 @@
 					"entries": [
 						"The dao has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
 					]
-				},
-				{
-					"name": "Variant: Genie Powers",
-					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
-						"Disguises.",
-						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
-						"Wishes.",
-						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
-					]
 				}
 			],
 			"action": [
@@ -8412,6 +8664,23 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Genie Powers",
+					"entries": [
+						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"Disguises.",
+						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
+						"Wishes.",
+						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
+						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -8473,7 +8742,10 @@
 					]
 				}
 			],
-			"page": 46
+			"page": 46,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Death Dog",
@@ -8527,7 +8799,10 @@
 					]
 				}
 			],
-			"page": 321
+			"page": 321,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Death Knight",
@@ -8732,15 +9007,6 @@
 					"entries": [
 						"The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
 					]
-				},
-				{
-					"name": "Variant: Control Gem",
-					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
-					]
 				}
 			],
 			"action": [
@@ -8795,6 +9061,18 @@
 							"{@spell plane shift}"
 						]
 					}
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Control Gem",
+					"entries": [
+						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
+						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
+						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
+						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
+					]
 				}
 			]
 		},
@@ -8897,7 +9175,10 @@
 					]
 				}
 			],
-			"page": 29
+			"page": 29,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Deep Gnome (Svirfneblin)",
@@ -8982,6 +9263,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -9016,7 +9300,11 @@
 					]
 				}
 			],
-			"page": 321
+			"page": 321,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Demilich",
@@ -9459,7 +9747,11 @@
 					]
 				}
 			],
-			"page": 321
+			"page": 321,
+			"environment": [
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Displacer Beast",
@@ -9515,7 +9807,10 @@
 					]
 				}
 			],
-			"page": 81
+			"page": 81,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Djinni",
@@ -9559,17 +9854,6 @@
 					"name": "Elemental Demise",
 					"entries": [
 						"If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying."
-					]
-				},
-				{
-					"name": "Variant: Genie Powers",
-					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
-						"Disguises.",
-						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
-						"Wishes.",
-						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
 					]
 				}
 			],
@@ -9622,6 +9906,23 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Genie Powers",
+					"entries": [
+						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"Disguises.",
+						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
+						"Wishes.",
+						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
+						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+					]
+				}
+			],
+			"environment": [
+				"coastal"
 			]
 		},
 		{
@@ -9702,7 +10003,11 @@
 					]
 				}
 			],
-			"page": 82
+			"page": 82,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Draft Horse",
@@ -9736,7 +10041,10 @@
 					]
 				}
 			],
-			"page": 321
+			"page": 321,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Dragon Turtle",
@@ -9813,7 +10121,11 @@
 					]
 				}
 			],
-			"page": 119
+			"page": 119,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Dretch",
@@ -9987,6 +10299,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10133,6 +10448,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10231,6 +10549,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10349,6 +10670,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10488,6 +10812,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10655,6 +10982,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -10823,6 +11153,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -10900,7 +11233,10 @@
 					]
 				}
 			],
-			"page": 122
+			"page": 122,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Duodrone",
@@ -11027,12 +11363,6 @@
 					"entries": [
 						"The mephit exhales a 15-foot cone of blinding dust. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
-				},
-				{
-					"name": "Variant: Summon Mephits (1/Day)",
-					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 215,
@@ -11046,6 +11376,18 @@
 						"{@spell sleep}"
 					]
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Mephits (1/Day)",
+					"entries": [
+						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"environment": [
+				"desert"
 			]
 		},
 		{
@@ -11092,7 +11434,13 @@
 					]
 				}
 			],
-			"page": 322
+			"page": 322,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill",
+				"coastal"
+			]
 		},
 		{
 			"name": "Earth Elemental",
@@ -11172,7 +11520,10 @@
 					]
 				}
 			],
-			"page": 124
+			"page": 124,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Efreeti",
@@ -11215,17 +11566,6 @@
 					"name": "Elemental Demise",
 					"entries": [
 						"If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the djinni was wearing or carrying."
-					]
-				},
-				{
-					"name": "Variant: Genie Powers",
-					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
-						"Disguises.",
-						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
-						"Wishes.",
-						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
 					]
 				}
 			],
@@ -11274,6 +11614,23 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Genie Powers",
+					"entries": [
+						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"Disguises.",
+						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
+						"Wishes.",
+						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
+						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+					]
+				}
+			],
+			"environment": [
+				"desert"
 			]
 		},
 		{
@@ -11322,7 +11679,10 @@
 					]
 				}
 			],
-			"page": 322
+			"page": 322,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Elk",
@@ -11370,7 +11730,12 @@
 					]
 				}
 			],
-			"page": 322
+			"page": 322,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Empyrean",
@@ -11606,12 +11971,6 @@
 					"entries": [
 						"Ranged Weapon Attack: {@hit +7} to hit, range 150/600 ft., one target. Hit: 7 ({@dice 1d8+3}) piercing damage plus 13 ({@dice 3d8}) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic."
 					]
-				},
-				{
-					"name": "Variant: Rope of Entanglement",
-					"entries": [
-						"Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks."
-					]
 				}
 			],
 			"reaction": [
@@ -11622,7 +11981,16 @@
 					]
 				}
 			],
-			"page": 73
+			"page": 73,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Rope of Entanglement",
+					"entries": [
+						"Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks."
+					]
+				}
+			]
 		},
 		{
 			"name": "Ettercap",
@@ -11700,15 +12068,21 @@
 					"entries": [
 						"Ranged Weapon Attack: {@hit +4} to hit, range 30/60 ft., one Large or smaller creature. Hit: The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, is vulnerable to fire damage and immune to bludgeoning damage."
 					]
-				},
+				}
+			],
+			"page": 131,
+			"variant": [
 				{
-					"name": "Variant: Web Garrote",
+					"type": "variant",
+					"name": "Web Garrote",
 					"entries": [
 						"Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one Medium or Small creature against which the ettercap has advantage on the attack roll. Hit: 4 ({@dice 1d4+2}) bludgeoning damage, and the target is grappled (escape DC 12). Until this grapple ends, the target can't breathe, and the ettercap has advantage on attack rolls against it."
 					]
 				}
 			],
-			"page": 131
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Ettin",
@@ -11774,7 +12148,12 @@
 					]
 				}
 			],
-			"page": 132
+			"page": 132,
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Faerie Dragon (Blue)",
@@ -11878,6 +12257,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -11981,6 +12363,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -12086,6 +12471,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -12187,6 +12575,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -12287,6 +12678,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -12393,6 +12787,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -12495,6 +12892,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -12581,7 +12981,10 @@
 					]
 				}
 			],
-			"page": 125
+			"page": 125,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Fire Giant",
@@ -12668,7 +13071,11 @@
 					}
 				}
 			],
-			"page": 154
+			"page": 154,
+			"environment": [
+				"underdark",
+				"mountain"
+			]
 		},
 		{
 			"name": "Fire Snake",
@@ -12741,7 +13148,10 @@
 					]
 				}
 			],
-			"page": 265
+			"page": 265,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Flameskull",
@@ -12864,6 +13274,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -13037,7 +13450,10 @@
 					]
 				}
 			],
-			"page": 135
+			"page": 135,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Flying Snake",
@@ -13082,7 +13498,13 @@
 					]
 				}
 			],
-			"page": 322
+			"page": 322,
+			"environment": [
+				"grassland",
+				"forest",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Flying Sword",
@@ -13211,7 +13633,10 @@
 					]
 				}
 			],
-			"page": 136
+			"page": 136,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Frog",
@@ -13338,7 +13763,11 @@
 					}
 				}
 			],
-			"page": 155
+			"page": 155,
+			"environment": [
+				"mountain",
+				"arctic"
+			]
 		},
 		{
 			"name": "Galeb Duhr",
@@ -13416,7 +13845,11 @@
 					]
 				}
 			],
-			"page": 139
+			"page": 139,
+			"environment": [
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Gargoyle",
@@ -13492,7 +13925,11 @@
 					]
 				}
 			],
-			"page": 140
+			"page": 140,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Gas Spore",
@@ -13557,7 +13994,10 @@
 					]
 				}
 			],
-			"page": 138
+			"page": 138,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Gelatinous Cube",
@@ -13626,7 +14066,10 @@
 					]
 				}
 			],
-			"page": 242
+			"page": 242,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Ghast",
@@ -13689,7 +14132,12 @@
 					]
 				}
 			],
-			"page": 148
+			"page": 148,
+			"environment": [
+				"underdark",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Ghost",
@@ -13792,7 +14240,11 @@
 					]
 				}
 			],
-			"page": 147
+			"page": 147,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Ghoul",
@@ -13838,7 +14290,12 @@
 					]
 				}
 			],
-			"page": 148
+			"page": 148,
+			"environment": [
+				"underdark",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Giant Ape",
@@ -13889,7 +14346,10 @@
 					]
 				}
 			],
-			"page": 323
+			"page": 323,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Giant Badger",
@@ -13945,7 +14405,10 @@
 					]
 				}
 			],
-			"page": 323
+			"page": 323,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Giant Bat",
@@ -13995,7 +14458,11 @@
 					]
 				}
 			],
-			"page": 323
+			"page": 323,
+			"environment": [
+				"underdark",
+				"forest"
+			]
 		},
 		{
 			"name": "Giant Boar",
@@ -14043,7 +14510,12 @@
 					]
 				}
 			],
-			"page": 323
+			"page": 323,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Giant Centipede",
@@ -14079,7 +14551,11 @@
 					]
 				}
 			],
-			"page": 323
+			"page": 323,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Giant Constrictor Snake",
@@ -14124,7 +14600,14 @@
 					]
 				}
 			],
-			"page": 324
+			"page": 324,
+			"environment": [
+				"underwater",
+				"underdark",
+				"forest",
+				"swamp",
+				"desert"
+			]
 		},
 		{
 			"name": "Giant Crab",
@@ -14171,7 +14654,10 @@
 					]
 				}
 			],
-			"page": 324
+			"page": 324,
+			"environment": [
+				"coastal"
+			]
 		},
 		{
 			"name": "Giant Crocodile",
@@ -14229,7 +14715,10 @@
 					]
 				}
 			],
-			"page": 324
+			"page": 324,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Giant Eagle",
@@ -14289,7 +14778,13 @@
 					]
 				}
 			],
-			"page": 324
+			"page": 324,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill",
+				"coastal"
+			]
 		},
 		{
 			"name": "Giant Elk",
@@ -14341,7 +14836,13 @@
 					]
 				}
 			],
-			"page": 325
+			"page": 325,
+			"environment": [
+				"mountain",
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Giant Fire Beetle",
@@ -14384,7 +14885,10 @@
 					]
 				}
 			],
-			"page": 325
+			"page": 325,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Giant Frog",
@@ -14444,7 +14948,11 @@
 					]
 				}
 			],
-			"page": 325
+			"page": 325,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Giant Goat",
@@ -14492,7 +15000,12 @@
 					]
 				}
 			],
-			"page": 326
+			"page": 326,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Giant Hyena",
@@ -14537,7 +15050,13 @@
 					]
 				}
 			],
-			"page": 326
+			"page": 326,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Giant Lizard",
@@ -14565,20 +15084,6 @@
 			"senses": "darkvision 30 ft.",
 			"passive": 10,
 			"cr": "1/4",
-			"trait": [
-				{
-					"name": "Variant: Hold Breath",
-					"entries": [
-						"The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
-					]
-				},
-				{
-					"name": "Variant: Spider Climb",
-					"entries": [
-						"The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
-					]
-				}
-			],
 			"action": [
 				{
 					"name": "Bite",
@@ -14587,7 +15092,37 @@
 					]
 				}
 			],
-			"page": 326
+			"page": 326,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Giant Lizard Traits",
+					"entries": [
+						"Some giant lizards have one or both of the following traits:",
+						{
+							"type": "entries",
+							"name": "Hold Breath",
+							"entries": [
+								"The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Spider Climb",
+							"entries": [
+								"The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Giant Octopus",
@@ -14653,7 +15188,10 @@
 					]
 				}
 			],
-			"page": 326
+			"page": 326,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Giant Owl",
@@ -14708,7 +15246,12 @@
 					]
 				}
 			],
-			"page": 327
+			"page": 327,
+			"environment": [
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Giant Poisonous Snake",
@@ -14747,7 +15290,15 @@
 					]
 				}
 			],
-			"page": 327
+			"page": 327,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"swamp",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Giant Rat",
@@ -14796,7 +15347,13 @@
 					]
 				}
 			],
-			"page": 327
+			"page": 327,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Giant Rat (Diseased)",
@@ -14831,7 +15388,13 @@
 					]
 				}
 			],
-			"page": 327
+			"page": 327,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Giant Scorpion",
@@ -14878,7 +15441,10 @@
 					]
 				}
 			],
-			"page": 327
+			"page": 327,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Giant Sea Horse",
@@ -14927,7 +15493,10 @@
 					]
 				}
 			],
-			"page": 328
+			"page": 328,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Giant Shark",
@@ -14979,7 +15548,10 @@
 					]
 				}
 			],
-			"page": 328
+			"page": 328,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Giant Spider",
@@ -15044,7 +15616,14 @@
 					]
 				}
 			],
-			"page": 328
+			"page": 328,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Giant Toad",
@@ -15101,7 +15680,14 @@
 					]
 				}
 			],
-			"page": 329
+			"page": 329,
+			"environment": [
+				"underdark",
+				"forest",
+				"swamp",
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Giant Vulture",
@@ -15167,7 +15753,11 @@
 					]
 				}
 			],
-			"page": 329
+			"page": 329,
+			"environment": [
+				"grassland",
+				"desert"
+			]
 		},
 		{
 			"name": "Giant Wasp",
@@ -15202,7 +15792,12 @@
 					]
 				}
 			],
-			"page": 329
+			"page": 329,
+			"environment": [
+				"grassland",
+				"forest",
+				"urban"
+			]
 		},
 		{
 			"name": "Giant Weasel",
@@ -15249,7 +15844,12 @@
 					]
 				}
 			],
-			"page": 329
+			"page": 329,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Giant Wolf Spider",
@@ -15309,7 +15909,14 @@
 					]
 				}
 			],
-			"page": 330
+			"page": 330,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Gibbering Mouther",
@@ -15374,7 +15981,10 @@
 					]
 				}
 			],
-			"page": 157
+			"page": 157,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Githyanki Knight",
@@ -15773,14 +16383,6 @@
 					"entries": [
 						"Melee Weapon Attack: {@hit +9} to hit, reach 5 ft., one target. Hit: 7 ({@dice 2d4+2}) bludgeoning damage."
 					]
-				},
-				{
-					"name": "Variant: Summon Demon (1/Day)",
-					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A glabrezu has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 1d3} {@creature vrock}s, {@dice 1d2} {@creature hezrou}s, or one glabrezu.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 58,
@@ -15802,6 +16404,17 @@
 							"{@spell power word stun}"
 						]
 					}
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
+					"entries": [
+						"The demon chooses what to summon and attempts a magical summoning.",
+						"A glabrezu has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 1d3} {@creature vrock}s, {@dice 1d2} {@creature hezrou}s, or one glabrezu.",
+						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
 				}
 			]
 		},
@@ -15948,7 +16561,13 @@
 					]
 				}
 			],
-			"page": 163
+			"page": 163,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Gnoll Fang of Yeenoghu",
@@ -16015,7 +16634,13 @@
 					]
 				}
 			],
-			"page": 163
+			"page": 163,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Gnoll Pack Lord",
@@ -16089,7 +16714,13 @@
 					]
 				}
 			],
-			"page": 163
+			"page": 163,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Goat",
@@ -16137,7 +16768,13 @@
 					]
 				}
 			],
-			"page": 330
+			"page": 330,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Goblin",
@@ -16196,7 +16833,13 @@
 					]
 				}
 			],
-			"page": 166
+			"page": 166,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Goblin Boss",
@@ -16269,7 +16912,13 @@
 					]
 				}
 			],
-			"page": 166
+			"page": 166,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Gold Dragon Wyrmling",
@@ -16412,7 +17061,12 @@
 					]
 				}
 			],
-			"page": 171
+			"page": 171,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Goristro",
@@ -16599,7 +17253,10 @@
 					]
 				}
 			],
-			"page": 243
+			"page": 243,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Gray Ooze (Psychic)",
@@ -16678,7 +17335,10 @@
 					]
 				}
 			],
-			"page": 243
+			"page": 243,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Gray Slaad",
@@ -16747,15 +17407,6 @@
 					"entries": [
 						"The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
 					]
-				},
-				{
-					"name": "Variant: Control Gem",
-					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
-					]
 				}
 			],
 			"action": [
@@ -16810,6 +17461,21 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Control Gem",
+					"entries": [
+						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
+						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
+						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
+						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
+					]
+				}
+			],
+			"environment": [
+				"urban"
 			]
 		},
 		{
@@ -17032,7 +17698,12 @@
 					]
 				}
 			],
-			"page": 177
+			"page": 177,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill"
+			]
 		},
 		{
 			"name": "Green Slaad",
@@ -17095,15 +17766,6 @@
 					"entries": [
 						"The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
 					]
-				},
-				{
-					"name": "Variant: Control Gem",
-					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
-					]
 				}
 			],
 			"action": [
@@ -17159,6 +17821,18 @@
 							"{@spell invisibility} (self only)"
 						]
 					}
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Control Gem",
+					"entries": [
+						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
+						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
+						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
+						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
+					]
 				}
 			]
 		},
@@ -17225,7 +17899,10 @@
 					]
 				}
 			],
-			"page": 172
+			"page": 172,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Grick",
@@ -17291,7 +17968,11 @@
 					]
 				}
 			],
-			"page": 173
+			"page": 173,
+			"environment": [
+				"underdark",
+				"forest"
+			]
 		},
 		{
 			"name": "Grick Alpha",
@@ -17363,7 +18044,11 @@
 					]
 				}
 			],
-			"page": 173
+			"page": 173,
+			"environment": [
+				"underdark",
+				"forest"
+			]
 		},
 		{
 			"name": "Griffon",
@@ -17422,7 +18107,14 @@
 					]
 				}
 			],
-			"page": 174
+			"page": 174,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill",
+				"coastal",
+				"arctic"
+			]
 		},
 		{
 			"name": "Grimlock",
@@ -17492,7 +18184,10 @@
 					]
 				}
 			],
-			"page": 175
+			"page": 175,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Guard",
@@ -17659,6 +18354,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"desert"
 			]
 		},
 		{
@@ -17815,6 +18514,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"desert"
 			]
 		},
 		{
@@ -17860,7 +18562,16 @@
 					]
 				}
 			],
-			"page": 238
+			"page": 238,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"hill",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Half-Red Dragon Veteran",
@@ -17989,7 +18700,13 @@
 					]
 				}
 			],
-			"page": 181
+			"page": 181,
+			"environment": [
+				"mountain",
+				"forest",
+				"hill",
+				"coastal"
+			]
 		},
 		{
 			"name": "Hawk",
@@ -18099,7 +18816,11 @@
 					]
 				}
 			],
-			"page": 182
+			"page": 182,
+			"environment": [
+				"underdark",
+				"mountain"
+			]
 		},
 		{
 			"name": "Helmed Horror",
@@ -18274,17 +18995,20 @@
 					"entries": [
 						"Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 11 ({@dice 2d6+4}) slashing damage."
 					]
-				},
+				}
+			],
+			"page": 60,
+			"variant": [
 				{
-					"name": "Variant: Summon Demon (1/Day)",
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
 					"entries": [
 						"The demon chooses what to summon and attempts a magical summoning.",
 						"A hezrou has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 2d6} {@creature dretch}es or one hezrou.",
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			],
-			"page": 60
+			]
 		},
 		{
 			"name": "Hill Giant",
@@ -18355,7 +19079,10 @@
 					}
 				}
 			],
-			"page": 155
+			"page": 155,
+			"environment": [
+				"hill"
+			]
 		},
 		{
 			"name": "Hippogriff",
@@ -18413,7 +19140,12 @@
 					]
 				}
 			],
-			"page": 184
+			"page": 184,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill"
+			]
 		},
 		{
 			"name": "Hobgoblin",
@@ -18469,7 +19201,14 @@
 					]
 				}
 			],
-			"page": 186
+			"page": 186,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Hobgoblin Captain",
@@ -18537,7 +19276,14 @@
 					]
 				}
 			],
-			"page": 186
+			"page": 186,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Hobgoblin Warlord",
@@ -18624,7 +19370,14 @@
 					]
 				}
 			],
-			"page": 187
+			"page": 187,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Homunculus",
@@ -18736,7 +19489,10 @@
 					]
 				}
 			],
-			"page": 189
+			"page": 189,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Horned Devil",
@@ -18887,7 +19643,10 @@
 					]
 				}
 			],
-			"page": 330
+			"page": 330,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Hydra",
@@ -18960,7 +19719,10 @@
 					]
 				}
 			],
-			"page": 190
+			"page": 190,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Hyena",
@@ -19005,7 +19767,13 @@
 					]
 				}
 			],
-			"page": 331
+			"page": 331,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Ice Devil",
@@ -19292,12 +20060,6 @@
 					"entries": [
 						"The mephit exhales a 15-foot cone of cold air. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 5 ({@dice 2d4}) cold damage on a failed save, or half as much damage on a successful one."
 					]
-				},
-				{
-					"name": "Variant: Summon Mephits (1/Day)",
-					"entries": [
-						"The mephit has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 215,
@@ -19311,6 +20073,18 @@
 						"{@spell fog cloud}"
 					]
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Mephits (1/Day)",
+					"entries": [
+						"The mephit has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"environment": [
+				"arctic"
 			]
 		},
 		{
@@ -19390,12 +20164,6 @@
 					]
 				},
 				{
-					"name": "Variant: Imp Familiar",
-					"entries": [
-						"Imps can be found in the service to mortal spellcasters, acting as advisors, spies, and familiars. An imp urges its master to acts of evil, knowing the mortal's soul is a prize the imp might ultimately claim. Imps display an unusual loyalty to their masters, and an imp can be quite dangerous if its master is threatened. Some such imps have the following trait."
-					]
-				},
-				{
 					"name": "Familiar",
 					"entries": [
 						"The imp can enter into a contract to serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the imp senses as long as they are within 1 mile of each other. While the imp is within 10 feet of its master, the master shares the imp's Magic Resistance trait. If its master violates the terms of the contract, the imp can end its service as a familiar, ending the telepathic bond."
@@ -19417,7 +20185,16 @@
 				}
 			],
 			"page": 76,
-			"familiar": true
+			"familiar": true,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Imp Familiar",
+					"entries": [
+						"Imps can be found in the service to mortal spellcasters, acting as advisors, spies, and familiars. An imp urges its master to acts of evil, knowing the mortal's soul is a prize the imp might ultimately claim. Imps display an unusual loyalty to their masters, and an imp can be quite dangerous if its master is threatened. Some such imps have the following trait."
+					]
+				}
+			]
 		},
 		{
 			"name": "Intellect Devourer",
@@ -19498,7 +20275,10 @@
 					]
 				}
 			],
-			"page": 191
+			"page": 191,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Invisible Stalker",
@@ -19585,7 +20365,10 @@
 					]
 				}
 			],
-			"page": 192
+			"page": 192,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Iron Golem",
@@ -19737,7 +20520,11 @@
 					]
 				}
 			],
-			"page": 331
+			"page": 331,
+			"environment": [
+				"grassland",
+				"desert"
+			]
 		},
 		{
 			"name": "Jackalwere",
@@ -19825,7 +20612,11 @@
 					]
 				}
 			],
-			"page": 193
+			"page": 193,
+			"environment": [
+				"grassland",
+				"desert"
+			]
 		},
 		{
 			"name": "Kenku",
@@ -19891,7 +20682,11 @@
 					]
 				}
 			],
-			"page": 194
+			"page": 194,
+			"environment": [
+				"forest",
+				"urban"
+			]
 		},
 		{
 			"name": "Killer Whale",
@@ -19949,7 +20744,10 @@
 					]
 				}
 			],
-			"page": 331
+			"page": 331,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Knight",
@@ -20089,7 +20887,18 @@
 					]
 				}
 			],
-			"page": 195
+			"page": 195,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert",
+				"coastal",
+				"arctic",
+				"mountain",
+				"underdark"
+			]
 		},
 		{
 			"name": "Kraken",
@@ -20219,7 +21028,10 @@
 					]
 				}
 			],
-			"page": 197
+			"page": 197,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Kuo-toa",
@@ -20311,7 +21123,10 @@
 					]
 				}
 			],
-			"page": 199
+			"page": 199,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Kuo-toa Archpriest",
@@ -20449,6 +21264,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -20648,6 +21466,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -20731,6 +21552,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"desert"
 			]
 		},
 		{
@@ -21080,7 +21904,13 @@
 					]
 				}
 			],
-			"page": 331
+			"page": 331,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Lizard",
@@ -21204,7 +22034,11 @@
 					]
 				}
 			],
-			"page": 205
+			"page": 205,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Lizard Queen",
@@ -21291,7 +22125,11 @@
 					]
 				}
 			],
-			"page": 205
+			"page": 205,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Lizardfolk",
@@ -21369,7 +22207,11 @@
 					]
 				}
 			],
-			"page": 204
+			"page": 204,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Lizardfolk Shaman",
@@ -21479,6 +22321,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
 			]
 		},
 		{
@@ -21651,12 +22497,6 @@
 					"entries": [
 						"The mephit exhales a 15-foot cone of fire. Each creature in that area must make a DC 11 Dexterity saving throw, taking 7 ({@dice 2d6}) fire damage on a failed save, or half as much damage on a successful one."
 					]
-				},
-				{
-					"name": "Variant: Summon Mephits (1/Day)",
-					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 216,
@@ -21670,6 +22510,18 @@
 						"{@spell heat metal}"
 					]
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Mephits (1/Day)",
+					"entries": [
+						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -21782,7 +22634,10 @@
 					]
 				}
 			],
-			"page": 332
+			"page": 332,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Manes",
@@ -21900,7 +22755,14 @@
 					]
 				}
 			],
-			"page": 213
+			"page": 213,
+			"environment": [
+				"mountain",
+				"grassland",
+				"hill",
+				"coastal",
+				"arctic"
+			]
 		},
 		{
 			"name": "Marid",
@@ -21953,17 +22815,6 @@
 					"entries": [
 						"If the marid dies, its body disintegrates into a burst of water and foam, leaving behind only equipment the marid was wearing or carrying."
 					]
-				},
-				{
-					"name": "Variant: Genie Powers",
-					"entries": [
-						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
-						"Disguises.",
-						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
-						"Wishes.",
-						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
-						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
-					]
 				}
 			],
 			"action": [
@@ -22015,6 +22866,24 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Genie Powers",
+					"entries": [
+						"Genies have a variety of magical capabilities, including spells. A few have even greater powers that allow them to alter their appearance or the nature of reality.",
+						"Disguises.",
+						"Some genies can veil themselves in illusion to pass as other similarly shaped creatures. Such genies can innately cast the disguise self spell at will, often with a longer duration than is normal for that spell. Mightier genies can cast the true polymorph spell one to three times per day, possibly with a longer duration than normal. Such genies can change only their own shape, but a rare few can use the spell on other creatures and objects as well.",
+						"Wishes.",
+						"The genie power to grant wishes is legendary among mortals. Only the most potent genies, such as those among the nobility, can do so. A particular genie that has this power can grant one to three wishes to a creature that isn't a genie. Once a genie has granted its limit of wishes, it can't grant wishes again for some amount of time (usually 1 year). and cosmic law dictates that the same genie can expend its limit of wishes on a specific creature only once in that creature's existence.",
+						"To be granted a wish, a creature within 60 feet of the genie states a desired effect to it. The genie can then cast the wish spell on the creature's behalf to bring about the effect. Depending on the genie's nature, the genie might try to pervert the intent of the wish by exploiting the wish's poor wording. The perversion of the wording is usually crafted to be to the genie's benefit."
+					]
+				}
+			],
+			"environment": [
+				"underwater",
+				"coastal"
 			]
 		},
 		{
@@ -22118,14 +22987,6 @@
 					"entries": [
 						"The marilith magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
 					]
-				},
-				{
-					"name": "Variant: Summon Demon (1/Day)",
-					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A marilith has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d6} {@creature vrock}s, {@dice 1d4} {@creature hezrou}s, {@dice 1d3} {@creature glabrezu}s, {@dice 1d2} {@creature nalfeshnee}s, or one marilith.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"reaction": [
@@ -22136,7 +22997,18 @@
 					]
 				}
 			],
-			"page": 61
+			"page": 61,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
+					"entries": [
+						"The demon chooses what to summon and attempts a magical summoning.",
+						"A marilith has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d6} {@creature vrock}s, {@dice 1d4} {@creature hezrou}s, {@dice 1d3} {@creature glabrezu}s, {@dice 1d2} {@creature nalfeshnee}s, or one marilith.",
+						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			]
 		},
 		{
 			"name": "Mastiff",
@@ -22181,7 +23053,12 @@
 					]
 				}
 			],
-			"page": 332
+			"page": 332,
+			"environment": [
+				"forest",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Medusa",
@@ -22252,7 +23129,10 @@
 					]
 				}
 			],
-			"page": 214
+			"page": 214,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Merfolk",
@@ -22304,7 +23184,11 @@
 					]
 				}
 			],
-			"page": 218
+			"page": 218,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Merrow",
@@ -22368,7 +23252,11 @@
 					]
 				}
 			],
-			"page": 219
+			"page": 219,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Mezzoloth",
@@ -22581,7 +23469,11 @@
 					]
 				}
 			],
-			"page": 220
+			"page": 220,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Mind Flayer",
@@ -22669,6 +23561,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -22812,6 +23707,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -22878,7 +23776,10 @@
 					]
 				}
 			],
-			"page": 223
+			"page": 223,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Minotaur Skeleton",
@@ -22939,7 +23840,10 @@
 					]
 				}
 			],
-			"page": 273
+			"page": 273,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Monodrone",
@@ -23064,15 +23968,21 @@
 					"entries": [
 						"The mephit belches viscid mud onto one creature within 5 ft. of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
-				},
+				}
+			],
+			"page": 216,
+			"variant": [
 				{
-					"name": "Variant: Summon Mephits (1/Day)",
+					"type": "variant",
+					"name": "Summon Mephits (1/Day)",
 					"entries": [
 						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
 			],
-			"page": 216
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Mule",
@@ -23120,7 +24030,12 @@
 					]
 				}
 			],
-			"page": 333
+			"page": 333,
+			"environment": [
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Mummy",
@@ -23196,7 +24111,10 @@
 					]
 				}
 			],
-			"page": 228
+			"page": 228,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Mummy Lord",
@@ -23386,6 +24304,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"desert"
 			]
 		},
 		{
@@ -23487,7 +24408,10 @@
 					}
 				}
 			],
-			"page": 232
+			"page": 232,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Myconid Sovereign",
@@ -23606,7 +24530,10 @@
 					}
 				}
 			],
-			"page": 232
+			"page": 232,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Myconid Sprout",
@@ -23662,7 +24589,10 @@
 					]
 				}
 			],
-			"page": 230
+			"page": 230,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Nalfeshnee",
@@ -23760,17 +24690,20 @@
 					"entries": [
 						"The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
 					]
-				},
+				}
+			],
+			"page": 62,
+			"variant": [
 				{
-					"name": "Variant: Summon Demon (1/Day)",
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
 					"entries": [
 						"The demon chooses what to summon and attempts a magical summoning.",
 						"A nalfeshnee has a {@chance 50|50 percent|50% summoning chance} chance of summoning {@dice 1d4} {@creature vrock}s, {@dice 1d3} {@creature hezrou}s, {@dice 1d2} {@creature glabrezu}s, or one nalfeshnee.",
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			],
-			"page": 62
+			]
 		},
 		{
 			"name": "Needle Blight",
@@ -23817,7 +24750,10 @@
 					]
 				}
 			],
-			"page": 32
+			"page": 32,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Night Hag",
@@ -24180,7 +25116,10 @@
 					]
 				}
 			],
-			"page": 236
+			"page": 236,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Nycaloth",
@@ -24386,7 +25325,10 @@
 					]
 				}
 			],
-			"page": 243
+			"page": 243,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Octopus",
@@ -24496,7 +25438,18 @@
 					]
 				}
 			],
-			"page": 237
+			"page": 237,
+			"environment": [
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"desert",
+				"coastal",
+				"arctic",
+				"underdark",
+				"mountain"
+			]
 		},
 		{
 			"name": "Ogre Zombie",
@@ -24651,6 +25604,10 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"urban"
 			]
 		},
 		{
@@ -24710,7 +25667,16 @@
 					]
 				}
 			],
-			"page": 246
+			"page": 246,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Orc Eye of Gruumsh",
@@ -24801,6 +25767,15 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"arctic"
 			]
 		},
 		{
@@ -24883,7 +25858,16 @@
 					]
 				}
 			],
-			"page": 246
+			"page": 246,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Orog",
@@ -24949,7 +25933,15 @@
 					]
 				}
 			],
-			"page": 247
+			"page": 247,
+			"environment": [
+				"underdark",
+				"mountain",
+				"grassland",
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Otyugh",
@@ -25014,7 +26006,10 @@
 					]
 				}
 			],
-			"page": 248
+			"page": 248,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Owl",
@@ -25069,7 +26064,11 @@
 				}
 			],
 			"page": 333,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"forest",
+				"arctic"
+			]
 		},
 		{
 			"name": "Owlbear",
@@ -25127,7 +26126,10 @@
 					]
 				}
 			],
-			"page": 249
+			"page": 249,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Panther",
@@ -25186,7 +26188,12 @@
 					]
 				}
 			],
-			"page": 333
+			"page": 333,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Pegasus",
@@ -25231,7 +26238,12 @@
 					]
 				}
 			],
-			"page": 250
+			"page": 250,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Pentadrone",
@@ -25380,7 +26392,11 @@
 					]
 				}
 			],
-			"page": 251
+			"page": 251,
+			"environment": [
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Phase Spider",
@@ -25439,7 +26455,15 @@
 					]
 				}
 			],
-			"page": 334
+			"page": 334,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Piercer",
@@ -25492,7 +26516,10 @@
 					]
 				}
 			],
-			"page": 252
+			"page": 252,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Pit Fiend",
@@ -25694,6 +26721,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -25860,7 +26890,11 @@
 					]
 				}
 			],
-			"page": 80
+			"page": 80,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Poisonous Snake",
@@ -25897,7 +26931,15 @@
 				}
 			],
 			"page": 334,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Polar Bear",
@@ -25955,7 +26997,11 @@
 					]
 				}
 			],
-			"page": 334
+			"page": 334,
+			"environment": [
+				"underdark",
+				"arctic"
+			]
 		},
 		{
 			"name": "Poltergeist",
@@ -26054,7 +27100,11 @@
 					]
 				}
 			],
-			"page": 279
+			"page": 279,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Pony",
@@ -26088,7 +27138,10 @@
 					]
 				}
 			],
-			"page": 335
+			"page": 335,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Priest",
@@ -26234,12 +27287,6 @@
 					]
 				},
 				{
-					"name": "Variant: Pseudodragon Familiar",
-					"entries": [
-						"Some pseudodragons are willing to serve spellcasters as a familiar. Such pseudodragons have the following trait."
-					]
-				},
-				{
 					"name": "Familiar",
 					"entries": [
 						"The pseudodragon can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the pseudodragon senses as long as they are within 1 mile of each other. While the pseudodragon is within 10 feet of its companion, the companion shares the pseudodragon's Magic Resistance trait. At any time and for any reason, the pseudodragon can end its service as a familiar, ending the telepathic bond."
@@ -26261,7 +27308,24 @@
 				}
 			],
 			"page": 254,
-			"familiar": true
+			"familiar": true,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Pseudodragon Familiar",
+					"entries": [
+						"Some pseudodragons are willing to serve spellcasters as a familiar. Such pseudodragons have the following trait."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"forest",
+				"hill",
+				"urban",
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Pteranodon",
@@ -26307,7 +27371,12 @@
 					]
 				}
 			],
-			"page": 80
+			"page": 80,
+			"environment": [
+				"mountain",
+				"grassland",
+				"coastal"
+			]
 		},
 		{
 			"name": "Purple Worm",
@@ -26368,7 +27437,11 @@
 					]
 				}
 			],
-			"page": 255
+			"page": 255,
+			"environment": [
+				"underdark",
+				"desert"
+			]
 		},
 		{
 			"name": "Quadrone",
@@ -26502,7 +27575,10 @@
 					]
 				}
 			],
-			"page": 256
+			"page": 256,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Quaggoth Spore Servant",
@@ -26554,7 +27630,10 @@
 					]
 				}
 			],
-			"page": 230
+			"page": 230,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Quaggoth Thonot",
@@ -26640,6 +27719,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -26710,12 +27792,6 @@
 					]
 				},
 				{
-					"name": "Variant: Quasit Familiar",
-					"entries": [
-						"Mortal spellcasters interested in extraplanar familiars find quasits easy to summon and eager to serve. The quasit plays the part of the obsequious servant. It serves its master well, but it goads the mortal to greater and greater acts of chaos and evil. Such quasits have the following trait."
-					]
-				},
-				{
 					"name": "Familiar",
 					"entries": [
 						"The quasit can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the quasit senses as long as they are within 1 mile of each other. While the quasit is within 10 feet of its master, the master shares the quasit's Magic Resistance trait. At any time and for any reason, the quasit can end its service as a familiar, ending the telepathic bond."
@@ -26743,7 +27819,16 @@
 				}
 			],
 			"page": 63,
-			"familiar": true
+			"familiar": true,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Quasit Familiar",
+					"entries": [
+						"Mortal spellcasters interested in extraplanar familiars find quasits easy to summon and eager to serve. The quasit plays the part of the obsequious servant. It serves its master well, but it goads the mortal to greater and greater acts of chaos and evil. Such quasits have the following trait."
+					]
+				}
+			]
 		},
 		{
 			"name": "Quipper",
@@ -26793,7 +27878,10 @@
 				}
 			],
 			"page": 335,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Rakshasa",
@@ -26895,6 +27983,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"urban"
 			]
 		},
 		{
@@ -26939,7 +28030,11 @@
 				}
 			],
 			"page": 335,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Raven",
@@ -26986,7 +28081,12 @@
 				}
 			],
 			"page": 335,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"swamp",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Red Dragon Wyrmling",
@@ -27095,15 +28195,6 @@
 					"entries": [
 						"The slaad regains 10 hit points at the start of its turn if it has at least 1 hit point."
 					]
-				},
-				{
-					"name": "Variant: Control Gem",
-					"entries": [
-						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
-						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
-						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
-						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
-					]
 				}
 			],
 			"action": [
@@ -27129,7 +28220,19 @@
 					]
 				}
 			],
-			"page": 276
+			"page": 276,
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Control Gem",
+					"entries": [
+						"Implanted in the slaad's brain is a magic control gem. The slaad must obey whoever possesses the gem and is immune to being charmed while so controlled.",
+						"Certain spells can be used to acquire the gem. If the slaad fails its saving throw against imprisonment, the spell can transfer the gem to the spellcaster's open hand, instead of imprisoning the slaad. A wish spell, if cast in the slaad's presence, can be worded to acquire the gem.",
+						"A greater restoration spell cast on the slaad destroys the gem without harming the slaad.",
+						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
+					]
+				}
+			]
 		},
 		{
 			"name": "Reef Shark",
@@ -27181,7 +28284,10 @@
 					]
 				}
 			],
-			"page": 336
+			"page": 336,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Remorhaz",
@@ -27236,7 +28342,10 @@
 					]
 				}
 			],
-			"page": 258
+			"page": 258,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Revenant",
@@ -27331,7 +28440,15 @@
 					]
 				}
 			],
-			"page": 259
+			"page": 259,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert",
+				"arctic"
+			]
 		},
 		{
 			"name": "Rhinoceros",
@@ -27373,7 +28490,10 @@
 					]
 				}
 			],
-			"page": 336
+			"page": 336,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Riding Horse",
@@ -27407,7 +28527,11 @@
 					]
 				}
 			],
-			"page": 336
+			"page": 336,
+			"environment": [
+				"grassland",
+				"urban"
+			]
 		},
 		{
 			"name": "Roc",
@@ -27471,7 +28595,14 @@
 					]
 				}
 			],
-			"page": 260
+			"page": 260,
+			"environment": [
+				"mountain",
+				"hill",
+				"desert",
+				"coastal",
+				"arctic"
+			]
 		},
 		{
 			"name": "Roper",
@@ -27550,7 +28681,10 @@
 					]
 				}
 			],
-			"page": 261
+			"page": 261,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Rug of Smothering",
@@ -27674,7 +28808,10 @@
 					]
 				}
 			],
-			"page": 262
+			"page": 262,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Saber-Toothed Tiger",
@@ -27732,7 +28869,11 @@
 					]
 				}
 			],
-			"page": 336
+			"page": 336,
+			"environment": [
+				"mountain",
+				"arctic"
+			]
 		},
 		{
 			"name": "Sahuagin",
@@ -27816,7 +28957,11 @@
 					]
 				}
 			],
-			"page": 263
+			"page": 263,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Sahuagin Baron",
@@ -27906,7 +29051,11 @@
 					]
 				}
 			],
-			"page": 264
+			"page": 264,
+			"environment": [
+				"underwater",
+				"coastal"
+			]
 		},
 		{
 			"name": "Sahuagin Priestess",
@@ -28023,6 +29172,10 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underwater",
+				"coastal"
 			]
 		},
 		{
@@ -28102,7 +29255,10 @@
 					]
 				}
 			],
-			"page": 266
+			"page": 266,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Satyr",
@@ -28201,7 +29357,10 @@
 					]
 				}
 			],
-			"page": 267
+			"page": 267,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Scarecrow",
@@ -28282,7 +29441,10 @@
 					]
 				}
 			],
-			"page": 268
+			"page": 268,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Scorpion",
@@ -28317,7 +29479,10 @@
 					]
 				}
 			],
-			"page": 337
+			"page": 337,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Scout",
@@ -28521,6 +29686,10 @@
 						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12+the hag's Intelligence modifier, and the spell attack bonus is 4+the hag's Intelligence modifier."
 					]
 				}
+			],
+			"environment": [
+				"underwater",
+				"coastal"
 			]
 		},
 		{
@@ -28648,7 +29817,11 @@
 					]
 				}
 			],
-			"page": 269
+			"page": 269,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Shadow Demon",
@@ -28820,7 +29993,11 @@
 					]
 				}
 			],
-			"page": 270
+			"page": 270,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Shield Guardian",
@@ -28900,7 +30077,10 @@
 					]
 				}
 			],
-			"page": 271
+			"page": 271,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Shrieker",
@@ -28948,7 +30128,10 @@
 					]
 				}
 			],
-			"page": 138
+			"page": 138,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Silver Dragon Wyrmling",
@@ -29073,7 +30256,10 @@
 					]
 				}
 			],
-			"page": 272
+			"page": 272,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Slaad Tadpole",
@@ -29189,12 +30375,6 @@
 					"entries": [
 						"The mephit exhales a 15-foot cone of smoldering ash. Each creature in that area must succeed on a DC 10 Dexterity saving throw or be blinded until the end of the mephit's next turn."
 					]
-				},
-				{
-					"name": "Variant: Summon Mephits (1/Day)",
-					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 217,
@@ -29208,6 +30388,18 @@
 						"{@spell dancing lights}"
 					]
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Mephits (1/Day)",
+					"entries": [
+						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"environment": [
+				"urban"
 			]
 		},
 		{
@@ -29433,7 +30625,10 @@
 					]
 				}
 			],
-			"page": 30
+			"page": 30,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Specter",
@@ -29518,7 +30713,11 @@
 					]
 				}
 			],
-			"page": 279
+			"page": 279,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Spider",
@@ -29793,6 +30992,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"underdark"
 			]
 		},
 		{
@@ -29853,7 +31055,10 @@
 				}
 			],
 			"page": 283,
-			"familiar": true
+			"familiar": true,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Spy",
@@ -29985,12 +31190,6 @@
 					"entries": [
 						"The mephit exhales a 15-foot cone of scalding steam. Each creature in that area must succeed on a DC 10 Dexterity saving throw, taking 4 ({@dice 1d8}) fire damage on a failed save, or half as much damage on a successful one."
 					]
-				},
-				{
-					"name": "Variant: Summon Mephits (1/Day)",
-					"entries": [
-						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 217,
@@ -30004,6 +31203,18 @@
 						"{@spell blur}"
 					]
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Mephits (1/Day)",
+					"entries": [
+						"The mephit has a {@chance 25|25 percent|25% summoning chance} chance of summoning {@dice 1d4} mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"environment": [
+				"underwater"
 			]
 		},
 		{
@@ -30041,7 +31252,18 @@
 					]
 				}
 			],
-			"page": 284
+			"page": 284,
+			"environment": [
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert",
+				"coastal",
+				"mountain",
+				"underdark"
+			]
 		},
 		{
 			"name": "Stone Giant",
@@ -30141,7 +31363,12 @@
 					}
 				}
 			],
-			"page": 156
+			"page": 156,
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Stone Golem",
@@ -30351,6 +31578,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"coastal"
 			]
 		},
 		{
@@ -30448,7 +31678,10 @@
 					]
 				}
 			],
-			"page": 285
+			"page": 285,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Incubus",
@@ -30545,7 +31778,10 @@
 					]
 				}
 			],
-			"page": 285
+			"page": 285,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Swarm of Bats",
@@ -30619,7 +31855,13 @@
 					]
 				}
 			],
-			"page": 337
+			"page": 337,
+			"environment": [
+				"underdark",
+				"mountain",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Swarm of Beetles",
@@ -30682,7 +31924,16 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Swarm of Centipedes",
@@ -30745,7 +31996,16 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Swarm of Insects",
@@ -30807,7 +32067,16 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Swarm of Poisonous Snakes",
@@ -30869,7 +32138,11 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"forest",
+				"swamp"
+			]
 		},
 		{
 			"name": "Swarm of Quippers",
@@ -30943,7 +32216,10 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"underwater"
+			]
 		},
 		{
 			"name": "Swarm of Rats",
@@ -31010,7 +32286,11 @@
 					]
 				}
 			],
-			"page": 339
+			"page": 339,
+			"environment": [
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Swarm of Ravens",
@@ -31071,7 +32351,13 @@
 					]
 				}
 			],
-			"page": 339
+			"page": 339,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill",
+				"urban"
+			]
 		},
 		{
 			"name": "Swarm of Spiders",
@@ -31151,7 +32437,16 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Swarm of Wasps",
@@ -31213,7 +32508,16 @@
 					]
 				}
 			],
-			"page": 338
+			"page": 338,
+			"environment": [
+				"underdark",
+				"grassland",
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Tarrasque",
@@ -31359,7 +32663,10 @@
 					]
 				}
 			],
-			"page": 286
+			"page": 286,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Thri-kreen",
@@ -31430,27 +32737,36 @@
 					"entries": [
 						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 6 ({@dice 2d4+1}) slashing damage."
 					]
-				},
+				}
+			],
+			"page": 288,
+			"variant": [
 				{
-					"name": "Variant: Weapons Multiattack",
+					"type": "variant",
+					"name": "Weapons Multiattack",
 					"entries": [
 						"The thri-kreen makes two gythka attacks or two chatkcha attacks."
 					]
 				},
 				{
-					"name": "Variant: Gythka",
+					"type": "variant",
+					"name": "Gythka",
 					"entries": [
 						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 5 ({@dice 1d8+1}) slashing damage."
 					]
 				},
 				{
-					"name": "Variant: Chatkcha",
+					"type": "variant",
+					"name": "Chatkcha",
 					"entries": [
 						"Ranged Weapon Attack: {@hit +4} to hit, range 30/120 ft., one target. Hit: 5 ({@dice 1d6+2}) slashing damage."
 					]
 				}
 			],
-			"page": 288
+			"environment": [
+				"grassland",
+				"desert"
+			]
 		},
 		{
 			"name": "Thri-kreen (Psionic)",
@@ -31521,24 +32837,6 @@
 					"entries": [
 						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 6 ({@dice 2d4+1}) slashing damage."
 					]
-				},
-				{
-					"name": "Variant: Weapons Multiattack",
-					"entries": [
-						"The thri-kreen makes two gythka attacks or two chatkcha attacks."
-					]
-				},
-				{
-					"name": "Variant: Gythka",
-					"entries": [
-						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 5 ({@dice 1d8+1}) slashing damage."
-					]
-				},
-				{
-					"name": "Variant: Chatkcha",
-					"entries": [
-						"Ranged Weapon Attack: {@hit +4} to hit, range 30/120 ft., one target. Hit: 5 ({@dice 1d6+2}) slashing damage."
-					]
 				}
 			],
 			"page": 288,
@@ -31561,6 +32859,33 @@
 						]
 					}
 				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Weapons Multiattack",
+					"entries": [
+						"The thri-kreen makes two gythka attacks or two chatkcha attacks."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Gythka",
+					"entries": [
+						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 5 ({@dice 1d8+1}) slashing damage."
+					]
+				},
+				{
+					"type": "variant",
+					"name": "Chatkcha",
+					"entries": [
+						"Ranged Weapon Attack: {@hit +4} to hit, range 30/120 ft., one target. Hit: 5 ({@dice 1d6+2}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"grassland",
+				"desert"
 			]
 		},
 		{
@@ -31687,7 +33012,11 @@
 					]
 				}
 			],
-			"page": 339
+			"page": 339,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Treant",
@@ -31762,7 +33091,10 @@
 					]
 				}
 			],
-			"page": 289
+			"page": 289,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Tribal Warrior",
@@ -31858,7 +33190,10 @@
 					]
 				}
 			],
-			"page": 80
+			"page": 80,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Tridrone",
@@ -31999,7 +33334,10 @@
 					]
 				}
 			],
-			"page": 290
+			"page": 290,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Troll",
@@ -32105,7 +33443,15 @@
 					]
 				}
 			],
-			"page": 291
+			"page": 291,
+			"environment": [
+				"underdark",
+				"mountain",
+				"forest",
+				"swamp",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Twig Blight",
@@ -32160,7 +33506,10 @@
 					]
 				}
 			],
-			"page": 32
+			"page": 32,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Tyrannosaurus Rex",
@@ -32209,7 +33558,10 @@
 					]
 				}
 			],
-			"page": 80
+			"page": 80,
+			"environment": [
+				"grassland"
+			]
 		},
 		{
 			"name": "Ultroloth",
@@ -32424,7 +33776,10 @@
 					]
 				}
 			],
-			"page": 292
+			"page": 292,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Unicorn",
@@ -32554,6 +33909,9 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest"
 			]
 		},
 		{
@@ -32707,7 +34065,10 @@
 					]
 				}
 			],
-			"page": 297
+			"page": 297,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Vampire Spawn",
@@ -32799,7 +34160,11 @@
 					]
 				}
 			],
-			"page": 298
+			"page": 298,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Vampire Spellcaster",
@@ -33006,6 +34371,9 @@
 						}
 					}
 				}
+			],
+			"environment": [
+				"urban"
 			]
 		},
 		{
@@ -33171,6 +34539,9 @@
 						"The vampire makes one bite attack."
 					]
 				}
+			],
+			"environment": [
+				"urban"
 			]
 		},
 		{
@@ -33291,7 +34662,10 @@
 					]
 				}
 			],
-			"page": 32
+			"page": 32,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Violet Fungus",
@@ -33345,7 +34719,10 @@
 					]
 				}
 			],
-			"page": 138
+			"page": 138,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Vrock",
@@ -33442,17 +34819,20 @@
 					"entries": [
 						"The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn."
 					]
-				},
+				}
+			],
+			"page": 64,
+			"variant": [
 				{
-					"name": "Variant: Summon Demon (1/Day)",
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
 					"entries": [
 						"The demon chooses what to summon and attempts a magical summoning.",
 						"A vrock has a {@chance 30|30 percent|30% summoning chance} chance of summoning {@dice 2d4} {@creature dretch}es or one vrock.",
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			],
-			"page": 64
+			]
 		},
 		{
 			"name": "Vulture",
@@ -33504,7 +34884,12 @@
 					]
 				}
 			],
-			"page": 339
+			"page": 339,
+			"environment": [
+				"grassland",
+				"hill",
+				"desert"
+			]
 		},
 		{
 			"name": "Warhorse",
@@ -33546,7 +34931,10 @@
 					]
 				}
 			],
-			"page": 340
+			"page": 340,
+			"environment": [
+				"urban"
+			]
 		},
 		{
 			"name": "Warhorse Skeleton",
@@ -33680,7 +35068,12 @@
 					]
 				}
 			],
-			"page": 125
+			"page": 125,
+			"environment": [
+				"underwater",
+				"swamp",
+				"coastal"
+			]
 		},
 		{
 			"name": "Water Weird",
@@ -33754,7 +35147,11 @@
 					]
 				}
 			],
-			"page": 299
+			"page": 299,
+			"environment": [
+				"underdark",
+				"urban"
+			]
 		},
 		{
 			"name": "Weasel",
@@ -33892,7 +35289,12 @@
 					]
 				}
 			],
-			"page": 208
+			"page": 208,
+			"environment": [
+				"forest",
+				"hill",
+				"arctic"
+			]
 		},
 		{
 			"name": "Wereboar",
@@ -33983,7 +35385,12 @@
 					]
 				}
 			],
-			"page": 209
+			"page": 209,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Wererat",
@@ -34073,7 +35480,11 @@
 					]
 				}
 			],
-			"page": 209
+			"page": 209,
+			"environment": [
+				"forest",
+				"urban"
+			]
 		},
 		{
 			"name": "Weretiger",
@@ -34177,7 +35588,12 @@
 					]
 				}
 			],
-			"page": 210
+			"page": 210,
+			"environment": [
+				"grassland",
+				"forest",
+				"desert"
+			]
 		},
 		{
 			"name": "Werewolf",
@@ -34268,7 +35684,11 @@
 					]
 				}
 			],
-			"page": 211
+			"page": 211,
+			"environment": [
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "White Dragon Wyrmling",
@@ -34413,7 +35833,13 @@
 					]
 				}
 			],
-			"page": 300
+			"page": 300,
+			"environment": [
+				"underdark",
+				"swamp",
+				"urban",
+				"desert"
+			]
 		},
 		{
 			"name": "Will-o'-Wisp",
@@ -34514,7 +35940,12 @@
 					]
 				}
 			],
-			"page": 301
+			"page": 301,
+			"environment": [
+				"forest",
+				"swamp",
+				"urban"
+			]
 		},
 		{
 			"name": "Winged Kobold",
@@ -34577,7 +36008,18 @@
 					]
 				}
 			],
-			"page": 195
+			"page": 195,
+			"environment": [
+				"forest",
+				"swamp",
+				"hill",
+				"urban",
+				"desert",
+				"coastal",
+				"arctic",
+				"mountain",
+				"underdark"
+			]
 		},
 		{
 			"name": "Winter Wolf",
@@ -34646,7 +36088,10 @@
 					]
 				}
 			],
-			"page": 340
+			"page": 340,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Wolf",
@@ -34698,7 +36143,12 @@
 					]
 				}
 			],
-			"page": 341
+			"page": 341,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Worg",
@@ -34746,7 +36196,12 @@
 					]
 				}
 			],
-			"page": 341
+			"page": 341,
+			"environment": [
+				"grassland",
+				"forest",
+				"hill"
+			]
 		},
 		{
 			"name": "Wraith",
@@ -34836,7 +36291,10 @@
 					]
 				}
 			],
-			"page": 302
+			"page": 302,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Wyvern",
@@ -34893,7 +36351,11 @@
 					]
 				}
 			],
-			"page": 303
+			"page": 303,
+			"environment": [
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Xorn",
@@ -34974,7 +36436,10 @@
 					]
 				}
 			],
-			"page": 304
+			"page": 304,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Yeti",
@@ -35051,7 +36516,10 @@
 					]
 				}
 			],
-			"page": 305
+			"page": 305,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Yochlol",
@@ -35161,14 +36629,6 @@
 						"While in mist form, the yochlol is incapacitated and can't speak. It has a flying speed of 30 feet, can hover, and can pass through any space that isn't airtight. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to nonmagical damage.",
 						"While in mist form, the yochlol can enter a creature's space and stop there. Each time that creature starts its turn with the yochlol in its space, the creature must succeed on a DC 14 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target is incapacitated."
 					]
-				},
-				{
-					"name": "Variant: Summon Demon (1/Day)",
-					"entries": [
-						"The demon chooses what to summon and attempts a magical summoning.",
-						"A yochlol has a {@chance 50|50 percent|50% summoning chance} chance of summoning one yochlol.",
-						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
-					]
 				}
 			],
 			"page": 65,
@@ -35187,6 +36647,17 @@
 							"{@spell dominate person}"
 						]
 					}
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Summon Demon (1/Day)",
+					"entries": [
+						"The demon chooses what to summon and attempts a magical summoning.",
+						"A yochlol has a {@chance 50|50 percent|50% summoning chance} chance of summoning one yochlol.",
+						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
 				}
 			]
 		},
@@ -35266,7 +36737,10 @@
 					]
 				}
 			],
-			"page": 88
+			"page": 88,
+			"environment": [
+				"swamp"
+			]
 		},
 		{
 			"name": "Young Blue Dragon",
@@ -35336,7 +36810,11 @@
 					]
 				}
 			],
-			"page": 91
+			"page": 91,
+			"environment": [
+				"desert",
+				"coastal"
+			]
 		},
 		{
 			"name": "Young Brass Dragon",
@@ -35423,7 +36901,10 @@
 					]
 				}
 			],
-			"page": 105
+			"page": 105,
+			"environment": [
+				"desert"
+			]
 		},
 		{
 			"name": "Young Bronze Dragon",
@@ -35518,7 +36999,10 @@
 					]
 				}
 			],
-			"page": 108
+			"page": 108,
+			"environment": [
+				"coastal"
+			]
 		},
 		{
 			"name": "Young Copper Dragon",
@@ -35605,7 +37089,10 @@
 					]
 				}
 			],
-			"page": 112
+			"page": 112,
+			"environment": [
+				"hill"
+			]
 		},
 		{
 			"name": "Young Gold Dragon",
@@ -35701,7 +37188,11 @@
 					]
 				}
 			],
-			"page": 115
+			"page": 115,
+			"environment": [
+				"grassland",
+				"forest"
+			]
 		},
 		{
 			"name": "Young Green Dragon",
@@ -35783,7 +37274,10 @@
 					]
 				}
 			],
-			"page": 94
+			"page": 94,
+			"environment": [
+				"forest"
+			]
 		},
 		{
 			"name": "Young Red Dragon",
@@ -35853,7 +37347,11 @@
 					]
 				}
 			],
-			"page": 98
+			"page": 98,
+			"environment": [
+				"mountain",
+				"hill"
+			]
 		},
 		{
 			"name": "Young Red Shadow Dragon",
@@ -35946,7 +37444,10 @@
 					]
 				}
 			],
-			"page": 85
+			"page": 85,
+			"environment": [
+				"underdark"
+			]
 		},
 		{
 			"name": "Young Remorhaz",
@@ -35994,7 +37495,10 @@
 					]
 				}
 			],
-			"page": 258
+			"page": 258,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Young Silver Dragon",
@@ -36081,7 +37585,11 @@
 					]
 				}
 			],
-			"page": 118
+			"page": 118,
+			"environment": [
+				"mountain",
+				"urban"
+			]
 		},
 		{
 			"name": "Young White Dragon",
@@ -36160,7 +37668,10 @@
 					]
 				}
 			],
-			"page": 101
+			"page": 101,
+			"environment": [
+				"arctic"
+			]
 		},
 		{
 			"name": "Yuan-ti Abomination",
@@ -36174,7 +37685,7 @@
 			},
 			"source": "MM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "15 (natural armor)",
@@ -36270,6 +37781,11 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"desert"
 			]
 		},
 		{
@@ -36284,7 +37800,7 @@
 			},
 			"source": "MM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "12",
@@ -36380,6 +37896,11 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"desert"
 			]
 		},
 		{
@@ -36394,7 +37915,7 @@
 			},
 			"source": "MM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "12",
@@ -36478,6 +37999,11 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"desert"
 			]
 		},
 		{
@@ -36492,7 +38018,7 @@
 			},
 			"source": "MM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "12",
@@ -36594,6 +38120,11 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"desert"
 			]
 		},
 		{
@@ -36607,7 +38138,7 @@
 			},
 			"source": "MM",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "11",
@@ -36684,6 +38215,12 @@
 						]
 					}
 				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"urban",
+				"desert"
 			]
 		},
 		{
@@ -36738,7 +38275,10 @@
 					]
 				}
 			],
-			"page": 316
+			"page": 316,
+			"environment": [
+				"urban"
+			]
 		}
 	]
 }
