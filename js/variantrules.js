@@ -3,7 +3,7 @@ const JSON_URL = "data/variantrules.json";
 
 window.onload = function load () {
 	ExcludeUtil.initialise();
-	DataUtil.loadJSON(JSON_URL, onJsonLoad);
+	DataUtil.loadJSON(JSON_URL).then(onJsonLoad);
 };
 
 let tableDefault;
@@ -101,8 +101,6 @@ function loadhash (id) {
 	$("#pagecontent").html(tableDefault);
 
 	const curRule = rulesList[id];
-
-	$("th.name").html(curRule.name);
 
 	// build text list and display
 	$("tr.text").remove();

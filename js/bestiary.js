@@ -40,7 +40,7 @@ function getAllImmRest (toParse, key) {
 const meta = {};
 
 function loadMeta (nextFunction) {
-	DataUtil.loadJSON(JSON_DIR + META_URL, function (data) {
+	DataUtil.loadJSON(JSON_DIR + META_URL).then(function (data) {
 		// Convert the legendary Group JSONs into a look-up, i.e. use the name as a JSON property name
 		for (let i = 0; i < data.legendaryGroup.length; i++) {
 			meta[data.legendaryGroup[i].name] = {
@@ -67,7 +67,7 @@ function addLegendaryGroups (toAdd) {
 
 let ixFluff = {};
 function loadFluffIndex (nextFunction) {
-	DataUtil.loadJSON(JSON_DIR + FLUFF_INDEX, function (data) {
+	DataUtil.loadJSON(JSON_DIR + FLUFF_INDEX).then(function (data) {
 		ixFluff = data;
 		nextFunction();
 	});
@@ -206,7 +206,7 @@ const conditionImmuneFilter = new Filter({
 	items: CONDS,
 	displayFn: StrUtil.uppercaseFirst
 });
-const miscFilter = new Filter({header: "Miscellaneous", items: ["Familiar", "Legendary", "Swarm"], displayFn: StrUtil.uppercaseFirst});
+const miscFilter = new Filter({header: "Miscellaneous", items: ["Familiar", "Legendary", "Spellcaster", "Swarm"], displayFn: StrUtil.uppercaseFirst});
 
 const filterBox = initFilterBox(
 	sourceFilter,
@@ -389,6 +389,7 @@ function addMonsters (data) {
 		mon._fMisc = mon.legendary || mon.legendaryGroup ? ["Legendary"] : [];
 		if (mon.familiar) mon._fMisc.push("Familiar");
 		if (mon.type.swarmSize) mon._fMisc.push("Swarm");
+		if (mon.spellcasting) mon._fMisc.push("Spellcaster");
 	}
 	const lastSearch = ListUtil.getSearchTermAndReset(list);
 	table.append(textStack);
@@ -901,7 +902,7 @@ function loadhash (id) {
 
 		if (ixFluff[mon.source] || mon.fluff) {
 			if (mon.fluff) handleFluff();
-			else DataUtil.loadJSON(JSON_DIR + ixFluff[mon.source], handleFluff);
+			else DataUtil.loadJSON(JSON_DIR + ixFluff[mon.source]).then(handleFluff);
 		} else {
 			$td.empty();
 			if (showImages) $td.append(HTML_NO_IMAGES);

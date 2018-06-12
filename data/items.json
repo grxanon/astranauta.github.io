@@ -2046,13 +2046,55 @@
 			"reqAttune": "YES",
 			"entries": [
 				"This horned mask of glossy ebony has horns and a skull-like mien. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
-				"Damage Absorption. You have damage resistance to acid. If you already have damage resistance to acid from another source, you gain immunity to acid damage. If you already have immunity to acid damage from another source, you regain hit points equal to half of any acid damage you are dealt.",
-				"Draconic Majesty. While you are wearing no armor, you can add your Charisma bonus to your Armor Class.",
-				"Dragon Breath. If you have a breath weapon that requires rest to recharge, it gains a recharge of 6.",
-				"Dragon Sight. You gain darkvision with a radius of 60 feet, or an additional 60 feet of darkvision if you already have that sense. Once per day, you can gain blindsight out to a range of 30 feet for 5 minutes.",
-				"Dragon Tongue. You can speak and understand Draconic. You also have advantage on any Charisma check you make against black dragons.",
-				"Legendary Resistance. (1/Day) If you fail a saving throw, you can choose to succeed instead.",
-				"Water Breathing. You can breathe underwater."
+				{
+				    "type": "entries",
+				    "name": "Damage Absorption",
+				    "entries": [
+				        "You have damage resistance to acid. If you already have damage resistance to acid from another source, you gain immunity to acid damage. If you already have immunity to acid damage from another source, you regain hit points equal to half of any acid damage you are dealt."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Draconic Majesty",
+				    "entries": [
+				        "While you are wearing no armor, you can add your Charisma bonus to your Armor Class."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Dragon Breath",
+				    "entries": [
+				        "If you have a breath weapon that requires rest to recharge, it gains a recharge of 6."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Dragon Sight",
+				    "entries": [
+				        "You gain darkvision with a radius of 60 feet, or an additional 60 feet of darkvision if you already have that sense. Once per day, you can gain blindsight out to a range of 30 feet for 5 minutes."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Dragon Tongue",
+				    "entries": [
+				        "You can speak and understand Draconic. You also have advantage on any Charisma check you make against Black dragons."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Legendary Resistance",
+				    "entries": [
+				        "(1/Day) If you fail a saving throw, you can choose to succeed instead."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Water Breathing",
+				    "entries": [
+				        "You can breathe underwater."
+				    ]
+				}
 			]
 		},
 		{
@@ -2177,13 +2219,55 @@
 			"reqAttune": "YES",
 			"entries": [
 				"This mask of glossy azure has spikes around its edges and a ridged horn in its center. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
-				"Damage Absorption. You have resistance against lightning damage. If you already have resistance to lightning damage from another source, you instead have immunity to lightning damage. If you already have immunity to lightning damage from another source, whenever you are subjected to acid damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type.",
-				"Draconic Majesty. While you are wearing no armor, you can add your Charisma bonus to your Armor Class.",
-				"Dragon Breath. If you have a breath weapon that requires rest to recharge, it gains a recharge of 6.",
-				"Dragon Sight. You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes.",
-				"Dragon Tongue. You can speak and understand Draconic. You also have advantage on any Charisma check you make against Blue Dragons.",
-				"Legendary Resistance. (1/Day) If you fail a saving throw, you can choose to succeed instead.",
-				"Lingering Shock. If you deal lightning damage to a creature, it can't take reactions until its next turn."
+				{
+				    "type": "entries",
+				    "name": "Damage Absorption",
+				    "entries": [
+						"You have resistance against lightning damage. If you already have resistance to lightning damage from another source, you instead have immunity to lightning damage. If you already have immunity to lightning damage from another source, whenever you are subjected to lightning damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Draconic Majesty",
+				    "entries": [
+						"While you are wearing no armor, you can add your Charisma bonus to your Armor Class."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Dragon Breath",
+				    "entries": [
+						"If you have a breath weapon that requires rest to recharge, it gains a recharge of 6."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Dragon Sight",
+				    "entries": [
+						"You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Dragon Tongue",
+				    "entries": [
+						"You can speak and understand Draconic. You also have advantage on any Charisma check you make against Blue Dragons."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Legendary Resistance",
+				    "entries": [
+						"(1/Day) If you fail a saving throw, you can choose to succeed instead."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Lingering Shock",
+				    "entries": [
+						"If you deal lightning damage to a creature, it can't take reactions until its next turn."
+				    ]
+				}
 			]
 		},
 		{
@@ -5408,13 +5492,55 @@
 			"reqAttune": "YES",
 			"entries": [
 				"This mottled green mask is surmounted by a frilled crest and has leathery spiked plates along its jaw. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties",
-				"Damage Absorption. You have resistance against poison damage. If you already have resistance to poison damage from another source, you instead have immunity to poison damage. If you already have immunity to poison damage from another source, whenever you are subjected to poison damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type.",
-				"Draconic Majesty. While you are wearing no armor, you can add your Charisma bonus to your Armor Class.",
-				"Dragon Breath. If you have a breath weapon that requires rest to recharge, it gains a recharge of 6.",
-				"Dragon Sight. You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes.",
-				"Dragon Tongue. You can speak and understand Draconic. You also have advantage on any Charisma check you make against Green Dragons.",
-				"Legendary Resistance. (1/Day) If you fail a saving throw, you can choose to succeed instead.",
-				"Water Breathing. You can breathe underwater."
+				{
+					"type": "entries",
+					"name": "Damage Absorption",
+					"entries": [
+						"You have resistance against poison damage. If you already have resistance to poison damage from another source, you instead have immunity to poison damage. If you already have immunity to poison damage from another source, whenever you are subjected to poison damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Draconic Majesty",
+					"entries": [
+						"While you are wearing no armor, you can add your Charisma bonus to your Armor Class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Breath",
+					"entries": [
+						"If you have a breath weapon that requires rest to recharge, it gains a recharge of 6."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Sight",
+					"entries": [
+						"You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Tongue",
+					"entries": [
+						"You can speak and understand Draconic. You also have advantage on any Charisma check you make against Green Dragons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Legendary Resistance",
+					"entries": [
+						"(1/Day) If you fail a saving throw, you can choose to succeed instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Water Breathing",
+					"entries": [
+						"You can breathe underwater."
+					]
+				}
 			]
 		},
 		{
@@ -5475,7 +5601,7 @@
 			"entries": [
 				"In the Year of the Icy Axe (123 DR), the {@creature frost giant} Lord Gurt fell to Uthgar Gardolfsson\u2014leader of the folk who would become the Uthgardt barbarians\u2014in a battle that marked the ascendance of humankind over the giants in the Dessarin Valley. Gurt's greataxe was buried in Morgur's Mound until it was unearthed and brought back to Waterdeep. After laying in the city's vaults for decades, the axe was given to Harshnag, a {@creature frost giant} adventurer, in recognition of his service to Waterdeep. Uthgardt barbarians recognize the weapon on sight and attack any giant that wields it.",
 				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. It is sized for a giant, weighs 325 pounds, and deals 3d12 slashing damage on a hit, plus an extra 2d12 slashing damage if the target is human.",
-				"The axe sheds light as a torch when the temperature around it drops below O degrees Fahrenheit. The light can't he shut off in these conditions.",
+				"The axe sheds light as a torch when the temperature around it drops below 0 degrees Fahrenheit. The light can't be shut off in these conditions.",
 				"As an action, you can cast a version of the heat metal spell (save DC 13) that deals cold damage instead of fire damage. Once this power is used, it can't be used again until the next dawn."
 			]
 		},
@@ -6023,7 +6149,7 @@
 				"Runic Shield. You have a +1 bonus to AC.",
 				"Shield Bond. As a bonus action, choose a creature that you can see within 30 feet of you, other than yourself. Until the end of your next turn, any damage the target takes is reduced to 1, but you take half the damage prevented in this way. The damage you take can't be reduced in any way. Once you use this property, you can't use it again until you finish a short or long rest.",
 				"Shield Ward. You can transfer the ingot's magic to a nonmagical item\u2014a shield or a two-handed melee weapon-by tracing the skold rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the ingot is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
-				"Shield. The shield is now a rare magic item that requires attunement. Its magic gives you a +1 bonus to AC, and the first time after each of your long rests that damage reduces you to O hit points, you are instead reduced to 1 hit point. You must be wielding the shield to gain these benefits.",
+				"Shield. The shield is now a rare magic item that requires attunement. Its magic gives you a +1 bonus to AC, and the first time after each of your long rests that damage reduces you to 0 hit points, you are instead reduced to 1 hit point. You must be wielding the shield to gain these benefits.",
 				"Weapon. The weapon is now an uncommon magic weapon. It grants you a +1 bonus to AC while you're holding it."
 			],
 			"rarity": "Very Rare"
@@ -8879,13 +9005,55 @@
 			"reqAttune": "YES",
 			"entries": [
 				"This mask of glossy crimson has swept-back horns and spiked cheek ridges. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
-				"Damage Absorption. You have resistance against fire damage. If you already have resistance to fire damage from another source, you instead have immunity to fire damage. If you already have immunity to fire damage from another source, whenever you are subjected to fire damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type.",
-				"Draconic Majesty. While you are wearing no armor, you can add your Charisma bonus to your Armor Class.",
-				"Dragon Breath. If you have a breath weapon that requires rest to recharge, it gains a recharge of 6.",
-				"Dragon Sight. You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes.",
-				"Dragon Tongue. You can speak and understand Draconic. You also have advantage on any Charisma check you make against Red Dragons.",
-				"Legendary Resistance. (1/Day) If you fail a saving throw, you can choose to succeed instead.",
-				"Dragon Fire. If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire."
+				{
+					"type": "entries",
+					"name": "Damage Absorption",
+					"entries": [
+						"You have resistance against fire damage. If you already have resistance to fire damage from another source, you instead have immunity to fire damage. If you already have immunity to fire damage from another source, whenever you are subjected to fire damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Draconic Majesty",
+					"entries": [
+						"While you are wearing no armor, you can add your Charisma bonus to your Armor Class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Breath",
+					"entries": [
+						"If you have a breath weapon that requires rest to recharge, it gains a recharge of 6."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Sight",
+					"entries": [
+						"You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Tongue",
+					"entries": [
+						"You can speak and understand Draconic. You also have advantage on any Charisma check you make against Red Dragons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Legendary Resistance",
+					"entries": [
+						"(1/Day) If you fail a saving throw, you can choose to succeed instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Fire",
+					"entries": [
+						"If you deal fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire."
+					]
+				}
 			]
 		},
 		{
@@ -10905,8 +11073,20 @@
 			"reqAttune": "YES",
 			"entries": [
 				"This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. It also has the following additional properties. When one of these properties is used, it can't be used again until the next dawn.",
-				"Lightning. When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage.",
-				"Thunder. When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder, audible out to 300 feet. The target you hit must succeed on a DC 17 Constitution saving throw or become {@condition stunned} until the end of your next turn.",
+				{
+				    "type": "entries",
+				    "name": "Lightning",
+				    "entries": [
+				    	"When you hit with a melee attack using the staff, you can cause the target to take an extra 2d6 lightning damage."
+				    ]
+				},
+				{
+				    "type": "entries",
+				    "name": "Thunder",
+				    "entries": [
+						"When you hit with a melee attack using the staff, you can cause the staff to emit a crack of thunder, audible out to 300 feet. The target you hit must succeed on a DC 17 Constitution saving throw or become {@condition stunned} until the end of your next turn."
+				    ]
+				},
 				{
 				    "type": "entries",
 				    "name": "Lightning Strike",
@@ -13341,13 +13521,55 @@
 			"reqAttune": "YES",
 			"entries": [
 				"This gleaming mask is white with highlights of pale blue and is topped by a spined crest. The mask reshapes to fit a wearer attuned to it. While you are wearing the mask and attuned to it, you can access the following properties.",
-				"Damage Absorption. You have resistance against cold damage. If you already have resistance to cold damage from another source, you instead have immunity to cold damage. If you already have immunity to cold damage from another source, whenever you are subjected to cold damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type.",
-				"Draconic Majesty. While you are wearing no armor, you can add your Charisma bonus to your Armor Class.",
-				"Dragon Breath. If you have a breath weapon that requires rest to recharge, it gains a recharge of 6.",
-				"Dragon Sight. You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes.",
-				"Dragon Tongue. You can speak and understand Draconic. You also have advantage on any Charisma check you make against White Dragons.",
-				"Legendary Resistance. (1/Day) If you fail a saving throw, you can choose to succeed instead.",
-				"Winter's Fury. While your current hit points are equal to or less than half your hit point maximum, you deal an extra 1d8 cold damage with your melee attacks."
+				{
+					"type": "entries",
+					"name": "Damage Absorption",
+					"entries": [
+						"You have resistance against cold damage. If you already have resistance to cold damage from another source, you instead have immunity to cold damage. If you already have immunity to cold damage from another source, whenever you are subjected to cold damage, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Draconic Majesty",
+					"entries": [
+						"While you are wearing no armor, you can add your Charisma bonus to your Armor Class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Breath",
+					"entries": [
+						"If you have a breath weapon that requires rest to recharge, it gains a recharge of 6."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Sight",
+					"entries": [
+						"You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dragon Tongue",
+					"entries": [
+						"You can speak and understand Draconic. You also have advantage on any Charisma check you make against White Dragons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Legendary Resistance",
+					"entries": [
+						"(1/Day) If you fail a saving throw, you can choose to succeed instead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Winter's Fury",
+					"entries": [
+						"While your current hit points are equal to or less than half your hit point maximum, you deal an extra 1d8 cold damage with your melee attacks."
+					]
+				}
 			]
 		},
 		{

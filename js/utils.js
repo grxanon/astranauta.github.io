@@ -15,6 +15,8 @@ IS_ROLL20 = false;
 HOMEBREW_CLIENT_ID = `67e57877469da38a85a7`;
 HOMEBREW_CLIENT_SECRET = `c00dede21ca63a855abcd9a113415e840aca3f92`;
 
+IMGUR_CLIENT_ID = `abdea4de492d3b0`;
+
 HASH_PART_SEP = ",";
 HASH_LIST_SEP = "_";
 HASH_SUB_LIST_SEP = "~";
@@ -106,6 +108,8 @@ ABIL_CH_ANY = "Choose Any";
 
 HOMEBREW_STORAGE = "HOMEBREW_STORAGE";
 EXCLUDES_STORAGE = "EXCLUDES_STORAGE";
+DMSCREEN_STORAGE = "DMSCREEN_STORAGE";
+ROLLER_MACRO_STORAGE = "ROLLER_MACRO_STORAGE";
 
 // STRING ==============================================================================================================
 // Appropriated from StackOverflow (literally, the site uses this code)
@@ -811,6 +815,9 @@ Parser.monImmResToFull = function (toParse) {
 			} else if (it.resist) {
 				const toJoin = it.resist.map(nxt => toString(nxt, depth + 1));
 				stack += depth ? toJoin.join(maxDepth ? "; " : ", ") : CollectionUtil.joinConjunct(toJoin, ", ", " and ");
+			} else if (it.vulnerable) {
+				const toJoin = it.vulnerable.map(nxt => toString(nxt, depth + 1));
+				stack += depth ? toJoin.join(maxDepth ? "; " : ", ") : CollectionUtil.joinConjunct(toJoin, ", ", " and ");
 			}
 			if (it.note) stack += ` ${it.note}`;
 			return stack;
@@ -852,7 +859,8 @@ Parser.levelToFull = function (level) {
 
 Parser.invoSpellToFull = function (spell) {
 	if (spell === "Eldritch Blast") return EntryRenderer.getDefaultRenderer().renderEntry(`{@spell ${spell}} cantrip`);
-	if (spell === "Hex/Curse") return EntryRenderer.getDefaultRenderer().renderEntry("{@spell Hex} spell or a warlock feature that curses");
+	else if (spell === "Hex/Curse") return EntryRenderer.getDefaultRenderer().renderEntry("{@spell Hex} spell or a warlock feature that curses");
+	else if (spell) return EntryRenderer.getDefaultRenderer().renderEntry(`{@spell ${spell}}`);
 	return STR_NONE
 };
 
@@ -1654,6 +1662,25 @@ function showCopiedEffect ($ele) {
 	});
 }
 
+// TODO refactor other misc utils into this
+MiscUtil = {
+	clearSelection () {
+		if (document.getSelection) {
+			document.getSelection().removeAllRanges();
+			document.getSelection().addRange(document.createRange());
+		} else if (window.getSelection) {
+			if (window.getSelection().removeAllRanges) {
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(document.createRange());
+			} else if (window.getSelection().empty) {
+				window.getSelection().empty();
+			}
+		} else if (document.selection) {
+			document.selection.empty();
+		}
+	}
+};
+
 // LIST AND SEARCH =====================================================================================================
 ListUtil = {
 	SUB_HASH_PREFIX: "sublistselected",
@@ -2407,20 +2434,25 @@ UrlUtil.bindLinkExportButton = (filterBox) => {
 	const $btn = ListUtil.getOrTabRightButton(`btn-link-export`, `magnet`);
 	$btn.addClass("btn-copy-effect")
 		.off("click")
-		.on("click", () => {
+		.on("click", (evt) => {
 			let url = window.location.href;
 
 			const toHash = filterBox.getAsSubHashes();
-			const parts = Object.keys(toHash).map(hK => {
+			parts = Object.keys(toHash).map(hK => {
 				const hV = toHash[hK];
 				return UrlUtil.packSubHash(hK, hV, true);
 			});
+			if (evt.shiftKey) {
+				const toEncode = JSON.stringify(ListUtil._getExportableSublist());
+				const part2 = UrlUtil.packSubHash(ListUtil.SUB_HASH_PREFIX, [toEncode], true);
+				parts = parts.concat(part2);
+			}
 			parts.unshift(url);
 
 			copyText(parts.join(HASH_PART_SEP));
 			showCopiedEffect($btn);
 		})
-		.attr("title", "Get Link (Including Filters)")
+		.attr("title", "Get Link to Filters (SHIFT adds List)")
 };
 
 if (!IS_DEPLOYED && !IS_ROLL20 && typeof window !== "undefined") {
@@ -2501,47 +2533,48 @@ SortUtil = {
 DataUtil = {
 	_loaded: {},
 
-	loadJSON: function (url, onLoadFunction, ...otherData) {
-		function handleAlreadyLoaded (url) {
-			onLoadFunction(DataUtil._loaded[url], otherData);
-		}
-
-		if (this._loaded[url]) {
-			handleAlreadyLoaded(url);
-			return;
-		}
-
-		const procUrl = UrlUtil.link(url);
-		if (this._loaded[procUrl]) {
-			handleAlreadyLoaded(procUrl);
-			return;
-		}
-
-		const request = getRequest(procUrl);
-		if (procUrl !== url) {
-			request.onerror = function () {
-				const fallbackRequest = getRequest(url);
-				fallbackRequest.send();
-			};
-		}
-		request.send();
-
-		function getRequest (toUrl) {
-			const request = new XMLHttpRequest();
-			request.open("GET", toUrl, true);
-			request.overrideMimeType("application/json");
-			request.onload = function () {
-				const data = JSON.parse(this.response);
-				DataUtil._loaded[toUrl] = data;
-				onLoadFunction(data, otherData);
-			};
-			return request;
-		}
-	},
-
-	promiseJSON: function (url) {
+	loadJSON: function (url, ...otherData) {
 		return new Promise((resolve, reject) => {
-			DataUtil.loadJSON(url, (data) => resolve(data));
+			function handleAlreadyLoaded (url) {
+				resolve(DataUtil._loaded[url], otherData);
+			}
+
+			if (this._loaded[url]) {
+				handleAlreadyLoaded(url);
+				return;
+			}
+
+			const procUrl = UrlUtil.link(url);
+			if (this._loaded[procUrl]) {
+				handleAlreadyLoaded(procUrl);
+				return;
+			}
+
+			const request = getRequest(procUrl);
+			if (procUrl !== url) {
+				request.onerror = function () {
+					const fallbackRequest = getRequest(url);
+					fallbackRequest.send();
+				};
+			}
+			request.send();
+
+			function getRequest (toUrl) {
+				const request = new XMLHttpRequest();
+				request.open("GET", toUrl, true);
+				request.overrideMimeType("application/json");
+				request.onload = function () {
+					try {
+						const data = JSON.parse(this.response);
+						DataUtil._loaded[toUrl] = data;
+						resolve(data, otherData);
+					} catch (e) {
+						reject(new Error('Could not parse JSON'));
+					}
+				};
+				request.onerror = () => reject(new Error('Error during JSON request'));
+				return request;
+			}
 		});
 	},
 
@@ -2551,26 +2584,43 @@ DataUtil = {
 
 		let loadedCount = 0;
 		toLoads.forEach(tl => {
-			this.loadJSON(
-				tl.url,
-				function (data) {
-					if (onEachLoadFunction) onEachLoadFunction(tl, data);
-					dataStack.push(data);
+			this.loadJSON(tl.url).then((data) => {
+				if (onEachLoadFunction) onEachLoadFunction(tl, data);
+				dataStack.push(data);
 
-					loadedCount++;
-					if (loadedCount >= toLoads.length) {
-						onFinalLoadFunction(dataStack);
-					}
+				loadedCount++;
+				if (loadedCount >= toLoads.length) {
+					onFinalLoadFunction(dataStack);
 				}
-			)
+			});
 		});
 	},
 
 	userDownload: function (filename, data) {
+		if (typeof data !== "string") data = JSON.stringify(data, null, "\t");
 		const $a = $(`<a href="data:text/json;charset=utf-8,${encodeURIComponent(data)}" download="${filename}.json" style="display: none;">DL</a>`);
 		$(`body`).append($a);
 		$a[0].click();
 		$a.remove();
+	},
+
+	userUpload (fnCallback) {
+		function loadSaved (event) {
+			const input = event.target;
+
+			const reader = new FileReader();
+			reader.onload = () => {
+				const text = reader.result;
+				const json = JSON.parse(text);
+				fnCallback(json);
+			};
+			reader.readAsText(input.files[0]);
+		}
+
+		const $iptAdd = $(`<input type="file" accept=".json" style="position: fixed; top: -100px; left: -100px; display: none;">`).on("change", (evt) => {
+			loadSaved(evt);
+		}).appendTo($(`body`));
+		$iptAdd.click();
 	}
 };
 
@@ -2771,11 +2821,29 @@ BrewUtil = {
 
 		refreshBrewList();
 
-		const $iptAdd = $(`<input multiple type="file" accept=".json" style="display: none;">`).on("change", (evt) => {
+		const $iptAdd = $(`<input multiple type="file" accept=".json" style="display: none;">`).change((evt) => {
 			addBrewLocal(evt, funcAddCallback);
 		});
+
+		const $btnLoadFromUrl = $(`<button class="btn btn-default btn-sm">Load from URL</button>`);
+		$btnLoadFromUrl.click(() => {
+			const enteredUrl = window.prompt('Please enter the URL of the homebrew:');
+			if (!enteredUrl) return;
+
+			let parsedUrl;
+			try {
+				parsedUrl = new URL(enteredUrl);
+			} catch (e) {
+				window.alert('The entered URL does not seem to be valid.');
+				return;
+			}
+			BrewUtil.addBrewRemote(null, parsedUrl.href).catch(() => {
+				window.alert('Could not load homebrew from the given URL.')
+			});
+		});
+
 		const $btnGet = $(`<button class="btn btn-default btn-sm">Get Homebrew 2.0</button>`);
-		$btnGet.on("click", () => {
+		$btnGet.click(() => {
 			const $lst = $(`
 				<div id="brewlistcontainer" class="listcontainer homebrew-window dropdown-menu">
 					<input type="search" class="search form-control" placeholder="Find homebrew..." style="width: 100%">
@@ -2854,9 +2922,11 @@ BrewUtil = {
 		});
 		$window.append(
 			$(`<div class="text-align-center"/>`)
+				.append($btnGet)
+				.append(" ")
 				.append($(`<label class="btn btn-default btn-sm btn-file">Upload File</label>`).append($iptAdd))
 				.append(" ")
-				.append($btnGet)
+				.append($btnLoadFromUrl)
 				.append(" ")
 				.append(`<a href="https://github.com/TheGiddyLimit/homebrew" target="_blank"><button class="btn btn-default btn-sm btn-file">Browse Repository</button></a>`)
 		);
@@ -3015,7 +3085,7 @@ BrewUtil = {
 			const $src = $(ele).find(`span.source`);
 			const cached = $src.text();
 			$src.text("Loading...");
-			DataUtil.loadJSON(`${jsonUrl}?${(new Date()).getTime()}`, (data) => {
+			return DataUtil.loadJSON(`${jsonUrl}?${(new Date()).getTime()}`).then((data) => {
 				BrewUtil.doHandleBrewJson(data, page, refreshBrewList);
 				$src.text("Done!");
 				setInterval(() => {
@@ -3133,7 +3203,7 @@ BrewUtil = {
 				BrewUtil.homebrew.subclass.splice(index, 1);
 				BrewUtil.storage.setItem(HOMEBREW_STORAGE, JSON.stringify(BrewUtil.homebrew));
 				// refreshBrewList();
-				const c = classes.find(c => c.name.toLowerCase() === forClass.toLowerCase());
+				const c = ClassData.classes.find(c => c.name.toLowerCase() === forClass.toLowerCase());
 
 				const indexInClass = c.subclasses.findIndex(it => it.uniqueId === uniqueId);
 				if (~indexInClass) {
@@ -3368,6 +3438,21 @@ BrewUtil = {
 	sourceJsonToAbv (source) {
 		BrewUtil._buildSourceCache();
 		return BrewUtil._sourceCache[source] ? BrewUtil._sourceCache[source].abbreviation || source : source;
+	},
+
+	/**
+	 * Get data in a format similar to the main search index
+	 */
+	getSearchIndex () {
+		BrewUtil._buildSourceCache();
+		const indexer = new Omnidexer(Omnisearch.highestId + 1);
+
+		if (BrewUtil.homebrew) {
+			Omnidexer.TO_INDEX__FROM_INDEX_JSON.filter(ti => BrewUtil.homebrew[ti.listProp]).forEach(ti => indexer.addToIndex(ti, BrewUtil.homebrew));
+			Omnidexer.TO_INDEX.filter(ti => BrewUtil.homebrew[ti.listProp]).forEach(ti => indexer.addToIndex(ti, BrewUtil.homebrew));
+		}
+
+		return indexer.getIndex();
 	}
 };
 

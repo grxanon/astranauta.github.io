@@ -14329,7 +14329,7 @@
 				{
 					"name": "Summon Undead (1/Night)",
 					"entries": [
-						"The nightshade calls upon undead creatures lurking in the darkness nearby. Within {@dice 1d6} rounds, {@dice 1d6+6 }Shadows (see Monster Manual p. 269) each arrive in an unoccupied space anywhere within 60 feet of the nightshade, serving the nightshade as allies."
+						"The nightshade calls upon undead creatures lurking in the darkness nearby. Within {@dice 1d6} rounds, {@dice 1d6+6} Shadows (see Monster Manual p. 269) each arrive in an unoccupied space anywhere within 60 feet of the nightshade, serving the nightshade as allies."
 					]
 				}
 			],
@@ -14461,7 +14461,7 @@
 				{
 					"name": "Summon Undead (1/Night)",
 					"entries": [
-						"The nightshade calls upon undead creatures lurking in the darkness nearby. Within {@dice 1d6} rounds, {@dice 1d6+6 }Shadows (see Monster Manual p. 269) each arrive in an unoccupied space anywhere within 60 feet of the nightshade, serving the nightshade as allies."
+						"The nightshade calls upon undead creatures lurking in the darkness nearby. Within {@dice 1d6} rounds, {@dice 1d6+6} Shadows (see Monster Manual p. 269) each arrive in an unoccupied space anywhere within 60 feet of the nightshade, serving the nightshade as allies."
 					]
 				}
 			],
@@ -14586,7 +14586,7 @@
 				{
 					"name": "Summon Undead (1/Night)",
 					"entries": [
-						"The nightshade calls upon undead creatures lurking in the darkness nearby. Within {@dice 1d6} rounds, {@dice 1d6+6 }Shadows (see Monster Manual p. 269) each arrive in an unoccupied space anywhere within 60 feet of the nightshade, serving the nightshade as allies."
+						"The nightshade calls upon undead creatures lurking in the darkness nearby. Within {@dice 1d6} rounds, {@dice 1d6+6} Shadows (see Monster Manual p. 269) each arrive in an unoccupied space anywhere within 60 feet of the nightshade, serving the nightshade as allies."
 					]
 				}
 			],
@@ -26816,13 +26816,7 @@
 				{
 					"name": "Whelm (Recharge 4\u20146)",
 					"entries": [
-						"Each Medium or smaller in the elemental's space must make a DC 12 Strength saving"
-					]
-				},
-				{
-					"name": "throw",
-					"entries": [
-						"On a failure, a target takes 6 ({@dice 1d8+2}) bludgeoning damage. If it is Small or smaller, it is also grappled (escape DC 12). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space. The elemental can grapple one Small creature or up to two Tiny creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 6 ({@dice 1d8 + 2}) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 12 Strength check and succeeding."
+						"Each Medium or smaller in the elemental's space must make a DC 12 Strength saving throw. On a failure, a target takes 6 ({@dice 1d8+2}) bludgeoning damage. If it is Small or smaller, it is also grappled (escape DC 12). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space. The elemental can grapple one Small creature or up to two Tiny creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 6 ({@dice 1d8 + 2}) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 12 Strength check and succeeding."
 					]
 				}
 			],
@@ -28562,7 +28556,7 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"Melee Weapon Attack: {@hit +15} to hit, reach 15 ft., one target. Hit: 29 ({@dice 2d10+3}d6+8) psychic damage."
+						"Melee Weapon Attack: {@hit +15} to hit, reach 15 ft., one target. Hit: 29 ({@dice 2d10+3d6+8}) psychic damage."
 					]
 				},
 				{
