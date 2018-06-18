@@ -186,9 +186,9 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a greataxe or (b) any martial melee weapon",
-					"(a) two handaxes or (b) any simple weapon",
-					"An explorer's pack, and four javelins"
+					"(a) a {@item greataxe|phb} or (b) any {@filter martial melee weapon|items|source=phb|category=basic|type=martial weapon;melee weapon}",
+					"(a) two {@item handaxe|phb|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"An {@item explorer's pack|phb}, and four {@item javelin|phb|javelins}"
 				],
 				"goldAlternative": "2d4 × 10"
 			},
@@ -2048,10 +2048,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a rapier, (b) a longsword, or (c) any simple weapon",
-					"(a) a diplomat's pack or (b) an entertainer's pack",
-					"(a) a lute or (b) any other musical instrument",
-					"Leather armor, and a dagger"
+					"(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
+					"(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|source=phb|miscellaneous=mundane|type=instrument}",
+					"{@item Leather armor|phb}, and a {@item dagger|phb}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -2167,7 +2167,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -2206,7 +2206,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -2246,7 +2246,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -2287,7 +2287,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -2313,7 +2313,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -3747,11 +3747,11 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a mace or (b) a warhammer (if proficient)",
-					"(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)",
-					"(a) a light crossbow and 20 bolts or (b) any simple weapon",
-					"(a) a priest's pack or (b) an explorer's pack",
-					"A shield and a holy symbol"
+					"(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if proficient)",
+					"(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if proficient)",
+					"(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item shield|phb} and a {@item holy symbol|phb}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -3862,7 +3862,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -3895,7 +3895,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					},
@@ -3936,7 +3936,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -3955,7 +3955,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -3987,7 +3987,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -7117,9 +7117,9 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a wooden shield or (b) any simple weapon",
-					"(a) a scimitar or (b) any simple melee weapon",
-					"Leather armor, an explorer's pack, and a druidic focus"
+					"(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon}",
+					"{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"
 				],
 				"goldAlternative": "2d4 × 10"
 			},
@@ -7265,7 +7265,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -7291,7 +7291,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -7311,7 +7311,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -7331,7 +7331,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -7355,7 +7355,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9076,10 +9076,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) chain mail or (b) leather, longbow, and 20 arrows",
-					"(a) a martial weapon and a shield or (b) two martial weapons",
-					"(a) a light crossbow and 20 bolts or (b) two handaxes",
-					"(a) a dungeoneer's pack or (b) an explorer's pack"
+					"(a) {@item chain mail|phb} or (b) {@item leather armor|phb|leather}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item handaxe|phb|handaxes}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -9192,7 +9192,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9210,7 +9210,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 6th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9228,7 +9228,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9263,7 +9263,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9280,7 +9280,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 14th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 14th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9298,7 +9298,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -9330,7 +9330,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -10098,18 +10098,6 @@
 										"name": "Spellcasting",
 										"entries": [
 											"When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Cantrips",
-														"entries": [
-															"You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level."
-														]
-													}
-												]
-											},
 											{
 												"type": "entries",
 												"entries": [
@@ -12665,9 +12653,9 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a shortsword or (b) any simple weapon",
-					"(a) a dungeoneer's pack or (b) an explorer's pack",
-					"10 darts"
+					"(a) a {@item shortsword|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"10 {@item dart|phb|darts}"
 				],
 				"goldAlternative": "5d4"
 			},
@@ -12762,7 +12750,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					},
@@ -12820,7 +12808,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -12854,7 +12842,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -12888,7 +12876,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -12915,7 +12903,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -14490,10 +14478,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a martial weapon and a shield or (b) two martial weapons",
-					"(a) five javelins or (b) any simple melee weapon",
-					"(a) a priest's pack or (b) an explorer's pack",
-					"Chain mail and a holy symbol"
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) five {@item javelin|phb|javelins} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon}",
+					"(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"{@item Chain mail|phb} and a {@item holy symbol|phb}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -14675,7 +14663,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -14710,7 +14698,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -14737,7 +14725,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -14765,7 +14753,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -14783,7 +14771,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -16332,7 +16320,7 @@
 											"You gain oath spells at the paladin levels listed.",
 											{
 												"type": "table",
-												"caption": "Oath of Redemption Spells",
+												"caption": "Oath of Conquest Spells",
 												"colLabels": [
 													"Paladin Level",
 													"Spells"
@@ -17189,10 +17177,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) scale mail or (b) leather armor",
-					"(a) two shortswords or (b) two simple melee weapons",
-					"(a) a dungeoneer's pack or (b) an explorer's pack",
-					"A longbow and a quiver of 20 arrows"
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -17356,7 +17344,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -17391,7 +17379,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					},
@@ -17432,7 +17420,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -17465,7 +17453,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -17483,7 +17471,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -19037,10 +19025,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) scale mail or (b) leather armor",
-					"(a) two shortswords or (b) two simple melee weapons",
-					"(a) a dungeoneer's pack or (b) an explorer's pack",
-					"A longbow and a quiver of 20 arrows"
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -19213,7 +19201,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -19249,7 +19237,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					},
@@ -19284,7 +19272,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -19311,7 +19299,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -19329,7 +19317,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -20939,10 +20927,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) scale mail or (b) leather armor",
-					"(a) two shortswords or (b) two simple melee weapons",
-					"(a) a dungeoneer's pack or (b) an explorer's pack",
-					"A longbow and a quiver of 20 arrows"
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
 				],
 				"goldAlternative": "5d4 × 10"
 			},
@@ -21108,7 +21096,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -21150,7 +21138,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					},
@@ -21206,7 +21194,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -21265,7 +21253,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -21298,7 +21286,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23099,10 +23087,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a rapier or (b) a shortsword",
-					"(a) a shortbow and quiver of 20 arrows or (b) a shortsword",
-					"(a) a burglar's pack, (b) a dungeoneer's pack, or (c) an explorer's pack",
-					"Leather armor, two daggers, and thieves' tools"
+					"(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
+					"(a) a {@item shortbow|phb} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@item shortsword|phb}",
+					"(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
+					"{@item Leather armor|phb}, two {@item dagger|phb|daggers}, and {@item thieves' tools|phb}"
 				],
 				"goldAlternative": "4d4 × 10"
 			},
@@ -23152,7 +23140,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23185,7 +23173,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23203,7 +23191,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 10th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23220,7 +23208,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23254,7 +23242,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23280,7 +23268,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -23334,7 +23322,7 @@
 														"type": "entries",
 														"name": "Cantrips",
 														"entries": [
-															"At 1st level, you learn three cantrips: {@spell mage hand} and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level."
+															"You learn three cantrips: {@spell mage hand} and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level."
 														]
 													}
 												]
@@ -24914,10 +24902,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a light crossbow and 20 bolts or (b) any simple weapon",
-					"(a) a component pouch or (b) an arcane focus",
-					"(a) a dungeoneer's pack or (b) an explorer's pack",
-					"Two daggers"
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"Two {@item dagger|phb|daggers}"
 				],
 				"goldAlternative": "3d4 × 10"
 			},
@@ -25136,7 +25124,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -25156,7 +25144,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -25175,7 +25163,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -25195,7 +25183,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -25221,7 +25209,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -26603,7 +26591,7 @@
 										"caption": "Shadow Sorcerer Quirks",
 										"colLabels": [
 											"d6",
-											"Spell"
+											"Quirk"
 										],
 										"colStyles": [
 											"col-xs-2 text-align-center",
@@ -26791,6 +26779,174 @@
 					],
 					"source": "XGE",
 					"shortName": "Storm "
+				},
+				{
+					"name": "Giant Soul (UA)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Giant Soul (UA)",
+								"entries": [
+									"The giants once dwelled in a fabled realm known as Ostoria, a paradise for their folk that reflected their mastery of the mortal realm. In time, Ostoria fell, and the giants were scattered and broken. During that mythic era, the giants granted a few chosen individuals among the small folk a shard of their great power. These favored people were caught in the same tragedy that sundered Ostoria. Since that time, they have spread across the many worlds of the multiverse. Now and again, one of their descendants manifests the gifts imparted by the giants, granting them sorcerous magic that allows them to command the elements and gain the might of a giant.",
+									{
+										"type": "entries",
+										"name": "Jotun Resilience",
+										"entries": [
+											"The resilience of giants flows through your body. At 1st level, your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Mark of the Ordning",
+										"entries": [
+											"At 1st level, you discover innate magical abilities within yourself that are based on your giant heritage. Select one of the giant types from the Mark of the Ordning table. At 1st and 3rd level, you learn the spells associated with your choice, as shown in the table. These spells count as sorcerer spells for you, but they don't count against your number of sorcerer spells known.",
+											{
+												"type": "table",
+												"caption": "",
+												"colLabels": [
+													"Giant Type",
+													"Spells at 1st Level",
+													"Spells at 3rd Level"
+												],
+												"colStyles": [
+													"col-xs-3",
+													"col-xs-3",
+													"col-xs-3"
+												],
+												"rows": [
+													[
+														"{@creature Cloud Giant}",
+														"{@spell fog cloud}, {@spell minor illusion}",
+														"{@spell invisibility}"
+													],
+													[
+														"{@creature Fire Giant}",
+														"{@spell burning hands}, {@spell fire bolt}",
+														"{@spell flaming sphere}"
+													],
+													[
+														"{@creature Frost Giant}",
+														"{@spell armor of Agathys}, {@spell ray of frost}",
+														"{@spell hold person}"
+													],
+													[
+														"{@creature Hill Giant}",
+														"{@spell heroism}, {@spell shillelagh}",
+														"{@spell enlarge/reduce}"
+													],
+													[
+														"{@creature Stone Giant}",
+														"{@spell entangle}, {@spell resistance}",
+														"{@spell spike growth}"
+													],
+													[
+														"{@creature Storm Giant}",
+														"{@spell shocking grasp}, {@spell thunderwave}",
+														"{@spell gust of wind}"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Soul of Lost Ostoria",
+										"entries": [
+											"Starting at 6th level, you gain a benefit whenever you cast one of the spells granted by your Mark of the Ordning Feature.",
+											{
+												"type": "entries",
+												"name": "Cloud Giant",
+												"entries": [
+													"Immediately after you cast any of your Mark of the Ordning spells, you can magically teleport as a bonus action. You teleport to an unoccupied space you can see that is no farther away than a number of feet equal to 10 + your Constitution modifier."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Fire Giant",
+												"entries": [
+													"You gain a bonus to the damage rolls of your Mark of the Ordning spells. The bonus equals your Constitution modifier (minimum of +1)."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Frost Giant",
+												"entries": [
+													"Immediately after you cast any of your Mark of the Ordning spells, you gain temporary hit points equal to your Constitution modifier (minimum of 1). But if the spell is {@spell armor of Agathys}, you instead increase its temporary hit points by an amount equal to your Constitution modifier (minimum of 1)."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Hill Giant",
+												"entries": [
+													"Immediately after you cast any of your Mark of the Ordning spells, you can target up to two creatures within 5 feet of you that you can see. Each target must succeed on a Strength saving throw against your spell save DC or be pushed a number of feet away from you equal to 5 + your Constitution modifier (minimum of +1). A target can choose to fail this save."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Stone Giant",
+												"entries": [
+													"Immediately after you cast any of your Mark of the Ordning spells, you gain a bonus to AC equal to your Constitution modifier (minimum of +1) until the end of your next turn."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Storm Giant",
+												"entries": [ "Immediately after you cast any of your Mark of the Ordning spells, up to three creatures of your choice that you can see within 30 feet of you take lightning damage equal to your Constitution modifier (minimum of 1)."
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Rage of Fallen Ostoria",
+										"entries": [
+											"Starting at 14th level, you gain the ability to channel the souls of your ancestors into your physical form. When you start casting a sorcerer spell on your turn and expend a spell slot, you can increase your size by one category\u2014from Medium to Large, for example.",
+											"This increase lasts for 1 minute. It ends early if you die or are incapacitated. Until it ends, you enjoy the following benefits:",
+											{
+												"type": "list",
+												"items": [
+													"Your current hit points and your hit point maximum both increase by 1 per sorcerer level.",
+													"Your reach increases by 5 feet.",
+													"Your walking speed increases by 5 feet.",
+													"You have advantage on Strength checks and Strength saving throws.",
+													"You gain a bonus to the damage rolls of your melee weapon attacks; the bonus equal s your Constitution modifier (minimum of +1)."
+												]
+											},
+											"Once you use this feature, you can't use it again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Blessing of the All Father",
+										"entries": [
+											"At 18th level, your Constitution score increases by 2, up to a maximum of 22.",
+											"In addition, you can now use Rage of Fallen Ostoria twice between rests, but no more than once on a turn. If you use that feature while under its effects, its increases to your size, hit points, reach, and walking speed are cumulative."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "UAGiantSoulSorcerer",
+					"shortName": "Giant Soul (UA)"
 				}
 			],
 			"fluff": [
@@ -27299,10 +27455,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a light crossbow and 20 bolts or (b) any simple weapon",
-					"(a) a component pouch or (b) an arcane focus",
-					"(a) a scholar's pack or (b) a dungeoneer's pack",
-					"Leather armor, any simple weapon, and two daggers"
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"{@item Leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, and two {@item dagger|phb|daggers}"
 				],
 				"goldAlternative": "4d4 × 10"
 			},
@@ -28290,7 +28446,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -28310,7 +28466,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -28339,7 +28495,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -28375,7 +28531,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -28394,7 +28550,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -29903,6 +30059,126 @@
 					],
 					"source": "Stream",
 					"shortName": "Kraken (Stream)"
+				},
+				{
+					"name": "Lolth (Twitter)",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Lolth (Twitter)",
+								"entries": [
+									"Your patron is Lolth, queen of the dark fey. She rules over the drow that dwell within the Feywild, and commands the loyalty of all hags. Evil fey pay her respect, though not all obey her edicts. She is a sworn enemy of Torog, due to the constant threat he and his minions pose to her Underdark domains.",
+									{
+										"type": "entries",
+										"name": "Expanded Spell List",
+										"entries": [
+											"Lolth lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+											{
+												"type": "table",
+												"caption": "Lolth Expanded Spells",
+												"colLabels": [
+													"Spell Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-xs-3 text-align-center",
+													"col-xs-9"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell faerie fire}, {@spell jump}"
+													],
+													[
+														"2nd",
+														"{@spell darkness}, {@spell web}"
+													],
+													[
+														"3rd",
+														"{@spell fear}, {@spell vampiric touch}"
+													],
+													[
+														"4th",
+														"{@spell dimension door}, {@spell giant insect}"
+													],
+													[
+														"5th",
+														"{@spell cloudkill}, {@spell hold monster}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Dark Queen's Servitor",
+										"entries": [
+											"Starting at 1st level, you gain the ability to transform into Lolth's most beloved servitor, a giant spider. As a bonus action you turn into a spider. You gain a +2 bonus to AC. You gain 3 temporary hit points per level. You gain a climb speed equal to your normal speed. You can climb difficult surfaces, such as along a ceiling, without needing to make a check. You gain a bite attack. You are proficient with this attack and it inflicts poison damage based on your level. You can use your choice of Strength or Dexterity to modify your bite attack's attack and damage rolls. While in this form, you lack hands and cannot do anything that normally requires them. However, you can cast spells but can only cast the ones listed on your expanded spell list for Lolth.",
+											"Once you use this ability, you cannot use it again until you complete a short or long rest.",
+											{
+												"type": "table",
+												"caption": "Spider Form Bite Damage",
+												"colLabels": [
+													"Level", "Damage"
+												],
+												"colStyles": [
+													"col-xs-6 text-align-center",
+													"col-xs-6 text-align-center"
+												],
+												"rows": [
+													["1st\u20144th", "1d10 poison"],
+													["5th\u201410th", "2d10 poison"],
+													["11th\u201416th", "3d10 poison"],
+													["17th+", "4d10 poison"]
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Poisoned Beauty",
+										"entries": [
+											"At 6th level, you gain the ability to use a shard of Lolth's alien beauty, causing other creatures to become enraptured by your appearance. As a bonus action, pick a creature you can see. That creature must succeed on a Charisma saving throw or become {@condition charmed} by you. While {@condition charmed}, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spider Queen's Chosen",
+										"entries": [
+											"At 10th level, Lolth extends her protection to you while you are in her favored form. You gain resistance to bludgeoning, piercing, and slashing damage from non-magical sources while in your spider form."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Kiss of the Spider Queen",
+										"entries": [
+											"Starting at 14th level, you can channel Lolth's malevolence into a deadly kiss. As an action, you touch a creature within your reach. The target takes 12d10 poison or psychic damage (your choice), or half as much on a successful Constitution save. A creature {@condition charmed} by you has disadvantage on its saving throw. After you use this ability, you cannot cast it again until you complete a long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "Twitter",
+					"shortName": "Lolth (Twitter)"
 				}
 			],
 			"fluff": [
@@ -30072,8 +30348,8 @@
 					"type": "entries",
 					"name": "Binding Mark",
 					"entries": [
-						"Some patrons make a habit of, and often enjoy, marking the warlocks under their sway in some fashion. A binding mark makes it clear\u2014to those who know about such things\u2014that the individual in question is bound to the patron’s service. A warlock might take advantage of such a mark, claiming it as proof of one’s pact, or might want to keep it under wraps (if possible) to avoid the difficulties it might bring.",
-						"If your warlock’s pact comes with a binding mark, how you feel about displaying it probably depends on the nature of your relationship with the one who gave it to you. Is the mark a source of pride or something you are secretly ashamed of?",
+						"Some patrons make a habit of, and often enjoy, marking the warlocks under their sway in some fashion. A binding mark makes it clear\u2014to those who know about such things\u2014that the individual in question is bound to the patron's service. A warlock might take advantage of such a mark, claiming it as proof of one's pact, or might want to keep it under wraps (if possible) to avoid the difficulties it might bring.",
+						"If your warlock's pact comes with a binding mark, how you feel about displaying it probably depends on the nature of your relationship with the one who gave it to you. Is the mark a source of pride or something you are secretly ashamed of?",
 						{
 							"type": "table",
 							"caption": "Binding Marks",
@@ -30088,7 +30364,7 @@
 							"rows": [
 								[
 									"1",
-									"One of your eyes looks the same as one of your patron’s eyes."
+									"One of your eyes looks the same as one of your patron's eyes."
 								],
 								[
 									"2",
@@ -30456,10 +30732,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a quarterstaff or (b) a dagger",
-					"(a) a component pouch or (b) an arcane focus",
-					"(a) a scholar's pack or (b) an explorer's pack",
-					"A spellbook"
+					"(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item spellbook|phb}"
 				],
 				"goldAlternative": "4d4 × 10"
 			},
@@ -30608,7 +30884,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 4th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -30628,7 +30904,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 8th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -30648,7 +30924,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 12th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -30668,7 +30944,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 16th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -30687,7 +30963,7 @@
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
-							"When you reach 19th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 							"If your DM allows the use of feats, you may instead take a feat."
 						]
 					}
@@ -32903,10 +33179,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a handaxe and a light hammer or (b) any two simple weapons",
-					"a light crossbow and 20 bolts",
-					"(a) scale mail or (b) studded leather armor",
-					"thieves' tools and a dungeoneer's pack"
+					"(a) a {@item handaxe|phb} and a {@item light hammer|phb} or (b) any two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon}",
+					"a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
+					"(a) {@item scale mail|phb} or (b) {@item studded leather armor|phb}",
+					"{@item thieves' tools|phb} and a {@item dungeoneer's pack|phb}"
 				]
 			},
 			"classFeatures": [
@@ -32940,35 +33216,35 @@
 								"type": "entries",
 								"name": "2nd Level",
 								"entries": [
-									"Bag of holding, cap of water breathing, driftglobe, goggles of night, sending stones"
+									"{@item Bag of holding}, {@item cap of water breathing}, {@item driftglobe}, {@item goggles of night}, {@item sending stones}"
 								]
 							},
 							{
 								"type": "entries",
 								"name": "5th Level",
 								"entries": [
-									"Alchemy jug, helm of comprehending languages, lantern of revealing, ring of swimming, robe of useful items, rope of climbing, wand of magic detection, wand of secrets"
+									"{@item Alchemy jug}, {@item helm of comprehending languages}, {@item lantern of revealing}, {@item ring of swimming}, {@item robe of useful items}, {@item rope of climbing}, {@item wand of magic detection}, {@item wand of secrets}"
 								]
 							},
 							{
 								"type": "entries",
 								"name": "10th Level",
 								"entries": [
-									"Bag of beans, chime of opening, decanter of endless water, eyes of minute seeing, folding boat, Heward's handy haversack"
+									"{@item Bag of beans}, {@item chime of opening}, {@item decanter of endless water}, {@item eyes of minute seeing}, {@item folding boat}, {@item Heward's handy haversack}"
 								]
 							},
 							{
 								"type": "entries",
 								"name": "15th Level",
 								"entries": [
-									"Boots of striding and springing, bracers of archery, brooch of shielding, broom of flying, hat of disguise, slippers of spider climbing"
+									"{@item Boots of striding and springing}, {@item bracers of archery}, {@item brooch of shielding}, {@item broom of flying}, {@item hat of disguise}, {@item slippers of spider climbing}"
 								]
 							},
 							{
 								"type": "entries",
 								"name": "20th Level",
 								"entries": [
-									"Eyes of the eagle, gem of brightness, gloves of missile snaring, gloves of swimming and climbing, ring of jumping, ring of mind shielding, wings of flying"
+									"{@item Eyes of the eagle}, {@item gem of brightness}, {@item gloves of missile snaring}, {@item gloves of swimming and climbing}, {@item ring of jumping}, {@item ring of mind shielding}, {@item wings of flying}"
 								]
 							}
 						]
@@ -33072,7 +33348,7 @@
 								"items": [
 									"It is a construct instead of a beast.",
 									"It can't be {@condition charmed}.",
-									"It is immune to poison damage and the poisoned condition.",
+									"It is immune to poison damage and the {@condition poisoned} condition.",
 									"It gains darkvision with a range of 60 feet if it doesn't have it already.",
 									"It understands the languages you can speak when you create it, but it can't speak.",
 									"If you are the target of a melee attack and the servant is within 5 feet of the attacker, you can use your reaction to command the servant to respond, using its reaction to make a melee attack against the attacker."
@@ -33612,10 +33888,10 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a spear or (b) a mace",
-					"(a) leather armor or (b) studded leather armor",
-					"(a) a light crossbow and 20 bolts or (b) any simple weapon",
-					"(a) a scholar's pack or (b) an explorer's pack"
+					"(a) a {@item spear|phb} or (b) a {@item mace|phb}",
+					"(a) {@item leather armor|phb} or (b) {@item studded leather armor|phb}",
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}"
 				]
 			},
 			"classFeatures": [

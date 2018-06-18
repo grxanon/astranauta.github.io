@@ -559,7 +559,8 @@
 					]
 				}
 			],
-			"page": 212
+			"page": 212,
+			"permanentEffects": true
 		},
 		{
 			"name": "Animate Objects",
@@ -1248,6 +1249,17 @@
 							"name": "Conquest",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Frost"
+						}
 					}
 				]
 			},
@@ -1445,7 +1457,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -1536,9 +1548,6 @@
 				"Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each non-hostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a non-hostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
 			],
 			"page": 216,
-			"damageInflict": [
-				"necrotic"
-			],
 			"damageResist": [
 				"necrotic"
 			]
@@ -1586,9 +1595,6 @@
 				"Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each non-hostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, and {@condition stunned}."
 			],
 			"page": 216,
-			"damageInflict": [
-				"poison"
-			],
 			"damageResist": [
 				"poison"
 			]
@@ -1696,7 +1702,8 @@
 				"After spending the casting time tracing magical pathways within a precious gemstone, you touch a huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree.",
 				"The awakened beast or plant is {@condition charmed} by you for 30 days or until you and your companions do anything harmful to it. When the {@condition charmed} condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was {@condition charmed}."
 			],
-			"page": 216
+			"page": 216,
+			"permanentEffects": true
 		},
 		{
 			"name": "Bane",
@@ -2432,25 +2439,25 @@
 					]
 				},
 				{
-				    "type": "entries",
-				    "name": "Forceful Hand",
-				    "entries": [
+					"type": "entries",
+					"name": "Forceful Hand",
+					"entries": [
 						"The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
-				    ]
+					]
 				},
 				{
-				    "type": "entries",
-				    "name": "Grasping Hand",
-				    "entries": [
+					"type": "entries",
+					"name": "Grasping Hand",
+					"entries": [
 						"The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@dice 2d6} + your spellcasting ability modifier."
-				    ]
+					]
 				},
 				{
-				    "type": "entries",
-				    "name": "Interposing Hand",
-				    "entries": [
+					"type": "entries",
+					"name": "Interposing Hand",
+					"entries": [
 						"The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target."
-				    ]
+					]
 				}
 			],
 			"entriesHigherLevel": [
@@ -3299,6 +3306,17 @@
 							"name": "Undying Light (UA)",
 							"source": "UALightDarkUnderdark"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Fire"
+						}
 					}
 				]
 			},
@@ -3390,7 +3408,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -4034,7 +4052,8 @@
 				"This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside as a sealed vessel and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed.",
 				"At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere."
 			],
-			"page": 222
+			"page": 222,
+			"permanentEffects": true
 		},
 		{
 			"name": "Cloud of Daggers",
@@ -4188,6 +4207,16 @@
 						"subclass": {
 							"name": "Conquest",
 							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
 						}
 					}
 				]
@@ -4607,7 +4636,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -4923,7 +4952,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -5975,7 +6004,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -6444,7 +6473,8 @@
 					]
 				}
 			],
-			"page": 229
+			"page": 229,
+			"permanentEffects": true
 		},
 		{
 			"name": "Create or Destroy Water",
@@ -6491,7 +6521,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -6524,7 +6554,8 @@
 					]
 				}
 			],
-			"page": 229
+			"page": 229,
+			"permanentEffects": true
 		},
 		{
 			"name": "Creation",
@@ -7008,6 +7039,16 @@
 							"name": "Oathbreaker",
 							"source": "DMG"
 						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
+						}
 					}
 				]
 			},
@@ -7421,7 +7462,8 @@
 				"You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.",
 				"Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
 			],
-			"page": 231
+			"page": 231,
+			"permanentEffects": true
 		},
 		{
 			"name": "Destructive Wave",
@@ -7853,6 +7895,16 @@
 						"subclass": {
 							"name": "Ambition (PSA)",
 							"source": "PSA"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
 						}
 					}
 				]
@@ -9469,6 +9521,19 @@
 						"name": "Artificer",
 						"source": "UAArtificer"
 					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Hill"
+						}
+					}
 				]
 			},
 			"source": "PHB",
@@ -9615,6 +9680,17 @@
 						"subclass": {
 							"name": "Primeval Guardian (UA)",
 							"source": "UARangerAndRogue"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Stone"
 						}
 					}
 				]
@@ -9816,7 +9892,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -10054,7 +10130,8 @@
 				"Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the spell is commensurate with the quality of the raw materials.",
 				"Creatures or magic items can't be created or transmuted by this spell. You also can't use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan's tools used to craft such objects."
 			],
-			"page": 239
+			"page": 239,
+			"permanentEffects": true
 		},
 		{
 			"name": "Faerie Fire",
@@ -10116,6 +10193,16 @@
 						"subclass": {
 							"name": "Archfey",
 							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
 						}
 					}
 				]
@@ -10344,6 +10431,16 @@
 							"name": "Gloom Stalker",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
+						}
 					}
 				]
 			},
@@ -10565,8 +10662,8 @@
 				"For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is {@condition blinded} and {@condition incapacitated}, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or {@condition poisoned} when you cast the spell, or becomes diseased or {@condition poisoned} while under the spell's effect, the disease and poison have no effect until the spell ends."
 			],
 			"page": 240,
-			"damageInflict": [
-				"psychic"
+			"damageResist": [
+				"acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "radiant", "slashing", "thunder"
 			]
 		},
 		{
@@ -10620,7 +10717,8 @@
 				"You can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.",
 				"Finally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your attack modifier for the roll."
 			],
-			"page": 240
+			"page": 240,
+			"permanentEffects": true
 		},
 		{
 			"name": "Find Steed",
@@ -10826,7 +10924,8 @@
 			],
 			"savingThrow": [
 				"constitution"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "Fire Bolt",
@@ -10863,6 +10962,19 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Fire"
+						}
 					}
 				]
 			},
@@ -11391,6 +11503,17 @@
 							"name": "Celestial",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Fire"
+						}
 					}
 				]
 			},
@@ -11599,6 +11722,17 @@
 							"name": "Tempest",
 							"source": "PHB"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Cloud"
+						}
 					}
 				]
 			},
@@ -11672,7 +11806,8 @@
 			"damageInflict": [
 				"necrotic",
 				"radiant"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "Forcecage",
@@ -12363,6 +12498,16 @@
 						"subclass": {
 							"name": "Primeval Guardian (UA)",
 							"source": "UARangerAndRogue"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
 						}
 					}
 				]
@@ -13193,7 +13338,8 @@
 				"The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect.",
 				"You can create a permanently guarded and warded structure by casting this spell there every day for one year."
 			],
-			"page": 248
+			"page": 248,
+			"permanentEffects": true
 		},
 		{
 			"name": "Guidance",
@@ -13385,8 +13531,19 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Storm"
 						}
 					}
 				]
@@ -14252,6 +14409,17 @@
 							"name": "Order (UA)",
 							"source": "UAOrderDomain"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Hill"
+						}
 					}
 				]
 			},
@@ -14421,6 +14589,16 @@
 							"name": "Redemption",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
+						}
 					}
 				]
 			},
@@ -14581,6 +14759,17 @@
 						"subclass": {
 							"name": "Order (UA)",
 							"source": "UAOrderDomain"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Frost"
 						}
 					}
 				]
@@ -15597,6 +15786,17 @@
 							"name": "Treachery (UA)",
 							"source": "UAPaladin"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Cloud"
+						}
 					}
 				]
 			},
@@ -15677,6 +15877,16 @@
 						"subclass": {
 							"name": "Seeker (UA)",
 							"source": "UATheFaithful"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
 						}
 					}
 				]
@@ -15891,7 +16101,8 @@
 				"While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.",
 				"After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest is destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest is on the Ethereal Plane, it is irretrievably lost."
 			],
-			"page": 254
+			"page": 254,
+			"permanentEffects": true
 		},
 		{
 			"name": "Leomund's Tiny Hut",
@@ -17260,9 +17471,6 @@
 				}
 			],
 			"page": 258,
-			"damageInflict": [
-				"thunder"
-			],
 			"opposedCheck": [
 				"intelligence"
 			]
@@ -17962,6 +18170,19 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Cloud"
+						}
+					}
 				]
 			},
 			"source": "PHB",
@@ -18360,7 +18581,8 @@
 			"page": 261,
 			"savingThrow": [
 				"wisdom"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "Moonbeam",
@@ -18615,7 +18837,8 @@
 					]
 				}
 			],
-			"page": 262
+			"page": 262,
+			"permanentEffects": true
 		},
 		{
 			"name": "Mordenkainen's Sword",
@@ -18879,7 +19102,8 @@
 					]
 				}
 			],
-			"page": 263
+			"page": 263,
+			"permanentEffects": true
 		},
 		{
 			"name": "Otiluke's Freezing Sphere",
@@ -20310,7 +20534,8 @@
 				"dexterity",
 				"constitution",
 				"wisdom"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "Prismatic Wall",
@@ -20419,7 +20644,8 @@
 				"constitution",
 				"dexterity",
 				"wisdom"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "Produce Flame",
@@ -21004,9 +21230,6 @@
 				"For the duration, the target has advantage on saving throws against being {@condition poisoned}, and it has resistance to poison damage."
 			],
 			"page": 270,
-			"damageInflict": [
-				"poison"
-			],
 			"damageResist": [
 				"poison"
 			]
@@ -21338,6 +21561,19 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Frost"
+						}
 					}
 				]
 			},
@@ -21779,6 +22015,19 @@
 					{
 						"name": "Druid",
 						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Stone"
+						}
 					}
 				]
 			},
@@ -23232,6 +23481,19 @@
 						"name": "Druid",
 						"source": "PHB"
 					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Hill"
+						}
+					}
 				]
 			},
 			"source": "PHB",
@@ -23274,6 +23536,19 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Storm"
+						}
 					}
 				]
 			},
@@ -23374,13 +23649,7 @@
 			"entries": [
 				"For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are {@condition deafened} while entirely inside it. Casting a spell that includes a verbal component is impossible there."
 			],
-			"page": 275,
-			"damageInflict": [
-				"thunder"
-			],
-			"damageImmune": [
-				"thunder"
-			]
+			"page": 275
 		},
 		{
 			"name": "Silent Image",
@@ -24190,6 +24459,17 @@
 							"source": "PHB",
 							"subSubclass": "Mountain"
 						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Stone"
+						}
 					}
 				]
 			},
@@ -24807,7 +25087,7 @@
 				"This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage."
 			],
 			"page": 278,
-			"damageInflict": [
+			"damageResist": [
 				"bludgeoning",
 				"piercing",
 				"slashing"
@@ -25615,7 +25895,8 @@
 					]
 				}
 			],
-			"page": 281
+			"page": 281,
+			"permanentEffects": true
 		},
 		{
 			"name": "Teleportation Circle",
@@ -25725,7 +26006,8 @@
 				"Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence\u2014a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the DM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.",
 				"You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way."
 			],
-			"page": 282
+			"page": 282,
+			"permanentEffects": true
 		},
 		{
 			"name": "Tenser's Floating Disk",
@@ -26011,8 +26293,19 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Giant Soul (UA)",
+							"source": "UAGiantSoulSorcerer",
+							"subSubclass": "Storm"
 						}
 					}
 				]
@@ -26348,7 +26641,8 @@
 			"page": 283,
 			"savingThrow": [
 				"wisdom"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "True Resurrection",
@@ -26718,6 +27012,16 @@
 							"name": "Grave",
 							"source": "XGE"
 						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
+						}
 					}
 				]
 			},
@@ -27057,8 +27361,7 @@
 			],
 			"page": 285,
 			"damageInflict": [
-				"cold",
-				"fire"
+				"cold"
 			],
 			"savingThrow": [
 				"dexterity",
@@ -27149,7 +27452,8 @@
 			"page": 287,
 			"savingThrow": [
 				"dexterity"
-			]
+			],
+			"permanentEffects": true
 		},
 		{
 			"name": "Wall of Thorns",
@@ -27357,7 +27661,7 @@
 							"source": "PHB"
 						},
 						"subclass": {
-							"name": "Kraken (UA)",
+							"name": "Kraken (Stream)",
 							"source": "Stream"
 						}
 					}
@@ -27514,6 +27818,16 @@
 							"name": "Land",
 							"source": "PHB",
 							"subSubclass": "Underdark"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Lolth (Twitter)",
+							"source": "Twitter"
 						}
 					}
 				]

@@ -91,7 +91,8 @@
 				"coastal",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/601/balhannoth.mp3"
 		},
 		{
 			"name": "Berbalang",
@@ -99,7 +100,7 @@
 			"type": "aberration",
 			"source": "MTF",
 			"alignment": [
-				"L",
+				"N",
 				"E"
 			],
 			"ac": "14 (natural armor)",
@@ -180,7 +181,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/602/berbalang.mp3"
 		},
 		{
 			"name": "Choker",
@@ -251,7 +253,8 @@
 				"forest",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/610/choker.mp3"
 		},
 		{
 			"name": "Star Spawn Grue",
@@ -303,7 +306,8 @@
 			"environment": [
 				"mountain",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/694/star-spawn-grue.mp3"
 		},
 		{
 			"name": "Star Spawn Hulk",
@@ -376,12 +380,13 @@
 					]
 				},
 				{
-					"name": "Reaping Arms (Recharge 5-6)",
+					"name": "Reaping Arms (Recharge 5\u20146)",
 					"entries": [
 						"The hulk makes a separate slam attack against each creature within 10 feet of it. Each creature that is hit must also succeed on a DC 17 Dexterity saving throw or be knocked prone."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/695/star-spawn-hulk.mp3"
 		},
 		{
 			"name": "Star Spawn Larva Mage",
@@ -508,7 +513,8 @@
 			],
 			"environment": [
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/696/star-spawn-larva-mage.mp3"
 		},
 		{
 			"name": "Star Spawn Mangler",
@@ -585,12 +591,13 @@
 					]
 				},
 				{
-					"name": "Flurry of Claws (Recharge 4-6)",
+					"name": "Flurry of Claws (Recharge 4\u20146)",
 					"entries": [
 						"The mangler makes six claw attacks against one target. Either before or after these attacks, it can move up to its speed as a bonus action without provoking opportunity attacks."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/697/star-spawn-mangler.mp3"
 		},
 		{
 			"name": "Star Spawn Seer",
@@ -685,7 +692,8 @@
 				"mountain",
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/698/star-spawn-seer.mp3"
 		},
 		{
 			"name": "Bronze Scout",
@@ -771,7 +779,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/606/bronze-scout.mp3"
 		},
 		{
 			"name": "Cadaver Collector",
@@ -850,7 +859,7 @@
 					]
 				},
 				{
-					"name": "Paralyzing Breath (Recharge 5-6)",
+					"name": "Paralyzing Breath (Recharge 5\u20146)",
 					"entries": [
 						"The cadaver collector releases paralyzing gas in a 30-foot cone. Each creature in that area must make a successful DC 18 Constitution saving throw or be paralyzed for 1 minute. A paralyzed creature repeats the saving throw at the end of each of its turns, ending the effect on itself with a success."
 					]
@@ -858,7 +867,8 @@
 			],
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/608/cadaver-collector.mp3"
 		},
 		{
 			"name": "Duergar Hammerer",
@@ -936,7 +946,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/626/duergar-hammerer.mp3"
 		},
 		{
 			"name": "Duergar Screamer",
@@ -1007,7 +1018,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/629/duergar-screamer.mp3"
 		},
 		{
 			"name": "Hellfire Engine",
@@ -1104,7 +1116,8 @@
 						}
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/652/hellfire-engine.mp3"
 		},
 		{
 			"name": "Iron Cobra",
@@ -1179,7 +1192,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/656/iron-cobra.mp3"
 		},
 		{
 			"name": "Oaken Bolter",
@@ -1255,7 +1269,7 @@
 					]
 				},
 				{
-					"name": "Explosive Bolt (Recharge 5-6)",
+					"name": "Explosive Bolt (Recharge 5\u20146)",
 					"entries": [
 						"The oaken bolter launches an explosive charge at a point within 120 feet. Each creature within 20 feet of that point must make a DC 15 Dexterity saving throw, taking 17 ({@dice 5d6}) fire damage on a failed save, or half as much damage on a successful one."
 					]
@@ -1266,7 +1280,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/672/oaken-bolter.mp3"
 		},
 		{
 			"name": "Retriever",
@@ -1354,7 +1369,7 @@
 					]
 				},
 				{
-					"name": "Paralyzing Beam (Recharge 5-6)",
+					"name": "Paralyzing Beam (Recharge 5\u20146)",
 					"entries": [
 						"The retriever targets one creature it can see within 60 feet of it. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The paralyzed target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
 						"If the paralyzed creature is Medium or smaller, the retriever can pick it up as part of the retriever's move and walk or climb with it at full speed."
@@ -1379,7 +1394,8 @@
 				"desert",
 				"forest",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/683/retriever.mp3"
 		},
 		{
 			"name": "Sacred Statue",
@@ -1478,7 +1494,8 @@
 						"Ranged Weapon Attack: {@hit +8} to hit, range 60 ft./240 ft., one target. Hit: 37 ({@dice 6d10+4}) bludgeoning damage."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/686/sacred-statue.mp3"
 		},
 		{
 			"name": "Steel Predator",
@@ -1574,7 +1591,7 @@
 					]
 				},
 				{
-					"name": "Stunning Roar (Recharge 5-6)",
+					"name": "Stunning Roar (Recharge 5\u20146)",
 					"entries": [
 						"The steel predator emits a roar in a 60-foot cone. Each creature in that area must make a DC 19 Constitution saving throw. On a failed save, a creature takes 27 ({@dice 5d10}) thunder damage, drops everything it's holding, and is stunned for 1 minute. On a successful save, a creature takes half as much damage. The stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
@@ -1596,7 +1613,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/699/steel-predator.mp3"
 		},
 		{
 			"name": "Stone Cursed",
@@ -1664,7 +1682,8 @@
 				"desert",
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/700/stone-cursed.mp3"
 		},
 		{
 			"name": "Stone Defender",
@@ -1739,7 +1758,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/701/stone-defender.mp3"
 		},
 		{
 			"name": "Marut",
@@ -1843,7 +1863,7 @@
 					]
 				},
 				{
-					"name": "Blazing Edict (Recharge 5-6)",
+					"name": "Blazing Edict (Recharge 5\u20146)",
 					"entries": [
 						"Arcane energy emanates from the marut's chest in a 60-foot cube. Every creature in that area takes 45 radiant damage. Each creature that takes any of this damage must succeed on a DC 20 Wisdom saving throw or be stunned until the end of the marut's next turn."
 					]
@@ -1866,7 +1886,8 @@
 						"{@spell plane shift} (self only)"
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/660/marut.mp3"
 		},
 		{
 			"name": "Air Elemental Myrmidon",
@@ -1947,7 +1968,8 @@
 						"The myrmidon makes one flail attack. On a hit, the target takes an extra 18 ({@dice 4d8}) lightning damage, and the target must succeed on a DC 13 Constitution saving throw or be stunned until the end of the myrmidon's next turn."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/593/air-elemental-myrmidon.mp3"
 		},
 		{
 			"name": "Azer",
@@ -2013,7 +2035,8 @@
 						"Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 7 ({@dice 1d8+3}) bludgeoning damage plus 3 ({@dice 1d6}) fire damage, or 8 ({@dice 1d10+3}) bludgeoning damage plus 3 ({@dice 1d6}) fire damage if used with two hands to make a melee attack."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/31/azer.mp3"
 		},
 		{
 			"name": "Earth Elemental Myrmidon",
@@ -2088,7 +2111,8 @@
 						"The myrmidon makes one maul attack. On a hit, the target takes an extra 16 ({@dice 3d10}) thunder damage, and the target must succeed on a DC 14 Strength saving throw or be knocked prone."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/635/earth-elemental-myrmidon.mp3"
 		},
 		{
 			"name": "Elder Tempest",
@@ -2228,7 +2252,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/638/elder-tempest.mp3"
 		},
 		{
 			"name": "Fire Elemental Myrmidon",
@@ -2316,7 +2341,8 @@
 						"The myrmidon uses Multiattack. Each attack that hits deals an extra 5 ({@dice 1d10}) fire damage."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/640/fire-elemental-myrmidon.mp3"
 		},
 		{
 			"name": "Frost Salamander",
@@ -2396,7 +2422,8 @@
 			],
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/641/frost-salamander.mp3"
 		},
 		{
 			"name": "Leviathan",
@@ -2524,7 +2551,8 @@
 			"environment": [
 				"coastal",
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/658/leviathan.mp3"
 		},
 		{
 			"name": "Phoenix",
@@ -2663,7 +2691,8 @@
 			"environment": [
 				"desert",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/681/phoenix.mp3"
 		},
 		{
 			"name": "Water Elemental Myrmidon",
@@ -2740,7 +2769,8 @@
 						"The myrmidon uses Multiattack. Each attack that hits deals an extra 5 ({@dice 1d10}) cold damage. A target that is hit by one or more of these attacks has its speed reduced by 10 feet until the end of the myrmidon's next turn."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/716/water-elemental-myrmidon.mp3"
 		},
 		{
 			"name": "Zaratan",
@@ -2852,7 +2882,7 @@
 					]
 				},
 				{
-					"name": "Spew Debris (Recharge 5-6)",
+					"name": "Spew Debris (Recharge 5\u20146)",
 					"entries": [
 						"The zaratan exhales rocky debris in a 90-foot cube. Each creature in that area must make a DC 25 Dexterity saving throw. A creature takes 33 ({@dice 6d10}) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails the save by 5 or more is knocked prone."
 					]
@@ -2903,7 +2933,8 @@
 				"hill",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/721/zaratan.mp3"
 		},
 		{
 			"name": "Autumn Eladrin",
@@ -2961,7 +2992,7 @@
 					]
 				},
 				{
-					"name": "Fey Step (Recharge 4-6)",
+					"name": "Fey Step (Recharge 4\u20146)",
 					"entries": [
 						"As a bonus action, the eladrin can teleport up to 30 feet to an unoccupied space it can see."
 					]
@@ -3012,7 +3043,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/599/autumn-eladrin.mp3"
 		},
 		{
 			"name": "Spring Eladrin",
@@ -3063,7 +3095,7 @@
 			"page": 0,
 			"trait": [
 				{
-					"name": "Fey Step (Recharge 4-6)",
+					"name": "Fey Step (Recharge 4\u20146)",
 					"entries": [
 						"As a bonus action, the eladrin can teleport up to 30 feet to an unoccupied space it can see."
 					]
@@ -3128,7 +3160,8 @@
 			"environment": [
 				"forest",
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/693/spring-eladrin.mp3"
 		},
 		{
 			"name": "Summer Eladrin",
@@ -3185,7 +3218,7 @@
 					]
 				},
 				{
-					"name": "Fey Step (Recharge 4-6)",
+					"name": "Fey Step (Recharge 4\u20146)",
 					"entries": [
 						"As a bonus action, the eladrin can teleport up to 30 feet to an unoccupied space it can see."
 					]
@@ -3220,7 +3253,8 @@
 			"environment": [
 				"desert",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/702/summer-eladrin.mp3"
 		},
 		{
 			"name": "Winter Eladrin",
@@ -3268,7 +3302,7 @@
 			"page": 0,
 			"trait": [
 				{
-					"name": "Fey Step (Recharge 4-6)",
+					"name": "Fey Step (Recharge 4\u20146)",
 					"entries": [
 						"As a bonus action, the eladrin can teleport up to 30 feet to an unoccupied space it can see."
 					]
@@ -3322,7 +3356,8 @@
 			"environment": [
 				"arctic",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/718/winter-eladrin.mp3"
 		},
 		{
 			"name": "Howler",
@@ -3404,7 +3439,8 @@
 				"grassland",
 				"hill",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/653/howler.mp3"
 		},
 		{
 			"name": "Abyssal Wretch",
@@ -3459,7 +3495,8 @@
 						"Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 5 ({@dice 1d8+1}) slashing damage."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/591/abyssal-wretch.mp3"
 		},
 		{
 			"name": "Alkilith",
@@ -3567,7 +3604,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/594/alkilith.mp3"
 		},
 		{
 			"name": "Armanite",
@@ -3653,7 +3691,7 @@
 					]
 				},
 				{
-					"name": "Lightning Lance (Recharge 5-6)",
+					"name": "Lightning Lance (Recharge 5\u20146)",
 					"entries": [
 						"The armanite looses a bolt of lightning in a line 60 feet long and 10 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 27 ({@dice 6d8}) lightning damage on a failed save, or half as much damage on a successful one."
 					]
@@ -3661,7 +3699,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/597/armanite.mp3"
 		},
 		{
 			"name": "Baphomet",
@@ -3910,7 +3949,8 @@
 						"Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one target. Hit: 8 ({@dice 1d12+2}) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned until the disease ends. While poisoned in this way, the target sports festering boils, coughs up flies, and sheds rotting skin, and the target must repeat the saving throw after every 24 hours that elapse. On a successful save, the disease ends. On a failed save, the target's hit point maximum is reduced by 4 ({@dice 1d8}). The target dies if its hit point maximum is reduced to 0."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/607/bulezau.mp3"
 		},
 		{
 			"name": "Demogorgon",
@@ -4194,7 +4234,8 @@
 			"environment": [
 				"desert",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/634/dybbuk.mp3"
 		},
 		{
 			"name": "Fraz-Urb'luu",
@@ -4477,7 +4518,7 @@
 					]
 				},
 				{
-					"name": "Eject Slime (Recharge 5-6)",
+					"name": "Eject Slime (Recharge 5\u20146)",
 					"entries": [
 						"Juiblex spews out a corrosive slime, targeting one creature that it can see within 60 feet of it. The target must make a DC 21 Dexterity saving throw. On a failure, the target takes 55 ({@dice 10d10}) acid damage. Unless the target avoids taking any of this damage, any metal armor worn by the target takes a permanent -1 penalty to the AC it offers, and any metal weapon it is carrying or wearing takes a permanent -1 penalty to damage rolls. The penalty worsens each time a target is subjected to this effect. If the penalty on an object drops to -5, the object is destroyed."
 					]
@@ -4616,7 +4657,7 @@
 					]
 				},
 				{
-					"name": "Raise Ghoul (Recharge 5-6)",
+					"name": "Raise Ghoul (Recharge 5\u20146)",
 					"entries": [
 						"The maurezhi targets one dead ghoul or ghast it can see within 30 feet of it. The target is revived with all its hit points."
 					]
@@ -4625,7 +4666,8 @@
 			"environment": [
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/661/maurezhi.mp3"
 		},
 		{
 			"name": "Molydeus",
@@ -4796,7 +4838,8 @@
 						}
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/666/molydeus.mp3"
 		},
 		{
 			"name": "Nabassu",
@@ -4914,7 +4957,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/667/nabassu.mp3"
 		},
 		{
 			"name": "Orcus",
@@ -5139,7 +5183,8 @@
 						"Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one target. Hit: 12 ({@dice 3d6+2}) piercing damage. If the target is a creature, it must succeed on a DC 13 Constitution saving throw against disease or become poisoned. At the end of each long rest, the poisoned target can repeat the saving throw, ending the effect on itself on a success. If the target is reduced to 0 hit points while poisoned in this way, it dies and instantly transforms into a living abyssal wretch. The transformation of the body can be undone only by a wish spell. (See notes)"
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/685/rutterkin.mp3"
 		},
 		{
 			"name": "Sibriex",
@@ -5299,7 +5344,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/688/sibriex.mp3"
 		},
 		{
 			"name": "Wastrilith",
@@ -5417,7 +5463,8 @@
 				"swamp",
 				"underdark",
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/715/wastrilith.mp3"
 		},
 		{
 			"name": "Yeenoghu",
@@ -5678,7 +5725,7 @@
 					]
 				},
 				{
-					"name": "Mind Control Spores (Recharge 5-6)",
+					"name": "Mind Control Spores (Recharge 5\u20146)",
 					"entries": [
 						"Zuggtmoy releases spores that burst out in a cloud that fills a 20-foot-radius sphere centered on her, and it lingers for 1 minute. Humanoids and beasts in the cloud when it appears, or that enter it later, must make a DC 19 Wisdom saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the influence of Zuggtmoy for 24 hours. While infected in this way, the creature is charmed by her and can't be reinfected by these spores."
 					]
@@ -6040,7 +6087,8 @@
 						}
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/596/amnizu.mp3"
 		},
 		{
 			"name": "Bael",
@@ -6215,7 +6263,8 @@
 					}
 				}
 			],
-			"isNamedCreature": true
+			"isNamedCreature": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/600/bael.mp3"
 		},
 		{
 			"name": "Black Abishai",
@@ -6332,7 +6381,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/603/black-abishai.mp3"
 		},
 		{
 			"name": "Blue Abishai",
@@ -6510,7 +6560,8 @@
 			"environment": [
 				"coastal",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/604/blue-abishai.mp3"
 		},
 		{
 			"name": "Geryon",
@@ -6691,7 +6742,8 @@
 					]
 				}
 			],
-			"isNamedCreature": true
+			"isNamedCreature": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/642/geryon.mp3"
 		},
 		{
 			"name": "Green Abishai",
@@ -6821,7 +6873,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/651/green-abishai.mp3"
 		},
 		{
 			"name": "Hutijin",
@@ -7004,7 +7057,8 @@
 					}
 				}
 			],
-			"isNamedCreature": true
+			"isNamedCreature": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/654/hutijin.mp3"
 		},
 		{
 			"name": "Merregon",
@@ -7091,7 +7145,8 @@
 						"Ranged Weapon Attack: {@hit +4} to hit, range 100/400 ft., one target. Hit: 7 ({@dice 1d10+2}) piercing damage."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/663/merregon.mp3"
 		},
 		{
 			"name": "Moloch",
@@ -7210,7 +7265,7 @@
 					]
 				},
 				{
-					"name": "Breath of Despair (Recharge 5-6)",
+					"name": "Breath of Despair (Recharge 5\u20146)",
 					"entries": [
 						"Moloch exhales in a 30-foot cube. Each creature in that area must succeed on a DC 21 Wisdom saving throw or take 27 ({@dice 5d10}) psychic damage, drop whatever it is holding, and become frightened for 1 minute. While frightened in this way, a creature must take the Dash action and move away from Moloch by the safest available route on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. If the creature ends its turn in a location where it doesn't have line of sight to Moloch, the creature can repeat the saving throw. On a success, the effect ends."
 					]
@@ -7269,7 +7324,8 @@
 					}
 				}
 			],
-			"isNamedCreature": true
+			"isNamedCreature": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/665/moloch.mp3"
 		},
 		{
 			"name": "Narzugon",
@@ -7386,7 +7442,8 @@
 						"The narzugon, or one creature it touches, regains up to 100 hit points."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/669/narzugon.mp3"
 		},
 		{
 			"name": "Nupperibo",
@@ -7467,7 +7524,8 @@
 						"Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 6 ({@dice 1d6+3}) piercing damage."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/671/nupperibo.mp3"
 		},
 		{
 			"name": "Orthon",
@@ -7601,7 +7659,8 @@
 				"desert",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/680/orthon.mp3"
 		},
 		{
 			"name": "Red Abishai",
@@ -7731,7 +7790,8 @@
 			"environment": [
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/682/red-abishai.mp3"
 		},
 		{
 			"name": "Titivilus",
@@ -7907,7 +7967,8 @@
 					}
 				}
 			],
-			"isNamedCreature": true
+			"isNamedCreature": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/710/titivilus.mp3"
 		},
 		{
 			"name": "White Abishai",
@@ -8019,7 +8080,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/717/white-abishai.mp3"
 		},
 		{
 			"name": "Zariel",
@@ -8139,7 +8201,7 @@
 					]
 				},
 				{
-					"name": "Horrid Touch (Recharge 5-6)",
+					"name": "Horrid Touch (Recharge 5\u20146)",
 					"entries": [
 						"Melee Weapon Attack: {@hit +16} to hit, reach 10 ft., one target. Hit: 44 ({@dice 8d10}) necrotic damage, and the target is poisoned for 1 minute. While poisoned in this way, the target is also blinded and deafened. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
@@ -8303,7 +8365,8 @@
 				"coastal",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/609/canoloth.mp3"
 		},
 		{
 			"name": "Dhergoloth",
@@ -8389,7 +8452,7 @@
 					]
 				},
 				{
-					"name": "Flailing Claws (Recharge 5-6)",
+					"name": "Flailing Claws (Recharge 5\u20146)",
 					"entries": [
 						"The dhergoloth moves up to its walking speed in a straight line and targets each creature within 5 feet of it during its movement. Each target must succeed on a DC 14 Dexterity saving throw or take 22 ({@dice 3d12+3}) slashing damage."
 					]
@@ -8420,7 +8483,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/617/dhergoloth.mp3"
 		},
 		{
 			"name": "Hydroloth",
@@ -8569,7 +8633,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/655/hydroloth.mp3"
 		},
 		{
 			"name": "Merrenoloth",
@@ -8701,7 +8766,8 @@
 			"legendaryGroup": "Merrenoloth",
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/664/merrenoloth.mp3"
 		},
 		{
 			"name": "Oinoloth",
@@ -8767,7 +8833,7 @@
 			"page": 0,
 			"trait": [
 				{
-					"name": "Bringer of Plagues (Recharge 5-6)",
+					"name": "Bringer of Plagues (Recharge 5\u20146)",
 					"entries": [
 						"As a bonus action, the oinoloth blights the area within 30 feet of it. The blight lasts for 24 hours. While blighted, all normal plants in the area wither and die, and the number of hit points restored by a spell to a creature in that area is halved.",
 						"Furthermore, when a creature moves into the blighted area or starts its turn there, that creature must make a DC 16 Constitution saving throw. On a successful save, the creature is immune to the oinoloth's Bringer of Plagues for the next 24 hours. On a failed save, the creature takes 14 ({@dice 4d6}) necrotic damage and is poisoned.",
@@ -8844,7 +8910,8 @@
 			"environment": [
 				"desert",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/679/oinoloth.mp3"
 		},
 		{
 			"name": "Yagnoloth",
@@ -8951,7 +9018,7 @@
 					]
 				},
 				{
-					"name": "Battlefield Cunning (Recharge 4-6)",
+					"name": "Battlefield Cunning (Recharge 4\u20146)",
 					"entries": [
 						"Up to two allied yugoloths within 60 feet of the yagnoloth that can hear it can use their reactions to make one melee attack each."
 					]
@@ -8985,7 +9052,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/719/yagnoloth.mp3"
 		},
 		{
 			"name": "Dire Troll",
@@ -9070,7 +9138,7 @@
 					]
 				},
 				{
-					"name": "Whirlwind of Claws (Recharge 5-6)",
+					"name": "Whirlwind of Claws (Recharge 5\u20146)",
 					"entries": [
 						"Each creature within 10 feet of the troll must make a DC 19 Dexterity saving throw, taking 44 ({@dice 8d10}) slashing damage on a failed save, or half as much damage on a successful one."
 					]
@@ -9082,7 +9150,8 @@
 				"hill",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/618/dire-troll.mp3"
 		},
 		{
 			"name": "Ogre Battering Ram",
@@ -9138,7 +9207,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/675/ogre-battering-ram.mp3"
 		},
 		{
 			"name": "Ogre Bolt Launcher",
@@ -9186,7 +9256,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/676/ogre-bolt-launcher.mp3"
 		},
 		{
 			"name": "Ogre Chain Brute",
@@ -9240,7 +9311,8 @@
 				"grassland",
 				"hill",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/677/ogre-chain-brute.mp3"
 		},
 		{
 			"name": "Ogre Howdah",
@@ -9289,7 +9361,8 @@
 			"environment": [
 				"grassland",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/678/ogre-howdah.mp3"
 		},
 		{
 			"name": "Rot Troll",
@@ -9358,7 +9431,8 @@
 				"forest",
 				"swamp",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/684/rot-troll.mp3"
 		},
 		{
 			"name": "Spirit Troll",
@@ -9456,7 +9530,8 @@
 				"forest",
 				"swamp",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/692/spirit-troll.mp3"
 		},
 		{
 			"name": "Venom Troll",
@@ -9545,7 +9620,8 @@
 				"forest",
 				"swamp",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/714/venom-troll.mp3"
 		},
 		{
 			"name": "Giff",
@@ -9604,7 +9680,7 @@
 				{
 					"name": "Musket",
 					"entries": [
-						"Ranged Weapon Attack: {@hit +4} to hit, range 40/120 ft., one target. Hit: 7 ({@dice 1d12+2}) piercing damage."
+						"Ranged Weapon Attack: {@hit +4} to hit, range 40/120 ft., one target. Hit: 8 ({@dice 1d12+2}) piercing damage."
 					]
 				},
 				{
@@ -9622,7 +9698,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/643/giff.mp3"
 		},
 		{
 			"name": "Skulk",
@@ -9700,7 +9777,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/689/skulk.mp3"
 		},
 		{
 			"name": "Derro",
@@ -9769,7 +9847,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/616/derro.mp3"
 		},
 		{
 			"name": "Derro Savant",
@@ -9871,7 +9950,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/615/derro-savant.mp3"
 		},
 		{
 			"name": "Duergar Despot",
@@ -9988,7 +10068,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/625/duergar-despot.mp3"
 		},
 		{
 			"name": "Duergar Kavalrachni",
@@ -10075,7 +10156,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/627/duergar-kavalrachni.mp3"
 		},
 		{
 			"name": "Duergar Mind Master",
@@ -10148,7 +10230,7 @@
 					]
 				},
 				{
-					"name": "Invisibility (Recharge 4-6)",
+					"name": "Invisibility (Recharge 4\u20146)",
 					"entries": [
 						"The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Reduce, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
 					]
@@ -10169,7 +10251,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/628/duergar-mind-master.mp3"
 		},
 		{
 			"name": "Duergar Soulblade",
@@ -10268,7 +10351,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/630/duergar-soulblade.mp3"
 		},
 		{
 			"name": "Duergar Stone Guard",
@@ -10355,7 +10439,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/631/duergar-stone-guard.mp3"
 		},
 		{
 			"name": "Duergar Warlord",
@@ -10439,7 +10524,7 @@
 					]
 				},
 				{
-					"name": "Invisibility (Recharge 4-6)",
+					"name": "Invisibility (Recharge 4\u20146)",
 					"entries": [
 						"The duergar magically turns invisible for up to 1 hour or until it attacks, it casts a spell, it uses its Enlarge, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
 					]
@@ -10448,7 +10533,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/632/duergar-warlord.mp3"
 		},
 		{
 			"name": "Duergar Xarrorn",
@@ -10508,7 +10594,7 @@
 					]
 				},
 				{
-					"name": "Fire Spray (Recharge 5-6)",
+					"name": "Fire Spray (Recharge 5\u20146)",
 					"entries": [
 						"From its fire lance, the duergar shoots a 15-foot cone of fire or a line of fire 30 feet long and 5 feet wide. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 ({@dice 3d6}) fire damage on a failed save, or half as much damage on a successful one."
 					]
@@ -10529,7 +10615,8 @@
 			"environment": [
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/633/duergar-xarrorn.mp3"
 		},
 		{
 			"name": "Dwarf Acolyte",
@@ -11338,7 +11425,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/619/drow-arachnomancer.mp3"
 		},
 		{
 			"name": "Drow Favored Consort",
@@ -11506,7 +11594,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/620/drow-favored-consort.mp3"
 		},
 		{
 			"name": "Drow House Captain",
@@ -11616,7 +11705,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/621/drow-house-captain.mp3"
 		},
 		{
 			"name": "Drow Inquisitor",
@@ -11810,7 +11900,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/622/drow-inquisitor.mp3"
 		},
 		{
 			"name": "Drow Matron Mother",
@@ -12045,7 +12136,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/623/drow-matron-mother.mp3"
 		},
 		{
 			"name": "Drow Shadowblade",
@@ -12165,7 +12257,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/624/drow-shadowblade.mp3"
 		},
 		{
 			"name": "Gloom Weaver",
@@ -12269,7 +12362,7 @@
 							"spells": [
 								"{@spell minor illusion}",
 								"{@spell prestidigitation}",
-								"{@spell chill touch} (3d8 damage)",
+								"{@spell chill touch}",
 								"{@spell eldritch blast}*"
 							]
 						},
@@ -12298,7 +12391,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/649/gloom-weaver.mp3"
 		},
 		{
 			"name": "Shadow Dancer",
@@ -12386,7 +12480,8 @@
 				"forest",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/687/shadow-dancer.mp3"
 		},
 		{
 			"name": "Soul Monger",
@@ -12477,7 +12572,7 @@
 					]
 				},
 				{
-					"name": "Wave of Weariness (Recharge 4-6)",
+					"name": "Wave of Weariness (Recharge 4\u20146)",
 					"entries": [
 						"The soul monger emits weariness in a 60-foot cube. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save, a creature takes 45 ({@dice 10d8}) psychic damage and suffers 1 level of exhaustion. On a successful save, it takes 22 ({@dice 5d8}) psychic damage."
 					]
@@ -12490,8 +12585,8 @@
 						"The soul monger's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no material components:"
 					],
 					"will": [
-						"{@spell chill touch} (3d8 damage)",
-						"{@spell poison spray} (3d12 damage)"
+						"{@spell chill touch}",
+						"{@spell poison spray}"
 					],
 					"daily": {
 						"1e": [
@@ -12508,7 +12603,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/691/soul-monger.mp3"
 		},
 		{
 			"name": "Githyanki Gish",
@@ -12647,7 +12743,8 @@
 				"desert",
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/644/githyanki-gish.mp3"
 		},
 		{
 			"name": "Githyanki Kith'rak",
@@ -12739,7 +12836,8 @@
 				"desert",
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/645/githyanki-kith_rak.mp3"
 		},
 		{
 			"name": "Githyanki Knight",
@@ -12814,7 +12912,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/220/githyanki-knight.mp3"
 		},
 		{
 			"name": "Githyanki Supreme Commander",
@@ -12921,7 +13020,8 @@
 				"desert",
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/646/githyanki-supreme-commander.mp3"
 		},
 		{
 			"name": "Githyanki Warrior",
@@ -12991,7 +13091,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/558/githyanki-warrior.mp3"
 		},
 		{
 			"name": "Githzerai Anarch",
@@ -13108,7 +13209,8 @@
 					}
 				}
 			],
-			"legendaryGroup": "Githzerai Anarch"
+			"legendaryGroup": "Githzerai Anarch",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/647/githzerai-anarch.mp3"
 		},
 		{
 			"name": "Githzerai Enlightened",
@@ -13211,7 +13313,8 @@
 				"desert",
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/648/githzerai-enlightened.mp3"
 		},
 		{
 			"name": "Meazel",
@@ -13272,7 +13375,7 @@
 					]
 				},
 				{
-					"name": "Shadow Teleport (Recharge 5-6)",
+					"name": "Shadow Teleport (Recharge 5\u20146)",
 					"entries": [
 						"The meazel, any equipment it is wearing or carrying, and any creature it is grappling teleport to an unoccupied space within 500 feet of it, provided that the starting space and the destination are in dim light or darkness. The destination must be a place the meazel has seen before, but it need not be within line of sight. If the destination space is occupied, the teleportation leads to the nearest unoccupied space.",
 						"Any other creature the meazel teleports becomes cursed by shadow for 1 hour. Until this curse ends, every undead and every creature native to the Shadowfell within 300 feet of the cursed creature can sense it, which prevents that creature from hiding from them."
@@ -13288,7 +13391,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/662/meazel.mp3"
 		},
 		{
 			"name": "Nagpa",
@@ -13444,7 +13548,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/668/nagpa.mp3"
 		},
 		{
 			"name": "Tortle",
@@ -13518,7 +13623,8 @@
 			],
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/712/tortle.mp3"
 		},
 		{
 			"name": "Tortle Druid",
@@ -13620,7 +13726,8 @@
 			],
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/711/tortle-druid.mp3"
 		},
 		{
 			"name": "Adult Kruthik",
@@ -13695,7 +13802,8 @@
 				"desert",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/592/adult-kruthik.mp3"
 		},
 		{
 			"name": "Female Steeder",
@@ -13758,7 +13866,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/639/female-steeder.mp3"
 		},
 		{
 			"name": "Gray Render",
@@ -13817,7 +13926,8 @@
 			"environment": [
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/650/gray-render.mp3"
 		},
 		{
 			"name": "Griffon",
@@ -13876,7 +13986,8 @@
 						"Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one target. Hit: 11 ({@dice 2d6+4}) slashing damage."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/249/griffon.mp3"
 		},
 		{
 			"name": "Kruthik Hive Lord",
@@ -13947,7 +14058,7 @@
 					]
 				},
 				{
-					"name": "Acid Spray (Recharge 5-6)",
+					"name": "Acid Spray (Recharge 5\u20146)",
 					"entries": [
 						"The kruthik sprays acid in a 15-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 22 ({@dice 4d10}) acid damage on a failed save, or half as much damage on a successful one."
 					]
@@ -13957,7 +14068,8 @@
 				"desert",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/657/kruthik-hive-lord.mp3"
 		},
 		{
 			"name": "Male Steeder",
@@ -14020,7 +14132,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/659/male-steeder.mp3"
 		},
 		{
 			"name": "The Angry",
@@ -14095,7 +14208,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/705/the-angry.mp3"
 		},
 		{
 			"name": "The Hungry",
@@ -14167,7 +14281,8 @@
 				"forest",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/706/the-hungry.mp3"
 		},
 		{
 			"name": "The Lonely",
@@ -14248,7 +14363,8 @@
 				"mountain",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/707/the-lonely.mp3"
 		},
 		{
 			"name": "The Lost",
@@ -14319,7 +14435,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/708/the-lost.mp3"
 		},
 		{
 			"name": "The Wretched",
@@ -14379,7 +14496,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/709/the-wretched.mp3"
 		},
 		{
 			"name": "Young Kruthik",
@@ -14442,7 +14560,8 @@
 				"desert",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/720/young-kruthik.mp3"
 		},
 		{
 			"name": "Astral Dreadnought",
@@ -14584,7 +14703,8 @@
 						"Each creature within 60 feet of the astral dreadnought must make a DC 19 Wisdom saving throw, taking 15 ({@dice 2d10+4}) psychic damage on a failed save, or half as much damage on a successful one."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/598/astral-dreadnought.mp3"
 		},
 		{
 			"name": "Adult Oblex",
@@ -14701,7 +14821,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/673/oblex-adult.mp3"
 		},
 		{
 			"name": "Elder Oblex",
@@ -14821,7 +14942,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/637/elder-oblex.mp3"
 		},
 		{
 			"name": "Oblex Spawn",
@@ -14887,7 +15009,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/674/oblex-spawn.mp3"
 		},
 		{
 			"name": "Corpse Flower",
@@ -14973,7 +15096,8 @@
 				"forest",
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/611/corpse-flower.mp3"
 		},
 		{
 			"name": "Allip",
@@ -15076,7 +15200,8 @@
 			"environment": [
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/595/allip.mp3"
 		},
 		{
 			"name": "Boneclaw",
@@ -15173,7 +15298,8 @@
 				"arctic",
 				"desert",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/605/boneclaw.mp3"
 		},
 		{
 			"name": "Deathlock",
@@ -15286,7 +15412,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/614/deathlock.mp3"
 		},
 		{
 			"name": "Deathlock Mastermind",
@@ -15411,7 +15538,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/612/deathlock-mastermind.mp3"
 		},
 		{
 			"name": "Deathlock Wight",
@@ -15514,7 +15642,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/613/deathlock-wight.mp3"
 		},
 		{
 			"name": "Eidolon",
@@ -15591,7 +15720,7 @@
 					]
 				},
 				{
-					"name": "Sacred Animation (Recharge 5-6)",
+					"name": "Sacred Animation (Recharge 5\u20146)",
 					"entries": [
 						"When the eidolon moves into a space occupied by a sacred statue, the eidolon can disappear, causing the statue to become a creature under the eidolon's control. The eidolon uses the sacred statue's statistics in place of its own."
 					]
@@ -15618,7 +15747,8 @@
 				"grassland",
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/636/eidolon.mp3"
 		},
 		{
 			"name": "Nightwalker",
@@ -15719,7 +15849,8 @@
 				"desert",
 				"swamp",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/670/nightwalker.mp3"
 		},
 		{
 			"name": "Skull Lord",
@@ -15912,7 +16043,8 @@
 				"desert",
 				"swamp",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/690/skull-lord.mp3"
 		},
 		{
 			"name": "Sword Wraith Commander",
@@ -16008,7 +16140,8 @@
 			"environment": [
 				"grassland",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/703/sword-wraith-commander.mp3"
 		},
 		{
 			"name": "Sword Wraith Warrior",
@@ -16083,7 +16216,8 @@
 			"environment": [
 				"grassland",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/704/sword-wraith-warrior.mp3"
 		},
 		{
 			"name": "Vampiric Mist",
@@ -16190,7 +16324,8 @@
 				"swamp",
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/713/vampiric-mist.mp3"
 		}
 	]
 }

@@ -167,7 +167,7 @@ class Board {
 
 	doLoadIndex (fnCallback) {
 		elasticlunr.clearStopWords();
-		DataUtil.loadJSON("data/bookref-dmscreen-index.json").then((data) => {
+		EntryRenderer.item.populatePropertyAndTypeReference().then(() => DataUtil.loadJSON("data/bookref-dmscreen-index.json")).then((data) => {
 			this.availRules.ALL = elasticlunr(function () {
 				this.addField("b");
 				this.addField("s");
@@ -218,6 +218,7 @@ class Board {
 			BrewUtil.getSearchIndex().forEach(d => {
 				if (hasBadCat(d) || fromDeepIndex(d)) return;
 				d.cf = Parser.pageCategoryToFull(d.c);
+				d.cf = d.c === Parser.CAT_ID_CREATURE ? "Creature" : Parser.pageCategoryToFull(d.c);
 				this.availContent.ALL.addDoc(d);
 				this.availContent[d.cf].addDoc(d);
 			});
@@ -368,7 +369,9 @@ class Board {
 			} catch (e) {
 				// on error, purge saved data and reset
 				purgeSaved();
-				throw e;
+				setTimeout(() => {
+					throw e
+				});
 			}
 		}
 	}
@@ -751,7 +754,7 @@ class Panel {
 					PANEL_TYP_RULES,
 					meta,
 					$(`<div class="panel-content-wrapper-inner"><table class="stats">${it}</table></div>`),
-					"TODO"
+					rule.name || ""
 				);
 			}
 		);
@@ -1744,6 +1747,9 @@ class AddMenuImageTab extends AddMenuTab {
 								alert(`Failed to upload: ${JSON.parse(error.responseText).data.error}`);
 							} catch (e) {
 								alert("Failed to upload: Unknown error");
+								setTimeout(() => {
+									throw e
+								});
 							}
 							this.menu.pnl.doPopulate_Empty();
 						}
@@ -2083,7 +2089,10 @@ class InitiativeTracker {
 		const $wrpEntries = $(`<div class="dm-init-wrp-entries"/>`).appendTo($wrpTop);
 
 		const $wrpControls = $(`<div class="dm-init-wrp-controls"/>`).appendTo($wrpTracker);
-		const $btnAdd = $(`<div class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></div>`).appendTo($wrpControls);
+		const $wrpAddNext = $(`<div/>`).appendTo($wrpControls);
+		const $btnAdd = $(`<div class="btn btn-primary" style="margin-right: 7px;"><span class="glyphicon glyphicon-plus"></span></div>`).appendTo($wrpAddNext);
+		const $btnNext = $(`<div class="btn btn-primary" title="Next Turn"><span class="glyphicon glyphicon-step-forward"></span></div>`).appendTo($wrpAddNext);
+		$btnNext.on("click", () => setNextActive());
 		const $wrpSort = $(`<div/>`).appendTo($wrpControls);
 		const $btnSortAlpha = $(`<div title="Sort Alphabetically" class="btn btn-default" style="margin-right: 7px;"><span class="glyphicon glyphicon-sort-by-alphabet"></span></div>`).appendTo($wrpSort);
 		$btnSortAlpha.on("click", () => {
@@ -2106,6 +2115,8 @@ class InitiativeTracker {
 
 		$btnAdd.on("click", () => {
 			makeRow();
+			doSort(sort);
+			checkSetActive();
 		});
 
 		$wrpTracker.data("getState", () => {
@@ -2113,7 +2124,8 @@ class InitiativeTracker {
 				return {
 					n: $(e).find(`input.name`).val(),
 					h: $(e).find(`input.hp`).val(),
-					i: $(e).find(`input.score`).val()
+					i: $(e).find(`input.score`).val(),
+					a: 0 + $(e).hasClass(`dm-init-row-active`)
 				}
 			}).get();
 			return {
@@ -2124,23 +2136,63 @@ class InitiativeTracker {
 		});
 
 		(state.r || []).forEach(r => {
-			makeRow(r.n, r.h, r.i);
+			makeRow(r.n, r.h, r.i, r.a);
 		});
+		checkSetActive();
 
-		function makeRow (name = "", hp = "", init = "") {
-			const $wrpRow = $(`<div class="dm-init-row"/>`).appendTo($wrpEntries);
+		function setNextActive () {
+			const $rows = $wrpEntries.find(`.dm-init-row`);
+			const ix = $rows.index($rows.filter(`.dm-init-row-active`).get(0));
+			$($rows.get(ix)).removeClass(`dm-init-row-active`);
+			const nxt = $rows.get(ix + 1);
+			if (nxt) {
+				$(nxt).addClass(`dm-init-row-active`);
+			} else {
+				$($rows.get(0)).addClass(`dm-init-row-active`);
+			}
+		}
+
+		function makeRow (name = "", hp = "", init = "", isActive) {
+			const $wrpRow = $(`<div class="dm-init-row ${isActive ? "dm-init-row-active" : ""}"/>`).appendTo($wrpEntries);
 			const $iptName = $(`<input class="form-control input-sm name" placeholder="Name" value="${name}">`).appendTo($wrpRow);
 			$iptName.on("change", () => {
 				doSort(ALPHA);
 			});
 			const $wrpRhs = $(`<div class="dm-init-row-rhs"/>`).appendTo($wrpRow);
-			const $iptHp = $(`<input class="form-control input-sm hp" placeholder="HP" value="${hp}">`).appendTo($wrpRhs);
+			let curHp = hp;
+			const $iptHp = $(`<input class="form-control input-sm hp" placeholder="HP" value="${curHp}">`).appendTo($wrpRhs);
+			$iptHp.on("change", () => {
+				const nxt = $iptHp.val().trim();
+				if (nxt && /^[-+0-9]*$/.exec(curHp) && /^[-+0-9]*$/.exec(nxt)) {
+					const m = /^[+-]\d+/.exec(nxt);
+					const parts = nxt.split(/([+-]\d+)/).filter(it => it);
+					let temp = 0;
+					parts.forEach(p => temp += Number(p));
+					if (m) {
+						curHp = Number(curHp) + temp;
+					} else if (/[-+]/.exec(nxt)) {
+						curHp = temp;
+					} else {
+						curHp = Number(nxt);
+					}
+					$iptHp.val(curHp);
+				}
+			});
 			const $iptScore = $(`<input class="form-control input-sm score" type="number" value="${init}">`).appendTo($wrpRhs);
 			$iptScore.on("change", () => {
 				doSort(NUM);
 			});
 			const $btnDel = $(`<div class="btn btn-danger btn-xs" style="line-height: 26px;"><span class="glyphicon glyphicon-trash"/></div>`).appendTo($wrpRhs);
-			$btnDel.on("click", () => $wrpRow.remove())
+			$btnDel.on("click", () => {
+				if ($wrpRow.hasClass(`dm-init-row-active`) && $wrpEntries.find(`.dm-init-row`).length > 1) {
+					setNextActive();
+				}
+				$wrpRow.remove();
+			});
+		}
+
+		function checkSetActive () {
+			if ($wrpEntries.find(`.dm-init-row`).length && !$wrpEntries.find(`.dm-init-row-active`).length) $($wrpEntries.find(`.dm-init-row`).get(0)).addClass(`dm-init-row-active`);
 		}
 
 		function doSort (mode) {

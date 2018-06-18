@@ -37,6 +37,10 @@ function getAllImmRest (toParse, key) {
 	return out;
 }
 
+function basename (str, sep) {
+	return str.substr(str.lastIndexOf(sep) + 1);
+}
+
 const meta = {};
 
 function loadMeta (nextFunction) {
@@ -416,6 +420,12 @@ function addMonsters (data) {
 	ListUtil.bindDownloadButton();
 	ListUtil.bindUploadButton(sublistFuncPreload);
 	ListUtil.loadState();
+
+	$(`body`).on("click", ".btn-mon-name-pronounce", function () {
+		const audio = $(this).find(`.mon-name-pronounce`)[0];
+		audio.currentTime = 0;
+		audio.play();
+	});
 }
 
 function sublistFuncPreload (json, funcOnload) {
@@ -532,9 +542,20 @@ function loadhash (id) {
 		let sourceFull = Parser.sourceJsonToFull(mon.source);
 		const type = mon._pTypes.asText;
 
+		function getPronunciationButton () {
+			return `<span class="btn btn-xs btn-default btn-mon-name-pronounce">
+				<span class="glyphicon glyphicon-volume-up mon-name-pronounce-icon"></span>
+				<audio class="mon-name-pronounce">
+				   <source src="${mon.soundClip}" type="audio/mpeg">
+				   <source src="audio/${basename(mon.soundClip, '/')}" type="audio/mpeg">
+				</audio>
+			</span>`;
+		}
+
 		const imgLink = mon.tokenURL || UrlUtil.link(`img/${source}/${name.replace(/"/g, "")}.png`);
 		$content.find("th.name").html(
 			`<span class="stats-name">${name}</span>
+			${mon.soundClip ? getPronunciationButton() : ""}
 		<span class="stats-source source${source}" title="${sourceFull}${EntryRenderer.utils.getSourceSubText(mon)}">${source}</span>
 		<a href="${imgLink}" target="_blank">
 			<img src="${imgLink}" class="token" onerror="imgError(this)">

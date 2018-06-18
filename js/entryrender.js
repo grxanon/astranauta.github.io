@@ -272,7 +272,7 @@ function EntryRenderer () {
 				// list items
 				case "item":
 					renderPrefix();
-					this.recursiveEntryRender(entry.entry, textStack, depth, {prefix: `<p><span class="bold">${entry.name}</span> `, suffix: "</p>"});
+					this.recursiveEntryRender(entry.entry, textStack, depth, {prefix: `<p><span class="bold list-item-title">${entry.name}</span> `, suffix: "</p>"});
 					renderSuffix();
 					break;
 				case "itemSpell":
@@ -355,7 +355,7 @@ function EntryRenderer () {
 
 			let autoMkRoller = false;
 			if (entry.colLabels) {
-				autoMkRoller = entry.colLabels.length === 2 && RollerUtil.isRollCol(entry.colLabels[0]);
+				autoMkRoller = entry.colLabels.length >= 2 && RollerUtil.isRollCol(entry.colLabels[0]);
 				if (autoMkRoller) {
 					// scan the first column to ensure all rollable
 					const notRollable = entry.rows.find(it => {
@@ -549,7 +549,7 @@ function EntryRenderer () {
 
 		function _getStyleClass (source) {
 			const outList = [];
-			if (isNonstandardSource(source)) outList.push(CLSS_NON_STANDARD_SOURCE);
+			if (SourceUtil.isNonstandardSource(source)) outList.push(CLSS_NON_STANDARD_SOURCE);
 			if (BrewUtil.hasSourceJson(source)) outList.push(CLSS_HOMEBREW_SOURCE);
 			return outList.join(" ");
 		}
@@ -562,7 +562,7 @@ function EntryRenderer () {
 				if (s.charAt(0) === "@") {
 					const [tag, text] = EntryRenderer.splitFirstSpace(s);
 
-					if (tag === "@bold" || tag === "@b" || tag === "@italic" || tag === "@i" || tag === "@note" || tag === "@skill" || tag === "@action") {
+					if (tag === "@bold" || tag === "@b" || tag === "@italic" || tag === "@i" || tag === "@strike" || tag === "@s" || tag === "@note" || tag === "@skill" || tag === "@action") {
 						switch (tag) {
 							case "@b":
 							case "@bold":
@@ -575,6 +575,12 @@ function EntryRenderer () {
 								textStack.push(`<i>`);
 								self.recursiveEntryRender(text, textStack, depth);
 								textStack.push(`</i>`);
+								break;
+							case "@s":
+							case "@strike":
+								textStack.push(`<s>`);
+								self.recursiveEntryRender(text, textStack, depth);
+								textStack.push(`</s>`);
 								break;
 							case "@note":
 								textStack.push(`<i class="text-muted">`);
@@ -810,6 +816,15 @@ function EntryRenderer () {
 								fauxEntry.href.hover = {
 									page: UrlUtil.PG_PSIONICS,
 									source: source || SRC_UATMC
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
+							case "@object":
+								fauxEntry.href.path = "objects.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_DMG;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_OBJECTS,
+									source: source || SRC_DMG
 								};
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
@@ -1453,13 +1468,14 @@ EntryRenderer.deity = {
 	getCompactRenderedString: (deity) => {
 		const renderer = EntryRenderer.getDefaultRenderer();
 		return `
-			${EntryRenderer.utils.getNameTr(deity, true, "", `, ${deity.title.toTitleCase()}`)}
+			${EntryRenderer.utils.getNameTr(deity, true, "", deity.title ? `, ${deity.title.toTitleCase()}` : "")}
 			<tr><td colspan="6">
 				<div class="summary-flexer">
 					<p><b>Pantheon:</b> ${deity.pantheon}</p>
 					${deity.category ? `<p><b>Category:</b> ${deity.category}</p>` : ""}
 					<p><b>Alignment:</b> ${deity.alignment.map(a => Parser.alignmentAbvToFull(a)).join(" ")}</p>
 					<p><b>Domains:</b> ${deity.domains.join(", ")}</p>
+					${deity.province ? `<p><b>Province:</b> ${deity.province}</p>` : ""}
 					${deity.altNames ? `<p><b>Alternate Names:</b> ${deity.altNames.join(", ")}</p>` : ""}
 					<p><b>Symbol:</b> ${deity.symbol}</p>
 				</div>
@@ -1795,12 +1811,19 @@ EntryRenderer.item = {
 			"entries": t.entries
 		};
 	},
+	_addBrewPropertiesAndTypes () {
+		BrewUtil.addBrewData((brew) => {
+			(brew.itemProperty || []).forEach(p => EntryRenderer.item._addProperty(p));
+			(brew.itemType || []).forEach(t => EntryRenderer.item._addType(t));
+		});
+	},
 	/**
 	 * Runs callback with itemList as argument
 	 * @param callback
 	 * @param urls optional overrides for default URLs
+	 * @addGroups whether item groups should be included
 	 */
-	buildList: function (callback, urls) {
+	buildList: function (callback, urls, addGroups) {
 		if (EntryRenderer.item._builtList) return callback(EntryRenderer.item._builtList);
 
 		if (!urls) urls = {};
@@ -1817,6 +1840,7 @@ EntryRenderer.item = {
 
 		function addBasicItems (itemData) {
 			itemList = itemData.item;
+			if (addGroups) itemList = itemList.concat(itemData.itemGroup || []);
 			DataUtil.loadJSON(basicItemUrl).then(addVariants);
 		}
 
@@ -1825,6 +1849,7 @@ EntryRenderer.item = {
 			// Convert the property and type list JSONs into look-ups, i.e. use the abbreviation as a JSON property name
 			basicItemData.itemProperty.forEach(p => EntryRenderer.item._addProperty(p));
 			basicItemData.itemType.forEach(t => EntryRenderer.item._addType(t));
+			EntryRenderer.item._addBrewPropertiesAndTypes();
 			DataUtil.loadJSON(magicVariantUrl).then(mergeBasicItems);
 		}
 
@@ -1906,7 +1931,14 @@ EntryRenderer.item = {
 		if (item.entries === undefined) item.entries = [];
 		if (item.type && EntryRenderer.item._typeList[item.type]) for (let j = 0; j < EntryRenderer.item._typeList[item.type].entries.length; j++) item.entries.push(EntryRenderer.item._typeList[item.type].entries[j]);
 		if (item.property) {
-			for (let j = 0; j < item.property.length; j++) if (EntryRenderer.item._propertyList[item.property[j]].entries) for (let k = 0; k < EntryRenderer.item._propertyList[item.property[j]].entries.length; k++) item.entries.push(EntryRenderer.item._propertyList[item.property[j]].entries[k]);
+			item.property.forEach(p => {
+				if (!EntryRenderer.item._propertyList[p]) throw new Error(`Item property ${p} not found. You probably meant to load the property/type reference first; see \`EntryRenderer.item.populatePropertyAndTypeReference()\`.`);
+				if (EntryRenderer.item._propertyList[p].entries) {
+					EntryRenderer.item._propertyList[p].entries.forEach(e => {
+						item.entries.push(e);
+					})
+				}
+			});
 		}
 		// The following could be encoded in JSON, but they depend on more than one JSON property; maybe fix if really bored later
 		if (item.armor) {
@@ -1971,9 +2003,22 @@ EntryRenderer.item = {
 		}
 	},
 
-	promiseData: (urls) => {
+	promiseData: (urls, addGroups) => {
 		return new Promise((resolve, reject) => {
-			EntryRenderer.item.buildList((data) => resolve({item: data}), urls);
+			EntryRenderer.item.buildList((data) => resolve({item: data}), urls, addGroups);
+		});
+	},
+
+	populatePropertyAndTypeReference: () => {
+		return DataUtil.loadJSON(`${EntryRenderer.getDefaultRenderer().baseUrl}data/basicitems.json`).then(data => {
+			try {
+				data.itemProperty.forEach(p => EntryRenderer.item._addProperty(p));
+				data.itemType.forEach(t => EntryRenderer.item._addType(t));
+				EntryRenderer.item._addBrewPropertiesAndTypes();
+				Promise.resolve();
+			} catch (e) {
+				Promise.reject(e);
+			}
 		});
 	}
 };
@@ -2223,7 +2268,7 @@ EntryRenderer.hover = {
 							EntryRenderer.hover._addToCache(page, item.source, itemHash, item)
 						});
 						callbackFn();
-					});
+					}, {}, true);
 				} else {
 					callbackFn();
 				}
@@ -2820,6 +2865,9 @@ EntryRenderer.dice = {
 		function attemptToGetTitle () {
 			// try use table caption
 			let titleMaybe = $(ele).closest(`table`).find(`caption`).text();
+			if (titleMaybe) return titleMaybe;
+			// ty use list item title
+			titleMaybe = $(ele).parent().children(`.list-item-title`).text();
 			if (titleMaybe) return titleMaybe;
 			// try use stats table name row
 			titleMaybe = $(ele).closest(`table.stats`).children(`tbody`).first().children(`tr`).first().find(`th.name .stats-name`).text();

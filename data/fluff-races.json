@@ -793,7 +793,7 @@
 					"type": "entries",
 					"name": "Infernal Bloodline",
 					"entries": [
-						"Tieflings are derived from human bloodlines, and in the broadest possible sense, they still look human. However, their infernal heritage has left a clear imprint on their appearance. Tieflings have large horns that take any of a variety of shapes - some have curling horns like a ram, others have straight and tall horns like a gazelle's, and some spiral upward like an antelopes' horns. They have thick tails, four to live feet long, which lash or coil around their legs when they get upset or nervous. Their canine teeth are sharply pointed, and their eyes are solid colors black, red, white, silver, or gold with no visible sclera or pupil. Their skin tones cover the full range of human coloration, but also include various shades of red. Their hair, cascading down from behind their horns, is usually dark, from black or brown to dark red, blue, or purple."
+						"Tieflings are derived from human bloodlines, and in the broadest possible sense, they still look human. However, their infernal heritage has left a clear imprint on their appearance. Tieflings have large horns that take any of a variety of shapes - some have curling horns like a ram, others have straight and tall horns like a gazelle's, and some spiral upward like an antelopes' horns. They have thick tails, four to five feet long, which lash or coil around their legs when they get upset or nervous. Their canine teeth are sharply pointed, and their eyes are solid colors black, red, white, silver, or gold with no visible sclera or pupil. Their skin tones cover the full range of human coloration, but also include various shades of red. Their hair, cascading down from behind their horns, is usually dark, from black or brown to dark red, blue, or purple."
 					]
 				},
 				{
@@ -2047,7 +2047,7 @@
 						["1", "Everything dies eventually. Why bother building anything that is supposedly meant to last?"],
 						["2", "Nothing matters to you, and you allow others to guide your actions."],
 						["3", "Your needs come first. In winter, all must watch out for themselves."],
-						["4", "You speak only to point out the flaws in others’ plans."]
+						["4", "You speak only to point out the flaws in others' plans."]
 					]
 				},
 				{
@@ -2064,7 +2064,7 @@
 						["1", "Every day is the greatest day of your life."],
 						["2", "You approach everything with enthusiasm, even the most mundane chores."],
 						["3", "You love music and song. You supply a tune yourself if no one else can."],
-						["4", "You can’t stay still."]
+						["4", "You can't stay still."]
 					]
 				},
 				{
@@ -2097,7 +2097,7 @@
 						["1", "You believe that direct confrontation is the best way to solve problems."],
 						["2", "Overwhelming force can accomplish almost anything. The tougher the problem, the more force you apply."],
 						["3", "You stand tall and strong so that others can lean on you."],
-						["4", "You maintain an intimidating front. It’s better to prevent fights with a show of force than to harm others."]
+						["4", "You maintain an intimidating front. It's better to prevent fights with a show of force than to harm others."]
 					]
 				},
 				{
@@ -2214,7 +2214,7 @@
 			"name": "Gith (Githzerai)",
 			"source": "MTF",
 			"entries": [
-				"In their fortresses within Limbo, the githzerai hone their minds to a razor’s edge."
+				"In their fortresses within Limbo, the githzerai hone their minds to a razor's edge."
 			]
 		}
 	],

@@ -66,7 +66,8 @@
 			"page": 12,
 			"environment": [
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/7/aarakocra.mp3"
 		},
 		{
 			"name": "Aboleth",
@@ -176,7 +177,8 @@
 			"page": 13,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/10/aboleth.mp3"
 		},
 		{
 			"name": "Abominable Yeti",
@@ -262,7 +264,8 @@
 			"page": 306,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/11/abominable-yeti.mp3"
 		},
 		{
 			"name": "Acolyte",
@@ -332,7 +335,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/12/acolyte.mp3"
 		},
 		{
 			"name": "Adult Black Dragon",
@@ -452,7 +456,8 @@
 			"page": 88,
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/53/black-dragon.mp3"
 		},
 		{
 			"name": "Adult Blue Dracolich",
@@ -583,7 +588,8 @@
 			"page": 84,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/58/blue-dracolich.mp3"
 		},
 		{
 			"name": "Adult Blue Dragon",
@@ -698,7 +704,8 @@
 			"environment": [
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/60/blue-dragon.mp3"
 		},
 		{
 			"name": "Adult Brass Dragon",
@@ -794,7 +801,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 (13d6) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 45 ({@dice 13d6}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -830,7 +837,8 @@
 			"page": 105,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/68/brass-dragon.mp3"
 		},
 		{
 			"name": "Adult Bronze Dragon",
@@ -931,7 +939,7 @@
 								{
 									"type": "item",
 									"name": "Lightning Breath.",
-									"entry": "The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 ({@dice 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -974,7 +982,8 @@
 			"page": 108,
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/71/bronze-dragon.mp3"
 		},
 		{
 			"name": "Adult Copper Dragon",
@@ -1069,7 +1078,7 @@
 								{
 									"type": "item",
 									"name": "Acid Breath.",
-									"entry": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 ({@dice 12d8}) acid damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -1105,7 +1114,8 @@
 			"page": 112,
 			"environment": [
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/100/copper-dragon.mp3"
 		},
 		{
 			"name": "Adult Gold Dragon",
@@ -1207,7 +1217,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 (12d10) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 60-foot cone. Each creature in that area must make a DC 21 Dexterity saving throw, taking 66 ({@dice 12d10}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -1251,7 +1261,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/236/gold-dragon.mp3"
 		},
 		{
 			"name": "Adult Green Dragon",
@@ -1377,7 +1388,8 @@
 			"page": 94,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/243/green-dragon.mp3"
 		},
 		{
 			"name": "Adult Red Dragon",
@@ -1492,7 +1504,8 @@
 			"environment": [
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/408/red-dragon.mp3"
 		},
 		{
 			"name": "Adult Silver Dragon",
@@ -1587,7 +1600,7 @@
 								{
 									"type": "item",
 									"name": "Cold Breath.",
-									"entry": "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 (13d8) cold damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales an icy blast in a 60-foot cone. Each creature in that area must make a DC 20 Constitution saving throw, taking 58 ({@dice 13d8}) cold damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -1631,7 +1644,8 @@
 			"environment": [
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/448/silver-dragon.mp3"
 		},
 		{
 			"name": "Adult White Dragon",
@@ -1752,7 +1766,8 @@
 			"page": 101,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/533/white-dragon.mp3"
 		},
 		{
 			"name": "Air Elemental",
@@ -1841,7 +1856,8 @@
 			"environment": [
 				"mountain",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/13/air-elemental.mp3"
 		},
 		{
 			"name": "Allosaurus",
@@ -1895,7 +1911,8 @@
 			"page": 79,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/15/allosaurus.mp3"
 		},
 		{
 			"name": "Ancient Black Dragon",
@@ -2015,7 +2032,8 @@
 			"page": 87,
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/53/black-dragon.mp3"
 		},
 		{
 			"name": "Ancient Blue Dragon",
@@ -2130,7 +2148,8 @@
 			"environment": [
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/60/blue-dragon.mp3"
 		},
 		{
 			"name": "Ancient Brass Dragon",
@@ -2226,7 +2245,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 21 Dexterity saving throw, taking 56 ({@dice 16d6}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -2269,7 +2288,8 @@
 			"page": 104,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/68/brass-dragon.mp3"
 		},
 		{
 			"name": "Ancient Bronze Dragon",
@@ -2370,7 +2390,7 @@
 								{
 									"type": "item",
 									"name": "Lightning Breath.",
-									"entry": "The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity saving throw, taking 88 ({@dice 16d10}) lightning damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -2413,7 +2433,8 @@
 			"page": 107,
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/71/bronze-dragon.mp3"
 		},
 		{
 			"name": "Ancient Copper Dragon",
@@ -2508,7 +2529,7 @@
 								{
 									"type": "item",
 									"name": "Acid Breath.",
-									"entry": "The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 63 (14d8) acid damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales acid in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity saving throw, taking 63 ({@dice 14d8}) acid damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -2551,7 +2572,8 @@
 			"page": 110,
 			"environment": [
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/100/copper-dragon.mp3"
 		},
 		{
 			"name": "Ancient Gold Dragon",
@@ -2653,7 +2675,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 (13d10) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 90-foot cone. Each creature in that area must make a DC 24 Dexterity saving throw, taking 71 ({@dice 13d10}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -2697,7 +2719,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/236/gold-dragon.mp3"
 		},
 		{
 			"name": "Ancient Green Dragon",
@@ -2823,7 +2846,8 @@
 			"page": 93,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/243/green-dragon.mp3"
 		},
 		{
 			"name": "Ancient Red Dragon",
@@ -2938,7 +2962,8 @@
 			"environment": [
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/408/red-dragon.mp3"
 		},
 		{
 			"name": "Ancient Silver Dragon",
@@ -3033,7 +3058,7 @@
 								{
 									"type": "item",
 									"name": "Cold Breath.",
-									"entry": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 ({@dice 15d8}) cold damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -3077,7 +3102,8 @@
 			"environment": [
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/448/silver-dragon.mp3"
 		},
 		{
 			"name": "Ancient White Dragon",
@@ -3198,7 +3224,8 @@
 			"page": 100,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/533/white-dragon.mp3"
 		},
 		{
 			"name": "Androsphinx",
@@ -3374,7 +3401,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/16/androsphinx.mp3"
 		},
 		{
 			"name": "Animated Armor",
@@ -3443,7 +3471,8 @@
 					]
 				}
 			],
-			"page": 19
+			"page": 19,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/17/animated-armor.mp3"
 		},
 		{
 			"name": "Ankheg",
@@ -3489,7 +3518,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/18/ankeg.mp3"
 		},
 		{
 			"name": "Ankylosaurus",
@@ -3526,7 +3556,8 @@
 			"page": 79,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/557/ankylosaurus.mp3"
 		},
 		{
 			"name": "Ape",
@@ -3580,7 +3611,8 @@
 			"page": 317,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/20/ape.mp3"
 		},
 		{
 			"name": "Arcanaloth",
@@ -3783,7 +3815,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/22/arcanaloth.mp3"
 		},
 		{
 			"name": "Archmage",
@@ -3942,7 +3975,8 @@
 						"* The archmage casts these spells on itself before combat."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/25/archmage.mp3"
 		},
 		{
 			"name": "Assassin",
@@ -4031,7 +4065,8 @@
 					]
 				}
 			],
-			"page": 343
+			"page": 343,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/26/assassin.mp3"
 		},
 		{
 			"name": "Awakened Shrub",
@@ -4083,7 +4118,8 @@
 			"page": 317,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/28/awakened-shrub.mp3"
 		},
 		{
 			"name": "Awakened Tree",
@@ -4136,7 +4172,8 @@
 			"page": 317,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/29/awakened-tree.mp3"
 		},
 		{
 			"name": "Axe Beak",
@@ -4174,7 +4211,8 @@
 			"environment": [
 				"grassland",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/30/axe-beak.mp3"
 		},
 		{
 			"name": "Azer",
@@ -4240,7 +4278,8 @@
 					]
 				}
 			],
-			"page": 22
+			"page": 22,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/31/azer.mp3"
 		},
 		{
 			"name": "Baboon",
@@ -4287,7 +4326,8 @@
 			"environment": [
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/33/baboon.mp3"
 		},
 		{
 			"name": "Badger",
@@ -4334,7 +4374,8 @@
 			"page": 318,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/34/badger.mp3"
 		},
 		{
 			"name": "Balor",
@@ -4457,7 +4498,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/35/balor.mp3"
 		},
 		{
 			"name": "Bandit",
@@ -4507,7 +4549,8 @@
 					]
 				}
 			],
-			"page": 343
+			"page": 343,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/38/bandit.mp3"
 		},
 		{
 			"name": "Bandit Captain",
@@ -4580,7 +4623,8 @@
 					]
 				}
 			],
-			"page": 344
+			"page": 344,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/37/bandit-captain.mp3"
 		},
 		{
 			"name": "Banshee",
@@ -4685,7 +4729,8 @@
 			"environment": [
 				"forest",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/39/banshee.mp3"
 		},
 		{
 			"name": "Barbed Devil",
@@ -4794,7 +4839,8 @@
 					]
 				}
 			],
-			"page": 70
+			"page": 70,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/40/barbed-devil.mp3"
 		},
 		{
 			"name": "Barlgura",
@@ -4911,7 +4957,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/554/barlgura.mp3"
 		},
 		{
 			"name": "Basilisk",
@@ -4959,7 +5006,8 @@
 			"page": 24,
 			"environment": [
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/43/basilisk.mp3"
 		},
 		{
 			"name": "Bat",
@@ -5010,7 +5058,8 @@
 				}
 			],
 			"page": 318,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/44/bat.mp3"
 		},
 		{
 			"name": "Bearded Devil",
@@ -5107,7 +5156,8 @@
 					]
 				}
 			],
-			"page": 70
+			"page": 70,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/45/bearded-devil.mp3"
 		},
 		{
 			"name": "Behir",
@@ -5180,7 +5230,8 @@
 			"page": 25,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/46/behir.mp3"
 		},
 		{
 			"name": "Beholder",
@@ -5273,7 +5324,8 @@
 			"page": 28,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/48/beholder.mp3"
 		},
 		{
 			"name": "Beholder Zombie",
@@ -5346,7 +5398,8 @@
 			"page": 316,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/47/beholder-zombie.mp3"
 		},
 		{
 			"name": "Berserker",
@@ -5397,7 +5450,8 @@
 					]
 				}
 			],
-			"page": 344
+			"page": 344,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/49/berserker.mp3"
 		},
 		{
 			"name": "Black Bear",
@@ -5455,7 +5509,8 @@
 			"page": 318,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/51/black-bear.mp3"
 		},
 		{
 			"name": "Black Dragon Wyrmling",
@@ -5521,7 +5576,8 @@
 					]
 				}
 			],
-			"page": 88
+			"page": 88,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/52/black-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Black Pudding",
@@ -5602,7 +5658,8 @@
 			"page": 241,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/54/black-pudding.mp3"
 		},
 		{
 			"name": "Blink Dog",
@@ -5659,7 +5716,8 @@
 			"page": 318,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/56/blink-dog.mp3"
 		},
 		{
 			"name": "Blood Hawk",
@@ -5719,7 +5777,8 @@
 				"hill",
 				"coastal",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/57/blood-hawk.mp3"
 		},
 		{
 			"name": "Blue Dragon Wyrmling",
@@ -5777,7 +5836,8 @@
 					]
 				}
 			],
-			"page": 91
+			"page": 91,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/59/blue-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Blue Slaad",
@@ -5862,7 +5922,8 @@
 						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/61/blue-slaad.mp3"
 		},
 		{
 			"name": "Boar",
@@ -5915,7 +5976,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/62/boar.mp3"
 		},
 		{
 			"name": "Bone Devil",
@@ -6011,7 +6073,8 @@
 					]
 				}
 			],
-			"page": 71
+			"page": 71,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/65/bone-devil.mp3"
 		},
 		{
 			"name": "Bone Devil Polearm",
@@ -6199,7 +6262,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/66/bone-naga.mp3"
 		},
 		{
 			"name": "Bone Naga (Spirit)",
@@ -6285,7 +6349,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/66/bone-naga.mp3"
 		},
 		{
 			"name": "Brass Dragon Wyrmling",
@@ -6347,7 +6412,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 ({@dice 4d6}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -6359,7 +6424,8 @@
 					]
 				}
 			],
-			"page": 106
+			"page": 106,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/67/brass-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Bronze Dragon Wyrmling",
@@ -6429,7 +6495,7 @@
 								{
 									"type": "item",
 									"name": "Lightning Breath.",
-									"entry": "The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 ({@dice 3d10}) lightning damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -6441,7 +6507,8 @@
 					]
 				}
 			],
-			"page": 109
+			"page": 109,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/70/bronze-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Brown Bear",
@@ -6504,7 +6571,8 @@
 				"forest",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/72/brown-bear.mp3"
 		},
 		{
 			"name": "Bugbear",
@@ -6575,7 +6643,8 @@
 				"underdark",
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/74/bugbear.mp3"
 		},
 		{
 			"name": "Bugbear Chief",
@@ -6659,7 +6728,8 @@
 				"underdark",
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/73/bugbear-chief.mp3"
 		},
 		{
 			"name": "Bulette",
@@ -6717,7 +6787,8 @@
 				"mountain",
 				"grassland",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/75/bulette.mp3"
 		},
 		{
 			"name": "Bullywug",
@@ -6803,7 +6874,8 @@
 			"page": 35,
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/76/bullywug.mp3"
 		},
 		{
 			"name": "Cambion",
@@ -6916,7 +6988,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/77/cambion.mp3"
 		},
 		{
 			"name": "Camel",
@@ -6953,7 +7026,8 @@
 			"page": 320,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/78/camel.mp3"
 		},
 		{
 			"name": "Carrion Crawler",
@@ -7021,7 +7095,8 @@
 			"page": 37,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/79/carrior-crawler.mp3"
 		},
 		{
 			"name": "Cat",
@@ -7075,7 +7150,8 @@
 				"forest",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/80/cat.mp3"
 		},
 		{
 			"name": "Cave Bear",
@@ -7137,7 +7213,8 @@
 			"page": 334,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/82/cave-bear.mp3"
 		},
 		{
 			"name": "Centaur",
@@ -7208,7 +7285,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/84/centaur.mp3"
 		},
 		{
 			"name": "Chain Devil",
@@ -7308,7 +7386,8 @@
 					]
 				}
 			],
-			"page": 72
+			"page": 72,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/85/chain-devil.mp3"
 		},
 		{
 			"name": "Chasme",
@@ -7400,7 +7479,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/87/chasme.mp3"
 		},
 		{
 			"name": "Chimera",
@@ -7471,7 +7551,8 @@
 				"mountain",
 				"grassland",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/88/chimera.mp3"
 		},
 		{
 			"name": "Chuul",
@@ -7547,7 +7628,8 @@
 			"page": 40,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/91/chuul.mp3"
 		},
 		{
 			"name": "Clay Golem",
@@ -7648,7 +7730,8 @@
 					]
 				}
 			],
-			"page": 168
+			"page": 168,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/556/clay-golem.mp3"
 		},
 		{
 			"name": "Cloaker",
@@ -7738,7 +7821,8 @@
 			"page": 41,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/92/cloaker.mp3"
 		},
 		{
 			"name": "Cloud Giant",
@@ -7870,7 +7954,8 @@
 			],
 			"environment": [
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/94/cloud-giant.mp3"
 		},
 		{
 			"name": "Cockatrice",
@@ -7909,7 +7994,8 @@
 			"page": 42,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/95/cockatrice.mp3"
 		},
 		{
 			"name": "Commoner",
@@ -7949,7 +8035,8 @@
 					]
 				}
 			],
-			"page": 345
+			"page": 345,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/96/commoner.mp3"
 		},
 		{
 			"name": "Constrictor Snake",
@@ -7997,7 +8084,8 @@
 				"forest",
 				"swamp",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/98/constrictor-snake.mp3"
 		},
 		{
 			"name": "Copper Dragon Wyrmling",
@@ -8059,7 +8147,7 @@
 								{
 									"type": "item",
 									"name": "Acid Breath.",
-									"entry": "The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 ({@dice 4d8}) acid damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -8071,7 +8159,8 @@
 					]
 				}
 			],
-			"page": 111
+			"page": 111,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/99/copper-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Couatl",
@@ -8190,7 +8279,8 @@
 				"forest",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/101/couatl.mp3"
 		},
 		{
 			"name": "Crab",
@@ -8240,7 +8330,8 @@
 			"page": 320,
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/104/crab.mp3"
 		},
 		{
 			"name": "Crawling Claw",
@@ -8292,7 +8383,8 @@
 					]
 				}
 			],
-			"page": 44
+			"page": 44,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/106/crawling-claw.mp3"
 		},
 		{
 			"name": "Crocodile",
@@ -8342,7 +8434,8 @@
 			"environment": [
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/107/crocodile.mp3"
 		},
 		{
 			"name": "Cult Fanatic",
@@ -8437,7 +8530,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/108/cult-fanatic.mp3"
 		},
 		{
 			"name": "Cultist",
@@ -8493,7 +8587,8 @@
 					]
 				}
 			],
-			"page": 345
+			"page": 345,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/109/cultist.mp3"
 		},
 		{
 			"name": "Cyclops",
@@ -8557,7 +8652,8 @@
 				"hill",
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/110/cyclops.mp3"
 		},
 		{
 			"name": "Dao",
@@ -8681,7 +8777,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/111/dao.mp3"
 		},
 		{
 			"name": "Darkmantle",
@@ -8745,7 +8842,8 @@
 			"page": 46,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/114/darkmantle.mp3"
 		},
 		{
 			"name": "Death Dog",
@@ -8802,7 +8900,8 @@
 			"page": 321,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/115/death-dog.mp3"
 		},
 		{
 			"name": "Death Knight",
@@ -8938,7 +9037,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/117/death-knight.mp3"
 		},
 		{
 			"name": "Death Slaad",
@@ -9074,7 +9174,8 @@
 						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/118/death-slaad.mp3"
 		},
 		{
 			"name": "Death Tyrant",
@@ -9178,7 +9279,8 @@
 			"page": 29,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/119/death-tyrant.mp3"
 		},
 		{
 			"name": "Deep Gnome (Svirfneblin)",
@@ -9266,7 +9368,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/472/svirfneblin.mp3"
 		},
 		{
 			"name": "Deer",
@@ -9304,7 +9407,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/121/deer.mp3"
 		},
 		{
 			"name": "Demilich",
@@ -9440,7 +9544,8 @@
 					]
 				}
 			],
-			"page": 48
+			"page": 48,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/123/demilich.mp3"
 		},
 		{
 			"name": "Acererak Demilich",
@@ -9695,7 +9800,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/124/deva.mp3"
 		},
 		{
 			"name": "Dire Wolf",
@@ -9751,7 +9857,8 @@
 			"environment": [
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/127/dire-wolf.mp3"
 		},
 		{
 			"name": "Displacer Beast",
@@ -9810,7 +9917,8 @@
 			"page": 81,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/128/displacer-beast.mp3"
 		},
 		{
 			"name": "Djinni",
@@ -9923,7 +10031,8 @@
 			],
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/555/djinni.mp3"
 		},
 		{
 			"name": "Doppelganger",
@@ -10007,7 +10116,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/131/doppelganger.mp3"
 		},
 		{
 			"name": "Draft Horse",
@@ -10044,7 +10154,8 @@
 			"page": 321,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/133/draft-horse.mp3"
 		},
 		{
 			"name": "Dragon Turtle",
@@ -10125,7 +10236,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/134/dragon-turtle.mp3"
 		},
 		{
 			"name": "Dretch",
@@ -10196,7 +10308,8 @@
 					]
 				}
 			],
-			"page": 57
+			"page": 57,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/136/dretch.mp3"
 		},
 		{
 			"name": "Drider",
@@ -10302,7 +10415,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/137/drider.mp3"
 		},
 		{
 			"name": "Drider Spellcaster",
@@ -10552,7 +10666,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/141/drow.mp3"
 		},
 		{
 			"name": "Drow Elite Warrior",
@@ -10673,7 +10788,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/138/drow-elite-warrior.mp3"
 		},
 		{
 			"name": "Drow Mage",
@@ -10815,7 +10931,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/139/drow-mage.mp3"
 		},
 		{
 			"name": "Drow Priestess of Lolth",
@@ -10985,7 +11102,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/140/drow-priestess-of-lolth.mp3"
 		},
 		{
 			"name": "Druid",
@@ -11063,7 +11181,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/142/druid.mp3"
 		},
 		{
 			"name": "Dryad",
@@ -11156,7 +11275,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/143/dryad.mp3"
 		},
 		{
 			"name": "Duergar",
@@ -11236,7 +11356,8 @@
 			"page": 122,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/144/duergar.mp3"
 		},
 		{
 			"name": "Duodrone",
@@ -11300,7 +11421,8 @@
 					]
 				}
 			],
-			"page": 225
+			"page": 225,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/145/duodrone.mp3"
 		},
 		{
 			"name": "Dust Mephit",
@@ -11388,7 +11510,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/330/mephit.mp3"
 		},
 		{
 			"name": "Eagle",
@@ -11440,7 +11563,8 @@
 				"grassland",
 				"hill",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/147/eagle.mp3"
 		},
 		{
 			"name": "Earth Elemental",
@@ -11523,7 +11647,8 @@
 			"page": 124,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/148/earth-elemental.mp3"
 		},
 		{
 			"name": "Efreeti",
@@ -11631,7 +11756,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/149/efreeti.mp3"
 		},
 		{
 			"name": "Elephant",
@@ -11682,7 +11808,8 @@
 			"page": 322,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/151/elephant.mp3"
 		},
 		{
 			"name": "Elk",
@@ -11735,7 +11862,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/153/elk.mp3"
 		},
 		{
 			"name": "Empyrean",
@@ -11880,7 +12008,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/154/empyrean.mp3"
 		},
 		{
 			"name": "Erinyes",
@@ -11990,7 +12119,8 @@
 						"Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/156/erinyes.mp3"
 		},
 		{
 			"name": "Ettercap",
@@ -12082,7 +12212,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/157/ettercap.mp3"
 		},
 		{
 			"name": "Ettin",
@@ -12153,7 +12284,8 @@
 				"underdark",
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/158/ettin.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Blue)",
@@ -12260,7 +12392,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Green)",
@@ -12366,7 +12499,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Indigo)",
@@ -12474,7 +12608,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Orange)",
@@ -12578,7 +12713,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Red)",
@@ -12681,7 +12817,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Violet)",
@@ -12790,7 +12927,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Faerie Dragon (Yellow)",
@@ -12895,7 +13033,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/160/faerie-dragon.mp3"
 		},
 		{
 			"name": "Fire Elemental",
@@ -12984,7 +13123,8 @@
 			"page": 125,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/162/fire-elemental.mp3"
 		},
 		{
 			"name": "Fire Giant",
@@ -13075,7 +13215,8 @@
 			"environment": [
 				"underdark",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/164/fire-giant.mp3"
 		},
 		{
 			"name": "Fire Snake",
@@ -13151,7 +13292,8 @@
 			"page": 265,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/165/fire-snake.mp3"
 		},
 		{
 			"name": "Flameskull",
@@ -13277,7 +13419,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/168/flameskull.mp3"
 		},
 		{
 			"name": "Flesh Golem",
@@ -13378,7 +13521,8 @@
 					]
 				}
 			],
-			"page": 169
+			"page": 169,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/169/flesh-golem.mp3"
 		},
 		{
 			"name": "Flumph",
@@ -13453,7 +13597,8 @@
 			"page": 135,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/171/flumph.mp3"
 		},
 		{
 			"name": "Flying Snake",
@@ -13504,7 +13649,8 @@
 				"forest",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/172/flying-snake.mp3"
 		},
 		{
 			"name": "Flying Sword",
@@ -13573,7 +13719,8 @@
 					]
 				}
 			],
-			"page": 20
+			"page": 20,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/173/flying-sword.mp3"
 		},
 		{
 			"name": "Fomorian",
@@ -13636,7 +13783,8 @@
 			"page": 136,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/174/fomorian.mp3"
 		},
 		{
 			"name": "Frog",
@@ -13683,7 +13831,8 @@
 				}
 			],
 			"page": 322,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/175/frog.mp3"
 		},
 		{
 			"name": "Frost Giant",
@@ -13767,7 +13916,8 @@
 			"environment": [
 				"mountain",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/178/frost-giant.mp3"
 		},
 		{
 			"name": "Galeb Duhr",
@@ -13849,7 +13999,8 @@
 			"environment": [
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/179/galeb-duhr.mp3"
 		},
 		{
 			"name": "Gargoyle",
@@ -13929,7 +14080,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/180/gargoyle.mp3"
 		},
 		{
 			"name": "Gas Spore",
@@ -13997,7 +14149,8 @@
 			"page": 138,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/181/gas-spore.mp3"
 		},
 		{
 			"name": "Gelatinous Cube",
@@ -14069,7 +14222,8 @@
 			"page": 242,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/184/gelatinous-cube.mp3"
 		},
 		{
 			"name": "Ghast",
@@ -14137,7 +14291,8 @@
 				"underdark",
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/186/ghast.mp3"
 		},
 		{
 			"name": "Ghost",
@@ -14244,7 +14399,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/187/ghost.mp3"
 		},
 		{
 			"name": "Ghoul",
@@ -14295,7 +14451,8 @@
 				"underdark",
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/188/ghoul.mp3"
 		},
 		{
 			"name": "Giant Ape",
@@ -14349,7 +14506,8 @@
 			"page": 323,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/189/giant-ape.mp3"
 		},
 		{
 			"name": "Giant Badger",
@@ -14408,7 +14566,8 @@
 			"page": 323,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/190/giant-badger.mp3"
 		},
 		{
 			"name": "Giant Bat",
@@ -14462,7 +14621,8 @@
 			"environment": [
 				"underdark",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/191/giant-bat.mp3"
 		},
 		{
 			"name": "Giant Boar",
@@ -14515,7 +14675,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/192/giant-boar.mp3"
 		},
 		{
 			"name": "Giant Centipede",
@@ -14555,7 +14716,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/193/giant-centipede.mp3"
 		},
 		{
 			"name": "Giant Constrictor Snake",
@@ -14607,7 +14769,8 @@
 				"forest",
 				"swamp",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/194/giant-constrictor-snake.mp3"
 		},
 		{
 			"name": "Giant Crab",
@@ -14657,7 +14820,8 @@
 			"page": 324,
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/195/giant-crab.mp3"
 		},
 		{
 			"name": "Giant Crocodile",
@@ -14718,7 +14882,8 @@
 			"page": 324,
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/196/giant-crocodile.mp3"
 		},
 		{
 			"name": "Giant Eagle",
@@ -14784,7 +14949,8 @@
 				"grassland",
 				"hill",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/197/giant-eagle.mp3"
 		},
 		{
 			"name": "Giant Elk",
@@ -14842,7 +15008,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/198/giant-elk.mp3"
 		},
 		{
 			"name": "Giant Fire Beetle",
@@ -14888,7 +15055,8 @@
 			"page": 325,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/199/giant-fire-beetle.mp3"
 		},
 		{
 			"name": "Giant Frog",
@@ -14952,7 +15120,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/200/giant-frog.mp3"
 		},
 		{
 			"name": "Giant Goat",
@@ -15005,7 +15174,8 @@
 				"mountain",
 				"grassland",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/201/giant-goat.mp3"
 		},
 		{
 			"name": "Giant Hyena",
@@ -15056,7 +15226,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/202/giant-hyena.mp3"
 		},
 		{
 			"name": "Giant Lizard",
@@ -15122,7 +15293,8 @@
 				"swamp",
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/203/giant-lizard.mp3"
 		},
 		{
 			"name": "Giant Octopus",
@@ -15191,7 +15363,8 @@
 			"page": 326,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/204/giant-octopus.mp3"
 		},
 		{
 			"name": "Giant Owl",
@@ -15251,7 +15424,8 @@
 				"forest",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/205/giant-owl.mp3"
 		},
 		{
 			"name": "Giant Poisonous Snake",
@@ -15298,7 +15472,8 @@
 				"swamp",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/206/giant-poisonous-snake.mp3"
 		},
 		{
 			"name": "Giant Rat",
@@ -15353,7 +15528,8 @@
 				"forest",
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/207/giant-rat.mp3"
 		},
 		{
 			"name": "Giant Rat (Diseased)",
@@ -15444,7 +15620,8 @@
 			"page": 327,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/208/giant-scorpion.mp3"
 		},
 		{
 			"name": "Giant Sea Horse",
@@ -15496,7 +15673,8 @@
 			"page": 328,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/209/giant-sea-horse.mp3"
 		},
 		{
 			"name": "Giant Shark",
@@ -15551,7 +15729,8 @@
 			"page": 328,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/210/giant-shark.mp3"
 		},
 		{
 			"name": "Giant Spider",
@@ -15623,7 +15802,8 @@
 				"swamp",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/211/giant-spider.mp3"
 		},
 		{
 			"name": "Giant Toad",
@@ -15687,7 +15867,8 @@
 				"swamp",
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/213/giant-toad.mp3"
 		},
 		{
 			"name": "Giant Vulture",
@@ -15757,7 +15938,8 @@
 			"environment": [
 				"grassland",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/214/giant-vulture.mp3"
 		},
 		{
 			"name": "Giant Wasp",
@@ -15797,7 +15979,8 @@
 				"grassland",
 				"forest",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/215/giant-wasp.mp3"
 		},
 		{
 			"name": "Giant Weasel",
@@ -15849,7 +16032,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/216/giant-weasel.mp3"
 		},
 		{
 			"name": "Giant Wolf Spider",
@@ -15916,7 +16100,8 @@
 				"hill",
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/217/giant-wolf-spider.mp3"
 		},
 		{
 			"name": "Gibbering Mouther",
@@ -15984,7 +16169,8 @@
 			"page": 157,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/218/gibbering-mouther.mp3"
 		},
 		{
 			"name": "Githyanki Knight",
@@ -16059,7 +16245,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/220/githyanki-knight.mp3"
 		},
 		{
 			"name": "Githyanki Warrior",
@@ -16129,7 +16316,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/558/githyanki-warrior.mp3"
 		},
 		{
 			"name": "Githzerai Monk",
@@ -16213,7 +16401,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/221/githzerai-monk.mp3"
 		},
 		{
 			"name": "Githzerai Zerth",
@@ -16298,7 +16487,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/562/githzerai-zerth.mp3"
 		},
 		{
 			"name": "Glabrezu",
@@ -16416,7 +16606,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/223/glabrezu.mp3"
 		},
 		{
 			"name": "Gladiator",
@@ -16499,7 +16690,8 @@
 					]
 				}
 			],
-			"page": 346
+			"page": 346,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/224/gladiator.mp3"
 		},
 		{
 			"name": "Gnoll",
@@ -16567,7 +16759,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/230/gnoll.mp3"
 		},
 		{
 			"name": "Gnoll Fang of Yeenoghu",
@@ -16640,7 +16833,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/225/gnoll-fang-of-yeenoghu.mp3"
 		},
 		{
 			"name": "Gnoll Pack Lord",
@@ -16720,7 +16914,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/228/gnoll-pack-lord.mp3"
 		},
 		{
 			"name": "Goat",
@@ -16774,7 +16969,8 @@
 				"grassland",
 				"hill",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/232/goat.mp3"
 		},
 		{
 			"name": "Goblin",
@@ -16839,7 +17035,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/234/goblin.mp3"
 		},
 		{
 			"name": "Goblin Boss",
@@ -16918,7 +17115,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/233/goblin-boss.mp3"
 		},
 		{
 			"name": "Gold Dragon Wyrmling",
@@ -16988,7 +17186,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 ({@dice 4d10}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -17000,7 +17198,8 @@
 					]
 				}
 			],
-			"page": 115
+			"page": 115,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/235/gold-dragon-wyrmlin.mp3"
 		},
 		{
 			"name": "Gorgon",
@@ -17066,7 +17265,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/239/gorgon.mp3"
 		},
 		{
 			"name": "Goristro",
@@ -17092,7 +17292,7 @@
 			},
 			"str": 25,
 			"dex": 11,
-			"con": 15,
+			"con": 25,
 			"int": 6,
 			"wis": 13,
 			"cha": 14,
@@ -17180,7 +17380,8 @@
 					]
 				}
 			],
-			"page": 59
+			"page": 59,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/559/goristro.mp3"
 		},
 		{
 			"name": "Gray Ooze",
@@ -17256,7 +17457,8 @@
 			"page": 243,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/240/gray-ooze.mp3"
 		},
 		{
 			"name": "Gray Ooze (Psychic)",
@@ -17338,7 +17540,8 @@
 			"page": 243,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/569/psychic-gray-ooze.mp3"
 		},
 		{
 			"name": "Gray Slaad",
@@ -17476,7 +17679,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/241/gray-slaad.mp3"
 		},
 		{
 			"name": "Green Dragon Wyrmling",
@@ -17545,7 +17749,8 @@
 					]
 				}
 			],
-			"page": 95
+			"page": 95,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/242/green-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Green Hag",
@@ -17703,7 +17908,8 @@
 				"forest",
 				"swamp",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/244/green-hag.mp3"
 		},
 		{
 			"name": "Green Slaad",
@@ -17834,7 +18040,8 @@
 						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/245/green-slaad.mp3"
 		},
 		{
 			"name": "Grell",
@@ -17902,7 +18109,8 @@
 			"page": 172,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/246/grell.mp3"
 		},
 		{
 			"name": "Grick",
@@ -17972,7 +18180,8 @@
 			"environment": [
 				"underdark",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/248/grick.mp3"
 		},
 		{
 			"name": "Grick Alpha",
@@ -18048,7 +18257,8 @@
 			"environment": [
 				"underdark",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/247/grick-alpha.mp3"
 		},
 		{
 			"name": "Griffon",
@@ -18114,7 +18324,8 @@
 				"hill",
 				"coastal",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/249/griffon.mp3"
 		},
 		{
 			"name": "Grimlock",
@@ -18187,7 +18398,8 @@
 			"page": 175,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/250/grimlock.mp3"
 		},
 		{
 			"name": "Guard",
@@ -18230,7 +18442,8 @@
 					]
 				}
 			],
-			"page": 347
+			"page": 347,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/255/guard.mp3"
 		},
 		{
 			"name": "Guardian Naga",
@@ -18358,7 +18571,8 @@
 			"environment": [
 				"forest",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/256/guardian-naga.mp3"
 		},
 		{
 			"name": "Gynosphinx",
@@ -18517,7 +18731,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/257/gynosphinx.mp3"
 		},
 		{
 			"name": "Half-Ogre (Ogrillon)",
@@ -18571,7 +18786,8 @@
 				"urban",
 				"desert",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/261/half-ogre.mp3"
 		},
 		{
 			"name": "Half-Red Dragon Veteran",
@@ -18643,7 +18859,8 @@
 					]
 				}
 			],
-			"page": 180
+			"page": 180,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/263/half-red-dragon-veteran.mp3"
 		},
 		{
 			"name": "Harpy",
@@ -18706,7 +18923,8 @@
 				"forest",
 				"hill",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/264/harpy.mp3"
 		},
 		{
 			"name": "Hawk",
@@ -18753,7 +18971,8 @@
 				}
 			],
 			"page": 330,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/265/hawk.mp3"
 		},
 		{
 			"name": "Hell Hound",
@@ -18820,7 +19039,8 @@
 			"environment": [
 				"underdark",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/266/hell-hound.mp3"
 		},
 		{
 			"name": "Helmed Horror",
@@ -18905,7 +19125,8 @@
 					]
 				}
 			],
-			"page": 183
+			"page": 183,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/267/helmed-horror.mp3"
 		},
 		{
 			"name": "Hezrou",
@@ -19008,7 +19229,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/268/hezrou.mp3"
 		},
 		{
 			"name": "Hill Giant",
@@ -19069,7 +19291,7 @@
 							"name": "Squash",
 							"type": "entries",
 							"entries": [
-								"Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creature. Hit: 26 (6d6+5) bludgeoning damage, the giant lands prone in the target's space, and the target is grappled (escape DC 15). Until this grapple ends, the target is prone. The grapple ends early if the giant stands up."
+								"Melee Weapon Attack: +8 to hit, reach 5 ft., one Medium or Smaller creature. Hit: 26 ({@dice 6d6}+5) bludgeoning damage, the giant lands prone in the target's space, and the target is grappled (escape DC 15). Until this grapple ends, the target is prone. The grapple ends early if the giant stands up."
 							]
 						}
 					],
@@ -19082,7 +19304,8 @@
 			"page": 155,
 			"environment": [
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/269/hill-giant.mp3"
 		},
 		{
 			"name": "Hippogriff",
@@ -19145,7 +19368,8 @@
 				"mountain",
 				"grassland",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/270/hippogriff.mp3"
 		},
 		{
 			"name": "Hobgoblin",
@@ -19208,7 +19432,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/275/hobgoblin.mp3"
 		},
 		{
 			"name": "Hobgoblin Captain",
@@ -19283,7 +19508,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/271/hobgoblin-captain.mp3"
 		},
 		{
 			"name": "Hobgoblin Warlord",
@@ -19377,7 +19603,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/274/hobgoblin-warlord.mp3"
 		},
 		{
 			"name": "Homunculus",
@@ -19429,7 +19656,8 @@
 					]
 				}
 			],
-			"page": 188
+			"page": 188,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/276/homunculus.mp3"
 		},
 		{
 			"name": "Hook Horror",
@@ -19492,7 +19720,8 @@
 			"page": 189,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/277/hook-horror.mp3"
 		},
 		{
 			"name": "Horned Devil",
@@ -19591,7 +19820,8 @@
 					]
 				}
 			],
-			"page": 74
+			"page": 74,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/278/horned-devil.mp3"
 		},
 		{
 			"name": "Hunter Shark",
@@ -19646,7 +19876,8 @@
 			"page": 330,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/280/hunter-shark.mp3"
 		},
 		{
 			"name": "Hydra",
@@ -19722,7 +19953,8 @@
 			"page": 190,
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/281/hydra.mp3"
 		},
 		{
 			"name": "Hyena",
@@ -19773,7 +20005,8 @@
 				"forest",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/282/hyena.mp3"
 		},
 		{
 			"name": "Ice Devil",
@@ -19878,7 +20111,8 @@
 					]
 				}
 			],
-			"page": 75
+			"page": 75,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/283/ice-devil.mp3"
 		},
 		{
 			"name": "Ice Devil Spear",
@@ -20085,7 +20319,8 @@
 			],
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/284/ice-mephit.mp3"
 		},
 		{
 			"name": "Imp",
@@ -20194,7 +20429,8 @@
 						"Imps can be found in the service to mortal spellcasters, acting as advisors, spies, and familiars. An imp urges its master to acts of evil, knowing the mortal's soul is a prize the imp might ultimately claim. Imps display an unusual loyalty to their masters, and an imp can be quite dangerous if its master is threatened. Some such imps have the following trait."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/286/imp.mp3"
 		},
 		{
 			"name": "Intellect Devourer",
@@ -20278,7 +20514,8 @@
 			"page": 191,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/288/intellect-devourer.mp3"
 		},
 		{
 			"name": "Invisible Stalker",
@@ -20368,7 +20605,8 @@
 			"page": 192,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/289/invisible-stalker.mp3"
 		},
 		{
 			"name": "Iron Golem",
@@ -20469,7 +20707,8 @@
 					]
 				}
 			],
-			"page": 170
+			"page": 170,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/290/iron-golem.mp3"
 		},
 		{
 			"name": "Jackal",
@@ -20524,7 +20763,8 @@
 			"environment": [
 				"grassland",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/291/jackal.mp3"
 		},
 		{
 			"name": "Jackalwere",
@@ -20616,7 +20856,8 @@
 			"environment": [
 				"grassland",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/292/jackalwere.mp3"
 		},
 		{
 			"name": "Kenku",
@@ -20686,7 +20927,8 @@
 			"environment": [
 				"forest",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/294/kenku-2.mp3"
 		},
 		{
 			"name": "Killer Whale",
@@ -20747,7 +20989,8 @@
 			"page": 331,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/295/killer-whale.mp3"
 		},
 		{
 			"name": "Knight",
@@ -20825,7 +21068,8 @@
 					]
 				}
 			],
-			"page": 347
+			"page": 347,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/297/knight.mp3"
 		},
 		{
 			"name": "Kobold",
@@ -20898,7 +21142,8 @@
 				"arctic",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/301/kobold.mp3"
 		},
 		{
 			"name": "Kraken",
@@ -21031,7 +21276,8 @@
 			"page": 197,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/304/kraken.mp3"
 		},
 		{
 			"name": "Kuo-toa",
@@ -21126,7 +21372,8 @@
 			"page": 199,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/307/kuo-toa.mp3"
 		},
 		{
 			"name": "Kuo-toa Archpriest",
@@ -21267,7 +21514,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/305/kuo-toa-archpriest.mp3"
 		},
 		{
 			"name": "Kuo-toa Monitor",
@@ -21358,7 +21606,8 @@
 					]
 				}
 			],
-			"page": 198
+			"page": 198,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/563/kuo-toa-monitor.mp3"
 		},
 		{
 			"name": "Kuo-toa Whip",
@@ -21469,7 +21718,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/306/kuo-toa-whip.mp3"
 		},
 		{
 			"name": "Lamia",
@@ -21555,7 +21805,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/308/lamia.mp3"
 		},
 		{
 			"name": "Lemure",
@@ -21623,7 +21874,8 @@
 					]
 				}
 			],
-			"page": 76
+			"page": 76,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/309/lemure.mp3"
 		},
 		{
 			"name": "Lich",
@@ -21834,7 +22086,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/310/lich.mp3"
 		},
 		{
 			"name": "Lion",
@@ -21910,7 +22163,8 @@
 				"grassland",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/311/lion.mp3"
 		},
 		{
 			"name": "Lizard",
@@ -21947,7 +22201,8 @@
 				}
 			],
 			"page": 332,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/313/lizard.mp3"
 		},
 		{
 			"name": "Lizard King",
@@ -22038,7 +22293,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/312/lizard-king-_-queen.mp3"
 		},
 		{
 			"name": "Lizard Queen",
@@ -22129,7 +22385,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/312/lizard-king-_-queen.mp3"
 		},
 		{
 			"name": "Lizardfolk",
@@ -22211,7 +22468,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/315/lizardfolk.mp3"
 		},
 		{
 			"name": "Lizardfolk Shaman",
@@ -22325,7 +22583,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/314/lizardfolk-shaman.mp3"
 		},
 		{
 			"name": "Mage",
@@ -22428,7 +22687,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/316/mage.mp3"
 		},
 		{
 			"name": "Magma Mephit",
@@ -22522,7 +22782,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/317/magma-mephit.mp3"
 		},
 		{
 			"name": "Magmin",
@@ -22586,7 +22847,8 @@
 					]
 				}
 			],
-			"page": 212
+			"page": 212,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/318/magmin.mp3"
 		},
 		{
 			"name": "Mammoth",
@@ -22637,7 +22899,8 @@
 			"page": 332,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/319/mammoth.mp3"
 		},
 		{
 			"name": "Manes",
@@ -22692,7 +22955,8 @@
 					]
 				}
 			],
-			"page": 60
+			"page": 60,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/320/manes.mp3"
 		},
 		{
 			"name": "Manticore",
@@ -22762,7 +23026,8 @@
 				"hill",
 				"coastal",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/321/manticore.mp3"
 		},
 		{
 			"name": "Marid",
@@ -22884,7 +23149,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/322/marid.mp3"
 		},
 		{
 			"name": "Marilith",
@@ -23008,7 +23274,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/323/marilith.mp3"
 		},
 		{
 			"name": "Mastiff",
@@ -23058,7 +23325,8 @@
 				"forest",
 				"hill",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/326/mastiff.mp3"
 		},
 		{
 			"name": "Medusa",
@@ -23132,7 +23400,8 @@
 			"page": 214,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/328/medusa.mp3"
 		},
 		{
 			"name": "Merfolk",
@@ -23188,7 +23457,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/331/merfolk.mp3"
 		},
 		{
 			"name": "Merrow",
@@ -23256,7 +23526,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/332/merrow.mp3"
 		},
 		{
 			"name": "Mezzoloth",
@@ -23388,7 +23659,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/333/mezzoloth.mp3"
 		},
 		{
 			"name": "Mimic",
@@ -23473,7 +23745,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/334/mimic.mp3"
 		},
 		{
 			"name": "Mind Flayer",
@@ -23564,7 +23837,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/337/mind-flayer.mp3"
 		},
 		{
 			"name": "Mind Flayer Arcanist",
@@ -23710,7 +23984,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/335/mind-flayer-arcanist.mp3"
 		},
 		{
 			"name": "Minotaur",
@@ -23779,7 +24054,8 @@
 			"page": 223,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/340/minotaur.mp3"
 		},
 		{
 			"name": "Minotaur Skeleton",
@@ -23843,7 +24119,8 @@
 			"page": 273,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/339/minotaur-skeleton.mp3"
 		},
 		{
 			"name": "Monodrone",
@@ -23902,7 +24179,8 @@
 					]
 				}
 			],
-			"page": 224
+			"page": 224,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/341/monodrone.mp3"
 		},
 		{
 			"name": "Mud Mephit",
@@ -23982,7 +24260,8 @@
 			],
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/344/mud-mephit.mp3"
 		},
 		{
 			"name": "Mule",
@@ -24035,7 +24314,8 @@
 				"hill",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/345/mule.mp3"
 		},
 		{
 			"name": "Mummy",
@@ -24114,7 +24394,8 @@
 			"page": 228,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/347/mummy.mp3"
 		},
 		{
 			"name": "Mummy Lord",
@@ -24307,7 +24588,8 @@
 			],
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/346/mummy-lord.mp3"
 		},
 		{
 			"name": "Myconid Adult",
@@ -24411,7 +24693,8 @@
 			"page": 232,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/348/myconid-adult.mp3"
 		},
 		{
 			"name": "Myconid Sovereign",
@@ -24533,7 +24816,8 @@
 			"page": 232,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/565/myconid-sovere.mp3"
 		},
 		{
 			"name": "Myconid Sprout",
@@ -24592,7 +24876,8 @@
 			"page": 230,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/349/myconid-sprout.mp3"
 		},
 		{
 			"name": "Nalfeshnee",
@@ -24703,7 +24988,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/351/nalfeshnee.mp3"
 		},
 		{
 			"name": "Needle Blight",
@@ -24753,7 +25039,8 @@
 			"page": 32,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/353/needle-blight.mp3"
 		},
 		{
 			"name": "Night Hag",
@@ -24934,7 +25221,8 @@
 						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 12+the hag's Intelligence modifier, and the spell attack bonus is 4+the hag's Intelligence modifier."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/357/night-hag.mp3"
 		},
 		{
 			"name": "Nightmare",
@@ -24994,7 +25282,8 @@
 					]
 				}
 			],
-			"page": 235
+			"page": 235,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/358/nightmare.mp3"
 		},
 		{
 			"name": "Noble",
@@ -25047,7 +25336,8 @@
 					]
 				}
 			],
-			"page": 348
+			"page": 348,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/360/noble.mp3"
 		},
 		{
 			"name": "Nothic",
@@ -25119,7 +25409,8 @@
 			"page": 236,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/361/nothic.mp3"
 		},
 		{
 			"name": "Nycaloth",
@@ -25252,7 +25543,8 @@
 						"{@spell mirror image}"
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/362/nycaloth.mp3"
 		},
 		{
 			"name": "Ochre Jelly",
@@ -25328,7 +25620,8 @@
 			"page": 243,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/363/ochre-jelly.mp3"
 		},
 		{
 			"name": "Octopus",
@@ -25395,7 +25688,8 @@
 				}
 			],
 			"page": 333,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/364/octopus.mp3"
 		},
 		{
 			"name": "Ogre",
@@ -25449,7 +25743,8 @@
 				"arctic",
 				"underdark",
 				"mountain"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/366/ogre.mp3"
 		},
 		{
 			"name": "Ogre Zombie",
@@ -25503,7 +25798,8 @@
 					]
 				}
 			],
-			"page": 316
+			"page": 316,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/365/ogre-zombie.mp3"
 		},
 		{
 			"name": "Oni",
@@ -25608,7 +25904,8 @@
 			"environment": [
 				"forest",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/367/oni.mp3"
 		},
 		{
 			"name": "Orc",
@@ -25676,7 +25973,8 @@
 				"swamp",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/374/orc.mp3"
 		},
 		{
 			"name": "Orc Eye of Gruumsh",
@@ -25776,7 +26074,8 @@
 				"swamp",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/370/orc-eye-of-gruumsh.mp3"
 		},
 		{
 			"name": "Orc War Chief",
@@ -25867,7 +26166,8 @@
 				"swamp",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/373/orc-war-chief.mp3"
 		},
 		{
 			"name": "Orog",
@@ -25941,7 +26241,8 @@
 				"forest",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/375/orog.mp3"
 		},
 		{
 			"name": "Otyugh",
@@ -26009,7 +26310,8 @@
 			"page": 248,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/376/otyugh.mp3"
 		},
 		{
 			"name": "Owl",
@@ -26068,7 +26370,8 @@
 			"environment": [
 				"forest",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/377/owl.mp3"
 		},
 		{
 			"name": "Owlbear",
@@ -26129,7 +26432,8 @@
 			"page": 249,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/378/owlbear.mp3"
 		},
 		{
 			"name": "Panther",
@@ -26193,7 +26497,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/379/panther.mp3"
 		},
 		{
 			"name": "Pegasus",
@@ -26243,7 +26548,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/380/pegasus.mp3"
 		},
 		{
 			"name": "Pentadrone",
@@ -26310,7 +26616,8 @@
 					]
 				}
 			],
-			"page": 226
+			"page": 226,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/381/pentadrone.mp3"
 		},
 		{
 			"name": "Peryton",
@@ -26396,7 +26703,8 @@
 			"environment": [
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/382/peryton.mp3"
 		},
 		{
 			"name": "Phase Spider",
@@ -26463,7 +26771,8 @@
 				"hill",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/383/phase-spider.mp3"
 		},
 		{
 			"name": "Piercer",
@@ -26519,7 +26828,8 @@
 			"page": 252,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/384/piercer.mp3"
 		},
 		{
 			"name": "Pit Fiend",
@@ -26647,7 +26957,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/385/pit-fiend.mp3"
 		},
 		{
 			"name": "Pixie",
@@ -26724,7 +27035,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/386/pixie.mp3"
 		},
 		{
 			"name": "Planetar",
@@ -26843,7 +27155,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/387/planetar.mp3"
 		},
 		{
 			"name": "Plesiosaurus",
@@ -26894,7 +27207,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/388/plesiosaurus.mp3"
 		},
 		{
 			"name": "Poisonous Snake",
@@ -26939,7 +27253,8 @@
 				"hill",
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/389/poisonous-snake.mp3"
 		},
 		{
 			"name": "Polar Bear",
@@ -27001,7 +27316,8 @@
 			"environment": [
 				"underdark",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/390/polar-bear.mp3"
 		},
 		{
 			"name": "Poltergeist",
@@ -27104,7 +27420,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/552/poltergeist.mp3"
 		},
 		{
 			"name": "Pony",
@@ -27141,7 +27458,8 @@
 			"page": 335,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/391/pony.mp3"
 		},
 		{
 			"name": "Priest",
@@ -27233,7 +27551,8 @@
 						}
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/392/priest.mp3"
 		},
 		{
 			"name": "Pseudodragon",
@@ -27325,7 +27644,8 @@
 				"urban",
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/393/pseudodragon.mp3"
 		},
 		{
 			"name": "Pteranodon",
@@ -27376,7 +27696,8 @@
 				"mountain",
 				"grassland",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/394/pteranodon.mp3"
 		},
 		{
 			"name": "Purple Worm",
@@ -27441,7 +27762,8 @@
 			"environment": [
 				"underdark",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/395/purple-worm.mp3"
 		},
 		{
 			"name": "Quadrone",
@@ -27509,7 +27831,8 @@
 					]
 				}
 			],
-			"page": 226
+			"page": 226,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/396/quadrone.mp3"
 		},
 		{
 			"name": "Quaggoth",
@@ -27578,7 +27901,8 @@
 			"page": 256,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/399/quaggoth.mp3"
 		},
 		{
 			"name": "Quaggoth Spore Servant",
@@ -27633,7 +27957,8 @@
 			"page": 230,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/397/quaggoth-spore-servant.mp3"
 		},
 		{
 			"name": "Quaggoth Thonot",
@@ -27722,7 +28047,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/398/quaggoth-thonot.mp3"
 		},
 		{
 			"name": "Quasit",
@@ -27828,7 +28154,8 @@
 						"Mortal spellcasters interested in extraplanar familiars find quasits easy to summon and eager to serve. The quasit plays the part of the obsequious servant. It serves its master well, but it goads the mortal to greater and greater acts of chaos and evil. Such quasits have the following trait."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/400/quasit.mp3"
 		},
 		{
 			"name": "Quipper",
@@ -27881,7 +28208,8 @@
 			"familiar": true,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/403/quipper.mp3"
 		},
 		{
 			"name": "Rakshasa",
@@ -27986,7 +28314,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/404/rakshasa.mp3"
 		},
 		{
 			"name": "Rat",
@@ -28034,7 +28363,8 @@
 			"environment": [
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/405/rat.mp3"
 		},
 		{
 			"name": "Raven",
@@ -28086,7 +28416,8 @@
 				"swamp",
 				"hill",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/406/raven.mp3"
 		},
 		{
 			"name": "Red Dragon Wyrmling",
@@ -28144,7 +28475,8 @@
 					]
 				}
 			],
-			"page": 98
+			"page": 98,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/407/red-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Red Slaad",
@@ -28232,7 +28564,8 @@
 						"Someone who is proficient in Wisdom (Medicine) can remove the gem from an incapacitated slaad. Each try requires 1 minute of uninterrupted work and a successful DC 20 Wisdom (Medicine) check. Each failed attempt deals 22 ({@dice 4d10}) psychic damage to the slaad."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/410/red-slaad.mp3"
 		},
 		{
 			"name": "Reef Shark",
@@ -28287,7 +28620,8 @@
 			"page": 336,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/412/reef-shark.mp3"
 		},
 		{
 			"name": "Remorhaz",
@@ -28345,7 +28679,8 @@
 			"page": 258,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/413/remorhaz.mp3"
 		},
 		{
 			"name": "Revenant",
@@ -28448,7 +28783,8 @@
 				"urban",
 				"desert",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/414/revenant.mp3"
 		},
 		{
 			"name": "Rhinoceros",
@@ -28493,7 +28829,8 @@
 			"page": 336,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/415/rhinoceros.mp3"
 		},
 		{
 			"name": "Riding Horse",
@@ -28531,7 +28868,8 @@
 			"environment": [
 				"grassland",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/416/riding-horse.mp3"
 		},
 		{
 			"name": "Roc",
@@ -28602,7 +28940,8 @@
 				"desert",
 				"coastal",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/417/roc.mp3"
 		},
 		{
 			"name": "Roper",
@@ -28684,7 +29023,8 @@
 			"page": 261,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/418/roper.mp3"
 		},
 		{
 			"name": "Rug of Smothering",
@@ -28752,7 +29092,8 @@
 					]
 				}
 			],
-			"page": 20
+			"page": 20,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/419/run-of-smothering.mp3"
 		},
 		{
 			"name": "Rust Monster",
@@ -28811,7 +29152,8 @@
 			"page": 262,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/568/rust-monster.mp3"
 		},
 		{
 			"name": "Saber-Toothed Tiger",
@@ -28873,7 +29215,8 @@
 			"environment": [
 				"mountain",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/427/saber-toothed-tiger.mp3"
 		},
 		{
 			"name": "Sahuagin",
@@ -28961,7 +29304,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/430/sahuagin.mp3"
 		},
 		{
 			"name": "Sahuagin Baron",
@@ -29055,7 +29399,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/428/sahuagin-baron.mp3"
 		},
 		{
 			"name": "Sahuagin Priestess",
@@ -29176,7 +29521,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/429/sahuagin-priestess.mp3"
 		},
 		{
 			"name": "Salamander",
@@ -29258,7 +29604,8 @@
 			"page": 266,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/431/salamander.mp3"
 		},
 		{
 			"name": "Satyr",
@@ -29360,7 +29707,8 @@
 			"page": 267,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/432/satyr.mp3"
 		},
 		{
 			"name": "Scarecrow",
@@ -29444,7 +29792,8 @@
 			"page": 268,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/433/scarecrow.mp3"
 		},
 		{
 			"name": "Scorpion",
@@ -29482,7 +29831,8 @@
 			"page": 337,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/434/scorpion.mp3"
 		},
 		{
 			"name": "Scout",
@@ -29548,7 +29898,8 @@
 					]
 				}
 			],
-			"page": 349
+			"page": 349,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/435/scout.mp3"
 		},
 		{
 			"name": "Sea Hag",
@@ -29690,7 +30041,8 @@
 			"environment": [
 				"underwater",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/436/sea-hag.mp3"
 		},
 		{
 			"name": "Sea Horse",
@@ -29725,7 +30077,8 @@
 				}
 			],
 			"page": 337,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/437/sea-horse.mp3"
 		},
 		{
 			"name": "Shadow",
@@ -29821,7 +30174,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/442/shadow.mp3"
 		},
 		{
 			"name": "Shadow Demon",
@@ -29922,7 +30276,8 @@
 					]
 				}
 			],
-			"page": 64
+			"page": 64,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/439/shadow-demon.mp3"
 		},
 		{
 			"name": "Shambling Mound",
@@ -29997,7 +30352,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/443/shambling-mound.mp3"
 		},
 		{
 			"name": "Shield Guardian",
@@ -30080,7 +30436,8 @@
 			"page": 271,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/444/shield-guardian.mp3"
 		},
 		{
 			"name": "Shrieker",
@@ -30131,7 +30488,8 @@
 			"page": 138,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/446/shrieker.mp3"
 		},
 		{
 			"name": "Silver Dragon Wyrmling",
@@ -30192,7 +30550,7 @@
 								{
 									"type": "item",
 									"name": "Cold Breath.",
-									"entry": "The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 ({@dice 4d8}) cold damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -30204,7 +30562,8 @@
 					]
 				}
 			],
-			"page": 118
+			"page": 118,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/447/silver-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Skeleton",
@@ -30259,7 +30618,8 @@
 			"page": 272,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/449/skeleton.mp3"
 		},
 		{
 			"name": "Slaad Tadpole",
@@ -30314,7 +30674,8 @@
 					]
 				}
 			],
-			"page": 276
+			"page": 276,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/450/slaad-tadpole.mp3"
 		},
 		{
 			"name": "Smoke Mephit",
@@ -30400,7 +30761,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/452/smoke-mephit.mp3"
 		},
 		{
 			"name": "Solar",
@@ -30554,7 +30916,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/453/solar.mp3"
 		},
 		{
 			"name": "Spectator",
@@ -30628,7 +30991,8 @@
 			"page": 30,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/455/spectator.mp3"
 		},
 		{
 			"name": "Specter",
@@ -30717,7 +31081,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/457/specter.mp3"
 		},
 		{
 			"name": "Spider",
@@ -30777,7 +31142,8 @@
 				}
 			],
 			"page": 337,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/458/spider.mp3"
 		},
 		{
 			"name": "Spined Devil",
@@ -30882,7 +31248,8 @@
 					]
 				}
 			],
-			"page": 78
+			"page": 78,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/459/spined-devil.mp3"
 		},
 		{
 			"name": "Spirit Naga",
@@ -30995,7 +31362,8 @@
 			],
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/460/spirit-naga.mp3"
 		},
 		{
 			"name": "Sprite",
@@ -31058,7 +31426,8 @@
 			"familiar": true,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/461/sprite.mp3"
 		},
 		{
 			"name": "Spy",
@@ -31133,7 +31502,8 @@
 					]
 				}
 			],
-			"page": 349
+			"page": 349,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/462/spy.mp3"
 		},
 		{
 			"name": "Steam Mephit",
@@ -31215,7 +31585,8 @@
 			],
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/463/steam-mephit.mp3"
 		},
 		{
 			"name": "Stirge",
@@ -31263,7 +31634,8 @@
 				"coastal",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/466/stirge.mp3"
 		},
 		{
 			"name": "Stone Giant",
@@ -31353,7 +31725,7 @@
 							"name": "Rolling Rock",
 							"type": "entries",
 							"entries": [
-								"The giant sends a rock tumbling along the ground in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 22 (3d10+6) bludgeoning damage and falling prone on a failed save"
+								"The giant sends a rock tumbling along the ground in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 22 ({@dice 3d10}+6) bludgeoning damage and falling prone on a failed save"
 							]
 						}
 					],
@@ -31368,7 +31740,8 @@
 				"underdark",
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/468/stone-giant.mp3"
 		},
 		{
 			"name": "Stone Golem",
@@ -31456,7 +31829,8 @@
 					]
 				}
 			],
-			"page": 170
+			"page": 170,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/469/stone-golem.mp3"
 		},
 		{
 			"name": "Storm Giant",
@@ -31548,7 +31922,7 @@
 							"type": "entries",
 							"name": "Thunderous Stomp (Recharge 6)",
 							"entries": [
-								"The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a DC 17 Constitution saving throw or take 33 (6d10) thunder damage and be deafened until the start of the giant's next turn. On a successful save, a crea­ture takes half as much damage and isn't deafened. The thun­derclap can be heard out to a range of 1,200 feet."
+								"The storm giant stomps the ground, triggering a thunderclap. All other creatures within 15 feet of the giant must succeed on a DC 17 Constitution saving throw or take 33 ({@dice 6d10}) thunder damage and be deafened until the start of the giant's next turn. On a successful save, a crea­ture takes half as much damage and isn't deafened. The thun­derclap can be heard out to a range of 1,200 feet."
 							]
 						}
 					],
@@ -31581,7 +31955,8 @@
 			],
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/470/storm-giant.mp3"
 		},
 		{
 			"name": "Succubus",
@@ -31681,7 +32056,8 @@
 			"page": 285,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/551/succubus-incubus.mp3"
 		},
 		{
 			"name": "Incubus",
@@ -31781,7 +32157,8 @@
 			"page": 285,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/551/succubus-incubus.mp3"
 		},
 		{
 			"name": "Swarm of Bats",
@@ -31861,7 +32238,8 @@
 				"mountain",
 				"hill",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/473/swarm-of-bats.mp3"
 		},
 		{
 			"name": "Swarm of Beetles",
@@ -32076,7 +32454,8 @@
 				"hill",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/475/swarm-of-insects.mp3"
 		},
 		{
 			"name": "Swarm of Poisonous Snakes",
@@ -32142,7 +32521,8 @@
 			"environment": [
 				"forest",
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/476/swarm-of-poisonous-snakes.mp3"
 		},
 		{
 			"name": "Swarm of Quippers",
@@ -32219,7 +32599,8 @@
 			"page": 338,
 			"environment": [
 				"underwater"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/477/swarm-of-quippers.mp3"
 		},
 		{
 			"name": "Swarm of Rats",
@@ -32290,7 +32671,8 @@
 			"environment": [
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/478/swarm-of-rats.mp3"
 		},
 		{
 			"name": "Swarm of Ravens",
@@ -32357,7 +32739,8 @@
 				"swamp",
 				"hill",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/479/swarm-of-ravens.mp3"
 		},
 		{
 			"name": "Swarm of Spiders",
@@ -32666,7 +33049,8 @@
 			"page": 286,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/484/tarrasque.mp3"
 		},
 		{
 			"name": "Thri-kreen",
@@ -32766,7 +33150,8 @@
 			"environment": [
 				"grassland",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/486/thri-kreen.mp3"
 		},
 		{
 			"name": "Thri-kreen (Psionic)",
@@ -32953,7 +33338,8 @@
 					]
 				}
 			],
-			"page": 350
+			"page": 350,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/487/thug.mp3"
 		},
 		{
 			"name": "Tiger",
@@ -33016,7 +33402,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/489/tiger.mp3"
 		},
 		{
 			"name": "Treant",
@@ -33094,7 +33481,8 @@
 			"page": 289,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/492/treant.mp3"
 		},
 		{
 			"name": "Tribal Warrior",
@@ -33142,7 +33530,8 @@
 					]
 				}
 			],
-			"page": 350
+			"page": 350,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/493/tribal-warrior.mp3"
 		},
 		{
 			"name": "Triceratops",
@@ -33193,7 +33582,8 @@
 			"page": 80,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/494/triceratops.mp3"
 		},
 		{
 			"name": "Tridrone",
@@ -33257,7 +33647,8 @@
 					]
 				}
 			],
-			"page": 225
+			"page": 225,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/495/tridrone.mp3"
 		},
 		{
 			"name": "Troglodyte",
@@ -33337,7 +33728,8 @@
 			"page": 290,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/571/troglodyte.mp3"
 		},
 		{
 			"name": "Troll",
@@ -33451,7 +33843,8 @@
 				"swamp",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/497/troll.mp3"
 		},
 		{
 			"name": "Twig Blight",
@@ -33509,7 +33902,8 @@
 			"page": 32,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/498/twig-blight.mp3"
 		},
 		{
 			"name": "Tyrannosaurus Rex",
@@ -33561,7 +33955,8 @@
 			"page": 80,
 			"environment": [
 				"grassland"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/499/tyrannosaurus-rex.mp3"
 		},
 		{
 			"name": "Ultroloth",
@@ -33710,7 +34105,8 @@
 						]
 					}
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/501/ultroloth.mp3"
 		},
 		{
 			"name": "Umber Hulk",
@@ -33779,7 +34175,8 @@
 			"page": 292,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/502/umber-hulk.mp3"
 		},
 		{
 			"name": "Unicorn",
@@ -33912,7 +34309,8 @@
 			],
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/503/unicorn.mp3"
 		},
 		{
 			"name": "Vampire",
@@ -34068,7 +34466,8 @@
 			"page": 297,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/507/vampire.mp3"
 		},
 		{
 			"name": "Vampire Spawn",
@@ -34164,7 +34563,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/504/vampire-spawn.mp3"
 		},
 		{
 			"name": "Vampire Spellcaster",
@@ -34374,7 +34774,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/505/vampire-spellcaster.mp3"
 		},
 		{
 			"name": "Vampire Warrior",
@@ -34542,7 +34943,8 @@
 			],
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/506/vampire-warrior.mp3"
 		},
 		{
 			"name": "Veteran",
@@ -34604,7 +35006,8 @@
 					]
 				}
 			],
-			"page": 350
+			"page": 350,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/512/veteran.mp3"
 		},
 		{
 			"name": "Vine Blight",
@@ -34665,7 +35068,8 @@
 			"page": 32,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/513/vine-blight.mp3"
 		},
 		{
 			"name": "Violet Fungus",
@@ -34722,7 +35126,8 @@
 			"page": 138,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/514/violet-fungus.mp3"
 		},
 		{
 			"name": "Vrock",
@@ -34832,7 +35237,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/515/vrock.mp3"
 		},
 		{
 			"name": "Vulture",
@@ -34889,7 +35295,8 @@
 				"grassland",
 				"hill",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/516/vulture.mp3"
 		},
 		{
 			"name": "Warhorse",
@@ -34934,7 +35341,8 @@
 			"page": 340,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/517/war-horse.mp3"
 		},
 		{
 			"name": "Warhorse Skeleton",
@@ -34980,7 +35388,8 @@
 					]
 				}
 			],
-			"page": 273
+			"page": 273,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/519/warhorse-skeleton.mp3"
 		},
 		{
 			"name": "Water Elemental",
@@ -35073,7 +35482,8 @@
 				"underwater",
 				"swamp",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/524/water-elemental.mp3"
 		},
 		{
 			"name": "Water Weird",
@@ -35151,7 +35561,8 @@
 			"environment": [
 				"underdark",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/525/water-weird.mp3"
 		},
 		{
 			"name": "Weasel",
@@ -35198,7 +35609,8 @@
 				}
 			],
 			"page": 340,
-			"familiar": true
+			"familiar": true,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/526/weasel.mp3"
 		},
 		{
 			"name": "Werebear",
@@ -35294,7 +35706,8 @@
 				"forest",
 				"hill",
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/527/werebear.mp3"
 		},
 		{
 			"name": "Wereboar",
@@ -35390,7 +35803,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/528/wereboar.mp3"
 		},
 		{
 			"name": "Wererat",
@@ -35484,7 +35898,8 @@
 			"environment": [
 				"forest",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/529/wererat.mp3"
 		},
 		{
 			"name": "Weretiger",
@@ -35593,7 +36008,8 @@
 				"grassland",
 				"forest",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/530/weretiger.mp3"
 		},
 		{
 			"name": "Werewolf",
@@ -35688,7 +36104,8 @@
 			"environment": [
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/531/werewolf.mp3"
 		},
 		{
 			"name": "White Dragon Wyrmling",
@@ -35747,7 +36164,8 @@
 					]
 				}
 			],
-			"page": 102
+			"page": 102,
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/532/white-dragon-wyrmling.mp3"
 		},
 		{
 			"name": "Wight",
@@ -35839,7 +36257,8 @@
 				"swamp",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/534/wight.mp3"
 		},
 		{
 			"name": "Will-o'-Wisp",
@@ -35945,7 +36364,8 @@
 				"forest",
 				"swamp",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/535/will-o-wisp.mp3"
 		},
 		{
 			"name": "Winged Kobold",
@@ -36019,7 +36439,8 @@
 				"arctic",
 				"mountain",
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/536/winged-kobold.mp3"
 		},
 		{
 			"name": "Winter Wolf",
@@ -36091,7 +36512,8 @@
 			"page": 340,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/538/winter-wolf.mp3"
 		},
 		{
 			"name": "Wolf",
@@ -36148,7 +36570,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/539/wolf.mp3"
 		},
 		{
 			"name": "Worg",
@@ -36201,7 +36624,8 @@
 				"grassland",
 				"forest",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/541/worg.mp3"
 		},
 		{
 			"name": "Wraith",
@@ -36294,7 +36718,8 @@
 			"page": 302,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/542/wraith.mp3"
 		},
 		{
 			"name": "Wyvern",
@@ -36355,7 +36780,8 @@
 			"environment": [
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/574/wyvern.mp3"
 		},
 		{
 			"name": "Xorn",
@@ -36439,7 +36865,8 @@
 			"page": 304,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/543/xorn.mp3"
 		},
 		{
 			"name": "Yeti",
@@ -36519,7 +36946,8 @@
 			"page": 305,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/548/yeti.mp3"
 		},
 		{
 			"name": "Yochlol",
@@ -36659,7 +37087,8 @@
 						"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
 					]
 				}
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/549/yochlol.mp3"
 		},
 		{
 			"name": "Young Black Dragon",
@@ -36740,7 +37169,8 @@
 			"page": 88,
 			"environment": [
 				"swamp"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/53/black-dragon.mp3"
 		},
 		{
 			"name": "Young Blue Dragon",
@@ -36814,7 +37244,8 @@
 			"environment": [
 				"desert",
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/60/blue-dragon.mp3"
 		},
 		{
 			"name": "Young Brass Dragon",
@@ -36889,7 +37320,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 (12d6) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 42 ({@dice 12d6}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -36904,7 +37335,8 @@
 			"page": 105,
 			"environment": [
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/68/brass-dragon.mp3"
 		},
 		{
 			"name": "Young Bronze Dragon",
@@ -36987,7 +37419,7 @@
 								{
 									"type": "item",
 									"name": "Lightning Breath.",
-									"entry": "The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 15 Dexterity saving throw, taking 55 ({@dice 10d10}) lightning damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -37002,7 +37434,8 @@
 			"page": 108,
 			"environment": [
 				"coastal"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/71/bronze-dragon.mp3"
 		},
 		{
 			"name": "Young Copper Dragon",
@@ -37077,7 +37510,7 @@
 								{
 									"type": "item",
 									"name": "Acid Breath.",
-									"entry": "The dragon exhales acid in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 (9d8) acid damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales acid in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 40 ({@dice 9d8}) acid damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -37092,7 +37525,8 @@
 			"page": 112,
 			"environment": [
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/100/copper-dragon.mp3"
 		},
 		{
 			"name": "Young Gold Dragon",
@@ -37176,7 +37610,7 @@
 								{
 									"type": "item",
 									"name": "Fire Breath.",
-									"entry": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 ({@dice 10d10}) fire damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -37192,7 +37626,8 @@
 			"environment": [
 				"grassland",
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/236/gold-dragon.mp3"
 		},
 		{
 			"name": "Young Green Dragon",
@@ -37277,7 +37712,8 @@
 			"page": 94,
 			"environment": [
 				"forest"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/243/green-dragon.mp3"
 		},
 		{
 			"name": "Young Red Dragon",
@@ -37351,7 +37787,8 @@
 			"environment": [
 				"mountain",
 				"hill"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/408/red-dragon.mp3"
 		},
 		{
 			"name": "Young Red Shadow Dragon",
@@ -37447,7 +37884,8 @@
 			"page": 85,
 			"environment": [
 				"underdark"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/409/red-shadow-dragon.mp3"
 		},
 		{
 			"name": "Young Remorhaz",
@@ -37498,7 +37936,8 @@
 			"page": 258,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/413/remorhaz.mp3"
 		},
 		{
 			"name": "Young Silver Dragon",
@@ -37573,7 +38012,7 @@
 								{
 									"type": "item",
 									"name": "Cold Breath.",
-									"entry": "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 (12d8) cold damage on a failed save, or half as much damage on a successful one."
+									"entry": "The dragon exhales an icy blast in a 30-foot cone. Each creature in that area must make a DC 17 Constitution saving throw, taking 54 ({@dice 12d8}) cold damage on a failed save, or half as much damage on a successful one."
 								},
 								{
 									"type": "item",
@@ -37589,7 +38028,8 @@
 			"environment": [
 				"mountain",
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/448/silver-dragon.mp3"
 		},
 		{
 			"name": "Young White Dragon",
@@ -37671,7 +38111,8 @@
 			"page": 101,
 			"environment": [
 				"arctic"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/533/white-dragon.mp3"
 		},
 		{
 			"name": "Yuan-ti Abomination",
@@ -37786,7 +38227,8 @@
 				"forest",
 				"swamp",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/550/yuan-ti-abomination.mp3"
 		},
 		{
 			"name": "Yuan-ti Malison (Type 1)",
@@ -37901,7 +38343,8 @@
 				"forest",
 				"swamp",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/421/yuan-ti-malison.mp3"
 		},
 		{
 			"name": "Yuan-ti Malison (Type 2)",
@@ -38004,7 +38447,8 @@
 				"forest",
 				"swamp",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/421/yuan-ti-malison.mp3"
 		},
 		{
 			"name": "Yuan-ti Malison (Type 3)",
@@ -38125,7 +38569,8 @@
 				"forest",
 				"swamp",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/421/yuan-ti-malison.mp3"
 		},
 		{
 			"name": "Yuan-ti Pureblood",
@@ -38221,7 +38666,8 @@
 				"swamp",
 				"urban",
 				"desert"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/425/yuan-ti-pureblood.mp3"
 		},
 		{
 			"name": "Zombie",
@@ -38278,7 +38724,8 @@
 			"page": 316,
 			"environment": [
 				"urban"
-			]
+			],
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/426/zombie.mp3"
 		}
 	]
 }

@@ -1004,7 +1004,7 @@ Parser.spSubclassesToCurrentAndLegacyFull = function (classes) {
 			const nm = c.subclass.name;
 			const src = c.subclass.source;
 			const toAdd = Parser._spSubclassItem(c);
-			if (hasBeenReprinted(nm, src)) {
+			if (SourceUtil.hasBeenReprinted(nm, src)) {
 				out[1].push(toAdd);
 			} else if (Parser.sourceJsonToFull(src).startsWith(UA_PREFIX) || Parser.sourceJsonToFull(src).startsWith(PS_PREFIX)) {
 				const cleanName = mapClassShortNameToMostRecent(nm.split("(")[0].trim().split(/v\d+/)[0].trim());
@@ -1252,6 +1252,7 @@ SRC_UAGHI = SRC_UA_PREFIX + "GreyhawkInitiative";
 SRC_UATSC = SRC_UA_PREFIX + "ThreeSubclasses";
 SRC_UAOD = SRC_UA_PREFIX + "OrderDomain";
 SRC_UACAM = SRC_UA_PREFIX + "CentaursMinotaurs";
+SRC_UAGSS = SRC_UA_PREFIX + "GiantSoulSorcerer";
 
 SRC_3PP_SUFFIX = " 3pp";
 SRC_AL_3PP = "AL" + SRC_3PP_SUFFIX;
@@ -1276,6 +1277,7 @@ SRC_GDoF_3PP = "GDoF" + SRC_3PP_SUFFIX;
 SRC_ToB_3PP = "ToB" + SRC_3PP_SUFFIX;
 
 SRC_STREAM = "Stream";
+SRC_TWITTER = "Twitter";
 
 AL_PREFIX = "Adventurers League: ";
 AL_PREFIX_SHORT = "AL: ";
@@ -1367,6 +1369,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_UAGHI] = UA_PREFIX + "Greyhawk Initiative";
 Parser.SOURCE_JSON_TO_FULL[SRC_UATSC] = UA_PREFIX + "Three Subclasses";
 Parser.SOURCE_JSON_TO_FULL[SRC_UAOD] = UA_PREFIX + "Order Domain";
 Parser.SOURCE_JSON_TO_FULL[SRC_UACAM] = UA_PREFIX + "Centaurs and Minotaurs";
+Parser.SOURCE_JSON_TO_FULL[SRC_UAGSS] = UA_PREFIX + "Giant Soul Sorcerer";
 Parser.SOURCE_JSON_TO_FULL[SRC_AL_3PP] = "Adventurers League" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_BOLS_3PP] = "Book of Lost Spells" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_DM01_3PP] = DM_PREFIX + "#01 - Clockwork" + PP3_SUFFIX;
@@ -1388,6 +1391,7 @@ Parser.SOURCE_JSON_TO_FULL[SRC_FEF_3PP] = "Fifth Edition Foes" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_GDoF_3PP] = "Gem Dragons of Faerûn" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_ToB_3PP] = "Tome of Beasts" + PP3_SUFFIX;
 Parser.SOURCE_JSON_TO_FULL[SRC_STREAM] = "Livestream";
+Parser.SOURCE_JSON_TO_FULL[SRC_TWITTER] = "Twitter";
 
 Parser.SOURCE_JSON_TO_ABV = {};
 Parser.SOURCE_JSON_TO_ABV[SRC_CoS] = "CoS";
@@ -1468,6 +1472,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_UAGHI] = "UAGHI";
 Parser.SOURCE_JSON_TO_ABV[SRC_UATSC] = "UATSC";
 Parser.SOURCE_JSON_TO_ABV[SRC_UAOD] = "UAOD";
 Parser.SOURCE_JSON_TO_ABV[SRC_UACAM] = "UACAM";
+Parser.SOURCE_JSON_TO_ABV[SRC_UAGSS] = "UAGSS";
 Parser.SOURCE_JSON_TO_ABV[SRC_AL_3PP] = "AL (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_BOLS_3PP] = "BoLS (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_DM01_3PP] = "DM01 (3pp)";
@@ -1489,6 +1494,7 @@ Parser.SOURCE_JSON_TO_ABV[SRC_FEF_3PP] = "FEF (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_GDoF_3PP] = "GDoF (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_ToB_3PP] = "ToB (3pp)";
 Parser.SOURCE_JSON_TO_ABV[SRC_STREAM] = "Stream";
+Parser.SOURCE_JSON_TO_ABV[SRC_TWITTER] = "Twitter";
 
 Parser.ITEM_TYPE_JSON_TO_ABV = {
 	"A": "Ammunition",
@@ -1562,45 +1568,47 @@ Parser.NUMBERS_TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 's
 Parser.NUMBERS_TEENS = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
 
 // SOURCES =============================================================================================================
-function hasBeenReprinted (shortName, source) {
-	/* can accept sources of the form:
-	{
-		"source": "UAExample",
-		"forceStandard": true
-	}
-	 */
-	if (source && source.source) source = source.source;
-	return (shortName !== undefined && shortName !== null && source !== undefined && source !== null) &&
-		(
-			(shortName === "Sun Soul" && source === SRC_SCAG) ||
-			(shortName === "Mastermind" && source === SRC_SCAG) ||
-			(shortName === "Swashbuckler" && source === SRC_SCAG) ||
-			(shortName === "Storm" && source === SRC_SCAG) ||
-			(shortName === "Deep Stalker Conclave" && source === SRC_UATRR)
-		);
-}
+SourceUtil = {
+	hasBeenReprinted (shortName, source) {
+		/* can accept sources of the form:
+		{
+			"source": "UAExample",
+			"forceStandard": true
+		}
+		 */
+		if (source && source.source) source = source.source;
+		return (shortName !== undefined && shortName !== null && source !== undefined && source !== null) &&
+			(
+				(shortName === "Sun Soul" && source === SRC_SCAG) ||
+				(shortName === "Mastermind" && source === SRC_SCAG) ||
+				(shortName === "Swashbuckler" && source === SRC_SCAG) ||
+				(shortName === "Storm" && source === SRC_SCAG) ||
+				(shortName === "Deep Stalker Conclave" && source === SRC_UATRR)
+			);
+	},
 
-function isNonstandardSource (source) {
-	/* can accept sources of the form:
-	{
-		"source": "UAExample",
-		"forceStandard": true
-	}
-	 */
-	if (source && source.forceStandard !== undefined) {
-		return !source.forceStandard;
-	}
-	if (source && source.source) source = source.source;
-	return (source !== undefined && source !== null) && (_isNonStandardSourceWiz(source) || _isNonStandardSource3pp(source));
-}
+	isNonstandardSource (source) {
+		/* can accept sources of the form:
+		{
+			"source": "UAExample",
+			"forceStandard": true
+		}
+		 */
+		if (source && source.forceStandard !== undefined) {
+			return !source.forceStandard;
+		}
+		if (source && source.source) source = source.source;
+		return (source !== undefined && source !== null) && (SourceUtil._isNonstandardSourceWiz(source) || SourceUtil._isNonstandardSource3pp(source));
+	},
 
-function _isNonStandardSourceWiz (source) {
-	return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA || source === SRC_Mag || source === SRC_STREAM;
-}
+	_isNonstandardSourceWiz (source) {
+		return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source === SRC_OGA || source === SRC_Mag || source === SRC_STREAM || source === SRC_TWITTER;
+	},
 
-function _isNonStandardSource3pp (source) {
-	return source.endsWith(SRC_3PP_SUFFIX);
-}
+	_isNonstandardSource3pp (source) {
+		return source.endsWith(SRC_3PP_SUFFIX);
+	}
+};
 
 // CONVENIENCE/ELEMENTS ================================================================================================
 function xor (a, b) {
@@ -1767,13 +1775,10 @@ ListUtil = {
 	toggleSelected: (evt, ele) => {
 		if (evt.shiftKey) {
 			evt.preventDefault();
-			const $ele = $(ele);
-			$ele.toggleClass("list-multi-selected");
+			$(ele).toggleClass("list-multi-selected");
 		} else {
-			ListUtil._primaryLists.forEach(l => {
-				ListUtil.deslectAll(l);
-			});
-			$(ele).addClass("list-multi-selected")
+			ListUtil._primaryLists.forEach(l => ListUtil.deslectAll(l));
+			$(ele).addClass("list-multi-selected");
 		}
 	},
 
@@ -1802,15 +1807,9 @@ ListUtil = {
 	},
 
 	openContextMenu: (evt, ele) => {
-		const anySel = ListUtil._primaryLists.find(l => ListUtil.isAnySelected(l));
-		const $menu = $(`#contextMenu`);
-		if (anySel) {
-			$menu.find(`[data-ctx-id=3]`).show();
-			$menu.find(`[data-ctx-id=4]`).show();
-		} else {
-			$menu.find(`[data-ctx-id=3]`).hide();
-			$menu.find(`[data-ctx-id=4]`).hide();
-		}
+		const selCount = ListUtil._primaryLists.map(l => ListUtil.getSelectedCount(l)).reduce((a, b) => a + b, 0);
+		if (selCount === 1) ListUtil._primaryLists.forEach(l => ListUtil.deslectAll(l));
+		if (selCount === 0 || selCount === 1) $(ele).addClass("list-multi-selected");
 		ListUtil._handleOpenContextMenu(evt, ele, "contextMenu");
 	},
 
@@ -2114,7 +2113,9 @@ ListUtil = {
 			}
 		} catch (e) {
 			StorageUtil.removeForPage("sublist");
-			throw e;
+			setTimeout(() => {
+				throw e
+			});
 		}
 	},
 
@@ -2136,8 +2137,8 @@ ListUtil = {
 	},
 
 	initGenericPinnable: () => {
-		ListUtil.initContextMenu(ListUtil.handleGenericContextMenuClick, "Popout", "Toggle Pinned", "Toggle Selected", "Pin All Selected", "Clear Selected");
-		ListUtil.initSubContextMenu(ListUtil.handleGenericSubContextMenuClick, "Popout", "Unpin", "Unpin All");
+		ListUtil.initContextMenu(ListUtil.handleGenericContextMenuClick, "Popout", "Pin");
+		ListUtil.initSubContextMenu(ListUtil.handleGenericSubContextMenuClick, "Popout", "Unpin", "Clear Pins");
 	},
 
 	handleGenericContextMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
@@ -2147,25 +2148,12 @@ ListUtil = {
 				EntryRenderer.hover.doPopout($invokedOn, ListUtil._allItems, itId, evt.clientX);
 				break;
 			case 1:
-				if (!ListUtil.isSublisted(itId)) ListUtil.doSublistAdd(itId, true);
-				else ListUtil.doSublistRemove(itId);
-				break;
-			case 2:
-				$invokedOn.toggleClass("list-multi-selected");
-				break;
-			case 3:
 				ListUtil._primaryLists.forEach(l => {
 					ListUtil.forEachSelected(l, (it) => {
 						if (!ListUtil.isSublisted(it)) ListUtil.doSublistAdd(it);
-						else ListUtil.doSublistRemove(it);
 					});
 				});
 				ListUtil._finaliseSublist();
-				break;
-			case 4:
-				ListUtil._primaryLists.forEach(l => {
-					ListUtil.deslectAll(l);
-				});
 				break;
 		}
 	},
@@ -2186,32 +2174,21 @@ ListUtil = {
 	},
 
 	initGenericAddable: () => {
-		ListUtil.initContextMenu(ListUtil.handleGenericMultiContextMMenuClick, "Popout", "Add", "Toggle Selected", "Add All Selected", "Clear Selected");
+		ListUtil.initContextMenu(ListUtil.handleGenericMultiContextMenuClick, "Popout", "Add");
 		ListUtil.initSubContextMenu(ListUtil.handleGenericMulriSubContextMenuClick, "Popout", "Remove", "Clear List");
 	},
 
-	handleGenericMultiContextMMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
+	handleGenericMultiContextMenuClick: (evt, ele, $invokedOn, $selectedMenu) => {
 		const itId = Number($invokedOn.attr(FLTR_ID));
 		switch (Number($selectedMenu.data("ctx-id"))) {
 			case 0:
 				EntryRenderer.hover.doPopout($invokedOn, ListUtil._allItems, itId, evt.clientX);
 				break;
 			case 1:
-				ListUtil.doSublistAdd(itId, true);
-				break;
-			case 2:
-				$invokedOn.toggleClass("list-multi-selected");
-				break;
-			case 3:
 				ListUtil._primaryLists.forEach(l => {
 					ListUtil.forEachSelected(l, (it) => ListUtil.doSublistAdd(it));
 				});
 				ListUtil._finaliseSublist();
-				break;
-			case 4:
-				ListUtil._primaryLists.forEach(l => {
-					ListUtil.deslectAll(l);
-				});
 				break;
 		}
 	},
@@ -2268,7 +2245,7 @@ function getSourceFilter (options) {
 }
 
 function defaultSourceDeselFn (val) {
-	return isNonstandardSource(val);
+	return SourceUtil.isNonstandardSource(val);
 }
 
 function defaultSourceSelFn (val) {
@@ -2766,14 +2743,21 @@ BrewUtil = {
 	},
 
 	addBrewData: (brewHandler) => {
-		const rawBrew = BrewUtil.storage.getItem(HOMEBREW_STORAGE);
-		if (rawBrew) {
-			try {
-				BrewUtil.homebrew = JSON.parse(rawBrew);
-				brewHandler(BrewUtil.homebrew);
-			} catch (e) {
-				// on error, purge all brew and reset hash
-				purgeBrew();
+		if (BrewUtil.homebrew) {
+			brewHandler(BrewUtil.homebrew);
+		} else {
+			const rawBrew = BrewUtil.storage.getItem(HOMEBREW_STORAGE);
+			if (rawBrew) {
+				try {
+					BrewUtil.homebrew = JSON.parse(rawBrew);
+					brewHandler(BrewUtil.homebrew);
+				} catch (e) {
+					// on error, purge all brew and reset hash
+					purgeBrew();
+					setTimeout(() => {
+						throw e
+					});
+				}
 			}
 		}
 
@@ -3171,6 +3155,7 @@ BrewUtil = {
 				case "hazard":
 				case "deity":
 				case "item":
+				case "itemProperty":
 				case "reward":
 				case "psionic":
 				case "variantrule":
@@ -3234,7 +3219,8 @@ BrewUtil = {
 		}
 
 		// prepare for storage
-		["class", "subclass", "spell", "monster", "background", "feat", "invocation", "race", "deity", "item", "psionic", "reward", "object", "trap", "hazard", "variantrule", "legendaryGroup"].forEach(storePrep);
+		const storable = ["class", "subclass", "spell", "monster", "background", "feat", "invocation", "race", "deity", "item", "itemProperty", "itemType", "psionic", "reward", "object", "trap", "hazard", "variantrule", "legendaryGroup"];
+		storable.forEach(storePrep);
 
 		// store
 		function checkAndAdd (prop) {
@@ -3265,45 +3251,13 @@ BrewUtil = {
 		}
 
 		let sourcesToAdd = json._meta ? json._meta.sources : [];
-		let classesToAdd = json.class;
-		let subclassesToAdd = json.subclass;
-		let spellsToAdd = json.spell;
-		let monstersToAdd = json.monster;
-		let backgroundsToAdd = json.background;
-		let featsToAdd = json.feat;
-		let invocationsToAdd = json.invocation;
-		let racesToAdd = json.race;
-		let objectsToAdd = json.object;
-		let trapsToAdd = json.trap;
-		let hazardsToAdd = json.hazard;
-		let deitiesToAdd = json.deity;
-		let itemsToAdd = json.item;
-		let rewardsToAdd = json.reward;
-		let psionicsToAdd = json.psionic;
-		let variantRulesToAdd = json.variantrule;
-		let legendaryGroupsToAdd = json.legendaryGroup;
+		const toAdd = {};
+		storable.forEach(k => toAdd[k] = json[k]);
 		if (!BrewUtil.homebrew) {
 			BrewUtil.homebrew = json;
 		} else {
 			sourcesToAdd = checkAndAddSources(); // adding source(s) to Filter should happen in per-page addX functions
-			// only add if unique ID not already present
-			classesToAdd = checkAndAdd("class");
-			subclassesToAdd = checkAndAdd("subclass");
-			spellsToAdd = checkAndAdd("spell");
-			monstersToAdd = checkAndAdd("monster");
-			backgroundsToAdd = checkAndAdd("background");
-			featsToAdd = checkAndAdd("feat");
-			invocationsToAdd = checkAndAdd("invocation");
-			racesToAdd = checkAndAdd("race");
-			objectsToAdd = checkAndAdd("object");
-			trapsToAdd = checkAndAdd("trap");
-			hazardsToAdd = checkAndAdd("hazard");
-			deitiesToAdd = checkAndAdd("deity");
-			itemsToAdd = checkAndAdd("item");
-			rewardsToAdd = checkAndAdd("reward");
-			psionicsToAdd = checkAndAdd("psionic");
-			variantRulesToAdd = checkAndAdd("variantrule");
-			legendaryGroupsToAdd = checkAndAdd("legendaryGroup");
+			storable.forEach(k => toAdd[k] = checkAndAdd(k)); // only add if unique ID not already present
 		}
 		BrewUtil.storage.setItem(HOMEBREW_STORAGE, JSON.stringify(BrewUtil.homebrew));
 
@@ -3313,49 +3267,51 @@ BrewUtil = {
 		// display on page
 		switch (page) {
 			case UrlUtil.PG_SPELLS:
-				addSpells(spellsToAdd);
+				addSpells(toAdd.spell);
 				break;
 			case UrlUtil.PG_CLASSES:
-				addClassData({class: classesToAdd});
-				addSubclassData({subclass: subclassesToAdd});
+				addClassData({class: toAdd.class});
+				addSubclassData({subclass: toAdd.subclass});
 				break;
 			case UrlUtil.PG_BESTIARY:
-				addLegendaryGroups(legendaryGroupsToAdd);
-				addMonsters(monstersToAdd);
+				addLegendaryGroups(toAdd.legendaryGroup);
+				addMonsters(toAdd.monster);
 				break;
 			case UrlUtil.PG_BACKGROUNDS:
-				addBackgrounds({background: backgroundsToAdd});
+				addBackgrounds({background: toAdd.background});
 				break;
 			case UrlUtil.PG_FEATS:
-				addFeats({feat: featsToAdd});
+				addFeats({feat: toAdd.feat});
 				break;
 			case UrlUtil.PG_INVOCATIONS:
-				addInvocations({invocation: invocationsToAdd});
+				addInvocations({invocation: toAdd.invocation});
 				break;
 			case UrlUtil.PG_RACES:
-				addRaces({race: racesToAdd});
+				addRaces({race: toAdd.race});
 				break;
 			case UrlUtil.PG_OBJECTS:
-				addObjects({object: objectsToAdd});
+				addObjects({object: toAdd.object});
 				break;
 			case UrlUtil.PG_TRAPS_HAZARDS:
-				addTrapsHazards({trap: trapsToAdd});
-				addTrapsHazards({hazard: hazardsToAdd});
+				addTrapsHazards({trap: toAdd.trap});
+				addTrapsHazards({hazard: toAdd.hazard});
 				break;
 			case UrlUtil.PG_DEITIES:
-				addDeities({deity: deitiesToAdd});
+				addDeities({deity: toAdd.deity});
 				break;
 			case UrlUtil.PG_ITEMS:
-				addItems(itemsToAdd);
+				(toAdd.itemProperty || []).forEach(p => EntryRenderer.item._addProperty(p));
+				(toAdd.itemType || []).forEach(t => EntryRenderer.item._addType(t));
+				addItems(toAdd.item);
 				break;
 			case UrlUtil.PG_REWARDS:
-				addRewards({reward: rewardsToAdd});
+				addRewards({reward: toAdd.reward});
 				break;
 			case UrlUtil.PG_PSIONICS:
-				addPsionics({psionic: psionicsToAdd});
+				addPsionics({psionic: toAdd.psionic});
 				break;
 			case UrlUtil.PG_VARIATNRULES:
-				addVariantRules({variantrule: variantRulesToAdd});
+				addVariantRules({variantrule: toAdd.variantrule});
 				break;
 			case "NO_PAGE":
 				break;
@@ -3756,6 +3712,9 @@ ExcludeUtil = {
 				ExcludeUtil.storage.removeItem(EXCLUDES_STORAGE);
 				ExcludeUtil._excludes = null;
 				window.location.hash = "";
+				setTimeout(() => {
+					throw e
+				});
 			}
 		} else {
 			ExcludeUtil._excludes = [];
